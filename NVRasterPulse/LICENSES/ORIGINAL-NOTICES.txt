@@ -1,0 +1,51 @@
+﻿NVRasterPulse — Third-party notices
+
+NVRasterPulse is an independent community utility. This is not an official
+NVIDIA, MSI or RTSS release and does not imply endorsement by those projects.
+Product and company names belong to their respective owners.
+
+NVIDIA Profile Inspector
+  The project originates in a repository based on NVIDIA Profile Inspector
+  by Orbmu2k. The upstream MIT copyright and license notice are retained in
+  the accompanying LICENSE. The NVRasterPulse code is distributed under that
+  license. The Profile Inspector executable is not included in this package.
+  https://github.com/Orbmu2k/nvidiaProfileInspector
+
+RivaTuner Statistics Server (RTSS)
+  Developed by Unwinder; distributed separately via Guru3D.
+  Required external application, subject to its own license, not this MIT license.
+  No RTSS executable, hook DLL, SDK binary or installer is redistributed here.
+  NVRasterPulse requests profile reloads using UpdateProfiles from the hook DLL
+  in the user's selected RTSS installation. Only use a trusted RTSS installation.
+  https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/
+
+Microsoft Windows / .NET Framework
+  External platform/runtime components, subject to Microsoft's own terms.
+  No Windows font files or .NET installer are included. The RP bitmap icon is
+  generated for this project; the interface uses system-installed fonts.
+  https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48
+
+Inno Setup (installer edition only)
+  The Setup EXE and generated uninstaller use Inno Setup, under its own license.
+  Copyright (C) 1997-2026 Jordan Russell. All rights reserved.
+  Portions Copyright (C) 2000-2026 Martijn Laan. All rights reserved.
+  Original installer-engine copyright notices are retained. Inno Setup is not
+  authored by the NVRasterPulse team. Its development compiler is not distributed.
+  https://jrsoftware.org/isinfo.php
+
+  Installer translations originate from the official Inno Setup distribution
+  and its user-contributed collection: https://jrsoftware.org/files/istrans/
+  Translator credits are retained in the development sources. Catalogs are
+  adapted to the current keys, Unicode language IDs and fonts. Missing or
+  incompatible technical translations fall back to English. Filipino, Punjabi
+  and Swahili include project wizard translations with English technical
+  fallback. NVRasterPulse-specific messages are translated in all 34 languages;
+  native-speaker proofreading is pending. The original Inno engine is unmodified.
+  The language dialog uses the original Inno/Windows control classes and layout,
+  with separate focus handling. The protected bootstrapper has no language UI.
+
+Upstream license notices are retained. RTSS and .NET are installed separately
+and remain subject to their own terms. This package does not include Framepacer,
+MinHook, DLSS, ReShade, the experimental engine or an NVIDIA driver.
+No personal game icons or profiles are shipped; displayed icons are read locally
+when using the application.

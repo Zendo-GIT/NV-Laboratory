@@ -1,0 +1,120 @@
+{
+  "repository": "Zendo-GIT/NV-Laboratory",
+  "prepared_on": "2026-09-09",
+  "application_sources": "private",
+  "projects": [
+    {
+      "id": "nvpi",
+      "anchor": "nvidia-profile-inspector",
+      "folder": "NVIDIA-Profile-Inspector",
+      "name": "NVIDIA Profile Inspector – NV Tools Fork",
+      "version": "3.0.2.3",
+      "tag": "nvpi-v3.0.2.3",
+      "status": "prepared",
+      "release_url": "https://github.com/Zendo-GIT/NV-Laboratory/releases/tag/nvpi-v3.0.2.3",
+      "release_date": null,
+      "assets": [
+        {
+          "name": "Licenses-and-Credits.zip",
+          "bytes": 12200,
+          "sha256": "67c05d31532d553d97b7c3cac17c9909a6eaa89ab40b5d6cef9dc65493ac56ac"
+        },
+        {
+          "name": "NVPI-CustomNV-3.0.2.3-Setup-r2.exe",
+          "bytes": 2974720,
+          "sha256": "b03e24cd73af8f0777301404c2649318a698efa5f23df0fa9e5d1d64c1856e12"
+        },
+        {
+          "name": "NVPI-NV-Tools-Fork-3.0.2.3-Portable-x64.zip",
+          "bytes": 367882,
+          "sha256": "ef629a9304e09e8375af37b80dd2a25ffb989d1f3eedf6dff84a20f7e64df0ef"
+        }
+      ],
+      "installer_revision": 2
+    },
+    {
+      "id": "nvdriverforge",
+      "anchor": "nvdriverforge",
+      "folder": "NVDriverForge",
+      "name": "NVDriverForge",
+      "version": "0.1.2",
+      "tag": "nvdriverforge-v0.1.2",
+      "status": "prepared",
+      "release_url": "https://github.com/Zendo-GIT/NV-Laboratory/releases/tag/nvdriverforge-v0.1.2",
+      "release_date": null,
+      "assets": [
+        {
+          "name": "Licenses-and-Credits.zip",
+          "bytes": 37499,
+          "sha256": "72cd7562fcab7b9053a16863b3a04609afd7ed813be718cf312848149c222c2a"
+        },
+        {
+          "name": "NVDriverForge-Setup.exe",
+          "bytes": 58828800,
+          "sha256": "a21ff4b5d94fb5964243c75f6890875d2504a6b8a47cc3f82e71557791b4e7ef"
+        },
+        {
+          "name": "NVDriverForge.exe",
+          "bytes": 141525846,
+          "sha256": "09a8a344d43c195d992c70db11a161656f8d1de82e441ac4f93a638a2350f555"
+        }
+      ]
+    },
+    {
+      "id": "nvmfg-unlock40",
+      "anchor": "nvmfg-unlock40",
+      "folder": "NVMFG-Unlock40",
+      "name": "NVMFG Unlock40",
+      "version": "0.1.1",
+      "tag": "nvmfg-unlock40-v0.1.1",
+      "status": "prepared",
+      "release_url": "https://github.com/Zendo-GIT/NV-Laboratory/releases/tag/nvmfg-unlock40-v0.1.1",
+      "release_date": null,
+      "assets": [
+        {
+          "name": "Licenses-and-Credits.zip",
+          "bytes": 50418,
+          "sha256": "92b8b0afc5551b8f819928850baead5075d939cdf996368a20ef4863f1bbb47d"
+        },
+        {
+          "name": "NVMFGUnlock40-0.1.1-Portable-x64.zip",
+          "bytes": 96925088,
+          "sha256": "3f38239262f1837e4fbe926c2c7a3e2b42fede1598dd4d2f9645edca095969a6"
+        },
+        {
+          "name": "NVMFGUnlock40-0.1.1-Setup-x64.exe",
+          "bytes": 96195049,
+          "sha256": "ec464ed84a5e4d7dd2315c82fb674f9c4d103ae8db52dbf6d218732de404b20c"
+        }
+      ]
+    },
+    {
+      "id": "nvrasterpulse",
+      "anchor": "nvrasterpulse",
+      "folder": "NVRasterPulse",
+      "name": "NVRasterPulse",
+      "version": "0.1",
+      "tag": "nvrasterpulse-v0.1",
+      "status": "prepared",
+      "release_url": "https://github.com/Zendo-GIT/NV-Laboratory/releases/tag/nvrasterpulse-v0.1",
+      "release_date": null,
+      "assets": [
+        {
+          "name": "Licenses-and-Credits.zip",
+          "bytes": 12807,
+          "sha256": "6b64ac5a4ec052bef6dbf3c517ef2aebcd94355c806bb1f2cf8f7690214d6588"
+        },
+        {
+          "name": "NVRasterPulse-0.1-win-x64-portable.zip",
+          "bytes": 278085,
+          "sha256": "551163ac9c2842a299fdee7aa12025c5c3141457fc7b4ceab843a6a96d893358"
+        },
+        {
+          "name": "NVRasterPulse-0.1-win-x64-Setup.exe",
+          "bytes": 2842112,
+          "sha256": "a9471060c485306d44060a4d4f021086a3db14180fe0d9241323dbd1f305628b"
+        }
+      ]
+    }
+  ]
+}

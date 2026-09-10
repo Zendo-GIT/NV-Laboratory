@@ -1,0 +1,40 @@
+name: Feature request / Proposer une fonction
+description: Explain a useful improvement for one program or the documentation.
+title: "[Feature] "
+body:
+  - type: dropdown
+    id: project
+    attributes:
+      label: Project / Programme
+      options:
+        - NVIDIA Profile Inspector – NV Tools Fork
+        - NVDriverForge
+        - NVMFG Unlock40
+        - NVRasterPulse
+        - NV Laboratory documentation
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or motivation / Besoin
+      description: Explain who needs this and why.
+    validations:
+      required: true
+  - type: textarea
+    id: feature
+    attributes:
+      label: Proposed feature / Fonction proposée
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected workflow / Fonctionnement attendu
+      description: Describe the user-visible steps and result.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives or constraints / Alternatives ou contraintes

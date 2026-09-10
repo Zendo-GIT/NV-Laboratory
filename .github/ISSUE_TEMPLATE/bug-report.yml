@@ -1,0 +1,77 @@
+name: Bug report / Signaler un bug
+description: Reproducible problem with one NV Tools program.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For vulnerabilities or dangerous privileged behavior, read SECURITY.md first.
+        Remove personal paths, tokens and unrelated details from logs/screenshots.
+        Pour une faille, consultez SECURITY.md. Masquez les données personnelles.
+  - type: dropdown
+    id: project
+    attributes:
+      label: Project / Programme
+      options:
+        - NVIDIA Profile Inspector – NV Tools Fork
+        - NVDriverForge
+        - NVMFG Unlock40
+        - NVRasterPulse
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Application version and edition / Version et édition
+      description: Exact version; Setup or portable; include asset hash if useful.
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version and build / Version et build Windows
+    validations:
+      required: true
+  - type: input
+    id: gpu
+    attributes:
+      label: GPU model(s) / Modèle(s) GPU
+    validations:
+      required: true
+  - type: input
+    id: driver
+    attributes:
+      label: NVIDIA driver version / Version du pilote
+      description: State unknown or not applicable rather than guessing.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce / Étapes
+      description: Include RTSS version for RP; game/provider details for MFG when relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior / Résultat attendu
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed behavior / Résultat observé
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant redacted logs / Journaux pertinents anonymisés
+      description: Optional excerpt. No driver/game DLLs, full registry exports or recovery archives.
+      render: text
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots / Captures
+      description: Optional. Check all visible windows, names and paths before attaching.

@@ -1,0 +1,29 @@
+NV Laboratory – license scope
+
+Copyright (c) 2026 禅堂 Zendo (RevoluSound Team)
+
+There is no single license that relicenses every program in this repository.
+
+Original hub documentation and repository validation automation are covered by
+licenses/HUB-MIT.txt. Copied third-party notices, original packaged documents,
+screenshots of separately licensed software and third-party components retain
+their existing terms.
+
+Application-specific scope:
+- NVIDIA-Profile-Inspector/LICENSE: the supplied MIT license of the fork.
+- NVDriverForge/LICENSE: original binary distribution permission; private
+  application-specific source rights reserved, third-party rights preserved.
+- NVMFG-Unlock40/LICENSE: existing compiled-package sharing permission and
+  separate third-party terms; not a blanket MIT license for NVIDIA SDK material.
+- NVRasterPulse/LICENSE: the supplied MIT license of the application.
+- THIRD_PARTY_NOTICES.md and the LICENSES directories: component-specific terms.
+
+No NVIDIA driver, NGX model/provider, Streamline runtime, RTSS binary or
+NVCleanstall binary is relicensed or distributed by the hub documentation license.
+Application source is not included. MIT itself does not require publication of
+source, and this repository's private-source policy does not narrow MIT rights.
+
+Français : il n'existe pas de licence globale remplaçant celles des logiciels.
+Les documents originaux du hub et son outil de validation sont sous MIT.
+Les conditions propres aux applications et aux composants tiers sont conservées
+dans les fichiers ci-dessus. Les sources applicatives restent privées.

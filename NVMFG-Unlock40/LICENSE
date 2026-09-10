@@ -1,0 +1,25 @@
+NVMFG Unlock40 – distribution scope
+
+The existing release notice states:
+"The compiled application package may be shared with its documentation and
+license notices. Third-party components retain their respective licenses.
+No project source code is included in this release."
+
+That permission is preserved in LICENSES/ORIGINAL-NOTICES.txt. It is a permission
+for the compiled package, not an inferred open-source license for original
+application code. Authorship of the adaptations: 禅堂 Zendo (RevoluSound Team), 2026.
+
+The MIT terms for RTX40MFG-Unlock, the Profile Inspector wrapper and eligible
+Streamline headers remain in LICENSES. MinHook/HDE retain their BSD terms.
+Microsoft runtimes, Inno Setup and NVIDIA NGX SDK material have separate terms.
+
+NVIDIA SDK terms are not replaced by the MIT license of another component.
+The full NVIDIA RTX SDK license is in LICENSES/NVIDIA-RTX-SDK.txt.
+The unresolved technical-limitation restriction is recorded in
+../docs/provenance.md. Presence of these notices does not certify compatibility
+of all uses with NVIDIA's terms.
+
+Français : la permission existante autorise le partage du paquet compilé avec
+ses documents et notices. Elle ne publie pas les sources et ne transforme pas
+les composants NVIDIA en composants MIT. Les conditions de chaque tiers
+restent applicables ; la réserve signalée dans la provenance n'est pas résolue.

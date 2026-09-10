@@ -1,0 +1,294 @@
+{
+  "reference_commit": "4e776d068f91b4a665425542bb005dd57cc3d891",
+  "files": [
+    {
+      "file": "backend_bridge.h",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "27acc6634610abb21d3a50488691d823b894e29c53ba07616f0a23a7b8d30f48",
+      "upstream_sha256": "9ce222ac4aede69fb2d63d57a25b710d46cef9daaa54eca02ce0b021d1b0bffc"
+    },
+    {
+      "file": "CMakeLists.txt",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "0fc496bd33022a5fe39265de41da9a6e981a1fee1b49aa08648fa999a633d40b",
+      "upstream_sha256": "57c63837aa0e4b679eeaae0582596648a320e53a86ca424a8a2749c2199a2b1e"
+    },
+    {
+      "file": "dlssg_provider_policy.cpp",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "95748b256f14bcf37026ace93fe31f5f254385ba4ec8a3c6adf5286f26b51daa",
+      "upstream_sha256": "bbe292b8c309918f1820dd0a9c27321ca932a42af5bf997764808085448d00a2"
+    },
+    {
+      "file": "dlssg_provider_policy.h",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "a5826300cad90f3c41d2e3cdc538c297a16b7396ef48a5c435e6d3ee15af07cc",
+      "upstream_sha256": "60c5e9b4ef8b2cb541242f456a85f76cf056c350aeaa5723be448a973e08fe0d"
+    },
+    {
+      "file": "entry_detour.asm",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "db89fa2ed7ae0786cc3b64844ea13423dc01a4fe68b927c44fa31ad411f0875c",
+      "upstream_sha256": "5613d3254f6e1d5c65a557b088fbb588cf9a30195e4375f720a36835e3b06094"
+    },
+    {
+      "file": "entry_detour.cpp",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "9915ed6a8f354ada6736b6c19c77dbc453e2e77f83c7af7adedff6cd71fc52fc",
+      "upstream_sha256": "7736bc468bb6c80e2dee66080b583937bc49e11a88278a30326f68ff2e4ec764"
+    },
+    {
+      "file": "entry_detour.h",
+      "status": "modified",
+      "local_sha256": "38d591574f529f5f8d8fb7d35d1a664d8d512bc7ecbe4792c089501cba224747",
+      "upstream_sha256": "119571b9bcb3180755e5569462400c2b24ab36687daa92b2f6d3a07f236a3277"
+    },
+    {
+      "file": "game_selection.cpp",
+      "status": "added-relative-to-reference",
+      "local_sha256": "ea8d79ebc38918bda31b7f1b460b33ac5950fb1a8f90167b906da274aa3d8942",
+      "upstream_sha256": null
+    },
+    {
+      "file": "game_selection.h",
+      "status": "added-relative-to-reference",
+      "local_sha256": "80dbc6cf11848e033a86d334c4441493c0602215e5258e765a98b15ce09e7f3c",
+      "upstream_sha256": null
+    },
+    {
+      "file": "loader_shim.cpp",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "1bc05552ceb405f65fc1832078868d7bff76f1acfded4e4ef10ee77b5365519a",
+      "upstream_sha256": "4fadeac19edf5ea53f2708073d88ee9691013b322193a06993d32e9a03e7c00a"
+    },
+    {
+      "file": "midpoint_fix.cpp",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "13cc9bbd57898294d750662cd9542a2636cacc74c77e106aeda868522ca15b15",
+      "upstream_sha256": "bef2f93611e1f1837549240e1a5c5e01fc0470caee267e4c1943b9cc41180067"
+    },
+    {
+      "file": "midpoint_fix.h",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "ed556e01d513b51658625a34c7e737e78b4905cd829de80f5a40c2c5d4c38bf0",
+      "upstream_sha256": "5896aa7ac254ae4532317456862452065cb12ba71ad7bcddd556fb81ddb786a5"
+    },
+    {
+      "file": "ngx_bootstrap.cpp",
+      "status": "added-relative-to-reference",
+      "local_sha256": "f7f2214671c4ae3f8bc9b797ddd346c7491ee5f12c3cacfaf876ae6ecc6894ea",
+      "upstream_sha256": null
+    },
+    {
+      "file": "ngx_bootstrap.h",
+      "status": "added-relative-to-reference",
+      "local_sha256": "fcb89ddcecdda672637abca3ee6d383986c756688b9b6271eab012c5ba21860c",
+      "upstream_sha256": null
+    },
+    {
+      "file": "ngx_capability.h",
+      "status": "added-relative-to-reference",
+      "local_sha256": "01c2dcb438e14a8e829daf617c955c3a41eb0fc43bc57d2472f7149a3ad2a0f8",
+      "upstream_sha256": null
+    },
+    {
+      "file": "nvidia_mfg_manifest.generated.h",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "2aa0719f5f21925d92648a4d1f00009924b22ce0c53888d2ff0bae08fe544d85",
+      "upstream_sha256": "6ce85392c0053a359c5d6741b8dc0e9b35902599ae64c653d1f337d0862156ff"
+    },
+    {
+      "file": "nvidia_mfg_policy.cpp",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "0775d2481ae0aa7a82bf7e8f62ffd69334d5553f5d0cd300cecca3ab5aef2c2d",
+      "upstream_sha256": "4df32859f033423b34a7b8f1ff8211f724c9766985b188af2476d62b342a0d01"
+    },
+    {
+      "file": "nvidia_mfg_policy.h",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "7be689fdc559acd7fd9f529c4053e46f0bd9f1e8a1131999897c018c7e76680c",
+      "upstream_sha256": "a64de7e3134c0b804e5e6f0533e9b5fed4dc18325c57d8132612110c7e9a95fa"
+    },
+    {
+      "file": "patcher.cpp",
+      "status": "modified",
+      "local_sha256": "c7cacefa4caff79fb2b320f09adea288f53e73908d8bc4df7129654d4d749646",
+      "upstream_sha256": "5757a46c36a2a9b41f6fe05014fea9f6a0d60b57209c0083e3ddd1df5281a1d4"
+    },
+    {
+      "file": "presentation_tracker.h",
+      "status": "added-relative-to-reference",
+      "local_sha256": "c3edc54da94e19f18f9950d0182fa313f5b443da33886af48d17191973bf179c",
+      "upstream_sha256": null
+    },
+    {
+      "file": "reshade_bridge.h",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "d5f342cf0399d407cee01c37084f79763751157417d4d3d7e129da28c1ab5910",
+      "upstream_sha256": "aa7e497dba90ccf73112eae3dd916da0c6d75a5a23aa978f01067e233754d0d1"
+    },
+    {
+      "file": "reshade_frontend.cpp",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "dde826c583b4ea2a1c9558fa026f121d56e225ee0e6132add3891edf03d8b68c",
+      "upstream_sha256": "53926a8384b36924ec17be8683cb679b528eb2d4c8d7872e365b4b26a90914e8"
+    },
+    {
+      "file": "reshade_frontend.h",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "1d836daa74ec4552d13d013a71bf5799f389d8f6d2e96925e539ffa33efc9439",
+      "upstream_sha256": "6aea3611ee7c2621e8232ef87876f954ce01f802f5c177d184996db7e1f2b895"
+    },
+    {
+      "file": "reshade_frontend_entry.cpp",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "2f55628c3038dea3aadecbe49157d58aa211260ed05d53639ed198cc5450f476",
+      "upstream_sha256": "2bd690ce198a111c22df56deb7b34dc7e4e8068ce8355a54b5110c64bcb10e9f"
+    },
+    {
+      "file": "reshade_ui_version.rc",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "754378138eca8dfaf0cd4b566f3b8f0a8e6bfa5e0e765a0d5c4d7160b84c5712",
+      "upstream_sha256": "3fb4faa65f4c91b35726f4d94004595a62fb2a5e220a37cacf34a222c4d78434"
+    },
+    {
+      "file": "selective_ota_wrapper_policy.h",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "4af5f431307994d1e4209019fcb0022fad12c75d17339a8151798390b903d330",
+      "upstream_sha256": "5a5a9a27e2a46240557b7b0b08727f149c7bd771d3360e916964c1b064385065"
+    },
+    {
+      "file": "shared.h",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "347f6e212c35eb7861d6b0a38228eb1c5df4480343165cef73f6d93116be3fa2",
+      "upstream_sha256": "1c89f820fc102ba5e9b6e1110ebbafc65912a7ae010c314947dbd2bdfef6192f"
+    },
+    {
+      "file": "streamline_ota_policy.h",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "194510fa70d6e732040811f278a09e00e50ae7bb776cf7fa8ed0d73d6e9c8488",
+      "upstream_sha256": "8a5ca3419f07bf809695317960bf13e9d2b42b851205349c44d27dd988a7b8ae"
+    },
+    {
+      "file": "temporal_interval_trace.cpp",
+      "status": "modified",
+      "local_sha256": "e1a7ed0e9df57293a8e731931b63206e6f231bdf9401c8aaf1df6799bd8ad9a9",
+      "upstream_sha256": "3b642c053f1e0393c742e4772d9cdbce1573a24cb15e5dd77760b22ecc30f751"
+    },
+    {
+      "file": "temporal_interval_trace.h",
+      "status": "modified",
+      "local_sha256": "4244d4fdeb9ee72ca03588caeca4802569a85c2f6895e240c35421f54cad3455",
+      "upstream_sha256": "2815ad05e6d619aa4265d9b4433b14a1b0df3c476ae32afced15e2716d348b5f"
+    },
+    {
+      "file": "third_party/minhook/include/MinHook.h",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "9acd5dd3cb25681594166a8aa56e8e45f204382bee93763745a5fdfd3ab39d18",
+      "upstream_sha256": "37f00f5780573b75826a9ba4f3eafd18a771e30bfa156a350a846adec4bdbc3a"
+    },
+    {
+      "file": "third_party/minhook/LICENSE.txt",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "4f21f857550d7be854da6ea5f2da4e6775ca4e3fbb535e4f3d961c47d0bf3335",
+      "upstream_sha256": "d5c2224982b0b95a16b098a561335fa93f3eaf4d0aa964b7843edb986df78dc8"
+    },
+    {
+      "file": "third_party/minhook/src/buffer.c",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "2e920ea8c9bb3c5ae1e6f559a4a013e83931396ef2f151338d7de6fc9ae3fa54",
+      "upstream_sha256": "264518ef018e0b8b1b37e75be7773a9dc39d98a0d57eb705e4769d2bc5aa5f83"
+    },
+    {
+      "file": "third_party/minhook/src/buffer.h",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "175ec5496c020509cf4c7670322b51b5bcd5b63a345bfefc4a19b43675857fa7",
+      "upstream_sha256": "9769702bd625249e59a19ede05c84365fcc7707e1fa0e5df08df42227cee13e3"
+    },
+    {
+      "file": "third_party/minhook/src/hde/hde64.c",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "4f699b1fd474b530271fd9a12a663cc525703aa7bf89c1919fed5a9d5ebc78b6",
+      "upstream_sha256": "338f3124469ee1278dd51d3efb4a58dad42ff215cfd9f1aa8bfd160da830f7f5"
+    },
+    {
+      "file": "third_party/minhook/src/hde/hde64.h",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "fd5b39e2865e12b9525ebda8fd9e9658b341ead5932d1bcb412a189f81ca42ca",
+      "upstream_sha256": "e99aa4997bda14b534c614c3d8cb78a72c4aca91a1212c8b03ec605d1d75e36e"
+    },
+    {
+      "file": "third_party/minhook/src/hde/pstdint.h",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "975488009779ea99c7e04b83a160397d5cd7195cb5bf6ad79180805f756c7d00",
+      "upstream_sha256": "604d1cdf45c5a95bc9cf1bbf39ca05ef83013541101d34971c5cd7577e3d5247"
+    },
+    {
+      "file": "third_party/minhook/src/hde/table64.h",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "0b6c69ad498e67907e0c574ab06123aee4ec30c99fa181099ea929a8d820bfc1",
+      "upstream_sha256": "b774446d2f110ce954fb0a710f4693c5562ddbd8d56fe84106f2ee80db8b50a2"
+    },
+    {
+      "file": "third_party/minhook/src/hook.c",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "3c7a77fabae8584ecd260251fd975e3131a19c0b236130b41a242ef8d12d1dc1",
+      "upstream_sha256": "68f8a4784cc783754ba436dcbcfd367480ab042248a89338aec8fb0954c4d6ca"
+    },
+    {
+      "file": "third_party/minhook/src/trampoline.c",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "0001e58564505c330eb54083098fda9c130b3aa146ce42d0e7d6b947e7210075",
+      "upstream_sha256": "146215967881eec554918a34ede20db9a20b7165431a08c82ad5a7ed84c1ab93"
+    },
+    {
+      "file": "third_party/minhook/src/trampoline.h",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "23681f7768d5dbd23ea14b45ba64e488a337501f23122253c532b05dbed4b85f",
+      "upstream_sha256": "53ed9934492320617a27bfd952ffe7f5b7a4a1d09963d4512447082fe7b727b4"
+    },
+    {
+      "file": "universal_route_policy.h",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "60c3c01e4a9ed42ac72f8ee682c92f4513f090e463908d6463c8f078713af7dd",
+      "upstream_sha256": "7699d77d856ac2f87a8a15bd05d4520c98d3f6b33e4d5ea7d4c6cb0b9c94b0cf"
+    },
+    {
+      "file": "universal_wrapper_profile.h",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "d912a049a0d47af8ae1885e47b4c38a2216fcdcce1808f149f286106ecfd6858",
+      "upstream_sha256": "e5bc6521766aaee564d38ba941bdd54dd2fefc1ed17848a42a0dcfa0d17b6311"
+    },
+    {
+      "file": "UPSTREAM-LICENSE",
+      "status": "added-relative-to-reference",
+      "local_sha256": "8cd8901b591b4c45f7f0f05d2248fb3b362d4769a338d8494a427fd74b6bc0de",
+      "upstream_sha256": null
+    },
+    {
+      "file": "v1_2_core.rc",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "7c8433fc5c6ef5f1779165fb53b46cfac78c866cf86026071885e86bbbb28fb3",
+      "upstream_sha256": "ec7048dc9b81a493480f06155314c82e1b2f095ec783dae56b1b06d9f737027f"
+    },
+    {
+      "file": "v1_2_shim.rc",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "a0fb52a25645f102bf614ee72d08ab4d7422119d9157a38f2681b2b20a9f3ef2",
+      "upstream_sha256": "a7e18b14dd474e5f44a7b79607d46f0c3d5c1d48ad59ccc03f5a1c2fe2532f8d"
+    },
+    {
+      "file": "vsync_observer.cpp",
+      "status": "added-relative-to-reference",
+      "local_sha256": "bbfd253aaa6deb8ccb7a5eafa52d702274f2886fe7ea6933471f76ceb33cb7a7",
+      "upstream_sha256": null
+    },
+    {
+      "file": "vsync_observer.h",
+      "status": "added-relative-to-reference",
+      "local_sha256": "b484044f8b76d4b3e72ed8aca5af717eb671fd0dda64fc5788cb35d5585d93f5",
+      "upstream_sha256": null
+    }
+  ],
+  "comparison": "Byte hashes retained; only CRLF/LF and optional UTF-8 BOM normalized for the separate formatting-only classification. Added means absent at the reference path, not proof of original authorship."
+}

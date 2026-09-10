@@ -1,0 +1,23 @@
+NVDriverForge — Public binary distribution
+Copyright © 2026 禅堂 Zendo (RevoluSound Team)
+
+Use, copying and sharing of the unmodified official NVDriverForge executables are
+permitted, retaining their version, risk and license notices. The portable embeds
+these notices and may be shared on its own.
+
+NVDriverForge-specific application code is not released under an open-source
+license. This binary distribution permission grants no license to that source code
+or right to represent a modified version as an official release. Other rights in
+the application-specific code are reserved, subject to mandatory applicable law.
+
+This application contains experimental features. It provides no guarantee of hardware
+compatibility, performance gains, stability or anti-cheat compatibility. Warranties
+and rights that cannot lawfully be excluded remain applicable. Keep backups and
+read the warnings before installing a driver or enabling an experimental option.
+
+Third-party components retain their own licenses and rights. This notice does not
+restrict the rights granted for .NET, WPF, 7-Zip, the NVPI themes or optional NVPI editor. Their credits,
+licenses and source links are included in Licenses and credits. No NVIDIA driver
+package or keylase patch data is redistributed inside the application.
+
+NVDriverForge is independent of NVIDIA, TechPowerUp and the keylase project.

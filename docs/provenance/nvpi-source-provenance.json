@@ -1,0 +1,948 @@
+{
+  "reference_commit": "592d962cca8827efe8859461a84267755595064a",
+  "files": [
+    {
+      "file": "app.manifest",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "7da13827a519d579d240e913968a24a207debee01c2861874639df846c14d56a",
+      "upstream_sha256": "3ad1ea149fb895f9cc5d983cdbc2ae0169055a1cfd2f18f435a93b83ef5ca092"
+    },
+    {
+      "file": "App.xaml",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "5c3d14758dc9be3cb4000c6ebf1c101a58bd262ec3dea45dee3ba7af43a20373",
+      "upstream_sha256": "cc4605a758a9e2a11b9079bf7bdbb94eff4bfecff98d622c57d9c521c6bbd68e"
+    },
+    {
+      "file": "App.xaml.cs",
+      "status": "modified",
+      "local_sha256": "778bd6e1f29f52ddb13d326a56320e6aa3d8a432c68d02aedfd14619078ad0d7",
+      "upstream_sha256": "b9cb8130259e3556562894f0a16ff73054ae5b5488f491c6e363d77d71bf0103"
+    },
+    {
+      "file": "AppBootstrapper.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "dda0d2e91ea71f00b05049907d19eb94cdd310cfb2ca9ec3708bb5a1b05fafc3",
+      "upstream_sha256": "e332d1185b38fd6a7addbd4c6a10909b977088b8f123f11abbb696d5e200c74a"
+    },
+    {
+      "file": "Common/Cache/CachedSettings.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "cd2dfbf04df5b6f85bf3d430bc800d3a1de49df65b8cd5036758942f8c09c518",
+      "upstream_sha256": "4bb7a7ed3385a07b8f76ed631779f713b1865cd888fa19b39e33b7cb744fb47d"
+    },
+    {
+      "file": "Common/Cache/CachedSettingValue.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "a6c85cdc9fd9baa7b2e4ab1641ca52ebeb1ad560b4ee706065536a01b1d36e75",
+      "upstream_sha256": "f9e117d733e43a2ab6f1188b0239e720c62ae51595bd1d5d86c7971317b11bc8"
+    },
+    {
+      "file": "Common/CustomSettings/CustomSetting.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "b0cb7b022b65c15156f98efda6f0dcd15a92cde59547b848104ef4313f00e381",
+      "upstream_sha256": "6b2af3265e99ca37a45a92948f8e77aea26d3b777c92494f4b3dc5538b72fff3"
+    },
+    {
+      "file": "Common/CustomSettings/CustomSettingNames.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "7aee829befa9b7c4c465c8956c2ee1cb5f55885acb6908cadc22df0c5a09dd78",
+      "upstream_sha256": "4ee863400f6a721de3e0c2c7224db382e8b57d4aa7a89e1add6405f397738c8f"
+    },
+    {
+      "file": "Common/CustomSettings/CustomSettingValue.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "9a33c2c04c213fa2e17bcd0c4fb51654d487d2e29df6d76f22ed1d1d7cf97b21",
+      "upstream_sha256": "67a721de25709a4a5c8f13e28b2a3f482b11139589d83de48b93c370a43462d1"
+    },
+    {
+      "file": "Common/DrsDecrypterService.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "69ed58eb1ac2900bddc49691562d9fcc1655a4d89de28effdb0321002084cafa",
+      "upstream_sha256": "31b18496766235be147c864e321b93b1c8b961cf6445b0291684880738a2ae49"
+    },
+    {
+      "file": "Common/DrsImportService.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "7c5595b27cf6f28e1f4583f3ae8db0c2a2cf742aa892566774d4675bc0426ac4",
+      "upstream_sha256": "8a761b5493b6691d17e56279e00c31a36dc89ad4c90ea5be1843a45cff0354ed"
+    },
+    {
+      "file": "Common/DrsScannerService.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "3e077201a63a48c909c0204003b4de405e299f8034f31d1c370c3feeabd95320",
+      "upstream_sha256": "7be5f4669a8ed6df32e8ea94a925c7299ad30c0c51da08b1d90f8c1edb807cc0"
+    },
+    {
+      "file": "Common/DrsSessionScope.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "1ed10c614c0fe7a30d5d0d41ee77db973d53832afe7548172639899d28a5e993",
+      "upstream_sha256": "e33f4197e0201438a6aa06c34a3a91b038ee2d3e3055772c144d0799157d14ad"
+    },
+    {
+      "file": "Common/DrsSettingsMetaService.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "8489ee498326e29e510a1911ffa3284a599b48aa709880ee0e3c520bbf834561",
+      "upstream_sha256": "aefc602a46eb63d6e203006c6b2d4944fb9b94d618adc525353841d87f360843"
+    },
+    {
+      "file": "Common/DrsSettingsService.cs",
+      "status": "identical",
+      "local_sha256": "7dcf49298e23eb557f17e40bf8b5222b1fc818086408ae4995e7ae544fa9fe75",
+      "upstream_sha256": "7dcf49298e23eb557f17e40bf8b5222b1fc818086408ae4995e7ae544fa9fe75"
+    },
+    {
+      "file": "Common/DrsSettingsServiceBase.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "2ec9ef33dd8e61ce74415c1f0fefe9cd73b7c547e523180fc0410cc2f4d3b2e2",
+      "upstream_sha256": "b82f8abd411de99221f88cf8375961b2bc5311ce47bf13cae5d59527b49707c0"
+    },
+    {
+      "file": "Common/DrsUtil.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "860c2789a48c9644e9cc0934e417cd72ac0ff5efc0d5e526c704f97e09c08b39",
+      "upstream_sha256": "030b3bd7c6b3de4628bd2efdc579605359467af29fee34be25461520a9dcc27d"
+    },
+    {
+      "file": "Common/Helper/AdminHelper.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "e72fc1d24510bfa57b1e414a098e0f8e85b63e5e62bc7076d595a1615664a101",
+      "upstream_sha256": "1ce38d5fb5af0d2a183e96149cd37588b2700d6a55db176b999f764aba2729e0"
+    },
+    {
+      "file": "Common/Helper/DlssHelper.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "5192b090199e2044d9b0dbbfc4c4c44841db61f81c78477907c811a45a6cb2ad",
+      "upstream_sha256": "61d60320173cd0c79c3f18b92b247fb7c0743a988e0b2de1c482165219f434c5"
+    },
+    {
+      "file": "Common/Helper/EmbeddedResourceHelper.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "9d7e54d913482f90f6509e5d46c1137c50979350520b8cc7b63dbe91a32e0317",
+      "upstream_sha256": "a9d61ecaa028a947fdef12dda2fa50095e29c92dab50240a4ebcbf33dc3a6474"
+    },
+    {
+      "file": "Common/Helper/EpicAppResolver.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "3c1abe06c105fecc4607f8733db8930a5b43dd0f57e94a35be1fede2a356a7f7",
+      "upstream_sha256": "b0ca789cb360e809054536f8c42797544808fec2b6ea4ad7152fd321f01c24d5"
+    },
+    {
+      "file": "Common/Helper/FileAssociationHelper.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "74ea50a1d95cb691a98dc8b5398598e744afdb285efdec1f54bd3d5722121ce0",
+      "upstream_sha256": "2bda5bacfa2da1866894cb77dc933890071eaec11b405d8d067cf8a0bcbfb00b"
+    },
+    {
+      "file": "Common/Helper/ShortcutResolver.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "dbe8cfa867997f492e7d229ccbdd1869c2b1f72796361227ca67929a0ad23178",
+      "upstream_sha256": "57a9e5461c93169f3e5555c6504c1ddd625247e20cec44a2d12da7457542f8e0"
+    },
+    {
+      "file": "Common/Helper/SteamAppResolver.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "2033b4a763ecb543f0ec09403b5f1ec6046dfd556b9097bc56be066d8b497022",
+      "upstream_sha256": "51f0170828f563ce09a3544c386c959c377a59c773cccf4eedd24f582994b538"
+    },
+    {
+      "file": "Common/Helper/TempFile.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "cc4e79f774469a7b2a215fc83380db6d1bdbdaa4116a042e57cdca2bf6900828",
+      "upstream_sha256": "8e4086ec0782cafa6d9447d266a2fdb31ec59c2fa9823ebc56094abdacdff4dc"
+    },
+    {
+      "file": "Common/Helper/UserSettings.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "6772a9922ff7671c11723cd033d592c303f55f40c6fac0af029a0ba6a4282a2d",
+      "upstream_sha256": "b0801fde37a13f73ee5fcbaf7b4e2f7b22b6a77469fa6a08020594e61de2f834"
+    },
+    {
+      "file": "Common/Helper/XMLHelper.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "b242debf042e95cd77dc3e57764ec18edc748fd9a9ab04c948a25be88f3d84cf",
+      "upstream_sha256": "de34bb57be7581b03e5c0843dfe2ad8779fcd3981d32ee14883b4478d97f0d4b"
+    },
+    {
+      "file": "Common/Import/ImportExportUitl.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "56c5da253c4c88b4247d81354f2b5d92048e1487b8e0a6f247370435437a85d2",
+      "upstream_sha256": "67239de4fa7cca8975c8a35d3cde2144457fbab324284a3ca3f9536548576eb1"
+    },
+    {
+      "file": "Common/Import/Profile.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "8185f055bffbb1f2a11268384d691c0bf662300d392c59733d3cd928dac8dbe7",
+      "upstream_sha256": "15fc5158529d20dd4af2b143dcfe0a3868f018b2689f5c059fb7618a55395c74"
+    },
+    {
+      "file": "Common/Import/Profiles.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "0c07bb273265135e76df0bf6be9a7eb4c7d47dcbd581d9a7f2853625bb0d01cd",
+      "upstream_sha256": "7cfaf2f0f86eee049b8a91fa55e22e3f1b857ecc30b2ae0ac9bf73983188be8b"
+    },
+    {
+      "file": "Common/Import/ProfileSetting.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "7818daabee112f786c7ab314713efd1023cf25e249c034cf81b4b010c7005e3a",
+      "upstream_sha256": "805b4a56849f50d1a3b54c0a230ec05229b9121e13f28beec5fe38666623e2c7"
+    },
+    {
+      "file": "Common/Import/SettingValueType.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "985a5843c9bf0789b97b5465f6985e7199077e265d102ed9fa8c0a9076ed9791",
+      "upstream_sha256": "819acad8c0d3b3d6cfc171ae60eeebc3a406ed59634c641c587976d0766c6f8a"
+    },
+    {
+      "file": "Common/Meta/ConstantSettingMetaService.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "6ef68834cc69b06dd3e8d51be950949ba5e2ee2d10c511f7fbb043b8b589c3b8",
+      "upstream_sha256": "794a817692596b715eb0d8da1c3bd532a41e848e02e19e030e2e726ac4c32e21"
+    },
+    {
+      "file": "Common/Meta/CustomSettingMetaService.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "be4316d3c22216616988896f1c92ace12d18b88cb2b24fc5d1e7847c80d0b1b2",
+      "upstream_sha256": "7e1668835b6917d5d1da8d658e5c759bedd4bee47db34e2708eb250fdefff2d6"
+    },
+    {
+      "file": "Common/Meta/DriverSettingMetaService.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "42dbcc829004d3006b57465a68231720bb2c0cc35fb8ac4e3ebfd055e374aa79",
+      "upstream_sha256": "b56d1c09db74b598deda8e65d4e4f71a0717af8fe2ab4ddff619fbc33eab9953"
+    },
+    {
+      "file": "Common/Meta/ISettingMetaService.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "ed4e004ac5e6b9e1cbb90c59b725dbe19d8b29857b28cdaa0a21f784fddcd848",
+      "upstream_sha256": "7d8e9be11218e93ec112b33671fbd7bba448a147a010313e998f64d4c930c72b"
+    },
+    {
+      "file": "Common/Meta/MetaServiceItem.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "7f49be6e591b346acd88979413e259eae6a0aae16c12f5386882ec817443f66e",
+      "upstream_sha256": "3ab0edfccc48fa885e6356c7a4782554f042efc736faf79f31d37668419515d9"
+    },
+    {
+      "file": "Common/Meta/ScannedSettingMetaService.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "c76b07b3c8922b83989dcc38e7d35536faf88bde4656be19cf24b983a6cd5755",
+      "upstream_sha256": "edd51762a64a5ac61d78e58c4c0a29af91d2c386bd6e80a267baa76c6ebd01ac"
+    },
+    {
+      "file": "Common/Meta/SettingMeta.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "00af78eb10131d2339f32c56d6eb4591950f8bfd8175e49e263a38668198a18a",
+      "upstream_sha256": "769cbffa7be5b36108a9d82c9927f99a389f0a7ccf1238fa2ebd52fd8bb62e43"
+    },
+    {
+      "file": "Common/Meta/SettingMetaSource.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "8fac4db51ef1c45bd4c3214af3d636db8d29c79ef368c37123542d66727a5fdd",
+      "upstream_sha256": "fb5924fe455a3b91af13560bcf91d1dcb328c63918defe3cb5b5722c64ae9d99"
+    },
+    {
+      "file": "Common/Meta/SettingValue.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "14965eb0fe14c251872574b81339d53a28993dddf80dbd9a71219d2c079f55ff",
+      "upstream_sha256": "efb9998dec5a795c412ce5dc12d1f3638e12ba265fcc6ebf5a347f379abd663c"
+    },
+    {
+      "file": "Common/NvapiException.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "7f54ee60c72cc67798e5ae61715c55bddcd6a16535f667fa241dd76c150dd32b",
+      "upstream_sha256": "032503f3e8de88bbe6c0c041790a83d1da1fbd847bb96214fb81558fa84f452a"
+    },
+    {
+      "file": "Common/ProfileImportMode.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "42b7b34860c3dea2dc40c12c774cca6c1557b8f0ea7b62b1f7448ee5c365192b",
+      "upstream_sha256": "b4c70aace49f7c2dee3a12eae8d707186c12b382a8e7fe04ff4027d8c4989a14"
+    },
+    {
+      "file": "Common/SettingItem.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "d461a42a51fb4992c8a1f32c3fbf8770f16593041c707ac9728ffe8338523989",
+      "upstream_sha256": "ae0d356f917cc0c59c460840e58f75e4224a37dde56ad98754c2dd05e29ca2d9"
+    },
+    {
+      "file": "Common/SettingViewMode.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "d36f58f089b261048d9a6f3a36f23ee350df66e3991269032fc6df416d670480",
+      "upstream_sha256": "d34821dbf785fb6219096d1de7d5568efbb213544548d802c32f9303c12935a7"
+    },
+    {
+      "file": "Common/Updates/AppUpdateService.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "f0b7a37445afcb5f74ebb759a26e90a415a4e856cfedb6ef01a628ff03f66c9a",
+      "upstream_sha256": "7c99b81b25e7dbac9cdaf9446a27214ece7dbafaea56a3383a5a0c993595ddb7"
+    },
+    {
+      "file": "Common/Updates/GitHubReleaseClient.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "bd2c31fc9336d337d59ca1257a68eae2d316c9cdde80896221fb9b792ff82a8c",
+      "upstream_sha256": "69b6909170d66ea97f59faf2eedadf4760a3b8941d5bdcc35dd6100197d9f12a"
+    },
+    {
+      "file": "Common/Updates/InplaceUpdateInstaller.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "d63f1d0de8c1559dc0b1e1049a2be9257a69e5c9534fa25e3093996db6b95814",
+      "upstream_sha256": "6a857dbac41fe0ba1c64048803e93a678925429d9a8538b10c89696bc5954807"
+    },
+    {
+      "file": "Common/Updates/IUpdateInstaller.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "58a895744c8142907a489405278cbe0f18a605a6169b0bad47575231ca742dbe",
+      "upstream_sha256": "1e7bcf2531e813fb8c29ee4794e8d7108dfa2c9bd91616fcc91ec71d7b18bcd3"
+    },
+    {
+      "file": "Common/Updates/UpdateAsset.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "e9e2a85db3fbc112df72b2a5c9af67cf94c81da69b49dafa6a3035f28241fac5",
+      "upstream_sha256": "7e4d782c2ccb6c1206ec119ed3fda9b458c59605a9b94f17da98d28dca09b832"
+    },
+    {
+      "file": "Common/Updates/UpdateChannel.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "8b794653d64aea358a219267186f51d5940194adacf7275612d073be3be309ea",
+      "upstream_sha256": "1aaeedb7298d750ec3d85e6bc8eb70c019fa814ed323accb10e57ecea702c9eb"
+    },
+    {
+      "file": "Common/Updates/UpdateCheckResult.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "f366cfe23f23f7e9280f84a4f126915b1204d84f213cd3a3898e949c55dceeb0",
+      "upstream_sha256": "5132e1b70d4c7479c7cf8171aa59ad3c0076b4caecfd346290331a77bb27c815"
+    },
+    {
+      "file": "Common/Updates/UpdateRelease.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "f68e35bef061e3dfb812b4d7d25e875f178b81735b13de4dee332314ffe315c7",
+      "upstream_sha256": "3927d5f42a614c21022135859ef795ba456766c668387f054742d2d4af015e9b"
+    },
+    {
+      "file": "CustomSettingNames.xml",
+      "status": "modified",
+      "local_sha256": "499b8bb67dd15fa52a4b84abc080bab86a98ba2447efc9cc805fdb3c4607a4fc",
+      "upstream_sha256": "076e7798c439856de6b93a6d4f14330f985db83f77bc84bd5fbb1165ccb27a20"
+    },
+    {
+      "file": "DisableUpdateCheck.txt",
+      "status": "added-relative-to-reference",
+      "local_sha256": "c34c1beec2ff6543e1ab60672a2d626a6c3e210e10c08325accbf8ab4633f54d",
+      "upstream_sha256": null
+    },
+    {
+      "file": "FORK_NOTICE.txt",
+      "status": "added-relative-to-reference",
+      "local_sha256": "9a4e55577d14bfc48faa1e2c4a3251e65d4948a05d9fbf4bac273586a1666548",
+      "upstream_sha256": null
+    },
+    {
+      "file": "n1.ico",
+      "status": "identical",
+      "local_sha256": "33732ddd6af7c891c3f499ad21bed8e74fb3e89d82ac2c884b9964af5880a471",
+      "upstream_sha256": "33732ddd6af7c891c3f499ad21bed8e74fb3e89d82ac2c884b9964af5880a471"
+    },
+    {
+      "file": "Native/NativeArrayHelper.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "0e255f3d032e7e9aca2cd9eb5bcf8d02d6bbb6b4e7cd5d5a6c38bd4ce57d0e9f",
+      "upstream_sha256": "90154ace5c786f80a5fbc68078255ec24af1004fc961c44e6b11bdf5c524f4ae"
+    },
+    {
+      "file": "Native/NVAPI/NvApiDriverSettings.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "7770ef08fea57b7f84aeba6fac0ddcb0a0a5c663f9923a87fa655577e5972461",
+      "upstream_sha256": "032a69b92c07961b55a6c4764f55a9208813ff2dcf5e60814a508ff16106dfbd"
+    },
+    {
+      "file": "Native/NVAPI/NvApiDriverSettings.h",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "e819321dfb85eaf501f22f7aa1991cf6faf98813962c264da9e017882e423343",
+      "upstream_sha256": "52dc3fb385e19bce45c13896729071e01854d2a6756ec077172771502be0b9e4"
+    },
+    {
+      "file": "Native/NVAPI/NvApiDriverSettings.tt",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "843b6f8c60e0bd1f2b292f6ea353d58f0b60cbcf3b8235c2c0468fded4b546a1",
+      "upstream_sha256": "d58bec0bc73c6f2d740ba8878cffc47ad6f339d263b5e0d929a57bce650162c8"
+    },
+    {
+      "file": "Native/NVAPI/NvapiDrsWrapper.cs",
+      "status": "modified",
+      "local_sha256": "d1f3dc70bcc7f1bdb67f94d127ad6b75863417aff5bd7899946e0e7dfdccd746",
+      "upstream_sha256": "358aa7a671d687a9b27ca56e49541b595374dcd6cc43d588760893245471e2e3"
+    },
+    {
+      "file": "Native/NVAPI/NvapiDrsWrapper.Mock.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "d0c959373f01dcc4c2fcea90867c3ab3a0d5a7109571fc30bab7ca614eba6574",
+      "upstream_sha256": "fc85193fe6951a665314a8d2b6db31875ae8b31b8a3c0b74fa94992abaf95753"
+    },
+    {
+      "file": "Native/WINAPI/DragAcceptNativeHelper.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "d3ac554e5c704ffbcd965bd8661d1b87a8cff67fd6208264229b77729e03b774",
+      "upstream_sha256": "4b723eaa40d33e1378563715f16560cb10d6fa884bd3bd194a6444f719c7f02f"
+    },
+    {
+      "file": "Native/WINAPI/MessageHelper.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "982aea1706cc900580831a262bf67d1946ec78f6382859e4261050b657b5d025",
+      "upstream_sha256": "a84201fd2fe42399d8272c80dbd5266667912f838d4a8ae34eb78dae7dcc98fc"
+    },
+    {
+      "file": "Native/WINAPI/SafeNativeMethods.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "c19f0497336525aa269e356d4da2dd83dd5d83fcd8e0411149ee8322b94d7f1a",
+      "upstream_sha256": "e47bcb4b3fe9fa828c7cee7bf9e72ef256c84958b9f81ce5e99379497f2d5239"
+    },
+    {
+      "file": "Native/WINAPI/ShellLink.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "44ee2eecc5901c2d520f425178496c585b2ee99daea39bf95b72001b31d4a44d",
+      "upstream_sha256": "0715ddd6f1ba3398aad601c316bc47d79c8ba567afdd1630ea28237ef16fcfcd"
+    },
+    {
+      "file": "Native/WINAPI/TaskBarList3.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "93299eed5bbfed7bf0d9e0e24953553fc902fac7c01ad947ab700f6f87f413e7",
+      "upstream_sha256": "a999fcfdab5f867a060313df0a476d65ba7ced2a02077cb30a22b7b87094479c"
+    },
+    {
+      "file": "Native/WINAPI/WindowBackdropHelper.cs",
+      "status": "modified",
+      "local_sha256": "90745943fae2f72ca5ee2dc345c4032ddecc17a411f9a861c62fdfc4325f51e0",
+      "upstream_sha256": "1859a593cb533db7b4b20aaf5180fca33c65852b74690892f309f08b29e800bb"
+    },
+    {
+      "file": "nvidiaProfileInspector.csproj",
+      "status": "modified",
+      "local_sha256": "0f7c270fa28e032a8bc46abcdf0e9e5ec212e0c506d270fc8098d2580eb385d6",
+      "upstream_sha256": "17a3bd1a58ce86697fd6b2834653dda4ac3ad216ee85f45bbe7eac54c24de2b4"
+    },
+    {
+      "file": "nvidiaProfileInspector.sln",
+      "status": "modified",
+      "local_sha256": "13faaaa475185ad8a4934921fefbcfce0a3547cfbb8337ed21cafb26a5976528",
+      "upstream_sha256": "f7efeb9589b47301b17bdc278482b5230579707eb05e1a5114fcc795cb76a73c"
+    },
+    {
+      "file": "Properties/AssemblyInfo.cs",
+      "status": "modified",
+      "local_sha256": "d11c0faa72c86f9fac7081ab76bf5dded01c74ce437687f34b43d409f8fcb59d",
+      "upstream_sha256": "27f6d238211b009c466cf85e653fe75f3aeed21a12845b273870aadadf6a166e"
+    },
+    {
+      "file": "Properties/launchSettings.json",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "e4cd5b44bdc85c05ec0588958a50853bcb597befe31cdd832bca74b26ade1b5f",
+      "upstream_sha256": "b097fd039a18dd9f3cf63be841c3979a0f7fad3ae3b9eaa0f7130836105c6013"
+    },
+    {
+      "file": "Reference.xml",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "0ea7b055aee5c543047243d2dd7abdd1b8c6d96f5d2b7bb5fe17be8130e005ef",
+      "upstream_sha256": "c8140edf4438bce5c59ba6ba8f03f3de3ab35bf2dc75ba8f69d2627177022fdf"
+    },
+    {
+      "file": "Services/BitEditorService.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "70bc92935ca139fa545420b8b1f8577c94825df39351e86e39a36d8eb01ee0bc",
+      "upstream_sha256": "c86d024fa84ba8a18ef3a7ad910f68d3a96e30cf1faa29b5f7f39225a69c180c"
+    },
+    {
+      "file": "Services/DialogService.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "12e761fa07bbfd6f8fa346f3d8a6ad44c2fe565ec58d0921e1ddebb3b0c401f4",
+      "upstream_sha256": "cf49a672c70d335a45c08d03ebf13cc8dc92aaa98f82d2131008952170da9c41"
+    },
+    {
+      "file": "Services/DisplayConfigurationService.cs",
+      "status": "added-relative-to-reference",
+      "local_sha256": "432cd5e1fc6c2eed630a5d198b5ecd080844b43cddafae87ae5f86449fbaee33",
+      "upstream_sha256": null
+    },
+    {
+      "file": "Services/DisplayInfoService.cs",
+      "status": "added-relative-to-reference",
+      "local_sha256": "c179e5fcad1347dde11c8a1baec3bd5d06928b337778af8f5fe70985d8cc68f3",
+      "upstream_sha256": null
+    },
+    {
+      "file": "Services/DisplaySettingsBackend.cs",
+      "status": "added-relative-to-reference",
+      "local_sha256": "20952b0d3a83a1d2340498c9dc1d3ca7c23b46cc45f92cb5b27c7e111ee8de2e",
+      "upstream_sha256": null
+    },
+    {
+      "file": "Services/RasterPulseLauncher.cs",
+      "status": "added-relative-to-reference",
+      "local_sha256": "add11b3f738ebe768d49049f0700b81b757052dc3005728e2d3c03fb216f4985",
+      "upstream_sha256": null
+    },
+    {
+      "file": "Services/StartupSplashScreen.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "db2711391ae7d9636eb059f2e4b74eda252b3669258f61ac16a27a2a0e7db633",
+      "upstream_sha256": "6e5785e1981c9d179907c30d21573e3f14e56d493d8be0b79762001f1c0f0940"
+    },
+    {
+      "file": "Services/ThemeManager.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "5c0d6069e68d0c81b58e578baaf821121989d92f052afd3f91a0532203b8ee27",
+      "upstream_sha256": "7fb83ee816801b7bf60acfa1659f7f340ff4a792016f4807984e30c66b5c1dd4"
+    },
+    {
+      "file": "TinyIoc/TinyIoC.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "31ab05a68147016f2b737f00ee13e315089ee90e453307f62d6ef8819c67dbcb",
+      "upstream_sha256": "55ace397bee7e2dd476fef30d1098cab2aceb9853cf1bd728de1f10495b03158"
+    },
+    {
+      "file": "UI/Behaviors/GridViewColumnResizeBehavior.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "f8a5e86bd6e04850a0aac30e90ec31a9cd2452da09a3ba974a122c597a749262",
+      "upstream_sha256": "9238282aee77ff23ebef45b1212b7e681ead19ff5049702cdfa71a51e5f32029"
+    },
+    {
+      "file": "UI/Behaviors/ScrollIntoViewForListView.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "a26d0a4cf76cb2cb78e2ba51a3007a3006dc47a3383a8efe9fab08dcf2070716",
+      "upstream_sha256": "9ac9c32901ff8cdbf99a014594ff76f23c4e0c30658a780a6448de92cc6a172b"
+    },
+    {
+      "file": "UI/Behaviors/SettingValueValidationBehavior.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "f80407cd683331a0466045b4688186087257ca91e471d3ddf00e0b6933620485",
+      "upstream_sha256": "2193ec8aa06c04efa227d718f72b538fdf423cd132cdcfe2d32e06eadc27888d"
+    },
+    {
+      "file": "UI/Controls/ActionBarButton.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "c85dd387f63ce39f986e35a8f734200a0ad395a5b0f6d7b85282eb43820ff082",
+      "upstream_sha256": "c5762f01b8c063988763400c5e16d8283a9497e2a037c88f962cd0d22e6eb766"
+    },
+    {
+      "file": "UI/Controls/ActionBarToggleButton.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "7380db75eda85f799e87b58ba4206b1484f16fdf527b7b09787f50224c22ff09",
+      "upstream_sha256": "b992c1d3a46fe9a29b7dcbf04c522bbc6789ae2a53aec4f0f357b9ab16539c37"
+    },
+    {
+      "file": "UI/Controls/ChoiceCard.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "2e59f860bcb3ce26017145c1d61d38eb105305594225a10219d05ac0ececa860",
+      "upstream_sha256": "9892a95188474ea20fd1e9575d8c131896a853e3da423bf9811899bb8811496d"
+    },
+    {
+      "file": "UI/Controls/CollapsibleWrapPanel.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "133224332784cef95a894d5880ec80c6d752cd7bbf4f56d4afd3e3f81e09687a",
+      "upstream_sha256": "9bf4f8a845950164bc06d26b834018ef32bdbe9ceebdff70ebeea0049fa99743"
+    },
+    {
+      "file": "UI/Controls/MinThumbTrack.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "b04ff60a2c82f20db0a52f45ceb52bf345288253b31aaf24cd760ea01450e145",
+      "upstream_sha256": "23eb8bc03a8defec3102c2b955a36ae66e4fb4006f4ceb1712ec8a65302df8c7"
+    },
+    {
+      "file": "UI/Controls/NotificationSnackbar.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "dbcc4e780dfc7265210105c46d7c25febb627bf3cba8780604ce1efeb8a9640b",
+      "upstream_sha256": "770f64f40dd95ce47fe711b4c4f4512b6e497aa3b5e3d6f623cd02d8939cdaec"
+    },
+    {
+      "file": "UI/Controls/PlaceholderClearTextBox.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "cda9f0afca77be0572995fc04a49cc366d0b2993daa6cc9106702c60ed41a180",
+      "upstream_sha256": "fa3ef41d63872de06cbd6d7a264a84ba23678676f1f56295ce7bf034c1b8eca7"
+    },
+    {
+      "file": "UI/Controls/SearchableComboBox.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "9d13fd6846b7d83440fb3d2163f8f30a035887a70df08f100c7e488c9c0b0a4a",
+      "upstream_sha256": "c0fa4d6c59a96f91488329216ee2da8b7ca1609b75271f2046f50ab289c195bc"
+    },
+    {
+      "file": "UI/Controls/SearchablePopupList.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "ec966298dccdcb3c51f6af5847e3777a6be0f2d2aa7a6908a326826f6bb582b3",
+      "upstream_sha256": "022a5027066a9048ca1eaed52a55e7d6987c3f04bb407f4b361e106a2f0a4039"
+    },
+    {
+      "file": "UI/Controls/SearchableTextBox.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "aa3accc3e396d320da9033e620653050175c77659fb2d56f02ea8b7a1c53f260",
+      "upstream_sha256": "99441641cce31a9d914a19f19a433be72e7529058f0a5eb2854b57aba3c20c65"
+    },
+    {
+      "file": "UI/Controls/TitleBar.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "61a7f4f78b4f6a674665d3bd804202d48ed1619165ffcde20aabc827daf318bc",
+      "upstream_sha256": "0ad882acc08eb45faf4806fe505dfe56f3fcaa19c08eb21f353d88c5d27462fe"
+    },
+    {
+      "file": "UI/Converters/Converters.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "3653513971c781d558b44556ee5944a1f562764fc40ed67f65f858aa10f21126",
+      "upstream_sha256": "672844a9498b6bef87e1f15a810b5745dc67138b36f16cbdd74dc02f337b56ab"
+    },
+    {
+      "file": "UI/Styles/Applications.xaml",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "f6838e188e2452d317608f021a33e569e1379b4d33a6a473de494a63dde546eb",
+      "upstream_sha256": "e0c3e67cc4737fd791d68275d2ddb6a669b7ba4624851b7ce98a485c00445e7d"
+    },
+    {
+      "file": "UI/Styles/Buttons.xaml",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "1dcf8b2a813f241c108a033aeedff7decf21783685f10269fecefb6f81ca7288",
+      "upstream_sha256": "663391acb49f5717f1710543141e723e16a2e72e7db44c743fc2e56866563d9a"
+    },
+    {
+      "file": "UI/Styles/Colors.xaml",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "cffe4016b6ad57f524430484ba63c28a23560f54a87e9b231a15c0623f671a59",
+      "upstream_sha256": "dc71f22afc5d7cb6b7289659c09c33d8b2bf0e3fa36013e0f2da5cd4f8fa30f0"
+    },
+    {
+      "file": "UI/Styles/ComboBoxes.xaml",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "95223fa147abd6b1bd709974faba83f564a39ffd069fd4eddb18b9c97394cb7f",
+      "upstream_sha256": "86fe844e3c0ee644648d2ded79f28c298e3d256ef4106f0bebb72616949065b5"
+    },
+    {
+      "file": "UI/Styles/Common.xaml",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "9d87b0127e31b02c2476b5bb0e5c933d561b46406aa6a0125fd201de2facc314",
+      "upstream_sha256": "5e83ba253228af2e84120292a23b6eb432f31ddcf54c3d4a9d4dbae783a3335e"
+    },
+    {
+      "file": "UI/Styles/Converters.xaml",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "c327b261b815ab01838e86d5b186133c4cda012052fd5a2c9fc2474aa9fc9e25",
+      "upstream_sha256": "e01714c9b63b0a02d36f1b2550c382129527d2c51cff4d6e6f15532a2009fdf5"
+    },
+    {
+      "file": "UI/Styles/FilterFlyout.xaml",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "fad95f72bd5321cbb87fc7824a8f1b08b5179b9379642c0a4d1d613369c6caed",
+      "upstream_sha256": "8d72eae44edb0a815e6a45676c4f09172eb33329230d1480613c49355979bf5e"
+    },
+    {
+      "file": "UI/Styles/Icons.xaml",
+      "status": "modified",
+      "local_sha256": "e689def7ee86fe3ba50e88dde886f2b217bb613e8e7374296c89a4ecaa80f554",
+      "upstream_sha256": "168dadc9c7cf024cae81a35931b37be70dfc75a1a1d47b8492de78a070b20b64"
+    },
+    {
+      "file": "UI/Styles/ListViews.xaml",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "194050ad7a050e361a9ed5921ff58e803c489ab63d0b6611027141595657444d",
+      "upstream_sha256": "fc8b8da7e0eba1b7e01df3d0368f72caf8681fccdd79ff4c94111352d38d02d5"
+    },
+    {
+      "file": "UI/Styles/ScrollBars.xaml",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "4d1e05f3bf09345ce724dd5a749fc365f79df19c69edf9518edef7e5ec09f423",
+      "upstream_sha256": "5b10b346fdaf81049269daaa60bdda2df86b5b31083002083a34d96bf9164711"
+    },
+    {
+      "file": "UI/Styles/SearchableComboBox.xaml",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "308eb57239dfb68b3d8638f6bdb7712bce85beb60082966ad0967071369105fc",
+      "upstream_sha256": "256661457a89acd95baca39d3cec504bd9f3e17f2d6047f40f9fb2d676cf8864"
+    },
+    {
+      "file": "UI/Styles/SearchableTextBox.xaml",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "38d0ad532635a0ebe78ff01c0aae80f855a45701548cc1372197f03bd27b8ec4",
+      "upstream_sha256": "98a92e2139da0d4c4905145609708a1a05902bf8f01005deaa2b74697fe9abdc"
+    },
+    {
+      "file": "UI/Styles/Snackbar.xaml",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "3336f5bd9c63941e703d143f3d835224146c9d3c37a665fc2ae22b5a73947fb7",
+      "upstream_sha256": "a729aedaede3b5dd460ab6278a35c283c9a36abc1d16079c1edec7adbe68cf62"
+    },
+    {
+      "file": "UI/Styles/TextBoxes.xaml",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "8fba0b85f5eda5b73cc3be34a18558bd7c9b38a80a3adf2a0353874dd1ccf9f7",
+      "upstream_sha256": "6d7d507ffbf266b79c3f13ca54c18ef05c20ac60fcaa7a377856007f923128f1"
+    },
+    {
+      "file": "UI/Styles/Theme.xaml",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "dce28f99e5b9f932d0dd5a3a0fd4507fd082bf7485f1c47ec452e3996a6522b4",
+      "upstream_sha256": "2cea5ab30fa73786b2924a1e895ad3a88641619f68bb72dc64a7c7144255da69"
+    },
+    {
+      "file": "UI/Styles/ToolTips.xaml",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "41f6c77288fed629fc0d71a8018d1cad71f877ad6c97af01c2ac6770bb7e764d",
+      "upstream_sha256": "35d96b9144879f21acd9c75e3c5d09ad82c56b68adf18ab37c16e9b2701b51fa"
+    },
+    {
+      "file": "UI/Themes/CleanWhiteTheme.xaml",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "ce42970b9743336f731d177f4b68dca7961c476c183b090ed6201ad515e8e02f",
+      "upstream_sha256": "77da180555ce3bb5f617880837346c2a8fbbf48b95e0c946bd03e6f0ad8e30c1"
+    },
+    {
+      "file": "UI/Themes/DarkTheme.xaml",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "e11c52519cfa5e384c57c493cf5741349b23441a9b83ee9e9960c72b058c0fe2",
+      "upstream_sha256": "aa66396e2caf92787bf68a3be4d8981e83b5808fcd7929cb0b6864b23c2d63fa"
+    },
+    {
+      "file": "UI/Themes/Generic.xaml",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "46c2510eeaaf95235381450de0f1187b028e98955de1acbd86672d1257e561c3",
+      "upstream_sha256": "dd34ef42aeacc1fed985f6b38a74d406da892d300f59afa29dd54ffd78b2e4b3"
+    },
+    {
+      "file": "UI/Themes/MidnightTheme.xaml",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "4eeb22f054737c289b797327ab7903c855a7276bf89ce4d446216f153e9708fb",
+      "upstream_sha256": "54e5df93ad35ce3e346a5f8032119d4bae3dc6f9f28abaad82f96aa4abbb738b"
+    },
+    {
+      "file": "UI/Themes/SlateLightTheme.xaml",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "c5caa167f9585544a427c9467c26dcddacff30e93dc56998a520ebcf0c0486a8",
+      "upstream_sha256": "21ba82f25ba0f0f78c8092facb21c5794e33b049a84ecfc4f6327a288fe2f970"
+    },
+    {
+      "file": "UI/ViewModels/AboutViewModel.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "b0b0ab1463f7c2689729c886f01201278471354a8385339bae3ce8e760b457cc",
+      "upstream_sha256": "2b55af3bfc9c2993f1c6f9ff9f9876468b953b848395ed70015a38363cfcda0e"
+    },
+    {
+      "file": "UI/ViewModels/ApplicationItem.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "b7d57185ac50fe48c1345178c7315a9e9bfbe2f9a673cbc26faf821183047c70",
+      "upstream_sha256": "7ed2ff0c50eba014ff4485f6e04948e30af041574ef1b2bb4454e60e7c2fc030"
+    },
+    {
+      "file": "UI/ViewModels/BitEditorViewModel.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "e74b76893ca50e8257d042ca6aef308fc7af186820c47dfea44979dcff7460ea",
+      "upstream_sha256": "4f52f8ec7e223102b3adfc678ddb12133ef6e18dca7c2b7df5844c06adb9f7c4"
+    },
+    {
+      "file": "UI/ViewModels/BulkObservableCollection.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "30c6b312785c4fcc33d72510f03f31eb03661393bfcebf8c30c9c929af66d739",
+      "upstream_sha256": "cc53a889345cf8f9e7b2f0d05e52e978d3ae1fbd05d599d19429f2415d9787fe"
+    },
+    {
+      "file": "UI/ViewModels/CommandBase.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "dea2db4057bfc58fee233ce02e44c691450643a3d8ae258f79296885150711c2",
+      "upstream_sha256": "8fa49c7858d2ed0a71b52d680fc9a5e05aaa42b4277666950181675b61dfe821"
+    },
+    {
+      "file": "UI/ViewModels/DesignTimeData.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "d4e75800b46a2a0ef31bcd86c3e260f522f9f1f6aa4f3c2d524625a2839ff3eb",
+      "upstream_sha256": "d26abf7c66b6465859c7598e46f4de536621b76a7028e0cd8ac32ec955befc14"
+    },
+    {
+      "file": "UI/ViewModels/ExportProfilesViewModel.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "ceeb740669e45b738f6d2c401095b584504414742e58ed51cfc2f6b32bc98ebb",
+      "upstream_sha256": "b4554a0163e8ac67f2bc9e49fda52536a15ce65a1c395af2b26f228e88e009cd"
+    },
+    {
+      "file": "UI/ViewModels/InputViewModel.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "9242eb58811eb8b1d4028f70c8c5adecbf7c9a072c7253c156025362115ec02c",
+      "upstream_sha256": "8546a6050bf460dcd89cb0bf18959420005d018ed1b4f061d8907ff999783e02"
+    },
+    {
+      "file": "UI/ViewModels/ItemsChangeObservableCollection.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "083aa263c45aee153723d38d10083f7b380f120224fb4565be1d25344a556028",
+      "upstream_sha256": "65924a3ae10febdbaaf86d7d674a76de90027d5aef47dc3e5e45914be2ba8150"
+    },
+    {
+      "file": "UI/ViewModels/MainViewModel.cs",
+      "status": "modified",
+      "local_sha256": "ca107e59e294dd667d1a61e508255247caae0943094208eb99f01bceb59b82f1",
+      "upstream_sha256": "748a58217d60e8a67bdc90ea49a5b1506e2a7b1d31cf5c5ad3e1c2f6b28799c8"
+    },
+    {
+      "file": "UI/ViewModels/MessageBoxViewModel.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "3562655b433facc2921277041c006b37846467709b450bc09da3d521fe0924e1",
+      "upstream_sha256": "99e3d47bc197ea96177569086b05b87410b2196eadb9498d22cd456752781003"
+    },
+    {
+      "file": "UI/ViewModels/ModifiedProfileItem.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "971e44651cb517f35aee5a92c2cc2a11eaa3dd4dbfa913144aa37fb117686771",
+      "upstream_sha256": "7e7855af7cb76d1b4f556ec20efa3d06aaea8158062df1064e63b4d9a383ca4d"
+    },
+    {
+      "file": "UI/ViewModels/ProfileExportFileNames.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "42c992ab0320a329c8c13f020c939bdc3de881bdd3234c08decbc13f82203a53",
+      "upstream_sha256": "f9bf94fb6d6f2fed29d2a33f6c4803129159060ea05d8215560671f7cae2b9ee"
+    },
+    {
+      "file": "UI/ViewModels/ProfileListItem.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "18048b175bf8c6cdc5d01240eb17698c2946323f0cead4c401dc34f9b8df1a67",
+      "upstream_sha256": "e23ad400364594de3bd8c01bf9f9df05ed4f05a7ae946a3b3dda935508d433c9"
+    },
+    {
+      "file": "UI/ViewModels/SettingGroupHeaderViewModel.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "5c48a58941bb90dbfa8a75444574af7c6c00f175a598833bea08fbfad0bd2da9",
+      "upstream_sha256": "6a5b861789b830c8a6a2bb82c095a7fc71cc76527e97f9420866061dbea09f31"
+    },
+    {
+      "file": "UI/ViewModels/SettingItemViewModel.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "9a64e7de5f456584ba0e9099a071c6f312cdb2875dbfdde34a315a933a25eedd",
+      "upstream_sha256": "65d430c787b681d9aff0c12f93c65e8999768030e8b698d9fbdd968c65480d23"
+    },
+    {
+      "file": "UI/ViewModels/SettingsListExtensions.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "73072844dcafc12da6164288eff07f6bc3481959eed8b8c75a2907bf5b3c7c28",
+      "upstream_sha256": "764d7dd03e24566fc3a8fef927c96231ab8f71c739c06dcf797e52614f6c1d89"
+    },
+    {
+      "file": "UI/ViewModels/SettingsListViewModel.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "ed0a9fff49c104b93d8e4ce8ea1fdd87a4f1f6d29b5c9e3356f89ce22b545196",
+      "upstream_sha256": "2b4574fbf0f59c64d32fd155d81ec8192366b844fb0ca23121974da87f8780e6"
+    },
+    {
+      "file": "UI/ViewModels/ViewModelBase.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "64bf1d68095b1949f465564eb746dca5330754cf017e55c9104c4af47c1af06c",
+      "upstream_sha256": "ce41c3566ad54ffa2883d1b66a66ea954c44d2ee3792e2016d28cdd6b4d61989"
+    },
+    {
+      "file": "UI/Views/Dialogs/AboutDialog.xaml",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "0440145fb51a4d829d9709cc5d3f7ba35c0a9f3f4a017b2b3c229b9293472aa3",
+      "upstream_sha256": "9d4708553678cad1941db65195c81e6186384ab54cf025392908108a25dc9956"
+    },
+    {
+      "file": "UI/Views/Dialogs/AboutDialog.xaml.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "51765fad08d72a625bbe79e69da7b16be424af759cd31e539617386a6f0e37c8",
+      "upstream_sha256": "b415f3b8d92139e10f82833d746cc623cbc3e6db0853af377e1a33e7eb361325"
+    },
+    {
+      "file": "UI/Views/Dialogs/ActionCardsDialog.xaml",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "0f83df8138ddc9fb3a8cc168b8c5ceabf654dc86c3b3c4229973e53c63fc416e",
+      "upstream_sha256": "98dc8addc44edae38c5d157f0cd79a3f1f888bdaa7779bd869604ad2529c51b5"
+    },
+    {
+      "file": "UI/Views/Dialogs/ActionCardsDialog.xaml.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "c3e4e5a2d194bb84dd29f67d28b330d26b81c1bab0525558d6f5fc9e1003322a",
+      "upstream_sha256": "89f8759519237757b094ba7346d59fe722b00253de6a0f852ff980d2041a7bca"
+    },
+    {
+      "file": "UI/Views/Dialogs/BitEditorDialog.xaml",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "7434137460eb19b2b0951f8ef4bf653384697c356ac9483d93ba287488a0352a",
+      "upstream_sha256": "9db4410731550ca332969cce8584ae681b7e60a72c2684919484c37ee3a362a0"
+    },
+    {
+      "file": "UI/Views/Dialogs/BitEditorDialog.xaml.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "e1d3b511a58da7304b5d77aa59892d16582e78bb3716093e69d5c720e69361d0",
+      "upstream_sha256": "5736c2e6654d7e45152001649fad47830ce8f04d1344b42863b178b0b4ace62c"
+    },
+    {
+      "file": "UI/Views/Dialogs/DisplaySettingsConfirmationDialog.xaml",
+      "status": "added-relative-to-reference",
+      "local_sha256": "c907dbe846bad594f1a34ce944f6d08d5d1be3db6f22e6aa4a0208858a2c7ed2",
+      "upstream_sha256": null
+    },
+    {
+      "file": "UI/Views/Dialogs/DisplaySettingsConfirmationDialog.xaml.cs",
+      "status": "added-relative-to-reference",
+      "local_sha256": "d7077c35074712fd221fd2772f560fc09f2a11abe747e03b47068f560f7f75b3",
+      "upstream_sha256": null
+    },
+    {
+      "file": "UI/Views/Dialogs/DisplaySettingsDialog.xaml",
+      "status": "added-relative-to-reference",
+      "local_sha256": "d4a48b759c724745bb9d678231f6ce3aab600e26d38c2d5569378fa2eef7580b",
+      "upstream_sha256": null
+    },
+    {
+      "file": "UI/Views/Dialogs/DisplaySettingsDialog.xaml.cs",
+      "status": "added-relative-to-reference",
+      "local_sha256": "fad68226b5b12403a3744283b4537da17fd5bfff29dd226d26376f9f44ddf8ac",
+      "upstream_sha256": null
+    },
+    {
+      "file": "UI/Views/Dialogs/InputDialog.xaml",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "0747c4faec1dc00c7e35bfa6d5445d0e893f79af0e9dbb52ef0b75eb786e095b",
+      "upstream_sha256": "626ed58080e09e865964815691078075033aafaba664ff8cf872ccf062c51519"
+    },
+    {
+      "file": "UI/Views/Dialogs/InputDialog.xaml.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "7e365cb69f03a2b32cd5b26db273f831ad25ee0b27f588d8269b0c1868489311",
+      "upstream_sha256": "89ea2443a700724e18966128e545aa87153112c73c5a73937ebbf65d4adb8cdf"
+    },
+    {
+      "file": "UI/Views/Dialogs/MessageBoxView.xaml",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "a83136626c11f2d8a14d9505f6658e724342ebab57cdba4dd2b6e4b50277d0cb",
+      "upstream_sha256": "5804e8d763920b7b85eefbed78bb62232803205b12b675ff5ac7bb864d660877"
+    },
+    {
+      "file": "UI/Views/Dialogs/MessageBoxView.xaml.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "787a34429299e3f895154cf3d424854c80af30037bf43bd0072182d6ea3acf49",
+      "upstream_sha256": "5c951d53d7360d18a217513c89673dbef2745369020bb7a3694c5f6002cc9753"
+    },
+    {
+      "file": "UI/Views/Dialogs/ProfileImportModePrompt.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "7a43b8a99fab492416a654a13914c7daa68ca2566fc70ed23ccd81989256d791",
+      "upstream_sha256": "290eaa21fe756fd9a94bf4f2d9b75a8f9e732bd5ebd43094cdc263d91667ab11"
+    },
+    {
+      "file": "UI/Views/MainWindow.xaml",
+      "status": "modified",
+      "local_sha256": "eff963d267ab2ac1c188287622e7c9667619b7c4a00e6af13eb71ddf7738738d",
+      "upstream_sha256": "6e5c48c52a2986832fc010af199a168687d06a207f3739b713719dc200d75968"
+    },
+    {
+      "file": "UI/Views/MainWindow.xaml.cs",
+      "status": "modified",
+      "local_sha256": "30362e79b5bcecdad8f07c0e0d962154b70a10826667f0183f8bb276f6a16e06",
+      "upstream_sha256": "b8ab185bb66927d84e1987da33f787cdc7f166ef3bb0f6dae9ee0adeca9602de"
+    },
+    {
+      "file": "UI/Views/SplashWindow.xaml",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "e4c1a9b86b24ae76e82683c10f82c7a7f638b75ca894bc79cf3c52e66a72e32d",
+      "upstream_sha256": "8b05340d9d37e53792a719d3d701e0a4db5f2a699c1ea312ef2e10a98431fa9f"
+    },
+    {
+      "file": "UI/Views/SplashWindow.xaml.cs",
+      "status": "line-endings-or-utf8-bom-only",
+      "local_sha256": "1b47446758ac99d9400bd1f40c59ff7a156c3ca42d5ee885700e6586e1c6e15d",
+      "upstream_sha256": "45ac3b1174176ac52644c82298bc6b7e6f1414b0dafed4d2465e6e1b2c8adc75"
+    }
+  ],
+  "comparison": "Byte hashes retained; only CRLF/LF and optional UTF-8 BOM normalized for the separate formatting-only classification. Added means absent at the reference path, not proof of original authorship."
+}

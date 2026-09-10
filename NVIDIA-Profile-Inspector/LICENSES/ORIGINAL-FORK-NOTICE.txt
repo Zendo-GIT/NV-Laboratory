@@ -1,0 +1,21 @@
+NVPI Custom NV — optional NVDriverForge companion
+
+This build is based on Orbmu2k's MIT-licensed NVIDIA Profile Inspector and adds
+editable screen settings (mode, output color, Windows HDR and ICC/WCS profiles),
+plus a launcher for a separately installed NVRasterPulse, the per-game RTSS manager.
+This distribution excludes the private mock driver, test commands and test access.
+It does not bundle, install, downgrade or uninstall NVRasterPulse or RTSS.
+Screen changes use a 15-second confirmation preview with automatic restoration.
+Available color/refresh combinations depend on the display and driver; no panel
+capabilities are unlocked or guaranteed by this fork.
+RTSS must be installed separately. Its installed SDK export UpdateProfiles is
+used to request a profile reload; RTSS performs the actual in-game limiting.
+No Framepacer, RTSS or experimental engine DLL is redistributed in this package.
+No NVIDIA driver is modified by NVRasterPulse. This is not an official NVIDIA tool.
+
+Do not install an official in-place Profile Inspector update over this folder:
+it may replace the fork executable and remove the NVRasterPulse button.
+Rebase onto a newer upstream release and rebuild instead.
+
+Read README.md. Game/API and anti-cheat compatibility depend on RTSS when using it.
+No universal compatibility, performance improvement or anti-cheat approval is claimed.

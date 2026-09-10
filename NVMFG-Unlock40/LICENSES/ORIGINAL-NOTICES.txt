@@ -1,0 +1,44 @@
+NVMFG Unlock40 0.1.1
+
+RTX40MFG-Unlock — https://github.com/dashdogy/RTX40MFG-Unlock
+Copyright (c) 2026 Michael Robles. MIT license.
+The native engine is derived from this project and modified for central
+loading, NGX integration, runtime verification and controller coordination.
+See Licenses/RTX40MFG-Unlock-MIT.txt.
+
+MinHook — https://github.com/TsudaKageyu/minhook
+Copyright (C) 2009-2017 Tsuda Kageyu and additional notices in the full license.
+See Licenses/MinHook.txt (includes HDE notices).
+
+NVIDIA Profile Inspector — https://github.com/Orbmu2k/nvidiaProfileInspector
+Copyright (c) 2016 Orbmu2k. MIT license.
+The compiled profile helper uses a modified NVAPI wrapper derived from this
+project. Shared family styles are also derived from that project.
+See Licenses/ProfileInspector-MIT.txt and ProfileInspector-Notices.txt.
+
+Streamline headers — https://github.com/NVIDIA-RTX/Streamline
+MIT license for the open source integration headers. NVIDIA binaries have
+their own license terms. No NVIDIA driver, NGX provider or Streamline runtime
+binary is bundled in this package. SDK downloads use NVIDIA's official
+releases and retain the archive's license documents in the SDK cache.
+See Licenses/Streamline-MIT.txt.
+
+NVIDIA NGX SDK headers — NVIDIA Corporation.
+Used to compile the NGX integration. No NGX SDK binary or model is redistributed.
+See Licenses/NGX-Header-Notice.txt.
+
+Microsoft .NET and Windows Desktop Runtime — Microsoft and contributors.
+The self-contained runtime is bundled with the application and agent.
+See Licenses/DotNet-*.txt and Licenses/WindowsDesktop-*.txt.
+
+Inno Setup — https://jrsoftware.org/isinfo.php
+Copyright (C) 1997-2026 Jordan Russell and contributors.
+The installer is produced with Inno Setup. See Licenses/InnoSetup.txt.
+The installer uses native language-picker controls and the original Inno
+dialog layout. Scripted focus handling keeps keyboard cues for keyboard
+navigation and clears them after mouse selection. It is built with unmodified
+Inno Setup 7.1.0 compiler and runtime components.
+
+The compiled application package may be shared with its documentation and
+license notices. Third-party components retain their respective licenses.
+No project source code is included in this release.

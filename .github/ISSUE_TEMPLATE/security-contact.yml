@@ -1,0 +1,28 @@
+name: Request private security contact / Contact sécurité privé
+description: Use only if GitHub private vulnerability reporting is unavailable.
+title: "[Security contact] Private channel requested"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This Issue is PUBLIC. Do not include vulnerability details, exploits, logs,
+        secrets or attachments. The maintainer will provide a private channel.
+        Cette Issue est PUBLIQUE : aucun détail de faille ni pièce jointe.
+        If available, use Security → Report a vulnerability instead.
+  - type: dropdown
+    id: project
+    attributes:
+      label: Project / Programme
+      options:
+        - NVIDIA Profile Inspector – NV Tools Fork
+        - NVDriverForge
+        - NVMFG Unlock40
+        - NVRasterPulse
+        - NV Laboratory hub
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version only / Version uniquement
+      description: Do not describe the vulnerability here.

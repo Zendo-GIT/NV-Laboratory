@@ -1,0 +1,21 @@
+name: Validate documentation hub
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out documentation
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6, verified 2026-09-09
+        with:
+          persist-credentials: false
+      - name: Validate publication boundary and documentation
+        run: python3 tools/validate_repository.py
