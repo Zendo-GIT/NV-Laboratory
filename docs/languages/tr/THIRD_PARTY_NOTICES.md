@@ -1,0 +1,66 @@
+<!-- nv-language-navigation:start -->
+🌐 [English](../../../THIRD_PARTY_NOTICES.md) | [Français](../fr/THIRD_PARTY_NOTICES.md) · [NV Laboratory](README.md)
+
+<details>
+<summary>🌐 Language · 34</summary>
+
+[العربية](../ar/THIRD_PARTY_NOTICES.md) · [বাংলা](../bn/THIRD_PARTY_NOTICES.md) · [简体中文](../zh/THIRD_PARTY_NOTICES.md) · [Čeština](../cs/THIRD_PARTY_NOTICES.md) · [Dansk](../da/THIRD_PARTY_NOTICES.md) · [Nederlands](../nl/THIRD_PARTY_NOTICES.md) · [English](../../../THIRD_PARTY_NOTICES.md) · [Filipino](../fil/THIRD_PARTY_NOTICES.md) · [Suomi](../fi/THIRD_PARTY_NOTICES.md) · [Français](../fr/THIRD_PARTY_NOTICES.md) · [Deutsch](../de/THIRD_PARTY_NOTICES.md) · [Ελληνικά](../el/THIRD_PARTY_NOTICES.md) · [हिन्दी](../hi/THIRD_PARTY_NOTICES.md) · [Magyar](../hu/THIRD_PARTY_NOTICES.md) · [Bahasa Indonesia](../id/THIRD_PARTY_NOTICES.md) · [Italiano](../it/THIRD_PARTY_NOTICES.md) · [日本語](../ja/THIRD_PARTY_NOTICES.md) · [한국어](../ko/THIRD_PARTY_NOTICES.md) · [मराठी](../mr/THIRD_PARTY_NOTICES.md) · [فارسی](../fa/THIRD_PARTY_NOTICES.md) · [Polski](../pl/THIRD_PARTY_NOTICES.md) · [Português](../pt/THIRD_PARTY_NOTICES.md) · [ਪੰਜਾਬੀ](../pa/THIRD_PARTY_NOTICES.md) · [Română](../ro/THIRD_PARTY_NOTICES.md) · [Русский](../ru/THIRD_PARTY_NOTICES.md) · [Español](../es/THIRD_PARTY_NOTICES.md) · [Kiswahili](../sw/THIRD_PARTY_NOTICES.md) · [Svenska](../sv/THIRD_PARTY_NOTICES.md) · [தமிழ்](../ta/THIRD_PARTY_NOTICES.md) · [ไทย](../th/THIRD_PARTY_NOTICES.md) · **Türkçe** · [Українська](../uk/THIRD_PARTY_NOTICES.md) · [اردو](../ur/THIRD_PARTY_NOTICES.md) · [Tiếng Việt](../vi/THIRD_PARTY_NOTICES.md)
+
+[Translation policy](../README.md)
+
+</details>
+<!-- nv-language-navigation:end -->
+
+<!-- nv-translation-notice:start -->
+> İngilizce'den makine destekli çeviri. Teknik adlar, komutlar, URL'ler ve orijinal yasal metinler korunur. Ana dili konuşanların incelemeleri memnuniyetle karşılanır; ifadeler net değilse İngilizce referansa bakın.
+<!-- nv-translation-notice:end -->
+
+<a id="third-party-notices-and-credits"></a>
+# Üçüncü taraf bildirimleri ve kredileri
+
+İlk denetim: 2026-09-09; NVDriverForge 0.1.3 ve kaynak güncellemesi: 2026-09-10. **Bir bileşenin lisansı paketin tamamını değil, o bileşeni kapsar.** Uygulama kaynağı özel kalır. Telif hakkı ve izin bildirimleri aynen korunur; bu tablo bir dizindir, onların yerine geçmez. “Harici”, uygulama varlıklarında dağıtılmayan anlamına gelir.
+
+| Bileşen / orijinal proje | Yazar | Resmi site, depo veya indirme | Lisans / bildirim | NV Tools'te kullanın | Değişiklikler |
+| --- | --- | --- | --- | --- | --- |
+| NVIDIA Profile Inspector | Orbmu2k; Telif Hakkı 2016 | [Depo](https://github.com/Orbmu2k/nvidiaProfileInspector), [indirmeler](https://github.com/Orbmu2k/nvidiaProfileInspector/releases) | [MIT](../../../NVIDIA-Profile-Inspector/LICENSE) | Bütün NVPI fork; NVDF temaları/genişletilmiş arayüz referansı; NVMFG sarıcı/stilleri; RP kullanıcı arayüzü kaynakları | Fork hizmetleri, işlemleri ve başlatıcıyı görüntüler; tema/kontrol entegrasyonu ve sarmalayıcı uyarlamaları |
+| RTX40MFG-Unlock | Michael Robles / dashdogy; Telif Hakkı 2026 | [Depo](https://github.com/dashdogy/RTX40MFG-Unlock), [indirmeler](https://github.com/dashdogy/RTX40MFG-Unlock/releases) | [MIT](../../../NVMFG-Unlock40/LICENSES/RTX40MFG-Unlock-MIT.txt) | Karşılaştırma/iyileştirme referansı ve paylaşılan/uyarlanmış NVMFG yerel bileşenleri; bağımsız olarak geliştirilen uygulama | Merkezi yükleme, NGX/kontrolör koordinasyonu, oyun başına/V-Sync entegrasyonu ve tanılama |
+| MinHook, sabitlenmiş 8fda4f5 | Tsuda Kageyu; Telif Hakkı 2009–2017 | [Depo](https://github.com/TsudaKageyu/minhook), [sabitlenmiş kaynak](https://github.com/TsudaKageyu/minhook/tree/8fda4f5481fed5797dc2651cd91e238e9b3928c6) | [BSD 2 maddeli bildirim](../../../NVMFG-Unlock40/LICENSES/MinHook.txt) | Statik olarak NVMFG motoruna derlendi | Miras alınan kopyaya göre metin biçimlendirmesi dışında değişmeyen alt küme dahil edildi |
+| Hacker Disassembler Engine (HDE64) | Vyacheslav Patkov; Telif Hakkı 2008–2009 | [MinHook'in kaynak koleksiyonu](https://github.com/TsudaKageyu/minhook/tree/8fda4f5481fed5797dc2651cd91e238e9b3928c6/src/hde) | [Tam MinHook/HDE bildirimleri](../../../NVMFG-Unlock40/LICENSES/MinHook.txt) | NVMFG'de MinHook kod çözücü | Hiçbir işlevsel değişiklik tanımlanmadı; Üretimde HDE64 kullanılmasına rağmen HDE32 bildirimi korundu |
+| Streamline 2.12 entegrasyon başlıkları | NVIDIA Corporation; Telif Hakkı 2023 | [Depo](https://github.com/NVIDIA-RTX/Streamline), [indirmeler](https://github.com/NVIDIA-RTX/Streamline/releases) | [Uygun başlıklar için MIT](../../../NVMFG-Unlock40/LICENSES/Streamline-MIT.txt) | NVMFG Streamline entegrasyonunu derler | Başlıklar değiştirilmedi; uygulama paketinde çalışma zamanı DLL'si yok |
+| NVIDIA NGX / DLSS SDK başlıkları | NVIDIA Corporation | [Sabitlenmiş depo](https://github.com/NVIDIA/DLSS/tree/a291cc7d2cc642a51566f3dfd5376f635cd1b284), [SDK](https://developer.nvidia.com/rtx/dlss) | [NVIDIA RTX SDK şartları](../../../NVMFG-Unlock40/LICENSES/NVIDIA-RTX-SDK.txt), [başlık bildirimi](../../../NVMFG-Unlock40/LICENSES/NGX-Header-Notice.txt) | NVMFG NGX entegrasyonunu derler | Başlıklar değiştirilmedi; NGX modeli/sağlayıcısı paketlenmemiş; aşağıda açıklanan çözülmemiş kısıtlama |
+| .NET çalışma zamanı 8.0.31 (NVDF) / 8.0.30 (NVMFG) | .NET Vakfı, Microsoft ve katkıda bulunanlar | [Kaynak](https://github.com/dotnet/runtime), [indirmeler](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) | [MIT](../../../licenses/third-party/Microsoft-NET-LICENSE.txt) ve [üçüncü taraf bildirimlerini tamamlayın](../../../licenses/third-party/Microsoft-NET-THIRD-PARTY-NOTICES.txt) | Bağımsız NVDF ve NVMFG uygulaması/aracısı | Çalışma zamanı değiştirilmedi |
+| WPF / Windows Desktop Runtime 8.0.31 (NVDF) / 8.0.30 (NVMFG) | .NET Vakfı, Microsoft ve katkıda bulunanlar | [Kaynak](https://github.com/dotnet/wpf), [indirmeler](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) | [MIT](../../../licenses/third-party/Microsoft-WPF-LICENSE.txt), yukarıdaki çalışma zamanı bildirimleri | NVDF ve NVMFG kullanıcı arayüzleri | Çerçeve değiştirilmedi; uygulama kullanıcı arayüzü ayrı olarak yazılmıştır/uyarlanmıştır |
+| .NET Çerçevesi 4.8 | Microsoft | [Resmi çalışma zamanı indirmesi](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48) | Microsoft platform/çalışma zamanı koşulları; harici | NVPI, RP ve NVMFG profil yardımcıları | Yok; bu hub tarafından yeniden dağıtılan yükleyici veya çerçeve DLL'si yok |
+| 7-Zip 26.03 x64 | Igor Pavlov; Telif Hakkı 1999–2026 | [Site/indirilenler](https://www.7-zip.org/download.html), [tam kaynak arşivi](https://github.com/ip7z/7zip/releases/download/26.03/7z2603-src.tar.xz) | [Tam bildirim](../../../licenses/third-party/7-Zip.txt), [LGPL 2.1-or-later](../../../licenses/third-party/LGPL-2.1.txt), BSD bölümleri ve unRAR kısıtlaması | NVDF, değiştirilmemiş 7z.exe/7z.dll'i yerleştirir ve CLI'yi ayrı bir işlem olarak çalıştırır | Değişiklik yok |
+| Inno Setup 7.1.0 | Jordan Russell, Martijn Laan ve katkıda bulunanlar | [Site/indirilenler](https://jrsoftware.org/isinfo.php), [kaynak](https://github.com/jrsoftware/issrc) | [Orijinal Inno Setup lisansı](../../../licenses/third-party/Inno-Setup.txt) | Yükleyici motorları ve oluşturulan kaldırıcılar | Motor/derleyici değiştirilmemiş; proje senaryoları, markalama ve yerel odak yönetimi uyarlandı |
+| Inno Setup çeviri katalogları | Adlandırılmış orijinal çevirmenler | [Resmi koleksiyon](https://jrsoftware.org/files/istrans/) | Inno/katalog bildirimleri ve [başlık kredilerini tamamla](../../../licenses/INSTALLER-TRANSLATORS.md) | NVPI kurulum revizyonu 2 de dahil olmak üzere dört yükleyicinin tamamı için 34 dilde paylaşılan kataloglar | Anahtarlar, kimlikler, yazı tipleri, teknik İngilizce geri dönüşü; Gerektiğinde proje tarafından yazılan önizleme katalogları |
+| Microsoft Visual C++ çalışma zamanı / Windows SDK desteği | Microsoft | [Görsel Studio araçları](https://visualstudio.microsoft.com/downloads/), [yeniden dağıtım terimleri dizini](https://learn.microsoft.com/en-us/visualstudio/releases/2022/redistribution) | Microsoft araç zinciri/çalışma zamanı koşulları; bu tabloya göre MIT değil | Yerel motor/önyükleme ikili dosyalarında statik sürüm CRT'si; Windows API'leri yüklü | Çalışma zamanı kaynağı değişikliği yok; derleyici yok, SDK veya hata ayıklama çalışma zamanı dağıtılmıyor |
+| RivaTuner Statistics Server (RTSS) | Unwinder | [Resmi Guru3D indirmesi](https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/) | Satıcı şartları; “Ücretsiz yazılım”dan yeniden dağıtım izni olmadığı anlaşılmaktadır | RP için gerekli harici sınırlayıcı; UpdateProfiles dışa aktarma yüklü | RTSS kodu/ikili programı değiştirilmedi veya paketlenmedi; RP seçilen profil anahtarlarını yazar |
+| NVIDIA sürücüsü / NVAPI / NVML | NVIDIA Corporation | [Sürücü indirmeleri](https://www.nvidia.com/en-us/drivers/), [NVAPI](https://developer.nvidia.com/nvapi), [NVML](https://developer.nvidia.com/management-library-nvml) | NVIDIA sürücüsü/SDK koşulları; harici | Yüklü yerel arayüzler ve açık orijinal sürücü indirmeleri | Hub varlıklarında NVIDIA DLL yok; NVDF'in isteğe bağlı NVENC işlemi, kullanıcı tarafından seçilen yüklü DLL'leri değiştirir |
+| NVIDIA NGX sağlayıcı/modelleri ve Streamline çalışma zamanı | NVIDIA Corporation | [DLSS SDK](https://developer.nvidia.com/rtx/dlss), [Streamline sürümleri](https://github.com/NVIDIA-RTX/Streamline/releases) | MIT başlıklarından farklı, bileşene özel NVIDIA terimleri | NVMFG tarafından kullanılan harici oyun/sürücü bileşenleri; SDK yalnızca istek üzerine getirildi | NVMFG, deneysel bellek içi davranış değişikliklerini uygular; SDK oyun kopyaları yedekleme ile güncellenebilir |
+| keylase/nvidia-patch | keylase ve katkıda bulunanlar | [Depo](https://github.com/keylase/nvidia-patch), [Windows verileri](https://github.com/keylase/nvidia-patch/tree/master/win) | Yeniden dağıtım lisansı bu denetimle belirlenmedi | Seçim başına bir sabitlenmiş işlemeden getirilen harici isteğe bağlı NVDF NVENC katalog/yama verileri | Hub/uygulama varlıklarına kopyalanan yukarı akış kaynağı, yama uygulaması veya yama verisi yok |
+| NVCleanstall | TechPowerUp | [Resmi sayfa/indirme](https://www.techpowerup.com/download/techpowerup-nvcleanstall/) | Tescilli dağıtım; kaynak/ikili yeniden dağıtım izni çıkarılmadı | NVDF için iş akışı ve seçenek ilhamı | İçe aktarılan kaynak veya ikili dosya yok; fork veya çalışma zamanı bağımlılığı değil |
+
+<a id="obligations-and-boundaries"></a>
+## Yükümlülükler ve sınırlar
+
+**MIT bileşenleri:** telif hakkını, izin metnini ve sorumluluk reddi beyanını kopyalarla birlikte saklayın. Lisansları, değiştirilmiş kaynağın yayınlanmasını gerektirmez. Uygulama kaynağı gizli tutulduğunda bile orijinal yazarlık korunur.
+
+**MinHook/HDE:** İkili program belgelerindeki bildirimleri, koşulları ve sorumluluk reddi beyanlarını koruyun. Birleşik bildirimin tamamı sağlanmaktadır.
+
+**7-Zip:** LGPL/BSD/unRAR bildirimlerini koruyun ve tam olarak değiştirilmemiş kaynağa erişim sağlayın. Kaynak arşivi LGPL'in tamamıyla birlikte yukarıda verilmiştir. unRAR kısıtlaması ilgili dekompresyon kodu için geçerlidir; bu genel bir MIT bağımlılığı değildir. Yazarın [dağıtım SSS](https://www.7-zip.org/faq.html)'ine bakın.
+
+**Inno Setup:** gerekli motor telif hakkı/web sitesi bildirimlerini koruyun ve uygun olduğunda kaynak değişikliklerini işaretleyin. Değiştirilmemiş motorun kredileri yükleyicilerde kalır. Uyarlanmış kataloglar orijinal kaynak bildirimlerini korur; isimler burada indekslenmiştir.
+
+**NVIDIA malzemesi:** Streamline entegrasyon başlıklarına yönelik MIT lisansı, her SDK dosyasını kapsamaz. Bildirimi, Nsight Perf SDK materyalini açıkça ayırmaktadır; bu üretim hedefinde bu malzeme kullanılmamaktadır. NGX başlıkları, NVIDIA'in tescilli RTX SDK koşulları altındadır. Tam metinleri [orijinal bayt kopyası](../../../NVMFG-Unlock40/LICENSES/NVIDIA-RTX-SDK.original.txt) ile eklenmiştir. Bölüm 4(d)'nin teknik sınırlamalara ilişkin kısıtlaması, NVMFG'nin kullanımı açısından çözümlenmeden kalmıştır. Başka bir modun varlığından olumlu bir izin çıkarılamaz.
+
+**Harici bilinmeyen/tescilli bileşenler:** RTSS, NVCleanstall, NVIDIA sürücüleri, modelleri ve keylase yama verileri, hazırlanan hub varlıklarına dahil değildir. Bağlantılar gerçek sahiplerini tanımlar. Kullanıcı tarafından tetiklenen bir indirme, bir bileşenin yeniden lisansını almaz.
+
+Araçlar, Windows tarafından sağlanan API'leri ve yazı tiplerini kullanır. Bu Git deposuna hiçbir Windows SDK/compiler/font dosyası kopyalanmaz. Derleme araçları ve özel testler dağıtımın dışındadır. Çalışma zamanı dahili bileşen bildirimleri, yayıncıya yeniden atanmak yerine Microsoft bildirim dosyasının tamamında kalır.
+
+<a id="publisher-contributions"></a>
+## Yayıncı katkıları
+
+禅堂 Zendo (RevoluSound Team), [menşe kılavuzu](docs/provenance.md)'te açıklanan orijinal uygulama çalışmasını, uyarlamaları ve belgeleri korur. [NVPI](NVIDIA-Profile-Inspector/README.md), [NVDF](NVDriverForge/README.md), [NVMFG](NVMFG-Unlock40/README.md) ve [RP](NVRasterPulse/README.md)'in her biri, devralınan çalışmayı değişikliklerden ayırır.
+
+Bağımsız projeler; NVIDIA Corporation veya listelenen üst yazarlarla herhangi bir bağlantı, sponsorluk veya resmi onay ima edilmemektedir.

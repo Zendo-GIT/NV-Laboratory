@@ -1,3 +1,16 @@
+<!-- nv-language-navigation:start -->
+🌐 English | [Français](../docs/languages/fr/assets/README.md) · [NV Laboratory](../README.md)
+
+<details>
+<summary>🌐 Language · 34</summary>
+
+[العربية](../docs/languages/ar/assets/README.md) · [বাংলা](../docs/languages/bn/assets/README.md) · [简体中文](../docs/languages/zh/assets/README.md) · [Čeština](../docs/languages/cs/assets/README.md) · [Dansk](../docs/languages/da/assets/README.md) · [Nederlands](../docs/languages/nl/assets/README.md) · **English** · [Filipino](../docs/languages/fil/assets/README.md) · [Suomi](../docs/languages/fi/assets/README.md) · [Français](../docs/languages/fr/assets/README.md) · [Deutsch](../docs/languages/de/assets/README.md) · [Ελληνικά](../docs/languages/el/assets/README.md) · [हिन्दी](../docs/languages/hi/assets/README.md) · [Magyar](../docs/languages/hu/assets/README.md) · [Bahasa Indonesia](../docs/languages/id/assets/README.md) · [Italiano](../docs/languages/it/assets/README.md) · [日本語](../docs/languages/ja/assets/README.md) · [한국어](../docs/languages/ko/assets/README.md) · [मराठी](../docs/languages/mr/assets/README.md) · [فارسی](../docs/languages/fa/assets/README.md) · [Polski](../docs/languages/pl/assets/README.md) · [Português](../docs/languages/pt/assets/README.md) · [ਪੰਜਾਬੀ](../docs/languages/pa/assets/README.md) · [Română](../docs/languages/ro/assets/README.md) · [Русский](../docs/languages/ru/assets/README.md) · [Español](../docs/languages/es/assets/README.md) · [Kiswahili](../docs/languages/sw/assets/README.md) · [Svenska](../docs/languages/sv/assets/README.md) · [தமிழ்](../docs/languages/ta/assets/README.md) · [ไทย](../docs/languages/th/assets/README.md) · [Türkçe](../docs/languages/tr/assets/README.md) · [Українська](../docs/languages/uk/assets/README.md) · [اردو](../docs/languages/ur/assets/README.md) · [Tiếng Việt](../docs/languages/vi/assets/README.md)
+
+[Translation policy](../docs/languages/README.md)
+
+</details>
+<!-- nv-language-navigation:end -->
+
 # Asset credits
 
 These images were captured from the applications or setup on 2026-09-09 and

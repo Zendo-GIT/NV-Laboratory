@@ -1,4 +1,15 @@
-🌐 **Language:** English | [Français](README.fr.md) · [NV Laboratory](../README.md)
+<!-- nv-language-navigation:start -->
+🌐 English | [Français](README.fr.md) · [NV Laboratory](../README.md)
+
+<details>
+<summary>🌐 Language · 34</summary>
+
+[العربية](../docs/languages/ar/NVRasterPulse/README.md) · [বাংলা](../docs/languages/bn/NVRasterPulse/README.md) · [简体中文](../docs/languages/zh/NVRasterPulse/README.md) · [Čeština](../docs/languages/cs/NVRasterPulse/README.md) · [Dansk](../docs/languages/da/NVRasterPulse/README.md) · [Nederlands](../docs/languages/nl/NVRasterPulse/README.md) · **English** · [Filipino](../docs/languages/fil/NVRasterPulse/README.md) · [Suomi](../docs/languages/fi/NVRasterPulse/README.md) · [Français](README.fr.md) · [Deutsch](../docs/languages/de/NVRasterPulse/README.md) · [Ελληνικά](../docs/languages/el/NVRasterPulse/README.md) · [हिन्दी](../docs/languages/hi/NVRasterPulse/README.md) · [Magyar](../docs/languages/hu/NVRasterPulse/README.md) · [Bahasa Indonesia](../docs/languages/id/NVRasterPulse/README.md) · [Italiano](../docs/languages/it/NVRasterPulse/README.md) · [日本語](../docs/languages/ja/NVRasterPulse/README.md) · [한국어](../docs/languages/ko/NVRasterPulse/README.md) · [मराठी](../docs/languages/mr/NVRasterPulse/README.md) · [فارسی](../docs/languages/fa/NVRasterPulse/README.md) · [Polski](../docs/languages/pl/NVRasterPulse/README.md) · [Português](../docs/languages/pt/NVRasterPulse/README.md) · [ਪੰਜਾਬੀ](../docs/languages/pa/NVRasterPulse/README.md) · [Română](../docs/languages/ro/NVRasterPulse/README.md) · [Русский](../docs/languages/ru/NVRasterPulse/README.md) · [Español](../docs/languages/es/NVRasterPulse/README.md) · [Kiswahili](../docs/languages/sw/NVRasterPulse/README.md) · [Svenska](../docs/languages/sv/NVRasterPulse/README.md) · [தமிழ்](../docs/languages/ta/NVRasterPulse/README.md) · [ไทย](../docs/languages/th/NVRasterPulse/README.md) · [Türkçe](../docs/languages/tr/NVRasterPulse/README.md) · [Українська](../docs/languages/uk/NVRasterPulse/README.md) · [اردو](../docs/languages/ur/NVRasterPulse/README.md) · [Tiếng Việt](../docs/languages/vi/NVRasterPulse/README.md)
+
+[Translation policy](../docs/languages/README.md)
+
+</details>
+<!-- nv-language-navigation:end -->
 
 # NVRasterPulse
 

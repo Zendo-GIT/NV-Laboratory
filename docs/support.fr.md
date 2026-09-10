@@ -1,5 +1,17 @@
-🌐 **Langue :** [English](support.md) | Français · [Accueil](../README.fr.md)
+<!-- nv-language-navigation:start -->
+🌐 [English](support.md) | Français · [NV Laboratory](../README.fr.md)
 
+<details>
+<summary>🌐 Language · 34</summary>
+
+[العربية](languages/ar/docs/support.md) · [বাংলা](languages/bn/docs/support.md) · [简体中文](languages/zh/docs/support.md) · [Čeština](languages/cs/docs/support.md) · [Dansk](languages/da/docs/support.md) · [Nederlands](languages/nl/docs/support.md) · [English](support.md) · [Filipino](languages/fil/docs/support.md) · [Suomi](languages/fi/docs/support.md) · **Français** · [Deutsch](languages/de/docs/support.md) · [Ελληνικά](languages/el/docs/support.md) · [हिन्दी](languages/hi/docs/support.md) · [Magyar](languages/hu/docs/support.md) · [Bahasa Indonesia](languages/id/docs/support.md) · [Italiano](languages/it/docs/support.md) · [日本語](languages/ja/docs/support.md) · [한국어](languages/ko/docs/support.md) · [मराठी](languages/mr/docs/support.md) · [فارسی](languages/fa/docs/support.md) · [Polski](languages/pl/docs/support.md) · [Português](languages/pt/docs/support.md) · [ਪੰਜਾਬੀ](languages/pa/docs/support.md) · [Română](languages/ro/docs/support.md) · [Русский](languages/ru/docs/support.md) · [Español](languages/es/docs/support.md) · [Kiswahili](languages/sw/docs/support.md) · [Svenska](languages/sv/docs/support.md) · [தமிழ்](languages/ta/docs/support.md) · [ไทย](languages/th/docs/support.md) · [Türkçe](languages/tr/docs/support.md) · [Українська](languages/uk/docs/support.md) · [اردو](languages/ur/docs/support.md) · [Tiếng Việt](languages/vi/docs/support.md)
+
+[Translation policy](languages/README.md)
+
+</details>
+<!-- nv-language-navigation:end -->
+
+<a id="compatibility-and-troubleshooting"></a>
 # Compatibilité et dépannage
 
 Ce tableau décrit les candidates préparées, sans certifier toutes les combinaisons
@@ -16,6 +28,7 @@ Aucun paquet ARM64 n'est préparé. Les API d'affichage et versions Windows anci
 peuvent limiter certaines fonctions. Aucune version minimale universelle de pilote
 ou RTSS n'est inventée. Le hash fournisseur NVMFG figure dans la [provenance](provenance.fr.md).
 
+<a id="before-reporting-a-bug"></a>
 ## Avant de signaler un bug
 
 Identifiez la version et l'EXE réellement ouverts. Une ancienne installation
@@ -39,6 +52,7 @@ export complet du registre ou collection de journaux non relue.
 | Limite RP sans effet | Lancez RTSS, identifiez l'EXE réel, le hook et les autres limiteurs. |
 | Limite RP persistante après retrait | Vérifiez Global RTSS ; seul l'override local est retiré. |
 
+<a id="logs-and-privacy"></a>
 ## Journaux et vie privée
 
 | Outil | Données locales à examiner, sans envoi intégral |
@@ -55,6 +69,7 @@ la récupération. Les Issues publiques sont visibles par tous.
 Pour une vulnérabilité, un comportement privilégié dangereux ou une opération
 destructive imprévue, suivez [SECURITY.md](../SECURITY.md) sans en publier les détails.
 
+<a id="what-has-been-verified"></a>
 ## Vérifications effectuées
 
 La préparation du hub a rejoué les audits statiques de payload/ZIP/hash/métadonnées

@@ -1,0 +1,66 @@
+<!-- nv-language-navigation:start -->
+🌐 [English](../../../THIRD_PARTY_NOTICES.md) | [Français](../fr/THIRD_PARTY_NOTICES.md) · [NV Laboratory](README.md)
+
+<details>
+<summary>🌐 Language · 34</summary>
+
+[العربية](../ar/THIRD_PARTY_NOTICES.md) · [বাংলা](../bn/THIRD_PARTY_NOTICES.md) · [简体中文](../zh/THIRD_PARTY_NOTICES.md) · [Čeština](../cs/THIRD_PARTY_NOTICES.md) · [Dansk](../da/THIRD_PARTY_NOTICES.md) · [Nederlands](../nl/THIRD_PARTY_NOTICES.md) · [English](../../../THIRD_PARTY_NOTICES.md) · [Filipino](../fil/THIRD_PARTY_NOTICES.md) · [Suomi](../fi/THIRD_PARTY_NOTICES.md) · [Français](../fr/THIRD_PARTY_NOTICES.md) · [Deutsch](../de/THIRD_PARTY_NOTICES.md) · [Ελληνικά](../el/THIRD_PARTY_NOTICES.md) · [हिन्दी](../hi/THIRD_PARTY_NOTICES.md) · [Magyar](../hu/THIRD_PARTY_NOTICES.md) · **Bahasa Indonesia** · [Italiano](../it/THIRD_PARTY_NOTICES.md) · [日本語](../ja/THIRD_PARTY_NOTICES.md) · [한국어](../ko/THIRD_PARTY_NOTICES.md) · [मराठी](../mr/THIRD_PARTY_NOTICES.md) · [فارسی](../fa/THIRD_PARTY_NOTICES.md) · [Polski](../pl/THIRD_PARTY_NOTICES.md) · [Português](../pt/THIRD_PARTY_NOTICES.md) · [ਪੰਜਾਬੀ](../pa/THIRD_PARTY_NOTICES.md) · [Română](../ro/THIRD_PARTY_NOTICES.md) · [Русский](../ru/THIRD_PARTY_NOTICES.md) · [Español](../es/THIRD_PARTY_NOTICES.md) · [Kiswahili](../sw/THIRD_PARTY_NOTICES.md) · [Svenska](../sv/THIRD_PARTY_NOTICES.md) · [தமிழ்](../ta/THIRD_PARTY_NOTICES.md) · [ไทย](../th/THIRD_PARTY_NOTICES.md) · [Türkçe](../tr/THIRD_PARTY_NOTICES.md) · [Українська](../uk/THIRD_PARTY_NOTICES.md) · [اردو](../ur/THIRD_PARTY_NOTICES.md) · [Tiếng Việt](../vi/THIRD_PARTY_NOTICES.md)
+
+[Translation policy](../README.md)
+
+</details>
+<!-- nv-language-navigation:end -->
+
+<!-- nv-translation-notice:start -->
+> Terjemahan dengan bantuan mesin dari bahasa Inggris. Nama teknis, perintah, URL, dan teks hukum asli dipertahankan. Ulasan penutur asli diterima; lihat referensi bahasa Inggris jika kata-katanya tidak jelas.
+<!-- nv-translation-notice:end -->
+
+<a id="third-party-notices-and-credits"></a>
+# Pemberitahuan dan kredit pihak ketiga
+
+Audit awal: 09-09-2026; NVDriverForge 0.1.3 dan pembaruan asal: 10-09-2026. **Lisensi komponen mencakup komponen tersebut, bukan keseluruhan rangkaian.** Sumber aplikasi tetap bersifat pribadi. Pemberitahuan hak cipta dan izin dipertahankan kata demi kata; tabel ini adalah indeks, bukan penggantinya. “Eksternal” berarti tidak didistribusikan dalam aset aplikasi.
+
+| Komponen/proyek asli | Penulis | Situs resmi, repositori, atau unduh | Lisensi / pemberitahuan | Gunakan di NV Tools | Modifikasi |
+| --- | --- | --- | --- | --- | --- |
+| NVIDIA Profile Inspector | Orbmu2k; Hak Cipta 2016 | [Gudang](https://github.com/Orbmu2k/nvidiaProfileInspector), [unduhan](https://github.com/Orbmu2k/nvidiaProfileInspector/releases) | [MIT](../../../NVIDIA-Profile-Inspector/LICENSE) | Seluruh NVPI fork; Tema NVDF/referensi antarmuka yang diperluas; Pembungkus/gaya NVMFG; Sumber daya UI RP | Layanan tampilan Fork, transaksi dan peluncur; integrasi tema/kontrol dan adaptasi pembungkus |
+| RTX40MFG-Unlock | Michael Robles / dashdogy; Hak Cipta 2026 | [Gudang](https://github.com/dashdogy/RTX40MFG-Unlock), [unduhan](https://github.com/dashdogy/RTX40MFG-Unlock/releases) | [MIT](../../../NVMFG-Unlock40/LICENSES/RTX40MFG-Unlock-MIT.txt) | Referensi perbandingan/penyempurnaan dan komponen asli NVMFG yang dibagikan/diadaptasi; aplikasi yang dikembangkan secara mandiri | Pemuatan terpusat, koordinasi NGX/pengontrol, integrasi dan diagnostik per game/V-Sync |
+| MinHook, disematkan 8fda4f5 | Tsuda Kageyu; Hak Cipta 2009–2017 | [Gudang](https://github.com/TsudaKageyu/minhook), [sumber yang disematkan](https://github.com/TsudaKageyu/minhook/tree/8fda4f5481fed5797dc2651cd91e238e9b3928c6) | [Pemberitahuan BSD 2 klausul](../../../NVMFG-Unlock40/LICENSES/MinHook.txt) | Dikompilasi secara statis ke dalam mesin NVMFG | Termasuk subset yang tidak berubah selain dari pemformatan teks terhadap salinan yang diwarisi |
+| Hacker Disassembler Engine (HDE64) | Vyacheslav Patkov; Hak Cipta 2008–2009 | [Koleksi sumber MinHook](https://github.com/TsudaKageyu/minhook/tree/8fda4f5481fed5797dc2651cd91e238e9b3928c6/src/hde) | [Pemberitahuan MinHook/HDE lengkap](../../../NVMFG-Unlock40/LICENSES/MinHook.txt) | Dekoder MinHook di NVMFG | Tidak ada perubahan fungsional yang teridentifikasi; Pemberitahuan HDE32 dipertahankan meskipun produksi menggunakan HDE64 |
+| Header integrasi Streamline 2.12 | NVIDIA Corporation; Hak Cipta 2023 | [Gudang](https://github.com/NVIDIA-RTX/Streamline), [unduhan](https://github.com/NVIDIA-RTX/Streamline/releases) | [MIT untuk header yang memenuhi syarat](../../../NVMFG-Unlock40/LICENSES/Streamline-MIT.txt) | Mengompilasi integrasi NVMFG Streamline | Header tidak diubah; tidak ada runtime DLL dalam paket aplikasi |
+| NVIDIA NGX / DLSS SDK header | NVIDIA Corporation | [Repositori yang disematkan](https://github.com/NVIDIA/DLSS/tree/a291cc7d2cc642a51566f3dfd5376f635cd1b284), [SDK](https://developer.nvidia.com/rtx/dlss) | [Ketentuan NVIDIA RTX SDK](../../../NVMFG-Unlock40/LICENSES/NVIDIA-RTX-SDK.txt), [pemberitahuan tajuk](../../../NVMFG-Unlock40/LICENSES/NGX-Header-Notice.txt) | Mengompilasi integrasi NVMFG NGX | Header tidak diubah; tidak ada model/penyedia NGX yang dibundel; pembatasan yang belum terselesaikan dijelaskan di bawah ini |
+| Waktu proses .NET 8.0.31 (NVDF) / 8.0.30 (NVMFG) | .NET Foundation, Microsoft dan kontributor | [Sumber](https://github.com/dotnet/runtime), [unduhan](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) | [MIT](../../../licenses/third-party/Microsoft-NET-LICENSE.txt) dan [melengkapi pemberitahuan pihak ketiga](../../../licenses/third-party/Microsoft-NET-THIRD-PARTY-NOTICES.txt) | Aplikasi/agen NVDF dan NVMFG mandiri | Waktu proses tidak diubah |
+| WPF / Windows Desktop Runtime 8.0.31 (NVDF) / 8.0.30 (NVMFG) | .NET Foundation, Microsoft dan kontributor | [Sumber](https://github.com/dotnet/wpf), [unduhan](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) | [MIT](../../../licenses/third-party/Microsoft-WPF-LICENSE.txt), pemberitahuan runtime di atas | Antarmuka pengguna NVDF dan NVMFG | Kerangka tidak dimodifikasi; UI aplikasi dibuat/diadaptasi secara terpisah |
+| .NET Framework 4.8 | Microsoft | [Unduhan waktu proses resmi](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48) | Persyaratan platform/runtime Microsoft; eksternal | Pembantu profil NVPI, RP dan NVMFG | Tidak ada; tidak ada penginstal atau kerangka DLL yang didistribusikan ulang oleh hub ini |
+| 7-Zip 26.03 x64 | Igor Pavlov; Hak Cipta 1999–2026 | [Situs/unduhan](https://www.7-zip.org/download.html), [arsip sumber yang tepat](https://github.com/ip7z/7zip/releases/download/26.03/7z2603-src.tar.xz) | Bagian [Pemberitahuan penuh](../../../licenses/third-party/7-Zip.txt), [LGPL 2.1-or-later](../../../licenses/third-party/LGPL-2.1.txt), BSD dan pembatasan unRAR | NVDF menyematkan 7z.exe/7z.dll yang tidak dimodifikasi dan menjalankan CLI sebagai proses terpisah | Tidak ada modifikasi |
+| Inno Setup 7.1.0 | Jordan Russell, Martijn Laan dan kontributor | [Situs/unduhan](https://jrsoftware.org/isinfo.php), [sumber](https://github.com/jrsoftware/issrc) | [Lisensi Inno Setup asli](../../../licenses/third-party/Inno-Setup.txt) | Mesin penginstal dan uninstaller yang dihasilkan | Mesin/kompiler tidak dimodifikasi; skrip proyek, branding dan penanganan fokus asli diadaptasi |
+| Katalog terjemahan Inno Setup | Dinamakan penerjemah asli | [Koleksi resmi](https://jrsoftware.org/files/istrans/) | Pemberitahuan Inno/katalog dan [kredit header lengkap](../../../licenses/INSTALLER-TRANSLATORS.md) | Katalog 34 bahasa bersama untuk keempat penginstal, termasuk revisi pengaturan NVPI 2 | Kunci, ID, font, penggantian bahasa Inggris teknis; katalog pratinjau yang dibuat oleh proyek jika diperlukan |
+| Waktu proses Microsoft Visual C++ / dukungan Windows SDK | Microsoft | [Alat Visual Studio](https://visualstudio.microsoft.com/downloads/), [indeks ketentuan redistribusi](https://learn.microsoft.com/en-us/visualstudio/releases/2022/redistribution) | Persyaratan rantai alat/runtime Microsoft; bukan MIT pada tabel ini | CRT rilis statis dalam biner mesin asli/bootstrap; menginstal API Windows | Tidak ada perubahan sumber runtime; tidak ada kompiler, SDK atau runtime debug yang didistribusikan |
+| RivaTuner Statistics Server (RTSS) | Unwinder | [Unduhan resmi Guru3D](https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/) | Ketentuan vendor; tidak ada izin redistribusi yang disimpulkan dari "freeware" | Pembatas eksternal yang diperlukan untuk RP; menginstal ekspor UpdateProfiles | Tidak ada kode/biner RTSS yang dimodifikasi atau dibundel; RP menulis kunci profil yang dipilih |
+| Driver NVIDIA / NVAPI / NVML | NVIDIA Corporation | [Unduhan pengemudi](https://www.nvidia.com/en-us/drivers/), [NVAPI](https://developer.nvidia.com/nvapi), [NVML](https://developer.nvidia.com/management-library-nvml) | Persyaratan driver NVIDIA/SDK; eksternal | Antarmuka asli yang diinstal dan pengunduhan driver asli yang eksplisit | Tidak ada DLL NVIDIA di aset hub; Operasi opsional NVDF NVENC memodifikasi DLL terinstal yang dipilih pengguna |
+| Penyedia/model NVIDIA NGX dan waktu proses Streamline | NVIDIA Corporation | [DLSS SDK](https://developer.nvidia.com/rtx/dlss), [Rilis Streamline](https://github.com/NVIDIA-RTX/Streamline/releases) | Istilah NVIDIA khusus komponen, berbeda dari header MIT | Komponen game/driver eksternal yang digunakan oleh NVMFG; SDK diambil hanya berdasarkan permintaan | NVMFG menerapkan perubahan perilaku eksperimental dalam memori; Salinan game SDK dapat diperbarui dengan cadangan |
+| keylase/nvidia-patch | keylase dan kontributor | [Gudang](https://github.com/keylase/nvidia-patch), [Data Windows](https://github.com/keylase/nvidia-patch/tree/master/win) | Izin redistribusi tidak ditetapkan dalam audit ini | Data katalog/tambalan NVDF NVENC opsional eksternal, diambil dari satu penerapan yang disematkan per pilihan | Tidak ada sumber upstream, patcher, atau data patch yang disalin ke aset hub/aplikasi |
+| NVCleanstall | TechPowerUp | [Halaman resmi/unduhan](https://www.techpowerup.com/download/techpowerup-nvcleanstall/) | Distribusi kepemilikan; tidak ada izin redistribusi sumber/biner yang disimpulkan | Alur kerja dan inspirasi opsi untuk NVDF | Tidak ada sumber atau biner yang diimpor; bukan fork atau ketergantungan runtime |
+
+<a id="obligations-and-boundaries"></a>
+## Kewajiban dan batasan
+
+**Komponen MIT:** mempertahankan hak cipta, teks izin, dan penafian beserta salinannya. Lisensi mereka tidak memerlukan publikasi sumber yang dimodifikasi. Penulisan asli dipertahankan bahkan ketika sumber aplikasi dijaga secara pribadi.
+
+**MinHook/HDE:** menyimpan pemberitahuan, ketentuan, dan penafian dalam dokumentasi biner. Pemberitahuan gabungan lengkap disediakan.
+
+**7-Zip:** pertahankan pemberitahuan LGPL/BSD/unRAR dan berikan akses ke sumber persisnya yang tidak dimodifikasi. Arsip sumber ditautkan di atas, bersama dengan LGPL lengkap. Pembatasan unRAR berlaku untuk kode dekompresi yang relevan; ini bukan ketergantungan menyeluruh pada MIT. Lihat [FAQ distribusi](https://www.7-zip.org/faq.html) penulis.
+
+**Inno Setup:** mempertahankan hak cipta mesin/pemberitahuan situs web yang diperlukan dan menandai perubahan sumber jika berlaku. Kredit mesin yang tidak dimodifikasi tetap ada pada pemasang. Katalog yang diadaptasi mempertahankan pemberitahuan sumber asli; nama diindeks di sini.
+
+**Materi NVIDIA:** lisensi MIT untuk header integrasi Streamline tidak mencakup setiap file SDK. Pemberitahuannya secara eksplisit memisahkan materi Nsight Perf SDK; bahan tersebut tidak digunakan dalam target produksi ini. Header NGX berada di bawah ketentuan RTX SDK milik SDK. Teks lengkapnya telah ditambahkan, dengan [salinan byte asli](../../../NVMFG-Unlock40/LICENSES/NVIDIA-RTX-SDK.original.txt). Pembatasan Bagian 4(d) mengenai batasan teknis masih belum terselesaikan untuk penggunaan NVMFG. Tidak ada izin afirmatif yang disimpulkan dari keberadaan mod lain.
+
+**Komponen eksternal yang tidak diketahui/kepemilikan:** Driver RTSS, NVCleanstall, NVIDIA, model, dan data patch keylase tidak digabungkan dalam aset hub yang disiapkan. Tautan mengidentifikasi pemilik sebenarnya. Pengunduhan yang dipicu pengguna tidak melisensikan kembali suatu komponen.
+
+Alat tersebut menggunakan API dan font yang disediakan Windows. Tidak ada file Windows SDK/compiler/font yang disalin ke repositori Git ini. Alat pembangunan dan pengujian pribadi berada di luar distribusi. Pemberitahuan komponen internal runtime tetap berada dalam file pemberitahuan Microsoft lengkap dan bukannya ditugaskan kembali ke penerbit.
+
+<a id="publisher-contributions"></a>
+## Kontribusi penerbit
+
+禅堂 Zendo (RevoluSound Team) mempertahankan pekerjaan aplikasi asli, adaptasi dan dokumentasi yang dijelaskan dalam [panduan asal](docs/provenance.md). [NVPI](NVIDIA-Profile-Inspector/README.md), [NVDF](NVDriverForge/README.md), [NVMFG](NVMFG-Unlock40/README.md), dan [RP](NVRasterPulse/README.md) masing-masing membedakan karya yang diwarisi dari perubahan.
+
+Proyek independen; tidak ada afiliasi dengan, sponsor oleh atau dukungan resmi dari NVIDIA Corporation atau penulis hulu yang terdaftar secara tersirat.

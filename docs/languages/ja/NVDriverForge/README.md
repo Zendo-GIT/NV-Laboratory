@@ -1,0 +1,162 @@
+<!-- nv-language-navigation:start -->
+🌐 [English](../../../../NVDriverForge/README.md) | [Français](../../../../NVDriverForge/README.fr.md) · [NV Laboratory](../README.md)
+
+<details>
+<summary>🌐 Language · 34</summary>
+
+[العربية](../../ar/NVDriverForge/README.md) · [বাংলা](../../bn/NVDriverForge/README.md) · [简体中文](../../zh/NVDriverForge/README.md) · [Čeština](../../cs/NVDriverForge/README.md) · [Dansk](../../da/NVDriverForge/README.md) · [Nederlands](../../nl/NVDriverForge/README.md) · [English](../../../../NVDriverForge/README.md) · [Filipino](../../fil/NVDriverForge/README.md) · [Suomi](../../fi/NVDriverForge/README.md) · [Français](../../../../NVDriverForge/README.fr.md) · [Deutsch](../../de/NVDriverForge/README.md) · [Ελληνικά](../../el/NVDriverForge/README.md) · [हिन्दी](../../hi/NVDriverForge/README.md) · [Magyar](../../hu/NVDriverForge/README.md) · [Bahasa Indonesia](../../id/NVDriverForge/README.md) · [Italiano](../../it/NVDriverForge/README.md) · **日本語** · [한국어](../../ko/NVDriverForge/README.md) · [मराठी](../../mr/NVDriverForge/README.md) · [فارسی](../../fa/NVDriverForge/README.md) · [Polski](../../pl/NVDriverForge/README.md) · [Português](../../pt/NVDriverForge/README.md) · [ਪੰਜਾਬੀ](../../pa/NVDriverForge/README.md) · [Română](../../ro/NVDriverForge/README.md) · [Русский](../../ru/NVDriverForge/README.md) · [Español](../../es/NVDriverForge/README.md) · [Kiswahili](../../sw/NVDriverForge/README.md) · [Svenska](../../sv/NVDriverForge/README.md) · [தமிழ்](../../ta/NVDriverForge/README.md) · [ไทย](../../th/NVDriverForge/README.md) · [Türkçe](../../tr/NVDriverForge/README.md) · [Українська](../../uk/NVDriverForge/README.md) · [اردو](../../ur/NVDriverForge/README.md) · [Tiếng Việt](../../vi/NVDriverForge/README.md)
+
+[Translation policy](../../README.md)
+
+</details>
+<!-- nv-language-navigation:end -->
+
+<!-- nv-translation-notice:start -->
+> 英語からの機械翻訳。技術名、コマンド、URL、および元の法的文書は保存されます。ネイティブスピーカーによるレビューは歓迎です。表現が不明瞭な場合は、英語のリファレンスを参照してください。
+<!-- nv-translation-notice:end -->
+
+<a id="nvdriverforge"></a>
+# NVDriverForge
+
+**明確なコンポーネントの選択とオプション設定を使用して、NVIDIA ドライバーのインストールを準備します。**
+
+[0.1.3 とステータスをダウンロード](../docs/downloads.md#nvdriverforge) · [インストール](#installation) · [クレジット](#credits-and-upstream) · [ライセンス](../../../../NVDriverForge/LICENSE)
+
+<a id="overview-and-purpose"></a>
+## 概要と目的
+
+NVDriverForge は、オリジナルの NVIDIA ドライバー パッケージをガイドします。ドライバーを選択し、そのコンポーネントを検査し、オプションの調整を確認して、インストールを確認します。これらの選択を理解しやすくし、インストール、特権操作、および回復情報をまとめて保持するために存在します。
+
+これは、NVCleanstall のワークフローに一部影響を受けて独自に開発されたアプリケーションです。 NVCleanstall は含まれておらず、完全な機能同等性も主張されていません。
+
+<a id="features"></a>
+## 特長
+
+- NVIDIA Game Ready / Studio の検索とダウンロード。手動フォールバックを使用したオプションのホットフィックス検出。
+- 元のパッケージ、ハッシュ、NVIDIA 署名、マニフェスト、および互換性のある INF エントリの分析。
+- 依存関係のあるコンポーネントの選択と不明なコンポーネントの保存。
+- バージョン 0.1.3 は、選択されたオプションの NVIDIA コンポーネントをスキップ可能にし、検証済みの未チェックのコンポーネントのみを検出から除外します。すでに最新の、または適用できないオプションのランタイムは、重要なコンポーネントとして強制されなくなりました。
+- インストール失敗の概要を明確にし、34 言語すべての詳細なログにアクセスします。
+- 明示的なインストール確認、保護されたステージング、および既存のドライバー ストア パッケージのエクスポート。
+- プリフライト チェック、ジャーナル、競合を認識したリカバリを備えたオプションの詳細設定。
+- オプションの **Custom NV** プリセットには名前付きの選択肢と説明が含まれており、個別の SILK 強度選択と互換性チェックが含まれます。
+- オプションの正確なバージョンの NVENC パッチのダウンロード。ソースコミットバイトとターゲットバイトがチェックされます。
+- [ツール]画面からのProfile Inspector forkの個別のオプションのインストール。
+- オプションのインストール済みユーザー更新チェック、34 のインターフェイス言語、4 つのテーマ。
+
+利用可能な詳細オプションは、MPO、DLSS インジケーター、Ansel、NVIDIA オーディオ スリープ、MSI、割り込みポリシー/優先順位、HDCP、ディスプレイ コンテナーの起動、対象となるレガシー テレメトリ サービスに関係します。それぞれに独自の前提条件と効果があります。これらは普遍的なパフォーマンスの向上ではありません。
+
+<a id="compatibility"></a>
+## 互換性
+
+| 要件 | 詳細 |
+| --- | --- |
+| システム | Windows 10 ビルド 19041 以降 / Windows 11、x64 |
+| GPU/ドライバー | 互換性のある NVIDIA パッケージと検出されたハードウェア。自動カタログ検索は主に既知の GeForce モデルをカバーします |
+| ランタイム | .NET 8 / WPF 8.0.31 は、準備された自己完結型パッケージに含まれています |
+| 特権 | 通常の UI/ユーザーごとのセットアップ。ドライバーのインストールとシステム変更には管理者アクセスが必要です |
+| ネットワーク | オンラインの NVIDIA ルックアップ/ダウンロードおよび明示的なアップストリーム NVENC リクエストに必要です。ローカルのオリジナルドライバーを選択可能 |
+| 付属ツール | 未変更の 7-Zip 26.03、実行時通知、オプションの MIT Profile Inspector コンパニオン |
+| オプションのコンパニオン | .NET Framework 4.8 (個別の Profile Inspector fork) |
+
+すべての機能をカバーする任意の最小ドライバー バージョンはありません。複数の GPU ルックアップは、検出されたすべての GPU と一致する必要があります。サポートされていない/プロフェッショナル モデルでは、ドライバーを手動で選択する必要がある場合があります。 NVIDIA のインストーラーは、ハードウェア/OS の最終的な権限を持ち続けます。
+
+<a id="installation"></a>
+## インストール
+
+1. [ダウンロード](../docs/downloads.md#nvdriverforge) にアクセスして、リリースが公開されていることを確認します。
+2. インストール用には `NVDriverForge-Setup.exe` を、ポータブル使用には `NVDriverForge.exe` を選択してください。
+3. SHA-256 とリリースの `SHA256SUMS.txt` を比較してください。
+4. ユーザーごとのインストールと標準アンインストーラーのセットアップを実行するか、ポータブル EXE を書き込み可能なフォルダーに配置して開きます。
+
+ポータブルには、ランタイムとオプションのインストーラーが含まれています。 NVDriverForge をインストールしても、GPU ドライバーはインストールされません。その EXE は現在署名されていません。
+
+<a id="usage"></a>
+## 使用法
+
+1. **ドライバー:** NVIDIA からダウンロードするか、オリジナルの NVIDIA インストーラー EXE を選択します。分析を終了させます。
+2. **コンポーネント:** 説明と必要な依存関係を確認します。不明なコンポーネントが保持されます。
+3. **微調整:** 不要なオプションは変更しないでください。何かを選択する前に、効果とトレードオフを読んでください。
+4. **確認:** 正確なドライバー、コンポーネント、オプションの操作を確認し、インストールを確認します。
+5. 選択した操作に対してのみ UAC を受け入れます。保護されたジョブの回復手順を保存します。
+6. 新しいドライバーを再起動する必要がある場合は、報告された状態に従ってください。遅延操作では、再起動後に明示的に再開する必要があります。
+
+Custom NV は変更せずに開始されます。個別の名前付き値を選択するか、提供されたプリセットとその除外を確認します。その 2 つの情報内部フィールドは独立して書き込まれません。設定は、プレビューを開いてではなく、検証済みの新しいドライバーのワークフローでのみ適用されます。別途 NVPI エディタをインストールする必要はありません。
+
+オプションの NVENC 作業は、固定された keylase コミットから互換性のあるデータをダウンロードします。これは 2 つのドライバー DLL を変更し、それらの署名を無効にします。 Windows、エンコーダ、DRM、またはアンチチートによって拒否される可能性があります。 NVDriverForge には、そのようなデータや NVIDIA DLL は埋め込まれていません。 [出所とライセンスの制限](../docs/provenance.md)。
+
+環境設定は、言語、テーマ、およびオプションのインストール済みユーザーの更新チェックを制御します。ポータブルでは、インストールされたバックグラウンド チェック タスクは作成されません。ツールとリカバリは、4 つのインストール手順とは別のものです。
+
+<a id="screenshots"></a>
+## スクリーンショット
+
+![NVDriverForge ドライバー ページのプレビュー](../../../../assets/screenshots/nvdriverforge-0.1.2-preview.png)
+
+既存の 0.1.2 フランス語 UI はサンプル データを使用してレンダリングされます。インターフェイスのプレビューとして保持されます。表示された 699.99 ドライバーはテスト フィクスチャであり、ダウンロードする実際のバージョンではありません。 [画像の出所](../assets/README.md)。
+
+<a id="update-and-uninstall"></a>
+## アップデートとアンインストール
+
+NVDriverForge を閉じ、次の公式パッケージを取得して、そのハッシュを確認します。インストールされた更新には同じセットアップ ID を使用します。閉じたポータブル EXE を新しいものに置き換えます。設定と保護されたジョブを保持します。
+
+Uninstall から Windows Installed apps。 NVIDIA ドライバーではなく、アプリとその更新タスクが削除されます。設定、ログ、バックアップは残ります。必要に応じて、アプリを削除する前に、文書化された回復フローを通じて高度な/NVENC の変更を復元します。復元は、別のツールからの競合する変更を拒否します。
+
+ローカル データは `%LOCALAPPDATA%\NVDriverForge` の下にあります。保護されたジョブとドライバーのエクスポートは `%PROGRAMDATA%\NVDriverForge\Jobs` の下にあります。ポータブルで使用するとローカル データも作成されます。ドライバー ストアのエクスポートは、システム イメージや完全なプロファイルのバックアップではありません。
+
+<a id="known-limitations"></a>
+## 既知の制限事項
+
+- ハードウェアの追加/INF 編集、再生成された NVIDIA 署名、アンチチート互換の再署名、または自動署名なし警告の受け入れはありません。
+- 完全なテレメトリ/広告の削除、スリムパッケージのエクスポート、または以前のドライバーへの自動完全ロールバックはありません。
+- ドライバーのインストール、ブートリカバリ、およびオプションのプロファイル書き込みは、ハブ監査によって実マシン上で包括的に検証されていません。
+- レジストリのリードバックは、実際の HDCP、パフォーマンス、または遅延の影響を証明するものではありません。
+- 署名チェックでは、ローカルで利用可能な Windows トラストを使用します。オンラインでの失効は行われません。
+- 34 の言語が存在しますが、完全なネイティブ スピーカー/アクセシビリティ テストはまだ不完全です。
+
+<a id="troubleshooting"></a>
+## トラブルシューティング
+
+| 症状 | アクション |
+| --- | --- |
+| オンラインカタログは利用できません | [NVIDIAドライバーのダウンロード](https://www.nvidia.com/en-us/drivers/) からオリジナルのパッケージを選択します。隣接する GPU モデルを置き換えないでください。 |
+| ホットフィックス検索は利用できません | [NVIDIA の Game Ready ドライバー フォーラム](https://www.nvidia.com/en-us/geforce/forums/game-ready-drivers/13/) を使用して、実際のパッケージを確認します。 |
+| NVIDIA のインストールが失敗する | 障害の概要を読み、詳細なログを開きます。すでに最新であるか適用できないオプションのコンポーネントは、0.1.3 でスキップ可能なままです。インストールが失敗しても、オプションの調整や成功/再起動フローはトリガーされません。 |
+| 署名/ハッシュ/バックアップの失敗 | インストールを停止し、エラーを保持します。破損している場合は、元のパッケージを再度取得します。 |
+| オプションは使用できません | ハードウェア、コンポーネント、またはターゲット ドライバーの理由を読みます。変更しないでください。 |
+| 再起動またはジョブはまだ保留中です | ジョブの回復指示と明示的な再開を使用します。その日記を消さないでください。 |
+| 復元の競合 | 別の状態は記録されたトランザクションとは異なります。復元を強制するのではなく、保存して助けを求めてください。 |
+
+レポートには、選択したツールのバージョン、Windows、GPU、ドライバー、および再現可能な手順が含まれます。ログからパスと個人情報を秘匿化します。 [サポート](../docs/support.md)。
+
+<a id="faq"></a>
+## よくある質問
+
+**セットアップではグラフィック ドライバーがインストールされますか?** いいえ。そのためには、アプリケーションの個別の分析、レビュー、確認、および昇格されたインストール プロセスが必要です。
+
+**NVCleanstall または NVPI は必要ですか?** いいえ、NVCleanstall は単なるインスピレーションです。 Profile Inspector コンパニオンは、独立したオプションのエディタです。
+
+**すべての NVIDIA ドライバーは小さくなりますか、それとも高速になりますか?** いいえ。選択したコンポーネントと前提条件によって何が変更されるかが決まります。測定された利益は約束されません。
+
+**ソースはどこですか?** アプリケーション固有のソース テストとプライベート テストは個別に維持されます。このハブは、帰属/ライセンスに必要なドキュメント、バイナリ、サードパーティのソース リンクを提供します。
+
+<a id="credits-and-upstream"></a>
+## クレジットとアップストリーム
+
+オリジナルのアプリケーション、ワークフロー、トランザクション、ローカリゼーション、ブートストラップ、および適応: 禅堂 Zendo (RevoluSound Team)。
+
+- [NVCleanstall / TechPowerUp](https://www.techpowerup.com/download/techpowerup-nvcleanstall/): ワークフローのインスピレーション;ソースもバイナリもインポートされていません。
+- [NVIDIA Profile Inspector / Orbmu2k](https://github.com/Orbmu2k/nvidiaProfileInspector): MIT テーマ、拡張 NVAPI インターフェイス リファレンス、および個別にパッケージ化された fork。
+- [7-Zip / Igor Pavlov](https://www.7-zip.org/): 未変更の抽出ツール。
+- [Microsoft.NET](https://github.com/dotnet/runtime) および [WPF](https://github.com/dotnet/wpf): バンドルされたランタイム。
+- [Inno Setup](https://jrsoftware.org/isinfo.php): オリジナルのインストーラー エンジンとクレジット付き翻訳。
+- [keylase/nvidia-patch](https://github.com/keylase/nvidia-patch): 外部オプションの NVENC データ ソース。再配布ライセンスが確立されていません。
+- [NVIDIA](https://www.nvidia.com/en-us/drivers/): 外部ドライバーがダウンロードされ、NVAPI/NVML ライブラリがインストールされます。
+
+[全コンポーネント表](../THIRD_PARTY_NOTICES.md) · [変遷と由来](../docs/provenance.md)
+
+<a id="license"></a>
+## ライセンス
+
+[既存のバイナリ配布許可](../../../../NVDriverForge/LICENSE) は、未変更の公式実行可能ファイルの使用と共有をその通知とともに許可します。アプリケーション固有のソース権限は予約されています。個別のサードパーティライセンスによって付与される権利を制限するものではありません。 [完全な通知](LICENSES/README.md)。
+
+NVIDIA Corporation、TechPowerUp、keylase から独立。彼らによって後援または公式に承認されていません。製品名は所有者の商標のままです。

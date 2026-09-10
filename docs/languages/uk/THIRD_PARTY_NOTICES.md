@@ -1,0 +1,66 @@
+<!-- nv-language-navigation:start -->
+🌐 [English](../../../THIRD_PARTY_NOTICES.md) | [Français](../fr/THIRD_PARTY_NOTICES.md) · [NV Laboratory](README.md)
+
+<details>
+<summary>🌐 Language · 34</summary>
+
+[العربية](../ar/THIRD_PARTY_NOTICES.md) · [বাংলা](../bn/THIRD_PARTY_NOTICES.md) · [简体中文](../zh/THIRD_PARTY_NOTICES.md) · [Čeština](../cs/THIRD_PARTY_NOTICES.md) · [Dansk](../da/THIRD_PARTY_NOTICES.md) · [Nederlands](../nl/THIRD_PARTY_NOTICES.md) · [English](../../../THIRD_PARTY_NOTICES.md) · [Filipino](../fil/THIRD_PARTY_NOTICES.md) · [Suomi](../fi/THIRD_PARTY_NOTICES.md) · [Français](../fr/THIRD_PARTY_NOTICES.md) · [Deutsch](../de/THIRD_PARTY_NOTICES.md) · [Ελληνικά](../el/THIRD_PARTY_NOTICES.md) · [हिन्दी](../hi/THIRD_PARTY_NOTICES.md) · [Magyar](../hu/THIRD_PARTY_NOTICES.md) · [Bahasa Indonesia](../id/THIRD_PARTY_NOTICES.md) · [Italiano](../it/THIRD_PARTY_NOTICES.md) · [日本語](../ja/THIRD_PARTY_NOTICES.md) · [한국어](../ko/THIRD_PARTY_NOTICES.md) · [मराठी](../mr/THIRD_PARTY_NOTICES.md) · [فارسی](../fa/THIRD_PARTY_NOTICES.md) · [Polski](../pl/THIRD_PARTY_NOTICES.md) · [Português](../pt/THIRD_PARTY_NOTICES.md) · [ਪੰਜਾਬੀ](../pa/THIRD_PARTY_NOTICES.md) · [Română](../ro/THIRD_PARTY_NOTICES.md) · [Русский](../ru/THIRD_PARTY_NOTICES.md) · [Español](../es/THIRD_PARTY_NOTICES.md) · [Kiswahili](../sw/THIRD_PARTY_NOTICES.md) · [Svenska](../sv/THIRD_PARTY_NOTICES.md) · [தமிழ்](../ta/THIRD_PARTY_NOTICES.md) · [ไทย](../th/THIRD_PARTY_NOTICES.md) · [Türkçe](../tr/THIRD_PARTY_NOTICES.md) · **Українська** · [اردو](../ur/THIRD_PARTY_NOTICES.md) · [Tiếng Việt](../vi/THIRD_PARTY_NOTICES.md)
+
+[Translation policy](../README.md)
+
+</details>
+<!-- nv-language-navigation:end -->
+
+<!-- nv-translation-notice:start -->
+> Машинний переклад з англійської мови. Технічні назви, команди, URL-адреси та оригінальні юридичні тексти збережено. Огляд носія мови вітається; зверніться до посилання англійською мовою, якщо формулювання незрозуміле.
+<!-- nv-translation-notice:end -->
+
+<a id="third-party-notices-and-credits"></a>
+# Повідомлення третіх сторін і кредити
+
+Початковий аудит: 2026-09-09; NVDriverForge 0.1.3 і оновлення про походження: 2026-09-10. **Ліцензія на компонент поширюється на цей компонент, а не на весь пакет.** Джерело програми залишається приватним. Повідомлення про авторські права та дозволи зберігаються дослівно; ця таблиця є індексом, а не заміною для них. «Зовнішні» означає, що не поширюються в активах програми.
+
+| Компонент / оригінальний проект | Автор | Офіційний сайт, репозиторій або завантажити | Ліцензія / повідомлення | Використовуйте в NV Tools | Модифікації |
+| --- | --- | --- | --- | --- | --- |
+| NVIDIA Profile Inspector | Orbmu2k; Авторське право 2016 | [Репозиторій](https://github.com/Orbmu2k/nvidiaProfileInspector), [завантаження](https://github.com/Orbmu2k/nvidiaProfileInspector/releases) | [MIT](../../../NVIDIA-Profile-Inspector/LICENSE) | Цілий NVPI fork; Теми NVDF/розширений інтерфейс; обгортка/стилі NVMFG; Ресурси інтерфейсу користувача RP | Fork відображення служб, транзакцій і запуску; інтеграція теми/контролю та адаптація оболонки |
+| RTX40MFG-Unlock | Michael Robles / dashdogy; Авторське право 2026 | [Репозиторій](https://github.com/dashdogy/RTX40MFG-Unlock), [завантаження](https://github.com/dashdogy/RTX40MFG-Unlock/releases) | [MIT](../../../NVMFG-Unlock40/LICENSES/RTX40MFG-Unlock-MIT.txt) | Порівняння/уточнення посилання та спільні/адаптовані власні компоненти NVMFG; самостійно розроблений додаток | Центральне завантаження, координація NGX/контролера, інтеграція та діагностика для кожної гри/V-Sync |
+| MinHook, закріплений 8fda4f5 | Tsuda Kageyu; Авторське право 2009–2017 | [Репозиторій](https://github.com/TsudaKageyu/minhook), [закріплене джерело](https://github.com/TsudaKageyu/minhook/tree/8fda4f5481fed5797dc2651cd91e238e9b3928c6) | [BSD Повідомлення з 2 пунктів](../../../NVMFG-Unlock40/LICENSES/MinHook.txt) | Статично скомпільовано в двигун NVMFG | Включена підмножина без змін, окрім форматування тексту щодо успадкованої копії |
+| Hacker Disassembler Engine (HDE64) | Vyacheslav Patkov; Авторське право 2008–2009 | [Вихідна колекція MinHook](https://github.com/TsudaKageyu/minhook/tree/8fda4f5481fed5797dc2651cd91e238e9b3928c6/src/hde) | [Повні повідомлення MinHook/HDE](../../../NVMFG-Unlock40/LICENSES/MinHook.txt) | Декодер MinHook в NVMFG | Функціональних змін не виявлено; Примітка HDE32 збережена, хоча виробництво використовує HDE64 |
+| Заголовки інтеграції Streamline 2.12 | NVIDIA Corporation; Авторське право 2023 | [Репозиторій](https://github.com/NVIDIA-RTX/Streamline), [завантаження](https://github.com/NVIDIA-RTX/Streamline/releases) | [MIT для придатних заголовків](../../../NVMFG-Unlock40/LICENSES/Streamline-MIT.txt) | Компілює інтеграцію NVMFG Streamline | Заголовки не змінені; у пакеті програми немає DLL середовища виконання |
+| Заголовки NVIDIA NGX / DLSS SDK | NVIDIA Corporation | [Закріплений репозиторій](https://github.com/NVIDIA/DLSS/tree/a291cc7d2cc642a51566f3dfd5376f635cd1b284), [SDK](https://developer.nvidia.com/rtx/dlss) | [Умови NVIDIA RTX SDK](../../../NVMFG-Unlock40/LICENSES/NVIDIA-RTX-SDK.txt), [повідомлення заголовка](../../../NVMFG-Unlock40/LICENSES/NGX-Header-Notice.txt) | Компілює інтеграцію NVMFG NGX | Заголовки не змінені; немає моделі NGX/постачальника в комплекті; невирішене обмеження, описане нижче |
+| Середовище виконання .NET 8.0.31 (NVDF) / 8.0.30 (NVMFG) | .NET Foundation, Microsoft та учасники | [Джерело](https://github.com/dotnet/runtime), [завантаження](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) | [MIT](../../../licenses/third-party/Microsoft-NET-LICENSE.txt) і [повні повідомлення третіх сторін](../../../licenses/third-party/Microsoft-NET-THIRD-PARTY-NOTICES.txt) | Автономна програма/агент NVDF і NVMFG | Час виконання без змін |
+| WPF / Windows Desktop Runtime 8.0.31 (NVDF) / 8.0.30 (NVMFG) | .NET Foundation, Microsoft та учасники | [Джерело](https://github.com/dotnet/wpf), [завантаження](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) | [MIT](../../../licenses/third-party/Microsoft-WPF-LICENSE.txt), повідомлення про виконання вище | Інтерфейс користувача NVDF і NVMFG | Каркас без змін; інтерфейс програми створено/адаптовано окремо |
+| .NET Framework 4.8 | Microsoft | [Офіційне завантаження середовища виконання](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48) | Microsoft умови платформи/виконання; зовнішній | Помічники профілів NVPI, RP і NVMFG | немає; цей хаб не розповсюджував інсталятор або рамкову DLL |
+| 7-Zip 26.03 x64 | Igor Pavlov; Авторське право 1999–2026 | [Сайт/завантаження](https://www.7-zip.org/download.html), [точний вихідний архів](https://github.com/ip7z/7zip/releases/download/26.03/7z2603-src.tar.xz) | Частини [Повне повідомлення](../../../licenses/third-party/7-Zip.txt), [LGPL 2.1-or-later](../../../licenses/third-party/LGPL-2.1.txt), BSD і обмеження unRAR | NVDF вбудовує немодифікований 7z.exe/7z.dll і запускає CLI як окремий процес | Жодних модифікацій |
+| Inno Setup 7.1.0 | Jordan Russell, Martijn Laan та учасники | [Сайт/завантаження](https://jrsoftware.org/isinfo.php), [джерело](https://github.com/jrsoftware/issrc) | [Оригінальна ліцензія Inno Setup](../../../licenses/third-party/Inno-Setup.txt) | Двигуни інсталяторів і створені деінсталятори | Двигун/компілятор без змін; Адаптовано сценарії проекту, брендинг і нативний фокус |
+| Каталоги перекладів Inno Setup | Названі оригінальні перекладачі | [Офіційна колекція](https://jrsoftware.org/files/istrans/) | Повідомлення Inno/каталогу та [повні титри заголовка](../../../licenses/INSTALLER-TRANSLATORS.md) | Спільні 34-мовні каталоги для всіх чотирьох інсталяторів, включаючи NVPI версія 2 | Ключі, ідентифікатори, шрифти, резервна версія технічної англійської мови; створені проектом каталоги попереднього перегляду, де це необхідно |
+| Підтримка Microsoft Visual C++ / Windows SDK | Microsoft | [Інструменти Visual Studio](https://visualstudio.microsoft.com/downloads/), [індекс умов перерозподілу](https://learn.microsoft.com/en-us/visualstudio/releases/2022/redistribution) | Microsoft інструментарій/терміни виконання; не MIT за цією таблицею | Статичний реліз ЕПТ у рідному движку/завантажувальному бінарному файлі; встановлені API Windows | Немає змін джерела виконання; немає компілятора, SDK або середовища виконання налагодження |
+| RivaTuner Statistics Server (RTSS) | Unwinder | [Офіційне завантаження Guru3D](https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/) | умови постачальника; немає дозволу на розповсюдження, виведеного з «безкоштовних програм» | Необхідний зовнішній обмежувач для RP; встановлено експорт UpdateProfiles | Немає коду RTSS/двійкового коду, модифікованого або в комплекті; RP записує вибрані ключі профілю |
+| Драйвер NVIDIA / NVAPI / NVML | NVIDIA Corporation | [Завантаження драйверів](https://www.nvidia.com/en-us/drivers/), [NVAPI](https://developer.nvidia.com/nvapi), [NVML](https://developer.nvidia.com/management-library-nvml) | умови драйвера NVIDIA/SDK; зовнішній | Встановлені власні інтерфейси та завантаження оригінальних драйверів | Немає DLL NVIDIA в активах концентратора; Додаткова операція NVENC NVDF змінює вибрані користувачем встановлені бібліотеки DLL |
+| NVIDIA Постачальник/моделі NGX і середовище виконання Streamline | NVIDIA Corporation | [DLSS SDK](https://developer.nvidia.com/rtx/dlss), [Випуски Streamline](https://github.com/NVIDIA-RTX/Streamline/releases) | Специфічні для компонентів терміни NVIDIA, відмінні від заголовків MIT | Зовнішні компоненти гри/драйвера, які використовуються NVMFG; SDK завантажується лише за запитом | NVMFG застосовує експериментальні зміни поведінки в пам'яті; Копії гри SDK можна оновити за допомогою резервної копії |
+| keylase/nvidia-patch | keylase та учасники | [Репозиторій](https://github.com/keylase/nvidia-patch), [Дані Windows](https://github.com/keylase/nvidia-patch/tree/master/win) | Ліцензія на перерозповсюдження не встановлена цим аудитом | Зовнішній необов’язковий NVDF NVENC каталог/дані виправлення, отримані з одного закріпленого коміту на вибір | Немає вихідних джерел, патчерів або даних патча, скопійованих у концентратор/активи програми |
+| NVCleanstall | TechPowerUp | [Офіційна сторінка/завантажити](https://www.techpowerup.com/download/techpowerup-nvcleanstall/) | Власний розподіл; вихідний/двійковий дозвіл на перерозподіл не передбачено | Робочий процес і варіант натхнення для NVDF | Немає імпортованого вихідного чи двійкового файлу; не залежність fork або виконання |
+
+<a id="obligations-and-boundaries"></a>
+## Зобов'язання та межі
+
+**Компоненти MIT:** збережіть авторські права, текст дозволу та застереження разом із копіями. Їхня ліцензія не вимагає публікації зміненого джерела. Оригінальне авторство зберігається, навіть якщо джерело програми зберігається приватно.
+
+**MinHook/HDE:** зберігає зауваження, умови та застереження у двійковій документації. Надається повне комбіноване повідомлення.
+
+**7-Zip:** зберігає повідомлення LGPL/BSD/unRAR і забезпечує доступ до точного незміненого джерела. Посилання на вихідний архів разом із повним LGPL наведено вище. Обмеження unRAR застосовується до відповідного коду декомпресії; це не загальна залежність MIT. Див. [поширені запитання](https://www.7-zip.org/faq.html) автора.
+
+**Inno Setup:** збережіть обов’язкові повідомлення про авторські права/веб-сайти системи та позначте зміни джерела, де це можливо. Кредити немодифікованого двигуна залишаються в інсталяторах. Адаптовані каталоги зберігають повідомлення про оригінальні джерела; імена тут проіндексовані.
+
+**Матеріал NVIDIA:** ліцензія MIT для заголовків інтеграції Streamline не поширюється на кожен файл SDK. Його повідомлення чітко розділяє матеріал Nsight Perf SDK; цей матеріал не використовується в цій виробничій цілі. Заголовки NGX підпадають під запатентовані умови NVIDIA RTX SDK. Їх повний текст було додано з [оригінал-байтова копія](../../../NVMFG-Unlock40/LICENSES/NVIDIA-RTX-SDK.original.txt). Обмеження розділу 4(d) щодо технічних обмежень залишається невирішеним для використання NVMFG. Жодного ствердного дозволу не випливає з існування іншого мода.
+
+**Зовнішні невідомі/власні компоненти:** RTSS, NVCleanstall, NVIDIA драйвери, моделі та дані виправлень keylase не входять до підготовлених активів концентратора. Посилання ідентифікують їхніх фактичних власників. Завантаження, ініційоване користувачем, не переліцензує компонент.
+
+Інструменти використовують API і шрифти, надані Windows. Жоден файл Windows SDK/compiler/font не скопійовано в це сховище Git. Інструменти збирання та приватні тести не розповсюджуються. Повідомлення про внутрішні компоненти середовища виконання залишаються в повному файлі повідомлень Microsoft, а не перепризначаються видавцеві.
+
+<a id="publisher-contributions"></a>
+## Внески видавців
+
+禅堂 Zendo (RevoluSound Team) зберігає оригінальну роботу програми, адаптації та документацію, описану в [керівництво походження](docs/provenance.md). [NVPI](NVIDIA-Profile-Inspector/README.md), [NVDF](NVDriverForge/README.md), [NVMFG](NVMFG-Unlock40/README.md) і [RP](NVRasterPulse/README.md) відрізняють успадковану роботу від змін.
+
+Незалежні проекти; жодна приналежність до NVIDIA Corporation, спонсорство чи офіційне схвалення від NVIDIA Corporation або перерахованих вище авторів не мається на увазі.

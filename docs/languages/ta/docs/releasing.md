@@ -1,0 +1,62 @@
+<!-- nv-language-navigation:start -->
+🌐 [English](../../../releasing.md) | [Français](../../../releasing.fr.md) · [NV Laboratory](../README.md)
+
+<details>
+<summary>🌐 Language · 34</summary>
+
+[العربية](../../ar/docs/releasing.md) · [বাংলা](../../bn/docs/releasing.md) · [简体中文](../../zh/docs/releasing.md) · [Čeština](../../cs/docs/releasing.md) · [Dansk](../../da/docs/releasing.md) · [Nederlands](../../nl/docs/releasing.md) · [English](../../../releasing.md) · [Filipino](../../fil/docs/releasing.md) · [Suomi](../../fi/docs/releasing.md) · [Français](../../../releasing.fr.md) · [Deutsch](../../de/docs/releasing.md) · [Ελληνικά](../../el/docs/releasing.md) · [हिन्दी](../../hi/docs/releasing.md) · [Magyar](../../hu/docs/releasing.md) · [Bahasa Indonesia](../../id/docs/releasing.md) · [Italiano](../../it/docs/releasing.md) · [日本語](../../ja/docs/releasing.md) · [한국어](../../ko/docs/releasing.md) · [मराठी](../../mr/docs/releasing.md) · [فارسی](../../fa/docs/releasing.md) · [Polski](../../pl/docs/releasing.md) · [Português](../../pt/docs/releasing.md) · [ਪੰਜਾਬੀ](../../pa/docs/releasing.md) · [Română](../../ro/docs/releasing.md) · [Русский](../../ru/docs/releasing.md) · [Español](../../es/docs/releasing.md) · [Kiswahili](../../sw/docs/releasing.md) · [Svenska](../../sv/docs/releasing.md) · **தமிழ்** · [ไทย](../../th/docs/releasing.md) · [Türkçe](../../tr/docs/releasing.md) · [Українська](../../uk/docs/releasing.md) · [اردو](../../ur/docs/releasing.md) · [Tiếng Việt](../../vi/docs/releasing.md)
+
+[Translation policy](../../README.md)
+
+</details>
+<!-- nv-language-navigation:end -->
+
+<!-- nv-translation-notice:start -->
+> ஆங்கிலத்தில் இருந்து இயந்திர உதவி மொழிபெயர்ப்பு. தொழில்நுட்ப பெயர்கள், கட்டளைகள், URLகள் மற்றும் அசல் சட்ட நூல்கள் பாதுகாக்கப்படுகின்றன. தாய்மொழி மதிப்பாய்வு வரவேற்கத்தக்கது; வார்த்தைகள் தெளிவாக இல்லை என்றால் ஆங்கிலக் குறிப்பைப் பார்க்கவும்.
+<!-- nv-translation-notice:end -->
+
+<a id="publishing-and-releases"></a>
+# வெளியீடு மற்றும் வெளியீடுகள்
+
+பொது களஞ்சியம் **Zendo-GIT/NV-ஆய்வகம்**. ஆவண மாற்றங்கள் **GitHub Desktop** மூலம் பராமரிப்பாளரால் மதிப்பாய்வு செய்யப்பட்டு, உறுதியளிக்கப்பட்டு, தள்ளப்படும். உள்ளூர் பொறுப்பு கோப்புகளை பதிவேற்றாது. பைனரி தொகுப்புகள் தனி GitHub வெளியீட்டு சொத்துகள்; அவை ஒருபோதும் Git மாற்றங்கள் பட்டியலில் இல்லை.
+
+<a id="documentation-updates"></a>
+## ஆவண மேம்படுத்தல்கள்
+
+1. GitHub Desktop இல் **NV-Labatory** கோப்புறையைத் திறக்கவும்.
+2. ஆவணங்கள், அறிவிப்புகள், படங்கள், JSON மெட்டாடேட்டா மற்றும் ஆவணச் சரிபார்ப்பு ஆகியவற்றை மதிப்பாய்வு செய்யவும்.
+3. அந்த கோப்புறையிலிருந்து `python tools/validate_repository.py` ஐ இயக்கவும்.
+4. மதிப்பாய்வு செய்யப்பட்ட மாற்றங்களைச் செய்து, **Push origin** ஐப் பயன்படுத்தவும். செயல்களின் முடிவைச் சரிபார்க்கவும்.
+5. பொது எழுத்தாளர் அடையாளத்தை **禅堂 Zendo (RevoluSound Team)** மற்றும் கணக்கின் GitHub `noreply` முகவரியை வைத்திருங்கள்.
+
+பெற்றோர் மேம்பாட்டு பணியிடம், தனிப்பட்ட தணிக்கை கோப்பகம் அல்லது பைனரி இணைப்பு கோப்பகத்தை ஒருபோதும் தேர்ந்தெடுக்க வேண்டாம். [மின்னஞ்சல் தனியுரிமை உறுதி](https://docs.github.com/en/account-and-profile/how-tos/email-preferences/setting-your-commit-email-address).
+
+<a id="independent-application-releases"></a>
+## சுயாதீன விண்ணப்ப வெளியீடுகள்
+
+| கருவி | குறிச்சொல் | பதிப்பு கொள்கை |
+| --- | --- | --- |
+| NVIDIA Profile Inspector – NV Tools Fork | nvpi-v3.0.2.3 | தற்போதுள்ள நான்கு பகுதி பயன்பாட்டு பதிப்பு; அமைப்பு திருத்தம் 2 அதன் சொந்த கோப்பு பெயரைக் கொண்டுள்ளது |
+| NVDriverForge | nvdriverforge-v0.1.3 | தற்போதுள்ள 0.x திட்டம்; பதிப்பு மேம்படுத்தல்கள் முந்தைய தொகுப்புகளை பாதுகாக்கின்றன |
+| NVMFG Unlock40 | nvmfg-unlock40-v0.1.1 | UI2 வேட்பாளர் புதிய பயன்பாட்டுப் பதிப்பைக் கண்டுபிடிக்காமலேயே துல்லியமான ஹாஷ்களால் அடையாளம் காணப்பட்டார் |
+| NVRasterPulse | nvrasterpulse-v0.1 | தற்போதுள்ள இரண்டு பகுதி பதிப்பு |
+
+பராமரிப்பாளர் நேரடியாக வெளியிடலாம் அல்லது தணிக்கை செய்யப்பட்ட சொத்துக்களை வெளியிட உதவியாளரை அங்கீகரிக்கலாம். வெளியீடு வெளிப்படையானது; எந்த பணிப்பாய்வு ஒவ்வொரு கமிட் மீதும் ஒரு வெளியீட்டை உருவாக்குகிறது.
+
+1. தற்போதைய முன்பதிவு அறிக்கை, பைனரிகளின் ஆதாரங்கள், உரிமங்கள் மற்றும் SHA-256 மதிப்புகளை மதிப்பாய்வு செய்யவும்.
+2. மதிப்பாய்வு செய்யப்பட்ட ஹப் கமிட்டைக் குறிவைத்து, கருவியின் குறிச்சொல்லுக்கான வரைவை உருவாக்கவும். தயாரிக்கப்பட்ட பதிப்பு-குறிப்பிட்ட வெளியீட்டு குறிப்புகளைச் சேர்க்கவும்.
+3. அந்த பதிப்பின் அமைவு/கையடக்க சொத்துக்கள், `Licenses-and-Credits.zip` மற்றும் `SHA256SUMS.txt` ஆகியவற்றை மட்டும் இணைக்கவும்.
+4. இணக்கத்தன்மை, நிறுவல், சார்புகள், மாற்றங்கள் மற்றும் அறியப்பட்ட வரம்புகளைச் சரிபார்க்கவும். NVRasterPulseக்கு RTSS ஐ முக்கியமாக வைத்திருங்கள்.
+5. பொதுச் சொத்து URLகள், அளவுகள் மற்றும் ஹாஷ்களை வெளியிடவும், சரிபார்க்கவும் மற்றும் `docs/releases.json` இல் உண்மையான வெளியீட்டு தேதியை பதிவு செய்யவும்.
+6. பதிவிறக்கப் பக்கங்கள் மற்றும் மொழிபெயர்ப்புகளைப் புதுப்பித்து, GitHub Desktop இல் அவற்றின் மாற்றங்களைச் செய்யவும்/தள்ளவும்.
+
+பகிரப்பட்ட `releases/latest` இணைப்பு மூலம் ஒரு திட்டத்திற்கான டேக் இணைப்புகள் பயனர்களை மற்றொரு கருவிக்கு அனுப்புவதைத் தவிர்க்கின்றன. GitHub இன் தானியங்கி **Source code** காப்பகங்கள் இந்த ஆவண மையத்தைக் கொண்டுள்ளன. விண்ணப்ப ஆதாரங்கள் தனிப்பட்டதாக இருக்கும். அசல் கூறு அறிவிப்புகள் அப்படியே இருக்கும், மேலும் ஒரு வெளியீடு NVMFG இன் ஆவணப்படுத்தப்பட்ட NVIDIA SDK இருப்பைத் தீர்க்காது.
+
+<a id="integrity-and-storage"></a>
+## நேர்மை மற்றும் சேமிப்பு
+
+வெளியிடப்பட்ட பைனரி பைட்டுகளை அமைதியாக மாற்ற வேண்டாம். புதிய ஹாஷ்களுடன் புதிய வெளிப்படையான பதிப்பு அல்லது நிறுவி திருத்தத்தைப் பயன்படுத்தவும். சட்டப் பக்க கார்கள் உட்பொதிக்கப்பட்ட அறிவிப்புகளை நிரப்புகின்றன. NVDriverForge 0.1.3 கையடக்கமானது 141,760,351 பைட்டுகள், GitHub இன் சாதாரண 100 MiB Git-file வரம்புக்கு மேல். இந்த மையத்தில் பைனரிகள் அல்லது Git LFS ஐ வைப்பதை இணைப்புகளை வெளியிடுவதைத் தவிர்க்கவும். [GitHub பெரிய கோப்பு வழிகாட்டுதல்](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
+
+களஞ்சிய பாதுகாப்பு அமைப்புகளில் தனிப்பட்ட பாதிப்பு அறிக்கையிடல் இயக்கப்பட வேண்டும். முக்கியமான அறிக்கைகளை அனுப்புவதற்கு முன், அதன் இருப்பைச் சரிபார்க்கவும்; [SECURITY.md](../SECURITY.md) பாதிப்பு விவரங்களை வெளிப்படுத்தாத ஒரு பின்னடைவை வழங்குகிறது.
+
+[அட்டவணையைப் பதிவிறக்கவும்](downloads.md) · [GitHub வெளியீட்டு ஆவணங்கள்](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository)

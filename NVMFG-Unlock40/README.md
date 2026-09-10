@@ -1,4 +1,15 @@
-🌐 **Language:** English | [Français](README.fr.md) · [NV Laboratory](../README.md)
+<!-- nv-language-navigation:start -->
+🌐 English | [Français](README.fr.md) · [NV Laboratory](../README.md)
+
+<details>
+<summary>🌐 Language · 34</summary>
+
+[العربية](../docs/languages/ar/NVMFG-Unlock40/README.md) · [বাংলা](../docs/languages/bn/NVMFG-Unlock40/README.md) · [简体中文](../docs/languages/zh/NVMFG-Unlock40/README.md) · [Čeština](../docs/languages/cs/NVMFG-Unlock40/README.md) · [Dansk](../docs/languages/da/NVMFG-Unlock40/README.md) · [Nederlands](../docs/languages/nl/NVMFG-Unlock40/README.md) · **English** · [Filipino](../docs/languages/fil/NVMFG-Unlock40/README.md) · [Suomi](../docs/languages/fi/NVMFG-Unlock40/README.md) · [Français](README.fr.md) · [Deutsch](../docs/languages/de/NVMFG-Unlock40/README.md) · [Ελληνικά](../docs/languages/el/NVMFG-Unlock40/README.md) · [हिन्दी](../docs/languages/hi/NVMFG-Unlock40/README.md) · [Magyar](../docs/languages/hu/NVMFG-Unlock40/README.md) · [Bahasa Indonesia](../docs/languages/id/NVMFG-Unlock40/README.md) · [Italiano](../docs/languages/it/NVMFG-Unlock40/README.md) · [日本語](../docs/languages/ja/NVMFG-Unlock40/README.md) · [한국어](../docs/languages/ko/NVMFG-Unlock40/README.md) · [मराठी](../docs/languages/mr/NVMFG-Unlock40/README.md) · [فارسی](../docs/languages/fa/NVMFG-Unlock40/README.md) · [Polski](../docs/languages/pl/NVMFG-Unlock40/README.md) · [Português](../docs/languages/pt/NVMFG-Unlock40/README.md) · [ਪੰਜਾਬੀ](../docs/languages/pa/NVMFG-Unlock40/README.md) · [Română](../docs/languages/ro/NVMFG-Unlock40/README.md) · [Русский](../docs/languages/ru/NVMFG-Unlock40/README.md) · [Español](../docs/languages/es/NVMFG-Unlock40/README.md) · [Kiswahili](../docs/languages/sw/NVMFG-Unlock40/README.md) · [Svenska](../docs/languages/sv/NVMFG-Unlock40/README.md) · [தமிழ்](../docs/languages/ta/NVMFG-Unlock40/README.md) · [ไทย](../docs/languages/th/NVMFG-Unlock40/README.md) · [Türkçe](../docs/languages/tr/NVMFG-Unlock40/README.md) · [Українська](../docs/languages/uk/NVMFG-Unlock40/README.md) · [اردو](../docs/languages/ur/NVMFG-Unlock40/README.md) · [Tiếng Việt](../docs/languages/vi/NVMFG-Unlock40/README.md)
+
+[Translation policy](../docs/languages/README.md)
+
+</details>
+<!-- nv-language-navigation:end -->
 
 # NVMFG Unlock40
 
@@ -8,10 +19,15 @@
 
 ## Overview and purpose
 
-NVMFG Unlock40 combines an adapted native engine derived from
-[RTX40MFG-Unlock](https://github.com/dashdogy/RTX40MFG-Unlock), a Windows controller,
+NVMFG Unlock40 is an independently developed application by
+禅堂 Zendo (RevoluSound Team). It combines a Windows controller, a native layer,
 a profile helper and game/Streamline SDK management. It targets games that already
 integrate NVIDIA DLSS Frame Generation and compatible NVIDIA runtimes.
+
+[RTX40MFG-Unlock](https://github.com/dashdogy/RTX40MFG-Unlock) was consulted to
+compare and refine the work. The current native layer contains shared and adapted
+components, credited individually below. This reference does not make the entire
+NVMFG application a fork of that project.
 
 It exists to coordinate experimental MFG behavior centrally, remember game-specific
 choices, and keep runtime updates and backups visible. It does not add DLSS Frame
@@ -150,15 +166,20 @@ licenses are provided. This does not remove rights or restrictions of third part
 
 ## Upstream and modifications
 
-Native origin: **RTX40MFG-Unlock by Michael Robles / dashdogy**, reference commit
+Comparison reference and shared native components: **RTX40MFG-Unlock by
+Michael Robles / dashdogy**, reference commit
 `4e776d068f91b4a665425542bb005dd57cc3d891`, MIT.
 [Repository](https://github.com/dashdogy/RTX40MFG-Unlock) · [Original downloads](https://github.com/dashdogy/RTX40MFG-Unlock/releases).
 
-Inherited work includes patching, provider/policy handling, temporal corrections
-and MinHook-based detours. Adaptations by 禅堂 Zendo (RevoluSound Team) include central loading,
-NGX bootstrap integration, verified provider selection, game/V-Sync coordination,
-session diagnostics and the desktop/controller/SDK management application.
-Some inherited files remain only in private history and are not in the production target.
+The source comparison identifies shared patching, provider/policy handling,
+temporal corrections and MinHook-based detour components. Their MIT and BSD notices
+are retained. The complete comparison also includes files outside the production target.
+
+The desktop application, controller and SDK-management workflow are developed by
+禅堂 Zendo (RevoluSound Team). Project work includes central loading, NGX bootstrap
+integration, verified provider selection, game/V-Sync coordination and session
+diagnostics. The provenance guide separates that work from the shared components;
+a file comparison alone does not establish when either author had the idea.
 
 The profile helper adapts the MIT NVAPI wrapper from Orbmu2k's Profile Inspector.
 [Detailed provenance and component scope](../docs/provenance.md).
@@ -167,7 +188,7 @@ The profile helper adapts the MIT NVAPI wrapper from Orbmu2k's Profile Inspector
 
 Michael Robles; Orbmu2k; Tsuda Kageyu and HDE contributors; NVIDIA Corporation;
 Microsoft and contributors; Inno Setup authors and translators. Application
-adaptations and packaging: 禅堂 Zendo (RevoluSound Team).
+development, integrations and packaging: 禅堂 Zendo (RevoluSound Team).
 
 The [existing compiled-package sharing permission](LICENSE) and all
 [component licenses](LICENSES/README.md) are preserved. MIT permissions for upstream

@@ -1,4 +1,15 @@
-🌐 **Language:** English | [Français](installation.fr.md) · [Home](../README.md)
+<!-- nv-language-navigation:start -->
+🌐 English | [Français](installation.fr.md) · [NV Laboratory](../README.md)
+
+<details>
+<summary>🌐 Language · 34</summary>
+
+[العربية](languages/ar/docs/installation.md) · [বাংলা](languages/bn/docs/installation.md) · [简体中文](languages/zh/docs/installation.md) · [Čeština](languages/cs/docs/installation.md) · [Dansk](languages/da/docs/installation.md) · [Nederlands](languages/nl/docs/installation.md) · **English** · [Filipino](languages/fil/docs/installation.md) · [Suomi](languages/fi/docs/installation.md) · [Français](installation.fr.md) · [Deutsch](languages/de/docs/installation.md) · [Ελληνικά](languages/el/docs/installation.md) · [हिन्दी](languages/hi/docs/installation.md) · [Magyar](languages/hu/docs/installation.md) · [Bahasa Indonesia](languages/id/docs/installation.md) · [Italiano](languages/it/docs/installation.md) · [日本語](languages/ja/docs/installation.md) · [한국어](languages/ko/docs/installation.md) · [मराठी](languages/mr/docs/installation.md) · [فارسی](languages/fa/docs/installation.md) · [Polski](languages/pl/docs/installation.md) · [Português](languages/pt/docs/installation.md) · [ਪੰਜਾਬੀ](languages/pa/docs/installation.md) · [Română](languages/ro/docs/installation.md) · [Русский](languages/ru/docs/installation.md) · [Español](languages/es/docs/installation.md) · [Kiswahili](languages/sw/docs/installation.md) · [Svenska](languages/sv/docs/installation.md) · [தமிழ்](languages/ta/docs/installation.md) · [ไทย](languages/th/docs/installation.md) · [Türkçe](languages/tr/docs/installation.md) · [Українська](languages/uk/docs/installation.md) · [اردو](languages/ur/docs/installation.md) · [Tiếng Việt](languages/vi/docs/installation.md)
+
+[Translation policy](languages/README.md)
+
+</details>
+<!-- nv-language-navigation:end -->
 
 # Installation guide
 
@@ -38,7 +49,7 @@ Selected SDK downloads and game updates are explicit separate operations.
 
 ## Language and updates
 
-Use the README's English/Français selector for documentation. NVDF, NVMFG and RP
+Use the README's 34-language selector for documentation. NVDF, NVMFG and RP
 have their own 34-language UI setting; NVPI keeps its existing language support.
 Some installer technical strings fall back to English.
 

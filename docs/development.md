@@ -1,4 +1,15 @@
-🌐 **Language:** English | [Français](development.fr.md) · [Home](../README.md)
+<!-- nv-language-navigation:start -->
+🌐 English | [Français](development.fr.md) · [NV Laboratory](../README.md)
+
+<details>
+<summary>🌐 Language · 34</summary>
+
+[العربية](languages/ar/docs/development.md) · [বাংলা](languages/bn/docs/development.md) · [简体中文](languages/zh/docs/development.md) · [Čeština](languages/cs/docs/development.md) · [Dansk](languages/da/docs/development.md) · [Nederlands](languages/nl/docs/development.md) · **English** · [Filipino](languages/fil/docs/development.md) · [Suomi](languages/fi/docs/development.md) · [Français](development.fr.md) · [Deutsch](languages/de/docs/development.md) · [Ελληνικά](languages/el/docs/development.md) · [हिन्दी](languages/hi/docs/development.md) · [Magyar](languages/hu/docs/development.md) · [Bahasa Indonesia](languages/id/docs/development.md) · [Italiano](languages/it/docs/development.md) · [日本語](languages/ja/docs/development.md) · [한국어](languages/ko/docs/development.md) · [मराठी](languages/mr/docs/development.md) · [فارسی](languages/fa/docs/development.md) · [Polski](languages/pl/docs/development.md) · [Português](languages/pt/docs/development.md) · [ਪੰਜਾਬੀ](languages/pa/docs/development.md) · [Română](languages/ro/docs/development.md) · [Русский](languages/ru/docs/development.md) · [Español](languages/es/docs/development.md) · [Kiswahili](languages/sw/docs/development.md) · [Svenska](languages/sv/docs/development.md) · [தமிழ்](languages/ta/docs/development.md) · [ไทย](languages/th/docs/development.md) · [Türkçe](languages/tr/docs/development.md) · [Українська](languages/uk/docs/development.md) · [اردو](languages/ur/docs/development.md) · [Tiếng Việt](languages/vi/docs/development.md)
+
+[Translation policy](languages/README.md)
+
+</details>
+<!-- nv-language-navigation:end -->
 
 # Repository architecture and maintenance
 
@@ -21,9 +32,12 @@ is not imported into this Git repository.
 | .github | Issue forms and read-only documentation validation |
 | tools/validate_repository.py | Standard-library publication-boundary and link checks |
 
-Adjacent `.fr.md` files keep relative navigation predictable. English is the
-default GitHub README; visitors choose French manually. No GitHub Pages site
-is needed for these two maintainable entry points.
+English remains the default GitHub README. Existing adjacent `.fr.md` links stay
+valid. Additional translations mirror the documentation under `docs/languages/<code>`;
+the language selector keeps the same page when switching languages. The catalog
+`docs/languages/catalog.json` records all 34 languages and source fingerprints.
+GitHub does not automatically select a README by browser language. See the
+[language index and translation policy](languages/README.md).
 
 ## Application technologies
 
@@ -56,7 +70,7 @@ and does not persist credentials. No release or deployment job is configured.
 
 ## Maintain the boundary
 
-Update English/French guides together. Keep substantive changes separate from
+Update the English reference, French guides and affected translations together. Keep substantive changes separate from
 formatting-only comparisons. Record actual candidate hashes, upstream commit
 references and licenses; never infer a license from a project's popularity.
 

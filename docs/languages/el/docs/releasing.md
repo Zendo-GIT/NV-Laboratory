@@ -1,0 +1,62 @@
+<!-- nv-language-navigation:start -->
+🌐 [English](../../../releasing.md) | [Français](../../../releasing.fr.md) · [NV Laboratory](../README.md)
+
+<details>
+<summary>🌐 Language · 34</summary>
+
+[العربية](../../ar/docs/releasing.md) · [বাংলা](../../bn/docs/releasing.md) · [简体中文](../../zh/docs/releasing.md) · [Čeština](../../cs/docs/releasing.md) · [Dansk](../../da/docs/releasing.md) · [Nederlands](../../nl/docs/releasing.md) · [English](../../../releasing.md) · [Filipino](../../fil/docs/releasing.md) · [Suomi](../../fi/docs/releasing.md) · [Français](../../../releasing.fr.md) · [Deutsch](../../de/docs/releasing.md) · **Ελληνικά** · [हिन्दी](../../hi/docs/releasing.md) · [Magyar](../../hu/docs/releasing.md) · [Bahasa Indonesia](../../id/docs/releasing.md) · [Italiano](../../it/docs/releasing.md) · [日本語](../../ja/docs/releasing.md) · [한국어](../../ko/docs/releasing.md) · [मराठी](../../mr/docs/releasing.md) · [فارسی](../../fa/docs/releasing.md) · [Polski](../../pl/docs/releasing.md) · [Português](../../pt/docs/releasing.md) · [ਪੰਜਾਬੀ](../../pa/docs/releasing.md) · [Română](../../ro/docs/releasing.md) · [Русский](../../ru/docs/releasing.md) · [Español](../../es/docs/releasing.md) · [Kiswahili](../../sw/docs/releasing.md) · [Svenska](../../sv/docs/releasing.md) · [தமிழ்](../../ta/docs/releasing.md) · [ไทย](../../th/docs/releasing.md) · [Türkçe](../../tr/docs/releasing.md) · [Українська](../../uk/docs/releasing.md) · [اردو](../../ur/docs/releasing.md) · [Tiếng Việt](../../vi/docs/releasing.md)
+
+[Translation policy](../../README.md)
+
+</details>
+<!-- nv-language-navigation:end -->
+
+<!-- nv-translation-notice:start -->
+> Μηχανική μετάφραση από τα αγγλικά. Διατηρούνται τεχνικά ονόματα, εντολές, διευθύνσεις URL και πρωτότυπα νομικά κείμενα. Η κριτική από γηγενείς ομιλητές είναι ευπρόσδεκτη. συμβουλευτείτε την αγγλική αναφορά εάν η διατύπωση είναι ασαφής.
+<!-- nv-translation-notice:end -->
+
+<a id="publishing-and-releases"></a>
+# Έκδοση και εκδόσεις
+
+Το δημόσιο αποθετήριο είναι **Zendo-GIT/NV-Laboratory**. Οι αλλαγές στην τεκμηρίωση εξετάζονται, δεσμεύονται και προωθούνται από τον συντηρητή με **GitHub Desktop**. Μια τοπική δέσμευση δεν ανεβάζει αρχεία. Τα δυαδικά πακέτα είναι ξεχωριστά στοιχεία του GitHub Release. δεν ανήκουν ποτέ στη λίστα αλλαγών του Git.
+
+<a id="documentation-updates"></a>
+## Ενημερώσεις τεκμηρίωσης
+
+1. Ανοίξτε το φάκελο **NV-Laboratory** στο GitHub Desktop.
+2. Ελέγξτε την τεκμηρίωση, τις ειδοποιήσεις, τις εικόνες, τα μεταδεδομένα JSON και το εργαλείο επικύρωσης τεκμηρίωσης.
+3. Εκτελέστε το `python tools/validate_repository.py` από αυτόν τον φάκελο.
+4. Πραγματοποιήστε τις αναθεωρημένες αλλαγές και, στη συνέχεια, χρησιμοποιήστε το **Push origin**. Ελέγξτε το αποτέλεσμα Ενέργειες.
+5. Διατηρήστε τη δημόσια ταυτότητα συγγραφέα **禅堂 Zendo (RevoluSound Team)** και τη διεύθυνση GitHub `noreply` του λογαριασμού.
+
+Μην επιλέγετε ποτέ τον γονικό χώρο εργασίας ανάπτυξης, τον κατάλογο ιδιωτικού ελέγχου ή τον κατάλογο δυαδικών συνημμένων. [Δεσμεύστε το απόρρητο των email](https://docs.github.com/en/account-and-profile/how-tos/email-preferences/setting-your-commit-email-address).
+
+<a id="independent-application-releases"></a>
+## Ανεξάρτητες εκδόσεις εφαρμογών
+
+| Εργαλείο | Ετικέτα | Πολιτική έκδοσης |
+| --- | --- | --- |
+| NVIDIA Profile Inspector – NV Tools Fork | nvpi-v3.0.2.3 | Υπάρχουσα έκδοση τεσσάρων μερών εφαρμογής. Η αναθεώρηση εγκατάστασης 2 έχει το δικό της όνομα αρχείου |
+| NVDriverForge | nvdriverforge-v0.1.3 | Υπάρχον σχήμα 0.x. Οι ενημερώσεις με έκδοση διατηρούν προηγούμενα πακέτα |
+| NVMFG Unlock40 | nvmfg-unlock40-v0.1.1 | Ο υποψήφιος UI2 αναγνωρίστηκε με ακριβή κατακερματισμό χωρίς να εφεύρει μια νέα έκδοση εφαρμογής |
+| NVRasterPulse | nvrasterpulse-v0.1 | Υπάρχουσα έκδοση σε δύο μέρη |
+
+Ο συντηρητής μπορεί να δημοσιεύσει απευθείας ή να εξουσιοδοτήσει έναν βοηθό να δημοσιεύσει τα ελεγμένα περιουσιακά στοιχεία. Η δημοσίευση είναι ρητή. καμία ροή εργασίας δεν δημιουργεί μια έκδοση σε κάθε δέσμευση.
+
+1. Ελέγξτε την τρέχουσα αναφορά προδημοσίευσης, τις πηγές των δυαδικών αρχείων, τις άδειες χρήσης και τις τιμές SHA-256.
+2. Δημιουργήστε ένα προσχέδιο για την ετικέτα του εργαλείου, στοχεύοντας την ελεγμένη δέσμευση κόμβου. Συμπεριλάβετε τις έτοιμες σημειώσεις έκδοσης για συγκεκριμένη έκδοση.
+3. Επισυνάψτε μόνο τα Setup/φορητά στοιχεία αυτής της έκδοσης, `Licenses-and-Credits.zip` και `SHA256SUMS.txt`.
+4. Ελέγξτε τη συμβατότητα, την εγκατάσταση, τις εξαρτήσεις, τις αλλαγές και τα γνωστά όρια. Κρατήστε το RTSS σε εμφανές σημείο για το NVRasterPulse.
+5. Δημοσιεύστε, επαληθεύστε τις διευθύνσεις URL, τα μεγέθη και τους κατακερματισμούς του δημόσιου στοιχείου και καταγράψτε την πραγματική ημερομηνία δημοσίευσης στο `docs/releases.json`.
+6. Ενημερώστε τις σελίδες λήψης και τις μεταφράσεις και, στη συνέχεια, πραγματοποιήστε/πιέστε τις αλλαγές τους στο GitHub Desktop.
+
+Οι σύνδεσμοι ετικέτας ανά έργο αποφεύγουν την αποστολή των χρηστών σε άλλο εργαλείο μέσω ενός κοινόχρηστου συνδέσμου `releases/latest`. Τα αυτόματα αρχεία **Source code** του GitHub περιέχουν αυτόν τον κόμβο τεκμηρίωσης. Οι πηγές εφαρμογών παραμένουν ιδιωτικές. Οι αρχικές ειδοποιήσεις στοιχείων παραμένουν άθικτες και μια έκδοση δεν επιλύει το τεκμηριωμένο NVIDIA SDK αποθεματικό του NVMFG.
+
+<a id="integrity-and-storage"></a>
+## Ακεραιότητα και αποθήκευση
+
+Ποτέ μην αντικαθιστάτε σιωπηλά τα δημοσιευμένα δυαδικά byte. Χρησιμοποιήστε μια νέα ρητή έκδοση ή αναθεώρηση προγράμματος εγκατάστασης με νέους κατακερματισμούς. Τα νομικά πλαϊνά αυτοκίνητα συμπληρώνουν τις ενσωματωμένες ανακοινώσεις. Το φορητό NVDriverForge Το φορητό 0.1.3 είναι 141.760.351 byte, πάνω από το συνηθισμένο όριο αρχείων Git των 100 MiB του GitHub. Τα συνημμένα απελευθέρωσης αποφύγετε την τοποθέτηση δυαδικών αρχείων ή Git LFS σε αυτόν τον διανομέα. [Καθοδήγηση μεγάλου αρχείου GitHub](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
+
+Η ιδιωτική αναφορά ευπάθειας θα πρέπει να είναι ενεργοποιημένη στις ρυθμίσεις ασφαλείας του χώρου αποθήκευσης. Επαληθεύστε τη διαθεσιμότητά του πριν κατευθύνετε εκεί ευαίσθητες αναφορές. Το [SECURITY.md](../SECURITY.md) παρέχει μια εναλλακτική που δεν εκθέτει λεπτομέρειες ευπάθειας.
+
+[Λήψη καταλόγου](downloads.md) · [Τεκμηρίωση έκδοσης GitHub](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository)

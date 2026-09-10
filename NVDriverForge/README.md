@@ -1,10 +1,21 @@
-🌐 **Language:** English | [Français](README.fr.md) · [NV Laboratory](../README.md)
+<!-- nv-language-navigation:start -->
+🌐 English | [Français](README.fr.md) · [NV Laboratory](../README.md)
+
+<details>
+<summary>🌐 Language · 34</summary>
+
+[العربية](../docs/languages/ar/NVDriverForge/README.md) · [বাংলা](../docs/languages/bn/NVDriverForge/README.md) · [简体中文](../docs/languages/zh/NVDriverForge/README.md) · [Čeština](../docs/languages/cs/NVDriverForge/README.md) · [Dansk](../docs/languages/da/NVDriverForge/README.md) · [Nederlands](../docs/languages/nl/NVDriverForge/README.md) · **English** · [Filipino](../docs/languages/fil/NVDriverForge/README.md) · [Suomi](../docs/languages/fi/NVDriverForge/README.md) · [Français](README.fr.md) · [Deutsch](../docs/languages/de/NVDriverForge/README.md) · [Ελληνικά](../docs/languages/el/NVDriverForge/README.md) · [हिन्दी](../docs/languages/hi/NVDriverForge/README.md) · [Magyar](../docs/languages/hu/NVDriverForge/README.md) · [Bahasa Indonesia](../docs/languages/id/NVDriverForge/README.md) · [Italiano](../docs/languages/it/NVDriverForge/README.md) · [日本語](../docs/languages/ja/NVDriverForge/README.md) · [한국어](../docs/languages/ko/NVDriverForge/README.md) · [मराठी](../docs/languages/mr/NVDriverForge/README.md) · [فارسی](../docs/languages/fa/NVDriverForge/README.md) · [Polski](../docs/languages/pl/NVDriverForge/README.md) · [Português](../docs/languages/pt/NVDriverForge/README.md) · [ਪੰਜਾਬੀ](../docs/languages/pa/NVDriverForge/README.md) · [Română](../docs/languages/ro/NVDriverForge/README.md) · [Русский](../docs/languages/ru/NVDriverForge/README.md) · [Español](../docs/languages/es/NVDriverForge/README.md) · [Kiswahili](../docs/languages/sw/NVDriverForge/README.md) · [Svenska](../docs/languages/sv/NVDriverForge/README.md) · [தமிழ்](../docs/languages/ta/NVDriverForge/README.md) · [ไทย](../docs/languages/th/NVDriverForge/README.md) · [Türkçe](../docs/languages/tr/NVDriverForge/README.md) · [Українська](../docs/languages/uk/NVDriverForge/README.md) · [اردو](../docs/languages/ur/NVDriverForge/README.md) · [Tiếng Việt](../docs/languages/vi/NVDriverForge/README.md)
+
+[Translation policy](../docs/languages/README.md)
+
+</details>
+<!-- nv-language-navigation:end -->
 
 # NVDriverForge
 
 **Prepare an NVIDIA driver installation with clear component choices and optional settings.**
 
-[Download 0.1.2 & status](../docs/downloads.md#nvdriverforge) · [Installation](#installation) · [Credits](#credits-and-upstream) · [License](LICENSE)
+[Download 0.1.3 & status](../docs/downloads.md#nvdriverforge) · [Installation](#installation) · [Credits](#credits-and-upstream) · [License](LICENSE)
 
 ## Overview and purpose
 
@@ -21,6 +32,8 @@ workflow. It does not include NVCleanstall or claim complete feature parity.
 - NVIDIA Game Ready / Studio lookup and downloads; optional hotfix discovery with manual fallback.
 - Analysis of the original package, hashes, NVIDIA signatures, manifests and compatible INF entries.
 - Component selection with dependencies and preservation of unknown components.
+- Version 0.1.3 keeps selected optional NVIDIA components skippable and excludes only verified unchecked components from discovery. Already-current or inapplicable optional runtimes are no longer forced as critical components.
+- Clear installation failure summaries and access to detailed logs in all 34 languages.
 - Explicit installation confirmation, protected staging and export of existing driver-store packages.
 - Optional advanced settings, with preflight checks, journals and conflict-aware recovery.
 - Optional **Custom NV** preset with named choices and explanations, including a separate SILK strength selection and compatibility checks.
@@ -39,7 +52,7 @@ these are not universal performance improvements.
 | --- | --- |
 | System | Windows 10 build 19041 or newer / Windows 11, x64 |
 | GPU/driver | Compatible NVIDIA package and detected hardware; automatic catalog lookup primarily covers known GeForce models |
-| Runtime | .NET 8 / WPF 8.0.30 included in the prepared self-contained package |
+| Runtime | .NET 8 / WPF 8.0.31 included in the prepared self-contained package |
 | Privileges | Normal UI/per-user setup; driver installation and system changes request administrator access |
 | Network | Required for online NVIDIA lookup/downloads and explicit upstream NVENC requests; a local original driver can be selected |
 | Included tools | Unmodified 7-Zip 26.03, runtime notices, optional MIT Profile Inspector companion |
@@ -86,7 +99,7 @@ recovery are separate from the four installation steps.
 
 ![NVDriverForge driver-page preview](../assets/screenshots/nvdriverforge-0.1.2-preview.png)
 
-Existing French UI render with example data. The displayed 699.99 driver is a
+Existing 0.1.2 French UI render with example data; retained as an interface preview. The displayed 699.99 driver is a
 test fixture, not a real version to download. [Image provenance](../assets/README.md).
 
 ## Update and uninstall
@@ -119,6 +132,7 @@ local data. A driver-store export is not a system image or a full profile backup
 | --- | --- |
 | Online catalog unavailable | Select an original package from [NVIDIA driver downloads](https://www.nvidia.com/en-us/drivers/). Do not substitute a neighboring GPU model. |
 | Hotfix lookup unavailable | Use [NVIDIA's Game Ready driver forum](https://www.nvidia.com/en-us/geforce/forums/game-ready-drivers/13/) and verify the actual package. |
+| NVIDIA installation fails | Read the failure summary and open the detailed logs. Optional components already current or inapplicable remain skippable in 0.1.3. Failed installs do not trigger optional tweaks or a success/restart flow. |
 | Signature/hash/backup failure | Stop that installation and retain the error; obtain the original package again if corrupted. |
 | Option unavailable | Read its hardware, component or target-driver reason; keep it unchanged. |
 | Restart or job still pending | Use the job's recovery instructions and explicit resume; do not erase its journal. |

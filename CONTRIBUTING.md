@@ -1,3 +1,16 @@
+<!-- nv-language-navigation:start -->
+🌐 English | [Français](docs/languages/fr/CONTRIBUTING.md) · [NV Laboratory](README.md)
+
+<details>
+<summary>🌐 Language · 34</summary>
+
+[العربية](docs/languages/ar/CONTRIBUTING.md) · [বাংলা](docs/languages/bn/CONTRIBUTING.md) · [简体中文](docs/languages/zh/CONTRIBUTING.md) · [Čeština](docs/languages/cs/CONTRIBUTING.md) · [Dansk](docs/languages/da/CONTRIBUTING.md) · [Nederlands](docs/languages/nl/CONTRIBUTING.md) · **English** · [Filipino](docs/languages/fil/CONTRIBUTING.md) · [Suomi](docs/languages/fi/CONTRIBUTING.md) · [Français](docs/languages/fr/CONTRIBUTING.md) · [Deutsch](docs/languages/de/CONTRIBUTING.md) · [Ελληνικά](docs/languages/el/CONTRIBUTING.md) · [हिन्दी](docs/languages/hi/CONTRIBUTING.md) · [Magyar](docs/languages/hu/CONTRIBUTING.md) · [Bahasa Indonesia](docs/languages/id/CONTRIBUTING.md) · [Italiano](docs/languages/it/CONTRIBUTING.md) · [日本語](docs/languages/ja/CONTRIBUTING.md) · [한국어](docs/languages/ko/CONTRIBUTING.md) · [मराठी](docs/languages/mr/CONTRIBUTING.md) · [فارسی](docs/languages/fa/CONTRIBUTING.md) · [Polski](docs/languages/pl/CONTRIBUTING.md) · [Português](docs/languages/pt/CONTRIBUTING.md) · [ਪੰਜਾਬੀ](docs/languages/pa/CONTRIBUTING.md) · [Română](docs/languages/ro/CONTRIBUTING.md) · [Русский](docs/languages/ru/CONTRIBUTING.md) · [Español](docs/languages/es/CONTRIBUTING.md) · [Kiswahili](docs/languages/sw/CONTRIBUTING.md) · [Svenska](docs/languages/sv/CONTRIBUTING.md) · [தமிழ்](docs/languages/ta/CONTRIBUTING.md) · [ไทย](docs/languages/th/CONTRIBUTING.md) · [Türkçe](docs/languages/tr/CONTRIBUTING.md) · [Українська](docs/languages/uk/CONTRIBUTING.md) · [اردو](docs/languages/ur/CONTRIBUTING.md) · [Tiếng Việt](docs/languages/vi/CONTRIBUTING.md)
+
+[Translation policy](docs/languages/README.md)
+
+</details>
+<!-- nv-language-navigation:end -->
+
 # Contributing / Contribuer
 
 NV Laboratory is maintained by 禅堂 Zendo (RevoluSound Team).
@@ -14,7 +27,7 @@ This public hub contains documentation, notices, release metadata and repository
 validation. Application source and tests are maintained privately. Do not submit
 decompiled code, private source, credentials, user profiles or executable payloads.
 
-Documentation PRs should keep English/French counterparts and navigation aligned,
+Documentation PRs should keep the 34 language counterparts and navigation aligned,
 preserve command/file/product names, and describe actual behavior. New screenshots
 must be your own, version-identified and free of personal details; synthetic data
 must be labeled. Provide provenance and permission for every new third-party asset.
@@ -46,7 +59,7 @@ Ce hub public contient documents, notices, métadonnées et validation du dépô
 Sources et tests applicatifs restent privés. N'envoyez ni code décompilé ou privé,
 ni identifiants, profils personnels ou exécutables.
 
-Gardez les versions anglaise/française cohérentes, sans traduire commandes,
+Gardez les versions dans les 34 langues cohérentes, sans traduire commandes,
 fichiers et noms techniques. Décrivez les fonctions réelles. Identifiez version,
 provenance et droits des captures ; masquez les données personnelles et signalez
 les exemples synthétiques.

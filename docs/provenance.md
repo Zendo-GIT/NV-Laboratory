@@ -1,4 +1,15 @@
-🌐 **Language:** English | [Français](provenance.fr.md) · [Home](../README.md)
+<!-- nv-language-navigation:start -->
+🌐 English | [Français](provenance.fr.md) · [NV Laboratory](../README.md)
+
+<details>
+<summary>🌐 Language · 34</summary>
+
+[العربية](languages/ar/docs/provenance.md) · [বাংলা](languages/bn/docs/provenance.md) · [简体中文](languages/zh/docs/provenance.md) · [Čeština](languages/cs/docs/provenance.md) · [Dansk](languages/da/docs/provenance.md) · [Nederlands](languages/nl/docs/provenance.md) · **English** · [Filipino](languages/fil/docs/provenance.md) · [Suomi](languages/fi/docs/provenance.md) · [Français](provenance.fr.md) · [Deutsch](languages/de/docs/provenance.md) · [Ελληνικά](languages/el/docs/provenance.md) · [हिन्दी](languages/hi/docs/provenance.md) · [Magyar](languages/hu/docs/provenance.md) · [Bahasa Indonesia](languages/id/docs/provenance.md) · [Italiano](languages/it/docs/provenance.md) · [日本語](languages/ja/docs/provenance.md) · [한국어](languages/ko/docs/provenance.md) · [मराठी](languages/mr/docs/provenance.md) · [فارسی](languages/fa/docs/provenance.md) · [Polski](languages/pl/docs/provenance.md) · [Português](languages/pt/docs/provenance.md) · [ਪੰਜਾਬੀ](languages/pa/docs/provenance.md) · [Română](languages/ro/docs/provenance.md) · [Русский](languages/ru/docs/provenance.md) · [Español](languages/es/docs/provenance.md) · [Kiswahili](languages/sw/docs/provenance.md) · [Svenska](languages/sv/docs/provenance.md) · [தமிழ்](languages/ta/docs/provenance.md) · [ไทย](languages/th/docs/provenance.md) · [Türkçe](languages/tr/docs/provenance.md) · [Українська](languages/uk/docs/provenance.md) · [اردو](languages/ur/docs/provenance.md) · [Tiếng Việt](languages/vi/docs/provenance.md)
+
+[Translation policy](languages/README.md)
+
+</details>
+<!-- nv-language-navigation:end -->
 
 # Provenance, changes and licensing
 
@@ -48,14 +59,19 @@ reference, and the separately optional MIT NVPI companion. The Custom NV preset'
 selection UI and allowlisted transaction integration belong to NVDriverForge;
 the preset is not an official NVIDIA recommendation.
 
-7-Zip 26.03, .NET/WPF 8.0.30 and Inno Setup remain unmodified external components
+7-Zip 26.03, .NET/WPF 8.0.31 and Inno Setup remain unmodified external components
 used under their own terms. keylase NVENC data is not embedded; one exact commit
 is chosen and checked when the user requests a compatible download. No
 redistribution license was established for that upstream data.
 
 ## NVMFG Unlock40
 
-Origin: dashdogy/RTX40MFG-Unlock, Michael Robles, MIT, reference commit
+NVMFG Unlock40 was developed independently by 禅堂 Zendo (RevoluSound Team).
+The maintainer used RTX40MFG-Unlock for comparison and refinement. The application
+as a whole is not presented as its fork. This distinction does not remove credits
+for shared/adapted components in the current native layer.
+
+Comparison reference: dashdogy/RTX40MFG-Unlock, Michael Robles, MIT, commit
 `4e776d068f91b4a665425542bb005dd57cc3d891`.
 The private native-engine tree contains 48 compared files: 35 formatting-only
 differences, 4 modified files and 9 absent at the reference path.
@@ -73,10 +89,12 @@ vsync_observer; plus entry_detour assembly and MinHook buffer/hook/trampoline/HD
 The inherited ReShade frontend, legacy shim resources and unused CMake targets
 are not part of this production compilation.
 
-The upstream already contributed patching/provider policy and temporal work.
-The central NGX/bootstrap/controller coordination, per-game V-Sync handling,
-session diagnostics and Windows application/SDK/backup workflow are adaptations
-and additions by 禅堂 Zendo (RevoluSound Team), not a claim to have invented the upstream engine.
+The matching components cover patching/provider policy and temporal work;
+their copyright and permission notices remain intact. The central NGX/bootstrap/
+controller coordination, per-game V-Sync handling, session diagnostics and Windows
+application/SDK/backup workflow are project work by 禅堂 Zendo (RevoluSound Team).
+The counts above describe files, including third-party and unused files, not an
+authorship percentage or the chronology of either project's idea.
 
 The helper adapts NVPI's NvapiDrsWrapper and NativeArrayHelper into a separate
 assembly, with project-authored profile logic. The old development mock path is
@@ -120,7 +138,7 @@ experimental limiter, Framepacer, MinHook, ReShade or DLSS runtime is in this pa
 
 ## Assets, generated data and tools
 
-[Asset credits](../assets/README.md) identify the three existing interface previews.
+[Asset credits](../assets/README.md) identify the existing interface previews and the NVPI setup selector.
 The fictional values in them are labeled. No game/Nexus asset, personal profile,
 private ICC, corporate NVIDIA logo or font file is copied.
 
@@ -148,8 +166,15 @@ shared Inno controls and bootstrap. Light/dark private fixtures verified mouse
 and keyboard navigation and all 34 explicit language codes. The actual setup
 selector was opened on a never-displayed private desktop and cancelled before
 installation. Its seven application files and portable ZIP are unchanged.
-NVDriverForge 0.1.2 retains its earlier embedded companion, which receives `/LANG`.
+NVDriverForge 0.1.3 includes the corrected companion and still forwards `/LANG`.
 
-No functional application code was changed. Earlier application build/unit/UI
+NVDriverForge 0.1.3 was completed on 2026-09-10. Its private verification report
+records 366 application tests, 118 companion checks, 32 setup checks, 156 native
+comparisons and 34 language-forwarding cases. The protected component-selection
+fix was replayed against an original driver package without changing its payload
+or installing the driver. These are dated product-team results, not tests rerun
+by this documentation update or proof of a successful real driver installation.
+
+This hub update changes no functional application code. Earlier application build/unit/UI
 tests remain dated historical evidence. This is not full reverse engineering of
 every third-party binary or a guarantee against every possible secret pattern.

@@ -1,0 +1,66 @@
+<!-- nv-language-navigation:start -->
+🌐 [English](../../../THIRD_PARTY_NOTICES.md) | [Français](../fr/THIRD_PARTY_NOTICES.md) · [NV Laboratory](README.md)
+
+<details>
+<summary>🌐 Language · 34</summary>
+
+[العربية](../ar/THIRD_PARTY_NOTICES.md) · [বাংলা](../bn/THIRD_PARTY_NOTICES.md) · [简体中文](../zh/THIRD_PARTY_NOTICES.md) · [Čeština](../cs/THIRD_PARTY_NOTICES.md) · [Dansk](../da/THIRD_PARTY_NOTICES.md) · [Nederlands](../nl/THIRD_PARTY_NOTICES.md) · [English](../../../THIRD_PARTY_NOTICES.md) · [Filipino](../fil/THIRD_PARTY_NOTICES.md) · **Suomi** · [Français](../fr/THIRD_PARTY_NOTICES.md) · [Deutsch](../de/THIRD_PARTY_NOTICES.md) · [Ελληνικά](../el/THIRD_PARTY_NOTICES.md) · [हिन्दी](../hi/THIRD_PARTY_NOTICES.md) · [Magyar](../hu/THIRD_PARTY_NOTICES.md) · [Bahasa Indonesia](../id/THIRD_PARTY_NOTICES.md) · [Italiano](../it/THIRD_PARTY_NOTICES.md) · [日本語](../ja/THIRD_PARTY_NOTICES.md) · [한국어](../ko/THIRD_PARTY_NOTICES.md) · [मराठी](../mr/THIRD_PARTY_NOTICES.md) · [فارسی](../fa/THIRD_PARTY_NOTICES.md) · [Polski](../pl/THIRD_PARTY_NOTICES.md) · [Português](../pt/THIRD_PARTY_NOTICES.md) · [ਪੰਜਾਬੀ](../pa/THIRD_PARTY_NOTICES.md) · [Română](../ro/THIRD_PARTY_NOTICES.md) · [Русский](../ru/THIRD_PARTY_NOTICES.md) · [Español](../es/THIRD_PARTY_NOTICES.md) · [Kiswahili](../sw/THIRD_PARTY_NOTICES.md) · [Svenska](../sv/THIRD_PARTY_NOTICES.md) · [தமிழ்](../ta/THIRD_PARTY_NOTICES.md) · [ไทย](../th/THIRD_PARTY_NOTICES.md) · [Türkçe](../tr/THIRD_PARTY_NOTICES.md) · [Українська](../uk/THIRD_PARTY_NOTICES.md) · [اردو](../ur/THIRD_PARTY_NOTICES.md) · [Tiếng Việt](../vi/THIRD_PARTY_NOTICES.md)
+
+[Translation policy](../README.md)
+
+</details>
+<!-- nv-language-navigation:end -->
+
+<!-- nv-translation-notice:start -->
+> Koneavusteinen käännös englannista. Tekniset nimet, komennot, URL-osoitteet ja alkuperäiset lakitekstit säilytetään. Äidinpuhujien arvostelu on tervetullut; katso englanninkielinen viittaus, jos sanamuoto on epäselvä.
+<!-- nv-translation-notice:end -->
+
+<a id="third-party-notices-and-credits"></a>
+# Kolmannen osapuolen ilmoitukset ja hyvitykset
+
+Ensimmäinen tarkastus: 2026-09-09; NVDriverForge 0.1.3 ja alkuperäpäivitys: 2026-09-10. **Osan lisenssi kattaa kyseisen osan, ei koko pakettia.** Sovelluslähde pysyy yksityisenä. Tekijänoikeus- ja lupailmoitukset säilytetään sanatarkasti; tämä taulukko on indeksi, ei korvaa niitä. "Ulkoinen" tarkoittaa, että sitä ei ole jaettu sovelluksen resursseihin.
+
+| Komponentti / alkuperäinen projekti | Tekijä | Virallinen sivusto, arkisto tai lataus | Lisenssi/ilmoitus | Käytä NV Tools:ssä | Muutokset |
+| --- | --- | --- | --- | --- | --- |
+| NVIDIA Profile Inspector | Orbmu2k; Tekijänoikeus 2016 | [Arkisto](https://github.com/Orbmu2k/nvidiaProfileInspector), [lataukset](https://github.com/Orbmu2k/nvidiaProfileInspector/releases) | [MIT](../../../NVIDIA-Profile-Inspector/LICENSE) | Koko NVPI fork; NVDF-teemat/laajennettu käyttöliittymäviite; NVMFG-kääre/tyylit; RP käyttöliittymäresurssit | Fork näyttöpalvelut, tapahtumat ja kantoraketti; teeman/ohjauksen integrointi ja kääreen mukautukset |
+| RTX40MFG-Unlock | Michael Robles / dashdogy; Tekijänoikeus 2026 | [Arkisto](https://github.com/dashdogy/RTX40MFG-Unlock), [lataukset](https://github.com/dashdogy/RTX40MFG-Unlock/releases) | [MIT](../../../NVMFG-Unlock40/LICENSES/RTX40MFG-Unlock-MIT.txt) | Vertailu-/tarkennusviite ja jaetut/sovitetut NVMFG-natiivikomponentit; itsenäisesti kehitetty sovellus | Keskitetty lataus, NGX/ohjaimen koordinointi, pelikohtainen/V-Sync integrointi ja diagnostiikka |
+| MinHook, kiinnitetty 8fda4f5 | Tsuda Kageyu; Tekijänoikeus 2009-2017 | [Arkisto](https://github.com/TsudaKageyu/minhook), [kiinnitetty lähde](https://github.com/TsudaKageyu/minhook/tree/8fda4f5481fed5797dc2651cd91e238e9b3928c6) | [BSD 2 lausekkeen huomautus](../../../NVMFG-Unlock40/LICENSES/MinHook.txt) | Staattisesti käännetty NVMFG-moottoriksi | Mukana osajoukko muuttumattomana lukuun ottamatta tekstin muotoilua perittyä kopiota vastaan |
+| Hacker Disassembler Engine (HDE64) | Vyacheslav Patkov; Tekijänoikeus 2008-2009 | [MinHook:n lähdekokoelma](https://github.com/TsudaKageyu/minhook/tree/8fda4f5481fed5797dc2651cd91e238e9b3928c6/src/hde) | [Täydelliset MinHook/HDE-ilmoitukset](../../../NVMFG-Unlock40/LICENSES/MinHook.txt) | MinHook-dekooderi NVMFG:ssä | Toiminnallisia muutoksia ei tunnistettu; HDE32-ilmoitus säilytettiin, vaikka tuotannossa käytetään HDE64:ää |
+| Streamline 2.12 integrointiotsikot | NVIDIA Corporation; Tekijänoikeus 2023 | [Arkisto](https://github.com/NVIDIA-RTX/Streamline), [lataukset](https://github.com/NVIDIA-RTX/Streamline/releases) | [MIT kelvollisille otsikoille](../../../NVMFG-Unlock40/LICENSES/Streamline-MIT.txt) | Kääntää NVMFG Streamline -integraation | Otsikoita ei ole muokattu; sovelluspaketissa ei ole ajonaikaista DLL-tiedostoa |
+| NVIDIA NGX / DLSS SDK otsikot | NVIDIA Corporation | [Kiinnitetty arkisto](https://github.com/NVIDIA/DLSS/tree/a291cc7d2cc642a51566f3dfd5376f635cd1b284), [SDK](https://developer.nvidia.com/rtx/dlss) | [NVIDIA RTX SDK ehdot](../../../NVMFG-Unlock40/LICENSES/NVIDIA-RTX-SDK.txt), [otsikkoilmoitus](../../../NVMFG-Unlock40/LICENSES/NGX-Header-Notice.txt) | Kääntää NVMFG NGX -integraation | Otsikoita ei ole muokattu; ei NGX-mallia/toimittajaa mukana; alla kuvattu ratkaisematon rajoitus |
+| .NET-ajoaika 8.0.31 (NVDF) / 8.0.30 (NVMFG) | .NET Foundation, Microsoft ja avustajat | [lähde](https://github.com/dotnet/runtime), [lataukset](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) | [MIT](../../../licenses/third-party/Microsoft-NET-LICENSE.txt) ja [täytä kolmannen osapuolen ilmoitukset](../../../licenses/third-party/Microsoft-NET-THIRD-PARTY-NOTICES.txt) | Itsenäinen NVDF- ja NVMFG-sovellus/agentti | Suoritusaika muokkaamaton |
+| WPF / Windows Desktop Runtime 8.0.31 (NVDF) / 8.0.30 (NVMFG) | .NET Foundation, Microsoft ja avustajat | [lähde](https://github.com/dotnet/wpf), [lataukset](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) | [MIT](../../../licenses/third-party/Microsoft-WPF-LICENSE.txt), ajonaikaiset ilmoitukset yllä | NVDF ja NVMFG käyttöliittymät | Kehys muuttamaton; sovelluksen käyttöliittymä on laadittu/muokattu erikseen |
+| .NET Framework 4.8 | Microsoft | [Virallinen ajonaikainen lataus](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48) | Microsoft alustan/ajonaikaiset ehdot; ulkoinen | NVPI, RP ja NVMFG profiiliapulaiset | Ei mitään; tämä keskitin ei jakanut uudelleen asennusohjelmaa tai kehys-DLL:ää |
+| 7-Zip 26.03 x64 | Igor Pavlov; Tekijänoikeus 1999–2026 | [Sivusto/lataukset](https://www.7-zip.org/download.html), [tarkka lähdearkisto](https://github.com/ip7z/7zip/releases/download/26.03/7z2603-src.tar.xz) | [Täysi ilmoitus](../../../licenses/third-party/7-Zip.txt), [LGPL 2.1-or-later](../../../licenses/third-party/LGPL-2.1.txt), BSD osat ja unRAR rajoitus | NVDF upottaa muokkaamattoman 7z.exe/7z.dll ja suorittaa CLI:n erillisenä prosessina | Ei muutoksia |
+| Inno Setup 7.1.0 | Jordan Russell, Martijn Laan ja avustajat | [Sivusto/lataukset](https://jrsoftware.org/isinfo.php), [lähde](https://github.com/jrsoftware/issrc) | [Alkuperäinen Inno Setup-lisenssi](../../../licenses/third-party/Inno-Setup.txt) | Asentajamoottorit ja luodut asennuksen poistoohjelmat | Moottori/kääntäjä muuttamaton; projektin käsikirjoitukset, brändäys ja natiivi fokusten käsittely mukautettu |
+| Inno Setup käännösluettelot | Nimetyt alkuperäiset kääntäjät | [Virallinen kokoelma](https://jrsoftware.org/files/istrans/) | Inno/luetteloilmoitukset ja [täydellinen otsikkotekstit](../../../licenses/INSTALLER-TRANSLATORS.md) | Jaetut 34-kieliset luettelot kaikille neljälle asentajalle, mukaan lukien NVPI asennusversio 2 | Näppäimet, tunnukset, fontit, tekninen englannin vaihto; projektin laatimat esikatseluluettelot tarvittaessa |
+| Microsoft Visual C++ runtime / Windows SDK tuki | Microsoft | [Visuaaliset Studio työkalut](https://visualstudio.microsoft.com/downloads/), [uudelleenjakotermien indeksi](https://learn.microsoft.com/en-us/visualstudio/releases/2022/redistribution) | Microsoft työkaluketjun/ajonaikaiset ehdot; ei MIT tämän taulukon mukaan | Staattisen julkaisun CRT alkuperäisissä engine/bootstrap-binäärisissä; asennetut Windows API:t | Ei ajonaikaisen lähteen muutoksia; ei kääntäjä, SDK tai debug runtime jaettu |
+| RivaTuner Statistics Server (RTSS) | Unwinder | [Virallinen Guru3D-lataus](https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/) | Myyjän ehdot; "ilmaisohjelmasta" ei ole päätelty jakelulupaa | Vaadittu ulkoinen rajoitin RP:lle; asennettu UpdateProfiles vienti | Ei RTSS-koodia/binäärimuokattua tai niputettua; RP kirjoittaa valitut profiiliavaimet |
+| NVIDIA ohjain / NVAPI / NVML | NVIDIA Corporation | [Ohjainten lataukset](https://www.nvidia.com/en-us/drivers/), [NVAPI](https://developer.nvidia.com/nvapi), [NVML](https://developer.nvidia.com/management-library-nvml) | NVIDIA ohjain/SDK ehdot; ulkoinen | Asennetut alkuperäiset rajapinnat ja selkeät alkuperäisten ohjainten lataukset | Ei NVIDIA DLL:tä keskittimen resursseissa; NVDF:n valinnainen NVENC-toiminto muuttaa käyttäjän valitsemia asennettuja DLL-tiedostoja |
+| NVIDIA NGX toimittaja/mallit ja Streamline ajonaika | NVIDIA Corporation | [DLSS SDK](https://developer.nvidia.com/rtx/dlss), [Streamline julkaistaan](https://github.com/NVIDIA-RTX/Streamline/releases) | Komponenttikohtaiset NVIDIA-termit, jotka eroavat MIT-otsikoista | NVMFG:n käyttämät ulkoiset peli-/ohjainkomponentit; SDK haetaan vain pyynnöstä | NVMFG soveltaa kokeellisia muistin käyttäytymismuutoksia; SDK pelikopiot voidaan päivittää varmuuskopioinnilla |
+| keylase/nvidia-patch | keylase ja avustajat | [Arkisto](https://github.com/keylase/nvidia-patch), [Windows tiedot](https://github.com/keylase/nvidia-patch/tree/master/win) | Jakelulisenssiä ei ole vahvistettu tässä tarkastuksessa | Ulkoiset valinnaiset NVDF NVENC -luettelo-/korjaustiedot, haettu yhdestä kiinnitetystä vahvistuksesta valintaa kohti | Keskittimen/sovelluksen resursseihin ei ole kopioitu ylävirran lähde-, korjaustiedosto- tai korjauspäivitystietoja |
+| NVCleanstall | TechPowerUp | [Virallinen sivu / lataus](https://www.techpowerup.com/download/techpowerup-nvcleanstall/) | Oma jakelu; lähteen/binaarisen uudelleenjakelun oikeutta ei ole päätelty | Työnkulku ja vaihtoehdot inspiraatiota NVDF:lle | Ei tuotua lähdettä tai binaaria; ei fork tai ajonaikainen riippuvuus |
+
+<a id="obligations-and-boundaries"></a>
+## Velvollisuudet ja rajat
+
+**MIT-osat:** säilyttävät kopioiden tekijänoikeudet, lupatekstit ja vastuuvapauslausekkeen. Heidän lisenssinsä ei edellytä muokatun lähteen julkaisemista. Alkuperäinen tekijä säilyy, vaikka sovelluksen lähdettä ylläpidettäisiin yksityisesti.
+
+**MinHook/HDE:** säilyttää binääridokumentaation ilmoitukset, ehdot ja vastuuvapauslausekkeet. Koko yhdistetty ilmoitus toimitetaan.
+
+**7-Zip:** säilyttää LGPL/BSD/unRAR-ilmoitukset ja antaa pääsyn tarkalleen muokkaamattomaan lähteeseen. Lähdearkisto on linkitetty yllä, samoin kuin koko LGPL. unRAR-rajoitus koskee asianmukaista purkukoodia; tämä ei ole yleinen MIT-riippuvuus. Katso kirjoittajan [jakelun UKK](https://www.7-zip.org/faq.html).
+
+**Inno Setup:** Säilytä vaaditut moottorin tekijänoikeus-/verkkosivustoilmoitukset ja merkitse lähdemuutokset tarvittaessa. Muutamattoman moottorin hyvitykset jäävät asentajille. Mukautetut luettelot säilyttävät alkuperäiset lähdetiedot; nimet on indeksoitu tähän.
+
+**NVIDIA-materiaali:** MIT-lisenssi Streamline-integrointiotsikoille ei kata kaikkia SDK-tiedostoja. Sen huomautus erottaa selvästi Nsight Perf SDK -materiaalin; materiaalia ei käytetä tässä tuotantokohteessa. NGX-otsikot ovat NVIDIA:n RTX SDK -ehtojen alaisia. Niiden koko teksti on lisätty [alkuperäisen tavun kopio](../../../NVMFG-Unlock40/LICENSES/NVIDIA-RTX-SDK.original.txt):llä. Pykälän 4(d) teknisiä rajoituksia koskeva rajoitus jää ratkaisematta NVMFG:n käyttöön. Toisen modin olemassaolosta ei päätetä myöntävää lupaa.
+
+**Ulkoiset tuntemattomat/omistetut komponentit:** RTSS, NVCleanstall, NVIDIA ohjaimia, malleja ja keylase korjauspäivitystietoja ei niputeta valmisteltuihin keskitinresursseihin. Linkit tunnistavat niiden todelliset omistajat. Käyttäjän käynnistämä lataus ei lisensoi uudelleen komponenttia.
+
+Työkaluissa käytetään Windows:n toimittamia sovellusliittymiä ja fontteja. Tähän Git-tietovarastoon ei ole kopioitu Windows SDK/kääntäjä/font-tiedostoa. Rakennustyökalut ja yksityiset testit ovat jakelun ulkopuolella. Ajonaikaisten sisäisten komponenttien ilmoitukset säilyvät täydellisessä Microsoft-ilmoitustiedostossa sen sijaan, että ne määritettäisiin uudelleen julkaisijalle.
+
+<a id="publisher-contributions"></a>
+## Julkaisijoiden panokset
+
+禅堂 Zendo (RevoluSound Team) ylläpitää alkuperäistä sovellustyötä, mukautuksia ja dokumentaatiota, jotka on kuvattu [alkuperäopas](docs/provenance.md):ssä. [NVPI](NVIDIA-Profile-Inspector/README.md), [NVDF](NVDriverForge/README.md), [NVMFG](NVMFG-Unlock40/README.md) ja [RP](NVRasterPulse/README.md) erottavat kumpikin perityn työn muutoksista.
+
+Riippumattomat hankkeet; NVIDIA Corporation:n tai lueteltujen alkuvaiheen tekijöiden kanssa ei viitata minkäänlaiseen sidoksiin, sponsorointiin tai viralliseen hyväksyntään.

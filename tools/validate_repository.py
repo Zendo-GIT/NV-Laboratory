@@ -141,7 +141,8 @@ for rel, text in texts.items():
 required = ROOT_FILES | {"tools/validate_repository.py", ".github/workflows/validate.yml",
     ".github/ISSUE_TEMPLATE/bug-report.yml", ".github/ISSUE_TEMPLATE/feature-request.yml",
     ".github/ISSUE_TEMPLATE/security-contact.yml", "docs/releases.json", "licenses/HUB-MIT.txt",
-    "licenses/third-party/LGPL-2.1.txt", "NVMFG-Unlock40/LICENSES/NVIDIA-RTX-SDK.txt"}
+    "licenses/third-party/LGPL-2.1.txt", "NVMFG-Unlock40/LICENSES/NVIDIA-RTX-SDK.txt",
+    "docs/languages/catalog.json", "docs/languages/README.md"}
 for folder, _ in PROJECTS.values():
     required |= {f"{folder}/README.md", f"{folder}/README.fr.md", f"{folder}/LICENSE", f"{folder}/LICENSES/README.md"}
 for name in required - files.keys():
@@ -180,6 +181,45 @@ try:
 except (KeyError, ValueError, AssertionError, TypeError) as exc:
     fail(f"Invalid or inconsistent release catalog/download pages: {type(exc).__name__}")
 
+# Translation coverage, source freshness and technical publication boundaries.
+language_count = 0
+language_documents = 0
+try:
+    import hashlib
+    language_catalog = json.loads(texts["docs/languages/catalog.json"])
+    language_codes = {row["code"] for row in language_catalog["languages"]}
+    expected_codes = set("ar bn zh cs da nl en fil fi fr de el hi hu id it ja ko mr fa pl pt pa ro ru es sw sv ta th tr uk ur vi".split())
+    assert language_codes == expected_codes and len(language_catalog["languages"]) == 34
+    assert language_catalog["reference_language"] == "en"
+    assert len(language_catalog["documents"]) == 20
+    assert len({d["source"] for d in language_catalog["documents"]}) == 20
+    for document in language_catalog["documents"]:
+        source = document["source"]
+        assert source in files
+        assert hashlib.sha256(files[source].read_bytes()).hexdigest() == document["source_sha256"], f"Stale translation source: {source}"
+        assert set(document["translations"]) == expected_codes
+        for code, translation in document["translations"].items():
+            path = translation["path"]
+            assert path in files and path.endswith(".md"), f"Missing {code} translation: {source}"
+            assert hashlib.sha256(files[path].read_bytes()).hexdigest() == translation["sha256"], f"Translation fingerprint mismatch: {path}"
+            assert "<!-- nv-language-navigation:start -->" in texts[path]
+            assert "NVKEEP" not in texts[path] and "NVSEG" not in texts[path]
+            if code not in {"en", "fr"}:
+                assert path == f"docs/languages/{code}/{source}"
+                assert "<!-- nv-translation-notice:start -->" in texts[path]
+                if code in {"ar", "fa", "ur"}:
+                    assert '<div dir="rtl">' in texts[path]
+            if source in {"README.md", "NVRasterPulse/README.md", "docs/installation.md", "docs/downloads.md"}:
+                assert RTSS in texts[path], f"Missing translated RTSS requirement: {path}"
+            if source == "docs/downloads.md":
+                for project in catalog["projects"]:
+                    for asset in project["assets"]:
+                        assert asset["name"] in texts[path] and asset["sha256"] in texts[path], f"Stale translated download: {path}"
+            language_documents += 1
+    language_count = len(language_codes)
+except (KeyError, ValueError, AssertionError, TypeError) as exc:
+    fail(f"Invalid translation catalog/coverage: {exc}")
+
 workflow = texts.get(".github/workflows/validate.yml", "")
 if "contents: read" not in workflow or "persist-credentials: false" not in workflow:
     fail("Workflow must use read-only contents and not persist credentials")
@@ -190,6 +230,7 @@ if not re.search(r"actions/checkout@[0-9a-f]{40}", workflow):
 
 result = {"passed": not errors, "files": len(files), "internal_links": internal_links,
           "external_urls_inventory_only": len(external_links), "projects": len(PROJECTS),
+          "documentation_languages": language_count, "language_documents": language_documents,
           "executed_applications": False, "network_access": False, "errors": errors}
 print(json.dumps(result, ensure_ascii=False, indent=2))
 sys.exit(0 if not errors else 1)

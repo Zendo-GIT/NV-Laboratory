@@ -1,3 +1,16 @@
+<!-- nv-language-navigation:start -->
+🌐 English | [Français](docs/languages/fr/SECURITY.md) · [NV Laboratory](README.md)
+
+<details>
+<summary>🌐 Language · 34</summary>
+
+[العربية](docs/languages/ar/SECURITY.md) · [বাংলা](docs/languages/bn/SECURITY.md) · [简体中文](docs/languages/zh/SECURITY.md) · [Čeština](docs/languages/cs/SECURITY.md) · [Dansk](docs/languages/da/SECURITY.md) · [Nederlands](docs/languages/nl/SECURITY.md) · **English** · [Filipino](docs/languages/fil/SECURITY.md) · [Suomi](docs/languages/fi/SECURITY.md) · [Français](docs/languages/fr/SECURITY.md) · [Deutsch](docs/languages/de/SECURITY.md) · [Ελληνικά](docs/languages/el/SECURITY.md) · [हिन्दी](docs/languages/hi/SECURITY.md) · [Magyar](docs/languages/hu/SECURITY.md) · [Bahasa Indonesia](docs/languages/id/SECURITY.md) · [Italiano](docs/languages/it/SECURITY.md) · [日本語](docs/languages/ja/SECURITY.md) · [한국어](docs/languages/ko/SECURITY.md) · [मराठी](docs/languages/mr/SECURITY.md) · [فارسی](docs/languages/fa/SECURITY.md) · [Polski](docs/languages/pl/SECURITY.md) · [Português](docs/languages/pt/SECURITY.md) · [ਪੰਜਾਬੀ](docs/languages/pa/SECURITY.md) · [Română](docs/languages/ro/SECURITY.md) · [Русский](docs/languages/ru/SECURITY.md) · [Español](docs/languages/es/SECURITY.md) · [Kiswahili](docs/languages/sw/SECURITY.md) · [Svenska](docs/languages/sv/SECURITY.md) · [தமிழ்](docs/languages/ta/SECURITY.md) · [ไทย](docs/languages/th/SECURITY.md) · [Türkçe](docs/languages/tr/SECURITY.md) · [Українська](docs/languages/uk/SECURITY.md) · [اردو](docs/languages/ur/SECURITY.md) · [Tiếng Việt](docs/languages/vi/SECURITY.md)
+
+[Translation policy](docs/languages/README.md)
+
+</details>
+<!-- nv-language-navigation:end -->
+
 # Security / Sécurité
 
 This policy covers NV Tools application packages and this distribution hub.

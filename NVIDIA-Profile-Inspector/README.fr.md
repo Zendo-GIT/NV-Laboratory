@@ -1,11 +1,24 @@
-🌐 **Langue :** [English](README.md) | Français · [NV Laboratory](../README.fr.md)
+<!-- nv-language-navigation:start -->
+🌐 [English](README.md) | Français · [NV Laboratory](../README.fr.md)
 
+<details>
+<summary>🌐 Language · 34</summary>
+
+[العربية](../docs/languages/ar/NVIDIA-Profile-Inspector/README.md) · [বাংলা](../docs/languages/bn/NVIDIA-Profile-Inspector/README.md) · [简体中文](../docs/languages/zh/NVIDIA-Profile-Inspector/README.md) · [Čeština](../docs/languages/cs/NVIDIA-Profile-Inspector/README.md) · [Dansk](../docs/languages/da/NVIDIA-Profile-Inspector/README.md) · [Nederlands](../docs/languages/nl/NVIDIA-Profile-Inspector/README.md) · [English](README.md) · [Filipino](../docs/languages/fil/NVIDIA-Profile-Inspector/README.md) · [Suomi](../docs/languages/fi/NVIDIA-Profile-Inspector/README.md) · **Français** · [Deutsch](../docs/languages/de/NVIDIA-Profile-Inspector/README.md) · [Ελληνικά](../docs/languages/el/NVIDIA-Profile-Inspector/README.md) · [हिन्दी](../docs/languages/hi/NVIDIA-Profile-Inspector/README.md) · [Magyar](../docs/languages/hu/NVIDIA-Profile-Inspector/README.md) · [Bahasa Indonesia](../docs/languages/id/NVIDIA-Profile-Inspector/README.md) · [Italiano](../docs/languages/it/NVIDIA-Profile-Inspector/README.md) · [日本語](../docs/languages/ja/NVIDIA-Profile-Inspector/README.md) · [한국어](../docs/languages/ko/NVIDIA-Profile-Inspector/README.md) · [मराठी](../docs/languages/mr/NVIDIA-Profile-Inspector/README.md) · [فارسی](../docs/languages/fa/NVIDIA-Profile-Inspector/README.md) · [Polski](../docs/languages/pl/NVIDIA-Profile-Inspector/README.md) · [Português](../docs/languages/pt/NVIDIA-Profile-Inspector/README.md) · [ਪੰਜਾਬੀ](../docs/languages/pa/NVIDIA-Profile-Inspector/README.md) · [Română](../docs/languages/ro/NVIDIA-Profile-Inspector/README.md) · [Русский](../docs/languages/ru/NVIDIA-Profile-Inspector/README.md) · [Español](../docs/languages/es/NVIDIA-Profile-Inspector/README.md) · [Kiswahili](../docs/languages/sw/NVIDIA-Profile-Inspector/README.md) · [Svenska](../docs/languages/sv/NVIDIA-Profile-Inspector/README.md) · [தமிழ்](../docs/languages/ta/NVIDIA-Profile-Inspector/README.md) · [ไทย](../docs/languages/th/NVIDIA-Profile-Inspector/README.md) · [Türkçe](../docs/languages/tr/NVIDIA-Profile-Inspector/README.md) · [Українська](../docs/languages/uk/NVIDIA-Profile-Inspector/README.md) · [اردو](../docs/languages/ur/NVIDIA-Profile-Inspector/README.md) · [Tiếng Việt](../docs/languages/vi/NVIDIA-Profile-Inspector/README.md)
+
+[Translation policy](../docs/languages/README.md)
+
+</details>
+<!-- nv-language-navigation:end -->
+
+<a id="nvidia-profile-inspector--nv-tools-fork"></a>
 # NVIDIA Profile Inspector – NV Tools Fork
 
 **Une fork indépendante de [NVIDIA Profile Inspector d'Orbmu2k](https://github.com/Orbmu2k/nvidiaProfileInspector), enrichie de réglages écran.** Ancien nom du projet : **NVPI Custom**.
 
 [Téléchargement et statut](../docs/downloads.fr.md#nvidia-profile-inspector) · [Installation](#installation) · [Origine et modifications](#origine-et-modifications) · [Licence](LICENSE)
 
+<a id="overview"></a>
 ## Présentation et raison d'être
 
 Le programme édite les profils du pilote NVIDIA, notamment les réglages propres
@@ -22,6 +35,7 @@ et certains libellés internes portent encore `NVPI Custom NV`. Le titre public
 identifie la fork sans changer son identité d'installation ni la présenter
 comme la version officielle d'Orbmu2k.
 
+<a id="features"></a>
 ## Fonctionnalités
 
 - Consultation et édition des profils, associations d'applications et import/export hérités du projet original.
@@ -32,6 +46,7 @@ comme la version officielle d'Orbmu2k.
 - Distinction entre HDR, SDR avec ACM/WCG et profondeur du signal.
 - Bouton de lancement d'une installation séparée et admissible de NVRasterPulse.
 
+<a id="compatibility"></a>
 ## Compatibilité
 
 | Prérequis | Détails |
@@ -47,6 +62,7 @@ Aucun pilote minimal universel ni tableau certifiant tous les GPU n'est établi.
 Les choix bpc affichés sont des demandes, pas des combinaisons garanties.
 Les commandes HDR modernes et leur repli Windows ancien n'ont pas les mêmes capacités.
 
+<a id="installation"></a>
 ## Installation
 
 1. Consultez le [statut de téléchargement](../docs/downloads.fr.md#nvidia-profile-inspector).
@@ -65,6 +81,7 @@ Le choix concerne l'assistant d'installation. Il ne traduit pas l'éditeur NVPI.
 Un lancement avec `/LANG=fr` ou en mode silencieux passe directement à l'assistant,
 comme lorsqu'une application appelante fournit déjà la langue.
 
+<a id="usage"></a>
 ## Utilisation
 
 **Profils NVIDIA :** choisissez un profil, exportez une sauvegarde, modifiez les
@@ -86,6 +103,7 @@ un dossier accessible en écriture ou un lien peuvent être refusés par ce lanc
 élevé. Utilisez alors le raccourci propre à NVRasterPulse.
 [Installez RTSS séparément](https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/) pour utiliser son limiteur.
 
+<a id="screenshots"></a>
 ## Captures
 
 ![Sélecteur de langue du setup NVPI, révision 2](../assets/screenshots/nvpi-setup-r2-language.png)
@@ -93,6 +111,7 @@ un dossier accessible en écriture ou un lien peuvent être refusés par ce lanc
 Sélecteur réel du setup, en français, capturé dans un test isolé puis annulé.
 La capture montre l'installateur ; l'éditeur conserve son interface et Screen.
 
+<a id="update-and-uninstall"></a>
 ## Mise à jour et désinstallation
 
 Fermez le programme et conservez vos profils exportés. Installez la nouvelle
@@ -105,6 +124,7 @@ fermez-le puis retirez son dossier une fois vos exports conservés.
 La désinstallation ne restaure ni les profils NVIDIA, ni l'affichage, et ne retire
 pas NVRasterPulse ou RTSS. Restaurez les réglages souhaités avant la suppression.
 
+<a id="known-limitations"></a>
 ## Limitations connues
 
 - Les 15 secondes ne protègent pas contre tous les plantages du pilote, arrêts forcés ou coupures.
@@ -113,6 +133,7 @@ pas NVRasterPulse ou RTSS. Restaurez les réglages souhaités avant la suppressi
 - Screen agit sur l'affichage Windows courant ; il ne crée pas de presets écran par jeu.
 - Aucun gain de performances ni résultat anti-cheat ou HDR universel n'est garanti.
 
+<a id="troubleshooting"></a>
 ## Dépannage
 
 | Symptôme | Vérification |
@@ -125,6 +146,7 @@ pas NVRasterPulse ou RTSS. Restaurez les réglages souhaités avant la suppressi
 
 Consultez l'[aide commune](../docs/support.fr.md) avant d'envoyer des journaux.
 
+<a id="faq"></a>
 ## FAQ
 
 **Est-ce une version officielle NVIDIA ou Orbmu2k ?** Non. C'est une fork
@@ -139,6 +161,7 @@ limiteur NVRasterPulse, pas pour les profils NVIDIA ou Screen.
 **Où sont les sources ?** Les sources modifiées sont maintenues en privé.
 L'upstream et la notice MIT sont fournis ; MIT n'impose pas leur publication.
 
+<a id="upstream-and-changes"></a>
 ## Origine et modifications
 
 Projet original : [Orbmu2k/nvidiaProfileInspector](https://github.com/Orbmu2k/nvidiaProfileInspector),
@@ -154,6 +177,7 @@ de développement n'est pas la candidate retenue.
 
 [Provenance détaillée](../docs/provenance.fr.md) · [Notice originale de la fork](LICENSES/ORIGINAL-FORK-NOTICE.txt)
 
+<a id="credits-and-license"></a>
 ## Crédits et licence
 
 Copyright (c) 2016 Orbmu2k. La [licence MIT fournie](LICENSE) est conservée.

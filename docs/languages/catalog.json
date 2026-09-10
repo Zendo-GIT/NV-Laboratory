@@ -1,0 +1,3700 @@
+{
+  "updated_on": "2026-09-10",
+  "reference_language": "en",
+  "scope": "20 documentation pages per language; original legal texts, commands, product names, technical identifiers and URLs retain their original form.",
+  "machine_translation": "Google Translate; technical-token and Markdown preservation checked locally. Not certified by native speakers.",
+  "languages": [
+    {
+      "code": "ar",
+      "native_name": "العربية",
+      "direction": "rtl"
+    },
+    {
+      "code": "bn",
+      "native_name": "বাংলা",
+      "direction": "ltr"
+    },
+    {
+      "code": "zh",
+      "native_name": "简体中文",
+      "direction": "ltr"
+    },
+    {
+      "code": "cs",
+      "native_name": "Čeština",
+      "direction": "ltr"
+    },
+    {
+      "code": "da",
+      "native_name": "Dansk",
+      "direction": "ltr"
+    },
+    {
+      "code": "nl",
+      "native_name": "Nederlands",
+      "direction": "ltr"
+    },
+    {
+      "code": "en",
+      "native_name": "English",
+      "direction": "ltr"
+    },
+    {
+      "code": "fil",
+      "native_name": "Filipino",
+      "direction": "ltr"
+    },
+    {
+      "code": "fi",
+      "native_name": "Suomi",
+      "direction": "ltr"
+    },
+    {
+      "code": "fr",
+      "native_name": "Français",
+      "direction": "ltr"
+    },
+    {
+      "code": "de",
+      "native_name": "Deutsch",
+      "direction": "ltr"
+    },
+    {
+      "code": "el",
+      "native_name": "Ελληνικά",
+      "direction": "ltr"
+    },
+    {
+      "code": "hi",
+      "native_name": "हिन्दी",
+      "direction": "ltr"
+    },
+    {
+      "code": "hu",
+      "native_name": "Magyar",
+      "direction": "ltr"
+    },
+    {
+      "code": "id",
+      "native_name": "Bahasa Indonesia",
+      "direction": "ltr"
+    },
+    {
+      "code": "it",
+      "native_name": "Italiano",
+      "direction": "ltr"
+    },
+    {
+      "code": "ja",
+      "native_name": "日本語",
+      "direction": "ltr"
+    },
+    {
+      "code": "ko",
+      "native_name": "한국어",
+      "direction": "ltr"
+    },
+    {
+      "code": "mr",
+      "native_name": "मराठी",
+      "direction": "ltr"
+    },
+    {
+      "code": "fa",
+      "native_name": "فارسی",
+      "direction": "rtl"
+    },
+    {
+      "code": "pl",
+      "native_name": "Polski",
+      "direction": "ltr"
+    },
+    {
+      "code": "pt",
+      "native_name": "Português",
+      "direction": "ltr"
+    },
+    {
+      "code": "pa",
+      "native_name": "ਪੰਜਾਬੀ",
+      "direction": "ltr"
+    },
+    {
+      "code": "ro",
+      "native_name": "Română",
+      "direction": "ltr"
+    },
+    {
+      "code": "ru",
+      "native_name": "Русский",
+      "direction": "ltr"
+    },
+    {
+      "code": "es",
+      "native_name": "Español",
+      "direction": "ltr"
+    },
+    {
+      "code": "sw",
+      "native_name": "Kiswahili",
+      "direction": "ltr"
+    },
+    {
+      "code": "sv",
+      "native_name": "Svenska",
+      "direction": "ltr"
+    },
+    {
+      "code": "ta",
+      "native_name": "தமிழ்",
+      "direction": "ltr"
+    },
+    {
+      "code": "th",
+      "native_name": "ไทย",
+      "direction": "ltr"
+    },
+    {
+      "code": "tr",
+      "native_name": "Türkçe",
+      "direction": "ltr"
+    },
+    {
+      "code": "uk",
+      "native_name": "Українська",
+      "direction": "ltr"
+    },
+    {
+      "code": "ur",
+      "native_name": "اردو",
+      "direction": "rtl"
+    },
+    {
+      "code": "vi",
+      "native_name": "Tiếng Việt",
+      "direction": "ltr"
+    }
+  ],
+  "documents": [
+    {
+      "source": "README.md",
+      "source_sha256": "e508e13d339bce159ff20eea0203c9c4acf8990291ae5a3e2b3cab15c9f27f31",
+      "translations": {
+        "ar": {
+          "path": "docs/languages/ar/README.md",
+          "sha256": "5f825ae4926ff1ce24b21cb85cbeb301dd8ab0ac1aa54c677990233e6cc946ab",
+          "method": "machine-assisted"
+        },
+        "bn": {
+          "path": "docs/languages/bn/README.md",
+          "sha256": "a06b4d870390433b7ad4cee8f6af59bdcaf6e635f2c94abe9288ce9aeb7efeee",
+          "method": "machine-assisted"
+        },
+        "zh": {
+          "path": "docs/languages/zh/README.md",
+          "sha256": "9dab46a0ed95b02764ad815ea9fc363096d00006979f768d9a5076e5f351aa09",
+          "method": "machine-assisted"
+        },
+        "cs": {
+          "path": "docs/languages/cs/README.md",
+          "sha256": "f7e0d655d207f808ab35248cad43c63d16efaa30f193fe7587cb5f934ab7d972",
+          "method": "machine-assisted"
+        },
+        "da": {
+          "path": "docs/languages/da/README.md",
+          "sha256": "16784acd60830f3b29543bc6cd75162ed8d5f0c2d33233a9fb2f7214d09d6705",
+          "method": "machine-assisted"
+        },
+        "nl": {
+          "path": "docs/languages/nl/README.md",
+          "sha256": "1343a178a6476b939bcb5023cd3cdff8c5022b36a075e53d6d7bf181b01a77df",
+          "method": "machine-assisted"
+        },
+        "en": {
+          "path": "README.md",
+          "sha256": "e508e13d339bce159ff20eea0203c9c4acf8990291ae5a3e2b3cab15c9f27f31",
+          "method": "reference"
+        },
+        "fil": {
+          "path": "docs/languages/fil/README.md",
+          "sha256": "7001e72e92fa25febdfa2da0546b09b5461a2c5c840c14fe496a31117c151aea",
+          "method": "machine-assisted"
+        },
+        "fi": {
+          "path": "docs/languages/fi/README.md",
+          "sha256": "aabe183102ae40de6d79a41162552a036725692da5406d8499ee92f8923e3230",
+          "method": "machine-assisted"
+        },
+        "fr": {
+          "path": "README.fr.md",
+          "sha256": "49682d5c7b180f30b0f513d9babe4020dc2981b029816757b2665884b0227669",
+          "method": "existing-french-guide"
+        },
+        "de": {
+          "path": "docs/languages/de/README.md",
+          "sha256": "372ee2a964d941576ed6cdf49d219a5e4108d396866584e3077103e02e524610",
+          "method": "machine-assisted"
+        },
+        "el": {
+          "path": "docs/languages/el/README.md",
+          "sha256": "dba65b7ec7448804dcb39ec28c299258a25162b5ae0e8c8e891319dfc133d787",
+          "method": "machine-assisted"
+        },
+        "hi": {
+          "path": "docs/languages/hi/README.md",
+          "sha256": "c8a4cd2c3d922b33e117f97ca5a69e3eb76561fdaee213639972b7b58bd938cf",
+          "method": "machine-assisted"
+        },
+        "hu": {
+          "path": "docs/languages/hu/README.md",
+          "sha256": "4b9e2cd5167e9ae2724bc438d4ab170c932cd39235cee1a22b3a379248ab4d48",
+          "method": "machine-assisted"
+        },
+        "id": {
+          "path": "docs/languages/id/README.md",
+          "sha256": "5e23bf6830f682221503fd1d0781f84cdb734d0aca5377c8cf963f6c20e33bf5",
+          "method": "machine-assisted"
+        },
+        "it": {
+          "path": "docs/languages/it/README.md",
+          "sha256": "a859a160b918ec69cf2d5bdd50ad99e5cabb6694fa011e940812ac573aa9f19b",
+          "method": "machine-assisted"
+        },
+        "ja": {
+          "path": "docs/languages/ja/README.md",
+          "sha256": "0dabd1b1059d338127c47928ce4a8c1a827694b514bf89bb4b369d1bc9c5fc1d",
+          "method": "machine-assisted"
+        },
+        "ko": {
+          "path": "docs/languages/ko/README.md",
+          "sha256": "81ca151b709632194ace3cfa808ee8c87b3687b79b60729945d5118deb4c94a2",
+          "method": "machine-assisted"
+        },
+        "mr": {
+          "path": "docs/languages/mr/README.md",
+          "sha256": "f7ff6961024beb12e4c5a2d618b4295aef2855ba4b034e73b568be801eb96267",
+          "method": "machine-assisted"
+        },
+        "fa": {
+          "path": "docs/languages/fa/README.md",
+          "sha256": "07582a6e4085d320c166ab7d639bd4f5142ee8c68d7500d9b1c5800c20ff6d6a",
+          "method": "machine-assisted"
+        },
+        "pl": {
+          "path": "docs/languages/pl/README.md",
+          "sha256": "08b9a4d82fe014e98c9d06ab2e99c854aafe6be3363aec59bc951e4a9bb5c3d9",
+          "method": "machine-assisted"
+        },
+        "pt": {
+          "path": "docs/languages/pt/README.md",
+          "sha256": "74adb7f6f0d12ebd8e083272e45f1df14274d12abf5a72e53755726451312f29",
+          "method": "machine-assisted"
+        },
+        "pa": {
+          "path": "docs/languages/pa/README.md",
+          "sha256": "d5209753758fbe86fc5ae9b4455c3db5a85d28beedaa971d485a3aefd34110e1",
+          "method": "machine-assisted"
+        },
+        "ro": {
+          "path": "docs/languages/ro/README.md",
+          "sha256": "e27968ab61dd2ee5110c2452d5517294983f2830d34b703c75d930b3aa4c1ba0",
+          "method": "machine-assisted"
+        },
+        "ru": {
+          "path": "docs/languages/ru/README.md",
+          "sha256": "b553ee2971a7a2be260880727e11d73d676d97e32ce9df95f482346e7a75fa40",
+          "method": "machine-assisted"
+        },
+        "es": {
+          "path": "docs/languages/es/README.md",
+          "sha256": "27b1d1e4117a15ebc8af63f546e2888d109be241846583cb6febb7211986c385",
+          "method": "machine-assisted"
+        },
+        "sw": {
+          "path": "docs/languages/sw/README.md",
+          "sha256": "a209e157cef9c3d5b8217f5e8417cc5b575fd8b728102001eb08110b337c1af3",
+          "method": "machine-assisted"
+        },
+        "sv": {
+          "path": "docs/languages/sv/README.md",
+          "sha256": "d357f6eea970cdbd82209eb6f770aa7456a723f2fc9a394626cfc874c6fc45bb",
+          "method": "machine-assisted"
+        },
+        "ta": {
+          "path": "docs/languages/ta/README.md",
+          "sha256": "cdac9585053300ff870161ee957214e4e1689408787864cdf89c68534df5a285",
+          "method": "machine-assisted"
+        },
+        "th": {
+          "path": "docs/languages/th/README.md",
+          "sha256": "1f3c6094b01e8134209864d7699e60697aef0094b9af2962c5f934a0a3830396",
+          "method": "machine-assisted"
+        },
+        "tr": {
+          "path": "docs/languages/tr/README.md",
+          "sha256": "d2a8ab8702880826b332d3b2fe51ba0e18bd40e6c6ebe7c881d9143c4f3f306b",
+          "method": "machine-assisted"
+        },
+        "uk": {
+          "path": "docs/languages/uk/README.md",
+          "sha256": "e9633ba272cd9aaceb41bd618237ac923990dc62f1da745af22719068e45f51d",
+          "method": "machine-assisted"
+        },
+        "ur": {
+          "path": "docs/languages/ur/README.md",
+          "sha256": "6494f49aefa8b1dfc12ba71e97c7a8df154797cdcde7d7d38cc63bf35efaa7bf",
+          "method": "machine-assisted"
+        },
+        "vi": {
+          "path": "docs/languages/vi/README.md",
+          "sha256": "8c475ca1b70a3034cefcfd686fee9cb942fc5a079a005b573d0aee6b5abaa38d",
+          "method": "machine-assisted"
+        }
+      }
+    },
+    {
+      "source": "NVIDIA-Profile-Inspector/README.md",
+      "source_sha256": "e2fe1c7a5fd9339a5235d8b6834c55c94aa7f998cb3eb697ed16dab1f0b28251",
+      "translations": {
+        "ar": {
+          "path": "docs/languages/ar/NVIDIA-Profile-Inspector/README.md",
+          "sha256": "d3bf36ac1dcaea38ac4f56b4751d953a35916f04c825658f3cfeb35320ef2735",
+          "method": "machine-assisted"
+        },
+        "bn": {
+          "path": "docs/languages/bn/NVIDIA-Profile-Inspector/README.md",
+          "sha256": "0d2b18123407377a31664e10b80e9a510095b449b83ea2ae28475c1d2804e364",
+          "method": "machine-assisted"
+        },
+        "zh": {
+          "path": "docs/languages/zh/NVIDIA-Profile-Inspector/README.md",
+          "sha256": "813a515b7452efd6fce36a51facd3096cc460ead412b244163082e288d863228",
+          "method": "machine-assisted"
+        },
+        "cs": {
+          "path": "docs/languages/cs/NVIDIA-Profile-Inspector/README.md",
+          "sha256": "483a74472fb26b3b0bace7f28f6334cc991d3cc47ee0c4aa4ead324f09167983",
+          "method": "machine-assisted"
+        },
+        "da": {
+          "path": "docs/languages/da/NVIDIA-Profile-Inspector/README.md",
+          "sha256": "d492533e373aadc00d257ce30eefcaac94628031ffc16366f69e587ec4672c73",
+          "method": "machine-assisted"
+        },
+        "nl": {
+          "path": "docs/languages/nl/NVIDIA-Profile-Inspector/README.md",
+          "sha256": "ecfa75d4b3d324a4c2ff8b6385fba0ddcf29a3ee084bf51f115ce8814093c1ef",
+          "method": "machine-assisted"
+        },
+        "en": {
+          "path": "NVIDIA-Profile-Inspector/README.md",
+          "sha256": "e2fe1c7a5fd9339a5235d8b6834c55c94aa7f998cb3eb697ed16dab1f0b28251",
+          "method": "reference"
+        },
+        "fil": {
+          "path": "docs/languages/fil/NVIDIA-Profile-Inspector/README.md",
+          "sha256": "f12aef5e7bf28fa9f6f395124594a2a45978bf0fa1af8ae1a98978dfde8db2cf",
+          "method": "machine-assisted"
+        },
+        "fi": {
+          "path": "docs/languages/fi/NVIDIA-Profile-Inspector/README.md",
+          "sha256": "2c3584c24b7d9aa5d71149146713d6e87e03bbebe127486794a5f9f2d1236fac",
+          "method": "machine-assisted"
+        },
+        "fr": {
+          "path": "NVIDIA-Profile-Inspector/README.fr.md",
+          "sha256": "a542f440fb02dcaeb517d1a016bcc85658f76b934f923d81bf2f1dcd06539305",
+          "method": "existing-french-guide"
+        },
+        "de": {
+          "path": "docs/languages/de/NVIDIA-Profile-Inspector/README.md",
+          "sha256": "e411a470fe999198f2248a617a1939befdb095e5140f877e1ffbb34fc83c9c9d",
+          "method": "machine-assisted"
+        },
+        "el": {
+          "path": "docs/languages/el/NVIDIA-Profile-Inspector/README.md",
+          "sha256": "c8c7fd05c2914d5078c2e7bff7905e3b1312e3b60e745a340e7a4cfc025e8d85",
+          "method": "machine-assisted"
+        },
+        "hi": {
+          "path": "docs/languages/hi/NVIDIA-Profile-Inspector/README.md",
+          "sha256": "828f2ad40abf5a699fd07d9662a195305190674f052842f318c4ea98b29a1d77",
+          "method": "machine-assisted"
+        },
+        "hu": {
+          "path": "docs/languages/hu/NVIDIA-Profile-Inspector/README.md",
+          "sha256": "a32fecb02df7f052323d6d6c39868e02e5b22f9d987835dbfa7240c36cd98a30",
+          "method": "machine-assisted"
+        },
+        "id": {
+          "path": "docs/languages/id/NVIDIA-Profile-Inspector/README.md",
+          "sha256": "5f43cd968748ab9187ca2cc12047e8503f5e3066fa851c246ccb886257580573",
+          "method": "machine-assisted"
+        },
+        "it": {
+          "path": "docs/languages/it/NVIDIA-Profile-Inspector/README.md",
+          "sha256": "4f80479d0ebfcc8fd9cab03a652cae9a363a741b114ce52f24f602fd7bf5e674",
+          "method": "machine-assisted"
+        },
+        "ja": {
+          "path": "docs/languages/ja/NVIDIA-Profile-Inspector/README.md",
+          "sha256": "cee491116a3714fb1718a163a7a350d1726a683079a4bf0faef1afadf4a7bbee",
+          "method": "machine-assisted"
+        },
+        "ko": {
+          "path": "docs/languages/ko/NVIDIA-Profile-Inspector/README.md",
+          "sha256": "c55e9c4806774672ff1d6ed0c736cf1b09faba341f6a0cc4ba6dfa3e3368b00b",
+          "method": "machine-assisted"
+        },
+        "mr": {
+          "path": "docs/languages/mr/NVIDIA-Profile-Inspector/README.md",
+          "sha256": "9c6b19f0cd10bea9d2c4955d6d2420ff473579075ae3c4deea0882fd58d46eb1",
+          "method": "machine-assisted"
+        },
+        "fa": {
+          "path": "docs/languages/fa/NVIDIA-Profile-Inspector/README.md",
+          "sha256": "adc6d063524ff682c8dcfc5ffebf791044411f663ad58c56b2d70dae9aacb264",
+          "method": "machine-assisted"
+        },
+        "pl": {
+          "path": "docs/languages/pl/NVIDIA-Profile-Inspector/README.md",
+          "sha256": "7ae4aed17e9d9b9442e75a00e06b0243e050494c726af7ab4081874daf16060d",
+          "method": "machine-assisted"
+        },
+        "pt": {
+          "path": "docs/languages/pt/NVIDIA-Profile-Inspector/README.md",
+          "sha256": "661d68245ddd7d574f90c0402be523a2677708181e3e8e4103f681d0d9e64b06",
+          "method": "machine-assisted"
+        },
+        "pa": {
+          "path": "docs/languages/pa/NVIDIA-Profile-Inspector/README.md",
+          "sha256": "4bcccc01e394632cf0fba51c235cd1f60b14d6030065c313e8a26f693d17a11b",
+          "method": "machine-assisted"
+        },
+        "ro": {
+          "path": "docs/languages/ro/NVIDIA-Profile-Inspector/README.md",
+          "sha256": "02fb3caa6112299d95797f68d9af3e02ded5644d5f182d906f90fa6f5d7e8a08",
+          "method": "machine-assisted"
+        },
+        "ru": {
+          "path": "docs/languages/ru/NVIDIA-Profile-Inspector/README.md",
+          "sha256": "c80ad8322a4b7fd28a7c8b15cc6af995d3c6a37de10d9f70f9ccb0d5a2124977",
+          "method": "machine-assisted"
+        },
+        "es": {
+          "path": "docs/languages/es/NVIDIA-Profile-Inspector/README.md",
+          "sha256": "4cb9cf1ec5ab055c8b5ee5fd9691b2892602cd22543f0fbc1c2eb7948d6e6790",
+          "method": "machine-assisted"
+        },
+        "sw": {
+          "path": "docs/languages/sw/NVIDIA-Profile-Inspector/README.md",
+          "sha256": "c5171e9ba88d38c86ff111f965f3dcdb2a5237dbc353cab922c2e735a2b7ab53",
+          "method": "machine-assisted"
+        },
+        "sv": {
+          "path": "docs/languages/sv/NVIDIA-Profile-Inspector/README.md",
+          "sha256": "1398e06d606fc4a0d7e622a00f28da0f34f3070703d4c4e83ea3d98940404c9f",
+          "method": "machine-assisted"
+        },
+        "ta": {
+          "path": "docs/languages/ta/NVIDIA-Profile-Inspector/README.md",
+          "sha256": "73ca5c104947575eee2f316ea6d7edeb17022ace7c30f493a5f77f90bd8dad14",
+          "method": "machine-assisted"
+        },
+        "th": {
+          "path": "docs/languages/th/NVIDIA-Profile-Inspector/README.md",
+          "sha256": "c7e3780d38f4ac807eb643640649d839b101fed88a7fdb8a7b23b1e82185d910",
+          "method": "machine-assisted"
+        },
+        "tr": {
+          "path": "docs/languages/tr/NVIDIA-Profile-Inspector/README.md",
+          "sha256": "5adb162bec8a97b01224852ab091f99531c36e0d52df07840182e42cf19e6db9",
+          "method": "machine-assisted"
+        },
+        "uk": {
+          "path": "docs/languages/uk/NVIDIA-Profile-Inspector/README.md",
+          "sha256": "713f32d88650d519c2ae8303a3e142b0c5064381b5589c235c8c749ac4b3ca5f",
+          "method": "machine-assisted"
+        },
+        "ur": {
+          "path": "docs/languages/ur/NVIDIA-Profile-Inspector/README.md",
+          "sha256": "c71a34e5403b19c6939b13088fbfec2beea085e8f3c1b0649a0e4e6828857240",
+          "method": "machine-assisted"
+        },
+        "vi": {
+          "path": "docs/languages/vi/NVIDIA-Profile-Inspector/README.md",
+          "sha256": "ae3a9589e41ab3f894b131c8068bf51de7c5b8f2966693c41bd6221145c10f4a",
+          "method": "machine-assisted"
+        }
+      }
+    },
+    {
+      "source": "NVDriverForge/README.md",
+      "source_sha256": "d96a72b4912adb859c0c93dc76fd24389d4215a92dbcfee3bc2af083f0800bb7",
+      "translations": {
+        "ar": {
+          "path": "docs/languages/ar/NVDriverForge/README.md",
+          "sha256": "716936cc55e7ff118a4ded2cb9a660931fcd131557da52cee2930b1df06ec82f",
+          "method": "machine-assisted"
+        },
+        "bn": {
+          "path": "docs/languages/bn/NVDriverForge/README.md",
+          "sha256": "243a62b4fe9687faa47235408e94d766210ba65ebc74ebc4a9f223aef1849721",
+          "method": "machine-assisted"
+        },
+        "zh": {
+          "path": "docs/languages/zh/NVDriverForge/README.md",
+          "sha256": "f8967550ddfbeccbefa492b51ae91c5c67be82e8c8b7a6239b66aa94d63da993",
+          "method": "machine-assisted"
+        },
+        "cs": {
+          "path": "docs/languages/cs/NVDriverForge/README.md",
+          "sha256": "4f2a5e6aad44f23e5b014d1dd9f1c348751ee3bb4443bccce08568cb1bcd2d25",
+          "method": "machine-assisted"
+        },
+        "da": {
+          "path": "docs/languages/da/NVDriverForge/README.md",
+          "sha256": "fa3658b3bb31cf71b90d42d802eff3f53a55557b55fd1fc7b610118396579554",
+          "method": "machine-assisted"
+        },
+        "nl": {
+          "path": "docs/languages/nl/NVDriverForge/README.md",
+          "sha256": "de51d7cdf29816d70e6e256d3b1f064b959c4922d025f2dca09c645b75bb0386",
+          "method": "machine-assisted"
+        },
+        "en": {
+          "path": "NVDriverForge/README.md",
+          "sha256": "d96a72b4912adb859c0c93dc76fd24389d4215a92dbcfee3bc2af083f0800bb7",
+          "method": "reference"
+        },
+        "fil": {
+          "path": "docs/languages/fil/NVDriverForge/README.md",
+          "sha256": "ab9007f6e67218ed7cc4b43f7c8e98acaa58a3ef752fa26df2c04d9b6e18e58c",
+          "method": "machine-assisted"
+        },
+        "fi": {
+          "path": "docs/languages/fi/NVDriverForge/README.md",
+          "sha256": "d79f4a6671d919b1b4a1994cb54d8456bcd44dd4e7e419c9540fb5510f8e9325",
+          "method": "machine-assisted"
+        },
+        "fr": {
+          "path": "NVDriverForge/README.fr.md",
+          "sha256": "2455bb6e3e262f5a92c6cf9afc46b59ade7bedd4137e6f12fac8a12ce9a1d15b",
+          "method": "existing-french-guide"
+        },
+        "de": {
+          "path": "docs/languages/de/NVDriverForge/README.md",
+          "sha256": "5c55d3979e70a17026e1a156f6d8f9c992145f7f49261180519c82aba752ab64",
+          "method": "machine-assisted"
+        },
+        "el": {
+          "path": "docs/languages/el/NVDriverForge/README.md",
+          "sha256": "6d27ecd3e3a988124764c0a7fd8758a986b92feed281f45a4c89c42e9e1a7256",
+          "method": "machine-assisted"
+        },
+        "hi": {
+          "path": "docs/languages/hi/NVDriverForge/README.md",
+          "sha256": "73ca28e2dabc8e9a2d2e8a3efd3f9b7ce9bb428680024aba5297979aad3eb544",
+          "method": "machine-assisted"
+        },
+        "hu": {
+          "path": "docs/languages/hu/NVDriverForge/README.md",
+          "sha256": "944107c393c20460fd5efb3d89261fb4d5e592021cf2c7a0230f68ce41f63193",
+          "method": "machine-assisted"
+        },
+        "id": {
+          "path": "docs/languages/id/NVDriverForge/README.md",
+          "sha256": "103f93afb227a13dd39d8cbebcad9db307a7e0c617821c8bed9696bc0105bc83",
+          "method": "machine-assisted"
+        },
+        "it": {
+          "path": "docs/languages/it/NVDriverForge/README.md",
+          "sha256": "3cea6f05ffde52bf70eef39204db25e7a1de8ef8bfff04d922d7953a944e967e",
+          "method": "machine-assisted"
+        },
+        "ja": {
+          "path": "docs/languages/ja/NVDriverForge/README.md",
+          "sha256": "e57bf88b006c76ee92c45f49e6417c9ac1f32942f97c168688ec5f9de67674cb",
+          "method": "machine-assisted"
+        },
+        "ko": {
+          "path": "docs/languages/ko/NVDriverForge/README.md",
+          "sha256": "586ba1ec1a2f7fbd97341583ee335aa4c46d16c2701bf656c32f0df0f4575331",
+          "method": "machine-assisted"
+        },
+        "mr": {
+          "path": "docs/languages/mr/NVDriverForge/README.md",
+          "sha256": "80903aab699b9d007c49d209036b0888ae4bf4c101451905b02547e14a412b71",
+          "method": "machine-assisted"
+        },
+        "fa": {
+          "path": "docs/languages/fa/NVDriverForge/README.md",
+          "sha256": "5f6c455543b0ecabd3fc81def518e0b6e7d1f17299083460f07d2bc987749753",
+          "method": "machine-assisted"
+        },
+        "pl": {
+          "path": "docs/languages/pl/NVDriverForge/README.md",
+          "sha256": "6bdecf22a7e360fd20dd3115e1c08f90e7f5ed3dc9ec4acebc295f45081a1ae9",
+          "method": "machine-assisted"
+        },
+        "pt": {
+          "path": "docs/languages/pt/NVDriverForge/README.md",
+          "sha256": "923476656772d07baf9e5219e5c7b14de483d317814a7d23e04bf26043eb16f1",
+          "method": "machine-assisted"
+        },
+        "pa": {
+          "path": "docs/languages/pa/NVDriverForge/README.md",
+          "sha256": "839d7e95e1ad9518b986c9c7a7db2a7b45a061d904ba3dee8e9cae9c0611ea82",
+          "method": "machine-assisted"
+        },
+        "ro": {
+          "path": "docs/languages/ro/NVDriverForge/README.md",
+          "sha256": "3cd46b2b15fdee8fabd1357bbe54a9fc5a13be0846c9cc6a5756729dfae1facb",
+          "method": "machine-assisted"
+        },
+        "ru": {
+          "path": "docs/languages/ru/NVDriverForge/README.md",
+          "sha256": "b92482671da88ac21d970a399a16436c48753e789b048a6f1b438d7f564d747b",
+          "method": "machine-assisted"
+        },
+        "es": {
+          "path": "docs/languages/es/NVDriverForge/README.md",
+          "sha256": "5775fb6f9f7e08fefd0d002fadc1c6489b8fef81c5aaef273060c630bbebe950",
+          "method": "machine-assisted"
+        },
+        "sw": {
+          "path": "docs/languages/sw/NVDriverForge/README.md",
+          "sha256": "e94c0598650ca5e839b3949b4703becf354e582d608d199b31bd1a40c43eccea",
+          "method": "machine-assisted"
+        },
+        "sv": {
+          "path": "docs/languages/sv/NVDriverForge/README.md",
+          "sha256": "4f402052855f8a7145c459055f59e5438a8c0b42cebabd4b49700f83ecd310c3",
+          "method": "machine-assisted"
+        },
+        "ta": {
+          "path": "docs/languages/ta/NVDriverForge/README.md",
+          "sha256": "6f1a56c25bd7f50a97edbc988d9262601185d94c85c38412082381a50997f363",
+          "method": "machine-assisted"
+        },
+        "th": {
+          "path": "docs/languages/th/NVDriverForge/README.md",
+          "sha256": "8b720722e753bf831ad85ee9026deb9e40545c99193882ee0bba3f9f403d24b0",
+          "method": "machine-assisted"
+        },
+        "tr": {
+          "path": "docs/languages/tr/NVDriverForge/README.md",
+          "sha256": "27b93fa03f880287456fa8ccb7878a0afafd0acc580fe6911f37f94d59468ee7",
+          "method": "machine-assisted"
+        },
+        "uk": {
+          "path": "docs/languages/uk/NVDriverForge/README.md",
+          "sha256": "155c41f1ab8b3dac247a5dea9b8e82e0910da4f0dab964fc91a96abd2df3fa06",
+          "method": "machine-assisted"
+        },
+        "ur": {
+          "path": "docs/languages/ur/NVDriverForge/README.md",
+          "sha256": "294da765628a525b32e9ec33c9eb3ee5c8ac71c2dde85af71f518c36d468f1a9",
+          "method": "machine-assisted"
+        },
+        "vi": {
+          "path": "docs/languages/vi/NVDriverForge/README.md",
+          "sha256": "df8b9c98e81e4330a1e338a4040f68195772c3682d81d26e1204c3a6f9402c6c",
+          "method": "machine-assisted"
+        }
+      }
+    },
+    {
+      "source": "NVMFG-Unlock40/README.md",
+      "source_sha256": "f284857cba0146e9642e9bc55792ae765ef1c1d405549a987ecdfd77a5d0d642",
+      "translations": {
+        "ar": {
+          "path": "docs/languages/ar/NVMFG-Unlock40/README.md",
+          "sha256": "08ec74f23bcf94eabe2d693e1ef71dbfdc9c7fef44f13a9c7a4fa3688adad680",
+          "method": "machine-assisted"
+        },
+        "bn": {
+          "path": "docs/languages/bn/NVMFG-Unlock40/README.md",
+          "sha256": "e87450d98ff3ee3d8a6a4221f6faf4e5a47de1aa1db17874ca9492b8ad9c72ac",
+          "method": "machine-assisted"
+        },
+        "zh": {
+          "path": "docs/languages/zh/NVMFG-Unlock40/README.md",
+          "sha256": "a1f5db6bd914b380ac04bc4d7f5cc428102bf151059fefd2d903aa28b285ac39",
+          "method": "machine-assisted"
+        },
+        "cs": {
+          "path": "docs/languages/cs/NVMFG-Unlock40/README.md",
+          "sha256": "9af3b7ab20f18088dd0152baa4c4201e9fb928f044ca1fde39545a2a561cf123",
+          "method": "machine-assisted"
+        },
+        "da": {
+          "path": "docs/languages/da/NVMFG-Unlock40/README.md",
+          "sha256": "bc908f0166b5f5f55a3a3447df3774d6ae66dc0d2118badfaf766fbc82e7f57c",
+          "method": "machine-assisted"
+        },
+        "nl": {
+          "path": "docs/languages/nl/NVMFG-Unlock40/README.md",
+          "sha256": "86c3a15b9e3ed4e0cbc1961b514f6b5232eae9d9821f5047ab3d65994d622aac",
+          "method": "machine-assisted"
+        },
+        "en": {
+          "path": "NVMFG-Unlock40/README.md",
+          "sha256": "f284857cba0146e9642e9bc55792ae765ef1c1d405549a987ecdfd77a5d0d642",
+          "method": "reference"
+        },
+        "fil": {
+          "path": "docs/languages/fil/NVMFG-Unlock40/README.md",
+          "sha256": "e150cb2f0098718f7ffb563bab2a1c74209dc7e1ab8082dce3b969ed4380dd04",
+          "method": "machine-assisted"
+        },
+        "fi": {
+          "path": "docs/languages/fi/NVMFG-Unlock40/README.md",
+          "sha256": "b0a916de9aa7c89c7ee4fd09fada891ecadc0ce42df9b3ae512d4423fc6d8fa5",
+          "method": "machine-assisted"
+        },
+        "fr": {
+          "path": "NVMFG-Unlock40/README.fr.md",
+          "sha256": "5d398fe49b7041aad23c1feb8ae7a8ac52ed4f7325ef2244c6eff91531369b16",
+          "method": "existing-french-guide"
+        },
+        "de": {
+          "path": "docs/languages/de/NVMFG-Unlock40/README.md",
+          "sha256": "f3963e2e3b1e2fdc9f08e3a5fef6770fa109835d40a425661e60fc70742d1a83",
+          "method": "machine-assisted"
+        },
+        "el": {
+          "path": "docs/languages/el/NVMFG-Unlock40/README.md",
+          "sha256": "e889175fecb628353b5e2d8ab1b3244d88f13f48759dc865eafa6292509107c8",
+          "method": "machine-assisted"
+        },
+        "hi": {
+          "path": "docs/languages/hi/NVMFG-Unlock40/README.md",
+          "sha256": "51111c1ad2c48fa5329311679cb8688a2e5065467a31ba47eee6329020b6cf2f",
+          "method": "machine-assisted"
+        },
+        "hu": {
+          "path": "docs/languages/hu/NVMFG-Unlock40/README.md",
+          "sha256": "ceac2d36ea17190cd1ca936014b9363d8eec0c382c9ff3aa275c140ccd19a6c5",
+          "method": "machine-assisted"
+        },
+        "id": {
+          "path": "docs/languages/id/NVMFG-Unlock40/README.md",
+          "sha256": "d7e2850fe0dd5b50c05dc122acf542b5ac96a11df52a26108956ba386dd11586",
+          "method": "machine-assisted"
+        },
+        "it": {
+          "path": "docs/languages/it/NVMFG-Unlock40/README.md",
+          "sha256": "061b918f9de80462629ee57a998237e3f29887c627957803ea5388f60bd72140",
+          "method": "machine-assisted"
+        },
+        "ja": {
+          "path": "docs/languages/ja/NVMFG-Unlock40/README.md",
+          "sha256": "adc8b02a990cbf87535f7b683a6c47855a1a894de7c9689b8d14fa7bf865ca9e",
+          "method": "machine-assisted"
+        },
+        "ko": {
+          "path": "docs/languages/ko/NVMFG-Unlock40/README.md",
+          "sha256": "e49b95e8d8e1c660353013d45d492a06cbd011c316038c083234e0f05ca0ab30",
+          "method": "machine-assisted"
+        },
+        "mr": {
+          "path": "docs/languages/mr/NVMFG-Unlock40/README.md",
+          "sha256": "ea34c595c79dc26956c21976bd023b7058752897a278d9ee0699cb78cac67f51",
+          "method": "machine-assisted"
+        },
+        "fa": {
+          "path": "docs/languages/fa/NVMFG-Unlock40/README.md",
+          "sha256": "2ce52917d91d581312581ca7f6b7b249ae70a8647fbdac204850cf2bf7938e7e",
+          "method": "machine-assisted"
+        },
+        "pl": {
+          "path": "docs/languages/pl/NVMFG-Unlock40/README.md",
+          "sha256": "6d7511a280fcd19afaa037af12a6f4f41d8d2d4d1ace7a563fe4881114b904b5",
+          "method": "machine-assisted"
+        },
+        "pt": {
+          "path": "docs/languages/pt/NVMFG-Unlock40/README.md",
+          "sha256": "ffc0caa5adb0705b8822ad7a5254397636fe7732f56e9617d1f44e7a28c8f4fb",
+          "method": "machine-assisted"
+        },
+        "pa": {
+          "path": "docs/languages/pa/NVMFG-Unlock40/README.md",
+          "sha256": "f4849b426260f7583a86f5d20f7f4e1beacc094389ab00da43906a463e459776",
+          "method": "machine-assisted"
+        },
+        "ro": {
+          "path": "docs/languages/ro/NVMFG-Unlock40/README.md",
+          "sha256": "2931a782a0cf3d6f76f48033c8f8b771dbd2fb5a290c4f549ff44ca18684aa98",
+          "method": "machine-assisted"
+        },
+        "ru": {
+          "path": "docs/languages/ru/NVMFG-Unlock40/README.md",
+          "sha256": "a9be1d88152ddda956d038477bed2966af1b3c89b4ca2076fd9c034a6ebb3215",
+          "method": "machine-assisted"
+        },
+        "es": {
+          "path": "docs/languages/es/NVMFG-Unlock40/README.md",
+          "sha256": "43c23c01a02e0bf15188f439845a5925acb260f2b4f4e0939123531464b6860b",
+          "method": "machine-assisted"
+        },
+        "sw": {
+          "path": "docs/languages/sw/NVMFG-Unlock40/README.md",
+          "sha256": "3be5552b1153c7e57f8786a074bb52254bd94f9e7f51610233abe8023bd2a157",
+          "method": "machine-assisted"
+        },
+        "sv": {
+          "path": "docs/languages/sv/NVMFG-Unlock40/README.md",
+          "sha256": "99d04067ef94f9533fbd76a8e63674b2a8d4d48a876f42832e037b14f24c5cba",
+          "method": "machine-assisted"
+        },
+        "ta": {
+          "path": "docs/languages/ta/NVMFG-Unlock40/README.md",
+          "sha256": "8c54a65fe1b46774e6982a634def5a4cb2a7576f9e53213cafbfda00c952d883",
+          "method": "machine-assisted"
+        },
+        "th": {
+          "path": "docs/languages/th/NVMFG-Unlock40/README.md",
+          "sha256": "dbf83381b63bc3819d9bfeea3107b5350233cb9ebdaf0880c7d219aba81f6978",
+          "method": "machine-assisted"
+        },
+        "tr": {
+          "path": "docs/languages/tr/NVMFG-Unlock40/README.md",
+          "sha256": "e65a4bc6f3b42442ca7f1711a71007d598543f43d679f9c30a971d96f9c88cd7",
+          "method": "machine-assisted"
+        },
+        "uk": {
+          "path": "docs/languages/uk/NVMFG-Unlock40/README.md",
+          "sha256": "8d57e5f3107f4e57b03acf1685380f30f63bed588dfe7e562ebfb3b6b697bc5e",
+          "method": "machine-assisted"
+        },
+        "ur": {
+          "path": "docs/languages/ur/NVMFG-Unlock40/README.md",
+          "sha256": "935d70e7524964e1445008dd0ed21d3362f347d3a2b8ef2700609b62a4f55402",
+          "method": "machine-assisted"
+        },
+        "vi": {
+          "path": "docs/languages/vi/NVMFG-Unlock40/README.md",
+          "sha256": "6c1b7843062d01b1e03a654430afa2253dbe773601b9540293dbf3af341dfff7",
+          "method": "machine-assisted"
+        }
+      }
+    },
+    {
+      "source": "NVRasterPulse/README.md",
+      "source_sha256": "72f0f152b6c652b3211ca34b740d1ddd228367eb38f1d74c2dd946a9a96df501",
+      "translations": {
+        "ar": {
+          "path": "docs/languages/ar/NVRasterPulse/README.md",
+          "sha256": "3bdc3ae6722e3fb99b7b94359f6d0ac29c9f5827f34a387515a6246bc0289f93",
+          "method": "machine-assisted"
+        },
+        "bn": {
+          "path": "docs/languages/bn/NVRasterPulse/README.md",
+          "sha256": "559dac951b27a4dd5605e60575c23a999c0338c935d7d7a8346527e021a6f2b2",
+          "method": "machine-assisted"
+        },
+        "zh": {
+          "path": "docs/languages/zh/NVRasterPulse/README.md",
+          "sha256": "b740a7686472f95eb2fb3dbf2a18d417352954c469f7c480372a4f5f90994036",
+          "method": "machine-assisted"
+        },
+        "cs": {
+          "path": "docs/languages/cs/NVRasterPulse/README.md",
+          "sha256": "0baefe5b552aad249b83730fdfa0427e06e437d8d92fcc0d4d6d014ef3328880",
+          "method": "machine-assisted"
+        },
+        "da": {
+          "path": "docs/languages/da/NVRasterPulse/README.md",
+          "sha256": "c582e6f61e622b9067d789af2f1d7e0414c98149261e05eee1aaf2485d6749b1",
+          "method": "machine-assisted"
+        },
+        "nl": {
+          "path": "docs/languages/nl/NVRasterPulse/README.md",
+          "sha256": "fd8ccd28d7cda5c361f96652cf7e68a431bc241f791364a91fcf89633a9f4c5c",
+          "method": "machine-assisted"
+        },
+        "en": {
+          "path": "NVRasterPulse/README.md",
+          "sha256": "72f0f152b6c652b3211ca34b740d1ddd228367eb38f1d74c2dd946a9a96df501",
+          "method": "reference"
+        },
+        "fil": {
+          "path": "docs/languages/fil/NVRasterPulse/README.md",
+          "sha256": "59bdccc1a800c022a002429e61d6ce3eaf8dcd65f5bed5ec999b6708e8947dd3",
+          "method": "machine-assisted"
+        },
+        "fi": {
+          "path": "docs/languages/fi/NVRasterPulse/README.md",
+          "sha256": "6a9b5cb11be6e26a7dcde4c8fda572d81b61292d28b8a57eaa282021ddf4fe49",
+          "method": "machine-assisted"
+        },
+        "fr": {
+          "path": "NVRasterPulse/README.fr.md",
+          "sha256": "db06ef6c30f08f2eab8f1a98d7395dae6ae536013ce4c8b401f7131cf9efe78e",
+          "method": "existing-french-guide"
+        },
+        "de": {
+          "path": "docs/languages/de/NVRasterPulse/README.md",
+          "sha256": "ea31b62b9ad32abc151074817e9e642377015a0fa6249a817be975a9656a2f70",
+          "method": "machine-assisted"
+        },
+        "el": {
+          "path": "docs/languages/el/NVRasterPulse/README.md",
+          "sha256": "4e38644d0345d85b1b5b851cb45b8984b9b8ebca5d3c0d72676347cf95da0eeb",
+          "method": "machine-assisted"
+        },
+        "hi": {
+          "path": "docs/languages/hi/NVRasterPulse/README.md",
+          "sha256": "378e74a54987f5b860fe5ecad7f4c93910e64ed234a90adcc17e9f98325e4a37",
+          "method": "machine-assisted"
+        },
+        "hu": {
+          "path": "docs/languages/hu/NVRasterPulse/README.md",
+          "sha256": "196dd21758768d4756892921aadcc0017af05d284aa4ab2dde09a0b7b0604573",
+          "method": "machine-assisted"
+        },
+        "id": {
+          "path": "docs/languages/id/NVRasterPulse/README.md",
+          "sha256": "1bb93afa1552018ffd02dca1b68348b12bd83ada1dd6a2f2a90cf2aa20db9572",
+          "method": "machine-assisted"
+        },
+        "it": {
+          "path": "docs/languages/it/NVRasterPulse/README.md",
+          "sha256": "9db25d40dffd91dbb3a4a177bb162f406432828ee8c36d32d040e882f8291c71",
+          "method": "machine-assisted"
+        },
+        "ja": {
+          "path": "docs/languages/ja/NVRasterPulse/README.md",
+          "sha256": "cd1123ec94755bb8fac095bbbf7a3d812f401996337dcb4e6492a09afdd892a2",
+          "method": "machine-assisted"
+        },
+        "ko": {
+          "path": "docs/languages/ko/NVRasterPulse/README.md",
+          "sha256": "30adce7f2fb6ab28849208e261e797d3715d29df44c57536835fcb89c8a6d141",
+          "method": "machine-assisted"
+        },
+        "mr": {
+          "path": "docs/languages/mr/NVRasterPulse/README.md",
+          "sha256": "2ce12a2e121326c6c73e0c608dd07a697fa825d64242ff225ad25a177137ca4f",
+          "method": "machine-assisted"
+        },
+        "fa": {
+          "path": "docs/languages/fa/NVRasterPulse/README.md",
+          "sha256": "abcbdd19b0d9cee4d1c349eb185779e454d3b09c8e023f99e265f36a18662bb2",
+          "method": "machine-assisted"
+        },
+        "pl": {
+          "path": "docs/languages/pl/NVRasterPulse/README.md",
+          "sha256": "259e4f8b8d35e1e71977cecb7581bcd2a38234437ff038c51cdd7386f071b072",
+          "method": "machine-assisted"
+        },
+        "pt": {
+          "path": "docs/languages/pt/NVRasterPulse/README.md",
+          "sha256": "3adce0187f97b09afe71ec3c3c87d107860099dc75f23f38075603c7619efae1",
+          "method": "machine-assisted"
+        },
+        "pa": {
+          "path": "docs/languages/pa/NVRasterPulse/README.md",
+          "sha256": "704c2781b3da8c69bc58c95684eed41ce28aab6c160195a5579e3273f5a44c81",
+          "method": "machine-assisted"
+        },
+        "ro": {
+          "path": "docs/languages/ro/NVRasterPulse/README.md",
+          "sha256": "96624ee7260b12f95c8484563d31118ca389814457f0457e476baa8ee87be8a1",
+          "method": "machine-assisted"
+        },
+        "ru": {
+          "path": "docs/languages/ru/NVRasterPulse/README.md",
+          "sha256": "a362dda18db7c72ab96ebd07fa7f07a7593ec66f403a7be9bd1e38212fa1cb26",
+          "method": "machine-assisted"
+        },
+        "es": {
+          "path": "docs/languages/es/NVRasterPulse/README.md",
+          "sha256": "424cb14643d0bca521aa6739c000c28881618eb18590b77d1be312b018d8ba9e",
+          "method": "machine-assisted"
+        },
+        "sw": {
+          "path": "docs/languages/sw/NVRasterPulse/README.md",
+          "sha256": "89a3cc0e951138f221d869e476c6b56c3d39e726d82e0ba40e7ed1953f504461",
+          "method": "machine-assisted"
+        },
+        "sv": {
+          "path": "docs/languages/sv/NVRasterPulse/README.md",
+          "sha256": "5a7c7dee1e5512daf7749b251acd051466ff2d09a804d1fbdbdc648e353df9bf",
+          "method": "machine-assisted"
+        },
+        "ta": {
+          "path": "docs/languages/ta/NVRasterPulse/README.md",
+          "sha256": "fa4800c215d0010cc48991477aff6364703a228f83c2b055bb12c037a3826398",
+          "method": "machine-assisted"
+        },
+        "th": {
+          "path": "docs/languages/th/NVRasterPulse/README.md",
+          "sha256": "d98ef58112fc4f134822a74f42a76cf99debd8111d25142e6dd24f2dfb957e15",
+          "method": "machine-assisted"
+        },
+        "tr": {
+          "path": "docs/languages/tr/NVRasterPulse/README.md",
+          "sha256": "8d30981ebfcb53d461096627b3f0433b2ab447464a80dee29c9301e5f4ca21f4",
+          "method": "machine-assisted"
+        },
+        "uk": {
+          "path": "docs/languages/uk/NVRasterPulse/README.md",
+          "sha256": "6b6c9cd003aca4a01ab83f690c432be5570f9783e4670b3515c0bc22d205291b",
+          "method": "machine-assisted"
+        },
+        "ur": {
+          "path": "docs/languages/ur/NVRasterPulse/README.md",
+          "sha256": "bb52635537a0b0365870ef54d6952dc92b78c2383d86849a67ba825dd9f5d608",
+          "method": "machine-assisted"
+        },
+        "vi": {
+          "path": "docs/languages/vi/NVRasterPulse/README.md",
+          "sha256": "5a319f1e8abba8f18fc7026719b0c14be74a677c5c232f8610ba5a966406e94f",
+          "method": "machine-assisted"
+        }
+      }
+    },
+    {
+      "source": "docs/installation.md",
+      "source_sha256": "5f09cf5a899cd241a25641b0e98206097cb87da1df944feb50c321da790239b2",
+      "translations": {
+        "ar": {
+          "path": "docs/languages/ar/docs/installation.md",
+          "sha256": "a1574f7baacc5df84d218b34f044d6d54c0f3bebb92c50b3e93aca2088ce0b6c",
+          "method": "machine-assisted"
+        },
+        "bn": {
+          "path": "docs/languages/bn/docs/installation.md",
+          "sha256": "14d154e4173aa792349ec6b7aeea20092475cc239e85620ec236d7f5573ad8b4",
+          "method": "machine-assisted"
+        },
+        "zh": {
+          "path": "docs/languages/zh/docs/installation.md",
+          "sha256": "541acf5b146b9de3a0dda8f9fd2580d097e62fc7f5a42028e70bd264c3ef3d63",
+          "method": "machine-assisted"
+        },
+        "cs": {
+          "path": "docs/languages/cs/docs/installation.md",
+          "sha256": "14cf3c976b52494f8b7fa0549adeb8af18bfa31554b0933885e443276c2e367a",
+          "method": "machine-assisted"
+        },
+        "da": {
+          "path": "docs/languages/da/docs/installation.md",
+          "sha256": "01d13e4f5b9fdd2199ad9fdfe7e12993762b079ba9d56d4326084f30edaf7031",
+          "method": "machine-assisted"
+        },
+        "nl": {
+          "path": "docs/languages/nl/docs/installation.md",
+          "sha256": "c4ae7590483546d8bb5985d27471c18c62f98a20c2d7c7975a636ffa0d21d033",
+          "method": "machine-assisted"
+        },
+        "en": {
+          "path": "docs/installation.md",
+          "sha256": "5f09cf5a899cd241a25641b0e98206097cb87da1df944feb50c321da790239b2",
+          "method": "reference"
+        },
+        "fil": {
+          "path": "docs/languages/fil/docs/installation.md",
+          "sha256": "68fddfba9d52c4fe4c3e7288de13083d0c0b08c95a10e5a232ca03572b04d44c",
+          "method": "machine-assisted"
+        },
+        "fi": {
+          "path": "docs/languages/fi/docs/installation.md",
+          "sha256": "11d2331ed15944e10e1e1a0b05cbebec4d2443e4128f85d384b2830152c0a09a",
+          "method": "machine-assisted"
+        },
+        "fr": {
+          "path": "docs/installation.fr.md",
+          "sha256": "4849e68468cf516193ca706ba74c428327863ea71d77135caec510b10ce71f0a",
+          "method": "existing-french-guide"
+        },
+        "de": {
+          "path": "docs/languages/de/docs/installation.md",
+          "sha256": "87dd59a076897859cf3f9ee4e82c072adafbbf73b8a8cb4a289a52a9041d0267",
+          "method": "machine-assisted"
+        },
+        "el": {
+          "path": "docs/languages/el/docs/installation.md",
+          "sha256": "387607f9f7af3264467e68d7837142c845c5843fc59c7c4b3a1087acb2076202",
+          "method": "machine-assisted"
+        },
+        "hi": {
+          "path": "docs/languages/hi/docs/installation.md",
+          "sha256": "22587a5268aa94cbfc75d757cf6953ee54ed14d89e1fbad9a351a34dca6a335c",
+          "method": "machine-assisted"
+        },
+        "hu": {
+          "path": "docs/languages/hu/docs/installation.md",
+          "sha256": "64869b24bed201b617588f56e44a4861dfecd459415c5e30b22ca7faf56b74ca",
+          "method": "machine-assisted"
+        },
+        "id": {
+          "path": "docs/languages/id/docs/installation.md",
+          "sha256": "6984b4d04014fc0dc9cb15174cc881347ad7c27f65fa732ad4ef826145a426ca",
+          "method": "machine-assisted"
+        },
+        "it": {
+          "path": "docs/languages/it/docs/installation.md",
+          "sha256": "4964293a176000f8dcb1a269761a5250f5ff54d34da934b6521e5c3943d611c4",
+          "method": "machine-assisted"
+        },
+        "ja": {
+          "path": "docs/languages/ja/docs/installation.md",
+          "sha256": "483529e7401f74ff99458d819d01dfe130aa112aaf32bb51ab3dda95d6e9c0d9",
+          "method": "machine-assisted"
+        },
+        "ko": {
+          "path": "docs/languages/ko/docs/installation.md",
+          "sha256": "799e24413db3930dda4963f186f0c28761abbe269ec4a02535b822b546cd2713",
+          "method": "machine-assisted"
+        },
+        "mr": {
+          "path": "docs/languages/mr/docs/installation.md",
+          "sha256": "2f1749676529deb8b37c2e2d79421a11786814eaa75098b1147f6e5f114caf4f",
+          "method": "machine-assisted"
+        },
+        "fa": {
+          "path": "docs/languages/fa/docs/installation.md",
+          "sha256": "337ea5c79590851d2c3b85c7fe45577e2f0118af3bc4ee151f4c95967f2ef3f2",
+          "method": "machine-assisted"
+        },
+        "pl": {
+          "path": "docs/languages/pl/docs/installation.md",
+          "sha256": "b35e8e09327ce7924e1189207399102cf562255e9ec97e92033e81294b25ec06",
+          "method": "machine-assisted"
+        },
+        "pt": {
+          "path": "docs/languages/pt/docs/installation.md",
+          "sha256": "0754f50a38a8803acb702d6b122ca94b2b3f9519540ce018f20ce949b973ac4a",
+          "method": "machine-assisted"
+        },
+        "pa": {
+          "path": "docs/languages/pa/docs/installation.md",
+          "sha256": "272f056829d8fad68e80694fbd4a88ce622f8fc37730533fe24e00875287b662",
+          "method": "machine-assisted"
+        },
+        "ro": {
+          "path": "docs/languages/ro/docs/installation.md",
+          "sha256": "4eceedfc7a0ae8afe5d73d374d3edd76212a909dc03ce46370629b80e194227f",
+          "method": "machine-assisted"
+        },
+        "ru": {
+          "path": "docs/languages/ru/docs/installation.md",
+          "sha256": "6eb0c7be99a7b0b081c4a196c671f4e8800e7c4483e00015da7c4cc3943228f8",
+          "method": "machine-assisted"
+        },
+        "es": {
+          "path": "docs/languages/es/docs/installation.md",
+          "sha256": "3b04205ac1d6683c59992de588c5e86eadc66262a18ce39f36b8491bae5e4125",
+          "method": "machine-assisted"
+        },
+        "sw": {
+          "path": "docs/languages/sw/docs/installation.md",
+          "sha256": "50ef7c531f4e8f8b43bbc0db706fd33e0fcb7b9044dc97e85ad0c64d534e6b47",
+          "method": "machine-assisted"
+        },
+        "sv": {
+          "path": "docs/languages/sv/docs/installation.md",
+          "sha256": "9bd8d852a9c595aad51c89b99377de32eacd97552f74605a4eaca81ff249b1ee",
+          "method": "machine-assisted"
+        },
+        "ta": {
+          "path": "docs/languages/ta/docs/installation.md",
+          "sha256": "f057903103972415587204b7fccfff077ab4e21ca02ce69726c1ee3ca7d2c646",
+          "method": "machine-assisted"
+        },
+        "th": {
+          "path": "docs/languages/th/docs/installation.md",
+          "sha256": "6427c1bc243c469bb96ec15415dae8a9c2bdc27b52974df08ec6d17edda1ad73",
+          "method": "machine-assisted"
+        },
+        "tr": {
+          "path": "docs/languages/tr/docs/installation.md",
+          "sha256": "ed28eb87a95949886be178f83e2a246a891fb55bc396aca145330fc0b8a6268d",
+          "method": "machine-assisted"
+        },
+        "uk": {
+          "path": "docs/languages/uk/docs/installation.md",
+          "sha256": "f106e17ce84b0d375a15b4c2634754e2e86aad56c837541664e903133cf283f1",
+          "method": "machine-assisted"
+        },
+        "ur": {
+          "path": "docs/languages/ur/docs/installation.md",
+          "sha256": "baf08bf9b2c092e5cf645adf00f65519ed30a3243825b50517ec55c78f1e025a",
+          "method": "machine-assisted"
+        },
+        "vi": {
+          "path": "docs/languages/vi/docs/installation.md",
+          "sha256": "a313814f5b727d55978094490a4fa43dcb2d0e1eae786919f07ab06804ce3e49",
+          "method": "machine-assisted"
+        }
+      }
+    },
+    {
+      "source": "docs/downloads.md",
+      "source_sha256": "6d95bba69d06addef69cde6cca866120d5203b7dd16a7c4994b308edb05d5cc7",
+      "translations": {
+        "ar": {
+          "path": "docs/languages/ar/docs/downloads.md",
+          "sha256": "0df788d56c2390443241d9837a208b449ca7216fc73fc6fba6287906129d4f0d",
+          "method": "machine-assisted"
+        },
+        "bn": {
+          "path": "docs/languages/bn/docs/downloads.md",
+          "sha256": "3f1661dc69c7f565c51062582a1ca5af8bb853816a4e3b1819f29ce7e4b9a518",
+          "method": "machine-assisted"
+        },
+        "zh": {
+          "path": "docs/languages/zh/docs/downloads.md",
+          "sha256": "43df34df00d93c943cda30c118ce41f841e55eb6db68d1bd189cccd48f824b4d",
+          "method": "machine-assisted"
+        },
+        "cs": {
+          "path": "docs/languages/cs/docs/downloads.md",
+          "sha256": "efa8fadc1355b9b3c37a0de4f31ffe72694abd4b9848f5a9e09908fd9a844f04",
+          "method": "machine-assisted"
+        },
+        "da": {
+          "path": "docs/languages/da/docs/downloads.md",
+          "sha256": "6efc2187f02798ccb343d5314ac92aef46ab61fd456c3b083eefda0c137ce24d",
+          "method": "machine-assisted"
+        },
+        "nl": {
+          "path": "docs/languages/nl/docs/downloads.md",
+          "sha256": "ae24df464a9e7bfb20b231a6d5a9f4827372d80aac156b5dd4528c2ff6ca116e",
+          "method": "machine-assisted"
+        },
+        "en": {
+          "path": "docs/downloads.md",
+          "sha256": "6d95bba69d06addef69cde6cca866120d5203b7dd16a7c4994b308edb05d5cc7",
+          "method": "reference"
+        },
+        "fil": {
+          "path": "docs/languages/fil/docs/downloads.md",
+          "sha256": "9121e2bd26933cc7cf70c49284a64f057a8a8e09acced7fdba97110a59295a03",
+          "method": "machine-assisted"
+        },
+        "fi": {
+          "path": "docs/languages/fi/docs/downloads.md",
+          "sha256": "5e62796328e2dc58f43345df551a0175894ea26f233ffb71d99ea13c41d62323",
+          "method": "machine-assisted"
+        },
+        "fr": {
+          "path": "docs/downloads.fr.md",
+          "sha256": "61794f3977d3ab25de509c92a57f85c89f686a66fd6f3b36bde6588fd5958c78",
+          "method": "existing-french-guide"
+        },
+        "de": {
+          "path": "docs/languages/de/docs/downloads.md",
+          "sha256": "371d63c8bafa3d6a9ff2e9a5710f8b06e67344afe8eef77ac99a8828b0310292",
+          "method": "machine-assisted"
+        },
+        "el": {
+          "path": "docs/languages/el/docs/downloads.md",
+          "sha256": "97f31d15937ecd69fe281740e696030cbeb8e28c012105c3f04769a3c0b8f492",
+          "method": "machine-assisted"
+        },
+        "hi": {
+          "path": "docs/languages/hi/docs/downloads.md",
+          "sha256": "3625d0c558991208997dad25bf378b1840f49d6f103a68b2f1ba1e45641cee9b",
+          "method": "machine-assisted"
+        },
+        "hu": {
+          "path": "docs/languages/hu/docs/downloads.md",
+          "sha256": "3c201e31d72f894c094f70800a4ac3943d924960e7caa615920946afc972fcea",
+          "method": "machine-assisted"
+        },
+        "id": {
+          "path": "docs/languages/id/docs/downloads.md",
+          "sha256": "03916f3c3e91ebd4f7e84d80ad9716506c907043449ea9983ef0e94d0874d14b",
+          "method": "machine-assisted"
+        },
+        "it": {
+          "path": "docs/languages/it/docs/downloads.md",
+          "sha256": "fffde61568a6150115de793e223cfa2305fa10a816cdd5f012914c64fa45d739",
+          "method": "machine-assisted"
+        },
+        "ja": {
+          "path": "docs/languages/ja/docs/downloads.md",
+          "sha256": "c43f859e860880da0d03cbc230ca445a9ba6d8bcb59cb714280f598154e2e705",
+          "method": "machine-assisted"
+        },
+        "ko": {
+          "path": "docs/languages/ko/docs/downloads.md",
+          "sha256": "e320b160f83ba4bcc17f62a7558c8f0b290611c57be882a5fdc3bef7b40f84c2",
+          "method": "machine-assisted"
+        },
+        "mr": {
+          "path": "docs/languages/mr/docs/downloads.md",
+          "sha256": "3e44ad399c698f87ddd497e7cdb710d10c940fbd645880f1ff892757cd30b5b3",
+          "method": "machine-assisted"
+        },
+        "fa": {
+          "path": "docs/languages/fa/docs/downloads.md",
+          "sha256": "ad19281940af05c8e93abc12e126dcbfd86eef804d244bc9c6535fe950f871a9",
+          "method": "machine-assisted"
+        },
+        "pl": {
+          "path": "docs/languages/pl/docs/downloads.md",
+          "sha256": "1ef58faa4c23170c4bac01bc4b4f14b7c0944ebdc9395bc02f44ac0b3ef88cdc",
+          "method": "machine-assisted"
+        },
+        "pt": {
+          "path": "docs/languages/pt/docs/downloads.md",
+          "sha256": "e72a268afdbf0a006f1ae1f3e48ba58c8e377387980424e363c672600c45f8d0",
+          "method": "machine-assisted"
+        },
+        "pa": {
+          "path": "docs/languages/pa/docs/downloads.md",
+          "sha256": "fc335d8cc4de82cf8edb29dd34672b52e343a681822950232ab01d48c5ee6ff3",
+          "method": "machine-assisted"
+        },
+        "ro": {
+          "path": "docs/languages/ro/docs/downloads.md",
+          "sha256": "d8e301b39771cadd457b4f8c77b768ee92ada1031dc01da38df8d2d97d0f8cf2",
+          "method": "machine-assisted"
+        },
+        "ru": {
+          "path": "docs/languages/ru/docs/downloads.md",
+          "sha256": "878c30971435bba3b9c70c6ca6c873a5089f99eb4cabc2ecf7905d69e2b54300",
+          "method": "machine-assisted"
+        },
+        "es": {
+          "path": "docs/languages/es/docs/downloads.md",
+          "sha256": "21bcce8079de877168da4f6d496501f66ed0d73dbe2c16ba21c210f5485e5b01",
+          "method": "machine-assisted"
+        },
+        "sw": {
+          "path": "docs/languages/sw/docs/downloads.md",
+          "sha256": "ae71599a3ffcb1277c776bef1fb23934adb0c4cee5ebb74134377f9855da1e8e",
+          "method": "machine-assisted"
+        },
+        "sv": {
+          "path": "docs/languages/sv/docs/downloads.md",
+          "sha256": "612d1a845d2799e321eeeca85b147d94cb4b414274cb0d4b41ed484401ab367f",
+          "method": "machine-assisted"
+        },
+        "ta": {
+          "path": "docs/languages/ta/docs/downloads.md",
+          "sha256": "d2c8a59a316972be5308a7fe244d0081850565101877b71a92d02fcd1feeb641",
+          "method": "machine-assisted"
+        },
+        "th": {
+          "path": "docs/languages/th/docs/downloads.md",
+          "sha256": "b177d9cc572faaf5c9e60c3ddf9ec95bf32ba371a64a728218579162c3c0f38e",
+          "method": "machine-assisted"
+        },
+        "tr": {
+          "path": "docs/languages/tr/docs/downloads.md",
+          "sha256": "6ffda4bd82793fc715168801debe1cd14f47194619729f3e468cf58c2fbbc50a",
+          "method": "machine-assisted"
+        },
+        "uk": {
+          "path": "docs/languages/uk/docs/downloads.md",
+          "sha256": "e9541952314f50b9a002af2caba9292abc418a8842266b5937c1072ccbac0d07",
+          "method": "machine-assisted"
+        },
+        "ur": {
+          "path": "docs/languages/ur/docs/downloads.md",
+          "sha256": "4f4f42b85220567f866d81b7ce812e4adac53f89d99ea375b36ebf7e6e100374",
+          "method": "machine-assisted"
+        },
+        "vi": {
+          "path": "docs/languages/vi/docs/downloads.md",
+          "sha256": "5832c568518ed74c52df5dee4f3c6a929a7110589e5f1bb168b4b52c944087f7",
+          "method": "machine-assisted"
+        }
+      }
+    },
+    {
+      "source": "docs/support.md",
+      "source_sha256": "51116ea5156efd7918b724d1d7de9fa556e942bf4a8e544023f9527b9821f740",
+      "translations": {
+        "ar": {
+          "path": "docs/languages/ar/docs/support.md",
+          "sha256": "f6b72eca972ef44c36a2d35b0d53a442396fcdd78de1c8c618cfb5bf39b295b5",
+          "method": "machine-assisted"
+        },
+        "bn": {
+          "path": "docs/languages/bn/docs/support.md",
+          "sha256": "675559407117c5b8cf701b6ed3daddd1103c17574d7b21a0cb7917f301fcfc3c",
+          "method": "machine-assisted"
+        },
+        "zh": {
+          "path": "docs/languages/zh/docs/support.md",
+          "sha256": "45e698fbd5a9cc8a40bb2696f4a5a959136a5e791327776fb599336e4e8e8e0c",
+          "method": "machine-assisted"
+        },
+        "cs": {
+          "path": "docs/languages/cs/docs/support.md",
+          "sha256": "b0a5c027cd514a75345fac8b610fa82d8d60b6ded2e989064432b4b0b61f3959",
+          "method": "machine-assisted"
+        },
+        "da": {
+          "path": "docs/languages/da/docs/support.md",
+          "sha256": "1021223fd7df3e63194550d8b25a20724a6e5d704d07a5ed6a6f46e32b6f666d",
+          "method": "machine-assisted"
+        },
+        "nl": {
+          "path": "docs/languages/nl/docs/support.md",
+          "sha256": "1c608fad16c2e808bc6fb07be8dcec1a91fa336a5eb1984ccfcda6c0d54b5841",
+          "method": "machine-assisted"
+        },
+        "en": {
+          "path": "docs/support.md",
+          "sha256": "51116ea5156efd7918b724d1d7de9fa556e942bf4a8e544023f9527b9821f740",
+          "method": "reference"
+        },
+        "fil": {
+          "path": "docs/languages/fil/docs/support.md",
+          "sha256": "c4bfd4c15ba0200a302bab0e3c11cb303088076043f6f1a512710484867b7a36",
+          "method": "machine-assisted"
+        },
+        "fi": {
+          "path": "docs/languages/fi/docs/support.md",
+          "sha256": "a1ab52a4dab40acb2393bb7ffd77bb5742bd4f4516e12afbe737bf75623baf0c",
+          "method": "machine-assisted"
+        },
+        "fr": {
+          "path": "docs/support.fr.md",
+          "sha256": "a6a0e89e7e0c530976833ca440c565e6b72c969a17ba836f9fa7434a3a2da10b",
+          "method": "existing-french-guide"
+        },
+        "de": {
+          "path": "docs/languages/de/docs/support.md",
+          "sha256": "b2a3413d53e829e83a200a81938b20f173a3a449c6211eaf0e62cf99adf57189",
+          "method": "machine-assisted"
+        },
+        "el": {
+          "path": "docs/languages/el/docs/support.md",
+          "sha256": "fb8fcc31fce2e90d2a2835790d753f843d43917eb6e2b8f0b320f1c0c549dd92",
+          "method": "machine-assisted"
+        },
+        "hi": {
+          "path": "docs/languages/hi/docs/support.md",
+          "sha256": "f8406700861b533bb56b27008831dba9ea0ced06580103f4d3e5945ba3948639",
+          "method": "machine-assisted"
+        },
+        "hu": {
+          "path": "docs/languages/hu/docs/support.md",
+          "sha256": "8806bf0cc4ad202dd05080d58dca3f3d9806bf179941d9d33935d83ff4163e23",
+          "method": "machine-assisted"
+        },
+        "id": {
+          "path": "docs/languages/id/docs/support.md",
+          "sha256": "1bf3d9b5a25561014340d9e70f14dd5e145f2d7412559df3ee95f79bac91c79f",
+          "method": "machine-assisted"
+        },
+        "it": {
+          "path": "docs/languages/it/docs/support.md",
+          "sha256": "76053c9702b6429a85f0dc7d849f1a25de6cd376f0851af4eab509a6de90606a",
+          "method": "machine-assisted"
+        },
+        "ja": {
+          "path": "docs/languages/ja/docs/support.md",
+          "sha256": "61fa41be2009a3c2944ab5a827f3aeed5870c40fb2eeacf673cde4cd76f4400b",
+          "method": "machine-assisted"
+        },
+        "ko": {
+          "path": "docs/languages/ko/docs/support.md",
+          "sha256": "3a93a43be9ca1c10d3b24f51ce67bec171c826b7bf7a76521fa38d04c848de0e",
+          "method": "machine-assisted"
+        },
+        "mr": {
+          "path": "docs/languages/mr/docs/support.md",
+          "sha256": "919ac1f7e88fe4adcc7f10e4369804d578e455e4833d07c9c44c75100be65e86",
+          "method": "machine-assisted"
+        },
+        "fa": {
+          "path": "docs/languages/fa/docs/support.md",
+          "sha256": "619c2291d9ea7e7bea7110a5ec29b3e9305b04b34b586cbeed127f6e98b1adce",
+          "method": "machine-assisted"
+        },
+        "pl": {
+          "path": "docs/languages/pl/docs/support.md",
+          "sha256": "0319d2a6fe07aff5211bf1da05aa5b28f142bdf1d222bc09dd2dc5e41680554d",
+          "method": "machine-assisted"
+        },
+        "pt": {
+          "path": "docs/languages/pt/docs/support.md",
+          "sha256": "00b93e3a7e281fd1d5843803304d534749875707899d579c2a12ae5913323d7a",
+          "method": "machine-assisted"
+        },
+        "pa": {
+          "path": "docs/languages/pa/docs/support.md",
+          "sha256": "223501c8bf3c10692e56d0ce816a0bfb22b15032fe9d61b934586f1f3c9e50cd",
+          "method": "machine-assisted"
+        },
+        "ro": {
+          "path": "docs/languages/ro/docs/support.md",
+          "sha256": "3290941d7ed2a65f8f0f7877060a5a67987bc05678a7b97d61e018f9c6d99ada",
+          "method": "machine-assisted"
+        },
+        "ru": {
+          "path": "docs/languages/ru/docs/support.md",
+          "sha256": "edec0791243fee104cdb0da930b62b4bd88cebc4cd133007271c5e9131e2300c",
+          "method": "machine-assisted"
+        },
+        "es": {
+          "path": "docs/languages/es/docs/support.md",
+          "sha256": "6a8a247f2427417f04eeac09f8b5f8f94d99237203c28fb865832020b05cf3b5",
+          "method": "machine-assisted"
+        },
+        "sw": {
+          "path": "docs/languages/sw/docs/support.md",
+          "sha256": "97b06a1b9ad048a45a71af62d4b75b2894f3e224b8788b824dee8255d24cff0c",
+          "method": "machine-assisted"
+        },
+        "sv": {
+          "path": "docs/languages/sv/docs/support.md",
+          "sha256": "c166d6d615f93da86d0ad07b308d451937c6cf1ebea7e53813d5c5aba76148da",
+          "method": "machine-assisted"
+        },
+        "ta": {
+          "path": "docs/languages/ta/docs/support.md",
+          "sha256": "59b3d8a2559a72d4b71ebefb3351d3faa9e7d790612feb5eb924bd7dfeb5e5d2",
+          "method": "machine-assisted"
+        },
+        "th": {
+          "path": "docs/languages/th/docs/support.md",
+          "sha256": "45289651b4061782f8c661a74e34065765703edae2e03ab16e43cb02949ac50e",
+          "method": "machine-assisted"
+        },
+        "tr": {
+          "path": "docs/languages/tr/docs/support.md",
+          "sha256": "8980b2fb036ebd25d845d74ab444ab0b6f6e495b998fd76a2d48fe2cdc1de6a1",
+          "method": "machine-assisted"
+        },
+        "uk": {
+          "path": "docs/languages/uk/docs/support.md",
+          "sha256": "9d3fce0cb38741f69557447571fe48db7cdfbc646e3aedabbf1de1b460cca67f",
+          "method": "machine-assisted"
+        },
+        "ur": {
+          "path": "docs/languages/ur/docs/support.md",
+          "sha256": "486ddf83a4afb65f2ba2b3afe2a53760c61ec4fd1c6bba596163e85fa5ed4a81",
+          "method": "machine-assisted"
+        },
+        "vi": {
+          "path": "docs/languages/vi/docs/support.md",
+          "sha256": "5fc103742f8f1d342c7a6d4789f77b445e2443f86e2b62a946fff26bee4974c0",
+          "method": "machine-assisted"
+        }
+      }
+    },
+    {
+      "source": "docs/provenance.md",
+      "source_sha256": "e29bd8dcb2a55622e2ab8fb0ab600925e62ede26e4df612428217d119ef3ac02",
+      "translations": {
+        "ar": {
+          "path": "docs/languages/ar/docs/provenance.md",
+          "sha256": "44bc8ce7c5f6e6ff3666622a2ca660564aa0a25f14cc7397cfdb44529589e69b",
+          "method": "machine-assisted"
+        },
+        "bn": {
+          "path": "docs/languages/bn/docs/provenance.md",
+          "sha256": "916f05f5f9ec3dee01436727d0d8842e66f4cb4706b46aa8c74041128f4b156a",
+          "method": "machine-assisted"
+        },
+        "zh": {
+          "path": "docs/languages/zh/docs/provenance.md",
+          "sha256": "1b78911aedaeb496ff3f5d43d96cc6fda27dd5d33b0817037fd01c1dc0ff2328",
+          "method": "machine-assisted"
+        },
+        "cs": {
+          "path": "docs/languages/cs/docs/provenance.md",
+          "sha256": "2ee8923ab7e7cf14c1894b2a4ebb164f60506a73c58a7c2255f5932b7d3fe4fc",
+          "method": "machine-assisted"
+        },
+        "da": {
+          "path": "docs/languages/da/docs/provenance.md",
+          "sha256": "13895c5184359113f634bc58f35ba963c757ac35351079aa49b58adcfaaf1152",
+          "method": "machine-assisted"
+        },
+        "nl": {
+          "path": "docs/languages/nl/docs/provenance.md",
+          "sha256": "e3e5b28f117ea9ddcaaa0815dece24dd42dbae443d3f9e4841ed5908645284b5",
+          "method": "machine-assisted"
+        },
+        "en": {
+          "path": "docs/provenance.md",
+          "sha256": "e29bd8dcb2a55622e2ab8fb0ab600925e62ede26e4df612428217d119ef3ac02",
+          "method": "reference"
+        },
+        "fil": {
+          "path": "docs/languages/fil/docs/provenance.md",
+          "sha256": "72f2d6e6c674779e528a89aa1df1f30f0d01ce9227c21f6171969ee091caf4ec",
+          "method": "machine-assisted"
+        },
+        "fi": {
+          "path": "docs/languages/fi/docs/provenance.md",
+          "sha256": "9e241b185cd2faaf22434c31cb0c5bcf4cfcda1d2c80088c350ad86e682f83af",
+          "method": "machine-assisted"
+        },
+        "fr": {
+          "path": "docs/provenance.fr.md",
+          "sha256": "1e32b41d36a544b6cb6e79850a31ed71bee65aec4f6aeb55b332e39061dceb68",
+          "method": "existing-french-guide"
+        },
+        "de": {
+          "path": "docs/languages/de/docs/provenance.md",
+          "sha256": "9357902cc38b50732a146ed9525e7503f2585beac8fc650480fb320f5bc49dd7",
+          "method": "machine-assisted"
+        },
+        "el": {
+          "path": "docs/languages/el/docs/provenance.md",
+          "sha256": "59752ac8ba65a34c8136cada2aa0c6d961a84346816a0246c5547d85bfc4ef80",
+          "method": "machine-assisted"
+        },
+        "hi": {
+          "path": "docs/languages/hi/docs/provenance.md",
+          "sha256": "8ead9003c288990c6e78114ffd4f801bd4d38eb0e95762a8c02f1f97509b9884",
+          "method": "machine-assisted"
+        },
+        "hu": {
+          "path": "docs/languages/hu/docs/provenance.md",
+          "sha256": "4bb3b70d66b00036fb375a8167ceabdb97902c364201575f4e9eac4f87fe4edb",
+          "method": "machine-assisted"
+        },
+        "id": {
+          "path": "docs/languages/id/docs/provenance.md",
+          "sha256": "38496361f1253b873f7b8d8a14fdd9a6938fda9395909fb78e232537b3ea5ea4",
+          "method": "machine-assisted"
+        },
+        "it": {
+          "path": "docs/languages/it/docs/provenance.md",
+          "sha256": "7997fb6e9a5998ba55698fa09ffb7a8e0442e92ac5aa858048fc8f015b3117fb",
+          "method": "machine-assisted"
+        },
+        "ja": {
+          "path": "docs/languages/ja/docs/provenance.md",
+          "sha256": "2d78098cd68b7207ec543e9ec72f290b616ceeb69f7c7b78b254b94513b6c603",
+          "method": "machine-assisted"
+        },
+        "ko": {
+          "path": "docs/languages/ko/docs/provenance.md",
+          "sha256": "b99eb057eaad85737318cee93f747c77e4dd7ed4da43191f29ef07ce7f35104c",
+          "method": "machine-assisted"
+        },
+        "mr": {
+          "path": "docs/languages/mr/docs/provenance.md",
+          "sha256": "3f31a73a5249d0126c276f8608179462654e12a4cac81f5967f8afea209ba361",
+          "method": "machine-assisted"
+        },
+        "fa": {
+          "path": "docs/languages/fa/docs/provenance.md",
+          "sha256": "dc5127a95c66e95f94def63727f7f504df535f7854bdcbbb15418bb732a9ecae",
+          "method": "machine-assisted"
+        },
+        "pl": {
+          "path": "docs/languages/pl/docs/provenance.md",
+          "sha256": "1c7406789bbcea233b7cb507ad4c06b895781657d89e8b531c6f88e597b39fe0",
+          "method": "machine-assisted"
+        },
+        "pt": {
+          "path": "docs/languages/pt/docs/provenance.md",
+          "sha256": "1b15c3c2139d19717c04060bb2e73bf20c59e54c71b20372ebada3ebab0182d4",
+          "method": "machine-assisted"
+        },
+        "pa": {
+          "path": "docs/languages/pa/docs/provenance.md",
+          "sha256": "f2f46be5d095a1d797d652d15bf732fdca5d400c59eeb401b40b50598e447e75",
+          "method": "machine-assisted"
+        },
+        "ro": {
+          "path": "docs/languages/ro/docs/provenance.md",
+          "sha256": "ed6de85d48566a15aa443ebb5582cbad2e7f468c94885c23e2d3113697fe637c",
+          "method": "machine-assisted"
+        },
+        "ru": {
+          "path": "docs/languages/ru/docs/provenance.md",
+          "sha256": "676b35303b0df3ce8ff11202e4c25e24b8286b69833ea7e2e6e49018e31f3024",
+          "method": "machine-assisted"
+        },
+        "es": {
+          "path": "docs/languages/es/docs/provenance.md",
+          "sha256": "c235add36d54a8781b13f6d8b56112bfef07195296158ae907440c39b96556df",
+          "method": "machine-assisted"
+        },
+        "sw": {
+          "path": "docs/languages/sw/docs/provenance.md",
+          "sha256": "2627f5001fa9c9e83b743a040cf81096f3b83c392e61b622510258f5f010816e",
+          "method": "machine-assisted"
+        },
+        "sv": {
+          "path": "docs/languages/sv/docs/provenance.md",
+          "sha256": "4b6bd4024fe55288a68f9533dcbef643424d4be023120237b18d729260d79ef6",
+          "method": "machine-assisted"
+        },
+        "ta": {
+          "path": "docs/languages/ta/docs/provenance.md",
+          "sha256": "0089a460a0c3b74031eea27e652499a42d6e0ea89a4348dce92955dea6c732b5",
+          "method": "machine-assisted"
+        },
+        "th": {
+          "path": "docs/languages/th/docs/provenance.md",
+          "sha256": "e321b6100dc1a5dbfa41f9898e15c3ae5d2f7e78618536188b780d697fa8a960",
+          "method": "machine-assisted"
+        },
+        "tr": {
+          "path": "docs/languages/tr/docs/provenance.md",
+          "sha256": "3589386b42cd5261cba16f2bd392b3f7a87ef339dcd936d74bc9d7ba4d845e07",
+          "method": "machine-assisted"
+        },
+        "uk": {
+          "path": "docs/languages/uk/docs/provenance.md",
+          "sha256": "09a3f76f412a00ffbecae835df878d32c9963aa81c875e740e8820909019ffc7",
+          "method": "machine-assisted"
+        },
+        "ur": {
+          "path": "docs/languages/ur/docs/provenance.md",
+          "sha256": "967adb0aa5480dc22fbba68fb3ac295dbe22e368b5c839e1b1ca0eb9f7e17f20",
+          "method": "machine-assisted"
+        },
+        "vi": {
+          "path": "docs/languages/vi/docs/provenance.md",
+          "sha256": "04801726f1b57d5e02f3a469d53744d65668eb54b3987e5ccf15cfe5bef915c6",
+          "method": "machine-assisted"
+        }
+      }
+    },
+    {
+      "source": "docs/development.md",
+      "source_sha256": "65f1dcc35426ef90d0ad31350a6cf8e1b4a1874533bf83c71f9612e95557c1c9",
+      "translations": {
+        "ar": {
+          "path": "docs/languages/ar/docs/development.md",
+          "sha256": "ce2c12925f2fcbcea2b6a2679c03e2c05820dd7e6d68b91a380d662b218526ed",
+          "method": "machine-assisted"
+        },
+        "bn": {
+          "path": "docs/languages/bn/docs/development.md",
+          "sha256": "b95681b7573088bcf6c411017280f71099f84a3045f4e58c39018f81ee7b42d0",
+          "method": "machine-assisted"
+        },
+        "zh": {
+          "path": "docs/languages/zh/docs/development.md",
+          "sha256": "c2ec02118e47a50760a577a2bc5b486fde6829bfd0c5e2bf0063d8bff61e636d",
+          "method": "machine-assisted"
+        },
+        "cs": {
+          "path": "docs/languages/cs/docs/development.md",
+          "sha256": "203b0fe748d0df9098f384664203304196c658b6aec7a3740dbcd4af6ae8a032",
+          "method": "machine-assisted"
+        },
+        "da": {
+          "path": "docs/languages/da/docs/development.md",
+          "sha256": "3f1749526606d6940db1b6e7c7dc0b80ac6867126f54ff2e2826a2714e3c7363",
+          "method": "machine-assisted"
+        },
+        "nl": {
+          "path": "docs/languages/nl/docs/development.md",
+          "sha256": "a1c561b8b340190235d3a9aab152a93c18da7bd772bcb559e5e4a2963315876a",
+          "method": "machine-assisted"
+        },
+        "en": {
+          "path": "docs/development.md",
+          "sha256": "65f1dcc35426ef90d0ad31350a6cf8e1b4a1874533bf83c71f9612e95557c1c9",
+          "method": "reference"
+        },
+        "fil": {
+          "path": "docs/languages/fil/docs/development.md",
+          "sha256": "4bffd8c52860c9420b59c47cf173eeec312f003a2e01e3250b119df2913c6285",
+          "method": "machine-assisted"
+        },
+        "fi": {
+          "path": "docs/languages/fi/docs/development.md",
+          "sha256": "b7404baf33867c2baef234b2fc28275b6fa73120d457ff6e015cdf1f8c05360b",
+          "method": "machine-assisted"
+        },
+        "fr": {
+          "path": "docs/development.fr.md",
+          "sha256": "d7f6fb8918cc73a2f94c513e5eeed587c36f7ee79867ca62c9c1d896b36a655a",
+          "method": "existing-french-guide"
+        },
+        "de": {
+          "path": "docs/languages/de/docs/development.md",
+          "sha256": "4b4f8a8db1b00a7aed17f999a6723fd8d716a4b0b3a7c3f2d215209742b05417",
+          "method": "machine-assisted"
+        },
+        "el": {
+          "path": "docs/languages/el/docs/development.md",
+          "sha256": "b6063263d4750d5d8e44daa5e62e72619f9d493ea5552a2d5a7bfe61bfa44ac1",
+          "method": "machine-assisted"
+        },
+        "hi": {
+          "path": "docs/languages/hi/docs/development.md",
+          "sha256": "e305b2f6dac48d52e0aad3a41518747a8cfdc3de5ade56230c3606d36ae4f8eb",
+          "method": "machine-assisted"
+        },
+        "hu": {
+          "path": "docs/languages/hu/docs/development.md",
+          "sha256": "d5f28080c30f1998e0121d983d6fa7794dc4a4c6aa191ac88ed8162acbf625c2",
+          "method": "machine-assisted"
+        },
+        "id": {
+          "path": "docs/languages/id/docs/development.md",
+          "sha256": "c8ac0722f553bb4e57b9c0c24aa0a6d4324f18160aecd42eee885276c36502bf",
+          "method": "machine-assisted"
+        },
+        "it": {
+          "path": "docs/languages/it/docs/development.md",
+          "sha256": "f52821d47e626ee83fa88736426d762f33a7407f3c07dc936ddb8d5c28a52bab",
+          "method": "machine-assisted"
+        },
+        "ja": {
+          "path": "docs/languages/ja/docs/development.md",
+          "sha256": "c43ee01b526f2694c8646ed4ac0fbe6de11740a7f4013261890c4752ab76293d",
+          "method": "machine-assisted"
+        },
+        "ko": {
+          "path": "docs/languages/ko/docs/development.md",
+          "sha256": "0010dfc8f9a663a8db14f14e4df73f2fe21d4b6d5289549b1ddd179d00a35329",
+          "method": "machine-assisted"
+        },
+        "mr": {
+          "path": "docs/languages/mr/docs/development.md",
+          "sha256": "4addc7521e66db38a96607bc6a4121f1647a748c117d5f75e50c1c318a56b059",
+          "method": "machine-assisted"
+        },
+        "fa": {
+          "path": "docs/languages/fa/docs/development.md",
+          "sha256": "11492ec3a01cebb24be65fd223ac7af7802713b0e9ca1fb86df26abb07db4f46",
+          "method": "machine-assisted"
+        },
+        "pl": {
+          "path": "docs/languages/pl/docs/development.md",
+          "sha256": "80405a1f7a0d4176627ab5525f5f1df29bdd3394ddc5051cb632d621ab17767c",
+          "method": "machine-assisted"
+        },
+        "pt": {
+          "path": "docs/languages/pt/docs/development.md",
+          "sha256": "14368d63ba9736e754fd1c0049e25f97f74c36d2824736471621ddb13703cbcc",
+          "method": "machine-assisted"
+        },
+        "pa": {
+          "path": "docs/languages/pa/docs/development.md",
+          "sha256": "39b086c14469f0c7c94b54d7651c4c89bf2474207bc7487a17d89c7f8c9b10cd",
+          "method": "machine-assisted"
+        },
+        "ro": {
+          "path": "docs/languages/ro/docs/development.md",
+          "sha256": "fd88b05edf297090820b10345a6abe60a34146c0ccf1b3440d881692f19d324c",
+          "method": "machine-assisted"
+        },
+        "ru": {
+          "path": "docs/languages/ru/docs/development.md",
+          "sha256": "d68e2c2e5478484aa4321e111ccbb63c41743784407da1d12a0ce25e1f5ff41e",
+          "method": "machine-assisted"
+        },
+        "es": {
+          "path": "docs/languages/es/docs/development.md",
+          "sha256": "560e482e0b8e29ba07d1a03b7c9fa6b5005165e35c32ac00dcd9167696e7a33a",
+          "method": "machine-assisted"
+        },
+        "sw": {
+          "path": "docs/languages/sw/docs/development.md",
+          "sha256": "6b9a9149136f905d9fc9464ec58bd2d942cc3560270978da91609760f5365865",
+          "method": "machine-assisted"
+        },
+        "sv": {
+          "path": "docs/languages/sv/docs/development.md",
+          "sha256": "2166144be170c13dcfa192671de2210b088aae662f4b91641591840ee518fd81",
+          "method": "machine-assisted"
+        },
+        "ta": {
+          "path": "docs/languages/ta/docs/development.md",
+          "sha256": "06dd0dd97ecae5ff70c45eb78dcd87793c7447da637a1a9f7d92042304edaa2c",
+          "method": "machine-assisted"
+        },
+        "th": {
+          "path": "docs/languages/th/docs/development.md",
+          "sha256": "d9ca5f5814e0b2273f922fb33a781008e9b5d3260fb603a162bcb8847d908020",
+          "method": "machine-assisted"
+        },
+        "tr": {
+          "path": "docs/languages/tr/docs/development.md",
+          "sha256": "96d9b6fa545e564aedcd109ad1f7ec93b38c6d9652602cef8fae3b5a32b946c5",
+          "method": "machine-assisted"
+        },
+        "uk": {
+          "path": "docs/languages/uk/docs/development.md",
+          "sha256": "419887daafa28bf595ba9f506d474e48e105c4175fcf5274a2433020d42356f2",
+          "method": "machine-assisted"
+        },
+        "ur": {
+          "path": "docs/languages/ur/docs/development.md",
+          "sha256": "3546513722d6a815142e9a339c7398a5829e273d665b8cf630013effa8353fde",
+          "method": "machine-assisted"
+        },
+        "vi": {
+          "path": "docs/languages/vi/docs/development.md",
+          "sha256": "292c11cf668c5339aa0deb46bc818a46d84aac867a59f262df8a8d4f028b71d3",
+          "method": "machine-assisted"
+        }
+      }
+    },
+    {
+      "source": "docs/releasing.md",
+      "source_sha256": "a258201e8068b0fc8b9be7f4b185bb9665ac7ad5a19c46aedcc94dee9b0feb65",
+      "translations": {
+        "ar": {
+          "path": "docs/languages/ar/docs/releasing.md",
+          "sha256": "c6d75bb91e9c631a23858cdee3f9cf7037b09cabb591e42e3bc5d02f99d44f18",
+          "method": "machine-assisted"
+        },
+        "bn": {
+          "path": "docs/languages/bn/docs/releasing.md",
+          "sha256": "202514e7bdbe202c9e296a05b8470c80bbddc254629552704b6f2b337964c8d8",
+          "method": "machine-assisted"
+        },
+        "zh": {
+          "path": "docs/languages/zh/docs/releasing.md",
+          "sha256": "b0d39ab6a60be15fb91d8c7ff68aa8e02f311ea6a3bd0e6f50545e292aae82d9",
+          "method": "machine-assisted"
+        },
+        "cs": {
+          "path": "docs/languages/cs/docs/releasing.md",
+          "sha256": "ceaef544146c718930ac58b6faeb530fe0a4135515705148680344c89ae3d17a",
+          "method": "machine-assisted"
+        },
+        "da": {
+          "path": "docs/languages/da/docs/releasing.md",
+          "sha256": "14265f7b10be3d4caf531afa6ca09f7d8f5811ee373820e3bcfcf5907e1d61a3",
+          "method": "machine-assisted"
+        },
+        "nl": {
+          "path": "docs/languages/nl/docs/releasing.md",
+          "sha256": "783fb7a9cbb15084e03dd344be0c86a95b0c170b303413936bc776a3e8f69539",
+          "method": "machine-assisted"
+        },
+        "en": {
+          "path": "docs/releasing.md",
+          "sha256": "a258201e8068b0fc8b9be7f4b185bb9665ac7ad5a19c46aedcc94dee9b0feb65",
+          "method": "reference"
+        },
+        "fil": {
+          "path": "docs/languages/fil/docs/releasing.md",
+          "sha256": "ea487660b1876a16b4f9caeca599140dfa4545c6948c4ab3896249f5b85f2dc0",
+          "method": "machine-assisted"
+        },
+        "fi": {
+          "path": "docs/languages/fi/docs/releasing.md",
+          "sha256": "a96e79be12cebaea448f4655e6c08d0d22b99f40eb28e74f9b00b2941814fa58",
+          "method": "machine-assisted"
+        },
+        "fr": {
+          "path": "docs/releasing.fr.md",
+          "sha256": "9fe7b6d7f4fcf2780aa7eb5b13d73923118a3377a2c54dac0f88afab747c19aa",
+          "method": "existing-french-guide"
+        },
+        "de": {
+          "path": "docs/languages/de/docs/releasing.md",
+          "sha256": "c6b2f3bdcfbd01e74061cdc2158ae9847572ea97af36c02676b01ea3de3eed34",
+          "method": "machine-assisted"
+        },
+        "el": {
+          "path": "docs/languages/el/docs/releasing.md",
+          "sha256": "af7854bca0ff61407e54c86ca0e8a0bcaf37c5290565fcc558fb4d56662977cb",
+          "method": "machine-assisted"
+        },
+        "hi": {
+          "path": "docs/languages/hi/docs/releasing.md",
+          "sha256": "9d2bab8e06e2140f83abe7d7669af23561e6061e6019cd8904c0f4d1949680c1",
+          "method": "machine-assisted"
+        },
+        "hu": {
+          "path": "docs/languages/hu/docs/releasing.md",
+          "sha256": "aff201e590960a2e7fd1136290deae24e5b6ef3ec20f76d5611e1d3502bbb66b",
+          "method": "machine-assisted"
+        },
+        "id": {
+          "path": "docs/languages/id/docs/releasing.md",
+          "sha256": "a72aeb4c829101f212018c1e8e1f8ef5ef0b16eb5feabf6d3fcc63cc53aa90e2",
+          "method": "machine-assisted"
+        },
+        "it": {
+          "path": "docs/languages/it/docs/releasing.md",
+          "sha256": "907309298b5d435e35309a9ae56f16c3248219a0d8c604c5b59ecef1f0f8cd50",
+          "method": "machine-assisted"
+        },
+        "ja": {
+          "path": "docs/languages/ja/docs/releasing.md",
+          "sha256": "875ffcac7580bc603c0c7d72bd96891a756772265d0918667aa7856ed401a47a",
+          "method": "machine-assisted"
+        },
+        "ko": {
+          "path": "docs/languages/ko/docs/releasing.md",
+          "sha256": "dcac8e10dbab689f250cf369484da03c58d2469765e31c28591c1086b95cf915",
+          "method": "machine-assisted"
+        },
+        "mr": {
+          "path": "docs/languages/mr/docs/releasing.md",
+          "sha256": "aef13b30f91fef5201c8765c5c60ac5f8b65ecb10e164849cb9cfd5b28b3e6e5",
+          "method": "machine-assisted"
+        },
+        "fa": {
+          "path": "docs/languages/fa/docs/releasing.md",
+          "sha256": "3752df3a2735c7b3275bee45fbf181470359580536c2dae4c43780095b8d769b",
+          "method": "machine-assisted"
+        },
+        "pl": {
+          "path": "docs/languages/pl/docs/releasing.md",
+          "sha256": "5909eb1ed0a48d50dc456ba78f4deccc1b602060302542e0bb8426c029f33be2",
+          "method": "machine-assisted"
+        },
+        "pt": {
+          "path": "docs/languages/pt/docs/releasing.md",
+          "sha256": "5fb2a219c7f9256733a9dcd6354d93bc7b8d5d8da2b801e260a24e240551b891",
+          "method": "machine-assisted"
+        },
+        "pa": {
+          "path": "docs/languages/pa/docs/releasing.md",
+          "sha256": "8bd09d737f186fc38ab1da313979f0b69ae8a96140a1404dc2e13a6fb4689204",
+          "method": "machine-assisted"
+        },
+        "ro": {
+          "path": "docs/languages/ro/docs/releasing.md",
+          "sha256": "06f3708f78264ef26b4bdcb1ad3fc7e7a3d4f2df0088475e00318cd9b3b251af",
+          "method": "machine-assisted"
+        },
+        "ru": {
+          "path": "docs/languages/ru/docs/releasing.md",
+          "sha256": "4bcbd2560b970be683bbe68441ac2af2d063f74c7ee87c3cf7895380c05b75d4",
+          "method": "machine-assisted"
+        },
+        "es": {
+          "path": "docs/languages/es/docs/releasing.md",
+          "sha256": "b4ca6a146fa0eba35d270c7e47822a01d89b8c2682c07c6f117d6a06314ef0c4",
+          "method": "machine-assisted"
+        },
+        "sw": {
+          "path": "docs/languages/sw/docs/releasing.md",
+          "sha256": "e25526ed365cb8f258cd8bb9313a9da90751c461ff90d369bb1d52f30a62c02e",
+          "method": "machine-assisted"
+        },
+        "sv": {
+          "path": "docs/languages/sv/docs/releasing.md",
+          "sha256": "c78012e4661f37a3b21d342516efbf1cdd3644145e68d4c54f0039d3c17e3515",
+          "method": "machine-assisted"
+        },
+        "ta": {
+          "path": "docs/languages/ta/docs/releasing.md",
+          "sha256": "7b9ff923611dedbf59ee0d63d517c7a1cdb6c1e1513930d57b2863a424f057ad",
+          "method": "machine-assisted"
+        },
+        "th": {
+          "path": "docs/languages/th/docs/releasing.md",
+          "sha256": "525b4e1083dd0aacf5f6bb709381732f5a006b34b68d5865f10b560171cd9e38",
+          "method": "machine-assisted"
+        },
+        "tr": {
+          "path": "docs/languages/tr/docs/releasing.md",
+          "sha256": "6ed4a50a51dab1eca790c7484447a3780fcd7e7457e8b3e9580062b994af4c16",
+          "method": "machine-assisted"
+        },
+        "uk": {
+          "path": "docs/languages/uk/docs/releasing.md",
+          "sha256": "a72b2124821cbb8864466c46ffa6aa9b683dcd78b0b8be2a218a7c3d373eeb55",
+          "method": "machine-assisted"
+        },
+        "ur": {
+          "path": "docs/languages/ur/docs/releasing.md",
+          "sha256": "e79ec183789c3aec82b04b13c7c3af3bd78d5937691b325296fb05fcd925959b",
+          "method": "machine-assisted"
+        },
+        "vi": {
+          "path": "docs/languages/vi/docs/releasing.md",
+          "sha256": "634dc78a3a70eabc036fd519092dd05b0cb1c1a231869fb218ab8a3990f9d9c6",
+          "method": "machine-assisted"
+        }
+      }
+    },
+    {
+      "source": "THIRD_PARTY_NOTICES.md",
+      "source_sha256": "2dde35f00026ca1b87130a6ad18716bc838847aa670818d5a5f130b0f1481435",
+      "translations": {
+        "ar": {
+          "path": "docs/languages/ar/THIRD_PARTY_NOTICES.md",
+          "sha256": "71123d5b62331091b5ffeb3fb29f7d37687c2fc4d538b2bd508f097cfc7b3e9c",
+          "method": "machine-assisted"
+        },
+        "bn": {
+          "path": "docs/languages/bn/THIRD_PARTY_NOTICES.md",
+          "sha256": "18776fef8e10604f467a6928ea0ea1e505575930abcc7473f2dd7a9f99eb2f88",
+          "method": "machine-assisted"
+        },
+        "zh": {
+          "path": "docs/languages/zh/THIRD_PARTY_NOTICES.md",
+          "sha256": "f2e3aba5b8d7b5fc99f9d4508de210d56c374cdc3d3903cda667f7982c79c92f",
+          "method": "machine-assisted"
+        },
+        "cs": {
+          "path": "docs/languages/cs/THIRD_PARTY_NOTICES.md",
+          "sha256": "d7711f75ce3cab0e5525e0049ae3c0e90b78bcfe004d76466b8393103eea5ccd",
+          "method": "machine-assisted"
+        },
+        "da": {
+          "path": "docs/languages/da/THIRD_PARTY_NOTICES.md",
+          "sha256": "f9079963e1f406c7c8fff7cd73c183af6c1cd8087f8730b6bfbc276789ae2196",
+          "method": "machine-assisted"
+        },
+        "nl": {
+          "path": "docs/languages/nl/THIRD_PARTY_NOTICES.md",
+          "sha256": "a108603bfe420fa690ab1f5133e2ed368a9e96e05bdb74fb7fd5e8a0cb31f8e5",
+          "method": "machine-assisted"
+        },
+        "en": {
+          "path": "THIRD_PARTY_NOTICES.md",
+          "sha256": "2dde35f00026ca1b87130a6ad18716bc838847aa670818d5a5f130b0f1481435",
+          "method": "reference"
+        },
+        "fil": {
+          "path": "docs/languages/fil/THIRD_PARTY_NOTICES.md",
+          "sha256": "5b0c122ff0f4102cd9381d540138537a7e1a391ec2a127b9d939ebe683dcdcba",
+          "method": "machine-assisted"
+        },
+        "fi": {
+          "path": "docs/languages/fi/THIRD_PARTY_NOTICES.md",
+          "sha256": "ef1ae064b65d4e9fcb10bf4c7392e80ad8ce10650330deacf4ee8093e5e8cbd2",
+          "method": "machine-assisted"
+        },
+        "fr": {
+          "path": "docs/languages/fr/THIRD_PARTY_NOTICES.md",
+          "sha256": "4470b504b9cb6d1d38c20c55222db062aef9f58fdb06b05efad4f6a78f58383f",
+          "method": "machine-assisted"
+        },
+        "de": {
+          "path": "docs/languages/de/THIRD_PARTY_NOTICES.md",
+          "sha256": "0cae7b3c50ddb4a9f94ce5df2f080d1e0438699c08d749193092c35542777b6c",
+          "method": "machine-assisted"
+        },
+        "el": {
+          "path": "docs/languages/el/THIRD_PARTY_NOTICES.md",
+          "sha256": "7ed5dbf7fb288c2b85157319d3222738c07b7666216ab1295af9dfc6e8e21615",
+          "method": "machine-assisted"
+        },
+        "hi": {
+          "path": "docs/languages/hi/THIRD_PARTY_NOTICES.md",
+          "sha256": "da64ae7eaf9eb68cedaea36b3ccb8302ff1c233f740b0c38639cff53a33d31e8",
+          "method": "machine-assisted"
+        },
+        "hu": {
+          "path": "docs/languages/hu/THIRD_PARTY_NOTICES.md",
+          "sha256": "6edf7b1e9c5eedf9958d43d29a7ca67499d1ed9f24278563dccfa723b9215aa7",
+          "method": "machine-assisted"
+        },
+        "id": {
+          "path": "docs/languages/id/THIRD_PARTY_NOTICES.md",
+          "sha256": "19f969f67016bc1ed34591c01b19405d94f4182b41a8bcc518650968bbd5a9ae",
+          "method": "machine-assisted"
+        },
+        "it": {
+          "path": "docs/languages/it/THIRD_PARTY_NOTICES.md",
+          "sha256": "27bf72459219d57c2fa3d6afa4cfc7ecd8f41555158d9629c1b20971f6a45f9e",
+          "method": "machine-assisted"
+        },
+        "ja": {
+          "path": "docs/languages/ja/THIRD_PARTY_NOTICES.md",
+          "sha256": "7b7b5d7eadad92bf0adbf191fb65396c0d1595cc637d5bb3428ae7744f5dd8f0",
+          "method": "machine-assisted"
+        },
+        "ko": {
+          "path": "docs/languages/ko/THIRD_PARTY_NOTICES.md",
+          "sha256": "cf29199a8377076216483a40e24fb2c71d7fbfb69b062c07e354de7fd5d52ed7",
+          "method": "machine-assisted"
+        },
+        "mr": {
+          "path": "docs/languages/mr/THIRD_PARTY_NOTICES.md",
+          "sha256": "3906526aa939b1ab9930fb1913161221bf85c9a9626c019bbfccf854e6374233",
+          "method": "machine-assisted"
+        },
+        "fa": {
+          "path": "docs/languages/fa/THIRD_PARTY_NOTICES.md",
+          "sha256": "aacffc80dfee8a3884c9ce6e78bcd03def55444ad21e5c84b1c23b3a84ca82c0",
+          "method": "machine-assisted"
+        },
+        "pl": {
+          "path": "docs/languages/pl/THIRD_PARTY_NOTICES.md",
+          "sha256": "4282fe35063cb134562fc4dd19ab351f0b3d1904702a24b808d5f1981b0606af",
+          "method": "machine-assisted"
+        },
+        "pt": {
+          "path": "docs/languages/pt/THIRD_PARTY_NOTICES.md",
+          "sha256": "eca2e8de70939763aa53286187c48f72089eef860b0cecc6652b08ac5d59e8fc",
+          "method": "machine-assisted"
+        },
+        "pa": {
+          "path": "docs/languages/pa/THIRD_PARTY_NOTICES.md",
+          "sha256": "d94b9e5ed0e78528871561340647ed65fb5730899833598338528d091ee28fa2",
+          "method": "machine-assisted"
+        },
+        "ro": {
+          "path": "docs/languages/ro/THIRD_PARTY_NOTICES.md",
+          "sha256": "709217295b226455e64b71ed044d05f5a56306338fb7d0b4c85b574f23efae35",
+          "method": "machine-assisted"
+        },
+        "ru": {
+          "path": "docs/languages/ru/THIRD_PARTY_NOTICES.md",
+          "sha256": "207bd37d9fcf226b46b83ac796a6b8600e6b3aa0742aaf171f877448d96d89d9",
+          "method": "machine-assisted"
+        },
+        "es": {
+          "path": "docs/languages/es/THIRD_PARTY_NOTICES.md",
+          "sha256": "6225282039885ff296598158436b133b8e9e048f2da17227c1bbc4edbdb20a35",
+          "method": "machine-assisted"
+        },
+        "sw": {
+          "path": "docs/languages/sw/THIRD_PARTY_NOTICES.md",
+          "sha256": "b4cebfc31c52bcfca571ba922cbe3c146f8691490ffcc8749bb888eeea428c5f",
+          "method": "machine-assisted"
+        },
+        "sv": {
+          "path": "docs/languages/sv/THIRD_PARTY_NOTICES.md",
+          "sha256": "3c431aa70685857ddd0d13a7e51b19a2a4563704ea4725a3ac36d92ed05f1e18",
+          "method": "machine-assisted"
+        },
+        "ta": {
+          "path": "docs/languages/ta/THIRD_PARTY_NOTICES.md",
+          "sha256": "d53bed68f96a522dcf86e8c44fa3bfa30c501f3eb52cea7527c58bffffbca8de",
+          "method": "machine-assisted"
+        },
+        "th": {
+          "path": "docs/languages/th/THIRD_PARTY_NOTICES.md",
+          "sha256": "bf14a974c184f4ad1141491fa075a0bffc8e29c0437b8bdfdedcdeeb294a6fd6",
+          "method": "machine-assisted"
+        },
+        "tr": {
+          "path": "docs/languages/tr/THIRD_PARTY_NOTICES.md",
+          "sha256": "64bc9a94edca753399ba003ce8a9f01a6b8fc0a75fa6f2c1a329fcfeccbd76ef",
+          "method": "machine-assisted"
+        },
+        "uk": {
+          "path": "docs/languages/uk/THIRD_PARTY_NOTICES.md",
+          "sha256": "a8bd2126d933c7fa0dfb80bb805e19c8a60e42bc25f840bb3fd5085774a9394a",
+          "method": "machine-assisted"
+        },
+        "ur": {
+          "path": "docs/languages/ur/THIRD_PARTY_NOTICES.md",
+          "sha256": "a9658b87e2f97b2cab962079ad4e1399692da2e790596b108725bd1584a63589",
+          "method": "machine-assisted"
+        },
+        "vi": {
+          "path": "docs/languages/vi/THIRD_PARTY_NOTICES.md",
+          "sha256": "2a0ca23d3d4ce3a9f6952984a8b84560123f1b605d121bf2c5f82feaaee1c84d",
+          "method": "machine-assisted"
+        }
+      }
+    },
+    {
+      "source": "CONTRIBUTING.md",
+      "source_sha256": "d58859377db5efff8f40b10964d4ce270a899feb9f065b1d89939fc6419cc9ac",
+      "translations": {
+        "ar": {
+          "path": "docs/languages/ar/CONTRIBUTING.md",
+          "sha256": "46c387905758b73d59e434e4dc4261ce9f2977c2b27ab798bd25ea9f33d6d27d",
+          "method": "machine-assisted"
+        },
+        "bn": {
+          "path": "docs/languages/bn/CONTRIBUTING.md",
+          "sha256": "2d4dd81e2bd6cfc516a20093b6794189ada6b40b84c495895e159a8a8bda04b0",
+          "method": "machine-assisted"
+        },
+        "zh": {
+          "path": "docs/languages/zh/CONTRIBUTING.md",
+          "sha256": "14b2a1ab16ee5fb3d1e64cde5f1481f9dfcd2e944208347e396a116c2503dcf8",
+          "method": "machine-assisted"
+        },
+        "cs": {
+          "path": "docs/languages/cs/CONTRIBUTING.md",
+          "sha256": "e1648f83ca8f5f89f13e80fc7d3c2390eeaad621f327e908ff12f8ed739fc1b9",
+          "method": "machine-assisted"
+        },
+        "da": {
+          "path": "docs/languages/da/CONTRIBUTING.md",
+          "sha256": "d29a8c4eb01733343577b4d967ce7edb68c901587206833c4f888a1cdeb31b55",
+          "method": "machine-assisted"
+        },
+        "nl": {
+          "path": "docs/languages/nl/CONTRIBUTING.md",
+          "sha256": "5125746d8b901dc234809ba016f522529f80adf590397786417a2246ecf14a4e",
+          "method": "machine-assisted"
+        },
+        "en": {
+          "path": "CONTRIBUTING.md",
+          "sha256": "d58859377db5efff8f40b10964d4ce270a899feb9f065b1d89939fc6419cc9ac",
+          "method": "reference"
+        },
+        "fil": {
+          "path": "docs/languages/fil/CONTRIBUTING.md",
+          "sha256": "3fbb581ea4a14ae5f8c68dd51bc0784f0b87d986fbb59e1ae40336f06c85e284",
+          "method": "machine-assisted"
+        },
+        "fi": {
+          "path": "docs/languages/fi/CONTRIBUTING.md",
+          "sha256": "da4aa8c991e030927fd8f470610168e5fd1d87aee8e7142dec1146dee713a713",
+          "method": "machine-assisted"
+        },
+        "fr": {
+          "path": "docs/languages/fr/CONTRIBUTING.md",
+          "sha256": "977c8493c900af17266f1d01f71fd6740a174e7c9dc03222dbdd75617247f888",
+          "method": "machine-assisted"
+        },
+        "de": {
+          "path": "docs/languages/de/CONTRIBUTING.md",
+          "sha256": "e5baa6b3a93e46afd4845d06d21763dd37932a7a47a97b6f63508df2cf222cb2",
+          "method": "machine-assisted"
+        },
+        "el": {
+          "path": "docs/languages/el/CONTRIBUTING.md",
+          "sha256": "7b0784974447bfa16c41cb715907895a8dc08b565d2ea4ec2f028c83d96ae379",
+          "method": "machine-assisted"
+        },
+        "hi": {
+          "path": "docs/languages/hi/CONTRIBUTING.md",
+          "sha256": "43652d1e4d3440091a43f94bd3f30425954ec2ae0af7e024e9937572703a7d6c",
+          "method": "machine-assisted"
+        },
+        "hu": {
+          "path": "docs/languages/hu/CONTRIBUTING.md",
+          "sha256": "e983e0d0ae915ccf51936fc35db8359fd4597aa1006024e6d92a769ae6c7d1ac",
+          "method": "machine-assisted"
+        },
+        "id": {
+          "path": "docs/languages/id/CONTRIBUTING.md",
+          "sha256": "66f4d1861cad77411e91b620d4f4f9ce920c19e53154caf9bdaa74bae0875960",
+          "method": "machine-assisted"
+        },
+        "it": {
+          "path": "docs/languages/it/CONTRIBUTING.md",
+          "sha256": "d12b48d8154c2a3927dbea870f92d791d69b62cb3e3db3b914dac13837e2b0ca",
+          "method": "machine-assisted"
+        },
+        "ja": {
+          "path": "docs/languages/ja/CONTRIBUTING.md",
+          "sha256": "c02b6044cf57fd7838bfd64c4e39c7cd2e9fbba13e9832a5339303ad66186aff",
+          "method": "machine-assisted"
+        },
+        "ko": {
+          "path": "docs/languages/ko/CONTRIBUTING.md",
+          "sha256": "5a971ff98ab4fe45e18f92d34c08503d8767affcb08b8cea60f87848245b643a",
+          "method": "machine-assisted"
+        },
+        "mr": {
+          "path": "docs/languages/mr/CONTRIBUTING.md",
+          "sha256": "c38133c7e929a0088185c43c427808b6652e143ce148c2ac760ad9e9ecd1ab30",
+          "method": "machine-assisted"
+        },
+        "fa": {
+          "path": "docs/languages/fa/CONTRIBUTING.md",
+          "sha256": "44c7b244c276a14a2b6f9304e25f1633c7d101b8838a80c71901624f3e750cd5",
+          "method": "machine-assisted"
+        },
+        "pl": {
+          "path": "docs/languages/pl/CONTRIBUTING.md",
+          "sha256": "d89d80da8f593340ede68cf7a854737ee5363753d54ac19beac7b80d6a11e13c",
+          "method": "machine-assisted"
+        },
+        "pt": {
+          "path": "docs/languages/pt/CONTRIBUTING.md",
+          "sha256": "997637859db26cfff615fa00060f9331ee97414eb3b6448ba64ad400c18aa2f2",
+          "method": "machine-assisted"
+        },
+        "pa": {
+          "path": "docs/languages/pa/CONTRIBUTING.md",
+          "sha256": "cea550a6c9725c315a4cd397de9fe4ab2f11a523f6c14264064083b336939528",
+          "method": "machine-assisted"
+        },
+        "ro": {
+          "path": "docs/languages/ro/CONTRIBUTING.md",
+          "sha256": "000ce4b19ca5664de90f87d9f099188f25a43a4545bc0d49efb6da839b12ba6e",
+          "method": "machine-assisted"
+        },
+        "ru": {
+          "path": "docs/languages/ru/CONTRIBUTING.md",
+          "sha256": "f56b4c0571178494dc286848d962e5e8ced72655a8b05752c6e9351396b87f22",
+          "method": "machine-assisted"
+        },
+        "es": {
+          "path": "docs/languages/es/CONTRIBUTING.md",
+          "sha256": "e9c93fd647e61046b54653bd67b7c809b8d7cf2f2e68406df40c37423a054e20",
+          "method": "machine-assisted"
+        },
+        "sw": {
+          "path": "docs/languages/sw/CONTRIBUTING.md",
+          "sha256": "8dc1f7b5d0be5fce25aedffa98820271937b3f3f5df4a91282d81545b8b06033",
+          "method": "machine-assisted"
+        },
+        "sv": {
+          "path": "docs/languages/sv/CONTRIBUTING.md",
+          "sha256": "04a00a922d197d7302ee2536fca8603a5a9d5f5b7b60b12f1c22611de3d2e67e",
+          "method": "machine-assisted"
+        },
+        "ta": {
+          "path": "docs/languages/ta/CONTRIBUTING.md",
+          "sha256": "349df091fbf7fe84edef138fc1795465b468a1bc11f08ea5f87204a5de498198",
+          "method": "machine-assisted"
+        },
+        "th": {
+          "path": "docs/languages/th/CONTRIBUTING.md",
+          "sha256": "b9f5e7f0fcf347736ee6cf0835f99eb90b7d86edf09d8527efbbc107d26e2bdc",
+          "method": "machine-assisted"
+        },
+        "tr": {
+          "path": "docs/languages/tr/CONTRIBUTING.md",
+          "sha256": "fbcadf5bbbc3fe9ac50c68fff2347891dc1ad9234d1613a843ca261df14efe8a",
+          "method": "machine-assisted"
+        },
+        "uk": {
+          "path": "docs/languages/uk/CONTRIBUTING.md",
+          "sha256": "56d10ea3cfe9e2a3b6b9ee1816d244418cd7dc714057b1578589f1d46f7e058d",
+          "method": "machine-assisted"
+        },
+        "ur": {
+          "path": "docs/languages/ur/CONTRIBUTING.md",
+          "sha256": "99cb685f12245c101fa56dbb482d45fe24edbf4a3a3ff6345eb0a15d1511ec2e",
+          "method": "machine-assisted"
+        },
+        "vi": {
+          "path": "docs/languages/vi/CONTRIBUTING.md",
+          "sha256": "137cbffdd8bf1c0b6ab5907ae660b7ee5fdd43fb7e450b98810c3730f979afdb",
+          "method": "machine-assisted"
+        }
+      }
+    },
+    {
+      "source": "SECURITY.md",
+      "source_sha256": "e71d55f304b100f7613a0c3a6c104dae578927d0642cb2d5d40fdc7dd53f0146",
+      "translations": {
+        "ar": {
+          "path": "docs/languages/ar/SECURITY.md",
+          "sha256": "7263f367fceea31b8ea285f9ecee4eb0578372dd2df3512dfc6166d943ba1502",
+          "method": "machine-assisted"
+        },
+        "bn": {
+          "path": "docs/languages/bn/SECURITY.md",
+          "sha256": "ca0a8e6f3d50112fe8d3e02da7817e5a5e631306a35727190a280bf7574393aa",
+          "method": "machine-assisted"
+        },
+        "zh": {
+          "path": "docs/languages/zh/SECURITY.md",
+          "sha256": "618c429a099bb3cc1f9d41b709ba7954312a918e78b79181fb946ce00e0cbd4b",
+          "method": "machine-assisted"
+        },
+        "cs": {
+          "path": "docs/languages/cs/SECURITY.md",
+          "sha256": "23b08f79ad658fa3401d859eabfc97fec5174919c5b4aa10483d22064eaa641a",
+          "method": "machine-assisted"
+        },
+        "da": {
+          "path": "docs/languages/da/SECURITY.md",
+          "sha256": "a6fdbd58aa9c9edc0dc436fb590e4fde38cf7d323bb49de24d2e98285bf51fcd",
+          "method": "machine-assisted"
+        },
+        "nl": {
+          "path": "docs/languages/nl/SECURITY.md",
+          "sha256": "455eb4445ed418d15bed292cb06fadb2bf9c7026d308ea6998a99d938a831433",
+          "method": "machine-assisted"
+        },
+        "en": {
+          "path": "SECURITY.md",
+          "sha256": "e71d55f304b100f7613a0c3a6c104dae578927d0642cb2d5d40fdc7dd53f0146",
+          "method": "reference"
+        },
+        "fil": {
+          "path": "docs/languages/fil/SECURITY.md",
+          "sha256": "c1e82b6be9b72238292124eb817eb5e87ce70eac8d0cf5b3f60ceca55b2c018b",
+          "method": "machine-assisted"
+        },
+        "fi": {
+          "path": "docs/languages/fi/SECURITY.md",
+          "sha256": "34d0c5cd3dd073fd34fce688ed3d2b6e89c0a0de93351afe6a29a3c1c6861ca9",
+          "method": "machine-assisted"
+        },
+        "fr": {
+          "path": "docs/languages/fr/SECURITY.md",
+          "sha256": "5561c69c0e73b576c7dde0968a4e35c4d4efeab66b315e84e6ae1ce013941488",
+          "method": "machine-assisted"
+        },
+        "de": {
+          "path": "docs/languages/de/SECURITY.md",
+          "sha256": "1dbc7862d465069a1361c67683fd7d072a7150edc52969d5abd5439697dba6fc",
+          "method": "machine-assisted"
+        },
+        "el": {
+          "path": "docs/languages/el/SECURITY.md",
+          "sha256": "18ba1d8f20f1f794094cd635e446a067fdf840d253c9d91c2786a521af4bf282",
+          "method": "machine-assisted"
+        },
+        "hi": {
+          "path": "docs/languages/hi/SECURITY.md",
+          "sha256": "2f9d4750e2c43e4cd43257d1f107e853bbf2023a989013896c3c910894aefa3f",
+          "method": "machine-assisted"
+        },
+        "hu": {
+          "path": "docs/languages/hu/SECURITY.md",
+          "sha256": "9dd333ec36333c22937b076e0a872984bf8deab3864335afe43aea952b1573f3",
+          "method": "machine-assisted"
+        },
+        "id": {
+          "path": "docs/languages/id/SECURITY.md",
+          "sha256": "cd7ec8cbbcdc8e12c788d6d430553275a43433b8eaeb19dc5e02c2f7b82058b5",
+          "method": "machine-assisted"
+        },
+        "it": {
+          "path": "docs/languages/it/SECURITY.md",
+          "sha256": "3c99c22fb978858ff016212e9d1860351f965592a6e7988b08a11b6b2a335af1",
+          "method": "machine-assisted"
+        },
+        "ja": {
+          "path": "docs/languages/ja/SECURITY.md",
+          "sha256": "fdacf393273dda36b1018d51cda93e47c42805305fad1d86190d94ef45c62c6d",
+          "method": "machine-assisted"
+        },
+        "ko": {
+          "path": "docs/languages/ko/SECURITY.md",
+          "sha256": "956ca6865d1250a46133018d824fbcb26f0693e2fb684a58e3cbcdd5e434a9c5",
+          "method": "machine-assisted"
+        },
+        "mr": {
+          "path": "docs/languages/mr/SECURITY.md",
+          "sha256": "2fc645d020a3306dd52aa4829362eaca0418460d0f0b6e47fcef8eccd6b0d6ae",
+          "method": "machine-assisted"
+        },
+        "fa": {
+          "path": "docs/languages/fa/SECURITY.md",
+          "sha256": "8a9038ef0badee4cd1f2fd1c17fe13849dc8e6ddda7e5b2a1344af05ee5e011c",
+          "method": "machine-assisted"
+        },
+        "pl": {
+          "path": "docs/languages/pl/SECURITY.md",
+          "sha256": "3a378909f392b0d1bf61eb91f92137cb3f832509075a98233a51b11453fab6f3",
+          "method": "machine-assisted"
+        },
+        "pt": {
+          "path": "docs/languages/pt/SECURITY.md",
+          "sha256": "2eafd1f7c5481f997a7b1a65c69de63301f2f7e8dd6521de846015c7f3810e99",
+          "method": "machine-assisted"
+        },
+        "pa": {
+          "path": "docs/languages/pa/SECURITY.md",
+          "sha256": "09509b53e63872ead202cafd6fc7862b94131f8b61ab0b24d6b2e45881924e29",
+          "method": "machine-assisted"
+        },
+        "ro": {
+          "path": "docs/languages/ro/SECURITY.md",
+          "sha256": "f4dc82236f96fbd7e1791057c1b640742e72e1be1ab71ef4a6ef3dd639690ae0",
+          "method": "machine-assisted"
+        },
+        "ru": {
+          "path": "docs/languages/ru/SECURITY.md",
+          "sha256": "449170a0202a1a210d1f09cd9231a6659c13a9363387020383731d9537565029",
+          "method": "machine-assisted"
+        },
+        "es": {
+          "path": "docs/languages/es/SECURITY.md",
+          "sha256": "f83ba4cbdcf010008ca381592ebad2ae6c606f2a6b701566f28560af58639acb",
+          "method": "machine-assisted"
+        },
+        "sw": {
+          "path": "docs/languages/sw/SECURITY.md",
+          "sha256": "3f0e6bab350f19c776919abd0b5a65938abb07ec127f36fe4d181d5d61a8b351",
+          "method": "machine-assisted"
+        },
+        "sv": {
+          "path": "docs/languages/sv/SECURITY.md",
+          "sha256": "0bcf8d1ee6800c67adeb957fdffc14e04bfa67454ed2189f954e644ae6e87a08",
+          "method": "machine-assisted"
+        },
+        "ta": {
+          "path": "docs/languages/ta/SECURITY.md",
+          "sha256": "83942ae674206c91834cbca3da91df425015db92e99151fbda1e797ace35f350",
+          "method": "machine-assisted"
+        },
+        "th": {
+          "path": "docs/languages/th/SECURITY.md",
+          "sha256": "f2405d9995814074a58b67e9d8be82d179f994a6016076472af484711607b781",
+          "method": "machine-assisted"
+        },
+        "tr": {
+          "path": "docs/languages/tr/SECURITY.md",
+          "sha256": "3d602628631559aae1c7c0b71afdbcd3ae8a9d95ff139430fb829d43da769106",
+          "method": "machine-assisted"
+        },
+        "uk": {
+          "path": "docs/languages/uk/SECURITY.md",
+          "sha256": "916c3adde8610883bbeb80a204cdb1eceb7a3f7ca02e9065c88771663131400f",
+          "method": "machine-assisted"
+        },
+        "ur": {
+          "path": "docs/languages/ur/SECURITY.md",
+          "sha256": "6481eb1ee8b12b956d4162225ce4c02d45e85de1b9e2864e2155cf2dc9297bf2",
+          "method": "machine-assisted"
+        },
+        "vi": {
+          "path": "docs/languages/vi/SECURITY.md",
+          "sha256": "25c7a62c7817f3d3191a1cc7d0cd6b4396d9c1c4e5e6593d2bb947add24b4ab9",
+          "method": "machine-assisted"
+        }
+      }
+    },
+    {
+      "source": "CHANGELOG.md",
+      "source_sha256": "a49e811678cd5b1ea11f8506d5a3f3364981efd75b605f57835c3b08058f4b28",
+      "translations": {
+        "ar": {
+          "path": "docs/languages/ar/CHANGELOG.md",
+          "sha256": "413fc04bfaa050845ffa84f7ef8ac43fe1c10f6dc1d62ccc3b3acc785c598812",
+          "method": "machine-assisted"
+        },
+        "bn": {
+          "path": "docs/languages/bn/CHANGELOG.md",
+          "sha256": "347d39eecde1b1ae2727357cea54ab98c6773669262002147aa819c741972934",
+          "method": "machine-assisted"
+        },
+        "zh": {
+          "path": "docs/languages/zh/CHANGELOG.md",
+          "sha256": "7a8aed7672645f6c4c054e10b3ce33b2b5b1fe76b804ea7ea1c12f7e8bfba3f4",
+          "method": "machine-assisted"
+        },
+        "cs": {
+          "path": "docs/languages/cs/CHANGELOG.md",
+          "sha256": "0c2ccea4b75772be8d4f94bd0c27a150b685fca1c24982840f7dc52fdd6cadb5",
+          "method": "machine-assisted"
+        },
+        "da": {
+          "path": "docs/languages/da/CHANGELOG.md",
+          "sha256": "d0949e35b02c3f7aa49371ba6106785f8238704bf1a4203ef5e3fc04d9588cae",
+          "method": "machine-assisted"
+        },
+        "nl": {
+          "path": "docs/languages/nl/CHANGELOG.md",
+          "sha256": "cdec640e68260fcb5019b2191aecf17e985a68e41b556fa8a01579acfd46d854",
+          "method": "machine-assisted"
+        },
+        "en": {
+          "path": "CHANGELOG.md",
+          "sha256": "a49e811678cd5b1ea11f8506d5a3f3364981efd75b605f57835c3b08058f4b28",
+          "method": "reference"
+        },
+        "fil": {
+          "path": "docs/languages/fil/CHANGELOG.md",
+          "sha256": "34d9ee96320888e1830db2e11434ba2a1b68323ad65ea7e12a6048c6d2c76e5e",
+          "method": "machine-assisted"
+        },
+        "fi": {
+          "path": "docs/languages/fi/CHANGELOG.md",
+          "sha256": "3609fcff50154e8ff2714691db6a63ea7542e6d4bb6911d1981b1b23cadc1a2d",
+          "method": "machine-assisted"
+        },
+        "fr": {
+          "path": "docs/languages/fr/CHANGELOG.md",
+          "sha256": "e59129cf2cf72361651552ea48c9230274baabe35dc0626791065fabd52e6bae",
+          "method": "machine-assisted"
+        },
+        "de": {
+          "path": "docs/languages/de/CHANGELOG.md",
+          "sha256": "53d96778a1e1e395fcfc80243f5ea5b24dbad992ba4b908ee2ada6a5b8bf72b7",
+          "method": "machine-assisted"
+        },
+        "el": {
+          "path": "docs/languages/el/CHANGELOG.md",
+          "sha256": "b8b9337c3e21cf42e3a8883a492bdb9f44b360f48359d9443e6abd1efae5e3c1",
+          "method": "machine-assisted"
+        },
+        "hi": {
+          "path": "docs/languages/hi/CHANGELOG.md",
+          "sha256": "8dab7bee6b37f88132af75d84369c3ff3e08d1b1db73b7366ec8ccc76b047c0a",
+          "method": "machine-assisted"
+        },
+        "hu": {
+          "path": "docs/languages/hu/CHANGELOG.md",
+          "sha256": "7f778d998af9cefc7e26a6ff473e7b66d66592151269eb4050b527d97ed86f80",
+          "method": "machine-assisted"
+        },
+        "id": {
+          "path": "docs/languages/id/CHANGELOG.md",
+          "sha256": "0f5368a9e41c62f44911c346e0efed172e98b83cd7e2d6538c0091f35d61754f",
+          "method": "machine-assisted"
+        },
+        "it": {
+          "path": "docs/languages/it/CHANGELOG.md",
+          "sha256": "41ffab6c41ad7869524d3c0ffa83990c1389ab9beaad7fedcd8ed94b4727cb76",
+          "method": "machine-assisted"
+        },
+        "ja": {
+          "path": "docs/languages/ja/CHANGELOG.md",
+          "sha256": "301e39207af9a7fa3ca328ea6dcf880d4fa7c1f6147a432d11d988e8a0da358e",
+          "method": "machine-assisted"
+        },
+        "ko": {
+          "path": "docs/languages/ko/CHANGELOG.md",
+          "sha256": "3011927fea132bb986f915dc5c3822a67e487212e280b473df2cc593c509f248",
+          "method": "machine-assisted"
+        },
+        "mr": {
+          "path": "docs/languages/mr/CHANGELOG.md",
+          "sha256": "4e8e661dde5dcc66b5bee08db58b4ad42df5d0dc4dd78f5f98ef0fff49ad1761",
+          "method": "machine-assisted"
+        },
+        "fa": {
+          "path": "docs/languages/fa/CHANGELOG.md",
+          "sha256": "febb6eb587997ff9371410b6960dddfe5ea699b480de1d6e58859d9de36ea215",
+          "method": "machine-assisted"
+        },
+        "pl": {
+          "path": "docs/languages/pl/CHANGELOG.md",
+          "sha256": "e367f9176383e5d29e49532244eb9d968aeba40cbc19e142d07f73d0af353a78",
+          "method": "machine-assisted"
+        },
+        "pt": {
+          "path": "docs/languages/pt/CHANGELOG.md",
+          "sha256": "9fb043cc61d24e6ece46c8a11880ab55cbb23d46847f80d68e67172182bbc6e2",
+          "method": "machine-assisted"
+        },
+        "pa": {
+          "path": "docs/languages/pa/CHANGELOG.md",
+          "sha256": "656f17ef40e75e31297485c067614aa764e6677c9888a1b4e5fadec36d4965d7",
+          "method": "machine-assisted"
+        },
+        "ro": {
+          "path": "docs/languages/ro/CHANGELOG.md",
+          "sha256": "e6d14a4091e24249c66bb0139c8352e1bcbe05cb6269c522be72c19f4d540701",
+          "method": "machine-assisted"
+        },
+        "ru": {
+          "path": "docs/languages/ru/CHANGELOG.md",
+          "sha256": "c4fddb90ccc682ff7f9a9a6eb37fa68fd610dc5286df6cb7743685ce8e07eb37",
+          "method": "machine-assisted"
+        },
+        "es": {
+          "path": "docs/languages/es/CHANGELOG.md",
+          "sha256": "52a69053c91d2ae32454d8f64d765abd6a95bfe6e9f4669473b66a8129a700c8",
+          "method": "machine-assisted"
+        },
+        "sw": {
+          "path": "docs/languages/sw/CHANGELOG.md",
+          "sha256": "a75bd382c5dc64b56fbf88f240f39d25c06add8032854919aa81078c4469b670",
+          "method": "machine-assisted"
+        },
+        "sv": {
+          "path": "docs/languages/sv/CHANGELOG.md",
+          "sha256": "fbdf8b19992b7489209b576a41d07f792d0f103c34d58d3c413ef9c5d5dbd322",
+          "method": "machine-assisted"
+        },
+        "ta": {
+          "path": "docs/languages/ta/CHANGELOG.md",
+          "sha256": "dc2f7cdd604cbf5838da874291d67374ad9a2918f92bcede4d1df3ae4df5f907",
+          "method": "machine-assisted"
+        },
+        "th": {
+          "path": "docs/languages/th/CHANGELOG.md",
+          "sha256": "94b2214692734c1a32ca2090067cbd640d65eb8254272c8ca958b10092fada96",
+          "method": "machine-assisted"
+        },
+        "tr": {
+          "path": "docs/languages/tr/CHANGELOG.md",
+          "sha256": "e434cf0f98e8c3f4dec57c28bf2de50e8dd42a3ee45df92b1c6687bfde78ad8b",
+          "method": "machine-assisted"
+        },
+        "uk": {
+          "path": "docs/languages/uk/CHANGELOG.md",
+          "sha256": "9db974f4da401004866e5f3b9e6b793f598a730ea92510684ae65a40ec96d16f",
+          "method": "machine-assisted"
+        },
+        "ur": {
+          "path": "docs/languages/ur/CHANGELOG.md",
+          "sha256": "a9ebce67fdcde71ac209f64e8411d22774925ea3b177f5b78cf40f8199446371",
+          "method": "machine-assisted"
+        },
+        "vi": {
+          "path": "docs/languages/vi/CHANGELOG.md",
+          "sha256": "4870caf07d9b2d4cbf3049a44b5df9f5884d5155b46af39b4c27b7f80697fb39",
+          "method": "machine-assisted"
+        }
+      }
+    },
+    {
+      "source": "assets/README.md",
+      "source_sha256": "747218e4687dcdc8796adb62ef8e1fe289eb062eeb49474b03e33092e10af537",
+      "translations": {
+        "ar": {
+          "path": "docs/languages/ar/assets/README.md",
+          "sha256": "70f1cc8c30179452fe16af66e70238cad8f67354a372e953b8ab4dca2bf4d097",
+          "method": "machine-assisted"
+        },
+        "bn": {
+          "path": "docs/languages/bn/assets/README.md",
+          "sha256": "92acb1aaacc807db7d2e34d2a96e46107738e266d4573d4dd8fbedb3b22989c4",
+          "method": "machine-assisted"
+        },
+        "zh": {
+          "path": "docs/languages/zh/assets/README.md",
+          "sha256": "f8db9e065dd02f51ac3073d48ab40e89432725518406df4ba644026da63cf980",
+          "method": "machine-assisted"
+        },
+        "cs": {
+          "path": "docs/languages/cs/assets/README.md",
+          "sha256": "02d300f687ddd70c0bf19ec1d7d585b81aa657a2eb49207dba8dea06e20b0ec0",
+          "method": "machine-assisted"
+        },
+        "da": {
+          "path": "docs/languages/da/assets/README.md",
+          "sha256": "205d6a41caa65fc641ba825cbc3d60727e771131cf0ef634bca9e65410169eaf",
+          "method": "machine-assisted"
+        },
+        "nl": {
+          "path": "docs/languages/nl/assets/README.md",
+          "sha256": "da9e0336b21d6e68a09a704209efde46007ea2e54e56ea3de3c05d3db748a63a",
+          "method": "machine-assisted"
+        },
+        "en": {
+          "path": "assets/README.md",
+          "sha256": "747218e4687dcdc8796adb62ef8e1fe289eb062eeb49474b03e33092e10af537",
+          "method": "reference"
+        },
+        "fil": {
+          "path": "docs/languages/fil/assets/README.md",
+          "sha256": "9c3bc50f997f9cef769b58ee84a343d92e513df4d634b4b415d992026c2b0f91",
+          "method": "machine-assisted"
+        },
+        "fi": {
+          "path": "docs/languages/fi/assets/README.md",
+          "sha256": "606b603601335887f12849123601ccc5602d096edc47ad23ebd02fa58b68f6a6",
+          "method": "machine-assisted"
+        },
+        "fr": {
+          "path": "docs/languages/fr/assets/README.md",
+          "sha256": "69dbc1e9c60679be7c3828bb995d65af696e4d5127c8747b2a8dbe55ee23afa5",
+          "method": "machine-assisted"
+        },
+        "de": {
+          "path": "docs/languages/de/assets/README.md",
+          "sha256": "bf343f5519e6264226583d7a431cfa60c835893dbdabcfe5f2bf78ddc87da6c7",
+          "method": "machine-assisted"
+        },
+        "el": {
+          "path": "docs/languages/el/assets/README.md",
+          "sha256": "a99b4f2e83fe4d57af61d79ac68db2eba5a5bacb5e836b7e31786be3dc347116",
+          "method": "machine-assisted"
+        },
+        "hi": {
+          "path": "docs/languages/hi/assets/README.md",
+          "sha256": "45f0635f654a3dd637981576dd3e343b71dde1df58aaabdcc42b76e8b6b97e24",
+          "method": "machine-assisted"
+        },
+        "hu": {
+          "path": "docs/languages/hu/assets/README.md",
+          "sha256": "b74c2d80528c030d1a81c9b4f38a2ea12a40a63ef778f5c7757681302c5cfb5f",
+          "method": "machine-assisted"
+        },
+        "id": {
+          "path": "docs/languages/id/assets/README.md",
+          "sha256": "3b843efc819cadbfcfe0917608d4058aa651ca4bc933539a6f93c8aea532e01b",
+          "method": "machine-assisted"
+        },
+        "it": {
+          "path": "docs/languages/it/assets/README.md",
+          "sha256": "02ca35926d4d9c8c3e927b9f9154b0af5a2190530cf1c1338782ff7a47916f67",
+          "method": "machine-assisted"
+        },
+        "ja": {
+          "path": "docs/languages/ja/assets/README.md",
+          "sha256": "c13c526bd9d79f441b12d131b36c00841344945d3bfd163fa038abf9e07403e5",
+          "method": "machine-assisted"
+        },
+        "ko": {
+          "path": "docs/languages/ko/assets/README.md",
+          "sha256": "fc66c5aa101f18a468761c8475fc36827372e96147ed09eddfee826760607aa2",
+          "method": "machine-assisted"
+        },
+        "mr": {
+          "path": "docs/languages/mr/assets/README.md",
+          "sha256": "b92a9d87dc8846828cd6f6706c15a78b36903fcbc2e661e7a241c19fe041947f",
+          "method": "machine-assisted"
+        },
+        "fa": {
+          "path": "docs/languages/fa/assets/README.md",
+          "sha256": "e4ec84a72dfce96a408b073bb9564cae838aeec58a17e55e18a4f5a320063b8d",
+          "method": "machine-assisted"
+        },
+        "pl": {
+          "path": "docs/languages/pl/assets/README.md",
+          "sha256": "6aa847228105f32d96e7166cf86e0c619e58c2d18d145716bb6913c0d888747f",
+          "method": "machine-assisted"
+        },
+        "pt": {
+          "path": "docs/languages/pt/assets/README.md",
+          "sha256": "cf98b061e33a180e99349ab839d189a42c7ff53cba472261a1fb97bc234dd9b4",
+          "method": "machine-assisted"
+        },
+        "pa": {
+          "path": "docs/languages/pa/assets/README.md",
+          "sha256": "047c4b55ba9653a03a8edff34cc69d9af3c2277cd115ff29aa57d8b1215e7150",
+          "method": "machine-assisted"
+        },
+        "ro": {
+          "path": "docs/languages/ro/assets/README.md",
+          "sha256": "5574cc7f92cc681fd89319ef36ed29392aa5136a54724a5746c95aa385a3f556",
+          "method": "machine-assisted"
+        },
+        "ru": {
+          "path": "docs/languages/ru/assets/README.md",
+          "sha256": "dd6abfbe62352ed506d3524b546c5038a07715c46ec49e109c0e62e781277600",
+          "method": "machine-assisted"
+        },
+        "es": {
+          "path": "docs/languages/es/assets/README.md",
+          "sha256": "a673ca9347fe55cf6903ac2ffbd27c87063ecf5a1a6fb18cf3825bf335f441a5",
+          "method": "machine-assisted"
+        },
+        "sw": {
+          "path": "docs/languages/sw/assets/README.md",
+          "sha256": "74b8a7bfb1fe71cf4174b76bbea770ef7414016b62bbfa43cc024c02790ae387",
+          "method": "machine-assisted"
+        },
+        "sv": {
+          "path": "docs/languages/sv/assets/README.md",
+          "sha256": "77b716c8811c7c7f37780f80e39d6e1c44c27b3ab8c99df601879ffe66d126bc",
+          "method": "machine-assisted"
+        },
+        "ta": {
+          "path": "docs/languages/ta/assets/README.md",
+          "sha256": "4262b6de1f8b0d6df9cd3b2525d8a15df248407530efd836633c5ffc23ce459a",
+          "method": "machine-assisted"
+        },
+        "th": {
+          "path": "docs/languages/th/assets/README.md",
+          "sha256": "1d4b091d08e46965d4cb7c7cc8350f3da28c1e019a0085f637af30a43fdf91f7",
+          "method": "machine-assisted"
+        },
+        "tr": {
+          "path": "docs/languages/tr/assets/README.md",
+          "sha256": "e70be13f32a89c9dfc953b7f2ce8b159f3d175876c6e6807c3bf04a444feeee3",
+          "method": "machine-assisted"
+        },
+        "uk": {
+          "path": "docs/languages/uk/assets/README.md",
+          "sha256": "f65329897249126f59a1c55e471663e949f7887697432a0e212950df46cbcef5",
+          "method": "machine-assisted"
+        },
+        "ur": {
+          "path": "docs/languages/ur/assets/README.md",
+          "sha256": "2bcc4bbc5c4d0718af63b4a512797d217aadbe481b2f12bc67ecbbed1199c7e4",
+          "method": "machine-assisted"
+        },
+        "vi": {
+          "path": "docs/languages/vi/assets/README.md",
+          "sha256": "4be92029f6d4050d4cd1c797dcc6e21442b3b44896bfed5bf62b82ba04f705e5",
+          "method": "machine-assisted"
+        }
+      }
+    },
+    {
+      "source": "NVIDIA-Profile-Inspector/LICENSES/README.md",
+      "source_sha256": "235aa6faeb3e63ded83ea2ca1359d8aaf8e3fa02db7b228da6cc585db7f14aa7",
+      "translations": {
+        "ar": {
+          "path": "docs/languages/ar/NVIDIA-Profile-Inspector/LICENSES/README.md",
+          "sha256": "325308909e603e5bef0d37e39f91a9853e3d46883fb90fa27573426001c8a545",
+          "method": "machine-assisted"
+        },
+        "bn": {
+          "path": "docs/languages/bn/NVIDIA-Profile-Inspector/LICENSES/README.md",
+          "sha256": "7d524cecb559cad4877c611008536562fb5d39ef6c564f3abacd333a38e2bdc0",
+          "method": "machine-assisted"
+        },
+        "zh": {
+          "path": "docs/languages/zh/NVIDIA-Profile-Inspector/LICENSES/README.md",
+          "sha256": "15ce9785000ad774f49fee2e03c1d0365a88b048ee0378e1aaa3146c39c6903b",
+          "method": "machine-assisted"
+        },
+        "cs": {
+          "path": "docs/languages/cs/NVIDIA-Profile-Inspector/LICENSES/README.md",
+          "sha256": "adb44fb6f3f9ff4f3ac480315bf8fc5b3ae76b3fbbd93be447be7e285d9b2eb5",
+          "method": "machine-assisted"
+        },
+        "da": {
+          "path": "docs/languages/da/NVIDIA-Profile-Inspector/LICENSES/README.md",
+          "sha256": "d0727130aee434cccfe11d5e840019b6dcbe749d015e6b3bc044c9a53fe75f32",
+          "method": "machine-assisted"
+        },
+        "nl": {
+          "path": "docs/languages/nl/NVIDIA-Profile-Inspector/LICENSES/README.md",
+          "sha256": "71d5bb1f91eaf9a3d9787753b05af341f3e8c06b7e9be5148158d297243321c6",
+          "method": "machine-assisted"
+        },
+        "en": {
+          "path": "NVIDIA-Profile-Inspector/LICENSES/README.md",
+          "sha256": "235aa6faeb3e63ded83ea2ca1359d8aaf8e3fa02db7b228da6cc585db7f14aa7",
+          "method": "reference"
+        },
+        "fil": {
+          "path": "docs/languages/fil/NVIDIA-Profile-Inspector/LICENSES/README.md",
+          "sha256": "6dd833e8860915b3a00a74c8487c8e7cd328cecefe8f1472d1960d8f516549d6",
+          "method": "machine-assisted"
+        },
+        "fi": {
+          "path": "docs/languages/fi/NVIDIA-Profile-Inspector/LICENSES/README.md",
+          "sha256": "77e17c87fa26ac149ced45d2f1835597a8f002254d8e85c923331a16dd793145",
+          "method": "machine-assisted"
+        },
+        "fr": {
+          "path": "docs/languages/fr/NVIDIA-Profile-Inspector/LICENSES/README.md",
+          "sha256": "0ee9045c3040f65763548292a1bfc2d05edc601a8ebfdb64e0bc83e681513221",
+          "method": "machine-assisted"
+        },
+        "de": {
+          "path": "docs/languages/de/NVIDIA-Profile-Inspector/LICENSES/README.md",
+          "sha256": "b14d632731ad82e7da89a8eedfc9add1468d19aaa8b76c8b48ac3e660777a790",
+          "method": "machine-assisted"
+        },
+        "el": {
+          "path": "docs/languages/el/NVIDIA-Profile-Inspector/LICENSES/README.md",
+          "sha256": "0d268c7f73d0e35e39896913fd3113fe22704a4f851712dd3216d7dd7a13ed83",
+          "method": "machine-assisted"
+        },
+        "hi": {
+          "path": "docs/languages/hi/NVIDIA-Profile-Inspector/LICENSES/README.md",
+          "sha256": "71401d89f3368db63e5f4133aae23c563bd662e6edaff4c9175a806028b278b0",
+          "method": "machine-assisted"
+        },
+        "hu": {
+          "path": "docs/languages/hu/NVIDIA-Profile-Inspector/LICENSES/README.md",
+          "sha256": "377dd367df2b27ff6da14db01dd6139a6109df10672bdfe974548a58b1a12785",
+          "method": "machine-assisted"
+        },
+        "id": {
+          "path": "docs/languages/id/NVIDIA-Profile-Inspector/LICENSES/README.md",
+          "sha256": "ef3da8954849e0c49f3fa3429ac5aa0c3e8b7746f41beb4f1290a38f6c557127",
+          "method": "machine-assisted"
+        },
+        "it": {
+          "path": "docs/languages/it/NVIDIA-Profile-Inspector/LICENSES/README.md",
+          "sha256": "b137cbecf2ccc86205e68f91f74516654fe923007f07ce85c9f8e3f51d5049d0",
+          "method": "machine-assisted"
+        },
+        "ja": {
+          "path": "docs/languages/ja/NVIDIA-Profile-Inspector/LICENSES/README.md",
+          "sha256": "293d91a62b7ae965d9f89b959a9508f11c2349db709582fb11f64da26aa36b49",
+          "method": "machine-assisted"
+        },
+        "ko": {
+          "path": "docs/languages/ko/NVIDIA-Profile-Inspector/LICENSES/README.md",
+          "sha256": "7246699c843a9a56e3be3f47277c9c974a1aae1d9c86303a4adcd0b0e0826504",
+          "method": "machine-assisted"
+        },
+        "mr": {
+          "path": "docs/languages/mr/NVIDIA-Profile-Inspector/LICENSES/README.md",
+          "sha256": "35717079b0ee7b933d67192e77ddfc56e29e79c37a36200206e5cf1447fa1e91",
+          "method": "machine-assisted"
+        },
+        "fa": {
+          "path": "docs/languages/fa/NVIDIA-Profile-Inspector/LICENSES/README.md",
+          "sha256": "8409848055ee6545008154099e4612f2b99eea9091f8726c55e2132abbf94615",
+          "method": "machine-assisted"
+        },
+        "pl": {
+          "path": "docs/languages/pl/NVIDIA-Profile-Inspector/LICENSES/README.md",
+          "sha256": "e7c1cb2a030d19b6b74bea2418a4f70d45a32daad9157245b7337faf8120b65e",
+          "method": "machine-assisted"
+        },
+        "pt": {
+          "path": "docs/languages/pt/NVIDIA-Profile-Inspector/LICENSES/README.md",
+          "sha256": "fe989e5be565d30e83ed802231265d891b255c1ea0935e4b03f0676f44209c9b",
+          "method": "machine-assisted"
+        },
+        "pa": {
+          "path": "docs/languages/pa/NVIDIA-Profile-Inspector/LICENSES/README.md",
+          "sha256": "aaa36cfc22449fad82d3fc3e6b0e551d27237a2ca25de024a89d79af35a69324",
+          "method": "machine-assisted"
+        },
+        "ro": {
+          "path": "docs/languages/ro/NVIDIA-Profile-Inspector/LICENSES/README.md",
+          "sha256": "6063bf36d756d09d7baea4d0d0d7e6d48c541b114fa85e77a88a1860596dfb2b",
+          "method": "machine-assisted"
+        },
+        "ru": {
+          "path": "docs/languages/ru/NVIDIA-Profile-Inspector/LICENSES/README.md",
+          "sha256": "76a8d1694ebe3ec0327151d95c8743fa6b4a6ba12bf601f3cb4949a2966c316d",
+          "method": "machine-assisted"
+        },
+        "es": {
+          "path": "docs/languages/es/NVIDIA-Profile-Inspector/LICENSES/README.md",
+          "sha256": "c137ac802381c95ae5cbb8fe7fda2a68ff00a609c3cd37192d5692da0b8bcdb6",
+          "method": "machine-assisted"
+        },
+        "sw": {
+          "path": "docs/languages/sw/NVIDIA-Profile-Inspector/LICENSES/README.md",
+          "sha256": "c3e0ed691c1cf320fb7bc6e2d0c8fdd273e6339d8acd1c6090b67f58acfb052a",
+          "method": "machine-assisted"
+        },
+        "sv": {
+          "path": "docs/languages/sv/NVIDIA-Profile-Inspector/LICENSES/README.md",
+          "sha256": "fc869b404f8fd463e5b3f60d1fcbbb68ab9d231cceb49ef344846ab19e0d1692",
+          "method": "machine-assisted"
+        },
+        "ta": {
+          "path": "docs/languages/ta/NVIDIA-Profile-Inspector/LICENSES/README.md",
+          "sha256": "de57be4a18a80e6eaa44eefd7a007b7f392bed2cd82acf9bf3b0218c6ddaab2b",
+          "method": "machine-assisted"
+        },
+        "th": {
+          "path": "docs/languages/th/NVIDIA-Profile-Inspector/LICENSES/README.md",
+          "sha256": "94da31a9a9d6e9877179921493056426b5379b4e38baa876e2f4acf76b4de1d7",
+          "method": "machine-assisted"
+        },
+        "tr": {
+          "path": "docs/languages/tr/NVIDIA-Profile-Inspector/LICENSES/README.md",
+          "sha256": "ddf9c488f3f4131c075a27945388659667d6affef487c314c13034e7e6dfc981",
+          "method": "machine-assisted"
+        },
+        "uk": {
+          "path": "docs/languages/uk/NVIDIA-Profile-Inspector/LICENSES/README.md",
+          "sha256": "224a5e8c4b4d329e06bee60e56195e4ec9c9d7c8c91e4d94c0af47a6bd9f1b43",
+          "method": "machine-assisted"
+        },
+        "ur": {
+          "path": "docs/languages/ur/NVIDIA-Profile-Inspector/LICENSES/README.md",
+          "sha256": "96857bdce8604c9ccdba7845be96ecc86cc533838d77974b1421ad988db939b2",
+          "method": "machine-assisted"
+        },
+        "vi": {
+          "path": "docs/languages/vi/NVIDIA-Profile-Inspector/LICENSES/README.md",
+          "sha256": "26cc27f206bb692cc6632cccf0e90450642b5a803df7ad4b0288339074ae4b22",
+          "method": "machine-assisted"
+        }
+      }
+    },
+    {
+      "source": "NVDriverForge/LICENSES/README.md",
+      "source_sha256": "170fb54fe89ff8c159236ab0731ad720a589ee0c4ea7aca4f286cc1294079b09",
+      "translations": {
+        "ar": {
+          "path": "docs/languages/ar/NVDriverForge/LICENSES/README.md",
+          "sha256": "9d8195e3957aea2ee9cb55b172f255f7f1ab99619db9e05f889ec2635c05de63",
+          "method": "machine-assisted"
+        },
+        "bn": {
+          "path": "docs/languages/bn/NVDriverForge/LICENSES/README.md",
+          "sha256": "c114b27a85554fd828347585cb12d271c532f737b4c4ef1d0cf8a4b86a196ea5",
+          "method": "machine-assisted"
+        },
+        "zh": {
+          "path": "docs/languages/zh/NVDriverForge/LICENSES/README.md",
+          "sha256": "b3866d1f4f61aec35dbf30e0cce84c3331f734b3ca2ee5b52188a5103b905484",
+          "method": "machine-assisted"
+        },
+        "cs": {
+          "path": "docs/languages/cs/NVDriverForge/LICENSES/README.md",
+          "sha256": "10245ccab3631cc2db45878f3ab13ccc3caf6b394242a28aa40b1acc30421905",
+          "method": "machine-assisted"
+        },
+        "da": {
+          "path": "docs/languages/da/NVDriverForge/LICENSES/README.md",
+          "sha256": "9e7b68c571eaf111ec999b5028319408da646c822d2d5991a3ad8b4c667131e3",
+          "method": "machine-assisted"
+        },
+        "nl": {
+          "path": "docs/languages/nl/NVDriverForge/LICENSES/README.md",
+          "sha256": "4992574ea337583d4943681ff4f8871f5065dfbacdcbddeb1eecddca57ec234a",
+          "method": "machine-assisted"
+        },
+        "en": {
+          "path": "NVDriverForge/LICENSES/README.md",
+          "sha256": "170fb54fe89ff8c159236ab0731ad720a589ee0c4ea7aca4f286cc1294079b09",
+          "method": "reference"
+        },
+        "fil": {
+          "path": "docs/languages/fil/NVDriverForge/LICENSES/README.md",
+          "sha256": "63f817a46161b35183ee2c6dd8955829c8c75288aecd06ebc5bec5984f29ebec",
+          "method": "machine-assisted"
+        },
+        "fi": {
+          "path": "docs/languages/fi/NVDriverForge/LICENSES/README.md",
+          "sha256": "bb047a9cf68158b6698dff69bea996bd2ee742ac78fe9bd3a57cdf00713426bd",
+          "method": "machine-assisted"
+        },
+        "fr": {
+          "path": "docs/languages/fr/NVDriverForge/LICENSES/README.md",
+          "sha256": "6f6632d6e0f9235fac7aa7e7683c498081d7dc90922214cd4cd86ec24eb4ec2b",
+          "method": "machine-assisted"
+        },
+        "de": {
+          "path": "docs/languages/de/NVDriverForge/LICENSES/README.md",
+          "sha256": "a403861a9e5de0498d8e7173a62011de258140c184bf8a859bbaffc33ea66044",
+          "method": "machine-assisted"
+        },
+        "el": {
+          "path": "docs/languages/el/NVDriverForge/LICENSES/README.md",
+          "sha256": "b64ff0e8149fcd62f1a35135d9f3f119f7bc2f0e2e5332142250930e1ca8c9e9",
+          "method": "machine-assisted"
+        },
+        "hi": {
+          "path": "docs/languages/hi/NVDriverForge/LICENSES/README.md",
+          "sha256": "24b6a60c824a1da5172b8bf7ebb36d43a8d2ba81f09a3aae330149a54400ff98",
+          "method": "machine-assisted"
+        },
+        "hu": {
+          "path": "docs/languages/hu/NVDriverForge/LICENSES/README.md",
+          "sha256": "7080ba32a048f7e0d8c094c7eab83a977929515dd6a2c2cb733af20786b052d5",
+          "method": "machine-assisted"
+        },
+        "id": {
+          "path": "docs/languages/id/NVDriverForge/LICENSES/README.md",
+          "sha256": "6e4253b0c1695320ff35181df15f8113a1554b05bf837a49c803cdb5ad7cf895",
+          "method": "machine-assisted"
+        },
+        "it": {
+          "path": "docs/languages/it/NVDriverForge/LICENSES/README.md",
+          "sha256": "45ab568f563282b90cd5e21896c9bc5699d7e15b2045bc2422dc2c2084e27a49",
+          "method": "machine-assisted"
+        },
+        "ja": {
+          "path": "docs/languages/ja/NVDriverForge/LICENSES/README.md",
+          "sha256": "3722b6c8615d49fc9084e2784e89d519e8afeac6bda40d40f8963dd5d5562045",
+          "method": "machine-assisted"
+        },
+        "ko": {
+          "path": "docs/languages/ko/NVDriverForge/LICENSES/README.md",
+          "sha256": "f2f79701b34437a39244abd39820a89b1f1861a6cd97535948d012305bb50da4",
+          "method": "machine-assisted"
+        },
+        "mr": {
+          "path": "docs/languages/mr/NVDriverForge/LICENSES/README.md",
+          "sha256": "5fbffdd28f83aeb811f3fb0ccd3d6955c5eb1b586e3af775f7f46cedf2f78e0d",
+          "method": "machine-assisted"
+        },
+        "fa": {
+          "path": "docs/languages/fa/NVDriverForge/LICENSES/README.md",
+          "sha256": "fd3902626f2abd0fc201210b7d08e98dac577b7f0b4f718fa856084543e6fceb",
+          "method": "machine-assisted"
+        },
+        "pl": {
+          "path": "docs/languages/pl/NVDriverForge/LICENSES/README.md",
+          "sha256": "98a9b35490703d71024e490f5989bc9d7ad01fa63fc3bb7991d3d0fdf37a2a20",
+          "method": "machine-assisted"
+        },
+        "pt": {
+          "path": "docs/languages/pt/NVDriverForge/LICENSES/README.md",
+          "sha256": "14dfee53ecf63499a5e0d7f366c4aa7879ef86cbe8ac29eef4ed9dbb43bbf71d",
+          "method": "machine-assisted"
+        },
+        "pa": {
+          "path": "docs/languages/pa/NVDriverForge/LICENSES/README.md",
+          "sha256": "be882e6addf2974a38d20c07cb39d83bb2c54c0f16cccb71356fb743c8093d13",
+          "method": "machine-assisted"
+        },
+        "ro": {
+          "path": "docs/languages/ro/NVDriverForge/LICENSES/README.md",
+          "sha256": "14fb440d1033ef2d2a222f62e4ac0b38a01f32c77deb2e623542c2b1415e5f63",
+          "method": "machine-assisted"
+        },
+        "ru": {
+          "path": "docs/languages/ru/NVDriverForge/LICENSES/README.md",
+          "sha256": "b2d6f730990c0a1cd94b65514b5bb9ae09529a02fa8c458c4b1254e6a075058e",
+          "method": "machine-assisted"
+        },
+        "es": {
+          "path": "docs/languages/es/NVDriverForge/LICENSES/README.md",
+          "sha256": "7fbb010a511724bf24923614f14e51a7f78d1b019b54908ac838bb201964b7af",
+          "method": "machine-assisted"
+        },
+        "sw": {
+          "path": "docs/languages/sw/NVDriverForge/LICENSES/README.md",
+          "sha256": "6f2266c1ebaa89ed0fa2142a90d33cf38512e2a63d14cecbaf06b4f8d4f382a0",
+          "method": "machine-assisted"
+        },
+        "sv": {
+          "path": "docs/languages/sv/NVDriverForge/LICENSES/README.md",
+          "sha256": "968edff8df0a0a98420d119b53010ba28176eed96a88ee49ad7f5339fafdaa78",
+          "method": "machine-assisted"
+        },
+        "ta": {
+          "path": "docs/languages/ta/NVDriverForge/LICENSES/README.md",
+          "sha256": "503fb40a61871652f846810e9839c553f97484fc970da7e5756c33133441be7c",
+          "method": "machine-assisted"
+        },
+        "th": {
+          "path": "docs/languages/th/NVDriverForge/LICENSES/README.md",
+          "sha256": "afdbfe6790d4827872a3ad63a24931a3fbad2ef81ed14607f610e11d14640ffd",
+          "method": "machine-assisted"
+        },
+        "tr": {
+          "path": "docs/languages/tr/NVDriverForge/LICENSES/README.md",
+          "sha256": "0537471f8f864a3e351bbb2dfe958bde12fe1a26e6508f9d8fd42ff18a6ba550",
+          "method": "machine-assisted"
+        },
+        "uk": {
+          "path": "docs/languages/uk/NVDriverForge/LICENSES/README.md",
+          "sha256": "20231e7b3661162bfbdbe2a837bedf7110045d65a9c46fd110e612a8cd298d99",
+          "method": "machine-assisted"
+        },
+        "ur": {
+          "path": "docs/languages/ur/NVDriverForge/LICENSES/README.md",
+          "sha256": "e42c78bca10fae766b130e751b23e5924e5977cd9ea00043dff41bf919ad5abe",
+          "method": "machine-assisted"
+        },
+        "vi": {
+          "path": "docs/languages/vi/NVDriverForge/LICENSES/README.md",
+          "sha256": "8a0c896aaf1477f055c8fcc19c7e4a928c0f64ad2dae5532a6f024c103272147",
+          "method": "machine-assisted"
+        }
+      }
+    },
+    {
+      "source": "NVMFG-Unlock40/LICENSES/README.md",
+      "source_sha256": "effe2a8c951fab4f3765f893e58573e25b6655d5998eb29ef3b294618f0a72bd",
+      "translations": {
+        "ar": {
+          "path": "docs/languages/ar/NVMFG-Unlock40/LICENSES/README.md",
+          "sha256": "e9f8bd05c34c372d83045a7413aa38cd03f30ae9691064336ce0858a72b1c3cc",
+          "method": "machine-assisted"
+        },
+        "bn": {
+          "path": "docs/languages/bn/NVMFG-Unlock40/LICENSES/README.md",
+          "sha256": "5cab660a2d083e5d453904babe5044260e8b3d3fc0c08c48fe493ea4385eec48",
+          "method": "machine-assisted"
+        },
+        "zh": {
+          "path": "docs/languages/zh/NVMFG-Unlock40/LICENSES/README.md",
+          "sha256": "6bd43488327b0ef23414230ccaf71b5c47955d7e60e246db124f29f2f3e8fdeb",
+          "method": "machine-assisted"
+        },
+        "cs": {
+          "path": "docs/languages/cs/NVMFG-Unlock40/LICENSES/README.md",
+          "sha256": "312989f87892ab553b8190d05fa8ab3677056f9273d64004d35c9b61fb20922b",
+          "method": "machine-assisted"
+        },
+        "da": {
+          "path": "docs/languages/da/NVMFG-Unlock40/LICENSES/README.md",
+          "sha256": "ac7efe0e5d7d854ac5029e63581fa209f0c441d0d18e49a1a1c8b39fd871e2fc",
+          "method": "machine-assisted"
+        },
+        "nl": {
+          "path": "docs/languages/nl/NVMFG-Unlock40/LICENSES/README.md",
+          "sha256": "c80736c77900f07a4ca3bd69e32d73c126d10d501b24617345f5e583bfd6176f",
+          "method": "machine-assisted"
+        },
+        "en": {
+          "path": "NVMFG-Unlock40/LICENSES/README.md",
+          "sha256": "effe2a8c951fab4f3765f893e58573e25b6655d5998eb29ef3b294618f0a72bd",
+          "method": "reference"
+        },
+        "fil": {
+          "path": "docs/languages/fil/NVMFG-Unlock40/LICENSES/README.md",
+          "sha256": "4e42e85afb0bf591d79857da99edd9b55d356ebafddbfc785907b84dd3aa5981",
+          "method": "machine-assisted"
+        },
+        "fi": {
+          "path": "docs/languages/fi/NVMFG-Unlock40/LICENSES/README.md",
+          "sha256": "00bb24a85fae6b4283026bcc8cd1848b1576a827d4131754acbf778d69710115",
+          "method": "machine-assisted"
+        },
+        "fr": {
+          "path": "docs/languages/fr/NVMFG-Unlock40/LICENSES/README.md",
+          "sha256": "d1b48dd7ebb5aabe74e91c32201e50148fc9bc277081b5ef0906c3d7fe9ce140",
+          "method": "machine-assisted"
+        },
+        "de": {
+          "path": "docs/languages/de/NVMFG-Unlock40/LICENSES/README.md",
+          "sha256": "705ed4bf212b2aeb4c6f91e271ee1c3174760ad1fd503d6d3d356be328b67fd2",
+          "method": "machine-assisted"
+        },
+        "el": {
+          "path": "docs/languages/el/NVMFG-Unlock40/LICENSES/README.md",
+          "sha256": "5230de950a94eaa206bd5a59351855f082627a315047d0e896e560e64ad0afea",
+          "method": "machine-assisted"
+        },
+        "hi": {
+          "path": "docs/languages/hi/NVMFG-Unlock40/LICENSES/README.md",
+          "sha256": "08cad8467d336debba55390b0d3eb75eb5e851bab3ab8e85312c9cf5d1bfdc25",
+          "method": "machine-assisted"
+        },
+        "hu": {
+          "path": "docs/languages/hu/NVMFG-Unlock40/LICENSES/README.md",
+          "sha256": "bd0d22a1159d6788503cc5852d73f3e07f521e3f74bcf261c4b20b319804544d",
+          "method": "machine-assisted"
+        },
+        "id": {
+          "path": "docs/languages/id/NVMFG-Unlock40/LICENSES/README.md",
+          "sha256": "eeb26b040042f5bfd7aef99cdd346f0dbc64f5f9fb07cb81d56f51afa87c2e98",
+          "method": "machine-assisted"
+        },
+        "it": {
+          "path": "docs/languages/it/NVMFG-Unlock40/LICENSES/README.md",
+          "sha256": "d52b5b983c833b334790b30fc0d785d76852618f66d0728d199ee3802cd4ceeb",
+          "method": "machine-assisted"
+        },
+        "ja": {
+          "path": "docs/languages/ja/NVMFG-Unlock40/LICENSES/README.md",
+          "sha256": "bb55c4f363d43de5c3d0fef6ecf5ceaba3fdc3361fb020069ec92b3c396e9b3d",
+          "method": "machine-assisted"
+        },
+        "ko": {
+          "path": "docs/languages/ko/NVMFG-Unlock40/LICENSES/README.md",
+          "sha256": "42e389f81fbebd727d7c76ae56a3575dd43b8897e9a1bc7a00c47d5592a78d9e",
+          "method": "machine-assisted"
+        },
+        "mr": {
+          "path": "docs/languages/mr/NVMFG-Unlock40/LICENSES/README.md",
+          "sha256": "d521c7c360597ea19a62566e250c5942489fab1a0831d54bd39696084275d30a",
+          "method": "machine-assisted"
+        },
+        "fa": {
+          "path": "docs/languages/fa/NVMFG-Unlock40/LICENSES/README.md",
+          "sha256": "8cea8366cee4f1bc54e90df55222b480f04c7cf3f518c876fbf2a8173011442c",
+          "method": "machine-assisted"
+        },
+        "pl": {
+          "path": "docs/languages/pl/NVMFG-Unlock40/LICENSES/README.md",
+          "sha256": "a7e4373ca1374aa916dbf6bbeb75464ee264855db8ee25b48d7be25acc7b8276",
+          "method": "machine-assisted"
+        },
+        "pt": {
+          "path": "docs/languages/pt/NVMFG-Unlock40/LICENSES/README.md",
+          "sha256": "b638a65464eaf6c658b20627cbd2f7262393e20c1ade840bca6bb471d3b2f1bf",
+          "method": "machine-assisted"
+        },
+        "pa": {
+          "path": "docs/languages/pa/NVMFG-Unlock40/LICENSES/README.md",
+          "sha256": "cbfd75852072f9eb5300c2df33a35722fde15cfe19067d380c1d0edb8496181b",
+          "method": "machine-assisted"
+        },
+        "ro": {
+          "path": "docs/languages/ro/NVMFG-Unlock40/LICENSES/README.md",
+          "sha256": "827fcd30cda968665cd7a45f6c01f490433d1cbff25fec45631992f35452cfbc",
+          "method": "machine-assisted"
+        },
+        "ru": {
+          "path": "docs/languages/ru/NVMFG-Unlock40/LICENSES/README.md",
+          "sha256": "73d6d62820a8d8fd90085faf4da78ecf82bf63f82c9615cdab5e3f506ce88643",
+          "method": "machine-assisted"
+        },
+        "es": {
+          "path": "docs/languages/es/NVMFG-Unlock40/LICENSES/README.md",
+          "sha256": "3b7d79edb0289c5771aac003b1f82a3a25c1c7eedbaebb1f9486068eb34e5168",
+          "method": "machine-assisted"
+        },
+        "sw": {
+          "path": "docs/languages/sw/NVMFG-Unlock40/LICENSES/README.md",
+          "sha256": "21ecb955ed0f9cf8163f80e3ea24bf7ce82edef92f447b04de0a20a560192690",
+          "method": "machine-assisted"
+        },
+        "sv": {
+          "path": "docs/languages/sv/NVMFG-Unlock40/LICENSES/README.md",
+          "sha256": "e76e83003697b81043c078b796583b38d47f7bb643ba9b800b1b1b5ae71a6db2",
+          "method": "machine-assisted"
+        },
+        "ta": {
+          "path": "docs/languages/ta/NVMFG-Unlock40/LICENSES/README.md",
+          "sha256": "ceba305c6068b719bf9a8c134e386a4a84847c89d61b29f200f110de12d3d20a",
+          "method": "machine-assisted"
+        },
+        "th": {
+          "path": "docs/languages/th/NVMFG-Unlock40/LICENSES/README.md",
+          "sha256": "cec0c40d24d5227c5611828f25d0a446dc4a939f7d09b3d84de94369ad82d7f0",
+          "method": "machine-assisted"
+        },
+        "tr": {
+          "path": "docs/languages/tr/NVMFG-Unlock40/LICENSES/README.md",
+          "sha256": "20442bb0f9f7aeb4e91f0397aa92b5f6ddc10fb58b39a3d06a8699c51adaead3",
+          "method": "machine-assisted"
+        },
+        "uk": {
+          "path": "docs/languages/uk/NVMFG-Unlock40/LICENSES/README.md",
+          "sha256": "f2e3b276c299fc184d5778b847bfede1a24b14ef73e80323059812140e99706f",
+          "method": "machine-assisted"
+        },
+        "ur": {
+          "path": "docs/languages/ur/NVMFG-Unlock40/LICENSES/README.md",
+          "sha256": "01f78095ccd022d211a7f56e9a98af864f6ccefeb614a52c85d92d996bf47c1d",
+          "method": "machine-assisted"
+        },
+        "vi": {
+          "path": "docs/languages/vi/NVMFG-Unlock40/LICENSES/README.md",
+          "sha256": "5f3b2e17c0724d3f03dc721b130e34c94d3f6a6680262ced5ef72c2bae4a9228",
+          "method": "machine-assisted"
+        }
+      }
+    },
+    {
+      "source": "NVRasterPulse/LICENSES/README.md",
+      "source_sha256": "6a22a8518adff56024eb49b5d5704444a9132dbfa5d5fa79cc99993fa64c7b0e",
+      "translations": {
+        "ar": {
+          "path": "docs/languages/ar/NVRasterPulse/LICENSES/README.md",
+          "sha256": "5a49713cc9a8519a543a7d4e275114332a84a34ef21f9b45923896172a3dec85",
+          "method": "machine-assisted"
+        },
+        "bn": {
+          "path": "docs/languages/bn/NVRasterPulse/LICENSES/README.md",
+          "sha256": "fed438906f4f9c1ecf40b0a2493fca1b6b7cf9729305523d62218f6ff55686c8",
+          "method": "machine-assisted"
+        },
+        "zh": {
+          "path": "docs/languages/zh/NVRasterPulse/LICENSES/README.md",
+          "sha256": "88962139cba24d98c9dbe27ab50cb97aea1f16d5356342d4a158f51406c1b6eb",
+          "method": "machine-assisted"
+        },
+        "cs": {
+          "path": "docs/languages/cs/NVRasterPulse/LICENSES/README.md",
+          "sha256": "cbb638dc4c2cd93564d831009bb2e19a31fdcf79bc87483f9f5356b0ba5a1596",
+          "method": "machine-assisted"
+        },
+        "da": {
+          "path": "docs/languages/da/NVRasterPulse/LICENSES/README.md",
+          "sha256": "5cbf28a6ef46cc9c7abf7d69696815eb3344258058ce44c4d2894b87814957f0",
+          "method": "machine-assisted"
+        },
+        "nl": {
+          "path": "docs/languages/nl/NVRasterPulse/LICENSES/README.md",
+          "sha256": "283ed8fac7d821a0b3163cfb2bf85652c1f88bdbcd79688db1aa484c573b1de6",
+          "method": "machine-assisted"
+        },
+        "en": {
+          "path": "NVRasterPulse/LICENSES/README.md",
+          "sha256": "6a22a8518adff56024eb49b5d5704444a9132dbfa5d5fa79cc99993fa64c7b0e",
+          "method": "reference"
+        },
+        "fil": {
+          "path": "docs/languages/fil/NVRasterPulse/LICENSES/README.md",
+          "sha256": "2b905462a327feb851bbaf923c0a9a8ab6ee7b7039c5d3b25ca1ee9dff7fb918",
+          "method": "machine-assisted"
+        },
+        "fi": {
+          "path": "docs/languages/fi/NVRasterPulse/LICENSES/README.md",
+          "sha256": "1d64a1a96ddd582dfeaf36813586c22bab86157c7f1c85239d477d98028cca94",
+          "method": "machine-assisted"
+        },
+        "fr": {
+          "path": "docs/languages/fr/NVRasterPulse/LICENSES/README.md",
+          "sha256": "4fdcbc6d6a80f04ebfc81fff599d0e75e40b573f762a9a3b16197ef7865c1bfb",
+          "method": "machine-assisted"
+        },
+        "de": {
+          "path": "docs/languages/de/NVRasterPulse/LICENSES/README.md",
+          "sha256": "c807a2538d103e4ebecf2b956797d6c4a7f60ff31a8366d4169d5ceb78e7ed8f",
+          "method": "machine-assisted"
+        },
+        "el": {
+          "path": "docs/languages/el/NVRasterPulse/LICENSES/README.md",
+          "sha256": "db53b3f3387731cd94b45844daaa12e6bd05e42e9d55f8ae9f1aa0f6d4a173b9",
+          "method": "machine-assisted"
+        },
+        "hi": {
+          "path": "docs/languages/hi/NVRasterPulse/LICENSES/README.md",
+          "sha256": "9ba55959175badb59689fb63b6475c03bff1b41fbf2d1bdc2f406bd2447e42f3",
+          "method": "machine-assisted"
+        },
+        "hu": {
+          "path": "docs/languages/hu/NVRasterPulse/LICENSES/README.md",
+          "sha256": "a2d96f1bc1bdcb5bcd52f42984db5fd28167260dc784e33f61bf649c89c5d1ad",
+          "method": "machine-assisted"
+        },
+        "id": {
+          "path": "docs/languages/id/NVRasterPulse/LICENSES/README.md",
+          "sha256": "3abea3610acde8940583fa0c3001a21b37d9e8982dcd92e7cf9df6474a1d7f4d",
+          "method": "machine-assisted"
+        },
+        "it": {
+          "path": "docs/languages/it/NVRasterPulse/LICENSES/README.md",
+          "sha256": "0c5e9f561b1b652c43079323c0e9d46e16dd724942a8750a0b03b696562f02be",
+          "method": "machine-assisted"
+        },
+        "ja": {
+          "path": "docs/languages/ja/NVRasterPulse/LICENSES/README.md",
+          "sha256": "3b8a1329d750125f398a0afd6d5d5ef2cf6ff8017bd05d7f4aed7a2510ea9229",
+          "method": "machine-assisted"
+        },
+        "ko": {
+          "path": "docs/languages/ko/NVRasterPulse/LICENSES/README.md",
+          "sha256": "358d087f24ac314bfed015050b0320e1b2aade4d015d789bd2d8c676950a6882",
+          "method": "machine-assisted"
+        },
+        "mr": {
+          "path": "docs/languages/mr/NVRasterPulse/LICENSES/README.md",
+          "sha256": "755a9fd642d927dc0e89a579603536a6ad1ec481c584100b77cad9cba87e795e",
+          "method": "machine-assisted"
+        },
+        "fa": {
+          "path": "docs/languages/fa/NVRasterPulse/LICENSES/README.md",
+          "sha256": "80fafa7bc18127da3aae3eb50797603d00f59f74f3ffef7d8b4198a15b15d41f",
+          "method": "machine-assisted"
+        },
+        "pl": {
+          "path": "docs/languages/pl/NVRasterPulse/LICENSES/README.md",
+          "sha256": "9ac84c65ae8d96f2079e6db4180280ffe5d650e180d6cf58b6bb85cc2d4d0209",
+          "method": "machine-assisted"
+        },
+        "pt": {
+          "path": "docs/languages/pt/NVRasterPulse/LICENSES/README.md",
+          "sha256": "73248506a52277fda5ee2df14f563cb7ce4b7560f32a1eecd6b3a8360764e191",
+          "method": "machine-assisted"
+        },
+        "pa": {
+          "path": "docs/languages/pa/NVRasterPulse/LICENSES/README.md",
+          "sha256": "db01069d52e0c69c651c35fc090692225e8d70d054730b8fa20edb92072b17d2",
+          "method": "machine-assisted"
+        },
+        "ro": {
+          "path": "docs/languages/ro/NVRasterPulse/LICENSES/README.md",
+          "sha256": "a8cb8ce2b21b3fe256eb516da4219da661e1d703a797a8ddfd6824c6b3ca804e",
+          "method": "machine-assisted"
+        },
+        "ru": {
+          "path": "docs/languages/ru/NVRasterPulse/LICENSES/README.md",
+          "sha256": "7d5ce44d09b627f9cf663dde7af99aaca1ff5f5756d15c399768ae10157912b9",
+          "method": "machine-assisted"
+        },
+        "es": {
+          "path": "docs/languages/es/NVRasterPulse/LICENSES/README.md",
+          "sha256": "9a3889da4454ddef464d6c439c08c7521cc9a46819775fe85e64c62f13896025",
+          "method": "machine-assisted"
+        },
+        "sw": {
+          "path": "docs/languages/sw/NVRasterPulse/LICENSES/README.md",
+          "sha256": "3e669324377ef5018048442df4fcefa04b4990a2cf6ac4d16bb5e54e35c3cbd6",
+          "method": "machine-assisted"
+        },
+        "sv": {
+          "path": "docs/languages/sv/NVRasterPulse/LICENSES/README.md",
+          "sha256": "dac3ab889f01e7f9526dea59cdbb038961c211b07f4bac289c2c3cd9b5822ee5",
+          "method": "machine-assisted"
+        },
+        "ta": {
+          "path": "docs/languages/ta/NVRasterPulse/LICENSES/README.md",
+          "sha256": "4db3c1ac743ae8b968c529a68a9302cd0b6148183d056721fd2219f87845b90b",
+          "method": "machine-assisted"
+        },
+        "th": {
+          "path": "docs/languages/th/NVRasterPulse/LICENSES/README.md",
+          "sha256": "a5dced7ccdf28fa325572f0a9d19920770f88254a5801c04c91ba6d9b8310a3d",
+          "method": "machine-assisted"
+        },
+        "tr": {
+          "path": "docs/languages/tr/NVRasterPulse/LICENSES/README.md",
+          "sha256": "4f2b2843f37c06b53527844c7f6995768d0d9e2c1e42c46175450c74068b63ae",
+          "method": "machine-assisted"
+        },
+        "uk": {
+          "path": "docs/languages/uk/NVRasterPulse/LICENSES/README.md",
+          "sha256": "fa975e2ef313d64b2cd38ed5a2ec301f9da57b2db3a042ce524838dd53a3ac4a",
+          "method": "machine-assisted"
+        },
+        "ur": {
+          "path": "docs/languages/ur/NVRasterPulse/LICENSES/README.md",
+          "sha256": "828ddd41d99baa916d03ad9720d08f158ec8338627bf8a0ef5fc0b558a767c36",
+          "method": "machine-assisted"
+        },
+        "vi": {
+          "path": "docs/languages/vi/NVRasterPulse/LICENSES/README.md",
+          "sha256": "0905124b6848e6a7aa6aad1a0a6663bc4a6b4518b9daf733a90bd22666ebda67",
+          "method": "machine-assisted"
+        }
+      }
+    }
+  ]
+}

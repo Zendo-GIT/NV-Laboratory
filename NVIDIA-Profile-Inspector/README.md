@@ -1,4 +1,15 @@
-🌐 **Language:** English | [Français](README.fr.md) · [NV Laboratory](../README.md)
+<!-- nv-language-navigation:start -->
+🌐 English | [Français](README.fr.md) · [NV Laboratory](../README.md)
+
+<details>
+<summary>🌐 Language · 34</summary>
+
+[العربية](../docs/languages/ar/NVIDIA-Profile-Inspector/README.md) · [বাংলা](../docs/languages/bn/NVIDIA-Profile-Inspector/README.md) · [简体中文](../docs/languages/zh/NVIDIA-Profile-Inspector/README.md) · [Čeština](../docs/languages/cs/NVIDIA-Profile-Inspector/README.md) · [Dansk](../docs/languages/da/NVIDIA-Profile-Inspector/README.md) · [Nederlands](../docs/languages/nl/NVIDIA-Profile-Inspector/README.md) · **English** · [Filipino](../docs/languages/fil/NVIDIA-Profile-Inspector/README.md) · [Suomi](../docs/languages/fi/NVIDIA-Profile-Inspector/README.md) · [Français](README.fr.md) · [Deutsch](../docs/languages/de/NVIDIA-Profile-Inspector/README.md) · [Ελληνικά](../docs/languages/el/NVIDIA-Profile-Inspector/README.md) · [हिन्दी](../docs/languages/hi/NVIDIA-Profile-Inspector/README.md) · [Magyar](../docs/languages/hu/NVIDIA-Profile-Inspector/README.md) · [Bahasa Indonesia](../docs/languages/id/NVIDIA-Profile-Inspector/README.md) · [Italiano](../docs/languages/it/NVIDIA-Profile-Inspector/README.md) · [日本語](../docs/languages/ja/NVIDIA-Profile-Inspector/README.md) · [한국어](../docs/languages/ko/NVIDIA-Profile-Inspector/README.md) · [मराठी](../docs/languages/mr/NVIDIA-Profile-Inspector/README.md) · [فارسی](../docs/languages/fa/NVIDIA-Profile-Inspector/README.md) · [Polski](../docs/languages/pl/NVIDIA-Profile-Inspector/README.md) · [Português](../docs/languages/pt/NVIDIA-Profile-Inspector/README.md) · [ਪੰਜਾਬੀ](../docs/languages/pa/NVIDIA-Profile-Inspector/README.md) · [Română](../docs/languages/ro/NVIDIA-Profile-Inspector/README.md) · [Русский](../docs/languages/ru/NVIDIA-Profile-Inspector/README.md) · [Español](../docs/languages/es/NVIDIA-Profile-Inspector/README.md) · [Kiswahili](../docs/languages/sw/NVIDIA-Profile-Inspector/README.md) · [Svenska](../docs/languages/sv/NVIDIA-Profile-Inspector/README.md) · [தமிழ்](../docs/languages/ta/NVIDIA-Profile-Inspector/README.md) · [ไทย](../docs/languages/th/NVIDIA-Profile-Inspector/README.md) · [Türkçe](../docs/languages/tr/NVIDIA-Profile-Inspector/README.md) · [Українська](../docs/languages/uk/NVIDIA-Profile-Inspector/README.md) · [اردو](../docs/languages/ur/NVIDIA-Profile-Inspector/README.md) · [Tiếng Việt](../docs/languages/vi/NVIDIA-Profile-Inspector/README.md)
+
+[Translation policy](../docs/languages/README.md)
+
+</details>
+<!-- nv-language-navigation:end -->
 
 # NVIDIA Profile Inspector – NV Tools Fork
 

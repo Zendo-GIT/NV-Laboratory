@@ -1,11 +1,24 @@
-🌐 **Langue :** [English](README.md) | Français · [NV Laboratory](../README.fr.md)
+<!-- nv-language-navigation:start -->
+🌐 [English](README.md) | Français · [NV Laboratory](../README.fr.md)
 
+<details>
+<summary>🌐 Language · 34</summary>
+
+[العربية](../docs/languages/ar/NVDriverForge/README.md) · [বাংলা](../docs/languages/bn/NVDriverForge/README.md) · [简体中文](../docs/languages/zh/NVDriverForge/README.md) · [Čeština](../docs/languages/cs/NVDriverForge/README.md) · [Dansk](../docs/languages/da/NVDriverForge/README.md) · [Nederlands](../docs/languages/nl/NVDriverForge/README.md) · [English](README.md) · [Filipino](../docs/languages/fil/NVDriverForge/README.md) · [Suomi](../docs/languages/fi/NVDriverForge/README.md) · **Français** · [Deutsch](../docs/languages/de/NVDriverForge/README.md) · [Ελληνικά](../docs/languages/el/NVDriverForge/README.md) · [हिन्दी](../docs/languages/hi/NVDriverForge/README.md) · [Magyar](../docs/languages/hu/NVDriverForge/README.md) · [Bahasa Indonesia](../docs/languages/id/NVDriverForge/README.md) · [Italiano](../docs/languages/it/NVDriverForge/README.md) · [日本語](../docs/languages/ja/NVDriverForge/README.md) · [한국어](../docs/languages/ko/NVDriverForge/README.md) · [मराठी](../docs/languages/mr/NVDriverForge/README.md) · [فارسی](../docs/languages/fa/NVDriverForge/README.md) · [Polski](../docs/languages/pl/NVDriverForge/README.md) · [Português](../docs/languages/pt/NVDriverForge/README.md) · [ਪੰਜਾਬੀ](../docs/languages/pa/NVDriverForge/README.md) · [Română](../docs/languages/ro/NVDriverForge/README.md) · [Русский](../docs/languages/ru/NVDriverForge/README.md) · [Español](../docs/languages/es/NVDriverForge/README.md) · [Kiswahili](../docs/languages/sw/NVDriverForge/README.md) · [Svenska](../docs/languages/sv/NVDriverForge/README.md) · [தமிழ்](../docs/languages/ta/NVDriverForge/README.md) · [ไทย](../docs/languages/th/NVDriverForge/README.md) · [Türkçe](../docs/languages/tr/NVDriverForge/README.md) · [Українська](../docs/languages/uk/NVDriverForge/README.md) · [اردو](../docs/languages/ur/NVDriverForge/README.md) · [Tiếng Việt](../docs/languages/vi/NVDriverForge/README.md)
+
+[Translation policy](../docs/languages/README.md)
+
+</details>
+<!-- nv-language-navigation:end -->
+
+<a id="nvdriverforge"></a>
 # NVDriverForge
 
 **Préparer l'installation d'un pilote NVIDIA avec des choix de composants et de réglages compréhensibles.**
 
-[Télécharger 0.1.2 et consulter le statut](../docs/downloads.fr.md#nvdriverforge) · [Installation](#installation) · [Crédits](#crédits-et-origine) · [Licence](LICENSE)
+[Télécharger 0.1.3 et consulter le statut](../docs/downloads.fr.md#nvdriverforge) · [Installation](#installation) · [Crédits](#crédits-et-origine) · [Licence](LICENSE)
 
+<a id="overview-and-purpose"></a>
 ## Présentation et raison d'être
 
 NVDriverForge guide l'utilisateur à partir d'un paquet NVIDIA original :
@@ -16,11 +29,14 @@ et les informations de récupération dans un même parcours.
 C'est une application développée indépendamment, inspirée notamment du parcours
 NVCleanstall. Elle n'inclut pas ce logiciel et ne revendique pas toutes ses fonctions.
 
+<a id="features"></a>
 ## Fonctionnalités
 
 - Recherche et téléchargement NVIDIA Game Ready / Studio ; recherche hotfix facultative avec repli manuel.
 - Analyse du paquet original, empreintes, signatures NVIDIA, manifestes et entrées INF compatibles.
 - Choix des composants avec dépendances et conservation des composants inconnus.
+- La version 0.1.3 garde les composants NVIDIA facultatifs sélectionnés comme facultatifs et exclut seulement les composants décochés vérifiés. Les runtimes déjà à jour ou non applicables ne sont plus imposés comme critiques.
+- Résumés d’échec d’installation compréhensibles et accès aux journaux détaillés dans les 34 langues.
 - Confirmation d'installation, préparation dans un espace protégé et export des pilotes existants du magasin Windows.
 - Réglages avancés facultatifs avec contrôles préalables, journaux et récupération tenant compte des conflits.
 - Preset **Custom NV** facultatif, choix nommés, explications, force SILK distincte et contrôles de compatibilité.
@@ -33,13 +49,14 @@ MSI, la politique/priorité des interruptions, HDCP, le démarrage du conteneur
 d'affichage et un ancien service de télémétrie admissible. Chacun a ses prérequis
 et contreparties ; aucun n'est une optimisation universelle.
 
+<a id="compatibility"></a>
 ## Compatibilité
 
 | Prérequis | Détails |
 | --- | --- |
 | Système | Windows 10 build 19041 ou ultérieur / Windows 11, x64 |
 | GPU/pilote | Paquet NVIDIA et matériel compatibles ; catalogue automatique surtout destiné aux modèles GeForce connus |
-| Runtime | .NET 8 / WPF 8.0.30 inclus dans le paquet autonome préparé |
+| Runtime | .NET 8 / WPF 8.0.31 inclus dans le paquet autonome préparé |
 | Droits | Interface et Setup par utilisateur ; élévation pour le pilote et les changements système |
 | Réseau | Recherche/téléchargement NVIDIA et demandes NVENC explicites ; sélection possible d'un paquet local original |
 | Outils inclus | 7-Zip 26.03 non modifié, runtime et notices, compagnon Profile Inspector MIT facultatif |
@@ -50,6 +67,7 @@ le catalogue doit convenir à tous les GPU détectés. Certains modèles profess
 ou inconnus demandent une sélection manuelle. L'installateur NVIDIA reste l'autorité
 finale pour la compatibilité matérielle et Windows.
 
+<a id="installation"></a>
 ## Installation
 
 1. Consultez les [téléchargements](../docs/downloads.fr.md#nvdriverforge) et leur statut.
@@ -60,6 +78,7 @@ finale pour la compatibilité matérielle et Windows.
 Le portable inclut son runtime et son installateur facultatif. Installer NVDriverForge
 n'installe pas de pilote graphique. Les EXE existants ne sont pas signés.
 
+<a id="usage"></a>
 ## Utilisation
 
 1. **Pilote :** téléchargez depuis NVIDIA ou sélectionnez son installateur EXE original. Attendez la fin de l'analyse.
@@ -83,6 +102,7 @@ Les préférences règlent langue, thème et recherches facultatives de l'applic
 installée. Le portable ne crée pas sa tâche de surveillance. Les outils et la
 récupération sont séparés des quatre étapes d'installation.
 
+<a id="screenshots"></a>
 ## Captures
 
 ![Aperçu de la page pilote NVDriverForge](../assets/screenshots/nvdriverforge-0.1.2-preview.png)
@@ -90,6 +110,7 @@ récupération sont séparés des quatre étapes d'installation.
 Rendu existant en français, avec données d'exemple. Le pilote 699.99 affiché est
 une donnée de test, pas une version à télécharger. [Provenance](../assets/README.md).
 
+<a id="update-and-uninstall"></a>
 ## Mise à jour et désinstallation
 
 Fermez NVDriverForge, récupérez le nouveau paquet officiel et vérifiez son empreinte.
@@ -106,6 +127,7 @@ Données : `%LOCALAPPDATA%\NVDriverForge`. Travaux protégés et exports :
 L'export du magasin de pilotes n'est ni une image système ni une sauvegarde complète
 des profils NVIDIA.
 
+<a id="known-limitations"></a>
 ## Limitations connues
 
 - Pas d'ajout de matériel/édition INF, de nouvelles signatures NVIDIA, de signature certifiée anti-cheat ou d'acceptation automatique des avertissements de signature.
@@ -115,12 +137,14 @@ des profils NVIDIA.
 - Vérification de confiance Windows locale, sans révocation en ligne.
 - 34 langues présentes ; relecture native et tests complets d'accessibilité encore incomplets.
 
+<a id="troubleshooting"></a>
 ## Dépannage
 
 | Symptôme | Action |
 | --- | --- |
 | Catalogue indisponible | Choisissez un paquet original depuis [NVIDIA](https://www.nvidia.com/en-us/drivers/), sans remplacer votre modèle par un voisin. |
 | Recherche hotfix indisponible | Consultez le [forum NVIDIA Game Ready](https://www.nvidia.com/en-us/geforce/forums/game-ready-drivers/13/). |
+| Échec de l’installation NVIDIA | Lisez le résumé et ouvrez les journaux détaillés. Les composants facultatifs déjà à jour ou non applicables peuvent être ignorés en 0.1.3. Un échec ne déclenche ni réglages facultatifs ni parcours de réussite/redémarrage. |
 | Échec de signature, hash ou sauvegarde | Arrêtez cette installation et conservez l'erreur ; retéléchargez le paquet original s'il est corrompu. |
 | Option indisponible | Lisez le motif matériel/composant/pilote et laissez-la inchangée. |
 | Redémarrage ou travail en attente | Suivez les instructions de récupération et de reprise, sans effacer le journal. |
@@ -129,6 +153,7 @@ des profils NVIDIA.
 Indiquez version, Windows, GPU, pilote et étapes reproductibles. Masquez les chemins
 et données personnelles des journaux. [Aide commune](../docs/support.fr.md).
 
+<a id="faq"></a>
 ## FAQ
 
 **Le Setup installe-t-il un pilote ?** Non : le programme exige une analyse,
@@ -143,6 +168,7 @@ et prérequis déterminent les changements ; aucun gain mesuré n'est promis.
 **Où sont les sources ?** Le code applicatif et les tests restent privés.
 Le hub fournit documents, binaires et liens des tiers nécessaires à leurs licences.
 
+<a id="credits-and-upstream"></a>
 ## Crédits et origine
 
 Application originale, parcours, transactions, traductions, bootstrap et adaptations :
@@ -158,6 +184,7 @@ Application originale, parcours, transactions, traductions, bootstrap et adaptat
 
 [Tableau complet](../THIRD_PARTY_NOTICES.md) · [Modifications et provenance](../docs/provenance.fr.md)
 
+<a id="license"></a>
 ## Licence
 
 La [permission binaire existante](LICENSE) autorise l'utilisation et le partage

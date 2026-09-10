@@ -1,11 +1,24 @@
-🌐 **Langue :** [English](development.md) | Français · [Accueil](../README.fr.md)
+<!-- nv-language-navigation:start -->
+🌐 [English](development.md) | Français · [NV Laboratory](../README.fr.md)
 
+<details>
+<summary>🌐 Language · 34</summary>
+
+[العربية](languages/ar/docs/development.md) · [বাংলা](languages/bn/docs/development.md) · [简体中文](languages/zh/docs/development.md) · [Čeština](languages/cs/docs/development.md) · [Dansk](languages/da/docs/development.md) · [Nederlands](languages/nl/docs/development.md) · [English](development.md) · [Filipino](languages/fil/docs/development.md) · [Suomi](languages/fi/docs/development.md) · **Français** · [Deutsch](languages/de/docs/development.md) · [Ελληνικά](languages/el/docs/development.md) · [हिन्दी](languages/hi/docs/development.md) · [Magyar](languages/hu/docs/development.md) · [Bahasa Indonesia](languages/id/docs/development.md) · [Italiano](languages/it/docs/development.md) · [日本語](languages/ja/docs/development.md) · [한국어](languages/ko/docs/development.md) · [मराठी](languages/mr/docs/development.md) · [فارسی](languages/fa/docs/development.md) · [Polski](languages/pl/docs/development.md) · [Português](languages/pt/docs/development.md) · [ਪੰਜਾਬੀ](languages/pa/docs/development.md) · [Română](languages/ro/docs/development.md) · [Русский](languages/ru/docs/development.md) · [Español](languages/es/docs/development.md) · [Kiswahili](languages/sw/docs/development.md) · [Svenska](languages/sv/docs/development.md) · [தமிழ்](languages/ta/docs/development.md) · [ไทย](languages/th/docs/development.md) · [Türkçe](languages/tr/docs/development.md) · [Українська](languages/uk/docs/development.md) · [اردو](languages/ur/docs/development.md) · [Tiếng Việt](languages/vi/docs/development.md)
+
+[Translation policy](languages/README.md)
+
+</details>
+<!-- nv-language-navigation:end -->
+
+<a id="repository-architecture-and-maintenance"></a>
 # Architecture et maintenance
 
 NV Laboratory est un **hub de documentation et de distribution binaire**.
 Les sources applicatives restent privées. Les quatre projets conservent leurs
 builds, versions, identités et assets séparés ; leur historique privé n'est pas importé.
 
+<a id="layout"></a>
 ## Organisation
 
 | Emplacement | Rôle |
@@ -20,10 +33,13 @@ builds, versions, identités et assets séparés ; leur historique privé n'est 
 | .github | Formulaires et validation documentaire en lecture seule |
 | tools/validate_repository.py | Contrôle des liens et limites de publication |
 
-Les fichiers `.fr.md` voisins gardent une navigation simple. L'anglais est
-l'accueil GitHub par défaut ; le visiteur choisit le français. GitHub Pages
-n'apporte pas ici de bénéfice nécessaire.
+L'anglais reste l'accueil GitHub par défaut. Les liens `.fr.md` existants restent
+valides. Les autres traductions reprennent l'arborescence sous `docs/languages/<code>`.
+Le sélecteur conserve la page consultée. `docs/languages/catalog.json` indique les
+34 langues et les empreintes des références. GitHub ne choisit pas automatiquement
+le README selon la langue du navigateur. Voir l'[index et les règles de traduction](languages/README.md).
 
+<a id="application-technologies"></a>
 ## Technologies des applications privées
 
 | Programme | Technologie | Distribution |
@@ -37,6 +53,7 @@ Ce dépôt ne permet pas de reconstruire les applications. Les archives automati
 « Source code » sont des copies du hub. Les liens upstream ne représentent pas
 le code privé modifié. La CI publique ne vérifie que ce dépôt.
 
+<a id="local-checks"></a>
 ## Vérification locale
 
 Depuis la racine :
@@ -53,6 +70,7 @@ Le workflow GitHub rejoue ce contrôle en lecture seule à chaque push, Pull Req
 ou déclenchement manuel. Checkout est figé sur un commit et ne conserve pas
 d'identifiants. Aucun job de Release ou déploiement n'est configuré.
 
+<a id="maintain-the-boundary"></a>
 ## Préserver le périmètre
 
 Mettez à jour les guides anglais/français ensemble. Distinguez modifications de

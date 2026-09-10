@@ -1,4 +1,15 @@
-🌐 **Language:** English | [Français](README.fr.md)
+<!-- nv-language-navigation:start -->
+🌐 English | [Français](README.fr.md) · [NV Laboratory](README.md)
+
+<details>
+<summary>🌐 Language · 34</summary>
+
+[العربية](docs/languages/ar/README.md) · [বাংলা](docs/languages/bn/README.md) · [简体中文](docs/languages/zh/README.md) · [Čeština](docs/languages/cs/README.md) · [Dansk](docs/languages/da/README.md) · [Nederlands](docs/languages/nl/README.md) · **English** · [Filipino](docs/languages/fil/README.md) · [Suomi](docs/languages/fi/README.md) · [Français](README.fr.md) · [Deutsch](docs/languages/de/README.md) · [Ελληνικά](docs/languages/el/README.md) · [हिन्दी](docs/languages/hi/README.md) · [Magyar](docs/languages/hu/README.md) · [Bahasa Indonesia](docs/languages/id/README.md) · [Italiano](docs/languages/it/README.md) · [日本語](docs/languages/ja/README.md) · [한국어](docs/languages/ko/README.md) · [मराठी](docs/languages/mr/README.md) · [فارسی](docs/languages/fa/README.md) · [Polski](docs/languages/pl/README.md) · [Português](docs/languages/pt/README.md) · [ਪੰਜਾਬੀ](docs/languages/pa/README.md) · [Română](docs/languages/ro/README.md) · [Русский](docs/languages/ru/README.md) · [Español](docs/languages/es/README.md) · [Kiswahili](docs/languages/sw/README.md) · [Svenska](docs/languages/sv/README.md) · [தமிழ்](docs/languages/ta/README.md) · [ไทย](docs/languages/th/README.md) · [Türkçe](docs/languages/tr/README.md) · [Українська](docs/languages/uk/README.md) · [اردو](docs/languages/ur/README.md) · [Tiếng Việt](docs/languages/vi/README.md)
+
+[Translation policy](docs/languages/README.md)
+
+</details>
+<!-- nv-language-navigation:end -->
 
 # NV Laboratory
 
@@ -10,14 +21,14 @@
 
 ## Projects
 
-| Project | Purpose | Candidate version | Documentation | Download |
+| Project | Purpose | Version | Documentation | Download |
 | --- | --- | --- | --- | --- |
 | **NVIDIA Profile Inspector – NV Tools Fork** | NVIDIA driver profile editor with added display, color, HDR and ICC/WCS controls. Formerly NVPI Custom. | 3.0.2.3 | [Guide](NVIDIA-Profile-Inspector/README.md) | [Packages](docs/downloads.md#nvidia-profile-inspector) |
-| **NVDriverForge** | Select driver components, review optional tweaks and install an original NVIDIA driver package. | 0.1.2 | [Guide](NVDriverForge/README.md) | [Packages](docs/downloads.md#nvdriverforge) |
-| **NVMFG Unlock40** | Experimental RTX 40 MFG tool with per-game choices and Streamline SDK maintenance. Derived from RTX40MFG-Unlock. | 0.1.1 | [Guide](NVMFG-Unlock40/README.md) | [Packages & status](docs/downloads.md#nvmfg-unlock40) |
+| **NVDriverForge** | Select driver components, review optional tweaks and install an original NVIDIA driver package. | 0.1.3 | [Guide](NVDriverForge/README.md) | [Packages](docs/downloads.md#nvdriverforge) |
+| **NVMFG Unlock40** | Experimental RTX 40 MFG tool with per-game choices and Streamline SDK maintenance. | 0.1.1 | [Guide](NVMFG-Unlock40/README.md) | [Packages & status](docs/downloads.md#nvmfg-unlock40) |
 | **NVRasterPulse** | Manage RTSS FPS limits per executable, with fractional values, backups and tray access. | 0.1 | [Guide](NVRasterPulse/README.md) | [Packages](docs/downloads.md#nvrasterpulse) |
 
-**Publication status:** these are prepared first-release candidates. No GitHub downloads are published yet. The [download page](docs/downloads.md) identifies each package and its planned release page; a repository snapshot is documentation, not an installer. Experimental features and hardware validation limits are described in each guide.
+**Downloads:** the [download page](docs/downloads.md) lists each version’s status, files and SHA-256 values. Experimental features and compatibility limits are described in the project guides.
 
 ## Start here
 
@@ -26,7 +37,7 @@
 3. When its Release is published, download the named application asset, read the accompanying notices and compare its SHA-256.
 4. Keep backups before changing a driver, display setting, NVIDIA profile or game runtime.
 
-Documentation is available in English and French through the selector at the top of each guide. GitHub does not automatically select a README by browser language. The documentation language and the application's own language setting are separate.
+Documentation is available in the same 34 languages as the NV applications through the selector at the top of each guide. GitHub does not automatically select a README by browser language. The documentation language and the application's own language setting are separate.
 
 ## Provenance and ownership
 
@@ -34,7 +45,7 @@ This hub distributes documentation and compiled applications. Application source
 
 - The Profile Inspector fork retains Orbmu2k's MIT license and is explicitly identified as a fork.
 - NVDriverForge has its own binary distribution terms and includes separately licensed runtime/tool components.
-- NVMFG Unlock40 derives its native engine from Michael Robles' RTX40MFG-Unlock; its MIT components, MinHook and NVIDIA SDK terms remain distinct.
+- NVMFG Unlock40 is an independently developed application. RTX40MFG-Unlock was consulted for comparison and refinement; shared native components retain their MIT credits. MinHook and NVIDIA SDK terms remain separate.
 - NVRasterPulse retains the supplied MIT license and credits the Profile Inspector-derived UI. RTSS is a required external program.
 
 See the [complete component table](THIRD_PARTY_NOTICES.md), [file provenance and changes](docs/provenance.md), and [license scope](LICENSE).

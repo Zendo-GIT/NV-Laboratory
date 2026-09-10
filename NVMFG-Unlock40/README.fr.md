@@ -1,17 +1,35 @@
-🌐 **Langue :** [English](README.md) | Français · [NV Laboratory](../README.fr.md)
+<!-- nv-language-navigation:start -->
+🌐 [English](README.md) | Français · [NV Laboratory](../README.fr.md)
 
+<details>
+<summary>🌐 Language · 34</summary>
+
+[العربية](../docs/languages/ar/NVMFG-Unlock40/README.md) · [বাংলা](../docs/languages/bn/NVMFG-Unlock40/README.md) · [简体中文](../docs/languages/zh/NVMFG-Unlock40/README.md) · [Čeština](../docs/languages/cs/NVMFG-Unlock40/README.md) · [Dansk](../docs/languages/da/NVMFG-Unlock40/README.md) · [Nederlands](../docs/languages/nl/NVMFG-Unlock40/README.md) · [English](README.md) · [Filipino](../docs/languages/fil/NVMFG-Unlock40/README.md) · [Suomi](../docs/languages/fi/NVMFG-Unlock40/README.md) · **Français** · [Deutsch](../docs/languages/de/NVMFG-Unlock40/README.md) · [Ελληνικά](../docs/languages/el/NVMFG-Unlock40/README.md) · [हिन्दी](../docs/languages/hi/NVMFG-Unlock40/README.md) · [Magyar](../docs/languages/hu/NVMFG-Unlock40/README.md) · [Bahasa Indonesia](../docs/languages/id/NVMFG-Unlock40/README.md) · [Italiano](../docs/languages/it/NVMFG-Unlock40/README.md) · [日本語](../docs/languages/ja/NVMFG-Unlock40/README.md) · [한국어](../docs/languages/ko/NVMFG-Unlock40/README.md) · [मराठी](../docs/languages/mr/NVMFG-Unlock40/README.md) · [فارسی](../docs/languages/fa/NVMFG-Unlock40/README.md) · [Polski](../docs/languages/pl/NVMFG-Unlock40/README.md) · [Português](../docs/languages/pt/NVMFG-Unlock40/README.md) · [ਪੰਜਾਬੀ](../docs/languages/pa/NVMFG-Unlock40/README.md) · [Română](../docs/languages/ro/NVMFG-Unlock40/README.md) · [Русский](../docs/languages/ru/NVMFG-Unlock40/README.md) · [Español](../docs/languages/es/NVMFG-Unlock40/README.md) · [Kiswahili](../docs/languages/sw/NVMFG-Unlock40/README.md) · [Svenska](../docs/languages/sv/NVMFG-Unlock40/README.md) · [தமிழ்](../docs/languages/ta/NVMFG-Unlock40/README.md) · [ไทย](../docs/languages/th/NVMFG-Unlock40/README.md) · [Türkçe](../docs/languages/tr/NVMFG-Unlock40/README.md) · [Українська](../docs/languages/uk/NVMFG-Unlock40/README.md) · [اردو](../docs/languages/ur/NVMFG-Unlock40/README.md) · [Tiếng Việt](../docs/languages/vi/NVMFG-Unlock40/README.md)
+
+[Translation policy](../docs/languages/README.md)
+
+</details>
+<!-- nv-language-navigation:end -->
+
+<a id="nvmfg-unlock40"></a>
 # NVMFG Unlock40
 
 **Multi Frame Generation NVIDIA expérimentale pour GeForce RTX 40, avec contrôleur central et choix par jeu.**
 
 [Télécharger 0.1.1 et consulter le statut](../docs/downloads.fr.md#nvmfg-unlock40) · [Installation](#installation) · [Origine](#origine-et-modifications) · [Licences](LICENSES/README.md)
 
+<a id="overview-and-purpose"></a>
 ## Présentation et raison d'être
 
-NVMFG Unlock40 réunit un moteur natif adapté de
-[RTX40MFG-Unlock](https://github.com/dashdogy/RTX40MFG-Unlock), un contrôleur Windows,
-un helper de profils et la gestion des jeux/SDK Streamline. Il cible les jeux
+NVMFG Unlock40 est une application développée indépendamment par
+禅堂 Zendo (RevoluSound Team). Elle réunit un contrôleur Windows, une couche native,
+un helper de profils et la gestion des jeux/SDK Streamline. Elle cible les jeux
 intégrant déjà NVIDIA DLSS Frame Generation avec des runtimes compatibles.
+
+[RTX40MFG-Unlock](https://github.com/dashdogy/RTX40MFG-Unlock) a été consulté pour
+comparer et parfaire le travail. La couche native actuelle contient des composants
+partagés et adaptés, crédités individuellement ci-dessous. Cette référence ne fait
+pas de l'application NVMFG entière une fork de ce projet.
 
 Il coordonne le MFG expérimental, mémorise les choix propres aux jeux et rend
 visibles les mises à jour de runtimes et leurs sauvegardes. Il n'ajoute pas DLSS FG
@@ -21,6 +39,7 @@ La candidate **0.1.1** inclut la correction visuelle de la liste SDK appelée
 UI2 dans l'historique interne. Sa version publique reste 0.1.1 ; ses empreintes
 exactes la distinguent des anciens builds locaux.
 
+<a id="features"></a>
 ## Fonctionnalités
 
 - Activation/désactivation centrale et démarrage Windows facultatif dans la zone de notification.
@@ -37,6 +56,7 @@ Désactiver FG dans le jeu le laisse désactivé. Les choix de 2x à 6x dépende
 jeu, du menu et du runtime ; toutes les combinaisons ne sont pas garanties.
 Le contrôleur observe V-Sync sans modifier lui-même V-Sync ou VRR.
 
+<a id="compatibility"></a>
 ## Compatibilité
 
 | Prérequis | Détails |
@@ -54,6 +74,7 @@ Le numéro de version ne suffit pas : pilote, hash du fournisseur, intégration 
 jeu et modules réellement chargés comptent. Les processus protégés ou incompatibles
 peuvent refuser l'attachement. Le programme ne vise pas à contourner les anti-cheats.
 
+<a id="installation"></a>
 ## Installation
 
 1. Consultez le [statut de la candidate et la note de licence](../docs/downloads.fr.md#nvmfg-unlock40).
@@ -66,6 +87,7 @@ Le dossier `driver` contient des helpers en espace utilisateur, pas un pilote no
 Ne copiez pas uniquement l'EXE et ne remplacez pas le hash pour forcer la compatibilité.
 Les exécutables actuels ne sont pas signés.
 
+<a id="usage"></a>
 ## Utilisation
 
 1. Commencez contrôleur désactivé. Ajoutez un jeu ou un dossier parent, puis choisissez les installations réelles.
@@ -88,6 +110,7 @@ pas un modèle NGX. Fermez le jeu, choisissez sa mise à jour et gardez sa sauve
 Pour restaurer ses fichiers, utilisez la restauration du jeu, pas le bouton de
 désinstallation du cache SDK.
 
+<a id="screenshots"></a>
 ## Captures
 
 ![Aperçu de la liste SDK NVMFG](../assets/screenshots/nvmfg-0.1.1-sdk-preview.png)
@@ -96,6 +119,7 @@ Rendu existant en anglais de 0.1.1, avec inventaire SDK d'exemple.
 Ce n'est ni une liste officielle actuelle ni une preuve d'exécution en jeu.
 [Provenance](../assets/README.md).
 
+<a id="update-and-uninstall"></a>
 ## Mise à jour et désinstallation
 
 Fermez les jeux, désactivez/quittez NVMFG et résolvez toute récupération NVIDIA en
@@ -112,6 +136,7 @@ Les sauvegardes de runtimes sont sous
 `%LOCALAPPDATA%\RtxMfg`. Les sessions sont sous `Sessions` près de l'EXE.
 Ces fichiers peuvent contenir des chemins de jeux : masquez-les avant partage.
 
+<a id="known-limitations"></a>
 ## Limitations connues
 
 - Des patchs natifs expérimentaux peuvent provoquer plantages ou artefacts ; un plantage Bodycam non résolu est consigné dans l'historique.
@@ -121,6 +146,7 @@ Ces fichiers peuvent contenir des chemins de jeux : masquez-les avant partage.
 - Le manifeste de compatibilité aide à la détection ; ce n'est pas une liste de jeux tous testés.
 - Les conditions NVIDIA et la réserve sur les limitations techniques restent documentées dans la [provenance](../docs/provenance.fr.md).
 
+<a id="troubleshooting"></a>
 ## Dépannage
 
 | Symptôme | Action |
@@ -134,6 +160,7 @@ Ces fichiers peuvent contenir des chemins de jeux : masquez-les avant partage.
 
 L'[aide commune](../docs/support.fr.md) précise les informations à joindre.
 
+<a id="faq"></a>
 ## FAQ
 
 **Des DLL ou modèles NVIDIA sont-ils inclus ?** Aucun pilote, modèle/fournisseur
@@ -148,26 +175,33 @@ ni distribués dans ce paquet de production.
 **Les sources modifiées sont-elles publiques ?** Non. Les binaires, crédits et
 licences sont fournis sans retirer les droits ou restrictions des tiers.
 
+<a id="upstream-and-modifications"></a>
 ## Origine et modifications
 
-Moteur d'origine : **RTX40MFG-Unlock de Michael Robles / dashdogy**,
+Référence de comparaison et composants natifs partagés :
+**RTX40MFG-Unlock de Michael Robles / dashdogy**,
 référence `4e776d068f91b4a665425542bb005dd57cc3d891`, MIT.
 [Dépôt](https://github.com/dashdogy/RTX40MFG-Unlock) · [Téléchargements originaux](https://github.com/dashdogy/RTX40MFG-Unlock/releases).
 
-Les travaux hérités comprennent patchs, politiques de fournisseur, corrections
-temporelles et détours MinHook. 禅堂 Zendo (RevoluSound Team) a adapté le chargement central,
-l'intégration NGX, la sélection vérifiée du fournisseur, la coordination jeu/V-Sync,
-les diagnostics et l'application de gestion bureau/contrôleur/SDK.
-Certains fichiers hérités restent seulement dans l'historique privé, hors cible compilée.
+La comparaison identifie des composants partagés de patchs, politiques de
+fournisseur, corrections temporelles et détours MinHook. Leurs notices MIT et BSD
+sont conservées. La comparaison complète inclut aussi des fichiers non compilés.
+
+L'application de bureau, le contrôleur et le parcours de gestion des SDK sont
+développés par 禅堂 Zendo (RevoluSound Team). Ses travaux comprennent le chargement
+central, l'intégration NGX, la sélection vérifiée du fournisseur, la coordination
+jeu/V-Sync et les diagnostics. La provenance distingue ces travaux des composants
+partagés ; une comparaison de fichiers ne date pas à elle seule l'idée des auteurs.
 
 Le helper de profils adapte le wrapper NVAPI MIT d'Orbmu2k.
 [Provenance et périmètre des composants](../docs/provenance.fr.md).
 
+<a id="credits-and-license"></a>
 ## Crédits et licence
 
 Michael Robles ; Orbmu2k ; Tsuda Kageyu et contributeurs HDE ; NVIDIA Corporation ;
 Microsoft et contributeurs ; auteurs et traducteurs Inno Setup.
-Adaptations applicatives et packaging : 禅堂 Zendo (RevoluSound Team).
+Développement applicatif, intégrations et packaging : 禅堂 Zendo (RevoluSound Team).
 
 La [permission existante de partage du paquet](LICENSE) et les
 [licences des composants](LICENSES/README.md) sont conservées. MIT pour l'upstream

@@ -1,73 +1,74 @@
-🌐 **Langue :** [English](releasing.md) | Français · [Accueil](../README.fr.md)
+<!-- nv-language-navigation:start -->
+🌐 [English](releasing.md) | Français · [NV Laboratory](../README.fr.md)
 
-# Publication et Releases manuelles
+<details>
+<summary>🌐 Language · 34</summary>
 
-Le mainteneur crée le dépôt distant et pousse avec **GitHub Desktop**.
-Cette préparation ne crée aucun dépôt distant, push, déploiement ou Release.
+[العربية](languages/ar/docs/releasing.md) · [বাংলা](languages/bn/docs/releasing.md) · [简体中文](languages/zh/docs/releasing.md) · [Čeština](languages/cs/docs/releasing.md) · [Dansk](languages/da/docs/releasing.md) · [Nederlands](languages/nl/docs/releasing.md) · [English](releasing.md) · [Filipino](languages/fil/docs/releasing.md) · [Suomi](languages/fi/docs/releasing.md) · **Français** · [Deutsch](languages/de/docs/releasing.md) · [Ελληνικά](languages/el/docs/releasing.md) · [हिन्दी](languages/hi/docs/releasing.md) · [Magyar](languages/hu/docs/releasing.md) · [Bahasa Indonesia](languages/id/docs/releasing.md) · [Italiano](languages/it/docs/releasing.md) · [日本語](languages/ja/docs/releasing.md) · [한국어](languages/ko/docs/releasing.md) · [मराठी](languages/mr/docs/releasing.md) · [فارسی](languages/fa/docs/releasing.md) · [Polski](languages/pl/docs/releasing.md) · [Português](languages/pt/docs/releasing.md) · [ਪੰਜਾਬੀ](languages/pa/docs/releasing.md) · [Română](languages/ro/docs/releasing.md) · [Русский](languages/ru/docs/releasing.md) · [Español](languages/es/docs/releasing.md) · [Kiswahili](languages/sw/docs/releasing.md) · [Svenska](languages/sv/docs/releasing.md) · [தமிழ்](languages/ta/docs/releasing.md) · [ไทย](languages/th/docs/releasing.md) · [Türkçe](languages/tr/docs/releasing.md) · [Українська](languages/uk/docs/releasing.md) · [اردو](languages/ur/docs/releasing.md) · [Tiếng Việt](languages/vi/docs/releasing.md)
 
-## Première publication du dépôt
+[Translation policy](languages/README.md)
 
-1. Examinez le rapport privé avant publication et résolvez les éléments NOT READY avant de considérer toute la distribution comme validée.
-2. Dans GitHub Desktop, choisissez **File → Add local repository**, puis le dossier **NV-Laboratory** lui-même.
-3. Vérifiez les changements : documents, notices, images, métadonnées JSON et automatisation du dépôt. Aucun source applicatif, EXE, DLL ou ZIP ne doit apparaître.
-4. Créez le premier commit, par exemple `chore: initialize NV Laboratory documentation hub`. Aucun ancien historique n'est fabriqué.
-5. Utilisez **Publish repository**, propriétaire **Zendo-GIT**, nom **NV-Laboratory**, puis choisissez vous-même la visibilité publique au moment voulu.
-6. Activez le signalement privé de vulnérabilités dans les paramètres de sécurité GitHub et vérifiez le bouton avant de l'annoncer.
-7. Contrôlez le workflow documentaire et les deux accueils linguistiques.
+</details>
+<!-- nv-language-navigation:end -->
 
-Aucun remote n'est configuré avant votre publication. Ne sélectionnez jamais
-le dossier parent de recherche ou le dossier privé d'audit/pièces jointes.
+<a id="publishing-and-releases"></a>
+# Publication et Releases
 
-L'identité publique du mainteneur est **禅堂 Zendo (RevoluSound Team)**.
-Vérifiez aussi l'auteur du premier commit et son adresse GitHub `noreply`
-dans GitHub Desktop : les métadonnées des commits font partie de la publication.
-[Confidentialité de l'adresse des commits](https://docs.github.com/en/account-and-profile/how-tos/email-preferences/setting-your-commit-email-address).
+Le dépôt public est **Zendo-GIT/NV-Laboratory**. Le mainteneur examine, committe et
+pousse les changements documentaires avec **GitHub Desktop**. Un commit local ne
+téléverse rien. Les binaires sont des pièces jointes de Releases GitHub et ne
+doivent jamais figurer parmi les changements Git.
 
-## Releases applicatives indépendantes
+<a id="documentation-updates"></a>
+## Mise à jour documentaire
 
-| Outil | Premier tag prévu | Numérotation |
+1. Ouvrez le dossier **NV-Laboratory** dans GitHub Desktop.
+2. Examinez les documents, notices, images, métadonnées JSON et le validateur documentaire.
+3. Lancez `python tools/validate_repository.py` depuis ce dossier.
+4. Faites le commit puis **Push origin**. Vérifiez le résultat dans Actions.
+5. Gardez l'identité publique **禅堂 Zendo (RevoluSound Team)** et l'adresse GitHub `noreply` du compte.
+
+Ne sélectionnez jamais le dossier de développement parent, les audits privés ou
+les pièces jointes binaires. [Confidentialité de l'adresse des commits](https://docs.github.com/en/account-and-profile/how-tos/email-preferences/setting-your-commit-email-address).
+
+<a id="independent-application-releases"></a>
+## Releases indépendantes
+
+| Outil | Tag | Politique de version |
 | --- | --- | --- |
-| Fork NVPI | nvpi-v3.0.2.3 | Version existante à quatre nombres conservée |
-| NVDriverForge | nvdriverforge-v0.1.2 | Version 0.x conservée ; SemVer peut guider les évolutions |
-| NVMFG Unlock40 | nvmfg-unlock40-v0.1.1 | Numéro public conservé ; candidate UI2 identifiée par les hashes |
-| NVRasterPulse | nvrasterpulse-v0.1 | Version publique à deux nombres demandée conservée |
+| NVIDIA Profile Inspector – NV Tools Fork | nvpi-v3.0.2.3 | Version applicative à quatre parties conservée ; setup révision 2 identifié séparément |
+| NVDriverForge | nvdriverforge-v0.1.3 | Numérotation 0.x conservée ; anciens paquets préservés |
+| NVMFG Unlock40 | nvmfg-unlock40-v0.1.1 | Candidate UI2 identifiée par ses hashes sans inventer une version applicative |
+| NVRasterPulse | nvrasterpulse-v0.1 | Version à deux parties conservée |
 
-Ne transformez pas artificiellement 3.0.2.3 ou 0.1 en une autre version.
-Une modification ultérieure demande une version/révision et de nouveaux hashes.
-Ne remplacez pas discrètement un binaire déjà publié sous la même identité.
+Le mainteneur peut publier directement ou autoriser un assistant à publier les
+assets audités. La publication est explicite ; aucun workflow ne crée une Release
+à chaque commit.
 
-1. Après publication du hub, ouvrez **Releases → Draft a new release** sur GitHub.
-2. Utilisez le tag du programme, ciblant le commit examiné, et son texte de Release local préparé.
-3. Joignez uniquement les assets applicatifs de ce tag, `Licenses-and-Credits.zip` et `SHA256SUMS.txt`.
-4. Vérifiez version, vraie date, compatibilité, installation, changements, dépendances, problèmes et hashes. RTSS doit rester visible en haut de la Release RP.
-5. Choisissez le statut prerelease selon le support réel. Un numéro sans suffixe ne certifie pas la stabilité.
-6. Publiez manuellement selon le rapport et les problèmes restants. Aucun workflow ne publie à chaque commit.
+1. Examinez le rapport courant, la provenance des binaires, les licences et les SHA-256.
+2. Créez un brouillon avec le tag de l'outil sur le commit du hub examiné, puis les notes de version préparées.
+3. Joignez seulement les assets Setup/portable de cette version, `Licenses-and-Credits.zip` et `SHA256SUMS.txt`.
+4. Vérifiez compatibilité, installation, dépendances, changements et limites. Gardez RTSS visible pour NVRasterPulse.
+5. Publiez, contrôlez les URL publiques, tailles et hashes, puis inscrivez la date réelle dans `docs/releases.json`.
+6. Actualisez les téléchargements et traductions, puis faites le commit/push dans GitHub Desktop.
 
-[releases.json](releases.json) contient tailles et empreintes. Les binaires existants
-doivent conserver leurs octets audités. Le setup NVPI révision 2 a son propre nom
-et ses hashes ; le payload applicatif reste identique. Les notices supplémentaires complètent celles embarquées.
-La réserve NVIDIA de NVMFG reste dans ses notes candidates et ne disparaît pas
-avec la création d'une Release.
+Chaque projet utilise son tag ; un lien commun `releases/latest` risquerait de
+diriger vers un autre outil. Les archives automatiques **Source code** contiennent
+ce hub documentaire. Les sources applicatives restent privées. Les notices des
+composants sont conservées et une Release ne résout pas la réserve NVIDIA de NVMFG.
 
-## Activer les téléchargements
+<a id="integrity-and-storage"></a>
+## Intégrité et stockage
 
-Une fois la Release réellement publiée, mettez son `status` à `published`
-et sa vraie `release_date` dans releases.json. Adaptez les mentions de publication
-des téléchargements et accueils anglais/français. Vérifiez chaque lien réel,
-lancez la validation puis commitez avec GitHub Desktop. Ne présentez pas une
-candidate en attente comme « dernière version disponible ».
+Ne remplacez jamais silencieusement un binaire publié : utilisez une version ou
+révision explicite et de nouveaux hashes. Les notices complémentaires s'ajoutent
+aux notices embarquées. Le portable NVDriverForge 0.1.3 fait 141 760 351 octets,
+au-dessus de la limite Git ordinaire de 100 Mio. Les pièces jointes de Releases
+évitent de stocker des binaires ou Git LFS dans le hub.
+[Documentation GitHub](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
 
-Le monorepo utilise des **liens de tags par programme**, pas un unique
-`releases/latest` pouvant mener à un autre outil. Les archives automatiques
-« Source code » contiennent le hub documentaire, pas les sources applicatives.
+Le signalement privé doit être activé dans les réglages de sécurité du dépôt.
+Vérifiez sa disponibilité avant d'y orienter les signalements sensibles ;
+[SECURITY.md](../SECURITY.md) prévoit une solution de repli sans détail de faille public.
 
-## Stockage des binaires
-
-Le portable NVDriverForge fait 141 525 846 octets, au-delà de la limite GitHub
-de 100 Mio par fichier Git ordinaire. Tous les programmes sont donc des pièces
-jointes de Releases, hors historique Git. Git LFS n'est pas nécessaire ici.
-[Limites GitHub](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
-
-Conservez les hashes exacts, notices et informations de récupération.
-Les builds/tests fonctionnels restent privés.
-[Documentation GitHub Releases](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository).
+[Catalogue des téléchargements](downloads.fr.md) · [Gestion des Releases GitHub](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository)

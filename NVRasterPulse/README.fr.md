@@ -1,5 +1,17 @@
-🌐 **Langue :** [English](README.md) | Français · [NV Laboratory](../README.fr.md)
+<!-- nv-language-navigation:start -->
+🌐 [English](README.md) | Français · [NV Laboratory](../README.fr.md)
 
+<details>
+<summary>🌐 Language · 34</summary>
+
+[العربية](../docs/languages/ar/NVRasterPulse/README.md) · [বাংলা](../docs/languages/bn/NVRasterPulse/README.md) · [简体中文](../docs/languages/zh/NVRasterPulse/README.md) · [Čeština](../docs/languages/cs/NVRasterPulse/README.md) · [Dansk](../docs/languages/da/NVRasterPulse/README.md) · [Nederlands](../docs/languages/nl/NVRasterPulse/README.md) · [English](README.md) · [Filipino](../docs/languages/fil/NVRasterPulse/README.md) · [Suomi](../docs/languages/fi/NVRasterPulse/README.md) · **Français** · [Deutsch](../docs/languages/de/NVRasterPulse/README.md) · [Ελληνικά](../docs/languages/el/NVRasterPulse/README.md) · [हिन्दी](../docs/languages/hi/NVRasterPulse/README.md) · [Magyar](../docs/languages/hu/NVRasterPulse/README.md) · [Bahasa Indonesia](../docs/languages/id/NVRasterPulse/README.md) · [Italiano](../docs/languages/it/NVRasterPulse/README.md) · [日本語](../docs/languages/ja/NVRasterPulse/README.md) · [한국어](../docs/languages/ko/NVRasterPulse/README.md) · [मराठी](../docs/languages/mr/NVRasterPulse/README.md) · [فارسی](../docs/languages/fa/NVRasterPulse/README.md) · [Polski](../docs/languages/pl/NVRasterPulse/README.md) · [Português](../docs/languages/pt/NVRasterPulse/README.md) · [ਪੰਜਾਬੀ](../docs/languages/pa/NVRasterPulse/README.md) · [Română](../docs/languages/ro/NVRasterPulse/README.md) · [Русский](../docs/languages/ru/NVRasterPulse/README.md) · [Español](../docs/languages/es/NVRasterPulse/README.md) · [Kiswahili](../docs/languages/sw/NVRasterPulse/README.md) · [Svenska](../docs/languages/sv/NVRasterPulse/README.md) · [தமிழ்](../docs/languages/ta/NVRasterPulse/README.md) · [ไทย](../docs/languages/th/NVRasterPulse/README.md) · [Türkçe](../docs/languages/tr/NVRasterPulse/README.md) · [Українська](../docs/languages/uk/NVRasterPulse/README.md) · [اردو](../docs/languages/ur/NVRasterPulse/README.md) · [Tiếng Việt](../docs/languages/vi/NVRasterPulse/README.md)
+
+[Translation policy](../docs/languages/README.md)
+
+</details>
+<!-- nv-language-navigation:end -->
+
+<a id="nvrasterpulse"></a>
 # NVRasterPulse
 
 **Des limites FPS par application avec RivaTuner Statistics Server.**
@@ -8,6 +20,7 @@
 
 [Télécharger 0.1 et consulter le statut](../docs/downloads.fr.md#nvrasterpulse) · [Installation](#installation) · [Utilisation](#utilisation) · [Licence](LICENSE)
 
+<a id="overview-and-purpose"></a>
 ## Présentation et raison d'être
 
 NVRasterPulse est une interface Windows compacte pour gérer les limites RTSS par
@@ -19,6 +32,7 @@ Il facilite les limites précises par jeu sans remplacer un profil RTSS complet
 ni perturber ses paramètres d'overlay. La candidate **0.1** retenue est celle du
 9 septembre 2026 avec vérification obligatoire de l'installation RTSS.
 
+<a id="features"></a>
 ## Fonctionnalités
 
 - Choix d'une application ouverte ou ajout manuel de son exécutable.
@@ -31,6 +45,7 @@ ni perturber ses paramètres d'overlay. La candidate **0.1** retenue est celle d
 - Instance unique, zone de notification, démarrage installé facultatif, 34 langues et quatre thèmes.
 - Actions distinctes de fermeture normale et **Quitter + RTSS**.
 
+<a id="compatibility"></a>
 ## Compatibilité
 
 | Prérequis | Détails |
@@ -47,6 +62,7 @@ l'audit du hub. Utilisez la distribution officielle actuelle et précisez sa ver
 en cas d'erreur. RTSS installé mais arrêté satisfait la détection ; il doit ensuite
 être lancé pour limiter les FPS.
 
+<a id="installation"></a>
 ## Installation
 
 1. **[Téléchargez et installez RTSS depuis Guru3D](https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/).**
@@ -60,6 +76,7 @@ Désactiver le rappel facultatif ne contourne pas le prérequis. Le démarrage d
 dans la zone de notification attend l'ouverture de la fenêtre avant de l'afficher.
 Le Setup n'installe que NVRasterPulse. Ses EXE ne sont pas signés.
 
+<a id="usage"></a>
 ## Utilisation
 
 1. Sélectionnez l'application ouverte ou choisissez l'EXE du jeu.
@@ -86,6 +103,7 @@ secondes et ne le termine pas de force. Les limites enregistrées restent prése
 Langue et thème se choisissent dans le programme. Le démarrage Windows est facultatif
 et prévu pour une copie installée. Le bouton d'information explique les actions courantes.
 
+<a id="screenshots"></a>
 ## Captures
 
 ![Aperçu de la fenêtre NVRasterPulse](../assets/screenshots/nvrasterpulse-0.1-preview.png)
@@ -94,6 +112,7 @@ Rendu existant de 0.1 en français, avec noms d'exécutables d'exemple et valeur
 RTSS est affiché arrêté : ce n'est pas une mesure de limiteur ou de latence.
 [Provenance](../assets/README.md).
 
+<a id="update-and-uninstall"></a>
 ## Mise à jour et désinstallation
 
 Quittez NVRasterPulse, téléchargez et vérifiez la version suivante, puis lancez
@@ -110,6 +129,7 @@ Sauvegardes : `%LOCALAPPDATA%\NVRasterPulse\Backups\RTSS`.
 L'ancien dossier `%LOCALAPPDATA%\RTSSProfileBridge` peut être lu pour la migration.
 Ces données peuvent contenir des chemins personnels et ne doivent pas être publiées telles quelles.
 
+<a id="known-limitations"></a>
 ## Limitations connues
 
 - RTSS effectue la limitation ; une valeur enregistrée ou un rechargement réussi n'est pas une mesure des temps d'image.
@@ -121,6 +141,7 @@ Ces données peuvent contenir des chemins personnels et ne doivent pas être pub
 - L'ancien moteur indépendant expérimental n'est ni compilé ni distribué.
 - Les sauvegardes automatiques n'impliquent pas une interface de restauration complète en un clic.
 
+<a id="troubleshooting"></a>
 ## Dépannage
 
 | Symptôme | Action |
@@ -136,6 +157,7 @@ Pour restaurer manuellement une sauvegarde RTSS, fermez RTSS et préservez le pr
 actuel avant son remplacement. Cela peut écraser d'autres changements : vérifiez
 fichier et date. [Aide commune](../docs/support.fr.md).
 
+<a id="faq"></a>
 ## FAQ
 
 **MSI Afterburner est-il nécessaire ?** NVRasterPulse dépend de RTSS, pas
@@ -150,6 +172,7 @@ les paramètres du limiteur souhaités avant la désinstallation.
 **Est-ce une fork de RTSS ?** Non. C'est un gestionnaire indépendant ;
 aucun code source ni exécutable RTSS n'y est intégré.
 
+<a id="upstream-modifications-and-credits"></a>
 ## Origine, modifications et crédits
 
 Le dépôt de développement vient de
@@ -166,6 +189,7 @@ non modifié, des scripts/traductions adaptés et un bootstrap du projet.
 
 [Provenance complète](../docs/provenance.fr.md) · [Composants tiers](../THIRD_PARTY_NOTICES.md)
 
+<a id="license"></a>
 ## Licence
 
 La notice distribue explicitement NVRasterPulse sous la [licence MIT fournie](LICENSE),

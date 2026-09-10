@@ -1,4 +1,15 @@
-🌐 **Language:** English | [Français](support.fr.md) · [Home](../README.md)
+<!-- nv-language-navigation:start -->
+🌐 English | [Français](support.fr.md) · [NV Laboratory](../README.md)
+
+<details>
+<summary>🌐 Language · 34</summary>
+
+[العربية](languages/ar/docs/support.md) · [বাংলা](languages/bn/docs/support.md) · [简体中文](languages/zh/docs/support.md) · [Čeština](languages/cs/docs/support.md) · [Dansk](languages/da/docs/support.md) · [Nederlands](languages/nl/docs/support.md) · **English** · [Filipino](languages/fil/docs/support.md) · [Suomi](languages/fi/docs/support.md) · [Français](support.fr.md) · [Deutsch](languages/de/docs/support.md) · [Ελληνικά](languages/el/docs/support.md) · [हिन्दी](languages/hi/docs/support.md) · [Magyar](languages/hu/docs/support.md) · [Bahasa Indonesia](languages/id/docs/support.md) · [Italiano](languages/it/docs/support.md) · [日本語](languages/ja/docs/support.md) · [한국어](languages/ko/docs/support.md) · [मराठी](languages/mr/docs/support.md) · [فارسی](languages/fa/docs/support.md) · [Polski](languages/pl/docs/support.md) · [Português](languages/pt/docs/support.md) · [ਪੰਜਾਬੀ](languages/pa/docs/support.md) · [Română](languages/ro/docs/support.md) · [Русский](languages/ru/docs/support.md) · [Español](languages/es/docs/support.md) · [Kiswahili](languages/sw/docs/support.md) · [Svenska](languages/sv/docs/support.md) · [தமிழ்](languages/ta/docs/support.md) · [ไทย](languages/th/docs/support.md) · [Türkçe](languages/tr/docs/support.md) · [Українська](languages/uk/docs/support.md) · [اردو](languages/ur/docs/support.md) · [Tiếng Việt](languages/vi/docs/support.md)
+
+[Translation policy](languages/README.md)
+
+</details>
+<!-- nv-language-navigation:end -->
 
 # Compatibility and troubleshooting
 

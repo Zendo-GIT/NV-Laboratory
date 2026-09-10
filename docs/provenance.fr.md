@@ -1,11 +1,24 @@
-🌐 **Langue :** [English](provenance.md) | Français · [Accueil](../README.fr.md)
+<!-- nv-language-navigation:start -->
+🌐 [English](provenance.md) | Français · [NV Laboratory](../README.fr.md)
 
+<details>
+<summary>🌐 Language · 34</summary>
+
+[العربية](languages/ar/docs/provenance.md) · [বাংলা](languages/bn/docs/provenance.md) · [简体中文](languages/zh/docs/provenance.md) · [Čeština](languages/cs/docs/provenance.md) · [Dansk](languages/da/docs/provenance.md) · [Nederlands](languages/nl/docs/provenance.md) · [English](provenance.md) · [Filipino](languages/fil/docs/provenance.md) · [Suomi](languages/fi/docs/provenance.md) · **Français** · [Deutsch](languages/de/docs/provenance.md) · [Ελληνικά](languages/el/docs/provenance.md) · [हिन्दी](languages/hi/docs/provenance.md) · [Magyar](languages/hu/docs/provenance.md) · [Bahasa Indonesia](languages/id/docs/provenance.md) · [Italiano](languages/it/docs/provenance.md) · [日本語](languages/ja/docs/provenance.md) · [한국어](languages/ko/docs/provenance.md) · [मराठी](languages/mr/docs/provenance.md) · [فارسی](languages/fa/docs/provenance.md) · [Polski](languages/pl/docs/provenance.md) · [Português](languages/pt/docs/provenance.md) · [ਪੰਜਾਬੀ](languages/pa/docs/provenance.md) · [Română](languages/ro/docs/provenance.md) · [Русский](languages/ru/docs/provenance.md) · [Español](languages/es/docs/provenance.md) · [Kiswahili](languages/sw/docs/provenance.md) · [Svenska](languages/sv/docs/provenance.md) · [தமிழ்](languages/ta/docs/provenance.md) · [ไทย](languages/th/docs/provenance.md) · [Türkçe](languages/tr/docs/provenance.md) · [Українська](languages/uk/docs/provenance.md) · [اردو](languages/ur/docs/provenance.md) · [Tiếng Việt](languages/vi/docs/provenance.md)
+
+[Translation policy](languages/README.md)
+
+</details>
+<!-- nv-language-navigation:end -->
+
+<a id="provenance-changes-and-licensing"></a>
 # Provenance, modifications et licences
 
 Audit des candidates préparées le **2026-09-09**. Les sources applicatives restent
 privées ; les inventaires publics donnent noms et empreintes, sans code source.
 Le [tableau complet](../THIRD_PARTY_NOTICES.md) conserve les notices applicables.
 
+<a id="nvidia-profile-inspector--nv-tools-fork"></a>
 ## NVIDIA Profile Inspector – NV Tools Fork
 
 Référence Orbmu2k/nvidiaProfileInspector :
@@ -30,6 +43,7 @@ chemin upstream comparé. Une absence à ce chemin ne prouve pas une création o
 Les chemins du manifeste servent à la traçabilité ; les sources correspondantes
 ne sont pas publiées. Tests, mocks et ancien paquet combiné NVPI/RasterPulse sont exclus.
 
+<a id="nvdriverforge"></a>
 ## NVDriverForge
 
 Application C#/.NET 8/WPF indépendante, partiellement inspirée du parcours
@@ -45,14 +59,20 @@ Héritage/adaptations : quatre palettes NVPI, référence de l'interface DRS NVA
 son intégration transactionnelle appartiennent à NVDriverForge. Le preset n'est
 pas une recommandation officielle NVIDIA.
 
-7-Zip 26.03, .NET/WPF 8.0.30 et Inno Setup restent non modifiés et sous leurs conditions.
+7-Zip 26.03, .NET/WPF 8.0.31 et Inno Setup restent non modifiés et sous leurs conditions.
 Les données NVENC keylase ne sont pas embarquées : le téléchargement demandé fixe
 un commit et vérifie sa correspondance. Aucune licence de redistribution de ces
 données n'a été établie par cet audit.
 
+<a id="nvmfg-unlock40"></a>
 ## NVMFG Unlock40
 
-Origine : dashdogy/RTX40MFG-Unlock, Michael Robles, MIT, référence
+NVMFG Unlock40 a été développé indépendamment par 禅堂 Zendo (RevoluSound Team).
+Le mainteneur a utilisé RTX40MFG-Unlock pour comparer et parfaire son travail.
+L'application entière n'est pas présentée comme sa fork. Cette distinction ne
+supprime pas les crédits des composants partagés/adaptés de la couche native actuelle.
+
+Référence de comparaison : dashdogy/RTX40MFG-Unlock, Michael Robles, MIT, commit
 `4e776d068f91b4a665425542bb005dd57cc3d891`.
 Sur les 48 fichiers du moteur comparés : 35 différences de formatage seulement,
 4 modifications et 9 fichiers absents au chemin de référence.
@@ -69,10 +89,12 @@ nvidia_mfg_policy, temporal_interval_trace, ngx_bootstrap, game_selection et
 vsync_observer, avec assembleur entry_detour et MinHook buffer/hook/trampoline/HDE64.
 Frontend ReShade hérité, anciens shims et cibles CMake inutilisées ne sont pas compilés.
 
-L'upstream apportait déjà les patchs, politiques de fournisseur et travaux temporels.
-Coordination centrale NGX/contrôleur, gestion V-Sync par jeu, diagnostics et gestion
-Windows/SDK/sauvegardes sont des ajouts et adaptations de 禅堂 Zendo (RevoluSound Team).
-Il ne s'agit pas d'une création intégrale du moteur d'origine.
+Les composants communs concernent les patchs, politiques de fournisseur et travaux
+temporels ; leurs copyrights et permissions sont conservés. La coordination centrale
+NGX/contrôleur, la gestion V-Sync par jeu, les diagnostics et le parcours Windows/SDK/
+sauvegardes sont des travaux de 禅堂 Zendo (RevoluSound Team). Les comptes ci-dessus
+décrivent des fichiers, dont des dépendances et fichiers inutilisés, et ne représentent
+ni un pourcentage de paternité ni la chronologie de l'idée des deux projets.
 
 Le helper adapte NvapiDrsWrapper et NativeArrayHelper de NVPI, avec logique de
 profils propre et exclusion des mocks. Les palettes familiales proviennent de NVPI.
@@ -98,6 +120,7 @@ ne constitue pas une validation juridique. La courte notice initiale est complé
 par le texte intégral, transcodé de Windows-1252 en UTF-8 pour la lecture ; les
 octets originaux sont aussi conservés.
 
+<a id="nvrasterpulse"></a>
 ## NVRasterPulse
 
 Gestionnaire RTSS indépendant, développé dans le dépôt issu de NVPI.
@@ -112,9 +135,10 @@ Aucun source, hook DLL, SDK ou installateur RTSS n'est inclus. Le pont appelle l
 d'une installation existante choisie par l'utilisateur. Aucun pilote NVIDIA, moteur
 expérimental indépendant, Framepacer, MinHook, ReShade ou runtime DLSS n'est distribué.
 
+<a id="assets-generated-data-and-tools"></a>
 ## Assets, données générées et outils
 
-Les [crédits des images](../assets/README.md) identifient trois rendus existants et
+Les [crédits des images](../assets/README.md) identifient les rendus existants, le sélecteur NVPI et
 leurs données fictives. Aucun asset de jeu/Nexus, profil personnel, ICC privé,
 logo corporate NVIDIA ou fichier de police n'est copié.
 
@@ -128,6 +152,7 @@ Inno Setup et scripts Python d'audit. Compilateurs, en-têtes, tests et artefact
 debug ne sont pas distribués. Le CRT statique de production conserve les conditions
 Microsoft applicables à la chaîne de compilation.
 
+<a id="scope-of-verification"></a>
 ## Périmètre des vérifications
 
 L'audit a inventorié les trois racines de développement, hors objets Git et cibles
@@ -141,8 +166,15 @@ autonome, avec les contrôles Inno et le bootstrap communs. Des fixtures privée
 claires/sombres ont vérifié le clavier, la souris et les 34 langues explicites.
 Le sélecteur du vrai setup a été ouvert sur un bureau privé jamais affiché, puis
 annulé avant installation. Les sept fichiers applicatifs et le ZIP portable restent
-identiques. NVDriverForge 0.1.2 conserve son ancien compagnon embarqué, qui reçoit `/LANG`.
+identiques. NVDriverForge 0.1.3 inclut le compagnon corrigé et transmet toujours `/LANG`.
 
-Aucun code fonctionnel applicatif n'a changé. Les builds et tests applicatifs
+NVDriverForge 0.1.3 a été terminé le 2026-09-10. Son rapport privé consigne
+366 tests applicatifs, 118 contrôles du compagnon, 32 contrôles Setup, 156
+comparaisons natives et 34 transmissions de langue. La sélection protégée des
+composants a été rejouée sur un paquet NVIDIA original sans modifier son contenu
+ni installer le pilote. Ce sont des résultats datés de la tâche produit, pas
+des tests relancés par cette mise à jour documentaire ni une installation réelle validée.
+
+Cette mise à jour du hub ne modifie aucun code fonctionnel applicatif. Les builds et tests applicatifs
 antérieurs restent des preuves historiques datées. Le contrôle n'est pas une
 rétro-ingénierie exhaustive ni une garantie contre tout motif de secret.
