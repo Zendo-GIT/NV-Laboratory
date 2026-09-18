@@ -30,9 +30,9 @@
 | Proje | Amaç | Sürüm | Dokümantasyon | İndir |
 | --- | --- | --- | --- | --- |
 | **NVIDIA Profile Inspector – NV Tools Fork** | Ek ekran, renk, HDR ve ICC/WCS kontrollerine sahip NVIDIA sürücü profili düzenleyicisi. Eski adıyla NVPI Custom. | 3.0.2.3 | [Rehber](NVIDIA-Profile-Inspector/README.md) | [Paketler](docs/downloads.md#nvidia-profile-inspector) |
-| **NVDriverForge** | Sürücü bileşenlerini seçin, isteğe bağlı ayarları inceleyin ve orijinal NVIDIA sürücü paketini yükleyin. | 0.1.3 | [Rehber](NVDriverForge/README.md) | [Paketler](docs/downloads.md#nvdriverforge) |
-| **NVMFG Unlock40** | Oyun başına seçimler ve Streamline SDK bakımı ile deneysel RTX 40 MFG aracı. | 0.1.1 | [Rehber](NVMFG-Unlock40/README.md) | [Paketler ve durum](docs/downloads.md#nvmfg-unlock40) |
-| **NVRasterPulse** | Kesirli değerler, yedeklemeler ve tepsi erişimiyle RTSS FPS yürütülebilir dosya başına sınırlarını yönetin. | 0.1 | [Rehber](NVRasterPulse/README.md) | [Paketler](docs/downloads.md#nvrasterpulse) |
+| **NVDriverForge** | Kılavuzlu seçenekler, yedeklemeler ve kurtarma ile orijinal bir NVIDIA sürücüsü hazırlayın ve yükleyin. | 0.1.4 | [Rehber](NVDriverForge/README.md) | [Paketler](docs/downloads.md#nvdriverforge) |
+| **NVMFG Unlock40** | Deneysel RTX 40 MFG, kalıcı oyun kitaplığı, teşhis ve Streamline SDK bakımı. | 0.2.3 | [Rehber](NVMFG-Unlock40/README.md) | [Paketler ve durum](docs/downloads.md#nvmfg-unlock40) |
+| **NVRasterPulse** | Program başına RTSS FPS sınırlarını yönetin: tanılama, öneriler, duraklatma, geri alma ve profil paylaşımı. | 0.2 | [Rehber](NVRasterPulse/README.md) | [Paketler](docs/downloads.md#nvrasterpulse) |
 
 **İndirilenler:** [indirme sayfası](docs/downloads.md) her sürümün durumunu, dosyalarını ve SHA-256 değerlerini listeler. Deneysel özellikler ve uyumluluk sınırları proje kılavuzlarında açıklanmıştır.
 

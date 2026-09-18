@@ -18,35 +18,52 @@
 <a id="changelog"></a>
 # Wijzigingslog
 
-Deze hub volgt [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Inzendingen beschrijven deze repository; applicatieversies zijn onafhankelijk.
+Deze hub volgt [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Applicatieversies en releasedatums zijn onafhankelijk. De onderstaande voorbereide pakketten ontvangen hun feitelijke publicatiedatums op hun respectievelijke GitHub-releases.
 
 <a id="unreleased"></a>
 ## [Niet uitgebracht]
 
-<a id="added"></a>
-### Toegevoegd
-
-- Hub, complete projecthandleidingen en repositorydocumentatie in de 34 NV-toepassingstalen.
-- Taalkiezers die pagina's behouden, metadata voor de dekking van vertalingen en stabiele interne ankers.
-- Upstream-credits, volledige toepasselijke kennisgevingen en herkomst van het bestand.
-- RTSS-vereiste en officiële downloadlink voor NVRasterPulse.
-- Afzonderlijke RevoluSound Team-koppelingen.
-- Voorbereide pakketcatalogus voor de eerste release, SHA-256-verificatie en handmatige vrijgaveprocedure.
-- Bug-/functieformulieren, bijdrage en beveiligingsinstructies.
-- Alleen-lezen documentatie en controles op de publicatiegrenzen.
-
 <a id="changed"></a>
 ### Gewijzigd
 
-- NVMFG-attributie onderscheidt nu de onafhankelijk ontwikkelde applicatie,
-de vergelijkings-/verfijningsreferentie en de feitelijk gedeelde native componenten.   Bestaande auteursrechten, licenties en bestandsvergelijkingen blijven intact.
-- NVDriverForge-kandidaat bijgewerkt naar 0.1.3: gecorrigeerde afhandeling van optionele componenten,
-leesbare gelokaliseerde fouten en bijgewerkte runtime/companion-verpakkingen.
+- Vernieuw de hub en alle 34 documentatietalen voor NVDriverForge 0.1.4,
+NVMFG Unlock40 0.2.3 en NVRasterPulse 0.2, opgesteld op 18-09-2026.
+- NVDriverForge: gereedheidscontroles, native profielback-ups en bewaakt herstel,
+componentbegeleiding, herbruikbare voorkeuren, driverkits, gedetailleerde resultaten, lokale ondersteuningsrapporten en afzonderlijke applicatie-updates.
+- NVMFG: detectie van meerdere mappen, persistente bibliotheekcache, waargenomen MFG-activiteit,
+informatie over runtimemogelijkheden, uitsluiting bij volgende lancering, lokale diagnostiek, voorkeursoverdracht en optionele applicatie-updates.
+- NVRasterPulse: configuratiediagnostiek, FPS-suggesties, pauzeren/hervatten,
+ongedaan maken op één niveau, selectief importeren/exporteren van profielen, favorieten en verborgen vermeldingen.
+- Vernieuw pakket-hashes, release-opmerkingen en de herkomstkaart van de oorspronkelijke componenten.
+Laat de reeds gepubliceerde Profile Inspector 3.0.2.3/setup-r2-middelen ongewijzigd.
 
 <a id="fixed"></a>
 ### Vast
 
-- NVIDIA Profile Inspector – NV Tools Fork setup revisie 2 toont nu het gedeelde
-34-talenkiezer bij directe lancering. Expliciete taal en stil doorsturen blijven behouden; de editor en het draagbare pakket zijn ongewijzigd.
+- NVMFG-spelselectie/tellingen, Ctrl+D-afhandeling en voltooide voortgangsberichten;
+Wallpaper Engine is uitgesloten van gamedetectie. De afzonderlijk gerapporteerde 0.1.1-herstelblokkering blijft niet gereproduceerd en er wordt niet geclaimd dat deze is opgelost.
 
-Er worden geen historische data voor openbare release gereconstrueerd. Kandidaat-applicatieversies zijn 3.0.2.3, 0.1.3, 0.1.1 en 0.1; hun release-opmerkingen zijn bij hun eigen toekomstige releases gevoegd. Voorbereiding op 09-09-2026 is geen GitHub-releasedatum.
+<a id="initial-public-hub--2026-09-10"></a>
+## [Eerste publieke hub] – 10-09-2026
+
+<a id="added"></a>
+### Toegevoegd
+
+- Vier projecthandleidingen en repositorydocumentatie in 34 talen, met
+paginabehoudende selectors, stabiele ankers en metadata voor de vertalingsdekking.
+- Componentcredits, originele licenties, herkomst, RTSS-vereisten en
+afzonderlijke RevoluSound Team-koppelingen.
+- Handmatige releasepakketten, SHA-256-waarden, uitgifteformulieren, beveiligingsbeleid en
+alleen-lezen documentatievalidatie. Applicatiebronnen blijven privé.
+- Eerste openbare tags: `nvpi-v3.0.2.3`, `nvdriverforge-v0.1.3`,
+`nvmfg-unlock40-v0.1.1` en `nvrasterpulse-v0.1`.
+
+<a id="included-fixes"></a>
+### Inclusief reparaties
+
+- Profile Inspector installatieprogramma revisie 2: de zelfstandige 34-talenkiezer;
+editor en draagbare payload ongewijzigd.
+- NVDriverForge 0.1.3: afhandeling van optionele componenten gecorrigeerd en gelokaliseerd
+samenvattingen van fouten, met bijgewerkte runtime- en begeleidende verpakkingen.
+
+De bovenstaande data zijn geverifieerde geschiedenis van de openbare hub, geen gereconstrueerde ontwikkelingsdata.

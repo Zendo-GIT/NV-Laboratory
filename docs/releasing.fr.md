@@ -37,9 +37,9 @@ les pièces jointes binaires. [Confidentialité de l'adresse des commits](https:
 | Outil | Tag | Politique de version |
 | --- | --- | --- |
 | NVIDIA Profile Inspector – NV Tools Fork | nvpi-v3.0.2.3 | Version applicative à quatre parties conservée ; setup révision 2 identifié séparément |
-| NVDriverForge | nvdriverforge-v0.1.3 | Numérotation 0.x conservée ; anciens paquets préservés |
-| NVMFG Unlock40 | nvmfg-unlock40-v0.1.1 | Candidate UI2 identifiée par ses hashes sans inventer une version applicative |
-| NVRasterPulse | nvrasterpulse-v0.1 | Version à deux parties conservée |
+| NVDriverForge | nvdriverforge-v0.1.4 | Numérotation 0.x conservée ; anciens paquets préservés |
+| NVMFG Unlock40 | nvmfg-unlock40-v0.2.3 | Version applicative 0.2.3 ; changements cumulés depuis la publication 0.1.1 |
+| NVRasterPulse | nvrasterpulse-v0.2 | Version à deux parties conservée |
 
 Le mainteneur peut publier directement ou autoriser un assistant à publier les
 assets audités. La publication est explicite ; aucun workflow ne crée une Release
@@ -58,11 +58,14 @@ ce hub documentaire. Les sources applicatives restent privées. Les notices des
 composants sont conservées et une Release ne résout pas la réserve NVIDIA de NVMFG.
 
 <a id="integrity-and-storage"></a>
+
+La mise à jour du 18 septembre prépare trois nouveaux tags ; la Release Profile Inspector existante reste inchangée. Les noms des fichiers, les tags et `SHA256SUMS.txt` doivent rester exacts pour les mises à jour intégrées aux applications. Publiez des Releases normales, sans cocher prerelease, pour les rendre visibles aux recherches de versions stables ; NVMFG conserve son caractère expérimental.
+
 ## Intégrité et stockage
 
 Ne remplacez jamais silencieusement un binaire publié : utilisez une version ou
 révision explicite et de nouveaux hashes. Les notices complémentaires s'ajoutent
-aux notices embarquées. Le portable NVDriverForge 0.1.3 fait 141 760 351 octets,
+aux notices embarquées. Le portable NVDriverForge 0.1.4 fait 142 017 891 octets,
 au-dessus de la limite Git ordinaire de 100 Mio. Les pièces jointes de Releases
 évitent de stocker des binaires ou Git LFS dans le hub.
 [Documentation GitHub](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).

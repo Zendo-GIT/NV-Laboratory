@@ -24,8 +24,8 @@ des fichiers. Les programmes sont indépendants : choisissez ceux dont vous avez
 | --- | --- | --- | --- |
 | NVIDIA Profile Inspector – NV Tools Fork | NVPI-CustomNV-3.0.2.3-Setup-r2.exe | Extraire le ZIP NVPI complet | Pilote NVIDIA et .NET Framework 4.8 |
 | NVDriverForge | NVDriverForge-Setup.exe | NVDriverForge.exe, runtime inclus | Paquet NVIDIA original compatible pour installer le pilote |
-| NVMFG Unlock40 | NVMFGUnlock40-0.1.1-Setup-x64.exe | Extraire tout le ZIP avec ses sous-dossiers | RTX 40, DLSS FG existant, fournisseur exact et helpers .NET Framework 4.8 |
-| NVRasterPulse | NVRasterPulse-0.1-win-x64-Setup.exe | Extraire tout le ZIP RP | RTSS et .NET Framework 4.8 |
+| NVMFG Unlock40 | NVMFGUnlock40-0.2.3-Setup-x64.exe | Extraire tout le ZIP avec ses sous-dossiers | RTX 40, DLSS FG existant, fournisseur exact et helpers .NET Framework 4.8 |
+| NVRasterPulse | NVRasterPulse-0.2-win-x64-Setup.exe | Extraire tout le ZIP RP | RTSS et .NET Framework 4.8 |
 
 <a id="download-verify-install"></a>
 ## Télécharger, vérifier, installer

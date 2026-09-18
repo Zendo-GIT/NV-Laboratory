@@ -23,9 +23,9 @@ Disse er de forberedte kandidater, ikke en certificeringsmatrix for alle Windows
 | Værktøj | Windows / køretid | Hardware / ekstern afhængighed | Operationer, der kræver pleje |
 | --- | --- | --- | --- |
 | NVPI fork 3.0.2.3 | Windows 10/11 x64, .NET Framework 4.8 | Kompatibel NVIDIA driver/skærm | Profil skriver og viser forhåndsvisninger |
-| NVDriverForge 0.1.2 | Windows 10 build 19041+ / 11 x64; .NET/WPF inkluderet | Kompatibel NVIDIA driverpakke | Forhøjet installation, avancerede indstillinger, valgfri NVENC |
-| NVMFG Unlock40 0.1.1 | Windows 10/11 x64; .NET/WPF inkluderet, Framework 4.8 hjælpere | RTX 40, kvalificeret DLSS FG-spil og fastgjort udbyder | Native in-game patching, global profiljournal, SDK spilopdateringer |
-| NVRasterPulse 0.1 | Windows 10/11 x64, .NET Framework 4.8 | RTSS installeret; løber efter kasketter | RTSS pr. eksekverbare profilændringer |
+| NVDriverForge 0.1.4 | Windows 10 build 19041+ / 11 x64; .NET/WPF inkluderet | Kompatibel NVIDIA driverpakke | Forhøjet installation, avancerede indstillinger, valgfri NVENC |
+| NVMFG Unlock40 0.2.3 | Windows 10/11 x64; .NET/WPF inkluderet, Framework 4.8 hjælpere | RTX 40, kvalificeret DLSS FG-spil og fastgjort udbyder | Native in-game patching, global profiljournal, SDK spilopdateringer |
+| NVRasterPulse 0.2 | Windows 10/11 x64, .NET Framework 4.8 | RTSS installeret; løber efter kasketter | RTSS pr. eksekverbare profilændringer |
 
 Ingen ARM64-pakke er forberedt. Display/API tilgængelighed og gamle Windows versioner kan begrænse individuelle funktioner. Ingen universel minimumsversion af NVIDIA eller RTSS er opfundet. Den nøjagtige NVMFG-udbyder-hash er i [herkomst](provenance.md).
 
@@ -47,6 +47,8 @@ Brug [fejlform](https://github.com/Zendo-GIT/NV-Laboratory/issues/new?template=b
 | NVMFG afventende indstillinger | Løs gendannelse med lukkede spil, og bevar ændringer fra andre værktøjer. |
 | RP-hætten har ingen effekt | Kør RTSS, identificer den rigtige spil-EXE, inspicér hook-tilstand og konkurrerende grænser. |
 | RP hætten fortsætter efter fjernelse | Undersøg RTSS Global; ændringer i fjernelse kun lokal begrænser tilsidesætter. |
+
+NVDriverForge tilbyder en lokal JSON-rapport, der kan forhåndsvises; NVMFG tilbyder en diagnostik i Om. Foretrække disse filtrerede rapporter frem for et komplet logarkiv, og inspicér dem før deling. En restaureringsblokering rapporteret på NVMFG 0.1.1 har stadig ingen fastlagt årsag; bevare sin journal og registrere enhver tilgængelig fejlkode. NVRasterPulse 0.2 tilbyder konfigurationsdiagnostik i sin handlingsmenu uden at måle FPS.
 
 <a id="logs-and-privacy"></a>
 ## Logfiler og privatliv

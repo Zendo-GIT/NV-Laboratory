@@ -37,9 +37,9 @@ Nikdy nevybírejte nadřazený vývojový pracovní prostor, soukromý adresář
 | Nástroj | Tag | Zásady verzí |
 | --- | --- | --- |
 | NVIDIA Profile Inspector – NV Tools Fork | nvpi-v3.0.2.3 | Stávající čtyřdílná verze aplikace; setup revize 2 má svůj vlastní název souboru |
-| NVDriverForge | nvdriverforge-v0.1.3 | Stávající schéma 0.x; verzované aktualizace zachovávají dřívější balíčky |
-| NVMFG Unlock40 | nvmfg-unlock40-v0.1.1 | Kandidát UI2 identifikovaný přesnými hashemi bez vymýšlení nové verze aplikace |
-| NVRasterPulse | nvrasterpulse-v0.1 | Stávající dvoudílná verze |
+| NVDriverForge | nvdriverforge-v0.1.4 | Stávající schéma 0.x; verzované aktualizace zachovávají dřívější balíčky |
+| NVMFG Unlock40 | nvmfg-unlock40-v0.2.3 | Verze aplikace 0.2.3; kumulativní změny od veřejného 0.1.1 |
+| NVRasterPulse | nvrasterpulse-v0.2 | Stávající dvoudílná verze |
 
 Správce může publikovat přímo nebo pověřit asistenta zveřejněním auditovaných aktiv. Publikace je explicitní; žádný pracovní postup nevytváří vydání při každém potvrzení.
 
@@ -52,10 +52,13 @@ Správce může publikovat přímo nebo pověřit asistenta zveřejněním audit
 
 Odkazy na tagy pro jednotlivé projekty zabraňují odesílání uživatelů na jiný nástroj prostřednictvím sdíleného odkazu `releases/latest`. Tento dokumentační centrum obsahují automatické archivy **Source code** GitHub. Zdroje aplikací zůstávají soukromé. Původní upozornění na součásti zůstávají nedotčeny a vydání neřeší zdokumentovanou rezervu NVIDIA SDK NVMFG.
 
+
+Aktualizace z 18. září připravuje tři nové tagy; stávající vydání Profile Inspector zůstává nezměněno. Názvy prostředků, značky a `SHA256SUMS.txt` musí zůstat přesné pro kontroly aktualizací aplikace. Publikovat normální vydání bez příznaku předběžného vydání, aby byly vystaveny kontrolám stabilního vydání; NVMFG zůstává experimentální.
+
 <a id="integrity-and-storage"></a>
 ## Integrita a úložiště
 
-Nikdy tiše nenahrazujte publikované binární bajty. Použijte novou explicitní verzi nebo revizi instalačního programu s novými hodnotami hash. Právní postranní vozíky doplňují vložená oznámení. NVDriverForge Přenosný 0.1.3 má 141 760 351 bajtů, nad běžným limitem 100 MiB Git souboru GitHub. Uvolněte přílohy zabraňují vkládání binárních souborů nebo Git LFS do tohoto centra. [GitHub navádění velkých souborů](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
+Nikdy tiše nenahrazujte publikované binární bajty. Použijte novou explicitní verzi nebo revizi instalačního programu s novými hodnotami hash. Právní postranní vozíky doplňují vložená oznámení. NVDriverForge Přenosný 0.1.4 má 142 017 891 bajtů, což je nad běžným limitem 100 MiB Git souboru GitHub. Uvolněte přílohy zabraňují vkládání binárních souborů nebo Git LFS do tohoto centra. [GitHub navádění velkých souborů](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
 
 Soukromé hlášení o chybách zabezpečení by mělo být povoleno v nastavení zabezpečení úložiště. Před přesměrováním citlivých hlášení tam ověřte jeho dostupnost; [SECURITY.md](../SECURITY.md) poskytuje záložní řešení, které neodhaluje podrobnosti o zranitelnosti.
 

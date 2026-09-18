@@ -23,9 +23,9 @@ Bunlar, tüm Windows, GPU, sürücü ve oyun kombinasyonları için bir sertifik
 | Araç | Windows / çalışma zamanı | Donanım / dış bağımlılık | Dikkat gerektiren işlemler |
 | --- | --- | --- | --- |
 | NVPI fork 3.0.2.3 | Windows 10/11 x64, .NET Çerçevesi 4.8 | Uyumlu NVIDIA sürücüsü/ekran | Profil yazar ve önizlemeleri görüntüler |
-| NVDriverForge 0.1.2 | Windows 10 derlemesi 19041+ / 11 x64; .NET/WPF dahil | Uyumlu NVIDIA sürücü paketi | Yükseltilmiş kurulum, gelişmiş ayarlar, isteğe bağlı NVENC |
-| NVMFG Unlock40 0.1.1 | Windows 10/11x64; .NET/WPF dahil, Framework 4.8 yardımcıları | RTX 40, uygun DLSS FG oyunu ve sabitlenmiş sağlayıcı | Yerel oyun içi yama, küresel profil günlüğü, SDK oyun güncellemeleri |
-| NVRasterPulse 0.1 | Windows 10/11 x64, .NET Çerçevesi 4.8 | RTSS yüklü; kapaklar için koşuyorum | RTSS yürütülebilir dosya başına profil değişiklikleri |
+| NVDriverForge 0.1.4 | Windows 10 derlemesi 19041+ / 11 x64; .NET/WPF dahil | Uyumlu NVIDIA sürücü paketi | Yükseltilmiş kurulum, gelişmiş ayarlar, isteğe bağlı NVENC |
+| NVMFG Unlock40 0.2.3 | Windows 10/11x64; .NET/WPF dahil, Framework 4.8 yardımcıları | RTX 40, uygun DLSS FG oyunu ve sabitlenmiş sağlayıcı | Yerel oyun içi yama, küresel profil günlüğü, SDK oyun güncellemeleri |
+| NVRasterPulse 0.2 | Windows 10/11 x64, .NET Çerçevesi 4.8 | RTSS yüklü; kapaklar için koşuyorum | RTSS yürütülebilir dosya başına profil değişiklikleri |
 
 ARM64 paketi hazırlanmamıştır. Ekran/API kullanılabilirliği ve eski Windows sürümleri bireysel özellikleri sınırlayabilir. Hiçbir evrensel minimum NVIDIA veya RTSS sürümü icat edilmemiştir. Tam NVMFG sağlayıcı karması [kaynak](provenance.md)'tedir.
 
@@ -47,6 +47,8 @@ Açtığınız yürütülebilir dosyayı/sürümü tam olarak tanımlayın. Daha
 | NVMFG bekleyen ayarlar | Diğer araçlardaki değişiklikleri koruyarak kurtarma işlemini oyunlar kapalıyken gerçekleştirin. |
 | RP başlığının etkisi yoktur | RTSS'i çalıştırın, gerçek oyun EXE'sini tanımlayın, kanca durumunu ve rekabet sınırlarını inceleyin. |
 | RP kapağı çıkarıldıktan sonra da varlığını sürdürüyor | RTSS Global'i inceleyin; kaldırma işlemi yalnızca yerel sınırlayıcı geçersiz kılmalarını değiştirir. |
+
+NVDriverForge önizlenebilir bir yerel JSON raporu sunar; NVMFG, Hakkında bölümünde bir tanılama sunar. Filtrelenen bu raporları eksiksiz bir günlük arşivine tercih edin ve paylaşmadan önce inceleyin. NVMFG 0.1.1'te bildirilen restorasyon tıkanıklığının hâlâ belirlenmiş bir nedeni yoktur; günlüğünü koruyun ve mevcut hata kodlarını kaydedin. NVRasterPulse 0.2, FPS'i ölçmeden, eylemler menüsünde yapılandırma tanılama olanağı sunar.
 
 <a id="logs-and-privacy"></a>
 ## Günlükler ve gizlilik

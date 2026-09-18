@@ -18,7 +18,7 @@
 <a id="provenance-changes-and-licensing"></a>
 # Härkomst, ändringar och licensiering
 
-Denna granskning beskriver de kandidater som förbereddes **2026-09-09**. Applikationskällor förblir privata; de offentliga inventeringarna innehåller filnamn och hash, inte källkod. Se [fullständiga komponentmeddelanden](../THIRD_PARTY_NOTICES.md).
+Denna granskning beskriver de kandidater som förbereddes **2026-09-18**. Applikationskällor förblir privata; de offentliga inventeringarna innehåller filnamn och hash, inte källkod. Se [fullständiga komponentmeddelanden](../THIRD_PARTY_NOTICES.md).
 
 <a id="nvidia-profile-inspector--nv-tools-fork"></a>
 ## NVIDIA Profile Inspector – NV Tools Fork
@@ -68,11 +68,13 @@ Hjälparen anpassar NVPI:s NvapiDrsWrapper och NativeArrayHelper till en separat
 
 MinHook referens: `8fda4f5481fed5797dc2651cd91e238e9b3928c6`; den ärvda kompilerade delmängden har inga funktionella lokala förändringar i jämförelsen. Streamline-integrationshuvuden: 2.12; open header-licens verifierad på v2.12.0. NGX rubrikkälla: NVIDIA/DLSS commit `a291cc7d2cc642a51566f3dfd5376f635cd1b284`.
 
-Kandidatmotor SHA-256: `0E7FC0277C88B22095B622F6A3CB292EC0C14F7A0253D392502257B75E548890`.
+Kandidatmotor SHA-256: `C793770D329B99CD9C5C640317CE435BFE353CA2868E36CF5DCD4D5295EFAE13`.
 
 Obligatorisk leverantör SHA-256 i engine.json: `C64928FDB7C48A57722EA8EEF2662171EDC323473ADEA66C29A206A23F1A2BED`. En rapporterad 310.9-leverantörsfamilj är inte utbytbar med denna exakta hash. Ingen leverantörs-DLL eller modell ingår.
 
 **Utestående licensieringspunkt:** hela NVIDIA RTX SDK-licensen, version 14 mars 2024, innehåller en begränsning i avsnitt 4(d) som är relevant för att kringgå tekniska begränsningar. Revisionen fastställer inte tillstånd för denna användning. Att behålla MIT-motorlicensen, vara gratis eller observera andra mods löser inte det separata villkoret. Kandidatförberedelser är inte ett juridiskt godkännande. Det ursprungliga korta rubrikmeddelandet kompletteras med den fullständiga licensen; dess Windows-1252-text tillhandahålls också som läsbar UTF-8, med bibehållna originalbytes.
+
+Den ursprungliga jämförelsen beräknades om för 0.2.3: samma 48 filer och klassificeringar. Sedan föregående granskning har `game_selection.cpp`, `game_selection.h` och `patcher.cpp` ändrats för observationer av aktivitet/kapacitet. Nya arbetsflöden för bibliotek, diagnostik, preferenser, uppdateringar och urval tillhör underhållsapplikationen. Komponentlicenser och den nödvändiga leverantörshashen är oförändrade.
 
 <a id="nvrasterpulse"></a>
 ## NVRasterPulse
@@ -102,3 +104,5 @@ Den senare NVPI-installationsversionen 2 fixar fristående språkval med hjälp 
 NVDriverForge 0.1.3 färdigställdes 2026-09-10. Dess privata verifieringsrapport registrerar 366 applikationstester, 118 kompletterande kontroller, 32 inställningskontroller, 156 inhemska jämförelser och 34 fall för vidarebefordran av språk. Den skyddade komponentvalsfixen spelades upp mot ett originaldrivrutinpaket utan att ändra dess nyttolast eller installera drivrutinen. Dessa är daterade produktteamresultat, inte tester som körs om av den här dokumentationsuppdateringen eller bevis på en lyckad riktig drivrutinsinstallation.
 
 Denna navuppdatering ändrar ingen funktionell applikationskod. Tidigare applikationsbygg-/enhets-/UI-tester förblir daterade historiska bevis. Detta är inte fullständig reverse engineering av alla binära filer från tredje part eller en garanti mot alla möjliga hemliga mönster.
+
+Uppdatering 18 september 2026: NVDriverForge 0.1.4 lägger till beredskapskontroller, inbyggd profilsäkerhetskopiering, komponentvägledning, inställningar och kit, detaljerade resultat, lokal rapportering och programuppdateringar. NVRasterPulse 0.2 lägger till konfigurationsdiagnostik, FPS-vägledning, pausa/återuppta, ångra, `.nvrp`-profiler och favoriter/gömma, utan en ny limitermotor. Individuella guider beskriver användning och begränsningar. Statiska navkontroller är separata från applikationstesterna som registrerades i de privata rapporterna den 18 september; ingen drivrutinsinstallation, riktig profilimport eller latensmätning utfördes för denna hubb.

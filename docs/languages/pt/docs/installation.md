@@ -27,8 +27,8 @@ Comece com [Transferências](downloads.md), que registra o status da publicaçã
 | --- | --- | --- | --- |
 | NVIDIA Profile Inspector – NV Tools Fork | NVPI-CustomNV-3.0.2.3-Setup-r2.exe | Extraia o ZIP NVPI completo | Driver NVIDIA e .NET Framework 4.8 |
 | NVDriverForge | NVDriverForge-Setup.exe | NVDriverForge.exe, tempo de execução incluído | Pacote de driver NVIDIA original compatível para operações de instalação |
-| NVMFG Unlock40 | NVMFGUnlock40-0.1.1-Setup-x64.exe | Extraia o NVMFG ZIP completo, retenha subpastas | RTX 40, DLSS FG existente, provedor exato e auxiliares .NET Framework 4.8 |
-| NVRasterPulse | NVRasterPulse-0.1-win-x64-Setup.exe | Extraia o ZIP RP completo | RTSS e .NET Framework 4.8 |
+| NVMFG Unlock40 | NVMFGUnlock40-0.2.3-Setup-x64.exe | Extraia o NVMFG ZIP completo, retenha subpastas | RTX 40, DLSS FG existente, provedor exato e auxiliares .NET Framework 4.8 |
+| NVRasterPulse | NVRasterPulse-0.2-win-x64-Setup.exe | Extraia o ZIP RP completo | RTSS e .NET Framework 4.8 |
 
 <a id="download-verify-install"></a>
 ## Baixe, verifique, instale

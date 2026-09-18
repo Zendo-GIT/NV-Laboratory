@@ -20,7 +20,7 @@
 
 **Forbered en NVIDIA driverinstallation med klare komponentvalg og valgfrie indstillinger.**
 
-[Download 0.1.3 & status](../docs/downloads.md#nvdriverforge) · [Installation](#installation) · [Credits](#credits-and-upstream) · [Licens](../../../../NVDriverForge/LICENSE)
+[Download 0.1.4 & status](../docs/downloads.md#nvdriverforge) · [Installation](#installation) · [Credits](#credits-and-upstream) · [Licens](../../../../NVDriverForge/LICENSE)
 
 <a id="overview-and-purpose"></a>
 ## Overblik og formål
@@ -35,14 +35,15 @@ Det er en uafhængigt udviklet applikation, der er delvist inspireret af NVClean
 - NVIDIA Game Ready / Studio opslag og downloads; valgfri hotfix-opdagelse med manuel fallback.
 - Analyse af den originale pakke, hashes, NVIDIA-signaturer, manifester og kompatible INF-poster.
 - Komponentvalg med afhængigheder og bevarelse af ukendte komponenter.
-- Version 0.1.3 bevarer udvalgte valgfrie NVIDIA-komponenter, der kan springes over, og udelukker kun verificerede umarkerede komponenter fra opdagelse. Allerede nuværende eller uanvendelige valgfrie kørselstider tvinges ikke længere som kritiske komponenter.
+- Version 0.1.4 bevarer udvalgte valgfrie NVIDIA-komponenter, der kan springes over, og udelukker kun verificerede umarkerede komponenter fra opdagelse. Allerede nuværende eller uanvendelige valgfrie kørselstider tvinges ikke længere som kritiske komponenter.
 - Ryd installationsfejloversigter og adgang til detaljerede logfiler på alle 34 sprog.
-- Eksplicit installationsbekræftelse, beskyttet iscenesættelse og eksport af eksisterende driver-store-pakker.
+- Beredskabstjek, eksplicit bekræftelse, driver-store eksport og indbygget NVIDIA profil backup før installation.
 - Valgfri avancerede indstillinger med forhåndskontrol, journaler og konfliktbevidst genopretning.
 - Valgfri **Custom NV** forudindstilling med navngivne valg og forklaringer, inklusive et separat SILK styrkevalg og kompatibilitetstjek.
 - Valgfri nøjagtig version af NVENC-patch-downloads; kildebekræftelse og målbytes kontrolleres.
 - En separat, valgfri installation af Profile Inspector fork fra skærmen Værktøjer.
-- Valgfri installerede brugeropdateringstjek, 34 grænsefladesprog og fire temaer.
+- Komponentguide, genbrugelige præferencer, driversæt, lokale supportrapporter og valgfri applikationsopdateringer.
+- 34 grænsefladesprog og fire temaer.
 
 Tilgængelige avancerede muligheder vedrører MPO, DLSS-indikatoren, Ansel, NVIDIA-lydsøvn, MSI, afbrydelsespolitik/-prioritet, HDCP, opstart af display-container og en kvalificeret ældre telemetritjeneste. Hver har sine egne forudsætninger og virkninger; disse er ikke universelle præstationsforbedringer.
 
@@ -87,6 +88,21 @@ Valgfrit NVENC-arbejde downloader kompatible data fra en fastgjort keylase-commi
 
 Præferencer kontrollerer sprog, tema og valgfri opdateringskontrol for installerede brugere. Den bærbare computer opretter ikke den installerede baggrundskontrolopgave. Værktøjer og gendannelse er adskilt fra de fire installationstrin.
 
+<a id="backup-and-diagnostic-tools"></a>
+## Sikkerhedskopiering og diagnostiske værktøjer
+
+**Før installation:** Beredskabstjek dækker pakkesignaturen, GPU'er, anslået arbejdsområde/backupplads, afventende genstart og konkurrerende installatører. Den ophøjede arbejder gentager dem. Konkurrerende processer stoppes aldrig automatisk. Den native NVIDIA profil-database backup skal lykkes, før NVIDIA Setup starter; driver-store eksport er en separat backup.
+
+**Genanvendelige valg:** komponentguiden stiller fire spørgsmål om spil, lyd, NVIDIA App og optagelse. Gennemgå dens forslag; påkrævede, ukendte og afhængighedskomponenter forbliver beskyttede. Eksporter præferencer, og se dem derefter og genvalider dem i forhold til den valgte pakke ved import. Samtykke, genstartsoperationer, programstier og patch-nyttelast importeres ikke.
+
+**Driversæt:** eksporter en `.nvdfkit.zip` for at holde det originale signerede NVIDIA-installationsprogram, valg, hashes og instruktioner sammen. Bær `NVDriverForge.exe` separat. Importer sættet i Værktøjer, gennemse forhåndsvisningen, og brug derefter den normale installationsarbejdsgang. Dette er ikke en slank driver eller modificeret selvstændigt installationsprogram. Valgfri NVENC skal stadig downloades og samtykke til netop den driver. NVIDIA's omfordelingsbetingelser gælder stadig.
+
+**Resultater og support:** læs det korte resultat og udvid detaljerne pr. trin/pr. Succesfuld tilbagelæsning etablerer en lagret værdi, ikke en målt forbedring. Den lokale JSON-supportrapport bruger tilladelseslistede felter, inklusive det sidst gemte job efter genstart af appen. Se et eksempel, før du gemmer eller deler det. Det inkluderer ingen rå logfiler, profilindhold eller hardware-id'er og uploades aldrig automatisk.
+
+**Gendannelse:** Følg vejledningen til det beskyttede job for at gendanne den sikkerhedskopierede driver. Eksplicit profilgendannelse kræver den originale driverversion og samme GPU'er; den erstatter hele databasen, bevarer en aktuel kopi og kontrollerer hashes og modstridende tilstande. Slet ikke dens journal eller fremtving en uoverensstemmelse. Ægte driverinstallation, fuldstændig gendannelse og indbygget profilimport med denne nye arbejdsgang forbliver uvalideret på et rigtigt system.
+
+**Applikationsopdateringer:** læs udgivelsesbemærkningerne, og vælg derefter eksplicit en SHA-256-verificeret download. Kontrol er som standard manuel, med en valgfri kontrol ved opstart. Intet installationsprogram startes automatisk. Denne funktion er adskilt fra driveropdateringstjek og den installerede udgaves valgfri driverkontrolopgave.
+
 <a id="screenshots"></a>
 ## Skærmbilleder
 
@@ -101,7 +117,7 @@ Luk NVDriverForge, få den næste officielle pakke og bekræft dens hash. Brug d
 
 Uninstall fra Windows **Installed apps**. Det fjerner appen og dens opdateringsopgave, ikke NVIDIA-driveren. Indstillinger, logfiler og sikkerhedskopier forbliver. Gendan om ønsket avancerede/NVENC-ændringer gennem det dokumenterede gendannelsesflow **inden** du fjerner appen. Gendan afviser modstridende ændringer fra et andet værktøj.
 
-Lokale data er under `%LOCALAPPDATA%\NVDriverForge`; beskyttede job og førereksport er under `%PROGRAMDATA%\NVDriverForge\Jobs`. Bærbar brug skaber også lokale data. En driver-store eksport er ikke et systembillede eller en fuld profil backup.
+Lokale data er under `%LOCALAPPDATA%\NVDriverForge`; beskyttede job og førereksport er under `%PROGRAMDATA%\NVDriverForge\Jobs`. Bærbar brug skaber også lokale data. Driver-store eksport og den native profil backup er adskilt. Det er heller ikke et systembillede.
 
 <a id="known-limitations"></a>
 ## Kendte begrænsninger
@@ -120,7 +136,7 @@ Lokale data er under `%LOCALAPPDATA%\NVDriverForge`; beskyttede job og førereks
 | --- | --- |
 | Onlinekatalog ikke tilgængeligt | Vælg en original pakke fra [NVIDIA driver downloads](https://www.nvidia.com/en-us/drivers/). Udskift ikke en tilstødende GPU-model. |
 | Hotfix-opslag er ikke tilgængeligt | Brug [NVIDIA's Game Ready driverforum](https://www.nvidia.com/en-us/geforce/forums/game-ready-drivers/13/) og bekræft den faktiske pakke. |
-| Installationen af NVIDIA mislykkes | Læs fejloversigten, og åbn de detaljerede logfiler. Valgfrie komponenter, der allerede er aktuelle eller ikke anvendelige, kan springes over i 0.1.3. Mislykkede installationer udløser ikke valgfri tweaks eller et succes/genstartsflow. |
+| Installationen af NVIDIA mislykkes | Læs fejloversigten, og åbn de detaljerede logfiler. Valgfrie komponenter, der allerede er aktuelle eller ikke anvendelige, kan springes over i 0.1.4. Mislykkede installationer udløser ikke valgfri tweaks eller et succes/genstartsflow. |
 | Signatur/hash/sikkerhedskopieringsfejl | Stop installationen og behold fejlen; få den originale pakke igen, hvis den er beskadiget. |
 | Mulighed ikke tilgængelig | Læs årsagen til hardware, komponent eller måldriver; holde det uændret. |
 | Genstart eller job afventer stadig | Brug jobbets genoprettelsesinstruktioner og eksplicitte CV; slet ikke dens journal. |

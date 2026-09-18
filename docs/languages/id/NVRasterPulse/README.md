@@ -22,14 +22,14 @@
 
 > **Instal RTSS terlebih dahulu.** NVRasterPulse memerlukan [RivaTuner Statistics Server (RTSS), diunduh dari Guru3D](https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/). RTSS harus dijalankan untuk menerapkan batasan. Tidak ada penginstal RTSS, hook DLL, atau SDK yang disertakan.
 
-[Unduh 0.1 & status](../docs/downloads.md#nvrasterpulse) · [Instalasi](#installation) · [Bagaimana batasan bekerja](#usage) · [Lisensi](../../../../NVRasterPulse/LICENSE)
+[Unduh 0.2 & status](../docs/downloads.md#nvrasterpulse) · [Instalasi](#installation) · [Bagaimana batasan bekerja](#usage) · [Lisensi](../../../../NVRasterPulse/LICENSE)
 
 <a id="overview-and-purpose"></a>
 ## Ikhtisar dan tujuan
 
 NVRasterPulse adalah antarmuka Windows yang ringkas untuk mengelola batas bingkai RTSS berdasarkan nama yang dapat dieksekusi. RTSS melakukan pembatasan. NVRasterPulse mengelola nilai profil yang sesuai, permintaan pencadangan dan muat ulang, dengan akses baki dan pilihan tetap.
 
-Itu ada untuk membuat batas tepat per game lebih mudah diedit tanpa mengganti seluruh profil RTSS atau mengganggu pengaturan overlaynya. Kandidat **0.1** saat ini adalah build 9 September 2026 dengan pemeriksaan instalasi RTSS yang diperlukan.
+Itu ada untuk membuat batas tepat per game lebih mudah diedit tanpa mengganti seluruh profil RTSS atau mengganggu pengaturan overlaynya. Versi **0.2** menambahkan diagnostik konfigurasi, pembantu FPS, jeda, batalkan, dan berbagi profil.
 
 <a id="features"></a>
 ## Fitur
@@ -63,7 +63,7 @@ Tidak ada versi minimum RTSS spesifik yang telah disertifikasi untuk setiap fung
 
 1. **[Unduh dan instal RTSS dari Guru3D](https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/).**
 2. Buka [Unduhan NVRasterPulse](../docs/downloads.md#nvrasterpulse) dan periksa ketersediaan Rilis.
-3. Unduh `NVRasterPulse-0.1-win-x64-Setup.exe` atau `NVRasterPulse-0.1-win-x64-portable.zip`, ditambah pemberitahuan/checksum.
+3. Unduh `NVRasterPulse-0.2-win-x64-Setup.exe` atau `NVRasterPulse-0.2-win-x64-portable.zip`, ditambah pemberitahuan/checksum.
 4. Bandingkan SHA-256. Jalankan Setup atau ekstrak seluruh ZIP portabel ke folder lokal yang dapat ditulis.
 5. Buka `NVRasterPulse.exe`. Jika RTSS hilang, gunakan **Unduh RTSS**, instal, lalu **Periksa lagi**, atau pilih `RTSS.exe` secara manual.
 6. Mulai RTSS menggunakan pintasan normalnya atau tombol NVRasterPulse RTSS jika dihentikan.
@@ -87,6 +87,23 @@ Gunakan tindakan sampah untuk menghapus penggantian pembatas NVRasterPulse. Itu 
 **Menutup dan keluar:** jendela utama dapat disembunyikan di baki. **Keluar** yang normal membuat RTSS tetap berjalan dan batas yang disimpan tetap utuh. **Quit + RTSS** meminta penutupan normal proses RTSS yang cocok di sesi saat ini, menunggu hingga delapan detik dan tidak mematikannya secara paksa. Batasan yang tersimpan tetap ada dalam kedua kasus tersebut.
 
 Bahasa dan tema dipilih di aplikasi. Memulai saat masuk Windows bersifat opsional dan ditujukan untuk salinan yang diinstal. Tombol informasi menjelaskan tindakan umum.
+
+<a id="diagnostics-and-profile-tools"></a>
+## Alat diagnostik dan profil
+
+Buka menu tindakan untuk alat tambahan. Mereka mempertahankan RTSS Global, pengaturan overlay dan pengecualian.
+
+**Diagnostik:** memeriksa batas lokal/efektif, menghentikan RTSS, jendela eksekusi yang hilang, tidak terdeteksi, hooking yang dinonaktifkan, pewarisan, batas yang dijeda, setelan yang bersaing, dan duplikat nama yang dapat dieksekusi. Pemeriksaan read-only ini menjelaskan konfigurasi; itu tidak membuktikan suatu game terpikat oleh RTSS atau mengukur FPS-nya.
+
+**Pembantu FPS:** pilih tampilan dan nyatakan sendiri VRR/G-Sync, V-Sync, Reflex dan Frame Generation. Frekuensi penyegaran bulat berasal dari Windows. Jika Reflex atau Frame Generation aktif atau tidak diketahui, tidak ada batasan otomatis yang ditawarkan. Untuk VRR dengan V-Sync aktif dan Reflex/FG nonaktif, heuristik mengurangi setidaknya 3 FPS atau sekitar 2% dari kecepatan refresh. Ini bukanlah ukuran optimal yang terukur. Menerapkan saran akan mengisi draf; **Simpan** tetap merupakan tindakan terpisah.
+
+**Jeda dan lanjutkan:** menangguhkan batas program yang dipilih, lalu memulihkan bidang pembatas sebelumnya. Perubahan yang bertentangan dengan alat lain mencegah resume yang ambigu. Menyembunyikan entri tidak menghentikan batasnya.
+
+**Batalkan:** memulihkan perubahan terakhir pada enam bidang pembatas terkelola untuk program tersebut. Ada satu tingkat; ini tidak memulihkan semua RTSS. Perubahan eksternal yang bertentangan ditolak. Cadangan file tetap terpisah.
+
+**Bagikan profil:** mengekspor profil yang dipilih ke file `.nvrp`. Impor menampilkan pratinjau dan membiarkan batas yang ada tidak dicentang secara default. File tersebut hanya berisi nama, batasan, dan status yang dapat dieksekusi, tanpa jalur atau skrip absolut. Tinjau pilihan Anda dan lamar. Kesalahan I/O dapat membuat beberapa profil sudah diterapkan; hasilnya mengidentifikasi mereka dan masing-masing tetap membatalkannya. Nama identik yang dapat dieksekusi masih menggunakan profil RTSS yang sama.
+
+**Favorit dan entri tersembunyi:** sematkan program yang berguna terlebih dahulu, sembunyikan entri yang tidak diinginkan, dan pulihkan dalam dialog khusus. Pilihan-pilihan ini tetap ada. Favorit yang tertutup tidak muncul sebagai aplikasi yang sedang berjalan.
 
 <a id="screenshots"></a>
 ## Tangkapan layar

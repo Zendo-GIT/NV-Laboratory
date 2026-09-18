@@ -30,9 +30,9 @@
 | Mradi | Kusudi | Toleo | Nyaraka | Pakua |
 | --- | --- | --- | --- | --- |
 | **NVIDIA Profile Inspector – NV Tools Fork** | Mhariri wa wasifu wa dereva wa NVIDIA na onyesho lililoongezwa, rangi, vidhibiti vya HDR na ICC/WCS. Hapo awali, NVPI Custom. | 3.0.2.3 | [Mwongozo](NVIDIA-Profile-Inspector/README.md) | [Vifurushi](docs/downloads.md#nvidia-profile-inspector) |
-| **NVDriverForge** | Chagua vipengee vya kiendeshi, kagua marekebisho ya hiari na usakinishe kifurushi asili cha viendeshaji cha NVIDIA. | 0.1.3 | [Mwongozo](NVDriverForge/README.md) | [Vifurushi](docs/downloads.md#nvdriverforge) |
-| **NVMFG Unlock40** | Zana ya majaribio ya RTX 40 MFG yenye chaguo kwa kila mchezo na matengenezo ya Streamline SDK. | 0.1.1 | [Mwongozo](NVMFG-Unlock40/README.md) | [Vifurushi na hali](docs/downloads.md#nvmfg-unlock40) |
-| **NVRasterPulse** | Dhibiti vikomo vya RTSS FPS kwa kila inayoweza kutekelezeka, kwa thamani za sehemu, nakala rudufu na ufikiaji wa trei. | 0.1 | [Mwongozo](NVRasterPulse/README.md) | [Vifurushi](docs/downloads.md#nvrasterpulse) |
+| **NVDriverForge** | Andaa na usakinishe kiendeshi asili cha NVIDIA na chaguo zilizoongozwa, chelezo na uokoaji. | 0.1.4 | [Mwongozo](NVDriverForge/README.md) | [Vifurushi](docs/downloads.md#nvdriverforge) |
+| **NVMFG Unlock40** | RTX 40 MFG ya majaribio, maktaba ya mchezo endelevu, uchunguzi na matengenezo ya Streamline SDK. | 0.2.3 | [Mwongozo](NVMFG-Unlock40/README.md) | [Vifurushi na hali](docs/downloads.md#nvmfg-unlock40) |
+| **NVRasterPulse** | Dhibiti vikomo vya RTSS FPS kwa kila mpango: uchunguzi, mapendekezo, kusitisha, kutendua na kushiriki wasifu. | 0.2 | [Mwongozo](NVRasterPulse/README.md) | [Vifurushi](docs/downloads.md#nvrasterpulse) |
 
 **Vipakuliwa:** [ukurasa wa kupakua](docs/downloads.md) huorodhesha hali ya kila toleo, faili na thamani za SHA-256. Vipengele vya majaribio na vikomo vya uoanifu vimeelezewa katika miongozo ya mradi.
 

@@ -27,8 +27,8 @@ Begin met [Downloads](downloads.md), waarin de publicatiestatus en exacte itemna
 | --- | --- | --- | --- |
 | NVIDIA Profile Inspector – NV Tools Fork | NVPI-CustomNV-3.0.2.3-Setup-r2.exe | Pak de volledige NVPI ZIP uit | NVIDIA-stuurprogramma en .NET Framework 4.8 |
 | NVDriverForge | NVDriverForge-Setup.exe | NVDriverForge.exe, runtime inbegrepen | Compatibel origineel NVIDIA driverpakket voor installatiebewerkingen |
-| NVMFG Unlock40 | NVMFGUnlock40-0.1.1-Setup-x64.exe | Pak de volledige NVMFG ZIP uit, behoud submappen | RTX 40, bestaande DLSS FG, exacte provider en .NET Framework 4.8 helpers |
-| NVRasterPulse | NVRasterPulse-0.1-win-x64-Setup.exe | Pak de volledige RP ZIP uit | RTSS en .NET Framework 4.8 |
+| NVMFG Unlock40 | NVMFGUnlock40-0.2.3-Setup-x64.exe | Pak de volledige NVMFG ZIP uit, behoud submappen | RTX 40, bestaande DLSS FG, exacte provider en .NET Framework 4.8 helpers |
+| NVRasterPulse | NVRasterPulse-0.2-win-x64-Setup.exe | Pak de volledige RP ZIP uit | RTSS en .NET Framework 4.8 |
 
 <a id="download-verify-install"></a>
 ## Downloaden, verifiëren, installeren

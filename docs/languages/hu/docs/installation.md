@@ -27,8 +27,8 @@ Kezdje az [Letöltések](downloads.md)-el, amely rögzíti a közzététel álla
 | --- | --- | --- | --- |
 | NVIDIA Profile Inspector – NV Tools Fork | NVPI-CustomNV-3.0.2.3-Setup-r2.exe | A teljes NVPI ZIP kibontása | NVIDIA illesztőprogram és .NET Framework 4.8 |
 | NVDriverForge | NVDriverForge-Setup.exe | NVDriverForge.exe, futásidővel | Kompatibilis eredeti NVIDIA illesztőprogram-csomag a telepítési műveletekhez |
-| NVMFG Unlock40 | NVMFGUnlock40-0.1.1-Setup-x64.exe | A teljes NVMFG ZIP kibontása, az almappák megőrzése | RTX 40, meglévő DLSS FG, pontos szolgáltató és .NET Framework 4.8 segítők |
-| NVRasterPulse | NVRasterPulse-0.1-win-x64-Setup.exe | A teljes RP ZIP kibontása | RTSS és .NET Framework 4.8 |
+| NVMFG Unlock40 | NVMFGUnlock40-0.2.3-Setup-x64.exe | A teljes NVMFG ZIP kibontása, az almappák megőrzése | RTX 40, meglévő DLSS FG, pontos szolgáltató és .NET Framework 4.8 segítők |
+| NVRasterPulse | NVRasterPulse-0.2-win-x64-Setup.exe | A teljes RP ZIP kibontása | RTSS és .NET Framework 4.8 |
 
 <a id="download-verify-install"></a>
 ## Töltse le, ellenőrizze, telepítse

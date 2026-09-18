@@ -27,8 +27,8 @@ Aloita [Lataukset](downloads.md):stä, joka tallentaa julkaisun tilan ja tarkat 
 | --- | --- | --- | --- |
 | NVIDIA Profile Inspector – NV Tools Fork | NVPI-CustomNV-3.0.2.3-Setup-r2.exe | Pura täydellinen NVPI ZIP | NVIDIA-ohjain ja .NET Framework 4.8 |
 | NVDriverForge | NVDriverForge-Setup.exe | NVDriverForge.exe, mukana suoritusaika | Yhteensopiva alkuperäinen NVIDIA-ohjainpaketti asennustoimintoihin |
-| NVMFG Unlock40 | NVMFGUnlock40-0.1.1-Setup-x64.exe | Pura täydellinen NVMFG ZIP, säilytä alikansiot | RTX 40, olemassa oleva DLSS FG, tarkka toimittaja ja .NET Framework 4.8 -apuohjelmat |
-| NVRasterPulse | NVRasterPulse-0.1-win-x64-Setup.exe | Pura täydellinen RP ZIP | RTSS ja .NET Framework 4.8 |
+| NVMFG Unlock40 | NVMFGUnlock40-0.2.3-Setup-x64.exe | Pura täydellinen NVMFG ZIP, säilytä alikansiot | RTX 40, olemassa oleva DLSS FG, tarkka toimittaja ja .NET Framework 4.8 -apuohjelmat |
+| NVRasterPulse | NVRasterPulse-0.2-win-x64-Setup.exe | Pura täydellinen RP ZIP | RTSS ja .NET Framework 4.8 |
 
 <a id="download-verify-install"></a>
 ## Lataa, tarkista, asenna

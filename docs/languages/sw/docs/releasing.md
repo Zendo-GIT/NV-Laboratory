@@ -24,7 +24,7 @@ Hazina ya umma ni **Zendo-GIT/NV-Maabara**. Mabadiliko ya hati hukaguliwa, kutek
 ## Masasisho ya hati
 
 1. Fungua **NV-Laboratory** folda katika GitHub Desktop.
-2. Kagua hati, arifa, picha, metadata ya JSON na kithibitishaji hati.
+2. Kagua hati, arifa, picha, metadata ya JSON na kithibitishaji cha hati.
 3. Endesha `python tools/validate_repository.py` kutoka kwa folda hiyo.
 4. Fanya mabadiliko yaliyokaguliwa, kisha utumie **Push origin**. Angalia matokeo ya Vitendo.
 5. Weka utambulisho wa umma wa mwandishi **禅堂 Zendo (RevoluSound Team)** na anwani ya GitHub `noreply` ya akaunti.
@@ -37,9 +37,9 @@ Usichague kamwe nafasi ya kazi ya ukuzaji wa mzazi, saraka ya ukaguzi wa kibinaf
 | Zana | Lebo | Sera ya toleo |
 | --- | --- | --- |
 | NVIDIA Profile Inspector – NV Tools Fork | nvpi-v3.0.2.3 | Toleo lililopo la programu ya sehemu nne; marekebisho ya 2 yana jina lake la faili |
-| NVDriverForge | nvdriverforge-v0.1.3 | Mpango uliopo wa 0.x; sasisho zilizotolewa huhifadhi vifurushi vya mapema |
-| NVMFG Unlock40 | nvmfg-unlock40-v0.1.1 | Mgombea wa UI2 aliyetambuliwa kwa heshi kamili bila kuvumbua toleo jipya la programu |
-| NVRasterPulse | nvrasterpulse-v0.1 | Toleo lililopo la sehemu mbili |
+| NVDriverForge | nvdriverforge-v0.1.4 | Mpango uliopo wa 0.x; sasisho zilizotolewa huhifadhi vifurushi vya mapema |
+| NVMFG Unlock40 | nvmfg-unlock40-v0.2.3 | Toleo la maombi 0.2.3; mabadiliko ya jumla tangu 0.1.1 ya umma |
+| NVRasterPulse | nvrasterpulse-v0.2 | Toleo lililopo la sehemu mbili |
 
 Mtunzaji anaweza kuchapisha moja kwa moja au kuidhinisha msaidizi kuchapisha mali zilizokaguliwa. Uchapishaji ni wazi; hakuna mtiririko wa kazi unaounda Toleo kwa kila ahadi.
 
@@ -52,10 +52,13 @@ Mtunzaji anaweza kuchapisha moja kwa moja au kuidhinisha msaidizi kuchapisha mal
 
 Viungo vya lebo ya kila mradi huepuka kutuma watumiaji kwa zana nyingine kupitia kiungo cha `releases/latest` kilichoshirikiwa. Kumbukumbu za kiotomatiki za GitHub **Source code** zina kitovu hiki cha hati. Vyanzo vya maombi hubaki vya faragha. Arifa za sehemu asilia zinasalia kuwa sawa, na toleo halitatui hifadhi ya NVIDIA SDK iliyorekodiwa ya NVMFG.
 
+
+Sasisho la Septemba 18 huandaa vitambulisho vitatu vipya; Toleo lililopo la Profile Inspector linabaki bila kubadilika. Majina ya vipengee, lebo na `SHA256SUMS.txt` lazima zisalie kuwa sawa kwa ukaguzi wa masasisho ya programu. Chapisha Matoleo ya kawaida bila alama ya kutolewa mapema ili kuyaweka kwenye ukaguzi wa toleo dhabiti; NVMFG inasalia kuwa majaribio.
+
 <a id="integrity-and-storage"></a>
 ## Uadilifu na uhifadhi
 
-Usiwahi kuchukua nafasi ya baiti binary zilizochapishwa kimya kimya. Tumia toleo jipya la lugha chafu au masahihisho ya kisakinishi na heshi mpya. Kando za kisheria huongeza arifa zilizopachikwa. NVDriverForge 0.1.3 inayoweza kubebeka ni baiti 141,760,351, zaidi ya kikomo cha kawaida cha faili za GitHub cha 100 MiB Git. Toa viambatisho epuka kuweka jozi au Git LFS kwenye kitovu hiki. [GitHub mwongozo wa faili kubwa](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
+Usiwahi kuchukua nafasi ya baiti binary zilizochapishwa kimya kimya. Tumia toleo jipya la lugha chafu au masahihisho ya kisakinishi na heshi mpya. Kando za kisheria huongeza arifa zilizopachikwa. NVDriverForge 0.1.4 inayoweza kubebeka ni baiti 142,017,891, juu ya kikomo cha kawaida cha faili za GitHub cha 100 MiB Git. Toa viambatisho epuka kuweka jozi au Git LFS kwenye kitovu hiki. [GitHub mwongozo wa faili kubwa](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
 
 Kuripoti kuathirika kwa kibinafsi kunapaswa kuwashwa katika mipangilio ya hifadhi ya usalama. Thibitisha upatikanaji wake kabla ya kuelekeza ripoti nyeti huko; [SECURITY.md](../SECURITY.md) hutoa njia mbadala ambayo haifichui maelezo ya athari.
 

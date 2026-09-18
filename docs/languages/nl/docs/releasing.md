@@ -37,9 +37,9 @@ Selecteer nooit de bovenliggende ontwikkelingswerkruimte, de privé-auditmap of 
 | Gereedschap | Label | Versiebeleid |
 | --- | --- | --- |
 | NVIDIA Profile Inspector – NV Tools Fork | nvpi-v3.0.2.3 | Bestaande vierdelige applicatieversie; setup-revisie 2 heeft een eigen bestandsnaam |
-| NVDriverForge | nvdriverforge-v0.1.3 | Bestaand 0.x-schema; Versie-updates behouden eerdere pakketten |
-| NVMFG Unlock40 | nvmfg-unlock40-v0.1.1 | UI2-kandidaat geïdentificeerd door exacte hashes zonder een nieuwe applicatieversie uit te vinden |
-| NVRasterPulse | nvrasterpulse-v0.1 | Bestaande tweedelige versie |
+| NVDriverForge | nvdriverforge-v0.1.4 | Bestaand 0.x-schema; Versie-updates behouden eerdere pakketten |
+| NVMFG Unlock40 | nvmfg-unlock40-v0.2.3 | Applicatieversie 0.2.3; cumulatieve wijzigingen sinds openbare 0.1.1 |
+| NVRasterPulse | nvrasterpulse-v0.2 | Bestaande tweedelige versie |
 
 De beheerder kan de gecontroleerde activa rechtstreeks publiceren of een assistent machtigen om de gecontroleerde activa te publiceren. Publicatie is expliciet; geen enkele workflow creëert een Release voor elke commit.
 
@@ -52,10 +52,13 @@ De beheerder kan de gecontroleerde activa rechtstreeks publiceren of een assiste
 
 De tag-links per project voorkomen dat gebruikers naar een andere tool worden gestuurd via een gedeelde `releases/latest`-link. De automatische **Source code**-archieven van GitHub bevatten deze documentatiehub. Applicatiebronnen blijven privé. De oorspronkelijke componentkennisgevingen blijven intact en een release lost de gedocumenteerde NVIDIA SDK-reserve van NVMFG niet op.
 
+
+De update van 18 september bereidt drie nieuwe tags voor; de bestaande Profile Inspector Release blijft ongewijzigd. Namen van activa, tags en `SHA256SUMS.txt` moeten exact blijven voor de controles op applicatie-updates. Publiceer normale releases zonder de pre-releasevlag om ze bloot te stellen aan controles op stabiele releases; NVMFG blijft experimenteel.
+
 <a id="integrity-and-storage"></a>
 ## Integriteit en opslag
 
-Vervang nooit in stilte gepubliceerde binaire bytes. Gebruik een nieuwe expliciete versie of revisie van het installatieprogramma met nieuwe hashes. Juridische zijspannen vormen een aanvulling op ingebedde mededelingen. NVDriverForge 0.1.3 portable is 141.760.351 bytes, boven de gewone limiet van 100 MiB Git-bestanden van GitHub. Bij het vrijgeven van bijlagen moet u voorkomen dat binaire bestanden of Git LFS in deze hub worden geplaatst. [GitHub begeleiding voor grote bestanden](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
+Vervang nooit in stilte gepubliceerde binaire bytes. Gebruik een nieuwe expliciete versie of revisie van het installatieprogramma met nieuwe hashes. Juridische zijspannen vormen een aanvulling op ingebedde mededelingen. NVDriverForge 0.1.4 portable is 142.017.891 bytes, boven de gewone limiet van 100 MiB Git-bestanden van GitHub. Bij het vrijgeven van bijlagen vermijdt u het plaatsen van binaire bestanden of Git LFS in deze hub. [GitHub begeleiding voor grote bestanden](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
 
 Rapportage van privékwetsbaarheden moet zijn ingeschakeld in de beveiligingsinstellingen van de repository. Controleer de beschikbaarheid ervan voordat u gevoelige rapporten daar naartoe stuurt; [SECURITY.md](../SECURITY.md) biedt een fallback die geen details over de kwetsbaarheid blootlegt.
 

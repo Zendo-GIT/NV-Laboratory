@@ -23,9 +23,9 @@ Toto jsou připravení kandidáti, nikoli certifikační matice pro všechny kom
 | Nástroj | Windows / runtime | Hardware / externí závislost | Operace vyžadující péči |
 | --- | --- | --- | --- |
 | NVPI fork 3.0.2.3 | Windows 10/11 x64, .NET Framework 4.8 | Kompatibilní ovladač/displej NVIDIA | Profil zapisuje a zobrazuje náhledy |
-| NVDriverForge 0.1.2 | Windows 10 sestavení 19041+ / 11 x64; .NET/WPF součástí dodávky | Kompatibilní balíček ovladače NVIDIA | Zvýšená instalace, pokročilá nastavení, volitelný NVENC |
-| NVMFG Unlock40 0.1.1 | Windows 10/11 x64; Včetně .NET/WPF, pomocníci Framework 4.8 | RTX 40, způsobilá hra DLSS FG a připnutý poskytovatel | Nativní opravy ve hře, deník globálního profilu, aktualizace hry SDK |
-| NVRasterPulse 0.1 | Windows 10/11 x64, .NET Framework 4.8 | nainstalováno RTSS; běží pro čepice | Změny profilu RTSS pro každý spustitelný soubor |
+| NVDriverForge 0.1.4 | Windows 10 sestavení 19041+ / 11 x64; .NET/WPF součástí dodávky | Kompatibilní balíček ovladače NVIDIA | Zvýšená instalace, pokročilá nastavení, volitelný NVENC |
+| NVMFG Unlock40 0.2.3 | Windows 10/11 x64; Včetně .NET/WPF, pomocníci Framework 4.8 | RTX 40, způsobilá hra DLSS FG a připnutý poskytovatel | Nativní opravy ve hře, deník globálního profilu, aktualizace hry SDK |
+| NVRasterPulse 0.2 | Windows 10/11 x64, .NET Framework 4.8 | nainstalováno RTSS; běží pro čepice | Změny profilu RTSS pro každý spustitelný soubor |
 
 Není připraven žádný balíček ARM64. Dostupnost displeje/API a staré verze Windows mohou omezit jednotlivé funkce. Žádná univerzální minimální verze NVIDIA nebo RTSS není vynalezena. Přesný hash poskytovatele NVMFG je v [provenience](provenance.md).
 
@@ -47,6 +47,8 @@ Použijte [bug formulář](https://github.com/Zendo-GIT/NV-Laboratory/issues/new
 | NVMFG čekající na nastavení | Vyřešte obnovu se zavřenými hrami a zachovejte změny z jiných nástrojů. |
 | Čepice RP nemá žádný vliv | Spusťte RTSS, identifikujte skutečný EXE hry, zkontrolujte stav zavěšení a konkurenční limity. |
 | Víčko RP přetrvává i po odstranění | Zkontrolujte RTSS Global; odstranění změn pouze přepíše lokální omezovač. |
+
+NVDriverForge nabízí náhledovou místní zprávu JSON; NVMFG nabízí diagnostiku v aplikaci About. Upřednostněte tyto filtrované zprávy před úplným archivem protokolů a před sdílením je zkontrolujte. Zablokování obnovy hlášené na NVMFG 0.1.1 stále nemá žádnou stanovenou příčinu; uchovejte jeho deník a zaznamenejte všechny dostupné chybové kódy. NVRasterPulse 0.2 nabízí diagnostiku konfigurace v nabídce akcí bez měření FPS.
 
 <a id="logs-and-privacy"></a>
 ## Protokoly a soukromí

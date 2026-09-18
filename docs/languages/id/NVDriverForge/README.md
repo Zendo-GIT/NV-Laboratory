@@ -20,7 +20,7 @@
 
 **Siapkan instalasi driver NVIDIA dengan pilihan komponen yang jelas dan pengaturan opsional.**
 
-[Unduh 0.1.3 & status](../docs/downloads.md#nvdriverforge) · [Instalasi](#installation) · [Kredit](#credits-and-upstream) · [Lisensi](../../../../NVDriverForge/LICENSE)
+[Unduh 0.1.4 & status](../docs/downloads.md#nvdriverforge) · [Instalasi](#installation) · [Kredit](#credits-and-upstream) · [Lisensi](../../../../NVDriverForge/LICENSE)
 
 <a id="overview-and-purpose"></a>
 ## Ikhtisar dan tujuan
@@ -35,14 +35,15 @@ Ini adalah aplikasi yang dikembangkan secara independen yang sebagian terinspira
 - NVIDIA Game Ready / Studio pencarian dan unduhan; penemuan hotfix opsional dengan fallback manual.
 - Analisis paket asli, hash, tanda tangan NVIDIA, manifes, dan entri INF yang kompatibel.
 - Pemilihan komponen dengan ketergantungan dan pelestarian komponen yang tidak diketahui.
-- Versi 0.1.3 membuat komponen NVIDIA opsional yang dipilih dapat dilewati dan hanya mengecualikan komponen terverifikasi yang tidak dicentang dari penemuan. Runtime opsional yang sudah ada atau tidak dapat diterapkan tidak lagi dipaksakan sebagai komponen penting.
+- Versi 0.1.4 membuat komponen NVIDIA opsional yang dipilih dapat dilewati dan hanya mengecualikan komponen terverifikasi yang tidak dicentang dari penemuan. Runtime opsional yang sudah ada atau tidak dapat diterapkan tidak lagi dipaksakan sebagai komponen penting.
 - Hapus ringkasan kegagalan instalasi dan akses ke log terperinci dalam 34 bahasa.
-- Konfirmasi instalasi eksplisit, staging yang dilindungi, dan ekspor paket penyimpanan driver yang ada.
+- Pemeriksaan kesiapan, konfirmasi eksplisit, ekspor penyimpanan driver dan cadangan profil NVIDIA asli sebelum instalasi.
 - Pengaturan lanjutan opsional, dengan pemeriksaan sebelum penerbangan, jurnal, dan pemulihan sadar konflik.
 - Opsional **Custom NV** prasetel dengan pilihan dan penjelasan bernama, termasuk pemilihan kekuatan SILK terpisah dan pemeriksaan kompatibilitas.
 - Unduhan patch NVENC versi tepat opsional; komit sumber dan byte target diperiksa.
 - Instalasi opsional Profile Inspector fork yang terpisah dari layar Alat.
-- Pemeriksaan pembaruan pengguna yang diinstal opsional, 34 bahasa antarmuka dan empat tema.
+- Panduan komponen, preferensi yang dapat digunakan kembali, kit driver, laporan dukungan lokal, dan pembaruan aplikasi opsional.
+- 34 bahasa antarmuka dan empat tema.
 
 Opsi lanjutan yang tersedia berkaitan dengan MPO, indikator DLSS, Ansel, tidur audio NVIDIA, MSI, kebijakan/prioritas interupsi, HDCP, pengaktifan wadah tampilan, dan layanan telemetri lama yang memenuhi syarat. Masing-masing memiliki prasyarat dan dampaknya sendiri; ini bukanlah peningkatan kinerja universal.
 
@@ -87,6 +88,21 @@ Pekerjaan NVENC opsional mengunduh data yang kompatibel dari komitmen keylase ya
 
 Preferensi mengontrol bahasa, tema, dan pemeriksaan pembaruan opsional pengguna yang diinstal. Perangkat portabel tidak membuat tugas pemeriksaan latar belakang yang diinstal. Alat dan pemulihan terpisah dari empat langkah instalasi.
 
+<a id="backup-and-diagnostic-tools"></a>
+## Alat cadangan dan diagnostik
+
+**Sebelum instalasi:** pemeriksaan kesiapan mencakup tanda tangan paket, GPU, perkiraan ruang kerja/ruang cadangan, proses restart yang tertunda, dan installer yang bersaing. Pekerja yang ditinggikan mengulanginya. Proses bersaing tidak pernah berhenti secara otomatis. Pencadangan basis data profil NVIDIA asli harus berhasil sebelum Penyiapan NVIDIA dimulai; ekspor penyimpanan driver adalah cadangan terpisah.
+
+**Pilihan yang dapat digunakan kembali:** panduan komponen menanyakan empat pertanyaan tentang game, audio, NVIDIA App, dan rekaman. Tinjau sarannya; komponen yang diperlukan, tidak diketahui, dan ketergantungan tetap terlindungi. Ekspor preferensi, lalu pratinjau dan validasi ulang terhadap paket yang dipilih saat mengimpor. Persetujuan, operasi mulai ulang, jalur program, dan muatan patch tidak diimpor.
+
+**Kit driver:** ekspor `.nvdfkit.zip` untuk menyimpan penginstal, pilihan, hash, dan instruksi NVIDIA asli yang ditandatangani bersama-sama. Bawa `NVDriverForge.exe` secara terpisah. Impor kit di Alat, tinjau pratinjau, lalu gunakan alur kerja instalasi normal. Ini bukan driver ramping atau penginstal mandiri yang dimodifikasi. NVENC opsional masih memerlukan pengunduhan dan persetujuan untuk driver tersebut. Ketentuan redistribusi NVIDIA masih berlaku.
+
+**Hasil dan dukungan:** baca hasil singkat dan perluas detail per tahap/per opsi. Pembacaan kembali yang berhasil menghasilkan nilai yang tersimpan, bukan peningkatan yang terukur. Laporan dukungan JSON lokal menggunakan kolom yang diizinkan, termasuk pekerjaan terakhir yang disimpan setelah memulai ulang aplikasi. Pratinjau sebelum menyimpan atau membagikan. Ini tidak menyertakan log mentah, konten profil, atau pengidentifikasi perangkat keras dan tidak pernah diunggah secara otomatis.
+
+**Pemulihan:** ikuti panduan pekerjaan yang dilindungi untuk memulihkan driver yang dicadangkan. Pemulihan profil eksplisit memerlukan versi driver asli dan GPU yang sama; itu menggantikan seluruh database, menyimpan salinan saat ini, dan memeriksa hash dan status konflik. Jangan menghapus jurnalnya atau memaksakan ketidakcocokan. Instalasi driver nyata, pemulihan lengkap dan impor profil asli dengan alur kerja baru ini tetap tidak divalidasi pada sistem nyata.
+
+**Pembaruan aplikasi:** baca catatan rilis, lalu pilih unduhan terverifikasi SHA-256 secara eksplisit. Pemeriksaan dilakukan secara manual secara default, dengan pemeriksaan opsional saat startup. Tidak ada penginstal yang dimulai secara otomatis. Fitur ini terpisah dari pemeriksaan pembaruan driver dan tugas pemeriksaan driver opsional pada edisi terinstal.
+
 <a id="screenshots"></a>
 ## Tangkapan layar
 
@@ -101,7 +117,7 @@ Tutup NVDriverForge, dapatkan paket resmi berikutnya dan verifikasi hashnya. Gun
 
 Uninstall dari Windows **Installed apps**. Ini menghapus aplikasi dan tugas pembaruannya, bukan driver NVIDIA. Pengaturan, log, dan cadangan tetap ada. Jika diinginkan, pulihkan perubahan tingkat lanjut/NVENC melalui alur pemulihan yang terdokumentasi **sebelum** menghapus aplikasi. Pemulihan menolak perubahan yang bertentangan dari alat lain.
 
-Data lokal berada di bawah `%LOCALAPPDATA%\NVDriverForge`; pekerjaan yang dilindungi dan ekspor pengemudi berada di bawah `%PROGRAMDATA%\NVDriverForge\Jobs`. Penggunaan portabel juga menghasilkan data lokal. Ekspor penyimpanan driver bukanlah citra sistem atau cadangan profil lengkap.
+Data lokal berada di bawah `%LOCALAPPDATA%\NVDriverForge`; pekerjaan yang dilindungi dan ekspor pengemudi berada di bawah `%PROGRAMDATA%\NVDriverForge\Jobs`. Penggunaan portabel juga menghasilkan data lokal. Ekspor penyimpanan driver dan cadangan profil asli terpisah. Citra sistem juga tidak.
 
 <a id="known-limitations"></a>
 ## Keterbatasan yang diketahui
@@ -120,7 +136,7 @@ Data lokal berada di bawah `%LOCALAPPDATA%\NVDriverForge`; pekerjaan yang dilind
 | --- | --- |
 | Katalog online tidak tersedia | Pilih paket asli dari [Unduhan driver NVIDIA](https://www.nvidia.com/en-us/drivers/). Jangan mengganti model GPU tetangga. |
 | Pencarian perbaikan terbaru tidak tersedia | Gunakan [Forum driver Game Ready NVIDIA](https://www.nvidia.com/en-us/geforce/forums/game-ready-drivers/13/) dan verifikasi paket sebenarnya. |
-| Instalasi NVIDIA gagal | Baca ringkasan kegagalan dan buka log terperinci. Komponen opsional yang sudah ada atau tidak dapat diterapkan tetap dapat dilewati di 0.1.3. Penginstalan yang gagal tidak memicu penyesuaian opsional atau alur sukses/mulai ulang. |
+| Instalasi NVIDIA gagal | Baca ringkasan kegagalan dan buka log terperinci. Komponen opsional yang sudah ada atau tidak dapat diterapkan tetap dapat dilewati di 0.1.4. Penginstalan yang gagal tidak memicu penyesuaian opsional atau alur sukses/mulai ulang. |
 | Kegagalan tanda tangan/hash/cadangan | Hentikan instalasi itu dan pertahankan kesalahannya; dapatkan kembali paket aslinya jika rusak. |
 | Opsi tidak tersedia | Baca alasan perangkat keras, komponen, atau driver targetnya; tetap tidak berubah. |
 | Mulai ulang atau pekerjaan masih tertunda | Gunakan instruksi pemulihan pekerjaan dan resume eksplisit; jangan hapus jurnalnya. |

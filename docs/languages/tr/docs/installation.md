@@ -27,8 +27,8 @@ Yayın durumunu ve tam varlık adlarını kaydeden [İndirilenler](downloads.md)
 | --- | --- | --- | --- |
 | NVIDIA Profile Inspector – NV Tools Fork | NVPI-CustomNV-3.0.2.3-Setup-r2.exe | NVPI ZIP'in tamamını çıkarın | NVIDIA sürücüsü ve .NET Framework 4.8 |
 | NVDriverForge | NVDriverForge-Setup.exe | NVDriverForge.exe, çalışma zamanı dahil | Kurulum işlemleri için uyumlu orijinal NVIDIA sürücü paketi |
-| NVMFG Unlock40 | NVMFGUnlock40-0.1.1-Setup-x64.exe | NVMFG ZIP'in tamamını çıkarın, alt klasörleri koruyun | RTX 40, mevcut DLSS FG, tam sağlayıcı ve .NET Framework 4.8 yardımcıları |
-| NVRasterPulse | NVRasterPulse-0.1-win-x64-Setup.exe | RP ZIP'in tamamını çıkarın | RTSS ve .NET Framework 4.8 |
+| NVMFG Unlock40 | NVMFGUnlock40-0.2.3-Setup-x64.exe | NVMFG ZIP'in tamamını çıkarın, alt klasörleri koruyun | RTX 40, mevcut DLSS FG, tam sağlayıcı ve .NET Framework 4.8 yardımcıları |
+| NVRasterPulse | NVRasterPulse-0.2-win-x64-Setup.exe | RP ZIP'in tamamını çıkarın | RTSS ve .NET Framework 4.8 |
 
 <a id="download-verify-install"></a>
 ## İndirin, doğrulayın, yükleyin

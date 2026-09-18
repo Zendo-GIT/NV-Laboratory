@@ -20,9 +20,9 @@ Windows, GPU, pilote et jeu.
 | Outil | Windows / runtime | Matériel / dépendance externe | Opérations à examiner |
 | --- | --- | --- | --- |
 | Fork NVPI 3.0.2.3 | Windows 10/11 x64, .NET Framework 4.8 | Pilote NVIDIA/écran compatibles | Profils et aperçus écran |
-| NVDriverForge 0.1.2 | Windows 10 build 19041+ / 11 x64, .NET/WPF inclus | Paquet NVIDIA compatible | Installation élevée, réglages et NVENC facultatifs |
-| NVMFG Unlock40 0.1.1 | Windows 10/11 x64, .NET/WPF inclus et helpers Framework 4.8 | RTX 40, DLSS FG admissible et fournisseur figé | Patch natif, profils globaux et SDK de jeux |
-| NVRasterPulse 0.1 | Windows 10/11 x64, .NET Framework 4.8 | RTSS installé, lancé pour limiter | Profils RTSS par exécutable |
+| NVDriverForge 0.1.4 | Windows 10 build 19041+ / 11 x64, .NET/WPF inclus | Paquet NVIDIA compatible | Installation élevée, réglages et NVENC facultatifs |
+| NVMFG Unlock40 0.2.3 | Windows 10/11 x64, .NET/WPF inclus et helpers Framework 4.8 | RTX 40, DLSS FG admissible et fournisseur figé | Patch natif, profils globaux et SDK de jeux |
+| NVRasterPulse 0.2 | Windows 10/11 x64, .NET Framework 4.8 | RTSS installé, lancé pour limiter | Profils RTSS par exécutable |
 
 Aucun paquet ARM64 n'est préparé. Les API d'affichage et versions Windows anciennes
 peuvent limiter certaines fonctions. Aucune version minimale universelle de pilote
@@ -51,6 +51,8 @@ export complet du registre ou collection de journaux non relue.
 | Réglages NVMFG en attente | Résolvez la récupération, jeux fermés et changements extérieurs conservés. |
 | Limite RP sans effet | Lancez RTSS, identifiez l'EXE réel, le hook et les autres limiteurs. |
 | Limite RP persistante après retrait | Vérifiez Global RTSS ; seul l'override local est retiré. |
+
+NVDriverForge propose un rapport JSON local avec aperçu ; NVMFG propose un diagnostic dans À propos. Préférez ces rapports filtrés à une archive complète des journaux et vérifiez leur contenu avant partage. Un blocage de restauration signalé sur NVMFG 0.1.1 reste sans cause établie ; conservez son journal et relevez le code d'erreur disponible. NVRasterPulse 0.2 fournit un diagnostic de configuration dans son menu d'actions, sans mesure de FPS.
 
 <a id="logs-and-privacy"></a>
 ## Journaux et vie privée

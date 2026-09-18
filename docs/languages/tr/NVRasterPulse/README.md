@@ -22,14 +22,14 @@
 
 > **Önce RTSS'i yükleyin.** NVRasterPulse, [RivaTuner Statistics Server (RTSS), Guru3D'den indirildi](https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/)'i gerektirir. Sınırları uygulamak için RTSS çalışıyor olmalıdır. Hiçbir RTSS yükleyicisi, kanca DLL'si veya SDK paketlenmemiştir.
 
-[0.1'i ve durumu indirin](../docs/downloads.md#nvrasterpulse) · [Kurulum](#installation) · [Limitler nasıl çalışır?](#usage) · [Lisans](../../../../NVRasterPulse/LICENSE)
+[0.2'i ve durumu indirin](../docs/downloads.md#nvrasterpulse) · [Kurulum](#installation) · [Limitler nasıl çalışır?](#usage) · [Lisans](../../../../NVRasterPulse/LICENSE)
 
 <a id="overview-and-purpose"></a>
 ## Genel bakış ve amaç
 
 NVRasterPulse, RTSS çerçeve sınırlarını yürütülebilir adla yönetmek için kullanılan kompakt bir Windows arabirimidir. RTSS sınırlamayı gerçekleştirir. NVRasterPulse, tepsi erişimi ve kalıcı seçeneklerle ilgili profil değerlerini, yedeklemeleri ve yeniden yükleme isteklerini yönetir.
 
-RTSS profilinin tamamını değiştirmeden veya katman ayarlarını bozmadan oyun başına kesin limitlerin düzenlenmesini kolaylaştırmak için mevcuttur. Mevcut **0.1** adayı, gerekli RTSS kurulum kontrolünü içeren 9 Eylül 2026 sürümüdür.
+RTSS profilinin tamamını değiştirmeden veya katman ayarlarını bozmadan oyun başına kesin limitlerin düzenlenmesini kolaylaştırmak için mevcuttur. Sürüm **0.2**, yapılandırma tanılamayı, bir FPS yardımcısını, duraklatmayı, geri almayı ve profil paylaşımını ekler.
 
 <a id="features"></a>
 ## Özellikler
@@ -63,7 +63,7 @@ Bu merkez denetimi tarafından her işlev için belirli bir RTSS minimum sürüm
 
 1. **[RTSS'i Guru3D'den indirip yükleyin](https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/).**
 2. [NVRasterPulse indirmeleri](../docs/downloads.md#nvrasterpulse)'i açın ve Sürüm kullanılabilirliğini kontrol edin.
-3. `NVRasterPulse-0.1-win-x64-Setup.exe` veya `NVRasterPulse-0.1-win-x64-portable.zip`'i ve ayrıca bildirimleri/sağlama toplamlarını indirin.
+3. `NVRasterPulse-0.2-win-x64-Setup.exe` veya `NVRasterPulse-0.2-win-x64-portable.zip`'i ve ayrıca bildirimleri/sağlama toplamlarını indirin.
 4. SHA-256'i karşılaştırın. Kurulumu çalıştırın veya taşınabilir ZIP'in tamamını yazılabilir bir yerel klasöre çıkarın.
 5. `NVRasterPulse.exe`'i açın. RTSS eksikse **RTSS'i indirin** seçeneğini kullanın, yükleyin, ardından **Tekrar kontrol edin** veya `RTSS.exe`'i manuel olarak seçin.
 6. RTSS'i normal kısayolunu veya durdurulmuşsa NVRasterPulse'in RTSS düğmesini kullanarak başlatın.
@@ -87,6 +87,23 @@ NVRasterPulse'in sınırlayıcı geçersiz kılmalarını kaldırmak için çöp
 **Kapatma ve çıkma:** ana pencere tepsiye gizlenebilir. Normal **Çık**, RTSS'i çalışır durumda ve kaydedilen limitleri olduğu gibi bırakır. **Çık + RTSS** geçerli oturumda eşleşen RTSS işleminin normal şekilde kapatılmasını ister, sekiz saniyeye kadar bekler ve onu zorla sonlandırmaz. Her iki durumda da kayıtlı limitler kalır.
 
 Uygulamada dil ve tema seçilir. Windows oturum açma işleminde başlatma isteğe bağlıdır ve yüklü bir kopya için tasarlanmıştır. Bilgi düğmesi ortak eylemleri açıklar.
+
+<a id="diagnostics-and-profile-tools"></a>
+## Teşhis ve profil araçları
+
+Ek araçlar için eylemler menüsünü açın. RTSS Global'i, yer paylaşımı ayarlarını ve hariç tutmaları korurlar.
+
+**Teşhis:** yerel/etkili sınırları denetleme, durdurulan RTSS, eksik bir yürütülebilir dosya, algılanan pencere yok, devre dışı bırakılan kancalama, devralma, duraklatılmış sınırlar, rekabet eden ayarlar ve yinelenen yürütülebilir dosya adları. Bu salt okunur denetim, yapılandırmayı açıklar; bir oyunun RTSS'e bağlandığını veya FPS'ini ölçtüğünü kanıtlamaz.
+
+**FPS yardımcısı:** ekranı seçin ve VRR/G-Sync, V-Sync, Reflex ve Frame Generation'i kendiniz bildirin. Yuvarlatılmış yenileme sıklığı Windows'ten gelir. Reflex veya Frame Generation etkinse veya bilinmiyorsa otomatik sınır sunulmaz. V-Sync açık ve Reflex/FG kapalıyken VRR için buluşsal yöntem en az 3 FPS veya yenileme hızının yaklaşık %2'sini çıkarır. Bu ölçülen bir optimum değildir. Önerinin uygulanması taslağı doldurur; **Kaydet** ayrı bir işlem olarak kalır.
+
+**Duraklat ve devam ettir:** seçilen programın sınırını askıya alın, ardından önceki sınırlayıcı alanlarını geri yükleyin. Başka bir araç tarafından yapılan çakışan değişiklikler belirsiz bir özgeçmişi önler. Bir girişin gizlenmesi girişin sınırını duraklatmaz.
+
+**Geri al:** söz konusu program için altı yönetilen sınırlayıcı alanda yapılan son değişikliği geri yükleyin. Bir seviye var; bu, RTSS'in tamamını geri yüklemez. Çakışan dış değişiklikler reddedilir. Dosya yedeklemeleri ayrı kalır.
+
+**Profilleri paylaş:** Seçilen profilleri bir `.nvrp` dosyasına aktarın. İçe aktarma bir önizleme gösterir ve mevcut sınırları varsayılan olarak işaretlenmemiş halde bırakır. Dosya, mutlak yollar veya komut dosyaları olmaksızın yalnızca yürütülebilir adları, sınırları ve durumları içerir. Seçiminizi gözden geçirin ve başvurun. Bir G/Ç hatası bazı profillerin zaten uygulanmış halde kalmasına neden olabilir; sonuç onları tanımlar ve her biri kendi geri alma işlemini sürdürür. Aynı yürütülebilir dosya adları hâlâ aynı RTSS profilini adresliyor.
+
+**Favoriler ve gizli girişler:** Önce yararlı programları sabitleyin, istenmeyen girişleri gizleyin ve bunları özel iletişim kutusunda geri yükleyin. Bu seçimler devam ediyor. Kapalı bir sık ​​kullanılan, çalışan bir uygulama olarak görünmez.
 
 <a id="screenshots"></a>
 ## Ekran görüntüleri

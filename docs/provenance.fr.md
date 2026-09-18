@@ -14,7 +14,7 @@
 <a id="provenance-changes-and-licensing"></a>
 # Provenance, modifications et licences
 
-Audit des candidates préparées le **2026-09-09**. Les sources applicatives restent
+Audit des candidates préparées le **2026-09-18**. Les sources applicatives restent
 privées ; les inventaires publics donnent noms et empreintes, sans code source.
 Le [tableau complet](../THIRD_PARTY_NOTICES.md) conserve les notices applicables.
 
@@ -105,7 +105,7 @@ licence ouverte vérifiée sur v2.12.0. En-têtes NGX :
 NVIDIA/DLSS `a291cc7d2cc642a51566f3dfd5376f635cd1b284`.
 
 SHA-256 du moteur candidat :
-`0E7FC0277C88B22095B622F6A3CB292EC0C14F7A0253D392502257B75E548890`.
+`C793770D329B99CD9C5C640317CE435BFE353CA2868E36CF5DCD4D5295EFAE13`.
 
 SHA-256 fournisseur exigé dans engine.json :
 `C64928FDB7C48A57722EA8EEF2662171EDC323473ADEA66C29A206A23F1A2BED`.
@@ -119,6 +119,8 @@ d'autres mods ne résolvent pas cette condition distincte. Préparer la candidat
 ne constitue pas une validation juridique. La courte notice initiale est complétée
 par le texte intégral, transcodé de Windows-1252 en UTF-8 pour la lecture ; les
 octets originaux sont aussi conservés.
+
+La comparaison native a été recalculée pour 0.2.3 : mêmes 48 fichiers et classifications. Depuis l'audit précédent, `game_selection.cpp`, `game_selection.h` et `patcher.cpp` ont changé pour les observations d'activité et de capacité. Les nouvelles fonctions de bibliothèque, diagnostic, préférences, mises à jour et sélection appartiennent à l'application du mainteneur. Les licences des composants et le hash du provider requis sont inchangés.
 
 <a id="nvrasterpulse"></a>
 ## NVRasterPulse
@@ -178,3 +180,5 @@ des tests relancés par cette mise à jour documentaire ni une installation rée
 Cette mise à jour du hub ne modifie aucun code fonctionnel applicatif. Les builds et tests applicatifs
 antérieurs restent des preuves historiques datées. Le contrôle n'est pas une
 rétro-ingénierie exhaustive ni une garantie contre tout motif de secret.
+
+Actualisation du 18 septembre 2026 : NVDriverForge 0.1.4 ajoute les contrôles de préparation, sauvegarde native des profils, guide de composants, préférences et kits, résultats détaillés, rapport local et mise à jour applicative. NVRasterPulse 0.2 ajoute diagnostic de configuration, aide FPS, pause/reprise, annulation, profils `.nvrp` et favoris/masquage, sans nouveau moteur de limitation. Les guides individuels décrivent leur utilisation et leurs limites. Les contrôles statiques du hub sont distincts des tests applicatifs consignés dans les rapports privés du 18 septembre ; aucune installation de pilote, import réel de profils ou mesure de latence n’a été réalisée pour ce hub.

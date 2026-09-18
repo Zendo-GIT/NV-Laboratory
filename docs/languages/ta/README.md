@@ -30,9 +30,9 @@
 | திட்டம் | நோக்கம் | பதிப்பு | ஆவணப்படுத்தல் | பதிவிறக்கவும் |
 | --- | --- | --- | --- | --- |
 | **NVIDIA Profile Inspector – NV Tools Fork** | கூடுதல் காட்சி, வண்ணம், HDR மற்றும் ICC/WCS கட்டுப்பாடுகளுடன் NVIDIA இயக்கி சுயவிவர எடிட்டர். முன்பு NVPI Custom. | 3.0.2.3 | [வழிகாட்டி](NVIDIA-Profile-Inspector/README.md) | [தொகுப்புகள்](docs/downloads.md#nvidia-profile-inspector) |
-| **NVDriverForge** | இயக்கி கூறுகளைத் தேர்ந்தெடுத்து, விருப்ப மாற்றங்களை மதிப்பாய்வு செய்து அசல் NVIDIA இயக்கி தொகுப்பை நிறுவவும். | 0.1.3 | [வழிகாட்டி](NVDriverForge/README.md) | [தொகுப்புகள்](docs/downloads.md#nvdriverforge) |
-| **NVMFG Unlock40** | ஒரு விளையாட்டு தேர்வுகள் மற்றும் Streamline SDK பராமரிப்புடன் கூடிய பரிசோதனை RTX 40 MFG கருவி. | 0.1.1 | [வழிகாட்டி](NVMFG-Unlock40/README.md) | [தொகுப்புகள் & நிலை](docs/downloads.md#nvmfg-unlock40) |
-| **NVRasterPulse** | பகுதியளவு மதிப்புகள், காப்புப்பிரதிகள் மற்றும் தட்டு அணுகலுடன், இயங்கக்கூடிய ஒன்றிற்கு RTSS FPS வரம்புகளை நிர்வகிக்கவும். | 0.1 | [வழிகாட்டி](NVRasterPulse/README.md) | [தொகுப்புகள்](docs/downloads.md#nvrasterpulse) |
+| **NVDriverForge** | வழிகாட்டப்பட்ட தேர்வுகள், காப்புப்பிரதிகள் மற்றும் மீட்டெடுப்புடன் அசல் NVIDIA இயக்கியைத் தயாரித்து நிறுவவும். | 0.1.4 | [வழிகாட்டி](NVDriverForge/README.md) | [தொகுப்புகள்](docs/downloads.md#nvdriverforge) |
+| **NVMFG Unlock40** | பரிசோதனை RTX 40 MFG, நிலையான விளையாட்டு நூலகம், கண்டறிதல் மற்றும் Streamline SDK பராமரிப்பு. | 0.2.3 | [வழிகாட்டி](NVMFG-Unlock40/README.md) | [தொகுப்புகள் & நிலை](docs/downloads.md#nvmfg-unlock40) |
+| **NVRasterPulse** | ஒரு நிரலுக்கான RTSS FPS வரம்புகளை நிர்வகிக்கவும்: கண்டறிதல், பரிந்துரைகள், இடைநிறுத்தம், செயல்தவிர் மற்றும் சுயவிவரப் பகிர்வு. | 0.2 | [வழிகாட்டி](NVRasterPulse/README.md) | [தொகுப்புகள்](docs/downloads.md#nvrasterpulse) |
 
 **பதிவிறக்கங்கள்:** [பதிவிறக்க பக்கம்](docs/downloads.md) ஒவ்வொரு பதிப்பின் நிலை, கோப்புகள் மற்றும் SHA-256 மதிப்புகளை பட்டியலிடுகிறது. சோதனை அம்சங்கள் மற்றும் பொருந்தக்கூடிய வரம்புகள் திட்ட வழிகாட்டிகளில் விவரிக்கப்பட்டுள்ளன.
 

@@ -32,9 +32,9 @@
 | مشروع | الغرض | الإصدار | التوثيق | تحميل |
 | --- | --- | --- | --- | --- |
 | **NVIDIA Profile Inspector – NV Tools Fork** | محرر ملف تعريف السائق NVIDIA مع شاشة إضافية ولون وعناصر تحكم HDR وICC/WCS. NVPI Custom سابقًا. | 3.0.2.3 | [دليل](NVIDIA-Profile-Inspector/README.md) | [الحزم](docs/downloads.md#nvidia-profile-inspector) |
-| **NVDriverForge** | حدد مكونات برنامج التشغيل، وراجع التعديلات الاختيارية، وقم بتثبيت حزمة برنامج التشغيل NVIDIA الأصلية. | 0.1.3 | [دليل](NVDriverForge/README.md) | [الحزم](docs/downloads.md#nvdriverforge) |
-| **NVMFG Unlock40** | أداة RTX 40 MFG التجريبية مع خيارات لكل لعبة وصيانة Streamline SDK. | 0.1.1 | [دليل](NVMFG-Unlock40/README.md) | [الحزم والحالة](docs/downloads.md#nvmfg-unlock40) |
-| **NVRasterPulse** | إدارة حدود RTSS FPS لكل ملف قابل للتنفيذ، مع القيم الكسرية والنسخ الاحتياطية والوصول إلى الدرج. | 0.1 | [دليل](NVRasterPulse/README.md) | [الحزم](docs/downloads.md#nvrasterpulse) |
+| **NVDriverForge** | قم بإعداد وتثبيت برنامج التشغيل NVIDIA الأصلي مع الاختيارات الموجهة والنسخ الاحتياطية والاسترداد. | 0.1.4 | [دليل](NVDriverForge/README.md) | [الحزم](docs/downloads.md#nvdriverforge) |
+| **NVMFG Unlock40** | RTX 40 MFG التجريبية ومكتبة الألعاب المستمرة والتشخيصات وصيانة Streamline SDK. | 0.2.3 | [دليل](NVMFG-Unlock40/README.md) | [الحزم والحالة](docs/downloads.md#nvmfg-unlock40) |
+| **NVRasterPulse** | إدارة حدود RTSS FPS لكل برنامج: التشخيص والاقتراحات والإيقاف المؤقت والتراجع ومشاركة الملف الشخصي. | 0.2 | [دليل](NVRasterPulse/README.md) | [الحزم](docs/downloads.md#nvrasterpulse) |
 
 **التنزيلات:** يسرد [صفحة التحميل](docs/downloads.md) حالة كل إصدار وملفاته وقيم SHA-256. تم وصف الميزات التجريبية وحدود التوافق في أدلة المشروع.
 

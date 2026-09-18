@@ -18,7 +18,7 @@
 <a id="provenance-changes-and-licensing"></a>
 # Herkomst, ændringer og licensering
 
-Denne revision beskriver de kandidater, der er udarbejdet den **2026-09-09**. Applikationskilder forbliver private; de offentlige fortegnelser indeholder filnavne og hashes, ikke kildekode. Se [meddelelser om fuld komponent](../THIRD_PARTY_NOTICES.md).
+Denne revision beskriver kandidaterne udarbejdet den **2026-09-18**. Applikationskilder forbliver private; de offentlige fortegnelser indeholder filnavne og hashes, ikke kildekode. Se [meddelelser om fuld komponent](../THIRD_PARTY_NOTICES.md).
 
 <a id="nvidia-profile-inspector--nv-tools-fork"></a>
 ## NVIDIA Profile Inspector – NV Tools Fork
@@ -68,11 +68,13 @@ Hjælperen tilpasser NVPI's NvapiDrsWrapper og NativeArrayHelper til en separat 
 
 MinHook reference: `8fda4f5481fed5797dc2651cd91e238e9b3928c6`; den nedarvede kompilerede delmængde har ingen funktionelle lokale ændringer i sammenligningen. Streamline integrationsoverskrifter: 2.12; åben header-licens bekræftet på v2.12.0. NGX headerkilde: NVIDIA/DLSS commit `a291cc7d2cc642a51566f3dfd5376f635cd1b284`.
 
-Kandidatmotor SHA-256: `0E7FC0277C88B22095B622F6A3CB292EC0C14F7A0253D392502257B75E548890`.
+Kandidatmotor SHA-256: `C793770D329B99CD9C5C640317CE435BFE353CA2868E36CF5DCD4D5295EFAE13`.
 
 Nødvendig udbyder SHA-256 i engine.json: `C64928FDB7C48A57722EA8EEF2662171EDC323473ADEA66C29A206A23F1A2BED`. En rapporteret 310.9-udbyderfamilie er ikke udskiftelig med denne nøjagtige hash. Ingen udbyder-DLL eller model er inkluderet.
 
 **Udestående licenspunkt:** den fulde NVIDIA RTX SDK-licens, version 14. marts 2024, indeholder en sektion 4(d)-begrænsning, der er relevant for at omgå tekniske begrænsninger. Revisionen fastslår ikke tilladelse til denne anvendelse. At beholde MIT-motorlicensen, være gratis eller observere andre mods løser ikke denne separate betingelse. Kandidatforberedelse er ikke en juridisk godkendelse. Den originale korte overskriftsmeddelelse er suppleret med den fulde licens; dens Windows-1252-tekst leveres også som læsbar UTF-8, med originale bytes bibeholdt.
+
+Den oprindelige sammenligning blev genberegnet for 0.2.3: de samme 48 filer og klassifikationer. Siden den forrige revision er `game_selection.cpp`, `game_selection.h` og `patcher.cpp` ændret for observationer af aktivitet/kapacitet. Nye biblioteks-, diagnosticerings-, præference-, opdaterings- og udvælgelsesarbejdsgange hører til vedligeholdelsesapplikationen. Komponentlicenser og den påkrævede udbyder-hash er uændret.
 
 <a id="nvrasterpulse"></a>
 ## NVRasterPulse
@@ -102,3 +104,5 @@ Den senere NVPI-opsætningsrevision 2 løser selvstændigt sprogvalg ved hjælp 
 NVDriverForge 0.1.3 blev afsluttet 2026-09-10. Dens private verifikationsrapport registrerer 366 applikationstests, 118 ledsagende tjek, 32 opsætningstjek, 156 indfødte sammenligninger og 34 sprogvideresendelsessager. Den beskyttede komponentvalgsfix blev afspillet mod en original driverpakke uden at ændre dens nyttelast eller installere driveren. Disse er daterede produktteamresultater, ikke test genudført af denne dokumentationsopdatering eller bevis på en vellykket, rigtig driverinstallation.
 
 Denne hub-opdatering ændrer ingen funktionel applikationskode. Tidligere applikationsopbygning/enhed/UI-test forbliver dateret historisk bevis. Dette er ikke fuld reverse engineering af enhver tredjeparts binær eller en garanti mod ethvert muligt hemmeligt mønster.
+
+18. september 2026-opdatering: NVDriverForge 0.1.4 tilføjer parathedstjek, native profil backup, komponentvejledning, præferencer og kits, detaljerede resultater, lokal rapportering og applikationsopdateringer. NVRasterPulse 0.2 tilføjer konfigurationsdiagnostik, FPS-vejledning, pause/genoptag, fortryd, `.nvrp`-profiler og favoritter/skjuler, uden en ny limiter-motor. Individuelle vejledninger beskriver brug og begrænsninger. Statiske hub-tjek er adskilt fra applikationstestene, der er registreret i de private rapporter den 18. september; ingen driverinstallation, import af ægte profil eller latensmåling blev udført for denne hub.

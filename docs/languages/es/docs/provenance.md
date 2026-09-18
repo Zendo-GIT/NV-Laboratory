@@ -18,7 +18,7 @@
 <a id="provenance-changes-and-licensing"></a>
 # Procedencia, cambios y licencias
 
-Esta auditoría describe los candidatos preparados el **2026-09-09**. Las fuentes de las aplicaciones siguen siendo privadas; los inventarios públicos contienen nombres de archivos y hashes, no código fuente. Consulte [avisos de componentes completos](../THIRD_PARTY_NOTICES.md).
+Esta auditoría describe a los candidatos preparada el **2026-09-18**. Las fuentes de las aplicaciones siguen siendo privadas; los inventarios públicos contienen nombres de archivos y hashes, no código fuente. Consulte [avisos de componentes completos](../THIRD_PARTY_NOTICES.md).
 
 <a id="nvidia-profile-inspector--nv-tools-fork"></a>
 ## NVIDIA Profile Inspector – NV Tools Fork
@@ -68,11 +68,13 @@ El asistente adapta NvapiDrsWrapper y NativeArrayHelper de NVPI en un ensamblaje
 
 Referencia MinHook: `8fda4f5481fed5797dc2651cd91e238e9b3928c6`; el subconjunto compilado heredado no tiene cambios locales funcionales en la comparación. Cabeceras de integración Streamline: 2.12; licencia de encabezado abierto verificada en v2.12.0. Fuente del encabezado NGX: NVIDIA/DLSS confirma `a291cc7d2cc642a51566f3dfd5376f635cd1b284`.
 
-Motor candidato SHA-256: `0E7FC0277C88B22095B622F6A3CB292EC0C14F7A0253D392502257B75E548890`.
+Motor candidato SHA-256: `C793770D329B99CD9C5C640317CE435BFE353CA2868E36CF5DCD4D5295EFAE13`.
 
 Proveedor requerido SHA-256 en engine.json: `C64928FDB7C48A57722EA8EEF2662171EDC323473ADEA66C29A206A23F1A2BED`. Una familia de proveedores 310.9 informada no es intercambiable con este hash exacto. No se incluye ningún DLL ni modelo de proveedor.
 
 **Punto de licencia excepcional:** la licencia completa NVIDIA RTX SDK, versión del 14 de marzo de 2024, contiene una restricción de la sección 4(d) relevante para eludir las limitaciones técnicas. La auditoría no establece permiso para este uso. Conservar la licencia del motor MIT, ser gratuito u observar otras modificaciones no resuelve esa condición separada. La preparación del candidato no es una autorización legal. El aviso de encabezado breve original se complementa con la licencia completa; su texto Windows-1252 también se proporciona como UTF-8 legible, y se conservan los bytes originales.
+
+La comparación nativa se recalculó para 0.2.3: los mismos 48 archivos y clasificaciones. Desde la auditoría anterior, `game_selection.cpp`, `game_selection.h` y `patcher.cpp` cambiaron para observaciones de actividad/capacidad. Los flujos de trabajo de nueva biblioteca, diagnóstico, preferencias, actualización y selección pertenecen a la aplicación de mantenimiento. Las licencias de componentes y el hash de proveedor requerido no cambian.
 
 <a id="nvrasterpulse"></a>
 ## NVRasterPulse
@@ -102,3 +104,5 @@ La última revisión 2 de la configuración NVPI corrige la selección de idioma
 NVDriverForge 0.1.3 se completó el 10 de septiembre de 2026. Su informe de verificación privado registra 366 pruebas de aplicación, 118 comprobaciones complementarias, 32 comprobaciones de configuración, 156 comparaciones nativas y 34 casos de reenvío de idiomas. La corrección de selección de componentes protegidos se reprodujo en un paquete de controlador original sin cambiar su carga útil ni instalar el controlador. Estos son resultados fechados del equipo del producto, no pruebas repetidas por esta actualización de documentación ni prueba de una instalación real exitosa del controlador.
 
 Esta actualización del centro no cambia ningún código de aplicación funcional. Las pruebas anteriores de compilación/unidad/UI de aplicaciones siguen siendo evidencia histórica anticuada. Esto no es ingeniería inversa completa de cada binario de terceros ni una garantía contra todos los patrones secretos posibles.
+
+Actualización del 18 de septiembre de 2026: NVDriverForge 0.1.4 agrega comprobaciones de preparación, copia de seguridad de perfil nativo, guía de componentes, preferencias y kits, resultados detallados, informes locales y actualizaciones de aplicaciones. NVRasterPulse 0.2 agrega diagnóstico de configuración, guía FPS, pausar/reanudar, deshacer, perfiles `.nvrp` y favoritos/ocultar, sin un nuevo motor limitador. Las guías individuales describen el uso y los límites. Las comprobaciones de los centros estáticos son independientes de las pruebas de aplicación registradas en los informes privados del 18 de septiembre; no se realizó ninguna instalación de controlador, importación de perfil real ni medición de latencia para este centro.

@@ -19,9 +19,9 @@ GPU, driver and game combinations.
 | Tool | Windows / runtime | Hardware / external dependency | Operations needing care |
 | --- | --- | --- | --- |
 | NVPI fork 3.0.2.3 | Windows 10/11 x64, .NET Framework 4.8 | Compatible NVIDIA driver/display | Profile writes and display previews |
-| NVDriverForge 0.1.2 | Windows 10 build 19041+ / 11 x64; .NET/WPF included | Compatible NVIDIA driver package | Elevated installation, advanced settings, optional NVENC |
-| NVMFG Unlock40 0.1.1 | Windows 10/11 x64; .NET/WPF included, Framework 4.8 helpers | RTX 40, eligible DLSS FG game and pinned provider | Native in-game patching, global profile journal, SDK game updates |
-| NVRasterPulse 0.1 | Windows 10/11 x64, .NET Framework 4.8 | RTSS installed; running for caps | RTSS per-executable profile changes |
+| NVDriverForge 0.1.4 | Windows 10 build 19041+ / 11 x64; .NET/WPF included | Compatible NVIDIA driver package | Elevated installation, advanced settings, optional NVENC |
+| NVMFG Unlock40 0.2.3 | Windows 10/11 x64; .NET/WPF included, Framework 4.8 helpers | RTX 40, eligible DLSS FG game and pinned provider | Native in-game patching, global profile journal, SDK game updates |
+| NVRasterPulse 0.2 | Windows 10/11 x64, .NET Framework 4.8 | RTSS installed; running for caps | RTSS per-executable profile changes |
 
 No ARM64 package is prepared. Display/API availability and old Windows versions
 can limit individual features. No universal minimum NVIDIA or RTSS version is
@@ -49,6 +49,8 @@ DLL, registry dump or unreviewed log collection.
 | NVMFG pending settings | Resolve recovery with games closed, preserving changes from other tools. |
 | RP cap has no effect | Run RTSS, identify the real game EXE, inspect hook state and competing limits. |
 | RP cap persists after removal | Inspect RTSS Global; removal changes local limiter overrides only. |
+
+NVDriverForge offers a previewable local JSON report; NVMFG offers a diagnostic in About. Prefer these filtered reports to a complete log archive and inspect them before sharing. A restoration blockage reported on NVMFG 0.1.1 still has no established cause; preserve its journal and record any available error code. NVRasterPulse 0.2 offers configuration diagnostics in its actions menu, without measuring FPS.
 
 ## Logs and privacy
 

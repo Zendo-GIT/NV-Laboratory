@@ -37,9 +37,9 @@ Nu selectați niciodată spațiul de lucru de dezvoltare părinte, directorul de
 | Instrument | Etichetați | Politica de versiune |
 | --- | --- | --- |
 | NVIDIA Profile Inspector – NV Tools Fork | nvpi-v3.0.2.3 | Versiunea existentă a aplicației din patru părți; versiunea de configurare 2 are propriul nume de fișier |
-| NVDriverForge | nvdriverforge-v0.1.3 | Schema 0.x existentă; actualizările versionate păstrează pachetele anterioare |
-| NVMFG Unlock40 | nvmfg-unlock40-v0.1.1 | Candidatul UI2 identificat prin hashuri exacte fără a inventa o nouă versiune a aplicației |
-| NVRasterPulse | nvrasterpulse-v0.1 | Versiune existentă în două părți |
+| NVDriverForge | nvdriverforge-v0.1.4 | Schema 0.x existentă; actualizările versionate păstrează pachetele anterioare |
+| NVMFG Unlock40 | nvmfg-unlock40-v0.2.3 | Versiunea aplicației 0.2.3; modificări cumulate de la publicul 0.1.1 |
+| NVRasterPulse | nvrasterpulse-v0.2 | Versiune existentă în două părți |
 
 Menținătorul poate publica direct sau poate autoriza un asistent să publice activele auditate. Publicarea este explicită; niciun flux de lucru nu creează o Lansare la fiecare comitere.
 
@@ -52,10 +52,13 @@ Menținătorul poate publica direct sau poate autoriza un asistent să publice a
 
 Legăturile etichetelor per proiect evită trimiterea utilizatorilor către un alt instrument printr-o legătură `releases/latest` partajată. Arhivele automate **Source code** ale GitHub conțin acest centru de documentație. Sursele aplicației rămân private. Notificările originale ale componentelor rămân intacte, iar o lansare nu rezolvă rezerva NVIDIA SDK documentată a NVMFG.
 
+
+Actualizarea din 18 septembrie pregătește trei noi etichete; versiunea existentă Profile Inspector rămâne neschimbată. Numele materialelor, etichetele și `SHA256SUMS.txt` trebuie să rămână exacte pentru verificările actualizării aplicației. Publicați versiuni normale fără marcajul de prelansare pentru a le expune la verificări ale lansării stabile; NVMFG rămâne experimental.
+
 <a id="integrity-and-storage"></a>
 ## Integritate și stocare
 
-Nu înlocuiți niciodată în tăcere octeții binari publicati. Utilizați o nouă versiune explicită sau o revizuire a programului de instalare cu noi hash-uri. Vehiculele laterale legale suplimentează notificările încorporate. NVDriverForge 0.1.3 portabil are 141.760.351 de octeți, peste limita obișnuită a fișierelor Git de 100 MiB a GitHub. Atașamentele de lansare evită introducerea binarelor sau Git LFS în acest hub. [GitHub ghid pentru fișiere mari](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
+Nu înlocuiți niciodată în tăcere octeții binari publicati. Utilizați o nouă versiune explicită sau o revizuire a programului de instalare cu noi hashuri. Vehiculele laterale legale suplimentează notificările încorporate. NVDriverForge 0.1.4 portabil are 142.017.891 de octeți, peste limita obișnuită a fișierelor Git de 100 MiB a GitHub. Atașamentele de lansare evită introducerea binarelor sau Git LFS în acest hub. [GitHub ghid pentru fișiere mari](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
 
 Raportarea vulnerabilităților private ar trebui să fie activată în setările de securitate ale depozitului. Verificați disponibilitatea acestuia înainte de a direcționa rapoarte sensibile acolo; [SECURITY.md](../SECURITY.md) oferă o rezervă care nu expune detaliile vulnerabilității.
 

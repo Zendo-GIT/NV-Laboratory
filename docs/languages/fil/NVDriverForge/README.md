@@ -20,7 +20,7 @@
 
 **Maghanda ng NVIDIA na pag-install ng driver na may malinaw na mga pagpipilian sa bahagi at mga opsyonal na setting.**
 
-[I-download ang 0.1.3 at katayuan](../docs/downloads.md#nvdriverforge) · [Pag-install](#installation) · [Mga kredito](#credits-and-upstream) · [Lisensya](../../../../NVDriverForge/LICENSE)
+[I-download ang 0.1.4 at katayuan](../docs/downloads.md#nvdriverforge) · [Pag-install](#installation) · [Mga kredito](#credits-and-upstream) · [Lisensya](../../../../NVDriverForge/LICENSE)
 
 <a id="overview-and-purpose"></a>
 ## Pangkalahatang-ideya at layunin
@@ -35,14 +35,15 @@ Ito ay isang independiyenteng binuo na application na inspirasyon sa bahagi ng d
 - NVIDIA Game Ready / Studio paghahanap at pag-download; opsyonal na pagtuklas ng hotfix na may manu-manong fallback.
 - Pagsusuri ng orihinal na pakete, mga hash, mga lagda ng NVIDIA, mga manifest, at mga katugmang INF na mga entry.
 - Pagpili ng bahagi na may mga dependency at pangangalaga ng hindi kilalang mga bahagi.
-- Pinapanatili ng Bersyon ng 0.1.3 ang mga napiling opsyonal na bahagi ng NVIDIA na nalalaktawan at hindi kasama ang mga na-verify na hindi naka-check na bahagi mula sa pagtuklas. Ang kasalukuyan na o hindi nalalapat na mga opsyonal na runtime ay hindi na pinipilit bilang mga kritikal na bahagi.
+- Pinapanatili ng Bersyon ng 0.1.4 ang mga napiling opsyonal na bahagi ng NVIDIA na nalalaktawan at hindi kasama ang mga na-verify na hindi naka-check na bahagi mula sa pagtuklas. Ang kasalukuyan na o hindi nalalapat na mga opsyonal na runtime ay hindi na pinipilit bilang mga kritikal na bahagi.
 - I-clear ang mga buod ng pagkabigo sa pag-install at pag-access sa mga detalyadong log sa lahat ng 34 na wika.
-- Tahasang kumpirmasyon sa pag-install, protektadong pagtatanghal ng dula at pag-export ng mga umiiral nang driver-store packages.
+- Mga pagsusuri sa kahandaan, tahasang pagkumpirma, pag-export ng driver-store at pag-backup ng profile ng native na NVIDIA bago i-install.
 - Opsyonal na mga advanced na setting, na may mga pagsusuri sa preflight, mga journal at pagbawi na may kamalayan sa salungatan.
 - Opsyonal **Custom NV** preset na may pinangalanang mga pagpipilian at paliwanag, kabilang ang isang hiwalay na SILK pagpili ng lakas at mga pagsusuri sa compatibility.
 - Opsyonal eksaktong-bersyon NVENC pag-download ng patch; sinusuri ang source commit at target byte.
 - Isang hiwalay, opsyonal na pag-install ng Profile Inspector fork mula sa screen ng Tools.
-- Opsyonal na mga pagsusuri sa pag-update ng naka-install na user, 34 na wika ng interface at apat na tema.
+- Gabay sa bahagi, mga kagustuhang magagamit muli, mga driver kit, mga ulat ng lokal na suporta at mga opsyonal na update sa application.
+- 34 interface na wika at apat na tema.
 
 Ang mga available na advanced na opsyon ay may kinalaman sa MPO, ang DLSS indicator, Ansel, NVIDIA audio sleep, MSI, interrupt policy/priority, HDCP, display-container startup at isang kwalipikadong legacy telemetry service. Ang bawat isa ay may sariling mga kinakailangan at epekto; hindi ito mga pangkalahatang pagpapahusay sa pagganap.
 
@@ -87,6 +88,21 @@ Ang opsyonal na NVENC na trabaho ay nagda-download ng katugmang data mula sa nak
 
 Kinokontrol ng mga kagustuhan ang wika, tema at opsyonal na mga pagsusuri sa pag-update ng naka-install na user. Ang portable ay hindi gumagawa ng naka-install na background-check na gawain. Ang mga tool at pagbawi ay hiwalay sa apat na hakbang sa pag-install.
 
+<a id="backup-and-diagnostic-tools"></a>
+## Mga tool sa pag-backup at diagnostic
+
+**Bago ang pag-install:** Sinasaklaw ng mga pagsusuri sa kahandaan ang lagda ng package, mga GPU, tinantyang workspace/backup space, nakabinbing pag-restart at mga nakikipagkumpitensyang installer. Inuulit sila ng matataas na manggagawa. Ang mga prosesong nakikipagkumpitensya ay hindi kailanman awtomatikong hihinto. Dapat magtagumpay ang native na NVIDIA profile-database backup bago magsimula ang NVIDIA Setup; Ang pag-export ng driver-store ay isang hiwalay na backup.
+
+**Mga pagpipiliang magagamit muli:** ang gabay ng bahagi ay nagtatanong ng apat na tanong tungkol sa mga laro, audio, NVIDIA App at pagre-record. Suriin ang mga mungkahi nito; kinakailangan, hindi alam at dependency na mga bahagi ay nananatiling protektado. I-export ang mga kagustuhan, pagkatapos ay i-preview at muling patunayan ang mga ito laban sa napiling package kapag nag-i-import. Ang mga pahintulot, pag-restart ng mga pagpapatakbo, mga landas ng programa at mga patch payload ay hindi ini-import.
+
+**Driver kit:** mag-export ng `.nvdfkit.zip` para panatilihing magkasama ang orihinal na nilagdaang NVIDIA installer, mga pagpipilian, hash at mga tagubilin. Magdala ng `NVDriverForge.exe` nang hiwalay. I-import ang kit sa Tools, suriin ang preview, pagkatapos ay gamitin ang normal na daloy ng trabaho sa pag-install. Ito ay hindi isang slim driver o binagong standalone installer. Ang opsyonal na NVENC ay nangangailangan pa rin ng pag-download at pahintulot para sa eksaktong driver na iyon. Nalalapat pa rin ang mga tuntunin sa muling pamamahagi ng NVIDIA.
+
+**Mga resulta at suporta:** basahin ang maikling resulta at palawakin ang mga detalye ng bawat yugto/bawat-opsyon. Ang matagumpay na read-back ay nagtatatag ng nakaimbak na halaga, hindi isang nasusukat na pagpapabuti. Ang lokal na ulat ng suporta sa JSON ay gumagamit ng mga pinapahintulutang field, kasama ang huling na-save na trabaho pagkatapos i-restart ang app. Silipin ito bago i-save o ibahagi. Wala itong kasamang mga raw log, nilalaman ng profile o mga identifier ng hardware at hindi kailanman awtomatikong ina-upload.
+
+**Pagbawi:** sundin ang gabay ng protektadong trabaho upang mabawi ang naka-back up na driver. Ang tahasang pagpapanumbalik ng profile ay nangangailangan ng orihinal na bersyon ng driver at parehong mga GPU; pinapalitan nito ang buong database, pinapanatili ang isang kasalukuyang kopya, at sinusuri ang mga hash at magkasalungat na estado. Huwag burahin ang journal nito o pilitin ang mismatch. Ang tunay na pag-install ng driver, kumpletong pagbawi at pag-import ng native na profile gamit ang bagong workflow na ito ay nananatiling hindi valid sa isang tunay na system.
+
+**Mga update sa application:** basahin ang mga tala sa paglabas, pagkatapos ay tahasang pumili ng na-verify na SHA-256 na pag-download. Ang pagsuri ay manu-mano bilang default, na may opsyonal na pagsusuri sa pagsisimula. Walang installer na awtomatikong nagsimula. Ang tampok na ito ay hiwalay sa mga pagsusuri sa pag-update ng driver at sa opsyonal na gawain sa pagsuri sa driver ng naka-install na edisyon.
+
 <a id="screenshots"></a>
 ## Mga screenshot
 
@@ -101,7 +117,7 @@ Isara ang NVDriverForge, kunin ang susunod na opisyal na pakete at i-verify ang 
 
 Uninstall mula sa Windows **Installed apps**. Inaalis nito ang app at ang gawain sa pag-update nito, hindi ang driver ng NVIDIA. Nananatili ang mga setting, log at backup. Kung ninanais, i-restore ang mga advanced/NVENC na pagbabago sa pamamagitan ng nakadokumentong daloy ng pagbawi **bago** alisin ang app. Tinatanggihan ng Restore ang mga magkasalungat na pagbabago mula sa isa pang tool.
 
-Ang lokal na data ay nasa ilalim ng `%LOCALAPPDATA%\NVDriverForge`; Ang mga protektadong trabaho at pag-export ng driver ay nasa ilalim ng `%PROGRAMDATA%\NVDriverForge\Jobs`. Ang portable na paggamit ay lumilikha din ng lokal na data. Ang pag-export ng driver-store ay hindi isang imahe ng system o isang buong backup ng profile.
+Ang lokal na data ay nasa ilalim ng `%LOCALAPPDATA%\NVDriverForge`; Ang mga protektadong trabaho at pag-export ng driver ay nasa ilalim ng `%PROGRAMDATA%\NVDriverForge\Jobs`. Ang portable na paggamit ay lumilikha din ng lokal na data. Ang pag-export ng driver-store at ang backup ng native na profile ay magkahiwalay. Ni isang system image.
 
 <a id="known-limitations"></a>
 ## Mga kilalang limitasyon
@@ -120,7 +136,7 @@ Ang lokal na data ay nasa ilalim ng `%LOCALAPPDATA%\NVDriverForge`; Ang mga prot
 | --- | --- |
 | Hindi available ang online na catalog | Pumili ng orihinal na package mula sa [Mga pag-download ng driver ng NVIDIA](https://www.nvidia.com/en-us/drivers/). Huwag palitan ang isang kalapit na modelong GPU. |
 | Hindi available ang paghahanap ng hotfix | Gamitin ang [Forum ng driver ng NVIDIA ng Game Ready](https://www.nvidia.com/en-us/geforce/forums/game-ready-drivers/13/) at i-verify ang aktwal na package. |
-| Nabigo ang pag-install ng NVIDIA | Basahin ang buod ng kabiguan at buksan ang mga detalyadong log. Ang mga opsyonal na bahagi na kasalukuyan na o hindi nalalapat ay nananatiling nalalaktawan sa 0.1.3. Ang mga nabigong pag-install ay hindi nagti-trigger ng mga opsyonal na pag-tweak o isang tagumpay/i-restart ang daloy. |
+| Nabigo ang pag-install ng NVIDIA | Basahin ang buod ng kabiguan at buksan ang mga detalyadong log. Ang mga opsyonal na bahagi na kasalukuyan na o hindi nalalapat ay nananatiling nalalaktawan sa 0.1.4. Ang mga nabigong pag-install ay hindi nagti-trigger ng mga opsyonal na pag-tweak o isang tagumpay/i-restart ang daloy. |
 | Signature/hash/backup failure | Itigil ang pag-install na iyon at panatilihin ang error; makuha muli ang orihinal na pakete kung sira. |
 | Hindi available ang opsyon | Basahin ang dahilan ng hardware, component o target-driver nito; panatilihin itong walang pagbabago. |
 | I-restart o nakabinbin pa ang trabaho | Gamitin ang mga tagubilin sa pagbawi ng trabaho at tahasang resume; huwag burahin ang journal nito. |

@@ -22,14 +22,14 @@
 
 > **Instalați mai întâi RTSS.** NVRasterPulse necesită [RivaTuner Statistics Server (RTSS), descărcat de pe Guru3D](https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/). RTSS trebuie să ruleze pentru a aplica limitele. Nu este inclus niciun program de instalare RTSS, DLL hook sau SDK.
 
-[Descărcați 0.1 și starea](../docs/downloads.md#nvrasterpulse) · [Instalare](#installation) · [Cum funcționează limitele](#usage) · [Licență](../../../../NVRasterPulse/LICENSE)
+[Descărcați 0.2 și starea](../docs/downloads.md#nvrasterpulse) · [Instalare](#installation) · [Cum funcționează limitele](#usage) · [Licență](../../../../NVRasterPulse/LICENSE)
 
 <a id="overview-and-purpose"></a>
 ## Prezentare generală și scop
 
 NVRasterPulse este o interfață compactă Windows pentru gestionarea limitelor cadrelor RTSS după numele executabilului. RTSS efectuează limitarea. NVRasterPulse gestionează valorile de profil corespunzătoare, copiile de rezervă și solicitările de reîncărcare, cu acces la tavă și opțiuni persistente.
 
-Există pentru a face mai ușor de editat limitele exacte pentru fiecare joc fără a înlocui un întreg profil RTSS sau a deranja setările de suprapunere. Actualul candidat **0.1** este versiunea din 9 septembrie 2026 cu verificarea instalării RTSS necesară.
+Există pentru a face mai ușor de editat limitele exacte pentru fiecare joc fără a înlocui un întreg profil RTSS sau a deranja setările de suprapunere. Versiunea **0.2** adaugă diagnostice de configurare, un ajutor FPS, pauză, anulare și partajare a profilului.
 
 <a id="features"></a>
 ## Caracteristici
@@ -63,7 +63,7 @@ Nicio versiune minimă specifică RTSS nu a fost certificată pentru fiecare fun
 
 1. **[Descărcați și instalați RTSS de la Guru3D](https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/).**
 2. Deschideți [NVRasterPulse descărcări](../docs/downloads.md#nvrasterpulse) și verificați disponibilitatea lansării.
-3. Descărcați `NVRasterPulse-0.1-win-x64-Setup.exe` sau `NVRasterPulse-0.1-win-x64-portable.zip`, plus notificările/sumele de verificare.
+3. Descărcați `NVRasterPulse-0.2-win-x64-Setup.exe` sau `NVRasterPulse-0.2-win-x64-portable.zip`, plus notificările/sumele de verificare.
 4. Comparați SHA-256. Rulați Setup sau extrageți întregul ZIP portabil într-un folder local care poate fi scris.
 5. Deschideți `NVRasterPulse.exe`. Dacă RTSS lipsește, utilizați **Descărcați RTSS**, instalați-l, apoi **Verificați din nou** sau selectați manual `RTSS.exe`.
 6. Porniți RTSS folosind comanda sa rapidă normală sau butonul RTSS al lui NVRasterPulse dacă este oprit.
@@ -87,6 +87,23 @@ Folosiți acțiunea de gunoi pentru a elimina suprascrierile limitatorului NVRas
 **Închidere și ieșire:** fereastra principală se poate ascunde în tavă. Normal **Ieșire** lasă RTSS în funcțiune și limitele salvate intacte. **Ieșire + RTSS** solicită o închidere normală a procesului RTSS care se potrivește în sesiunea curentă, așteaptă până la opt secunde și nu îl forțat. Limitele stocate rămân în ambele cazuri.
 
 Limba și tema sunt selectate în aplicație. Pornirea la conectarea Windows este opțională și este destinată unei copii instalate. Butonul de informații explică acțiunile comune.
+
+<a id="diagnostics-and-profile-tools"></a>
+## Instrumente de diagnosticare și profil
+
+Deschideți meniul de acțiuni pentru instrumentele suplimentare. Ele păstrează RTSS Global, setările de suprapunere și excluderile.
+
+**Diagnosticare:** inspectați limitele locale/eficiente, RTSS oprit, un executabil lipsă, nicio fereastră detectată, conectarea dezactivată, moștenirea, limitele întrerupte, setările concurente și numele executabilelor duplicat. Această verificare numai în citire descrie configurația; nu dovedește că un joc este agățat de RTSS și nici nu măsoară FPS.
+
+**FPS helper:** selectați afișajul și declarați dvs. VRR/G-Sync, V-Sync, Reflex și Frame Generation. Frecvența de reîmprospătare rotunjită provine de la Windows. Dacă Reflex sau Frame Generation este activ sau necunoscut, nu este oferit niciun plafon automat. Pentru VRR cu V-Sync activat și Reflex/FG dezactivat, euristica scade cel puțin 3 FPS sau aproximativ 2% din rata de reîmprospătare. Acesta nu este un optim măsurat. Aplicarea sugestiei umple schița; **Salvare** rămâne o acțiune separată.
+
+**Întrerupeți și reluați:** suspendați limita programului selectat, apoi restabiliți câmpurile de limitare anterioare. Modificările contradictorii ale unui alt instrument împiedică un CV ambiguu. Ascunderea unei intrări nu întrerupe limita sa.
+
+**Anulați:** restabiliți ultima modificare a celor șase câmpuri de limitare gestionate pentru programul respectiv. Există un singur nivel; acest lucru nu restabilește tot RTSS. Schimbările externe contradictorii sunt refuzate. Copiile de rezervă ale fișierelor rămân separate.
+
+**Partajați profiluri:** exportați profilurile selectate într-un fișier `.nvrp`. Import afișează o previzualizare și lasă majusculele existente nebifate în mod prestabilit. Fișierul conține doar nume executabile, limite și stări, fără căi sau scripturi absolute. Examinați selecția dvs. și aplicați. O eroare I/O poate lăsa unele profiluri deja aplicate; rezultatul le identifică și fiecare își păstrează anularea. Nume executabile identice se adresează în continuare aceluiași profil RTSS.
+
+**Preferate și intrări ascunse:** fixați mai întâi programele utile, ascundeți intrările nedorite și restaurați-le în dialogul dedicat. Aceste alegeri persistă. Un favorit închis nu apare ca o aplicație care rulează.
 
 <a id="screenshots"></a>
 ## Capturi de ecran

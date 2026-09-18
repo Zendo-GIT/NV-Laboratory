@@ -23,9 +23,9 @@ Ito ang mga inihandang kandidato, hindi isang certification matrix para sa lahat
 | Tool | Windows / runtime | Hardware / panlabas na dependency | Mga operasyon na nangangailangan ng pangangalaga |
 | --- | --- | --- | --- |
 | NVPI fork 3.0.2.3 | Windows 10/11 x64, .NET Framework 4.8 | Mga katugmang NVIDIA driver/display | Nagsusulat ang profile at nagpapakita ng mga preview |
-| NVDriverForge 0.1.2 | Windows 10 build 19041+ / 11 x64; Kasama ang .NET/WPF | Mga katugmang NVIDIA driver package | Nakataas na pag-install, mga advanced na setting, opsyonal na NVENC |
-| NVMFG Unlock40 0.1.1 | Windows 10/11 x64; Kasama ang .NET/WPF, mga katulong ng Framework 4.8 | RTX 40, kwalipikadong DLSS FG na laro at naka-pin na provider | Native in-game patching, global profile journal, SDK na mga update sa laro |
-| NVRasterPulse 0.1 | Windows 10/11 x64, .NET Framework 4.8 | Naka-install ang RTSS; tumatakbo para sa caps | RTSS per-executable na mga pagbabago sa profile |
+| NVDriverForge 0.1.4 | Windows 10 build 19041+ / 11 x64; Kasama ang .NET/WPF | Mga katugmang NVIDIA driver package | Nakataas na pag-install, mga advanced na setting, opsyonal na NVENC |
+| NVMFG Unlock40 0.2.3 | Windows 10/11 x64; Kasama ang .NET/WPF, mga katulong ng Framework 4.8 | RTX 40, kwalipikadong DLSS FG na laro at naka-pin na provider | Native in-game patching, global profile journal, SDK na mga update sa laro |
+| NVRasterPulse 0.2 | Windows 10/11 x64, .NET Framework 4.8 | Naka-install ang RTSS; tumatakbo para sa caps | RTSS per-executable na mga pagbabago sa profile |
 
 Walang ARM64 package na inihanda. Ang availability ng Display/API at mga lumang bersyon ng Windows ay maaaring maglimita sa mga indibidwal na feature. Walang unibersal na minimum na NVIDIA o RTSS na bersyon ang naimbento. Ang eksaktong NVMFG provider hash ay nasa [pinanggalingan](provenance.md).
 
@@ -47,6 +47,8 @@ Gamitin ang [form ng bug](https://github.com/Zendo-GIT/NV-Laboratory/issues/new?
 | Mga nakabinbing setting ng NVMFG | Lutasin ang pagbawi nang sarado ang mga laro, pinapanatili ang mga pagbabago mula sa iba pang mga tool. |
 | Walang epekto ang cap ng RP | Patakbuhin ang RTSS, tukuyin ang totoong EXE ng laro, suriin ang katayuan ng hook at mga limitasyon sa pakikipagkumpitensya. |
 | Ang takip ng RP ay nagpapatuloy pagkatapos alisin | Siyasatin ang RTSS Global; ang mga pagbabago sa pag-alis ay mga lokal na limitasyon ng override lamang. |
+
+Nag-aalok ang NVDriverForge ng napi-preview na lokal na ulat ng JSON; Nag-aalok ang NVMFG ng diagnostic sa About. Mas gusto ang mga na-filter na ulat na ito sa isang kumpletong log archive at siyasatin ang mga ito bago ibahagi. Ang isang restoration blockage na iniulat sa NVMFG 0.1.1 ay wala pa ring itinatag na dahilan; panatilihin ang journal nito at itala ang anumang magagamit na error code. Nag-aalok ang NVRasterPulse 0.2 ng mga diagnostic ng configuration sa menu ng mga pagkilos nito, nang hindi sinusukat ang FPS.
 
 <a id="logs-and-privacy"></a>
 ## Mga log at privacy

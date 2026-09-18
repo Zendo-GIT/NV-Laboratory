@@ -18,7 +18,7 @@
 <a id="provenance-changes-and-licensing"></a>
 # Asal, perubahan dan perizinan
 
-Audit ini menjelaskan kandidat yang dipersiapkan pada **09-09-2026**. Sumber aplikasi tetap bersifat pribadi; inventaris publik berisi nama file dan hash, bukan kode sumber. Lihat [pemberitahuan komponen lengkap](../THIRD_PARTY_NOTICES.md).
+Audit ini menjelaskan kandidat yang dipersiapkan pada **18-09-2026**. Sumber aplikasi tetap bersifat pribadi; inventaris publik berisi nama file dan hash, bukan kode sumber. Lihat [pemberitahuan komponen lengkap](../THIRD_PARTY_NOTICES.md).
 
 <a id="nvidia-profile-inspector--nv-tools-fork"></a>
 ## NVIDIA Profile Inspector – NV Tools Fork
@@ -68,11 +68,13 @@ Helper mengadaptasi NvapiDrsWrapper dan NativeArrayHelper NVPI ke dalam rakitan 
 
 Referensi MinHook: `8fda4f5481fed5797dc2651cd91e238e9b3928c6`; subset kompilasi yang diwarisi tidak memiliki perubahan lokal fungsional dalam perbandingannya. Header integrasi Streamline: 2.12; lisensi header terbuka diverifikasi di v2.12.0. Sumber header NGX: NVIDIA/DLSS melakukan `a291cc7d2cc642a51566f3dfd5376f635cd1b284`.
 
-Mesin kandidat SHA-256: `0E7FC0277C88B22095B622F6A3CB292EC0C14F7A0253D392502257B75E548890`.
+Mesin kandidat SHA-256: `C793770D329B99CD9C5C640317CE435BFE353CA2868E36CF5DCD4D5295EFAE13`.
 
 Penyedia yang diperlukan SHA-256 di engine.json: `C64928FDB7C48A57722EA8EEF2662171EDC323473ADEA66C29A206A23F1A2BED`. Keluarga penyedia 310.9 yang dilaporkan tidak dapat dipertukarkan dengan hash persis ini. Tidak ada penyedia DLL atau model yang disertakan.
 
 **Poin lisensi yang luar biasa:** lisensi lengkap NVIDIA RTX SDK, versi 14 Maret 2024, berisi batasan bagian 4(d) yang relevan untuk melewati batasan teknis. Audit tidak memberikan izin untuk penggunaan ini. Mempertahankan lisensi mesin MIT, gratis, atau mengikuti mod lain tidak menyelesaikan kondisi terpisah tersebut. Persiapan kandidat bukanlah izin hukum. Pemberitahuan tajuk singkat asli dilengkapi dengan lisensi penuh; teks Windows-1252-nya juga disediakan sebagai UTF-8 yang dapat dibaca, dengan byte asli dipertahankan.
+
+Perbandingan asli dihitung ulang untuk 0.2.3: 48 file dan klasifikasi yang sama. Sejak audit sebelumnya, `game_selection.cpp`, `game_selection.h` dan `patcher.cpp` mengalami perubahan untuk observasi aktivitas/kemampuan. Alur kerja perpustakaan, diagnostik, preferensi, pembaruan, dan pemilihan baru milik aplikasi pengelola. Lisensi komponen dan hash penyedia yang diperlukan tidak berubah.
 
 <a id="nvrasterpulse"></a>
 ## NVRasterPulse
@@ -102,3 +104,5 @@ Revisi 2 pengaturan NVPI yang lebih baru memperbaiki pemilihan bahasa mandiri me
 NVDriverForge 0.1.3 selesai pada 10-09-2026. Laporan verifikasi pribadinya mencatat 366 pengujian aplikasi, 118 pemeriksaan pendamping, 32 pemeriksaan pengaturan, 156 perbandingan asli, dan 34 kasus penerusan bahasa. Perbaikan pemilihan komponen yang dilindungi diputar ulang terhadap paket driver asli tanpa mengubah muatannya atau menginstal driver. Ini adalah hasil tim produk yang tertanggal, bukan tes yang dijalankan ulang oleh pembaruan dokumentasi ini atau bukti instalasi driver nyata yang berhasil.
 
 Pembaruan hub ini tidak mengubah kode aplikasi fungsional. Pengujian build/unit/UI aplikasi sebelumnya tetap menjadi bukti sejarah yang tertanggal. Ini bukan rekayasa balik penuh dari setiap biner pihak ketiga atau jaminan terhadap setiap kemungkinan pola rahasia.
+
+Pembaruan 18 September 2026: NVDriverForge 0.1.4 menambahkan pemeriksaan kesiapan, pencadangan profil asli, panduan komponen, preferensi dan kit, hasil terperinci, pelaporan lokal, dan pembaruan aplikasi. NVRasterPulse 0.2 menambahkan diagnostik konfigurasi, panduan FPS, jeda/lanjutkan, batalkan, profil `.nvrp` dan favorit/sembunyikan, tanpa mesin pembatas baru. Panduan individual menjelaskan penggunaan dan batasan. Pemeriksaan hub statis terpisah dari pengujian aplikasi yang dicatat dalam laporan pribadi tanggal 18 September; tidak ada instalasi driver, impor profil nyata, atau pengukuran latensi yang dilakukan untuk hub ini.

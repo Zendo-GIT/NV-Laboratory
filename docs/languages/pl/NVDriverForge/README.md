@@ -20,7 +20,7 @@
 
 **Przygotuj instalację sterownika NVIDIA z przejrzystym wyborem komponentów i opcjonalnymi ustawieniami.**
 
-[Pobierz 0.1.3 i status](../docs/downloads.md#nvdriverforge) · [Instalacja](#installation) · [Kredyty](#credits-and-upstream) · [Licencja](../../../../NVDriverForge/LICENSE)
+[Pobierz 0.1.4 i status](../docs/downloads.md#nvdriverforge) · [Instalacja](#installation) · [Kredyty](#credits-and-upstream) · [Licencja](../../../../NVDriverForge/LICENSE)
 
 <a id="overview-and-purpose"></a>
 ## Przegląd i cel
@@ -35,14 +35,15 @@ Jest to niezależnie opracowana aplikacja, inspirowana częściowo przepływem p
 - NVIDIA Game Ready / Studio wyszukiwanie i pobieranie; opcjonalne wykrywanie poprawek z ręcznym przywracaniem.
 - Analiza oryginalnego pakietu, hashów, podpisów NVIDIA, manifestów i zgodnych wpisów INF.
 - Wybór komponentów z zależnościami i zachowaniem nieznanych komponentów.
-- Wersja 0.1.3 umożliwia pominięcie wybranych opcjonalnych komponentów NVIDIA i wyklucza z wykrywania tylko zweryfikowane, niesprawdzone komponenty. Już istniejące lub niemające zastosowania opcjonalne środowiska wykonawcze nie są już wymuszane jako komponenty krytyczne.
+- Wersja 0.1.4 umożliwia pominięcie wybranych opcjonalnych komponentów NVIDIA i wyklucza z wykrywania tylko zweryfikowane, niesprawdzone komponenty. Już istniejące lub niemające zastosowania opcjonalne środowiska wykonawcze nie są już wymuszane jako komponenty krytyczne.
 - Przejrzyste podsumowania niepowodzeń instalacji i dostęp do szczegółowych dzienników we wszystkich 34 językach.
-- Wyraźne potwierdzenie instalacji, chronione przemieszczanie i eksport istniejących pakietów magazynu sterowników.
+- Sprawdzanie gotowości, wyraźne potwierdzenie, eksport magazynu sterowników i natywna kopia zapasowa profilu NVIDIA przed instalacją.
 - Opcjonalne ustawienia zaawansowane z kontrolą wstępną, dziennikami i odzyskiwaniem uwzględniającym konflikty.
 - Opcjonalne ustawienie wstępne **Custom NV** z nazwanymi opcjami i wyjaśnieniami, w tym oddzielny wybór siły SILK i sprawdzenie zgodności.
 - Opcjonalne pobieranie dokładnej wersji poprawki NVENC; sprawdzane są bajty źródłowe i docelowe.
 - Oddzielna, opcjonalna instalacja Profile Inspector fork z ekranu Narzędzia.
-- Opcjonalne sprawdzanie aktualizacji zainstalowanych użytkowników, 34 języki interfejsu i cztery motywy.
+- Przewodnik po komponentach, preferencje wielokrotnego użytku, zestawy sterowników, raporty lokalnego wsparcia i opcjonalne aktualizacje aplikacji.
+- 34 języki interfejsu i cztery motywy.
 
 Dostępne opcje zaawansowane obejmują MPO, wskaźnik DLSS, Ansel, uśpienie audio NVIDIA, MSI, zasady/priorytet przerwań, HDCP, uruchamianie kontenera wyświetlacza i kwalifikującą się starszą usługę telemetryczną. Każdy ma swoje własne warunki wstępne i skutki; nie są to uniwersalne ulepszenia wydajności.
 
@@ -87,6 +88,21 @@ Opcjonalna praca NVENC pobiera kompatybilne dane z przypiętego zatwierdzenia ke
 
 Preferencje kontrolują język, motyw i opcjonalne sprawdzanie aktualizacji zainstalowanych przez użytkowników. Urządzenie przenośne nie tworzy zainstalowanego zadania sprawdzania w tle. Narzędzia i odzyskiwanie są oddzielne od czterech etapów instalacji.
 
+<a id="backup-and-diagnostic-tools"></a>
+## Narzędzia do tworzenia kopii zapasowych i diagnostyki
+
+**Przed instalacją:** kontrole gotowości obejmują sygnaturę pakietu, procesory graficzne, szacowany obszar roboczy/miejsce na kopie zapasowe, oczekiwanie na ponowne uruchomienie i konkurencyjne instalatory. Wywyższony pracownik powtarza je. Konkurencyjne procesy nigdy nie są zatrzymywane automatycznie. Natywna kopia zapasowa bazy danych profilu NVIDIA musi zakończyć się pomyślnie przed rozpoczęciem instalacji NVIDIA; Eksport magazynu sterowników stanowi osobną kopię zapasową.
+
+**Możliwości wielokrotnego użytku:** przewodnik po komponentach zawiera cztery pytania dotyczące gier, dźwięku, NVIDIA App i nagrywania. Przejrzyj jego sugestie; wymagane, nieznane i zależne komponenty pozostają chronione. Eksportuj preferencje, a następnie przeglądaj je i ponownie sprawdzaj w odniesieniu do wybranego pakietu podczas importowania. Zgody, operacje ponownego uruchomienia, ścieżki programów i ładunki poprawek nie są importowane.
+
+**Zestaw sterowników:** wyeksportuj `.nvdfkit.zip`, aby zachować oryginalny podpisany instalator NVIDIA, opcje, skróty i instrukcje razem. Noś `NVDriverForge.exe` osobno. Zaimportuj zestaw w Narzędziach, przejrzyj podgląd, a następnie wykonaj normalny proces instalacji. To nie jest wąski sterownik ani zmodyfikowany samodzielny instalator. Opcjonalny NVENC nadal wymaga pobrania i uzyskania zgody na konkretny sterownik. Warunki redystrybucji NVIDIA nadal obowiązują.
+
+**Wyniki i wsparcie:** przeczytaj krótki wynik i rozwiń szczegóły poszczególnych etapów/opcji. Pomyślny odczyt pozwala ustalić przechowywaną wartość, a nie zmierzoną poprawę. Lokalny raport pomocy technicznej JSON wykorzystuje pola z listy dozwolonych, w tym ostatnie zapisane zadanie po ponownym uruchomieniu aplikacji. Wyświetl podgląd przed zapisaniem lub udostępnieniem. Nie zawiera surowych dzienników, treści profili ani identyfikatorów sprzętu i nigdy nie jest przesyłany automatycznie.
+
+**Odzyskiwanie:** postępuj zgodnie z instrukcją dotyczącą zadania chronionego, aby odzyskać sterownik z kopii zapasowej. Jawne przywrócenie profilu wymaga oryginalnej wersji sterownika i tych samych procesorów graficznych; zastępuje całą bazę danych, zachowuje bieżącą kopię oraz sprawdza skróty i stan konfliktu. Nie usuwaj jego dziennika ani nie wymuszaj niezgodności. Prawdziwa instalacja sterowników, pełne odzyskiwanie i import profilu natywnego za pomocą tego nowego przepływu pracy pozostają niesprawdzone w prawdziwym systemie.
+
+**Aktualizacje aplikacji:** przeczytaj uwagi do wydania, a następnie wybierz plik do pobrania zweryfikowany za pomocą SHA-256. Domyślnie sprawdzanie odbywa się ręcznie, z opcjonalnym sprawdzeniem przy uruchomieniu. Żaden instalator nie jest uruchamiany automatycznie. Ta funkcja jest niezależna od sprawdzania aktualizacji sterowników i opcjonalnego zadania sprawdzania sterowników zainstalowanej wersji.
+
 <a id="screenshots"></a>
 ## Zrzuty ekranu
 
@@ -101,7 +117,7 @@ Zamknij NVDriverForge, uzyskaj następny oficjalny pakiet i zweryfikuj jego skr�
 
 Uninstall z Windows **Installed apps**. Usuwa aplikację i jej zadanie aktualizacji, a nie sterownik NVIDIA. Ustawienia, dzienniki i kopie zapasowe pozostają. W razie potrzeby przywróć zmiany zaawansowane/NVENC poprzez udokumentowaną procedurę odzyskiwania **przed** usunięciem aplikacji. Przywracanie odrzuca sprzeczne zmiany z innego narzędzia.
 
-Dane lokalne znajdują się pod `%LOCALAPPDATA%\NVDriverForge`; chronione zadania i eksport sterowników znajdują się pod `%PROGRAMDATA%\NVDriverForge\Jobs`. Użycie przenośne tworzy również dane lokalne. Eksport magazynu sterowników nie jest obrazem systemu ani kopią zapasową pełnego profilu.
+Dane lokalne znajdują się pod `%LOCALAPPDATA%\NVDriverForge`; chronione zadania i eksport sterowników znajdują się pod `%PROGRAMDATA%\NVDriverForge\Jobs`. Użycie przenośne tworzy również dane lokalne. Eksport do magazynu sterowników i kopia zapasowa profilu natywnego to odrębne kwestie. Nie jest to również obraz systemu.
 
 <a id="known-limitations"></a>
 ## Znane ograniczenia
@@ -120,7 +136,7 @@ Dane lokalne znajdują się pod `%LOCALAPPDATA%\NVDriverForge`; chronione zadani
 | --- | --- |
 | Katalog online niedostępny | Wybierz oryginalny pakiet z [Pobieranie sterowników NVIDIA](https://www.nvidia.com/en-us/drivers/). Nie zastępuj sąsiedniego modelu GPU. |
 | Wyszukiwanie poprawek jest niedostępne | Użyj [Forum sterowników NVIDIA Game Ready](https://www.nvidia.com/en-us/geforce/forums/game-ready-drivers/13/) i sprawdź rzeczywisty pakiet. |
-| Instalacja NVIDIA nie powiodła się | Przeczytaj podsumowanie awarii i otwórz szczegółowe logi. Opcjonalne komponenty, które są już aktualne lub nie mają zastosowania, można pominąć w 0.1.3. Nieudane instalacje nie powodują wprowadzenia opcjonalnych poprawek ani pomyślnego uruchomienia/ponownego uruchomienia. |
+| Instalacja NVIDIA nie powiodła się | Przeczytaj podsumowanie awarii i otwórz szczegółowe logi. Opcjonalne komponenty, które są już aktualne lub nie mają zastosowania, można pominąć w 0.1.4. Nieudane instalacje nie powodują wprowadzenia opcjonalnych poprawek ani pomyślnego uruchomienia/ponownego uruchomienia. |
 | Błąd podpisu/haszu/kopii zapasowej | Zatrzymaj tę instalację i zachowaj błąd; uzyskaj ponownie oryginalne opakowanie, jeśli jest uszkodzone. |
 | Opcja niedostępna | Przeczytaj przyczynę dotyczącą sprzętu, komponentu lub sterownika docelowego; zachowaj to bez zmian. |
 | Uruchom ponownie lub zadanie nadal oczekuje na realizację | Skorzystaj z instrukcji przywracania pracy i wyraźnego CV; nie usuwaj jego dziennika. |

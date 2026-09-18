@@ -37,9 +37,9 @@ Hiçbir zaman ana geliştirme çalışma alanını, özel denetim dizinini veya 
 | Araç | Etiket | Sürüm politikası |
 | --- | --- | --- |
 | NVIDIA Profile Inspector – NV Tools Fork | nvpi-v3.0.2.3 | Mevcut dört bölümlü uygulama sürümü; kurulum revizyonu 2'nin kendi dosya adı var |
-| NVDriverForge | nvdriverforge-v0.1.3 | Mevcut 0.x şeması; sürümlendirilmiş güncellemeler önceki paketleri korur |
-| NVMFG Unlock40 | nvmfg-unlock40-v0.1.1 | Yeni bir uygulama sürümü icat edilmeden tam karmalarla tanımlanan UI2 adayı |
-| NVRasterPulse | nvrasterpulse-v0.1 | Mevcut iki parçalı versiyon |
+| NVDriverForge | nvdriverforge-v0.1.4 | Mevcut 0.x şeması; sürümlendirilmiş güncellemeler önceki paketleri korur |
+| NVMFG Unlock40 | nvmfg-unlock40-v0.2.3 | Uygulama sürümü 0.2.3; halka açık 0.1.1'ten bu yana kümülatif değişiklikler |
+| NVRasterPulse | nvrasterpulse-v0.2 | Mevcut iki parçalı versiyon |
 
 Bakımcı, denetlenen varlıkları doğrudan yayınlayabilir veya bir asistanı yayınlaması için yetkilendirebilir. Yayın açıktır; hiçbir iş akışı her taahhütte bir Sürüm oluşturmaz.
 
@@ -52,10 +52,13 @@ Bakımcı, denetlenen varlıkları doğrudan yayınlayabilir veya bir asistanı 
 
 Proje başına etiket bağlantıları, kullanıcıların paylaşılan bir `releases/latest` bağlantısı aracılığıyla başka bir araca gönderilmesini önler. GitHub'in otomatik **Source code** arşivleri bu belge merkezini içerir. Uygulama kaynakları gizli kalır. Orijinal bileşen bildirimleri bozulmadan kalır ve bir sürüm, NVMFG'nin belgelenen NVIDIA SDK rezervini çözümlemez.
 
+
+18 Eylül güncellemesi üç yeni etiket hazırlıyor; mevcut Profile Inspector Sürümü değişmeden kalır. Uygulama güncelleme kontrolleri için varlık adları, etiketler ve `SHA256SUMS.txt` aynı kalmalıdır. Normal Sürümleri kararlı sürüm kontrollerine tabi tutmak için ön sürüm işareti olmadan yayınlayın; NVMFG deneysel olmaya devam ediyor.
+
 <a id="integrity-and-storage"></a>
 ## Bütünlük ve depolama
 
-Yayınlanan ikili baytları asla sessizce değiştirmeyin. Yeni karmalarla yeni bir açık sürüm veya yükleyici revizyonu kullanın. Yasal sepetler gömülü bildirimleri tamamlar. NVDriverForge 0.1.3 taşınabilir, GitHub'in normal 100 MiB Git dosyası sınırının üzerinde 141.760.351 bayttır. Sürüm ekleri, ikili dosyaları veya Git LFS'yi bu merkeze koymaktan kaçınır. [GitHub büyük dosya kılavuzu](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
+Yayınlanan ikili baytları asla sessizce değiştirmeyin. Yeni karmalarla yeni bir açık sürüm veya yükleyici revizyonu kullanın. Yasal sepetler gömülü bildirimleri tamamlar. NVDriverForge 0.1.4 taşınabilir, GitHub'in normal 100 MiB Git dosyası sınırının üzerinde 142.017.891 bayttır. Sürüm ekleri, ikili dosyaları veya Git LFS'yi bu merkeze koymaktan kaçınır. [GitHub büyük dosya kılavuzu](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
 
 Depo güvenliği ayarlarında özel güvenlik açığı raporlaması etkinleştirilmelidir. Hassas raporları oraya yönlendirmeden önce kullanılabilirliğini doğrulayın; [SECURITY.md](../SECURITY.md), güvenlik açığı ayrıntılarını açığa çıkarmayan bir geri dönüş sağlar.
 

@@ -27,8 +27,8 @@
 | --- | --- | --- | --- |
 | NVIDIA Profile Inspector – NV Tools Fork | NVPI-CustomNV-3.0.2.3-Setup-r2.exe | முழுமையான NVPI ஜிப்பைப் பிரித்தெடுக்கவும் | NVIDIA இயக்கி மற்றும் .NET கட்டமைப்பு 4.8 |
 | NVDriverForge | NVDriverForge-Setup.exe | NVDriverForge.exe, இயக்க நேரம் சேர்க்கப்பட்டுள்ளது | நிறுவல் செயல்பாடுகளுக்கு இணங்கக்கூடிய அசல் NVIDIA இயக்கி தொகுப்பு |
-| NVMFG Unlock40 | NVMFGUnlock40-0.1.1-Setup-x64.exe | முழுமையான NVMFG ZIP பிரித்தெடுக்கவும், துணை கோப்புறைகளை தக்கவைக்கவும் | RTX 40, தற்போதுள்ள DLSS FG, சரியான வழங்குநர் மற்றும் .NET கட்டமைப்பு 4.8 உதவியாளர்கள் |
-| NVRasterPulse | NVRasterPulse-0.1-win-x64-Setup.exe | முழுமையான RP ஜிப்பைப் பிரித்தெடுக்கவும் | RTSS மற்றும் .NET கட்டமைப்பு 4.8 |
+| NVMFG Unlock40 | NVMFGUnlock40-0.2.3-Setup-x64.exe | முழுமையான NVMFG ZIP பிரித்தெடுக்கவும், துணை கோப்புறைகளை தக்கவைக்கவும் | RTX 40, தற்போதுள்ள DLSS FG, சரியான வழங்குநர் மற்றும் .NET கட்டமைப்பு 4.8 உதவியாளர்கள் |
+| NVRasterPulse | NVRasterPulse-0.2-win-x64-Setup.exe | முழுமையான RP ஜிப்பைப் பிரித்தெடுக்கவும் | RTSS மற்றும் .NET கட்டமைப்பு 4.8 |
 
 <a id="download-verify-install"></a>
 ## பதிவிறக்கவும், சரிபார்க்கவும், நிறுவவும்

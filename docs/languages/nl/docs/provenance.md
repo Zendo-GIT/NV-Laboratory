@@ -18,7 +18,7 @@
 <a id="provenance-changes-and-licensing"></a>
 # Herkomst, wijzigingen en licenties
 
-Deze audit beschrijft de kandidaten die zijn voorbereid op **2026-09-09**. Applicatiebronnen blijven privé; de openbare inventarissen bevatten bestandsnamen en hashes, geen broncode. Zie [mededelingen over volledige componenten](../THIRD_PARTY_NOTICES.md).
+Deze audit beschrijft de kandidaten die zijn voorbereid op **2026-09-18**. Applicatiebronnen blijven privé; de openbare inventarissen bevatten bestandsnamen en hashes, geen broncode. Zie [mededelingen over volledige componenten](../THIRD_PARTY_NOTICES.md).
 
 <a id="nvidia-profile-inspector--nv-tools-fork"></a>
 ## NVIDIA Profile Inspector – NV Tools Fork
@@ -68,11 +68,13 @@ De helper past de NvapiDrsWrapper en NativeArrayHelper van NVPI aan in een afzon
 
 MinHook referentie: `8fda4f5481fed5797dc2651cd91e238e9b3928c6`; de overgeërfde gecompileerde subset heeft geen functionele lokale veranderingen in de vergelijking. Streamline-integratieheaders: 2.12; open header-licentie geverifieerd op v2.12.0. NGX-headerbron: NVIDIA/DLSS commit `a291cc7d2cc642a51566f3dfd5376f635cd1b284`.
 
-Kandidaat-engine SHA-256: `0E7FC0277C88B22095B622F6A3CB292EC0C14F7A0253D392502257B75E548890`.
+Kandidaat-engine SHA-256: `C793770D329B99CD9C5C640317CE435BFE353CA2868E36CF5DCD4D5295EFAE13`.
 
 Vereiste provider SHA-256 in engine.json: `C64928FDB7C48A57722EA8EEF2662171EDC323473ADEA66C29A206A23F1A2BED`. Een gerapporteerde 310.9-providerfamilie is niet uitwisselbaar met deze exacte hash. Er is geen provider-DLL of -model inbegrepen.
 
 **Uitstaand licentiepunt:** de volledige NVIDIA RTX SDK-licentie, versie 14 maart 2024, bevat een sectie 4(d)-beperking die relevant is voor het omzeilen van technische beperkingen. Uit de audit blijkt geen toestemming voor dit gebruik. Het behouden van de MIT-motorlicentie, het gratis zijn of het observeren van andere mods lost deze afzonderlijke voorwaarde niet op. De voorbereiding van kandidaten is geen wettelijke goedkeuring. De originele korte headeraankondiging wordt aangevuld met de volledige licentie; de Windows-1252-tekst wordt ook geleverd als leesbare UTF-8, waarbij de originele bytes behouden blijven.
+
+De oorspronkelijke vergelijking is opnieuw berekend voor 0.2.3: dezelfde 48 bestanden en classificaties. Sinds de vorige audit zijn `game_selection.cpp`, `game_selection.h` en `patcher.cpp` gewijzigd voor observaties van activiteiten/mogelijkheden. Nieuwe bibliotheek-, diagnose-, voorkeurs-, update- en selectieworkflows behoren tot de onderhoudsapplicatie. Componentlicenties en de vereiste provider-hash blijven ongewijzigd.
 
 <a id="nvrasterpulse"></a>
 ## NVRasterPulse
@@ -102,3 +104,5 @@ De latere NVPI setup-revisie 2 repareert de stand-alone taalselectie met behulp 
 NVDriverForge 0.1.3 werd voltooid op 10-09-2026. Het privéverificatierapport registreert 366 applicatietests, 118 begeleidende controles, 32 instellingscontroles, 156 native vergelijkingen en 34 gevallen van taaldoorsturen. De beveiligde componentselectie-fix werd afgespeeld tegen een origineel driverpakket zonder de payload te wijzigen of de driver te installeren. Dit zijn gedateerde resultaten van het productteam, geen tests die opnieuw zijn uitgevoerd door deze documentatie-update of een bewijs van een succesvolle installatie van een echt stuurprogramma.
 
 Deze hubupdate verandert geen functionele applicatiecode. Eerdere tests voor het bouwen van applicaties/units/UI blijven gedateerd historisch bewijsmateriaal. Dit is geen volledige reverse engineering van elk binair bestand van derden of een garantie tegen elk mogelijk geheim patroon.
+
+Update van 18 september 2026: NVDriverForge 0.1.4 voegt gereedheidscontroles, native profielback-up, componentbegeleiding, voorkeuren en kits, gedetailleerde resultaten, lokale rapportage en applicatie-updates toe. NVRasterPulse 0.2 voegt configuratiediagnostiek, FPS-begeleiding, pauzeren/hervatten, ongedaan maken, `.nvrp`-profielen en favorieten/verbergen toe, zonder een nieuwe limiter-engine. Individuele handleidingen beschrijven het gebruik en de limieten. Statische hubcontroles staan ​​los van de applicatietests die zijn vastgelegd in de privérapporten van 18 september; Voor deze hub zijn geen stuurprogramma-installatie, echte profielimport of latentiemeting uitgevoerd.

@@ -15,7 +15,7 @@
 
 **Prepare an NVIDIA driver installation with clear component choices and optional settings.**
 
-[Download 0.1.3 & status](../docs/downloads.md#nvdriverforge) · [Installation](#installation) · [Credits](#credits-and-upstream) · [License](LICENSE)
+[Download 0.1.4 & status](../docs/downloads.md#nvdriverforge) · [Installation](#installation) · [Credits](#credits-and-upstream) · [License](LICENSE)
 
 ## Overview and purpose
 
@@ -32,14 +32,15 @@ workflow. It does not include NVCleanstall or claim complete feature parity.
 - NVIDIA Game Ready / Studio lookup and downloads; optional hotfix discovery with manual fallback.
 - Analysis of the original package, hashes, NVIDIA signatures, manifests and compatible INF entries.
 - Component selection with dependencies and preservation of unknown components.
-- Version 0.1.3 keeps selected optional NVIDIA components skippable and excludes only verified unchecked components from discovery. Already-current or inapplicable optional runtimes are no longer forced as critical components.
+- Version 0.1.4 keeps selected optional NVIDIA components skippable and excludes only verified unchecked components from discovery. Already-current or inapplicable optional runtimes are no longer forced as critical components.
 - Clear installation failure summaries and access to detailed logs in all 34 languages.
-- Explicit installation confirmation, protected staging and export of existing driver-store packages.
+- Readiness checks, explicit confirmation, driver-store export and native NVIDIA profile backup before installation.
 - Optional advanced settings, with preflight checks, journals and conflict-aware recovery.
 - Optional **Custom NV** preset with named choices and explanations, including a separate SILK strength selection and compatibility checks.
 - Optional exact-version NVENC patch downloads; source commit and target bytes are checked.
 - A separate, optional installation of the Profile Inspector fork from the Tools screen.
-- Optional installed-user update checks, 34 interface languages and four themes.
+- Component guide, reusable preferences, driver kits, local support reports and optional application updates.
+- 34 interface languages and four themes.
 
 Available advanced options concern MPO, the DLSS indicator, Ansel, NVIDIA audio
 sleep, MSI, interrupt policy/priority, HDCP, display-container startup and an
@@ -95,6 +96,20 @@ Preferences control language, theme and optional installed-user update checks.
 The portable does not create the installed background-check task. Tools and
 recovery are separate from the four installation steps.
 
+## Backup and diagnostic tools
+
+**Before installation:** readiness checks cover the package signature, GPUs, estimated workspace/backup space, pending restart and competing installers. The elevated worker repeats them. Competing processes are never stopped automatically. The native NVIDIA profile-database backup must succeed before NVIDIA Setup starts; driver-store export is a separate backup.
+
+**Reusable choices:** the component guide asks four questions about games, audio, NVIDIA App and recording. Review its suggestions; required, unknown and dependency components remain protected. Export preferences, then preview and revalidate them against the selected package when importing. Consents, restart operations, program paths and patch payloads are not imported.
+
+**Driver kit:** export a `.nvdfkit.zip` to keep the original signed NVIDIA installer, choices, hashes and instructions together. Carry `NVDriverForge.exe` separately. Import the kit in Tools, review the preview, then use the normal installation workflow. This is not a slim driver or modified standalone installer. Optional NVENC still needs a download and consent for that exact driver. NVIDIA's redistribution terms still apply.
+
+**Results and support:** read the short result and expand the per-stage/per-option details. Successful read-back establishes a stored value, not a measured improvement. The local JSON support report uses allowlisted fields, including the last saved job after restarting the app. Preview it before saving or sharing. It includes no raw logs, profile contents or hardware identifiers and is never uploaded automatically.
+
+**Recovery:** follow the protected job's guide to recover the backed-up driver. Explicit profile restoration requires the original driver version and same GPUs; it replaces the entire database, preserves a current copy, and checks hashes and conflicting state. Do not erase its journal or force a mismatch. Real driver installation, complete recovery and native profile import with this new workflow remain unvalidated on a real system.
+
+**Application updates:** read the release notes, then explicitly choose a SHA-256-verified download. Checking is manual by default, with an optional check at startup. No installer is started automatically. This feature is separate from driver update checks and the installed edition's optional driver-check task.
+
 ## Screenshots
 
 ![NVDriverForge driver-page preview](../assets/screenshots/nvdriverforge-0.1.2-preview.png)
@@ -115,7 +130,7 @@ removing the app. Restore refuses conflicting changes from another tool.
 
 Local data is under `%LOCALAPPDATA%\NVDriverForge`; protected jobs and driver
 exports are under `%PROGRAMDATA%\NVDriverForge\Jobs`. Portable use also creates
-local data. A driver-store export is not a system image or a full profile backup.
+local data. Driver-store export and the native profile backup are separate. Neither is a system image.
 
 ## Known limitations
 
@@ -132,7 +147,7 @@ local data. A driver-store export is not a system image or a full profile backup
 | --- | --- |
 | Online catalog unavailable | Select an original package from [NVIDIA driver downloads](https://www.nvidia.com/en-us/drivers/). Do not substitute a neighboring GPU model. |
 | Hotfix lookup unavailable | Use [NVIDIA's Game Ready driver forum](https://www.nvidia.com/en-us/geforce/forums/game-ready-drivers/13/) and verify the actual package. |
-| NVIDIA installation fails | Read the failure summary and open the detailed logs. Optional components already current or inapplicable remain skippable in 0.1.3. Failed installs do not trigger optional tweaks or a success/restart flow. |
+| NVIDIA installation fails | Read the failure summary and open the detailed logs. Optional components already current or inapplicable remain skippable in 0.1.4. Failed installs do not trigger optional tweaks or a success/restart flow. |
 | Signature/hash/backup failure | Stop that installation and retain the error; obtain the original package again if corrupted. |
 | Option unavailable | Read its hardware, component or target-driver reason; keep it unchanged. |
 | Restart or job still pending | Use the job's recovery instructions and explicit resume; do not erase its journal. |

@@ -37,9 +37,9 @@ Vælg aldrig det overordnede udviklingsarbejdsområde, det private revisionsmapp
 | Værktøj | Tag | Versionspolitik |
 | --- | --- | --- |
 | NVIDIA Profile Inspector – NV Tools Fork | nvpi-v3.0.2.3 | Eksisterende firedelt applikationsversion; setup revision 2 har sit eget filnavn |
-| NVDriverForge | nvdriverforge-v0.1.3 | Eksisterende 0.x-skema; versionerede opdateringer bevarer tidligere pakker |
-| NVMFG Unlock40 | nvmfg-unlock40-v0.1.1 | UI2-kandidat identificeret ved nøjagtige hashes uden at opfinde en ny applikationsversion |
-| NVRasterPulse | nvrasterpulse-v0.1 | Eksisterende todelt version |
+| NVDriverForge | nvdriverforge-v0.1.4 | Eksisterende 0.x-skema; versionerede opdateringer bevarer tidligere pakker |
+| NVMFG Unlock40 | nvmfg-unlock40-v0.2.3 | Applikationsversion 0.2.3; kumulative ændringer siden offentlige 0.1.1 |
+| NVRasterPulse | nvrasterpulse-v0.2 | Eksisterende todelt version |
 
 Vedligeholderen kan offentliggøre direkte eller autorisere en assistent til at offentliggøre de reviderede aktiver. Offentliggørelsen er eksplicit; ingen arbejdsgange opretter en udgivelse på hver commit.
 
@@ -52,10 +52,13 @@ Vedligeholderen kan offentliggøre direkte eller autorisere en assistent til at 
 
 Tag-links pr. projekt undgår at sende brugere til et andet værktøj via et delt `releases/latest`-link. GitHub's automatiske **Source code**-arkiver indeholder denne dokumentationshub. Applikationskilder forbliver private. Oprindelige komponentmeddelelser forbliver intakte, og en udgivelse løser ikke NVMFGs dokumenterede NVIDIA SDK-reserve.
 
+
+Opdateringen den 18. september forbereder tre nye tags; den eksisterende Profile Inspector-udgivelse forbliver uændret. Aktivnavne, tags og `SHA256SUMS.txt` skal forblive nøjagtige til kontrol af programopdateringer. Udgiv normale udgivelser uden prerelease-flaget for at udsætte dem for stabile udgivelseskontroller; NVMFG forbliver eksperimentel.
+
 <a id="integrity-and-storage"></a>
 ## Integritet og opbevaring
 
-Udskift aldrig publicerede binære bytes uden lyd. Brug en ny eksplicit version eller installationsrevision med nye hashes. Lovlige sidevogne supplerer indlejrede meddelelser. NVDriverForge 0.1.3 bærbar er 141.760.351 bytes, over GitHub's almindelige 100 MiB Git-filgrænse. Frigiv vedhæftede filer undgå at sætte binære filer eller Git LFS i denne hub. [GitHub stor fil vejledning](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
+Udskift aldrig publicerede binære bytes uden lyd. Brug en ny eksplicit version eller installationsrevision med nye hashes. Lovlige sidevogne supplerer indlejrede meddelelser. NVDriverForge 0.1.4 bærbar er 142.017.891 bytes, over GitHub's almindelige 100 MiB Git-filgrænse. Frigiv vedhæftede filer undgå at sætte binære filer eller Git LFS i denne hub. [GitHub stor fil vejledning](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
 
 Privat sårbarhedsrapportering bør aktiveres i sikkerhedsindstillingerne for lageret. Bekræft dets tilgængelighed, før du sender følsomme rapporter dertil; [SECURITY.md](../SECURITY.md) giver en fallback, der ikke afslører sårbarhedsdetaljer.
 

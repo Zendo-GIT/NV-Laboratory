@@ -14,38 +14,50 @@
 # Changelog
 
 This hub follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
-Entries describe this repository; application versions are independent.
+Application versions and release dates are independent. Prepared packages below
+receive their actual publication dates on their respective GitHub Releases.
 
 ## [Unreleased]
 
-### Added
-
-- Hub, complete project guides and repository documentation in the 34 NV application languages.
-- Page-preserving language selectors, translation coverage metadata and stable internal anchors.
-- Upstream credits, full applicable notices and file provenance.
-- RTSS requirement and official download link for NVRasterPulse.
-- Separate RevoluSound Team links.
-- Prepared first-release package catalog, SHA-256 verification and manual release procedure.
-- Bug/feature forms, contribution and security instructions.
-- Read-only documentation and publication-boundary checks.
-
 ### Changed
 
-- NVMFG attribution now distinguishes the independently developed application,
-  the comparison/refinement reference, and the actual shared native components.
-  Existing copyrights, licenses and file comparisons remain intact.
-- NVDriverForge candidate updated to 0.1.3: corrected optional-component handling,
-  readable localized failures and updated runtime/companion packaging.
+- Refresh the hub and all 34 documentation languages for NVDriverForge 0.1.4,
+  NVMFG Unlock40 0.2.3 and NVRasterPulse 0.2, prepared on 2026-09-18.
+- NVDriverForge: readiness checks, native profile backups and guarded recovery,
+  component guidance, reusable preferences, driver kits, detailed results,
+  local support reports and separate application updates.
+- NVMFG: multi-folder discovery, persistent library cache, observed MFG activity,
+  runtime capability information, next-launch exclusion, local diagnostics,
+  preference transfer and optional application updates.
+- NVRasterPulse: configuration diagnostics, FPS suggestions, pause/resume,
+  one-level undo, selective profile import/export, favorites and hidden entries.
+- Refresh package hashes, release notes and the native-component provenance map.
+  Keep the already published Profile Inspector 3.0.2.3/setup-r2 assets unchanged.
 
 ### Fixed
 
-- NVIDIA Profile Inspector – NV Tools Fork setup revision 2 now shows the shared
-  34-language selector when launched directly. Explicit language and silent
-  forwarding are preserved; the editor and portable package are unchanged.
+- NVMFG game selection/counts, Ctrl+D handling and completed progress messages;
+  Wallpaper Engine is excluded from game detection. The separate reported
+  0.1.1 restoration blockage remains unreproduced and is not claimed fixed.
 
-No historical public release dates are reconstructed. Candidate application
-versions are 3.0.2.3, 0.1.3, 0.1.1 and 0.1; their release notes are attached to
-their own future releases. Preparation on 2026-09-09 is not a GitHub release date.
+## [Initial public hub] – 2026-09-10
 
-Français : l'historique public commence avec ce hub. Les versions applicatives
-sont indépendantes ; aucune ancienne publication ou date n'est inventée.
+### Added
+
+- Four project guides and repository documentation in 34 languages, with
+  page-preserving selectors, stable anchors and translation coverage metadata.
+- Component credits, original licenses, provenance, RTSS requirements and
+  separate RevoluSound Team links.
+- Manual release packages, SHA-256 values, issue forms, security policy and
+  read-only documentation validation. Application sources remain private.
+- First public tags: `nvpi-v3.0.2.3`, `nvdriverforge-v0.1.3`,
+  `nvmfg-unlock40-v0.1.1` and `nvrasterpulse-v0.1`.
+
+### Included fixes
+
+- Profile Inspector installer revision 2: the standalone 34-language selector;
+  editor and portable payload unchanged.
+- NVDriverForge 0.1.3: corrected optional-component handling and localized
+  failure summaries, with updated runtime and companion packaging.
+
+Dates above are verified public hub history, not reconstructed development dates.

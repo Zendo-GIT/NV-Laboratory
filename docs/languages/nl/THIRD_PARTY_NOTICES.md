@@ -18,7 +18,7 @@
 <a id="third-party-notices-and-credits"></a>
 # Kennisgevingen en kredieten van derden
 
-Initiële audit: 09-09-2026; NVDriverForge 0.1.3 en herkomstupdate: 10-09-2026. **De licentie van een component geldt voor dat onderdeel, niet voor de hele suite.** De bron van de applicatie blijft privé. Kennisgevingen over auteursrechten en toestemming worden woordelijk bewaard; deze tabel is een index en geen vervanging ervan. “Extern” betekent niet gedistribueerd in de applicatiemiddelen.
+Initiële audit: 09-09-2026; huidig ​​pakket- en herkomstoverzicht: 18-09-2026. NVDriverForge 0.1.4, NVMFG Unlock40 0.2.3 en NVRasterPulse 0.2 behouden de bestaande componentlicenties. Profile Inspector 3.0.2.3/setup-r2 is ongewijzigd. **De licentie van een component geldt voor dat onderdeel, niet voor de hele suite.** De bron van de applicatie blijft privé. Kennisgevingen over auteursrechten en toestemming worden woordelijk bewaard; deze tabel is een index en geen vervanging ervan. “Extern” betekent niet gedistribueerd in de applicatiemiddelen.
 
 | Onderdeel / origineel project | Auteur | Officiële site, repository of download | Licentie / kennisgeving | Gebruik in NV Tools | Wijzigingen |
 | --- | --- | --- | --- | --- | --- |

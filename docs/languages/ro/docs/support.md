@@ -23,9 +23,9 @@ Aceștia sunt candidații pregătiți, nu o matrice de certificare pentru toate 
 | Instrument | Windows / runtime | Hardware/dependență externă | Operații care necesită îngrijire |
 | --- | --- | --- | --- |
 | NVPI fork 3.0.2.3 | Windows 10/11 x64, .NET Framework 4.8 | Driver/afișaj compatibil NVIDIA | Profilul scrie și afișează previzualizări |
-| NVDriverForge 0.1.2 | Windows 10 build 19041+ / 11 x64; .NET/WPF inclus | Pachet de driver compatibil NVIDIA | Instalare ridicată, setări avansate, opțional NVENC |
-| NVMFG Unlock40 0.1.1 | Windows 10/11 x64; .NET/WPF inclus, ajutoare Framework 4.8 | RTX 40, joc DLSS FG eligibil și furnizor fixat | Patch nativ în joc, jurnal de profil global, actualizări ale jocului SDK |
-| NVRasterPulse 0.1 | Windows 10/11 x64, .NET Framework 4.8 | RTSS instalat; alergând după capace | RTSS modificări de profil per-executable |
+| NVDriverForge 0.1.4 | Windows 10 build 19041+ / 11 x64; .NET/WPF inclus | Pachet de driver compatibil NVIDIA | Instalare ridicată, setări avansate, opțional NVENC |
+| NVMFG Unlock40 0.2.3 | Windows 10/11 x64; .NET/WPF inclus, ajutoare Framework 4.8 | RTX 40, joc DLSS FG eligibil și furnizor fixat | Patch nativ în joc, jurnal de profil global, actualizări ale jocului SDK |
+| NVRasterPulse 0.2 | Windows 10/11 x64, .NET Framework 4.8 | RTSS instalat; alergând după capace | RTSS modificări de profil per-executable |
 
 Nu este pregătit niciun pachet ARM64. Disponibilitatea afișajului/API și versiunile vechi Windows pot limita funcțiile individuale. Nu este inventată nicio versiune minimă universală NVIDIA sau RTSS. Hash-ul exact al furnizorului NVMFG este în [proveniența](provenance.md).
 
@@ -47,6 +47,8 @@ Utilizați [formă de bug](https://github.com/Zendo-GIT/NV-Laboratory/issues/new
 | Setări NVMFG în așteptare | Rezolvați recuperarea cu jocurile închise, păstrând modificările de la alte instrumente. |
 | Capacul RP nu are efect | Rulați RTSS, identificați jocul real EXE, inspectați starea cârligului și limitele concurente. |
 | Capacul RP persistă după îndepărtare | Inspectați RTSS Global; eliminarea modifică numai anulări ale limitatorului local. |
+
+NVDriverForge oferă un raport local JSON previzualizabil; NVMFG oferă un diagnostic în Despre. Preferați aceste rapoarte filtrate unei arhive de jurnal complet și inspectați-le înainte de partajare. Un blocaj de restaurare raportat pe NVMFG 0.1.1 încă nu are o cauză stabilită; păstrează-și jurnalul și înregistrează orice cod de eroare disponibil. NVRasterPulse 0.2 oferă diagnostice de configurare în meniul său de acțiuni, fără a măsura FPS.
 
 <a id="logs-and-privacy"></a>
 ## Jurnalele și confidențialitatea

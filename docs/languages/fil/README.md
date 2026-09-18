@@ -30,9 +30,9 @@
 | Proyekto | Layunin | Bersyon | Dokumentasyon | I-download |
 | --- | --- | --- | --- | --- |
 | **NVIDIA Profile Inspector – NV Tools Fork** | NVIDIA driver profile editor na may idinagdag na display, kulay, HDR at ICC/WCS na mga kontrol. Dating NVPI Custom. | 3.0.2.3 | [Patnubay](NVIDIA-Profile-Inspector/README.md) | [Mga package](docs/downloads.md#nvidia-profile-inspector) |
-| **NVDriverForge** | Pumili ng mga bahagi ng driver, suriin ang mga opsyonal na tweak at mag-install ng orihinal na NVIDIA driver package. | 0.1.3 | [Patnubay](NVDriverForge/README.md) | [Mga package](docs/downloads.md#nvdriverforge) |
-| **NVMFG Unlock40** | Pang-eksperimentong RTX 40 MFG na tool na may mga pagpipilian sa bawat laro at pagpapanatili ng Streamline SDK. | 0.1.1 | [Patnubay](NVMFG-Unlock40/README.md) | [Mga package at katayuan](docs/downloads.md#nvmfg-unlock40) |
-| **NVRasterPulse** | Pamahalaan ang mga limitasyon ng RTSS FPS sa bawat executable, na may mga fractional na halaga, pag-backup at pag-access sa tray. | 0.1 | [Patnubay](NVRasterPulse/README.md) | [Mga package](docs/downloads.md#nvrasterpulse) |
+| **NVDriverForge** | Maghanda at mag-install ng orihinal na driver ng NVIDIA na may mga gabay na pagpipilian, pag-backup at pagbawi. | 0.1.4 | [Patnubay](NVDriverForge/README.md) | [Mga package](docs/downloads.md#nvdriverforge) |
+| **NVMFG Unlock40** | Pang-eksperimentong RTX 40 MFG, paulit-ulit na library ng laro, mga diagnostic at pagpapanatili ng Streamline SDK. | 0.2.3 | [Patnubay](NVMFG-Unlock40/README.md) | [Mga package at katayuan](docs/downloads.md#nvmfg-unlock40) |
+| **NVRasterPulse** | Pamahalaan ang mga limitasyon ng RTSS FPS bawat programa: mga diagnostic, mungkahi, i-pause, i-undo at pagbabahagi ng profile. | 0.2 | [Patnubay](NVRasterPulse/README.md) | [Mga package](docs/downloads.md#nvrasterpulse) |
 
 **Mga Download:** Inililista ng [pahina ng pag-download](docs/downloads.md) ang status ng bawat bersyon, mga file at mga value ng SHA-256. Ang mga pang-eksperimentong feature at mga limitasyon sa compatibility ay inilarawan sa mga gabay ng proyekto.
 

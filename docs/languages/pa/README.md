@@ -30,9 +30,9 @@
 | ਪ੍ਰੋਜੈਕਟ | ਮਕਸਦ | ਸੰਸਕਰਣ | ਦਸਤਾਵੇਜ਼ੀਕਰਨ | ਡਾਊਨਲੋਡ ਕਰੋ |
 | --- | --- | --- | --- | --- |
 | **NVIDIA Profile Inspector – NV Tools Fork** | ਸ਼ਾਮਲ ਕੀਤੇ ਡਿਸਪਲੇ, ਰੰਗ, HDR ਅਤੇ ICC/WCS ਨਿਯੰਤਰਣ ਦੇ ਨਾਲ NVIDIA ਡਰਾਈਵਰ ਪ੍ਰੋਫਾਈਲ ਸੰਪਾਦਕ। ਪਹਿਲਾਂ NVPI Custom। | 3.0.2.3 | [ਗਾਈਡ](NVIDIA-Profile-Inspector/README.md) | [ਪੈਕੇਜ](docs/downloads.md#nvidia-profile-inspector) |
-| **NVDriverForge** | ਡਰਾਈਵਰ ਕੰਪੋਨੈਂਟ ਚੁਣੋ, ਵਿਕਲਪਿਕ ਟਵੀਕਸ ਦੀ ਸਮੀਖਿਆ ਕਰੋ ਅਤੇ ਇੱਕ ਅਸਲੀ NVIDIA ਡ੍ਰਾਈਵਰ ਪੈਕੇਜ ਇੰਸਟਾਲ ਕਰੋ। | 0.1.3 | [ਗਾਈਡ](NVDriverForge/README.md) | [ਪੈਕੇਜ](docs/downloads.md#nvdriverforge) |
-| **NVMFG Unlock40** | ਪ੍ਰਤੀ-ਗੇਮ ਵਿਕਲਪਾਂ ਅਤੇ Streamline SDK ਰੱਖ-ਰਖਾਅ ਦੇ ਨਾਲ ਪ੍ਰਯੋਗਾਤਮਕ RTX 40 MFG ਟੂਲ। | 0.1.1 | [ਗਾਈਡ](NVMFG-Unlock40/README.md) | [ਪੈਕੇਜ ਅਤੇ ਸਥਿਤੀ](docs/downloads.md#nvmfg-unlock40) |
-| **NVRasterPulse** | RTSS FPS ਸੀਮਾਵਾਂ ਪ੍ਰਤੀ ਐਗਜ਼ੀਕਿਊਟੇਬਲ, ਫਰੈਕਸ਼ਨਲ ਵੈਲਯੂਜ਼, ਬੈਕਅੱਪ ਅਤੇ ਟਰੇ ਐਕਸੈਸ ਦੇ ਨਾਲ ਪ੍ਰਬੰਧਿਤ ਕਰੋ। | 0.1 | [ਗਾਈਡ](NVRasterPulse/README.md) | [ਪੈਕੇਜ](docs/downloads.md#nvrasterpulse) |
+| **NVDriverForge** | ਗਾਈਡਡ ਚੋਣਾਂ, ਬੈਕਅੱਪ ਅਤੇ ਰਿਕਵਰੀ ਦੇ ਨਾਲ ਇੱਕ ਅਸਲੀ NVIDIA ਡ੍ਰਾਈਵਰ ਤਿਆਰ ਅਤੇ ਸਥਾਪਿਤ ਕਰੋ। | 0.1.4 | [ਗਾਈਡ](NVDriverForge/README.md) | [ਪੈਕੇਜ](docs/downloads.md#nvdriverforge) |
+| **NVMFG Unlock40** | ਪ੍ਰਯੋਗਾਤਮਕ RTX 40 MFG, ਨਿਰੰਤਰ ਗੇਮ ਲਾਇਬ੍ਰੇਰੀ, ਡਾਇਗਨੌਸਟਿਕਸ ਅਤੇ Streamline SDK ਰੱਖ-ਰਖਾਅ। | 0.2.3 | [ਗਾਈਡ](NVMFG-Unlock40/README.md) | [ਪੈਕੇਜ ਅਤੇ ਸਥਿਤੀ](docs/downloads.md#nvmfg-unlock40) |
+| **NVRasterPulse** | RTSS FPS ਸੀਮਾਵਾਂ ਪ੍ਰਤੀ ਪ੍ਰੋਗਰਾਮ ਪ੍ਰਬੰਧਿਤ ਕਰੋ: ਡਾਇਗਨੌਸਟਿਕਸ, ਸੁਝਾਅ, ਵਿਰਾਮ, ਅਣਡੂ ਅਤੇ ਪ੍ਰੋਫਾਈਲ ਸ਼ੇਅਰਿੰਗ। | 0.2 | [ਗਾਈਡ](NVRasterPulse/README.md) | [ਪੈਕੇਜ](docs/downloads.md#nvrasterpulse) |
 
 **ਡਾਊਨਲੋਡ:** [ਡਾਉਨਲੋਡ ਪੰਨਾ](docs/downloads.md) ਹਰੇਕ ਸੰਸਕਰਣ ਦੀ ਸਥਿਤੀ, ਫਾਈਲਾਂ ਅਤੇ SHA-256 ਮੁੱਲਾਂ ਨੂੰ ਸੂਚੀਬੱਧ ਕਰਦਾ ਹੈ। ਪ੍ਰਯੋਗਾਤਮਕ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਤੇ ਅਨੁਕੂਲਤਾ ਸੀਮਾਵਾਂ ਦਾ ਵਰਣਨ ਪ੍ਰੋਜੈਕਟ ਗਾਈਡਾਂ ਵਿੱਚ ਕੀਤਾ ਗਿਆ ਹੈ।
 

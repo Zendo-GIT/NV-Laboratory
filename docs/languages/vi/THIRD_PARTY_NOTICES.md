@@ -18,7 +18,7 @@
 <a id="third-party-notices-and-credits"></a>
 # Thông báo và tín dụng của bên thứ ba
 
-Kiểm toán lần đầu: 2026-09-09; NVDriverForge 0.1.3 và cập nhật xuất xứ: 2026-09-10. **Giấy phép của một thành phần bao gồm thành phần đó chứ không phải toàn bộ bộ.** Nguồn ứng dụng vẫn ở chế độ riêng tư. Thông báo về bản quyền và sự cho phép được giữ nguyên nguyên văn; bảng này là một chỉ mục, không phải là một sự thay thế cho chúng. “Bên ngoài” có nghĩa là không được phân phối trong nội dung ứng dụng.
+Kiểm toán lần đầu: 2026-09-09; Đánh giá gói hàng và xuất xứ hiện tại: 2026-09-18. NVDriverForge 0.1.4, NVMFG Unlock40 0.2.3 và NVRasterPulse 0.2 giữ lại các giấy phép thành phần hiện có. Profile Inspector 3.0.2.3/setup-r2 không thay đổi. **Giấy phép của một thành phần bao gồm thành phần đó chứ không phải toàn bộ bộ.** Nguồn ứng dụng vẫn ở chế độ riêng tư. Thông báo về bản quyền và sự cho phép được giữ nguyên nguyên văn; bảng này là một chỉ mục, không phải là một sự thay thế cho chúng. “Bên ngoài” có nghĩa là không được phân phối trong nội dung ứng dụng.
 
 | Hợp phần/dự án ban đầu | tác giả | Trang web chính thức, kho lưu trữ hoặc tải xuống | Giấy phép/thông báo | Sử dụng trong NV Tools | Sửa đổi |
 | --- | --- | --- | --- | --- | --- |

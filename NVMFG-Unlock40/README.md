@@ -15,7 +15,7 @@
 
 **Experimental NVIDIA Multi Frame Generation for GeForce RTX 40, with a central controller and per-game choices.**
 
-[Download 0.1.1 & status](../docs/downloads.md#nvmfg-unlock40) · [Installation](#installation) · [Upstream](#upstream-and-modifications) · [Licenses](LICENSES/README.md)
+[Download 0.2.3 & status](../docs/downloads.md#nvmfg-unlock40) · [Installation](#installation) · [Upstream](#upstream-and-modifications) · [Licenses](LICENSES/README.md)
 
 ## Overview and purpose
 
@@ -33,9 +33,9 @@ It exists to coordinate experimental MFG behavior centrally, remember game-speci
 choices, and keep runtime updates and backups visible. It does not add DLSS Frame
 Generation to every game or convert an arbitrary FSR implementation.
 
-The prepared candidate is **0.1.1**, including the SDK-list visual correction
-internally recorded as UI2. The public version stays 0.1.1; its exact hashes
-distinguish this candidate from older local builds.
+The current package is **0.2.3**. It adds a persistent game library, activity and
+capability information, local diagnostics and corrected selection/progress behavior.
+[Downloads](../docs/downloads.md#nvmfg-unlock40) identifies the exact files and hashes.
 
 ## Features
 
@@ -73,7 +73,7 @@ attachment. The application is not designed to evade anti-cheat protections.
 ## Installation
 
 1. Read the [candidate status and licensing note](../docs/downloads.md#nvmfg-unlock40).
-2. Download `NVMFGUnlock40-0.1.1-Setup-x64.exe` or `NVMFGUnlock40-0.1.1-Portable-x64.zip` when its Release is available.
+2. Download `NVMFGUnlock40-0.2.3-Setup-x64.exe` or `NVMFGUnlock40-0.2.3-Portable-x64.zip` when its Release is available.
 3. Check SHA-256 and keep the accompanying notices. Install .NET Framework 4.8 if Windows does not already provide it.
 4. Run Setup, or extract the **entire** portable ZIP to a writable local folder.
 5. Launch `NVMFGUnlock40.exe`; keep `agent`, `driver`, `engine` and `Licenses` in the supplied layout.
@@ -104,6 +104,20 @@ download/replace an NGX model. Close the game, select the intended game update,
 and retain its original backup. To revert game files, use its backup restoration,
 not the cache's Uninstall button.
 
+## Library, diagnostics and updates
+
+**Persistent library:** select several game folders, including different drives, before starting one scan. Progress is visible and cancellation is available. After the first scan, a local cache restores the library on launch without walking every game folder. Refresh to find changes or add another folder. Maintenance operations still revalidate the affected files; backup monitoring remains active. The cache is stored at `%LOCALAPPDATA%\RtxMfg\library-cache.json`.
+
+**Selection:** Ctrl+A selects all and Ctrl+D clears the active Games or Backups tab. No game is automatically selected. Activity updates and refreshes no longer create ghost selections or inconsistent counts.
+
+**Activity and compatibility:** per-game MFG information comes from NGX observations without a new overlay. It is not a physical count of displayed frames. Dynamic-with-V-Sync support comes from runtime capabilities; unknown capability is not inferred from a version number. The application changes neither V-Sync nor VRR. With V-Sync off, Dynamic remains suspended; fixed or game-controlled choices are separate.
+
+**Next launch:** the temporary exclusion skips patching at the next game launch and restores normal management after it exits. It cannot remove a DLL already loaded in a game: close and restart that game. Wallpaper Engine is recognized as a desktop application; this correction preserves the protection for actual ignored games.
+
+**Preferences and support:** preference import/export requires manual reassociation of game folders. The local diagnostic in About filters private information and reports available NVAPI error codes or conflict categories. Review it before sharing; nothing is uploaded automatically.
+
+**Application updates:** an optional check displays release notes and offers the official Setup. The explicit download is checked against GitHub size and SHA-256 metadata; you initiate installation yourself. Version 0.2.3 also clears completed progress messages while preserving meaningful errors and results. These additions include the changes since public version 0.1.1.
+
 ## Screenshots
 
 ![NVMFG SDK-list preview](../assets/screenshots/nvmfg-0.1.1-sdk-preview.png)
@@ -130,6 +144,7 @@ These files can contain game paths. Do not post them unredacted.
 
 ## Known limitations
 
+- A reported 0.1.1 activation/restoration/uninstall blockage remains unreproduced and its cause is unknown. This release does not claim to fix it. After a failure, preserve the recovery journal and inspect the local diagnostic; do not force deletion of recovery data.
 - Experimental native patches can cause crashes or visual artifacts; an unresolved Bodycam crash is recorded in development history.
 - Controlled renderer tests are not certification for every game, driver or anti-cheat.
 - Generated frames do not create new input samples; no measured latency or performance gain is promised by this hub.

@@ -22,14 +22,14 @@
 
 > **Cài đặt RTSS trước.** NVRasterPulse yêu cầu [RivaTuner Statistics Server (RTSS), tải xuống từ Guru3D](https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/). RTSS phải đang chạy để thực thi các giới hạn. Không có trình cài đặt RTSS, hook DLL hoặc SDK được đóng gói.
 
-[Tải xuống 0.1 & trạng thái](../docs/downloads.md#nvrasterpulse) · [Cài đặt](#installation) · [Cách giới hạn hoạt động](#usage) · [Giấy phép](../../../../NVRasterPulse/LICENSE)
+[Tải xuống 0.2 & trạng thái](../docs/downloads.md#nvrasterpulse) · [Cài đặt](#installation) · [Cách giới hạn hoạt động](#usage) · [Giấy phép](../../../../NVRasterPulse/LICENSE)
 
 <a id="overview-and-purpose"></a>
 ## Tổng quan và mục đích
 
 NVRasterPulse là giao diện Windows nhỏ gọn để quản lý giới hạn khung RTSS theo tên thực thi. RTSS thực hiện việc giới hạn. NVRasterPulse quản lý các giá trị hồ sơ tương ứng, các yêu cầu sao lưu và tải lại, với quyền truy cập vào khay và các lựa chọn liên tục.
 
-Nó tồn tại để giúp việc chỉnh sửa giới hạn chính xác cho mỗi trò chơi trở nên dễ dàng hơn mà không cần thay thế toàn bộ cấu hình RTSS hoặc làm ảnh hưởng đến cài đặt lớp phủ của nó. Ứng cử viên **0.1** hiện tại là bản dựng ngày 9 tháng 9 năm 2026 với yêu cầu kiểm tra cài đặt RTSS.
+Nó tồn tại để giúp việc chỉnh sửa giới hạn chính xác cho mỗi trò chơi trở nên dễ dàng hơn mà không cần thay thế toàn bộ cấu hình RTSS hoặc làm ảnh hưởng đến cài đặt lớp phủ của nó. Phiên bản **0.2** bổ sung thêm chẩn đoán cấu hình, trình trợ giúp FPS, tạm dừng, hoàn tác và chia sẻ hồ sơ.
 
 <a id="features"></a>
 ## Tính năng
@@ -63,7 +63,7 @@ Không có phiên bản tối thiểu RTSS cụ thể nào được chứng nh�
 
 1. **[Tải xuống và cài đặt RTSS từ Guru3D](https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/).**
 2. Mở [Tải xuống NVRasterPulse](../docs/downloads.md#nvrasterpulse) và kiểm tra tính khả dụng của bản phát hành.
-3. Tải xuống `NVRasterPulse-0.1-win-x64-Setup.exe` hoặc `NVRasterPulse-0.1-win-x64-portable.zip`, cùng với các thông báo/tổng kiểm tra.
+3. Tải xuống `NVRasterPulse-0.2-win-x64-Setup.exe` hoặc `NVRasterPulse-0.2-win-x64-portable.zip`, cùng với các thông báo/tổng kiểm tra.
 4. So sánh SHA-256. Chạy Thiết lập hoặc trích xuất toàn bộ ZIP di động vào thư mục cục bộ có thể ghi.
 5. Mở `NVRasterPulse.exe`. Nếu thiếu RTSS, hãy sử dụng **Tải xuống RTSS**, cài đặt nó, sau đó **Kiểm tra lại** hoặc chọn `RTSS.exe` theo cách thủ công.
 6. Khởi động RTSS bằng phím tắt thông thường hoặc nút RTSS của NVRasterPulse nếu nó bị dừng.
@@ -87,6 +87,23 @@ Sử dụng hành động rác để xóa phần ghi đè giới hạn của NVR
 **Đóng và thoát:** cửa sổ chính có thể ẩn vào khay. Bình thường **Thoát** khiến RTSS chạy và giữ nguyên các giới hạn đã lưu. **Thoát + RTSS** yêu cầu đóng bình thường quy trình RTSS phù hợp trong phiên hiện tại, đợi tối đa 8 giây và không buộc tắt quy trình đó. Giới hạn lưu trữ vẫn còn trong cả hai trường hợp.
 
 Ngôn ngữ và chủ đề được chọn trong ứng dụng. Khởi động khi đăng nhập Windows là tùy chọn và dành cho bản sao đã cài đặt. Nút thông tin giải thích các hành động phổ biến.
+
+<a id="diagnostics-and-profile-tools"></a>
+## Công cụ chẩn đoán và hồ sơ
+
+Mở menu hành động cho các công cụ bổ sung. Chúng bảo toàn RTSS Global, cài đặt lớp phủ và loại trừ.
+
+**Chẩn đoán:** kiểm tra giới hạn cục bộ/hiệu quả, RTSS đã dừng, tệp thực thi bị thiếu, không phát hiện được cửa sổ, tính năng hook bị vô hiệu hóa, tính kế thừa, giới hạn bị tạm dừng, cài đặt cạnh tranh và tên thực thi trùng lặp. Kiểm tra chỉ đọc này mô tả cấu hình; nó không chứng minh được một trò chơi bị RTSS thu hút hoặc đo lường FPS của nó.
+
+**Trình trợ giúp FPS:** chọn màn hình và tự khai báo VRR/G-Sync, V-Sync, Reflex và Frame Generation. Tần số làm mới được làm tròn đến từ Windows. Nếu Reflex hoặc Frame Generation đang hoạt động hoặc không xác định thì sẽ không có giới hạn tự động nào được cung cấp. Đối với VRR khi bật V-Sync và tắt Reflex/FG, phương pháp phỏng đoán sẽ trừ ít nhất 3 FPS hoặc khoảng 2% tốc độ làm mới. Đây không phải là mức tối ưu được đo lường. Áp dụng đề xuất điền vào bản nháp; **Lưu** vẫn là một hành động riêng biệt.
+
+**Tạm dừng và tiếp tục:** tạm dừng giới hạn của chương trình đã chọn, sau đó khôi phục các trường giới hạn trước đó của chương trình đó. Những thay đổi xung đột bởi một công cụ khác sẽ ngăn cản một sơ yếu lý lịch không rõ ràng. Ẩn một mục không tạm dừng giới hạn của nó.
+
+**Hoàn tác:** khôi phục thay đổi cuối cùng đối với sáu trường giới hạn được quản lý cho chương trình đó. Có một cấp độ; việc này không khôi phục toàn bộ RTSS. Những thay đổi bên ngoài xung đột bị từ chối. Sao lưu tập tin vẫn riêng biệt.
+
+**Chia sẻ hồ sơ:** xuất các hồ sơ đã chọn sang tệp `.nvrp`. Nhập hiển thị bản xem trước và bỏ chọn giới hạn hiện có theo mặc định. Tệp chỉ chứa tên, giới hạn và trạng thái thực thi mà không có đường dẫn hoặc tập lệnh tuyệt đối. Xem lại lựa chọn của bạn và áp dụng. Lỗi I/O có thể khiến một số cấu hình đã được áp dụng; kết quả xác định chúng và mỗi cái sẽ hoàn tác. Các tên thực thi giống hệt nhau vẫn có cùng cấu hình RTSS.
+
+**Mục yêu thích và mục ẩn:** ghim các chương trình hữu ích trước, ẩn các mục không mong muốn và khôi phục chúng trong hộp thoại chuyên dụng. Những lựa chọn này vẫn tồn tại. Mục yêu thích đã đóng không xuất hiện dưới dạng ứng dụng đang chạy.
 
 <a id="screenshots"></a>
 ## Ảnh chụp màn hình

@@ -18,7 +18,7 @@
 
 > **Installez RTSS d'abord.** NVRasterPulse nécessite [RivaTuner Statistics Server (RTSS), disponible sur Guru3D](https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/). RTSS doit être actif pour appliquer les limites. Aucun installateur, hook DLL ou SDK RTSS n'est inclus.
 
-[Télécharger 0.1 et consulter le statut](../docs/downloads.fr.md#nvrasterpulse) · [Installation](#installation) · [Utilisation](#utilisation) · [Licence](LICENSE)
+[Télécharger 0.2 et consulter le statut](../docs/downloads.fr.md#nvrasterpulse) · [Installation](#installation) · [Utilisation](#utilisation) · [Licence](LICENSE)
 
 <a id="overview-and-purpose"></a>
 ## Présentation et raison d'être
@@ -29,8 +29,8 @@ profils, sauvegardes et demandes de rechargement, avec accès depuis la zone de
 notification et mémorisation des choix.
 
 Il facilite les limites précises par jeu sans remplacer un profil RTSS complet
-ni perturber ses paramètres d'overlay. La candidate **0.1** retenue est celle du
-9 septembre 2026 avec vérification obligatoire de l'installation RTSS.
+ni perturber ses paramètres d'overlay. La version **0.2** ajoute diagnostic de configuration,
+aide FPS, pause, annulation et partage de profils.
 
 <a id="features"></a>
 ## Fonctionnalités
@@ -67,7 +67,7 @@ en cas d'erreur. RTSS installé mais arrêté satisfait la détection ; il doit 
 
 1. **[Téléchargez et installez RTSS depuis Guru3D](https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/).**
 2. Consultez le [statut des téléchargements NVRasterPulse](../docs/downloads.fr.md#nvrasterpulse).
-3. Téléchargez `NVRasterPulse-0.1-win-x64-Setup.exe` ou `NVRasterPulse-0.1-win-x64-portable.zip`, avec notices et empreintes.
+3. Téléchargez `NVRasterPulse-0.2-win-x64-Setup.exe` ou `NVRasterPulse-0.2-win-x64-portable.zip`, avec notices et empreintes.
 4. Vérifiez le SHA-256. Lancez Setup ou extrayez tout le ZIP dans un dossier local accessible en écriture.
 5. Ouvrez `NVRasterPulse.exe`. Si RTSS manque, utilisez le téléchargement, installez-le puis revérifiez ; vous pouvez aussi choisir manuellement `RTSS.exe`.
 6. Lancez RTSS par son raccourci ou le bouton RTSS de NVRasterPulse s'il est arrêté.
@@ -102,6 +102,23 @@ secondes et ne le termine pas de force. Les limites enregistrées restent prése
 
 Langue et thème se choisissent dans le programme. Le démarrage Windows est facultatif
 et prévu pour une copie installée. Le bouton d'information explique les actions courantes.
+
+<a id="diagnostics-and-profile-tools"></a>
+## Diagnostic et gestion des profils
+
+Ouvrez le menu d'actions pour les outils supplémentaires. Ils conservent le profil RTSS Global, les réglages de l'overlay et les exclusions.
+
+**Diagnostic :** consultez les limites locales et effectives, RTSS arrêté, un exécutable manquant, l'absence de fenêtre détectée, un hook désactivé, l'héritage, la pause, les limites concurrentes et les noms identiques. Ce contrôle en lecture seule décrit la configuration ; il ne prouve pas qu'un jeu est accroché à RTSS et ne mesure pas ses FPS.
+
+**Aide FPS :** choisissez l'écran et renseignez vous-même VRR/G-Sync, V-Sync, Reflex et Frame Generation. La fréquence arrondie vient de Windows. Si Reflex ou Frame Generation est actif ou inconnu, aucun plafond automatique n'est proposé. Pour VRR avec V-Sync activé et Reflex/FG désactivés, l'heuristique retire au moins 3 FPS ou environ 2 % de la fréquence. Ce n'est pas une valeur optimale mesurée. Appliquer la suggestion remplit le champ ; **Enregistrer** reste une action séparée.
+
+**Pause et reprise :** suspendez le plafond du programme choisi, puis restaurez ses champs de limitation précédents. Un état modifié par un autre outil bloque une reprise ambiguë. Masquer une entrée ne suspend pas sa limite.
+
+**Annuler :** restaurez la dernière modification des six champs de limitation gérés pour ce programme. Un seul niveau est disponible ; il ne s'agit pas de restaurer tout RTSS. Les changements externes incompatibles sont refusés. Les sauvegardes de fichiers restent distinctes.
+
+**Partager des profils :** exportez les profils sélectionnés dans un `.nvrp`. L'import présente un aperçu et laisse les limites existantes décochées par défaut. Le fichier contient seulement noms d'exécutables, plafonds et états, sans chemins absolus ni scripts. Vérifiez la sélection puis appliquez. Une erreur d'écriture peut laisser certains profils déjà appliqués ; le résultat les indique et chacun conserve son annulation. Les noms d'exécutables identiques désignent toujours le même profil RTSS.
+
+**Favoris et entrées masquées :** épinglez les programmes utiles en tête, masquez les entrées inutiles et restaurez-les depuis le dialogue dédié. Ces choix sont conservés. Un favori fermé n'apparaît pas artificiellement comme application ouverte.
 
 <a id="screenshots"></a>
 ## Captures

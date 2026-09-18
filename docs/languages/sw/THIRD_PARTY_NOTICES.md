@@ -18,7 +18,7 @@
 <a id="third-party-notices-and-credits"></a>
 # Arifa na mikopo ya watu wengine
 
-Ukaguzi wa awali: 2026-09-09; NVDriverForge 0.1.3 na sasisho la asili: 2026-09-10. **Leseni ya kipengee inashughulikia kipengele hicho, si kitengo kizima.** Chanzo cha maombi kinasalia kuwa cha faragha. Notisi za hakimiliki na ruhusa huhifadhiwa kama neno moja; jedwali hili ni faharisi, sio mbadala wao. "Nje" inamaanisha kutosambazwa katika mali ya ombi.
+Ukaguzi wa awali: 2026-09-09; kifurushi cha sasa na mapitio ya asili: 2026-09-18. NVDriverForge 0.1.4, NVMFG Unlock40 0.2.3 na NVRasterPulse 0.2 huhifadhi leseni za sehemu zilizopo. Profile Inspector 3.0.2.3/setup-r2 haijabadilishwa. **Leseni ya kipengee inashughulikia kipengele hicho, si kitengo kizima.** Chanzo cha maombi kinasalia kuwa cha faragha. Notisi za hakimiliki na ruhusa huhifadhiwa kama neno moja; jedwali hili ni faharisi, sio mbadala wao. "Nje" inamaanisha kutosambazwa katika mali ya ombi.
 
 | Sehemu / mradi wa asili | Mwandishi | Tovuti rasmi, hazina au pakua | Leseni / notisi | Tumia katika NV Tools | Marekebisho |
 | --- | --- | --- | --- | --- | --- |

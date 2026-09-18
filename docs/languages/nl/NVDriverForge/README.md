@@ -20,7 +20,7 @@
 
 **Bereid een NVIDIA-stuurprogramma-installatie voor met duidelijke componentkeuzes en optionele instellingen.**
 
-[Download 0.1.3 en status](../docs/downloads.md#nvdriverforge) · [Installatie](#installation) · [Kredieten](#credits-and-upstream) · [Licentie](../../../../NVDriverForge/LICENSE)
+[Download 0.1.4 en status](../docs/downloads.md#nvdriverforge) · [Installatie](#installation) · [Kredieten](#credits-and-upstream) · [Licentie](../../../../NVDriverForge/LICENSE)
 
 <a id="overview-and-purpose"></a>
 ## Overzicht en doel
@@ -35,14 +35,15 @@ Het is een onafhankelijk ontwikkelde applicatie die gedeeltelijk is geïnspireer
 - NVIDIA Game Ready / Studio opzoeken en downloaden; optionele hotfix-detectie met handmatige terugval.
 - Analyse van het originele pakket, hashes, NVIDIA-handtekeningen, manifesten en compatibele INF-vermeldingen.
 - Componentselectie met afhankelijkheden en behoud van onbekende componenten.
-- Versie 0.1.3 zorgt ervoor dat geselecteerde optionele NVIDIA-componenten kunnen worden overgeslagen en sluit alleen geverifieerde, niet-gecontroleerde componenten uit van detectie. Reeds bestaande of niet-toepasbare optionele runtimes worden niet langer geforceerd als kritische componenten.
+- Versie 0.1.4 zorgt ervoor dat geselecteerde optionele NVIDIA-componenten kunnen worden overgeslagen en sluit alleen geverifieerde, niet-gecontroleerde componenten uit van detectie. Reeds bestaande of niet-toepasbare optionele runtimes worden niet langer geforceerd als kritische componenten.
 - Duidelijke samenvattingen van installatiefouten en toegang tot gedetailleerde logboeken in alle 34 talen.
-- Expliciete installatiebevestiging, beschermde staging en export van bestaande driver-store-pakketten.
+- Gereedheidscontroles, expliciete bevestiging, export van driverstore en native NVIDIA-profielback-up vóór installatie.
 - Optionele geavanceerde instellingen, met preflight-controles, journalen en conflictbewust herstel.
 - Optionele **Custom NV**-voorinstelling met benoemde keuzes en uitleg, inclusief een afzonderlijke SILK-sterkteselectie en compatibiliteitscontroles.
 - Optionele NVENC-patchdownloads van de exacte versie; broncommit en doelbytes worden gecontroleerd.
 - Een aparte, optionele installatie van de Profile Inspector fork vanuit het scherm Tools.
-- Optionele controles op updates voor geïnstalleerde gebruikers, 34 interfacetalen en vier thema's.
+- Componentengids, herbruikbare voorkeuren, driverkits, lokale ondersteuningsrapporten en optionele applicatie-updates.
+- 34 interfacetalen en vier thema's.
 
 Beschikbare geavanceerde opties betreffen MPO, de DLSS-indicator, Ansel, NVIDIA audio-slaapstand, MSI, interruptbeleid/prioriteit, HDCP, opstarten van display-containers en een in aanmerking komende oudere telemetrieservice. Elk heeft zijn eigen voorwaarden en effecten; dit zijn geen universele prestatieverbeteringen.
 
@@ -87,6 +88,21 @@ Optioneel NVENC-werk downloadt compatibele gegevens van een vastgezette keylase-
 
 Voorkeuren bepalen de taal, het thema en optionele controles op updates voor geïnstalleerde gebruikers. De draagbare versie maakt de geïnstalleerde achtergrondcontroletaak niet aan. Tools en herstel staan ​​los van de vier installatiestappen.
 
+<a id="backup-and-diagnostic-tools"></a>
+## Back-up- en diagnosetools
+
+**Vóór de installatie:** Gereedheidscontroles hebben betrekking op de pakkethandtekening, GPU's, geschatte werkruimte/back-upruimte, op handen zijnde herstart en concurrerende installatieprogramma's. De verheven werker herhaalt ze. Concurrerende processen worden nooit automatisch stopgezet. De oorspronkelijke back-up van het NVIDIA-profieldatabase moet slagen voordat de installatie van NVIDIA start; Het exporteren van de driver-store is een afzonderlijke back-up.
+
+**Herbruikbare keuzes:** de componentengids stelt vier vragen over games, audio, NVIDIA App en opnemen. Bekijk de suggesties; vereiste, onbekende en afhankelijkheidscomponenten blijven beschermd. Exporteer voorkeuren, bekijk ze vervolgens en valideer ze opnieuw met het geselecteerde pakket tijdens het importeren. Toestemmingen, herstartbewerkingen, programmapaden en patch-payloads worden niet geïmporteerd.
+
+**Driverkit:** exporteer een `.nvdfkit.zip` om het origineel ondertekende NVIDIA-installatieprogramma, keuzes, hashes en instructies bij elkaar te houden. Draag `NVDriverForge.exe` afzonderlijk. Importeer de kit in Tools, bekijk het voorbeeld en gebruik vervolgens de normale installatieworkflow. Dit is geen slim stuurprogramma of een aangepast zelfstandig installatieprogramma. Optioneel NVENC heeft nog steeds een download en toestemming nodig voor dat exacte stuurprogramma. De herdistributievoorwaarden van NVIDIA zijn nog steeds van toepassing.
+
+**Resultaten en ondersteuning:** lees het korte resultaat en vouw de details per fase/per optie uit. Succesvol teruglezen levert een opgeslagen waarde op, geen gemeten verbetering. Het lokale JSON-ondersteuningsrapport maakt gebruik van velden op de toelatingslijst, inclusief de laatst opgeslagen taak na het opnieuw opstarten van de app. Bekijk een voorbeeld voordat u het opslaat of deelt. Het bevat geen onbewerkte logbestanden, profielinhoud of hardware-ID's en wordt nooit automatisch geüpload.
+
+**Herstel:** volg de handleiding van de beveiligde taak om het back-upstuurprogramma te herstellen. Voor expliciet profielherstel zijn de originele driverversie en dezelfde GPU's vereist; het vervangt de hele database, bewaart een huidige kopie en controleert hashes en conflicterende statussen. Wis het journaal niet en forceer geen mismatch. Echte driverinstallatie, volledig herstel en native profielimport met deze nieuwe workflow blijven niet gevalideerd op een echt systeem.
+
+**Applicatie-updates:** lees de releaseopmerkingen en kies vervolgens expliciet een SHA-256-geverifieerde download. De controle gebeurt standaard handmatig, met een optionele controle bij het opstarten. Geen enkel installatieprogramma wordt automatisch gestart. Deze functie staat los van de controles op stuurprogramma-updates en de optionele stuurprogrammacontroletaak van de geïnstalleerde editie.
+
 <a id="screenshots"></a>
 ## Schermafbeeldingen
 
@@ -101,7 +117,7 @@ Sluit NVDriverForge, verkrijg het volgende officiële pakket en verifieer de has
 
 Uninstall van Windows **Installed apps**. Het verwijdert de app en de updatetaak, niet het NVIDIA-stuurprogramma. Instellingen, logs en back-ups blijven behouden. Indien gewenst kunt u de geavanceerde/NVENC-wijzigingen herstellen via de gedocumenteerde herstelstroom **voordat** u de app verwijdert. Herstel weigert conflicterende wijzigingen van een andere tool.
 
-Lokale gegevens staan onder `%LOCALAPPDATA%\NVDriverForge`; beschermde banen en chauffeursexports vallen onder `%PROGRAMDATA%\NVDriverForge\Jobs`. Draagbaar gebruik creëert ook lokale gegevens. Een export van een driverstore is geen systeemimage of een volledige profielback-up.
+Lokale gegevens staan onder `%LOCALAPPDATA%\NVDriverForge`; beschermde banen en chauffeursexports vallen onder `%PROGRAMDATA%\NVDriverForge\Jobs`. Draagbaar gebruik creëert ook lokale gegevens. Het exporteren van de driveropslag en de eigen profielback-up zijn gescheiden. Het is ook geen systeemimage.
 
 <a id="known-limitations"></a>
 ## Bekende beperkingen
@@ -120,7 +136,7 @@ Lokale gegevens staan onder `%LOCALAPPDATA%\NVDriverForge`; beschermde banen en 
 | --- | --- |
 | Online catalogus niet beschikbaar | Selecteer een origineel pakket uit [NVIDIA-stuurprogramma downloaden](https://www.nvidia.com/en-us/drivers/). Vervang het model niet door een naburig GPU-model. |
 | Hotfix-zoekopdracht niet beschikbaar | Gebruik [NVIDIA's Game Ready-stuurprogrammaforum](https://www.nvidia.com/en-us/geforce/forums/game-ready-drivers/13/) en verifieer het daadwerkelijke pakket. |
-| NVIDIA-installatie mislukt | Lees het storingsoverzicht en open de gedetailleerde logboeken. Optionele componenten die al actueel of niet van toepassing zijn, kunnen worden overgeslagen in 0.1.3. Mislukte installaties veroorzaken geen optionele aanpassingen of een succes-/herstartstroom. |
+| NVIDIA-installatie mislukt | Lees het storingsoverzicht en open de gedetailleerde logboeken. Optionele componenten die al actueel of niet van toepassing zijn, kunnen worden overgeslagen in 0.1.4. Mislukte installaties veroorzaken geen optionele aanpassingen of een succes-/herstartstroom. |
 | Handtekening/hash/back-up mislukt | Stop die installatie en behoud de fout; verkrijg het originele pakket opnieuw als het beschadigd is. |
 | Optie niet beschikbaar | Lees de reden van de hardware, component of doeldriver; laat het onveranderd. |
 | Opnieuw opstarten of taak is nog in behandeling | Gebruik de herstelinstructies en het expliciete cv van de taak; wis het dagboek niet. |

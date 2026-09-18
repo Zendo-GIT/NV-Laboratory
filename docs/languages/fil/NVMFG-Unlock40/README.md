@@ -20,7 +20,7 @@
 
 ** Pang-eksperimentong NVIDIA Multi Frame Generation para sa GeForce RTX 40, na may sentral na controller at mga pagpipilian sa bawat laro.**
 
-[I-download ang 0.1.1 at katayuan](../docs/downloads.md#nvmfg-unlock40) · [Pag-install](#installation) · [Upstream](#upstream-and-modifications) · [Mga lisensya](LICENSES/README.md)
+[I-download ang 0.2.3 at katayuan](../docs/downloads.md#nvmfg-unlock40) · [Pag-install](#installation) · [Upstream](#upstream-and-modifications) · [Mga lisensya](LICENSES/README.md)
 
 <a id="overview-and-purpose"></a>
 ## Pangkalahatang-ideya at layunin
@@ -31,7 +31,7 @@ Ang [RTX40MFG-Unlock](https://github.com/dashdogy/RTX40MFG-Unlock) ay kinonsulta
 
 Umiiral ito upang i-coordinate ang pang-eksperimentong pag-uugali ng MFG sa gitna, tandaan ang mga pagpipiliang partikular sa laro, at panatilihing nakikita ang mga update sa runtime at pag-backup. Hindi ito nagdaragdag ng DLSS Frame Generation sa bawat laro o nagko-convert ng di-makatwirang pagpapatupad ng FSR.
 
-Ang inihandang kandidato ay **0.1.1**, kasama ang SDK-list visual correction na panloob na naitala bilang UI2. Ang pampublikong bersyon ay nananatiling 0.1.1; ang eksaktong mga hash nito ay nagpapakilala sa kandidatong ito mula sa mga mas lumang lokal na build.
+Ang kasalukuyang package ay **0.2.3**. Nagdaragdag ito ng patuloy na library ng laro, impormasyon sa aktibidad at kakayahan, mga lokal na diagnostic at naitama na pag-uugali sa pagpili/pag-unlad. Tinutukoy ng [Mga download](../docs/downloads.md#nvmfg-unlock40) ang eksaktong mga file at hash.
 
 <a id="features"></a>
 ## Mga tampok
@@ -68,7 +68,7 @@ Ang isang label na bersyon lamang ay hindi sapat: driver, hash ng provider, pags
 ## Pag-install
 
 1. Basahin ang [katayuan ng kandidato at tala sa paglilisensya](../docs/downloads.md#nvmfg-unlock40).
-2. I-download ang `NVMFGUnlock40-0.1.1-Setup-x64.exe` o `NVMFGUnlock40-0.1.1-Portable-x64.zip` kapag available na ang Paglabas nito.
+2. I-download ang `NVMFGUnlock40-0.2.3-Setup-x64.exe` o `NVMFGUnlock40-0.2.3-Portable-x64.zip` kapag available na ang Paglabas nito.
 3. Suriin ang SHA-256 at panatilihin ang mga kasamang abiso. I-install ang .NET Framework 4.8 kung hindi pa ito ibinibigay ng Windows.
 4. Patakbuhin ang Setup, o i-extract ang **buong** portable ZIP sa isang masusulat na lokal na folder.
 5. Ilunsad ang `NVMFGUnlock40.exe`; panatilihin ang `agent`, `driver`, `engine` at `Licenses` sa ibinigay na layout.
@@ -90,6 +90,21 @@ Ang pagsasara sa pangunahing window ay maaaring iwanan ang controller sa tray. A
 
 **Streamline SDKs:** sa page na NVIDIA SDK, mag-download ng opisyal na bersyon o mag-import ng tugmang lokal na SDK. Mag-import ng mga tindahan ng isang na-verify na kopya; Pinipili ito ng **Use this version**, at inaalis ng **Uninstall** ang naka-cache na kopya na iyon. Ang mga nawawalang Streamline DLL ay maaaring dagdagan mula sa isang opisyal na NVIDIA SDK, na ipinapakita ang pinagmulan. Hindi nito dina-download/pinapalitan ang isang NGX na modelo. Isara ang laro, piliin ang nilalayong pag-update ng laro, at panatilihin ang orihinal nitong backup. Upang ibalik ang mga file ng laro, gamitin ang backup na pagpapanumbalik nito, hindi ang Uninstall na button ng cache.
 
+<a id="library-diagnostics-and-updates"></a>
+## Library, diagnostic at update
+
+**Persistent library:** pumili ng ilang folder ng laro, kabilang ang iba't ibang drive, bago magsimula ng isang pag-scan. Nakikita ang pag-unlad at available ang pagkansela. Pagkatapos ng unang pag-scan, ire-restore ng lokal na cache ang library sa paglulunsad nang hindi nilalakad ang bawat folder ng laro. I-refresh upang mahanap ang mga pagbabago o magdagdag ng isa pang folder. Ang mga operasyon sa pagpapanatili ay muling nagpapatunay sa mga apektadong file; nananatiling aktibo ang backup monitoring. Ang cache ay naka-imbak sa `%LOCALAPPDATA%\RtxMfg\library-cache.json`.
+
+**Selection:** Pinipili ng Ctrl+A ang lahat at ki-clear ng Ctrl+D ang aktibong tab na Mga Laro o Backup. Walang laro ang awtomatikong napili. Ang mga pag-update at pag-refresh ng aktibidad ay hindi na gumagawa ng mga seleksyon ng multo o hindi pare-parehong bilang.
+
+**Aktibidad at pagiging tugma:** bawat larong MFG na impormasyon ay mula sa NGX na mga obserbasyon nang walang bagong overlay. Ito ay hindi isang pisikal na bilang ng mga ipinapakitang frame. Ang suportang Dynamic-with-V-Sync ay nagmumula sa mga kakayahan sa runtime; hindi natukoy ang hindi kilalang kakayahan mula sa isang numero ng bersyon. Ang application ay hindi nagbabago alinman sa V-Sync o VRR. Kapag naka-off ang V-Sync, nananatiling suspendido ang Dynamic; hiwalay ang mga napiling naayos o kontrolado ng laro.
+
+**Susunod na paglulunsad:** ang pansamantalang pagbubukod ay lumalaktaw sa pag-patch sa susunod na paglulunsad ng laro at ibinabalik ang normal na pamamahala pagkatapos nitong lumabas. Hindi nito maalis ang isang DLL na na-load na sa isang laro: isara at i-restart ang larong iyon. Ang Wallpaper Engine ay kinikilala bilang isang desktop application; ang pagwawasto na ito ay nagpapanatili ng proteksyon para sa aktwal na mga larong hindi pinansin.
+
+**Mga Kagustuhan at suporta:** Ang kagustuhan sa pag-import/pag-export ay nangangailangan ng manu-manong reassociation ng mga folder ng laro. Pini-filter ng lokal na diagnostic sa About ang pribadong impormasyon at mga ulat na available na NVAPI error code o mga kategorya ng conflict. Suriin ito bago ibahagi; walang awtomatikong na-upload.
+
+**Mga update sa application:** ang isang opsyonal na pagsusuri ay nagpapakita ng mga tala sa paglabas at nag-aalok ng opisyal na Setup. Sinusuri ang tahasang pag-download laban sa laki ng GitHub at metadata ng SHA-256; ikaw mismo ang magsisimula ng pag-install. Ang Bersyon na 0.2.3 ay nag-clear din ng mga nakumpletong mensahe ng pag-unlad habang pinapanatili ang mga makabuluhang error at resulta. Kasama sa mga karagdagan na ito ang mga pagbabago mula noong pampublikong bersyon na 0.1.1.
+
 <a id="screenshots"></a>
 ## Mga screenshot
 
@@ -109,6 +124,7 @@ Gumagamit ng `%LOCALAPPDATA%\NvidiaStreamlineMaintenance\Backups` ang mga lokal 
 <a id="known-limitations"></a>
 ## Mga kilalang limitasyon
 
+- Ang isang iniulat na 0.1.1 activation/restoration/uninstall blockage ay nananatiling unreproduced at hindi alam ang sanhi nito. Hindi inaangkin ng release na ito na ayusin ito. Pagkatapos ng kabiguan, panatilihin ang recovery journal at siyasatin ang lokal na diagnostic; huwag pilitin ang pagtanggal ng data sa pagbawi.
 - Maaaring magdulot ng mga pag-crash o visual artifact ang mga pang-eksperimentong katutubong patch; isang hindi nalutas na pag-crash ng Bodycam ang naitala sa kasaysayan ng pag-unlad.
 - Ang mga kinokontrol na renderer test ay hindi certification para sa bawat laro, driver o anti-cheat.
 - Ang mga nabuong frame ay hindi gumagawa ng mga bagong input sample; walang nasusukat na latency o performance gain ang ipinangako ng hub na ito.

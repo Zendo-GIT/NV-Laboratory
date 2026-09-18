@@ -18,7 +18,7 @@
 <a id="third-party-notices-and-credits"></a>
 # Üçüncü taraf bildirimleri ve kredileri
 
-İlk denetim: 2026-09-09; NVDriverForge 0.1.3 ve kaynak güncellemesi: 2026-09-10. **Bir bileşenin lisansı paketin tamamını değil, o bileşeni kapsar.** Uygulama kaynağı özel kalır. Telif hakkı ve izin bildirimleri aynen korunur; bu tablo bir dizindir, onların yerine geçmez. “Harici”, uygulama varlıklarında dağıtılmayan anlamına gelir.
+İlk denetim: 2026-09-09; güncel paket ve kaynak incelemesi: 2026-09-18. NVDriverForge 0.1.4, NVMFG Unlock40 0.2.3 ve NVRasterPulse 0.2 mevcut bileşen lisanslarını korur. Profile Inspector 3.0.2.3/setup-r2 değişmedi. **Bir bileşenin lisansı paketin tamamını değil, o bileşeni kapsar.** Uygulama kaynağı özel kalır. Telif hakkı ve izin bildirimleri aynen korunur; bu tablo bir indekstir, onların yerine geçmez. “Harici”, uygulama varlıklarında dağıtılmayan anlamına gelir.
 
 | Bileşen / orijinal proje | Yazar | Resmi site, depo veya indirme | Lisans / bildirim | NV Tools'te kullanın | Değişiklikler |
 | --- | --- | --- | --- | --- | --- |

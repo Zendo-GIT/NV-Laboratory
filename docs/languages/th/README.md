@@ -30,9 +30,9 @@
 | โครงการ | วัตถุประสงค์ | เวอร์ชัน | เอกสารประกอบ | ดาวน์โหลด |
 | --- | --- | --- | --- | --- |
 | **NVIDIA Profile Inspector – NV Tools Fork** | ตัวแก้ไขโปรไฟล์ไดรเวอร์ NVIDIA พร้อมเพิ่มจอแสดงผล สี การควบคุม HDR และ ICC/WCS ชื่อเดิม NVPI Custom. | 3.0.2.3 | [คู่มือ](NVIDIA-Profile-Inspector/README.md) | [แพ็คเกจ](docs/downloads.md#nvidia-profile-inspector) |
-| **NVDriverForge** | เลือกส่วนประกอบไดรเวอร์ ตรวจสอบการปรับแต่งเพิ่มเติม และติดตั้งแพ็คเกจไดรเวอร์ NVIDIA ดั้งเดิม | 0.1.3 | [คู่มือ](NVDriverForge/README.md) | [แพ็คเกจ](docs/downloads.md#nvdriverforge) |
-| **NVMFG Unlock40** | เครื่องมือ RTX รุ่นทดลอง 40 MFG พร้อมตัวเลือกต่อเกมและการบำรุงรักษา Streamline SDK | 0.1.1 | [คู่มือ](NVMFG-Unlock40/README.md) | [แพ็คเกจและสถานะ](docs/downloads.md#nvmfg-unlock40) |
-| **NVRasterPulse** | จัดการขีดจำกัด RTSS FPS ต่อการดำเนินการด้วยค่าเศษส่วน การสำรองข้อมูล และการเข้าถึงถาด | 0.1 | [คู่มือ](NVRasterPulse/README.md) | [แพ็คเกจ](docs/downloads.md#nvrasterpulse) |
+| **NVDriverForge** | จัดเตรียมและติดตั้งไดรเวอร์ NVIDIA ดั้งเดิมพร้อมตัวเลือกที่แนะนำ การสำรองข้อมูล และการกู้คืน | 0.1.4 | [คู่มือ](NVDriverForge/README.md) | [แพ็คเกจ](docs/downloads.md#nvdriverforge) |
+| **NVMFG Unlock40** | RTX รุ่นทดลอง 40 MFG, ไลบรารีเกมถาวร, การวินิจฉัย และการบำรุงรักษา Streamline SDK | 0.2.3 | [คู่มือ](NVMFG-Unlock40/README.md) | [แพ็คเกจและสถานะ](docs/downloads.md#nvmfg-unlock40) |
+| **NVRasterPulse** | จัดการขีดจำกัด RTSS FPS ต่อโปรแกรม: การวินิจฉัย ข้อเสนอแนะ การหยุดชั่วคราว เลิกทำ และการแชร์โปรไฟล์ | 0.2 | [คู่มือ](NVRasterPulse/README.md) | [แพ็คเกจ](docs/downloads.md#nvrasterpulse) |
 
 **การดาวน์โหลด:** [หน้าดาวน์โหลด](docs/downloads.md) แสดงรายการสถานะ ไฟล์ และค่า SHA-256 ของแต่ละเวอร์ชัน คุณลักษณะการทดลองและขีดจำกัดความเข้ากันได้อธิบายไว้ในคู่มือโครงการ
 

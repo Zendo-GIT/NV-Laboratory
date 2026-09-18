@@ -46,13 +46,13 @@
     {
       "file": "game_selection.cpp",
       "status": "added-relative-to-reference",
-      "local_sha256": "ea8d79ebc38918bda31b7f1b460b33ac5950fb1a8f90167b906da274aa3d8942",
+      "local_sha256": "66399cc77deb9b5983ffa184647ecd0ea9e691b29b47a62c1ed47c3d62725a6b",
       "upstream_sha256": null
     },
     {
       "file": "game_selection.h",
       "status": "added-relative-to-reference",
-      "local_sha256": "80dbc6cf11848e033a86d334c4441493c0602215e5258e765a98b15ce09e7f3c",
+      "local_sha256": "fc19e9124bdbfba38a2a0098af3df30ece368cfffcfe6d12dbb186aca7cd4cd9",
       "upstream_sha256": null
     },
     {
@@ -112,7 +112,7 @@
     {
       "file": "patcher.cpp",
       "status": "modified",
-      "local_sha256": "c7cacefa4caff79fb2b320f09adea288f53e73908d8bc4df7129654d4d749646",
+      "local_sha256": "221dc663aba6f5a41c1670fa1c3db1946cbc41484bc356337890a6da2802787d",
       "upstream_sha256": "5757a46c36a2a9b41f6fe05014fea9f6a0d60b57209c0083e3ddd1df5281a1d4"
     },
     {
@@ -290,5 +290,7 @@
       "upstream_sha256": null
     }
   ],
-  "comparison": "Byte hashes retained; only CRLF/LF and optional UTF-8 BOM normalized for the separate formatting-only classification. Added means absent at the reference path, not proof of original authorship."
+  "comparison": "Byte hashes retained; only CRLF/LF and optional UTF-8 BOM normalized for the separate formatting-only classification. Added means absent at the reference path, not proof of original authorship.",
+  "audited_on": "2026-09-18",
+  "application_version": "0.2.3"
 }

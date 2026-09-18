@@ -27,8 +27,8 @@ Mulailah dengan [Unduhan](downloads.md), yang mencatat status publikasi dan nama
 | --- | --- | --- | --- |
 | NVIDIA Profile Inspector – NV Tools Fork | NVPI-CustomNV-3.0.2.3-Setup-r2.exe | Ekstrak ZIP NVPI lengkap | Driver NVIDIA dan .NET Framework 4.8 |
 | NVDriverForge | NVDriverForge-Setup.exe | NVDriverForge.exe, termasuk waktu proses | Paket driver NVIDIA asli yang kompatibel untuk operasi instalasi |
-| NVMFG Unlock40 | NVMFGUnlock40-0.1.1-Setup-x64.exe | Ekstrak ZIP NVMFG lengkap, simpan subfoldernya | RTX 40, DLSS FG yang ada, penyedia yang tepat dan pembantu .NET Framework 4.8 |
-| NVRasterPulse | NVRasterPulse-0.1-win-x64-Setup.exe | Ekstrak ZIP RP lengkap | RTSS dan .NET Framework 4.8 |
+| NVMFG Unlock40 | NVMFGUnlock40-0.2.3-Setup-x64.exe | Ekstrak ZIP NVMFG lengkap, simpan subfoldernya | RTX 40, DLSS FG yang ada, penyedia yang tepat dan pembantu .NET Framework 4.8 |
+| NVRasterPulse | NVRasterPulse-0.2-win-x64-Setup.exe | Ekstrak ZIP RP lengkap | RTSS dan .NET Framework 4.8 |
 
 <a id="download-verify-install"></a>
 ## Unduh, verifikasi, instal

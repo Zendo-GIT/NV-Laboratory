@@ -20,7 +20,7 @@
 
 **NVIDIA Multi Frame Generation sperimentale per GeForce RTX 40, con un controller centrale e scelte per gioco.**
 
-[Scarica 0.1.1 e stato](../docs/downloads.md#nvmfg-unlock40) · [Installazione](#installation) · [A monte](#upstream-and-modifications) · [Licenze](LICENSES/README.md)
+[Scarica 0.2.3 e stato](../docs/downloads.md#nvmfg-unlock40) · [Installazione](#installation) · [A monte](#upstream-and-modifications) · [Licenze](LICENSES/README.md)
 
 <a id="overview-and-purpose"></a>
 ## Panoramica e scopo
@@ -31,7 +31,7 @@ NVMFG Unlock40 è un'applicazione sviluppata in modo indipendente da 禅堂 Zend
 
 Esiste per coordinare centralmente il comportamento sperimentale di MFG, ricordare le scelte specifiche del gioco e mantenere visibili gli aggiornamenti e i backup di runtime. Non aggiunge DLSS Frame Generation a ogni gioco né converte un'implementazione FSR arbitraria.
 
-Il candidato preparato è **0.1.1**, inclusa la correzione visiva dell'elenco SDK registrata internamente come UI2. La versione pubblica rimane 0.1.1; i suoi hash esatti distinguono questo candidato dalle build locali più vecchie.
+Il pacchetto attuale è **0.2.3**. Aggiunge una libreria di giochi persistente, informazioni su attività e capacità, diagnostica locale e comportamento di selezione/avanzamento corretto. [Download](../docs/downloads.md#nvmfg-unlock40) identifica i file e gli hash esatti.
 
 <a id="features"></a>
 ## Caratteristiche
@@ -68,7 +68,7 @@ Un'etichetta di versione da sola non è sufficiente: driver, hash del provider, 
 ## Installazione
 
 1. Leggi [stato del candidato e nota di licenza](../docs/downloads.md#nvmfg-unlock40).
-2. Scarica `NVMFGUnlock40-0.1.1-Setup-x64.exe` o `NVMFGUnlock40-0.1.1-Portable-x64.zip` quando la sua versione sarà disponibile.
+2. Scarica `NVMFGUnlock40-0.2.3-Setup-x64.exe` o `NVMFGUnlock40-0.2.3-Portable-x64.zip` quando la sua versione sarà disponibile.
 3. Controllare SHA-256 e conservare gli avvisi allegati. Installa .NET Framework 4.8 se Windows non lo fornisce già.
 4. Esegui il programma di installazione o estrai l'**intero** ZIP portatile in una cartella locale scrivibile.
 5. Avvia `NVMFGUnlock40.exe`; mantenere `agent`, `driver`, `engine` e `Licenses` nel layout fornito.
@@ -90,6 +90,21 @@ La chiusura della finestra principale può lasciare il controller nel vassoio. U
 
 **Streamline SDKs:** nella pagina NVIDIA SDK, scarica una versione ufficiale o importa un SDK locale compatibile. L'importazione memorizza una copia verificata; **Use this version** lo seleziona e **Uninstall** rimuove la copia memorizzata nella cache. Le DLL Streamline mancanti possono essere integrate da un NVIDIA SDK ufficiale, con la fonte mostrata. Questo non scarica/sostituisce un modello NGX. Chiudi il gioco, seleziona l'aggiornamento del gioco desiderato e conserva il backup originale. Per ripristinare i file di gioco, utilizza il ripristino del backup, non il pulsante Uninstall della cache.
 
+<a id="library-diagnostics-and-updates"></a>
+## Libreria, diagnostica e aggiornamenti
+
+**Libreria persistente:** seleziona diverse cartelle di gioco, incluse unità diverse, prima di avviare una scansione. L'avanzamento è visibile e la cancellazione è disponibile. Dopo la prima scansione, una cache locale ripristina la libreria all'avvio senza dover camminare su ogni cartella del gioco. Aggiorna per trovare le modifiche o aggiungere un'altra cartella. Le operazioni di manutenzione riconvalidano comunque i file interessati; il monitoraggio del backup rimane attivo. La cache è archiviata in `%LOCALAPPDATA%\RtxMfg\library-cache.json`.
+
+**Selezione:** Ctrl+A seleziona tutto e Ctrl+D cancella la scheda Giochi o Backup attivi. Nessun gioco viene selezionato automaticamente. Gli aggiornamenti e i ripristini delle attività non creano più selezioni fantasma o conteggi incoerenti.
+
+**Attività e compatibilità:** le informazioni MFG per gioco provengono dalle osservazioni NGX senza un nuovo overlay. Non è un conteggio fisico dei fotogrammi visualizzati. Il supporto Dynamic-con-V-Sync deriva dalle funzionalità di runtime; la capacità sconosciuta non viene dedotta da un numero di versione. L'applicazione non cambia né V-Sync né VRR. Con V-Sync spento, Dynamic rimane sospeso; le scelte fisse o controllate dal gioco sono separate.
+
+**Prossimo avvio:** l'esclusione temporanea salta l'applicazione delle patch al successivo avvio del gioco e ripristina la normale gestione dopo l'uscita. Non può rimuovere una DLL già caricata in un gioco: chiudi e riavvia quel gioco. Wallpaper Engine è riconosciuto come applicazione desktop; questa correzione preserva la protezione per i giochi effettivamente ignorati.
+
+**Preferenze e supporto:** l'importazione/esportazione delle preferenze richiede la riassociazione manuale delle cartelle del gioco. La diagnostica locale in Informazioni filtra le informazioni private e segnala i codici di errore NVAPI disponibili o le categorie di conflitto. Rivedilo prima di condividerlo; nulla viene caricato automaticamente.
+
+**Aggiornamenti dell'applicazione:** un controllo opzionale visualizza le note di rilascio e offre la configurazione ufficiale. Il download esplicito viene controllato rispetto alle dimensioni GitHub e ai metadati SHA-256; avvii tu stesso l'installazione. La versione 0.2.3 cancella anche i messaggi di avanzamento completati preservando errori e risultati significativi. Queste aggiunte includono le modifiche rispetto alla versione pubblica 0.1.1.
+
 <a id="screenshots"></a>
 ## Schermate
 
@@ -109,6 +124,7 @@ I backup locali del runtime del gioco utilizzano `%LOCALAPPDATA%\NvidiaStreamlin
 <a id="known-limitations"></a>
 ## Limitazioni note
 
+- Un blocco segnalato di attivazione/ripristino/disinstallazione di 0.1.1 non viene riprodotto e la sua causa è sconosciuta. Questa versione non pretende di risolverlo. Dopo un errore, conservare il giornale di ripristino e ispezionare la diagnostica locale; non forzare la cancellazione dei dati di ripristino.
 - Le patch native sperimentali possono causare arresti anomali o artefatti visivi; nella cronologia dello sviluppo viene registrato un arresto anomalo Bodycam irrisolto.
 - I test di rendering controllati non sono certificazioni per ogni gioco, driver o anti-cheat.
 - I fotogrammi generati non creano nuovi campioni di input; questo hub non promette alcuna latenza misurata o miglioramento delle prestazioni.

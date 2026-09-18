@@ -37,9 +37,9 @@ Välj aldrig den överordnade utvecklingsarbetsytan, den privata revisionskatalo
 | Verktyg | Tagga | Versionspolicy |
 | --- | --- | --- |
 | NVIDIA Profile Inspector – NV Tools Fork | nvpi-v3.0.2.3 | Befintlig fyrdelad applikationsversion; setup version 2 har sitt eget filnamn |
-| NVDriverForge | nvdriverforge-v0.1.3 | Befintligt 0.x-schema; versionsuppdateringar bevarar tidigare paket |
-| NVMFG Unlock40 | nvmfg-unlock40-v0.1.1 | UI2-kandidat identifieras med exakta hash-värden utan att ha uppfunnit en ny applikationsversion |
-| NVRasterPulse | nvrasterpulse-v0.1 | Befintlig tvådelad version |
+| NVDriverForge | nvdriverforge-v0.1.4 | Befintligt 0.x-schema; versionsuppdateringar bevarar tidigare paket |
+| NVMFG Unlock40 | nvmfg-unlock40-v0.2.3 | Applikationsversion 0.2.3; kumulativa förändringar sedan offentliga 0.1.1 |
+| NVRasterPulse | nvrasterpulse-v0.2 | Befintlig tvådelad version |
 
 Underhållaren kan publicera direkt eller auktorisera en assistent att publicera de granskade tillgångarna. Publiceringen är explicit; inget arbetsflöde skapar en release för varje commit.
 
@@ -52,10 +52,13 @@ Underhållaren kan publicera direkt eller auktorisera en assistent att publicera
 
 Tagglänkarna per projekt undviker att skicka användare till ett annat verktyg via en delad `releases/latest`-länk. GitHub:s automatiska **Source code**-arkiv innehåller denna dokumentationshub. Applikationskällor förblir privata. Ursprungliga komponentmeddelanden förblir intakta, och en utgåva löser inte NVMFG:s dokumenterade NVIDIA SDK-reserv.
 
+
+Uppdateringen den 18 september förbereder tre nya taggar; den befintliga Profile Inspector-versionen förblir oförändrad. Tillgångsnamn, taggar och `SHA256SUMS.txt` måste förbli exakta för kontroll av programuppdateringar. Publicera normala releaser utan prerelease-flaggan för att exponera dem för stabil-release-kontroller; NVMFG förblir experimentell.
+
 <a id="integrity-and-storage"></a>
 ## Integritet och lagring
 
-Ersätt aldrig publicerade binära bytes i tysthet. Använd en ny explicit version eller installationsversion med nya hash. Lagliga sidvagnar kompletterar inbäddade meddelanden. NVDriverForge 0.1.3 bärbar är 141 760 351 byte, över GitHub:s vanliga Git-filgräns på 100 MiB. Släpp bilagor undvik att sätta binärfiler eller Git LFS i denna hubb. [GitHub vägledning för stora filer](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
+Ersätt aldrig publicerade binära bytes i tysthet. Använd en ny explicit version eller installationsversion med nya hash. Lagliga sidvagnar kompletterar inbäddade meddelanden. NVDriverForge 0.1.4 bärbar är 142 017 891 byte, över GitHub:s vanliga 100 MiB Git-filgräns. Släpp bilagor undvik att sätta binärfiler eller Git LFS i denna hubb. [GitHub vägledning för stora filer](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
 
 Privat sårbarhetsrapportering bör aktiveras i förvarets säkerhetsinställningar. Verifiera dess tillgänglighet innan du skickar känsliga rapporter dit; [SECURITY.md](../SECURITY.md) ger en reserv som inte avslöjar sårbarhetsdetaljer.
 

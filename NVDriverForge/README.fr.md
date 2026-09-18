@@ -16,7 +16,7 @@
 
 **Préparer l'installation d'un pilote NVIDIA avec des choix de composants et de réglages compréhensibles.**
 
-[Télécharger 0.1.3 et consulter le statut](../docs/downloads.fr.md#nvdriverforge) · [Installation](#installation) · [Crédits](#crédits-et-origine) · [Licence](LICENSE)
+[Télécharger 0.1.4 et consulter le statut](../docs/downloads.fr.md#nvdriverforge) · [Installation](#installation) · [Crédits](#crédits-et-origine) · [Licence](LICENSE)
 
 <a id="overview-and-purpose"></a>
 ## Présentation et raison d'être
@@ -35,14 +35,15 @@ NVCleanstall. Elle n'inclut pas ce logiciel et ne revendique pas toutes ses fonc
 - Recherche et téléchargement NVIDIA Game Ready / Studio ; recherche hotfix facultative avec repli manuel.
 - Analyse du paquet original, empreintes, signatures NVIDIA, manifestes et entrées INF compatibles.
 - Choix des composants avec dépendances et conservation des composants inconnus.
-- La version 0.1.3 garde les composants NVIDIA facultatifs sélectionnés comme facultatifs et exclut seulement les composants décochés vérifiés. Les runtimes déjà à jour ou non applicables ne sont plus imposés comme critiques.
+- La version 0.1.4 garde les composants NVIDIA facultatifs sélectionnés comme facultatifs et exclut seulement les composants décochés vérifiés. Les runtimes déjà à jour ou non applicables ne sont plus imposés comme critiques.
 - Résumés d’échec d’installation compréhensibles et accès aux journaux détaillés dans les 34 langues.
-- Confirmation d'installation, préparation dans un espace protégé et export des pilotes existants du magasin Windows.
+- Contrôles de préparation, confirmation d'installation, export des pilotes existants et sauvegarde native des profils NVIDIA avant installation.
 - Réglages avancés facultatifs avec contrôles préalables, journaux et récupération tenant compte des conflits.
 - Preset **Custom NV** facultatif, choix nommés, explications, force SILK distincte et contrôles de compatibilité.
 - Téléchargement facultatif de données NVENC correspondant exactement à une version et à un commit upstream.
 - Installation séparée et facultative de la fork Profile Inspector depuis les outils.
-- Vérifications de mises à jour facultatives pour l'application installée, 34 langues et quatre thèmes.
+- Guide de composants, préférences réutilisables, kits de pilotes, rapport local et mises à jour applicatives facultatives.
+- 34 langues et quatre thèmes.
 
 Les réglages avancés concernent MPO, l'indicateur DLSS, Ansel, la veille audio NVIDIA,
 MSI, la politique/priorité des interruptions, HDCP, le démarrage du conteneur
@@ -102,6 +103,21 @@ Les préférences règlent langue, thème et recherches facultatives de l'applic
 installée. Le portable ne crée pas sa tâche de surveillance. Les outils et la
 récupération sont séparés des quatre étapes d'installation.
 
+<a id="backup-and-diagnostic-tools"></a>
+## Outils de sauvegarde et de diagnostic
+
+**Avant l'installation :** l'état de préparation vérifie la signature du paquet, les GPU, l'espace estimé pour les fichiers et sauvegardes, le redémarrage en attente et les installateurs concurrents. Ces contrôles sont répétés dans le processus élevé. Aucun processus concurrent n'est arrêté automatiquement. La sauvegarde native de la base des profils NVIDIA doit réussir avant de lancer l'installateur NVIDIA ; l'export du magasin de pilotes reste distinct.
+
+**Choix réutilisables :** le guide de composants pose quatre questions sur les jeux, l'audio, NVIDIA App et l'enregistrement. Examinez ses propositions ; les dépendances et composants obligatoires ou inconnus restent protégés. Exportez vos préférences, puis importez-les avec aperçu et nouvelle validation sur le paquet sélectionné. Les consentements, opérations de redémarrage, chemins de programmes et données de patch ne sont pas importés.
+
+**Kit de pilote :** exportez un `.nvdfkit.zip` pour conserver l'installateur NVIDIA original signé, vos choix, les empreintes et les instructions. Gardez `NVDriverForge.exe` séparément. Importez le kit dans les outils, contrôlez l'aperçu, puis suivez le parcours normal. Il ne s'agit pas d'un pilote allégé ou d'un installateur autonome modifié. L'option NVENC nécessite toujours un téléchargement et un consentement pour ce pilote exact. Les conditions de redistribution de NVIDIA restent applicables.
+
+**Résultat et aide :** consultez le résumé puis les détails par étape et par option. Une relecture réussie atteste une valeur enregistrée, pas un gain mesuré. Le rapport de support JSON est préparé localement à partir de champs autorisés, y compris le dernier travail sauvegardé après redémarrage. Prévisualisez-le avant de l'enregistrer ou de le partager. Aucun envoi automatique, contenu de profils, identifiant matériel ou journal brut n'y est inclus.
+
+**Récupération :** suivez le guide du travail protégé pour revenir au pilote sauvegardé. La restauration explicite des profils exige la version du pilote d'origine et les mêmes GPU ; elle remplace toute la base, conserve une copie de l'état actuel et vérifie les empreintes et conflits. N'effacez pas son journal et ne forcez pas un état incompatible. L'installation réelle d'un pilote, sa récupération complète et l'import natif des profils avec ce nouveau parcours restent à valider sur une machine réelle.
+
+**Mise à jour de l'application :** consultez les notes dans l'outil de mise à jour, puis choisissez explicitement le téléchargement vérifié par SHA-256. La recherche est manuelle par défaut ; une vérification au lancement est facultative. Aucun installateur n'est lancé automatiquement. Cette fonction est distincte de la recherche de nouveaux pilotes et de sa tâche facultative pour l'édition installée.
+
 <a id="screenshots"></a>
 ## Captures
 
@@ -124,8 +140,8 @@ Une restauration refuse d'écraser des changements incompatibles d'un autre outi
 
 Données : `%LOCALAPPDATA%\NVDriverForge`. Travaux protégés et exports :
 `%PROGRAMDATA%\NVDriverForge\Jobs`. Le portable écrit aussi des données locales.
-L'export du magasin de pilotes n'est ni une image système ni une sauvegarde complète
-des profils NVIDIA.
+L'export du magasin de pilotes et la sauvegarde native des profils sont distincts.
+Aucun des deux ne constitue une image système.
 
 <a id="known-limitations"></a>
 ## Limitations connues
@@ -144,7 +160,7 @@ des profils NVIDIA.
 | --- | --- |
 | Catalogue indisponible | Choisissez un paquet original depuis [NVIDIA](https://www.nvidia.com/en-us/drivers/), sans remplacer votre modèle par un voisin. |
 | Recherche hotfix indisponible | Consultez le [forum NVIDIA Game Ready](https://www.nvidia.com/en-us/geforce/forums/game-ready-drivers/13/). |
-| Échec de l’installation NVIDIA | Lisez le résumé et ouvrez les journaux détaillés. Les composants facultatifs déjà à jour ou non applicables peuvent être ignorés en 0.1.3. Un échec ne déclenche ni réglages facultatifs ni parcours de réussite/redémarrage. |
+| Échec de l’installation NVIDIA | Lisez le résumé et ouvrez les journaux détaillés. Les composants facultatifs déjà à jour ou non applicables peuvent être ignorés en 0.1.4. Un échec ne déclenche ni réglages facultatifs ni parcours de réussite/redémarrage. |
 | Échec de signature, hash ou sauvegarde | Arrêtez cette installation et conservez l'erreur ; retéléchargez le paquet original s'il est corrompu. |
 | Option indisponible | Lisez le motif matériel/composant/pilote et laissez-la inchangée. |
 | Redémarrage ou travail en attente | Suivez les instructions de récupération et de reprise, sans effacer le journal. |

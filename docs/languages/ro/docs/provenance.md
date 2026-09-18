@@ -18,7 +18,7 @@
 <a id="provenance-changes-and-licensing"></a>
 # Proveniență, modificări și licențiere
 
-Acest audit descrie candidații pregătiți la **2026-09-09**. Sursele aplicației rămân private; inventarele publice conțin nume de fișiere și hashuri, nu cod sursă. Vezi [notificări complete ale componentelor](../THIRD_PARTY_NOTICES.md).
+Acest audit descrie candidații pregătiți la **2026-09-18**. Sursele aplicației rămân private; inventarele publice conțin nume de fișiere și hashuri, nu cod sursă. Vezi [notificări complete ale componentelor](../THIRD_PARTY_NOTICES.md).
 
 <a id="nvidia-profile-inspector--nv-tools-fork"></a>
 ## NVIDIA Profile Inspector – NV Tools Fork
@@ -68,11 +68,13 @@ Asistentul adaptează NVPI NvapiDrsWrapper și NativeArrayHelper într-un ansamb
 
 Referință MinHook: `8fda4f5481fed5797dc2651cd91e238e9b3928c6`; subsetul compilat moștenit nu are modificări locale funcționale în comparație. Anteturi de integrare Streamline: 2.12; licență antet deschisă verificată la v2.12.0. Sursa antet NGX: NVIDIA/DLSS commit `a291cc7d2cc642a51566f3dfd5376f635cd1b284`.
 
-Motor candidat SHA-256: `0E7FC0277C88B22095B622F6A3CB292EC0C14F7A0253D392502257B75E548890`.
+Motor candidat SHA-256: `C793770D329B99CD9C5C640317CE435BFE353CA2868E36CF5DCD4D5295EFAE13`.
 
 Furnizorul necesar SHA-256 în engine.json: `C64928FDB7C48A57722EA8EEF2662171EDC323473ADEA66C29A206A23F1A2BED`. O familie de furnizori 310.9 raportată nu este interschimbabilă cu acest hash exact. Nu este inclus niciun DLL sau model de furnizor.
 
 **Punctul de licență remarcabil:** licența completă NVIDIA RTX SDK, versiunea 14 martie 2024, conține o restricție de secțiune 4(d) relevantă pentru ocolirea limitărilor tehnice. Auditul nu stabilește permisiunea pentru această utilizare. Păstrarea licenței de motor MIT, a fi gratuit sau observarea altor moduri nu rezolvă acea condiție separată. Pregătirea candidaților nu este o autorizație legală. Notul de antet scurt inițial este completat cu licența completă; textul său Windows-1252 este, de asemenea, furnizat ca UTF-8 lizibil, cu octeții originali păstrați.
+
+Comparația nativă a fost recalculată pentru 0.2.3: aceleași 48 de fișiere și clasificări. De la auditul anterior, `game_selection.cpp`, `game_selection.h` și `patcher.cpp` s-au schimbat pentru observațiile de activitate/capacitate. Noile fluxuri de lucru de bibliotecă, diagnosticare, preferințe, actualizare și selecție aparțin aplicației de întreținere. Licențele pentru componente și hash-ul necesar furnizorului sunt neschimbate.
 
 <a id="nvrasterpulse"></a>
 ## NVRasterPulse
@@ -102,3 +104,5 @@ Revizia 2 de configurare NVPI ulterioară remediază selecția autonomă a limbi
 NVDriverForge 0.1.3 a fost finalizat pe 2026-09-10. Raportul său privat de verificare înregistrează 366 de teste de aplicație, 118 de verificări însoțitoare, 32 de verificări de configurare, 156 de comparații native și 34 de cazuri de redirecționare a limbii. Remedierea de selecție a componentelor protejate a fost reluată împotriva unui pachet de driver original fără a-i modifica sarcina utilă sau a instala driverul. Acestea sunt rezultate datate ale echipei de produs, nu teste reluate prin această actualizare a documentației sau dovada unei instalări reușite a driverului real.
 
 Această actualizare hub nu modifică niciun cod funcțional al aplicației. Testele anterioare pentru crearea/unitatea/UI de aplicație rămân dovezi istorice datate. Aceasta nu este o inginerie inversă completă a fiecărui binar terță parte sau o garanție împotriva oricărui tipar secret posibil.
+
+Actualizare din 18 septembrie 2026: NVDriverForge 0.1.4 adaugă verificări de pregătire, backup nativ al profilului, ghidare pentru componente, preferințe și kituri, rezultate detaliate, raportare locală și actualizări ale aplicațiilor. NVRasterPulse 0.2 adaugă diagnostice de configurare, ghidare FPS, pauză/reluare, anulare, profiluri `.nvrp` și favorite/ascundere, fără un nou motor de limitare. Ghidurile individuale descriu utilizarea și limitele. Verificările hub-ului statice sunt separate de testele de aplicare înregistrate în rapoartele private din 18 septembrie; nu a fost efectuată nicio instalare a driverului, importul de profil real sau măsurarea latenței pentru acest hub.

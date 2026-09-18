@@ -23,9 +23,9 @@
 | Công cụ | Windows/thời gian chạy | Phần cứng/phụ thuộc bên ngoài | Các hoạt động cần quan tâm |
 | --- | --- | --- | --- |
 | NVPI fork 3.0.2.3 | Windows 10/11 x64, .NET Framework 4.8 | Trình điều khiển/màn hình NVIDIA tương thích | Hồ sơ viết và hiển thị xem trước |
-| NVDriverForge 0.1.2 | Windows 10 bản dựng 19041+ / 11 x64; Đã bao gồm .NET/WPF | Gói trình điều khiển NVIDIA tương thích | Cài đặt nâng cao, cài đặt nâng cao, NVENC tùy chọn |
-| NVMFG Unlock40 0.1.1 | Windows 10/11 x64; Bao gồm .NET/WPF, trình trợ giúp Framework 4.8 | RTX 40, nhà cung cấp trò chơi DLSS FG đủ điều kiện và được ghim | Bản vá gốc trong trò chơi, nhật ký hồ sơ toàn cầu, cập nhật trò chơi SDK |
-| NVRasterPulse 0.1 | Windows 10/11 x64, .NET Framework 4.8 | Đã cài đặt RTSS; chạy cho mũ | RTSS thay đổi cấu hình mỗi lần thực thi |
+| NVDriverForge 0.1.4 | Windows 10 bản dựng 19041+ / 11 x64; Đã bao gồm .NET/WPF | Gói trình điều khiển NVIDIA tương thích | Cài đặt nâng cao, cài đặt nâng cao, NVENC tùy chọn |
+| NVMFG Unlock40 0.2.3 | Windows 10/11 x64; Bao gồm .NET/WPF, trình trợ giúp Framework 4.8 | RTX 40, nhà cung cấp trò chơi DLSS FG đủ điều kiện và được ghim | Bản vá gốc trong trò chơi, nhật ký hồ sơ toàn cầu, cập nhật trò chơi SDK |
+| NVRasterPulse 0.2 | Windows 10/11 x64, .NET Framework 4.8 | Đã cài đặt RTSS; chạy cho mũ | RTSS thay đổi cấu hình mỗi lần thực thi |
 
 Không có gói ARM64 nào được chuẩn bị. Tính khả dụng của Display/API và các phiên bản Windows cũ có thể hạn chế các tính năng riêng lẻ. Không có phiên bản NVIDIA hoặc RTSS tối thiểu phổ quát nào được phát minh. Giá trị băm của nhà cung cấp NVMFG chính xác nằm trong [xuất xứ](provenance.md).
 
@@ -47,6 +47,8 @@ Sử dụng [dạng lỗi](https://github.com/Zendo-GIT/NV-Laboratory/issues/new
 | Cài đặt đang chờ xử lý NVMFG | Giải quyết việc khôi phục khi trò chơi đã đóng, bảo toàn các thay đổi từ các công cụ khác. |
 | Mũ RP không có tác dụng | Chạy RTSS, xác định EXE trò chơi thực, kiểm tra trạng thái hook và giới hạn cạnh tranh. |
 | Nắp RP vẫn tồn tại sau khi gỡ bỏ | Kiểm tra RTSS Toàn cầu; việc loại bỏ các thay đổi chỉ ghi đè giới hạn cục bộ. |
+
+NVDriverForge cung cấp báo cáo JSON cục bộ có thể xem trước; NVMFG cung cấp chẩn đoán trong Giới thiệu. Ưu tiên các báo cáo đã lọc này hơn là bản lưu trữ nhật ký hoàn chỉnh và kiểm tra chúng trước khi chia sẻ. Sự tắc nghẽn khôi phục được báo cáo trên NVMFG 0.1.1 vẫn chưa xác định được nguyên nhân; lưu giữ nhật ký của nó và ghi lại mọi mã lỗi có sẵn. NVRasterPulse 0.2 cung cấp chẩn đoán cấu hình trong menu hành động của nó mà không cần đo FPS.
 
 <a id="logs-and-privacy"></a>
 ## Nhật ký và quyền riêng tư

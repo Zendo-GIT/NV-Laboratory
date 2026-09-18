@@ -18,7 +18,7 @@
 <a id="third-party-notices-and-credits"></a>
 # Avisos e créditos de terceiros
 
-Auditoria inicial: 09/09/2026; NVDriverForge 0.1.3 e atualização de procedência: 10/09/2026. **A licença de um componente cobre esse componente, não todo o conjunto.** A origem do aplicativo permanece privada. Os avisos de direitos autorais e permissão são mantidos literalmente; esta tabela é um índice, não um substituto para eles. “Externo” significa não distribuído nos ativos do aplicativo.
+Auditoria inicial: 09/09/2026; pacote atual e revisão de proveniência: 18/09/2026. NVDriverForge 0.1.4, NVMFG Unlock40 0.2.3 e NVRasterPulse 0.2 retêm as licenças de componentes existentes. Profile Inspector 3.0.2.3/setup-r2 permanece inalterado. **A licença de um componente cobre esse componente, não todo o conjunto.** A origem do aplicativo permanece privada. Os avisos de direitos autorais e permissão são mantidos literalmente; esta tabela é um índice, não um substituto para eles. “Externo” significa não distribuído nos ativos do aplicativo.
 
 | Componente/projeto original | Autor | Site oficial, repositório ou download | Licença/aviso | Usar em NV Tools | Modificações |
 | --- | --- | --- | --- | --- | --- |

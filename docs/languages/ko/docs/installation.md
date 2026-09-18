@@ -27,8 +27,8 @@
 | --- | --- | --- | --- |
 | NVIDIA Profile Inspector – NV Tools Fork | NVPI-CustomNV-3.0.2.3-Setup-r2.exe | 전체 NVPI ZIP 추출 | NVIDIA 드라이버 및 .NET Framework 4.8 |
 | NVDriverForge | NVDriverForge-Setup.exe | NVDriverForge.exe, 런타임 포함 | 설치 작업에 호환되는 원본 NVIDIA 드라이버 패키지 |
-| NVMFG Unlock40 | NVMFGUnlock40-0.1.1-Setup-x64.exe | 전체 NVMFG ZIP 추출, 하위 폴더 유지 | RTX 40, 기존 DLSS FG, 정확한 공급자 및 .NET Framework 4.8 도우미 |
-| NVRasterPulse | NVRasterPulse-0.1-win-x64-Setup.exe | 전체 RP ZIP 추출 | RTSS 및 .NET 프레임워크 4.8 |
+| NVMFG Unlock40 | NVMFGUnlock40-0.2.3-Setup-x64.exe | 전체 NVMFG ZIP 추출, 하위 폴더 유지 | RTX 40, 기존 DLSS FG, 정확한 공급자 및 .NET Framework 4.8 도우미 |
+| NVRasterPulse | NVRasterPulse-0.2-win-x64-Setup.exe | 전체 RP ZIP 추출 | RTSS 및 .NET 프레임워크 4.8 |
 
 <a id="download-verify-install"></a>
 ## 다운로드, 확인, 설치

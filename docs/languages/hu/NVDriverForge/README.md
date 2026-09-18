@@ -20,7 +20,7 @@
 
 **Készítsen elő egy NVIDIA illesztőprogram-telepítést egyértelmű komponensválasztással és opcionális beállításokkal.**
 
-[Az 0.1.3 letöltése és állapota](../docs/downloads.md#nvdriverforge) · [Telepítés](#installation) · [Kredit](#credits-and-upstream) · [Licenc](../../../../NVDriverForge/LICENSE)
+[Az 0.1.4 letöltése és állapota](../docs/downloads.md#nvdriverforge) · [Telepítés](#installation) · [Kredit](#credits-and-upstream) · [Licenc](../../../../NVDriverForge/LICENSE)
 
 <a id="overview-and-purpose"></a>
 ## Áttekintés és cél
@@ -35,14 +35,15 @@ Ez egy független fejlesztésű alkalmazás, amelyet részben az NVCleanstall mu
 - NVIDIA Game Ready / Studio keresés és letöltések; opcionális gyorsjavítás-felderítés kézi tartalékkal.
 - Az eredeti csomag, kivonatok, NVIDIA aláírások, jegyzékek és kompatibilis INF bejegyzések elemzése.
 - Alkotóelemek kiválasztása függőséggel és ismeretlen komponensek megőrzésével.
-- Az 0.1.3 verzió a kiválasztott opcionális NVIDIA összetevőket átugorhatóan tartja, és csak az ellenőrzött, ellenőrizetlen összetevőket zárja ki a felderítésből. A már aktuális vagy nem alkalmazható opcionális futási környezetek már nem kényszerülnek kritikus összetevőként.
+- Az 0.1.4 verzió a kiválasztott opcionális NVIDIA összetevőket átugorhatóan tartja, és csak az ellenőrzött, ellenőrizetlen összetevőket zárja ki a felderítésből. A már aktuális vagy nem alkalmazható opcionális futási környezetek már nem kényszerülnek kritikus összetevőként.
 - Tiszta telepítési hibaösszegzések és hozzáférés a részletes naplókhoz mind a 34 nyelven.
-- Explicit telepítés megerősítése, védett állomásozás és meglévő illesztőprogram-tárcsomagok exportálása.
+- Készenléti ellenőrzések, kifejezett megerősítés, exportálás az illesztőprogram-tárból és a natív NVIDIA profil biztonsági mentése a telepítés előtt.
 - Opcionális speciális beállítások, repülés előtti ellenőrzésekkel, naplókkal és konfliktus-tudatos helyreállítással.
 - Opcionális **Custom NV** előre beállított névvel ellátott választási lehetőségek és magyarázatok, beleértve a különálló SILK erősségválasztást és a kompatibilitási ellenőrzéseket.
 - Opcionális pontos verziójú NVENC javítás letöltések; a forrás véglegesítés és a cél bájtok ellenőrzése megtörténik.
 - Az Profile Inspector fork különálló, opcionális telepítése az Eszközök képernyőről.
-- Választható telepített felhasználói frissítés-ellenőrzés, 34 felületi nyelv és négy téma.
+- Összetevők útmutatója, újrafelhasználható beállítások, illesztőprogram-készletek, helyi támogatási jelentések és opcionális alkalmazásfrissítések.
+- 34 felületi nyelv és négy téma.
 
 Az elérhető speciális opciók az MPO, az DLSS jelző, az Ansel, az NVIDIA audio-alvó állapot, az MSI, a megszakítási házirend/prioritás, az HDCP, a kijelző-tároló indítása és a jogosult örökölt telemetriai szolgáltatás közé tartoznak. Mindegyiknek megvannak a maga előfeltételei és hatásai; ezek nem univerzális teljesítményjavítások.
 
@@ -87,6 +88,21 @@ Az opcionális NVENC munka letölti a kompatibilis adatokat egy rögzített keyl
 
 A beállítások szabályozzák a nyelvet, a témát és az opcionális telepített felhasználók frissítéseinek ellenőrzését. A hordozható eszköz nem hozza létre a telepített háttér-ellenőrzési feladatot. Az eszközök és a helyreállítás elkülönül a négy telepítési lépéstől.
 
+<a id="backup-and-diagnostic-tools"></a>
+## Biztonsági mentési és diagnosztikai eszközök
+
+**Telepítés előtt:** A készenléti ellenőrzések kiterjednek a csomag aláírására, a GPU-kra, a becsült munkaterületre/biztonsági mentési területre, a függőben lévő újraindításra és a versengő telepítőkre. Az emelt munkás megismétli őket. A versengő folyamatok soha nem állnak le automatikusan. A natív NVIDIA profil-adatbázis biztonsági mentésnek sikeresnek kell lennie az NVIDIA telepítésének megkezdése előtt; A driver-store export egy külön biztonsági másolat.
+
+**Újrafelhasználható lehetőségek:** az összetevők útmutatója négy kérdést tesz fel a játékokról, a hangról, az NVIDIA App-ről és a felvételről. Tekintse át javaslatait; szükséges, ismeretlen és függő összetevők védettek maradnak. Exportálja a beállításokat, majd importáláskor tekintse meg előnézetüket és érvényesítse újra a kiválasztott csomaggal szemben. A beleegyezések, az újraindítási műveletek, a program útvonalak és a javítócsomagok nem importálódnak.
+
+**Illesztőprogram-készlet:** exportáljon egy `.nvdfkit.zip`-et, hogy az eredeti aláírt NVIDIA telepítő, a választási lehetőségek, a hash-ek és az utasítások együtt maradjanak. Az `NVDriverForge.exe`-et külön szállítsa. Importálja a készletet az Eszközökben, tekintse át az előnézetet, majd használja a normál telepítési munkafolyamatot. Ez nem egy vékony illesztőprogram vagy egy módosított önálló telepítő. Az opcionális NVENC-nek továbbra is le kell töltenie és beleegyeznie kell az adott illesztőprogramhoz. Az NVIDIA újraelosztási feltételei továbbra is érvényesek.
+
+**Eredmények és támogatás:** Olvassa el a rövid eredményt, és bontsa ki a szakaszonkénti/opciónkénti részleteket. A sikeres visszaolvasás tárolt értéket hoz létre, nem pedig mért javulást. A helyi JSON támogatási jelentés az engedélyezési listán szereplő mezőket használja, beleértve az alkalmazás újraindítása utáni utolsó mentett feladatot. Mentés vagy megosztás előtt tekintse meg az előnézetet. Nem tartalmaz nyers naplókat, profiltartalmat vagy hardverazonosítókat, és soha nem töltődik fel automatikusan.
+
+**Helyreállítás:** kövesse a védett feladatok útmutatóját a mentett illesztőprogram helyreállításához. Az explicit profil-visszaállításhoz az illesztőprogram eredeti verziója és ugyanazok a GPU-k szükségesek; lecseréli a teljes adatbázist, megőrzi az aktuális másolatot, és ellenőrzi a hash-eket és az ütköző állapotot. Ne törölje ki a naplóját, és ne erőltesse az eltérést. A valódi illesztőprogram-telepítés, a teljes helyreállítás és a natív profilimportálás ezzel az új munkafolyamattal érvényesítetlen marad egy valós rendszeren.
+
+**Alkalmazásfrissítések:** olvassa el a kiadási megjegyzéseket, majd válasszon kifejezetten egy SHA-256 által ellenőrzött letöltést. Az ellenőrzés alapértelmezés szerint kézi, az indításkor opcionális ellenőrzéssel. Egyik telepítő sem indul el automatikusan. Ez a funkció elkülönül az illesztőprogram-frissítések ellenőrzésétől és a telepített kiadás opcionális illesztőprogram-ellenőrzési feladatától.
+
 <a id="screenshots"></a>
 ## Képernyőképek
 
@@ -101,7 +117,7 @@ Zárja be az NVDriverForge-et, szerezze be a következő hivatalos csomagot, és
 
 Uninstall innen: Windows **Installed apps**. Az alkalmazást és annak frissítési feladatát eltávolítja, nem az NVIDIA illesztőprogramot. A beállítások, naplók és biztonsági másolatok megmaradnak. Ha szükséges, állítsa vissza a speciális/NVENC módosításokat a dokumentált helyreállítási folyamaton keresztül **az alkalmazás eltávolítása előtt**. A Restore elutasítja a másik eszköz ütköző módosításait.
 
-A helyi adatok `%LOCALAPPDATA%\NVDriverForge` alatt vannak; a védett munkák és az illesztőprogram-exportálások az `%PROGRAMDATA%\NVDriverForge\Jobs` alá tartoznak. A hordozható használat helyi adatokat is létrehoz. Az illesztőprogram-áruház exportálása nem rendszerkép vagy teljes profilmentés.
+A helyi adatok `%LOCALAPPDATA%\NVDriverForge` alatt vannak; a védett munkák és az illesztőprogram-exportálások az `%PROGRAMDATA%\NVDriverForge\Jobs` alá tartoznak. A hordozható használat helyi adatokat is létrehoz. Az illesztőprogram-áruház exportálása és a natív profil biztonsági mentése különálló. Egyik rendszerkép sem.
 
 <a id="known-limitations"></a>
 ## Ismert korlátozások
@@ -120,7 +136,7 @@ A helyi adatok `%LOCALAPPDATA%\NVDriverForge` alatt vannak; a védett munkák é
 | --- | --- |
 | Az online katalógus nem elérhető | Válasszon egy eredeti csomagot az [NVIDIA illesztőprogram letöltések](https://www.nvidia.com/en-us/drivers/)-től. Ne cserélje ki a szomszédos GPU modellt. |
 | A gyorsjavítások keresése nem érhető el | Használja az [Az NVIDIA Game Ready illesztőprogram-fóruma](https://www.nvidia.com/en-us/geforce/forums/game-ready-drivers/13/)-et, és ellenőrizze a tényleges csomagot. |
-| Az NVIDIA telepítése sikertelen | Olvassa el a hibaösszefoglalót, és nyissa meg a részletes naplókat. A már aktuális vagy nem alkalmazható opcionális összetevők átugorhatók maradnak az 0.1.3-ben. A sikertelen telepítések nem váltanak ki opcionális módosításokat vagy sikeres/újraindítási folyamatot. |
+| Az NVIDIA telepítése sikertelen | Olvassa el a hibaösszefoglalót, és nyissa meg a részletes naplókat. A már aktuális vagy nem alkalmazható opcionális összetevők átugorhatók maradnak az 0.1.4-ben. A sikertelen telepítések nem váltanak ki opcionális módosításokat vagy sikeres/újraindítási folyamatot. |
 | Aláírás/kivonat/biztonsági mentés hiba | Állítsa le a telepítést, és őrizze meg a hibát; szerezze be újra az eredeti csomagot, ha sérült. |
 | Az opció nem elérhető | Olvassa el a hardver, alkatrész vagy a cél-illesztőprogram okát; változatlanul tartsa. |
 | Újraindítás vagy a feladat még függőben | Használja a munka helyreállítási utasításait és kifejezett önéletrajzát; ne törölje ki a naplóját. |

@@ -23,9 +23,9 @@ Dessa är de förberedda kandidaterna, inte en certifieringsmatris för alla kom
 | Verktyg | Windows / körtid | Hårdvara/externt beroende | Verksamhet som kräver vård |
 | --- | --- | --- | --- |
 | NVPI fork 3.0.2.3 | Windows 10/11 x64, .NET Framework 4.8 | Kompatibel NVIDIA drivrutin/skärm | Profil skriver och visar förhandsvisningar |
-| NVDriverForge 0.1.2 | Windows 10 byggd 19041+ / 11 x64; .NET/WPF ingår | Kompatibelt NVIDIA drivrutinspaket | Förhöjd installation, avancerade inställningar, tillval NVENC |
-| NVMFG Unlock40 0.1.1 | Windows 10/11 x64; .NET/WPF ingår, Framework 4.8 hjälpare | RTX 40, kvalificerat DLSS FG-spel och fäst leverantör | Native in-game patchning, global profiljournal, SDK speluppdateringar |
-| NVRasterPulse 0.1 | Windows 10/11 x64, .NET Framework 4.8 | RTSS installerat; springer efter kepsar | RTSS per körbara profiländringar |
+| NVDriverForge 0.1.4 | Windows 10 byggd 19041+ / 11 x64; .NET/WPF ingår | Kompatibelt NVIDIA drivrutinspaket | Förhöjd installation, avancerade inställningar, tillval NVENC |
+| NVMFG Unlock40 0.2.3 | Windows 10/11 x64; .NET/WPF ingår, Framework 4.8 hjälpare | RTX 40, kvalificerat DLSS FG-spel och fäst leverantör | Native in-game patchning, global profiljournal, SDK speluppdateringar |
+| NVRasterPulse 0.2 | Windows 10/11 x64, .NET Framework 4.8 | RTSS installerat; springer efter kepsar | RTSS per körbara profiländringar |
 
 Inget ARM64-paket är förberett. Display/API-tillgänglighet och gamla Windows-versioner kan begränsa enskilda funktioner. Ingen universell minimiversion av NVIDIA eller RTSS har uppfunnits. Den exakta NVMFG-leverantörens hash finns i [härkomst](provenance.md).
 
@@ -47,6 +47,8 @@ Använd [buggform](https://github.com/Zendo-GIT/NV-Laboratory/issues/new?templat
 | NVMFG väntande inställningar | Lös återställning med stängda spel, bevara ändringar från andra verktyg. |
 | RP lock har ingen effekt | Kör RTSS, identifiera det riktiga spelets EXE, inspektera krokens status och konkurrerande gränser. |
 | RP lock kvarstår efter borttagning | Inspektera RTSS Global; borttagningsändringar endast lokal limiter åsidosätter. |
+
+NVDriverForge erbjuder en förhandsgranskbar lokal JSON-rapport; NVMFG erbjuder en diagnostik i About. Föredra dessa filtrerade rapporter framför ett komplett loggarkiv och inspektera dem innan de delar. En återställningsblockering som rapporterats på NVMFG 0.1.1 har fortfarande ingen fastställd orsak; bevara dess journal och registrera eventuella tillgängliga felkoder. NVRasterPulse 0.2 erbjuder konfigurationsdiagnostik i sin åtgärdsmeny, utan att mäta FPS.
 
 <a id="logs-and-privacy"></a>
 ## Loggar och integritet

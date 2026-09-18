@@ -30,9 +30,9 @@
 | Proyek | Tujuan | Versi | Dokumentasi | Unduh |
 | --- | --- | --- | --- | --- |
 | **NVIDIA Profile Inspector – NV Tools Fork** | Editor profil driver NVIDIA dengan tampilan tambahan, warna, kontrol HDR dan ICC/WCS. Sebelumnya NVPI Custom. | 3.0.2.3 | [Panduan](NVIDIA-Profile-Inspector/README.md) | [Paket](docs/downloads.md#nvidia-profile-inspector) |
-| **NVDriverForge** | Pilih komponen driver, tinjau penyesuaian opsional dan instal paket driver NVIDIA asli. | 0.1.3 | [Panduan](NVDriverForge/README.md) | [Paket](docs/downloads.md#nvdriverforge) |
-| **NVMFG Unlock40** | Alat eksperimental RTX 40 MFG dengan pilihan per game dan pemeliharaan Streamline SDK. | 0.1.1 | [Panduan](NVMFG-Unlock40/README.md) | [Paket & status](docs/downloads.md#nvmfg-unlock40) |
-| **NVRasterPulse** | Kelola batas RTSS FPS per executable, dengan nilai pecahan, cadangan, dan akses baki. | 0.1 | [Panduan](NVRasterPulse/README.md) | [Paket](docs/downloads.md#nvrasterpulse) |
+| **NVDriverForge** | Mempersiapkan dan menginstal driver NVIDIA asli dengan pilihan panduan, pencadangan, dan pemulihan. | 0.1.4 | [Panduan](NVDriverForge/README.md) | [Paket](docs/downloads.md#nvdriverforge) |
+| **NVMFG Unlock40** | RTX 40 MFG eksperimental, perpustakaan game persisten, diagnostik, dan pemeliharaan Streamline SDK. | 0.2.3 | [Panduan](NVMFG-Unlock40/README.md) | [Paket & status](docs/downloads.md#nvmfg-unlock40) |
+| **NVRasterPulse** | Kelola batas RTSS FPS per program: diagnostik, saran, jeda, batalkan, dan berbagi profil. | 0.2 | [Panduan](NVRasterPulse/README.md) | [Paket](docs/downloads.md#nvrasterpulse) |
 
 **Unduhan:** [halaman unduhan](docs/downloads.md) mencantumkan status, file, dan nilai SHA-256 setiap versi. Fitur eksperimental dan batas kompatibilitas dijelaskan dalam panduan proyek.
 

@@ -18,35 +18,52 @@
 <a id="changelog"></a>
 # log perubahan
 
-Hub ini mengikuti [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Entri menjelaskan repositori ini; versi aplikasi bersifat independen.
+Hub ini mengikuti [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versi aplikasi dan tanggal rilis bersifat independen. Paket yang disiapkan di bawah ini menerima tanggal publikasi sebenarnya pada Rilis GitHub masing-masing.
 
 <a id="unreleased"></a>
 ## [Belum dirilis]
 
-<a id="added"></a>
-### Ditambahkan
-
-- Hub, panduan proyek lengkap dan dokumentasi repositori dalam 34 bahasa aplikasi NV.
-- Pemilih bahasa yang mempertahankan halaman, metadata cakupan terjemahan, dan jangkar internal yang stabil.
-- Kredit hulu, pemberitahuan lengkap yang berlaku, dan asal file.
-- Persyaratan RTSS dan tautan unduhan resmi untuk NVRasterPulse.
-- Pisahkan tautan RevoluSound Team.
-- Katalog paket rilis pertama yang disiapkan, verifikasi SHA-256 dan prosedur rilis manual.
-- Formulir bug/fitur, kontribusi dan instruksi keamanan.
-- Dokumentasi hanya baca dan pemeriksaan batas publikasi.
-
 <a id="changed"></a>
 ### Berubah
 
-- Atribusi NVMFG kini membedakan aplikasi yang dikembangkan secara independen,
-referensi perbandingan/penyempurnaan, dan komponen asli bersama yang sebenarnya.   Hak cipta, lisensi, dan perbandingan file yang ada tetap utuh.
-- Kandidat NVDriverForge diperbarui ke 0.1.3: penanganan komponen opsional diperbaiki,
-kegagalan lokal yang dapat dibaca dan runtime/kemasan pendamping yang diperbarui.
+- Segarkan hub dan 34 bahasa dokumentasi untuk NVDriverForge 0.1.4,
+NVMFG Unlock40 0.2.3 dan NVRasterPulse 0.2, disiapkan pada 18-09-2026.
+- NVDriverForge: pemeriksaan kesiapan, pencadangan profil asli dan pemulihan yang dijaga,
+panduan komponen, preferensi yang dapat digunakan kembali, kit driver, hasil terperinci, laporan dukungan lokal, dan pembaruan aplikasi terpisah.
+- NVMFG: penemuan multi-folder, cache perpustakaan persisten, aktivitas MFG yang diamati,
+informasi kemampuan waktu proses, pengecualian peluncuran berikutnya, diagnostik lokal, transfer preferensi, dan pembaruan aplikasi opsional.
+- NVRasterPulse: diagnostik konfigurasi, saran FPS, jeda/lanjutkan,
+pembatalan satu tingkat, impor/ekspor profil selektif, favorit dan entri tersembunyi.
+- Menyegarkan hash paket, catatan rilis, dan peta asal komponen asli.
+Jaga agar aset Profile Inspector 3.0.2.3/setup-r2 tidak berubah.
 
 <a id="fixed"></a>
 ### Memperbaiki
 
-- Revisi pengaturan NVIDIA Profile Inspector – NV Tools Fork 2 sekarang menampilkan yang dibagikan
-Pemilih 34 bahasa saat diluncurkan secara langsung. Bahasa eksplisit dan penerusan senyap dipertahankan; editor dan paket portabel tidak berubah.
+- Pemilihan/penghitungan game NVMFG, penanganan Ctrl+D dan pesan kemajuan yang diselesaikan;
+Wallpaper Engine dikecualikan dari deteksi game. Penyumbatan restorasi 0.1.1 yang dilaporkan secara terpisah masih belum direproduksi dan tidak diklaim telah diperbaiki.
 
-Tidak ada tanggal rilis historis yang direkonstruksi. Versi aplikasi kandidat adalah 3.0.2.3, 0.1.3, 0.1.1 dan 0.1; catatan rilis mereka dilampirkan pada rilis mendatang. Persiapan pada 09-09-2026 bukanlah tanggal rilis GitHub.
+<a id="initial-public-hub--2026-09-10"></a>
+## [Hub publik awal] – 10-09-2026
+
+<a id="added"></a>
+### Ditambahkan
+
+- Empat panduan proyek dan dokumentasi repositori dalam 34 bahasa, dengan
+pemilih yang mempertahankan halaman, jangkar stabil, dan metadata cakupan terjemahan.
+- Kredit komponen, lisensi asli, asal, persyaratan RTSS dan
+tautan RevoluSound Team terpisah.
+- Paket rilis manual, nilai SHA-256, formulir penerbitan, kebijakan keamanan dan
+validasi dokumentasi read-only. Sumber aplikasi tetap bersifat pribadi.
+- Tag publik pertama: `nvpi-v3.0.2.3`, `nvdriverforge-v0.1.3`,
+`nvmfg-unlock40-v0.1.1` dan `nvrasterpulse-v0.1`.
+
+<a id="included-fixes"></a>
+### Termasuk perbaikan
+
+- Penginstal Profile Inspector revisi 2: pemilih 34 bahasa mandiri;
+editor dan muatan portabel tidak berubah.
+- NVDriverForge 0.1.3: penanganan komponen opsional diperbaiki dan dilokalisasi
+ringkasan kegagalan, dengan runtime yang diperbarui dan kemasan pendamping.
+
+Tanggal di atas adalah sejarah hub publik yang diverifikasi, bukan tanggal pengembangan yang direkonstruksi.

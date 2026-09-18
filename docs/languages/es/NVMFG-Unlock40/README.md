@@ -20,7 +20,7 @@
 
 **Experimental NVIDIA Multi Frame Generation para GeForce RTX 40, con un controlador central y opciones por juego.**
 
-[Descargar 0.1.1 y estado](../docs/downloads.md#nvmfg-unlock40) · [Instalación](#installation) · [aguas arriba](#upstream-and-modifications) · [Licencias](LICENSES/README.md)
+[Descargar 0.2.3 y estado](../docs/downloads.md#nvmfg-unlock40) · [Instalación](#installation) · [aguas arriba](#upstream-and-modifications) · [Licencias](LICENSES/README.md)
 
 <a id="overview-and-purpose"></a>
 ## Descripción general y propósito
@@ -31,7 +31,7 @@ Se consultó a [RTX40MFG-Unlock](https://github.com/dashdogy/RTX40MFG-Unlock) pa
 
 Existe para coordinar el comportamiento experimental MFG de forma centralizada, recordar opciones específicas del juego y mantener visibles las actualizaciones y copias de seguridad en tiempo de ejecución. No agrega DLSS Frame Generation a cada juego ni convierte una implementación arbitraria de FSR.
 
-El candidato preparado es **0.1.1**, incluida la corrección visual de la lista SDK registrada internamente como UI2. La versión pública permanece 0.1.1; sus hashes exactos distinguen a este candidato de compilaciones locales más antiguas.
+El paquete actual es **0.2.3**. Agrega una biblioteca de juegos persistente, información de actividad y capacidad, diagnósticos locales y comportamiento de selección/progreso corregido. [Descargas](../docs/downloads.md#nvmfg-unlock40) identifica los archivos y hashes exactos.
 
 <a id="features"></a>
 ## Características
@@ -68,7 +68,7 @@ Una etiqueta de versión por sí sola es insuficiente: el controlador, el hash d
 ## Instalación
 
 1. Lea el [estado del candidato y nota de licencia](../docs/downloads.md#nvmfg-unlock40).
-2. Descargue `NVMFGUnlock40-0.1.1-Setup-x64.exe` o `NVMFGUnlock40-0.1.1-Portable-x64.zip` cuando su versión esté disponible.
+2. Descargue `NVMFGUnlock40-0.2.3-Setup-x64.exe` o `NVMFGUnlock40-0.2.3-Portable-x64.zip` cuando su versión esté disponible.
 3. Consulte SHA-256 y conserve los avisos adjuntos. Instale .NET Framework 4.8 si Windows aún no lo proporciona.
 4. Ejecute el programa de instalación o extraiga el ZIP portátil **completo** en una carpeta local grabable.
 5. Inicie `NVMFGUnlock40.exe`; mantenga `agent`, `driver`, `engine` y `Licenses` en el diseño suministrado.
@@ -90,6 +90,21 @@ Cerrar la ventana principal puede dejar el controlador en la bandeja. Una DLL ya
 
 **Streamline SDKs:** en la página NVIDIA SDK, descargue una versión oficial o importe un SDK local compatible. La importación almacena una copia verificada; **Use this version** lo selecciona y **Uninstall** elimina esa copia almacenada en caché. Las DLL Streamline que faltan se pueden complementar desde un NVIDIA SDK oficial, con la fuente que se muestra. Esto no descarga ni reemplaza un modelo NGX. Cierra el juego, selecciona la actualización deseada y conserva su copia de seguridad original. Para revertir archivos del juego, use la restauración de copia de seguridad, no el botón Uninstall del caché.
 
+<a id="library-diagnostics-and-updates"></a>
+## Biblioteca, diagnósticos y actualizaciones.
+
+**Biblioteca persistente:** seleccione varias carpetas del juego, incluidas diferentes unidades, antes de iniciar un análisis. El progreso es visible y la cancelación está disponible. Después del primer escaneo, un caché local restaura la biblioteca al iniciarlo sin recorrer todas las carpetas del juego. Actualice para buscar cambios o agregar otra carpeta. Las operaciones de mantenimiento aún revalidan los archivos afectados; el monitoreo de respaldo permanece activo. El caché se almacena en `%LOCALAPPDATA%\RtxMfg\library-cache.json`.
+
+**Selección:** Ctrl+A selecciona todo y Ctrl+D borra la pestaña Juegos o Copias de seguridad activos. No se selecciona ningún juego automáticamente. Las actualizaciones y actualizaciones de actividades ya no crean selecciones fantasma ni recuentos inconsistentes.
+
+**Actividad y compatibilidad:** la información MFG por juego proviene de observaciones NGX sin una nueva superposición. No es un recuento físico de fotogramas mostrados. La compatibilidad con Dynamic-con-V-Sync proviene de las capacidades de tiempo de ejecución; La capacidad desconocida no se deduce de un número de versión. La aplicación no cambia ni V-Sync ni VRR. Con V-Sync desactivado, Dynamic permanece suspendido; Las opciones fijas o controladas por el juego están separadas.
+
+**Próximo lanzamiento:** la exclusión temporal omite la aplicación de parches en el próximo lanzamiento del juego y restaura la administración normal después de su salida. No puede eliminar una DLL ya cargada en un juego: cierra y reinicia ese juego. Wallpaper Engine se reconoce como una aplicación de escritorio; esta corrección preserva la protección de los juegos reales ignorados.
+
+**Preferencias y soporte:** la importación/exportación de preferencias requiere la reasociación manual de las carpetas del juego. El diagnóstico local en Acerca de filtra información privada e informa los códigos de error NVAPI disponibles o las categorías de conflicto. Revíselo antes de compartirlo; nada se carga automáticamente.
+
+**Actualizaciones de la aplicación:** una verificación opcional muestra las notas de la versión y ofrece la configuración oficial. La descarga explícita se compara con el tamaño GitHub y los metadatos SHA-256; usted mismo inicia la instalación. La versión 0.2.3 también borra los mensajes de progreso completados y al mismo tiempo conserva errores y resultados significativos. Estas adiciones incluyen los cambios desde la versión pública 0.1.1.
+
 <a id="screenshots"></a>
 ## Capturas de pantalla
 
@@ -109,6 +124,7 @@ Las copias de seguridad locales en tiempo de ejecución del juego utilizan `%LOC
 <a id="known-limitations"></a>
 ## Limitaciones conocidas
 
+- Un bloqueo de activación/restauración/desinstalación de 0.1.1 informado no se reproduce y se desconoce su causa. Esta versión no pretende solucionarlo. Después de una falla, conserve el diario de recuperación e inspeccione el diagnóstico local; no fuerce la eliminación de los datos de recuperación.
 - Los parches nativos experimentales pueden provocar fallas o artefactos visuales; un bloqueo Bodycam no resuelto se registra en el historial de desarrollo.
 - Las pruebas de renderizado controlado no son una certificación para todos los juegos, controladores o antitrampas.
 - Los fotogramas generados no crean nuevas muestras de entrada; Este centro no promete ninguna latencia medida ni ganancia de rendimiento.

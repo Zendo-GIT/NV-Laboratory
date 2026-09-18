@@ -24,7 +24,7 @@ Repozytorium publiczne to **Zendo-GIT/NV-Laboratory**. Zmiany w dokumentacji są
 ## Aktualizacje dokumentacji
 
 1. Otwórz folder **NV-Laboratory** w GitHub Desktop.
-2. Przejrzyj dokumentację, powiadomienia, obrazy, metadane JSON i narzędzie do sprawdzania poprawności dokumentacji.
+2. Przejrzyj dokumentację, uwagi, obrazy, metadane JSON i moduł sprawdzania dokumentacji.
 3. Uruchom `python tools/validate_repository.py` z tego folderu.
 4. Zatwierdź sprawdzone zmiany, a następnie użyj **Push origin**. Sprawdź wynik działań.
 5. Zachowaj publiczną tożsamość autora **禅堂 Zendo (RevoluSound Team)** i adres konta GitHub `noreply`.
@@ -37,9 +37,9 @@ Nigdy nie wybieraj nadrzędnego obszaru roboczego programowania, prywatnego kata
 | Narzędzie | Oznacz | Polityka wersji |
 | --- | --- | --- |
 | NVIDIA Profile Inspector – NV Tools Fork | nvpi-v3.0.2.3 | Istniejąca czteroczęściowa wersja aplikacji; wersja instalacyjna 2 ma własną nazwę pliku |
-| NVDriverForge | nvdriverforge-v0.1.3 | Istniejący schemat 0.x; Wersjonowane aktualizacje zachowują wcześniejsze pakiety |
-| NVMFG Unlock40 | nvmfg-unlock40-v0.1.1 | Kandydat UI2 identyfikowany za pomocą dokładnych skrótów bez wymyślania nowej wersji aplikacji |
-| NVRasterPulse | nvrasterpulse-v0.1 | Istniejąca wersja dwuczęściowa |
+| NVDriverForge | nvdriverforge-v0.1.4 | Istniejący schemat 0.x; Wersjonowane aktualizacje zachowują wcześniejsze pakiety |
+| NVMFG Unlock40 | nvmfg-unlock40-v0.2.3 | Wersja aplikacji 0.2.3; skumulowane zmiany od czasu publicznego 0.1.1 |
+| NVRasterPulse | nvrasterpulse-v0.2 | Istniejąca wersja dwuczęściowa |
 
 Opiekun może publikować bezpośrednio lub upoważnić asystenta do publikowania audytowanych zasobów. Publikacja jest wyraźna; żaden przepływ pracy nie tworzy wydania przy każdym zatwierdzeniu.
 
@@ -52,10 +52,13 @@ Opiekun może publikować bezpośrednio lub upoważnić asystenta do publikowani
 
 Łącza znaczników poszczególnych projektów pozwalają uniknąć odsyłania użytkowników do innego narzędzia za pośrednictwem udostępnionego łącza `releases/latest`. Automatyczne archiwa GitHub **Source code** zawierają to centrum dokumentacji. Źródła aplikacji pozostają prywatne. Oryginalne uwagi dotyczące komponentów pozostają nienaruszone, a wydanie nie rozwiązuje udokumentowanej rezerwy NVIDIA SDK firmy NVMFG.
 
+
+Aktualizacja z 18 września przygotowuje trzy nowe tagi; istniejąca wersja Profile Inspector pozostaje niezmieniona. Nazwy zasobów, znaczniki i `SHA256SUMS.txt` muszą pozostać dokładne, aby umożliwić sprawdzanie aktualizacji aplikacji. Publikuj normalne wydania bez flagi wydania wstępnego, aby wystawić je na kontrolę wydania stabilnego; NVMFG pozostaje eksperymentalny.
+
 <a id="integrity-and-storage"></a>
 ## Integralność i przechowywanie
 
-Nigdy nie zastępuj po cichu opublikowanych bajtów binarnych. Użyj nowej jawnej wersji lub wersji instalatora z nowymi skrótami. Prawne przyczepki boczne uzupełniają wbudowane powiadomienia. NVDriverForge Przenośny plik 0.1.3 ma 141 760 351 bajtów, więcej niż zwykły limit pliku Git wynoszący 100 MB dla GitHub. Zwolnij załączniki, unikaj umieszczania plików binarnych lub Git LFS w tym centrum. [Wskazówki dotyczące dużych plików GitHub](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
+Nigdy po cichu nie zastępuj opublikowanych bajtów binarnych. Użyj nowej jawnej wersji lub wersji instalatora z nowymi skrótami. Prawne przyczepki boczne uzupełniają wbudowane powiadomienia. NVDriverForge Przenośny plik 0.1.4 ma 142 017 891 bajtów, więcej niż zwykły limit pliku Git wynoszący 100 MB dla GitHub. Zwolnij załączniki, unikaj umieszczania plików binarnych lub Git LFS w tym centrum. [Wskazówki dotyczące dużych plików GitHub](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
 
 W ustawieniach zabezpieczeń repozytorium należy włączyć opcję zgłaszania podatności na ataki prywatne. Zanim skierujesz tam wrażliwe raporty, sprawdź jego dostępność; [SECURITY.md](../SECURITY.md) zapewnia rozwiązanie awaryjne, które nie ujawnia szczegółów luk w zabezpieczeniach.
 

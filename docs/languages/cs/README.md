@@ -30,9 +30,9 @@
 | Projekt | Účel | Verze | Dokumentace | Stáhnout |
 | --- | --- | --- | --- | --- |
 | **NVIDIA Profile Inspector – NV Tools Fork** | Editor profilu ovladače NVIDIA s přidaným zobrazením, barvami, ovládacími prvky HDR a ICC/WCS. Dříve NVPI Custom. | 3.0.2.3 | [Průvodce](NVIDIA-Profile-Inspector/README.md) | [Balíčky](docs/downloads.md#nvidia-profile-inspector) |
-| **NVDriverForge** | Vyberte součásti ovladače, prohlédněte si volitelná vylepšení a nainstalujte originální balíček ovladače NVIDIA. | 0.1.3 | [Průvodce](NVDriverForge/README.md) | [Balíčky](docs/downloads.md#nvdriverforge) |
-| **NVMFG Unlock40** | Experimentální nástroj RTX 40 MFG s možnostmi pro jednotlivé hry a údržbou Streamline SDK. | 0.1.1 | [Průvodce](NVMFG-Unlock40/README.md) | [Balíčky a stav](docs/downloads.md#nvmfg-unlock40) |
-| **NVRasterPulse** | Spravujte limity RTSS FPS na spustitelný soubor s dílčími hodnotami, zálohami a přístupem k zásobníku. | 0.1 | [Průvodce](NVRasterPulse/README.md) | [Balíčky](docs/downloads.md#nvrasterpulse) |
+| **NVDriverForge** | Připravte a nainstalujte originální ovladač NVIDIA s řízenými volbami, zálohováním a obnovou. | 0.1.4 | [Průvodce](NVDriverForge/README.md) | [Balíčky](docs/downloads.md#nvdriverforge) |
+| **NVMFG Unlock40** | Experimentální RTX 40 MFG, perzistentní herní knihovna, diagnostika a údržba Streamline SDK. | 0.2.3 | [Průvodce](NVMFG-Unlock40/README.md) | [Balíčky a stav](docs/downloads.md#nvmfg-unlock40) |
+| **NVRasterPulse** | Správa limitů RTSS FPS na program: diagnostika, návrhy, pozastavení, vrácení zpět a sdílení profilu. | 0.2 | [Průvodce](NVRasterPulse/README.md) | [Balíčky](docs/downloads.md#nvrasterpulse) |
 
 **Stahování:** [stránka ke stažení](docs/downloads.md) uvádí stav jednotlivých verzí, soubory a hodnoty SHA-256. Experimentální funkce a limity kompatibility jsou popsány v průvodcích projektem.
 

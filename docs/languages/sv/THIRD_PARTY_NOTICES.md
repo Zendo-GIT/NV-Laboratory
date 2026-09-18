@@ -18,7 +18,7 @@
 <a id="third-party-notices-and-credits"></a>
 # Meddelanden och krediter från tredje part
 
-Inledande revision: 2026-09-09; NVDriverForge 0.1.3 och härkomstuppdatering: 2026-09-10. **En komponents licens täcker den komponenten, inte hela sviten.** Programkällan förblir privat. Upphovsrätts- och tillståndsmeddelanden behålls ordagrant; denna tabell är ett index, inte en ersättning för dem. "Extern" betyder inte fördelad i applikationstillgångarna.
+Inledande revision: 2026-09-09; aktuell paket- och härkomstgranskning: 2026-09-18. NVDriverForge 0.1.4, NVMFG Unlock40 0.2.3 och NVRasterPulse 0.2 behåller de befintliga komponentlicenserna. Profile Inspector 3.0.2.3/setup-r2 är oförändrad. **En komponents licens täcker den komponenten, inte hela sviten.** Programkällan förblir privat. Upphovsrätts- och tillståndsmeddelanden behålls ordagrant; denna tabell är ett index, inte en ersättning för dem. "Extern" betyder inte fördelad i applikationstillgångarna.
 
 | Komponent / originalprojekt | Författare | Officiell sida, arkiv eller nedladdning | Licens/meddelande | Använd i NV Tools | Ändringar |
 | --- | --- | --- | --- | --- | --- |

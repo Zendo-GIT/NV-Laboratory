@@ -20,7 +20,7 @@
 
 **NVIDIA Multi Frame Generation eksperimental untuk GeForce RTX 40, dengan pengontrol pusat dan pilihan per game.**
 
-[Unduh 0.1.1 & status](../docs/downloads.md#nvmfg-unlock40) · [Instalasi](#installation) · [Hulu](#upstream-and-modifications) · [Lisensi](LICENSES/README.md)
+[Unduh 0.2.3 & status](../docs/downloads.md#nvmfg-unlock40) · [Instalasi](#installation) · [Hulu](#upstream-and-modifications) · [Lisensi](LICENSES/README.md)
 
 <a id="overview-and-purpose"></a>
 ## Ikhtisar dan tujuan
@@ -31,7 +31,7 @@ NVMFG Unlock40 adalah aplikasi yang dikembangkan secara independen oleh 禅堂 Z
 
 Itu ada untuk mengoordinasikan perilaku eksperimental MFG secara terpusat, mengingat pilihan spesifik game, dan menjaga pembaruan runtime dan cadangan tetap terlihat. Itu tidak menambahkan DLSS Frame Generation ke setiap game atau mengonversi implementasi FSR secara sewenang-wenang.
 
-Kandidat yang disiapkan adalah **0.1.1**, termasuk koreksi visual daftar SDK yang direkam secara internal sebagai UI2. Versi publik tetap 0.1.1; hash persisnya membedakan kandidat ini dari bangunan lokal lama.
+Paket saat ini adalah **0.2.3**. Ia menambahkan perpustakaan permainan yang persisten, informasi aktivitas dan kemampuan, diagnostik lokal, dan koreksi perilaku seleksi/kemajuan. [Unduhan](../docs/downloads.md#nvmfg-unlock40) mengidentifikasi file dan hash yang tepat.
 
 <a id="features"></a>
 ## Fitur
@@ -68,7 +68,7 @@ Label versi saja tidak cukup: driver, hash penyedia, integrasi game, dan modul y
 ## Instalasi
 
 1. Baca [status kandidat dan catatan lisensi](../docs/downloads.md#nvmfg-unlock40).
-2. Unduh `NVMFGUnlock40-0.1.1-Setup-x64.exe` atau `NVMFGUnlock40-0.1.1-Portable-x64.zip` saat Rilisnya tersedia.
+2. Unduh `NVMFGUnlock40-0.2.3-Setup-x64.exe` atau `NVMFGUnlock40-0.2.3-Portable-x64.zip` saat Rilisnya tersedia.
 3. Periksa SHA-256 dan simpan pemberitahuan yang menyertainya. Instal .NET Framework 4.8 jika Windows belum menyediakannya.
 4. Jalankan Penyiapan, atau ekstrak ZIP portabel **seluruh** ke folder lokal yang dapat ditulis.
 5. Luncurkan `NVMFGUnlock40.exe`; pertahankan `agent`, `driver`, `engine` dan `Licenses` dalam tata letak yang disediakan.
@@ -90,6 +90,21 @@ Menutup jendela utama dapat meninggalkan pengontrol di baki. DLL yang sudah dimu
 
 **Streamline SDKs:** di halaman NVIDIA SDK, unduh versi resmi atau impor SDK lokal yang kompatibel. Impor menyimpan salinan terverifikasi; **Use this version** memilihnya, dan **Uninstall** menghapus salinan cache tersebut. DLL Streamline yang hilang dapat dilengkapi dari NVIDIA SDK resmi, dengan sumber yang ditunjukkan. Ini tidak mengunduh/mengganti model NGX. Tutup game, pilih pembaruan game yang diinginkan, dan simpan cadangan aslinya. Untuk mengembalikan file game, gunakan pemulihan cadangannya, bukan tombol Uninstall cache.
 
+<a id="library-diagnostics-and-updates"></a>
+## Perpustakaan, diagnostik, dan pembaruan
+
+**Perpustakaan persisten:** pilih beberapa folder game, termasuk drive yang berbeda, sebelum memulai satu pemindaian. Kemajuan terlihat dan pembatalan tersedia. Setelah pemindaian pertama, cache lokal memulihkan perpustakaan saat peluncuran tanpa menelusuri setiap folder game. Segarkan untuk menemukan perubahan atau menambahkan folder lain. Operasi pemeliharaan masih memvalidasi ulang file yang terpengaruh; pemantauan cadangan tetap aktif. Cache disimpan di `%LOCALAPPDATA%\RtxMfg\library-cache.json`.
+
+**Pilihan:** Ctrl+A memilih semua dan Ctrl+D menghapus tab Game atau Cadangan yang aktif. Tidak ada permainan yang dipilih secara otomatis. Pembaruan dan penyegaran aktivitas tidak lagi menghasilkan pilihan bayangan atau penghitungan yang tidak konsisten.
+
+**Aktivitas dan kompatibilitas:** Informasi MFG per game berasal dari observasi NGX tanpa overlay baru. Ini bukan hitungan fisik dari frame yang ditampilkan. Dukungan Dynamic-dengan-V-Sync berasal dari kemampuan runtime; kemampuan yang tidak diketahui tidak disimpulkan dari nomor versi. Aplikasi tidak mengubah V-Sync atau VRR. Dengan V-Sync dinonaktifkan, Dynamic tetap ditangguhkan; pilihan tetap atau yang dikendalikan permainan terpisah.
+
+**Peluncuran berikutnya:** pengecualian sementara melewatkan patching pada peluncuran game berikutnya dan memulihkan pengelolaan normal setelah keluar. Itu tidak dapat menghapus DLL yang sudah dimuat dalam game: tutup dan mulai ulang game itu. Wallpaper Engine dikenali sebagai aplikasi desktop; koreksi ini mempertahankan perlindungan untuk game yang sebenarnya diabaikan.
+
+**Preferensi dan dukungan:** preferensi impor/ekspor memerlukan pengaitan ulang folder game secara manual. Diagnostik lokal di Tentang memfilter informasi pribadi dan melaporkan kode kesalahan NVAPI yang tersedia atau kategori konflik. Tinjau sebelum berbagi; tidak ada yang diunggah secara otomatis.
+
+**Pembaruan aplikasi:** pemeriksaan opsional menampilkan catatan rilis dan menawarkan Penyiapan resmi. Unduhan eksplisit diperiksa berdasarkan ukuran GitHub dan metadata SHA-256; Anda memulai instalasi sendiri. Versi 0.2.3 juga menghapus pesan kemajuan yang telah selesai sambil mempertahankan kesalahan dan hasil yang berarti. Penambahan ini mencakup perubahan sejak 0.1.1 versi publik.
+
 <a id="screenshots"></a>
 ## Tangkapan layar
 
@@ -109,6 +124,7 @@ Pencadangan runtime game lokal menggunakan `%LOCALAPPDATA%\NvidiaStreamlineMaint
 <a id="known-limitations"></a>
 ## Keterbatasan yang diketahui
 
+- Penyumbatan aktivasi/pemulihan/pencopotan instalasi 0.1.1 yang dilaporkan masih belum tereproduksi dan penyebabnya tidak diketahui. Rilis ini tidak mengklaim dapat memperbaikinya. Setelah kegagalan, simpan jurnal pemulihan dan periksa diagnostik lokal; jangan paksa penghapusan data pemulihan.
 - Patch asli eksperimental dapat menyebabkan error atau artefak visual; kerusakan Bodycam yang belum terselesaikan dicatat dalam riwayat pengembangan.
 - Tes penyaji terkontrol bukanlah sertifikasi untuk setiap game, driver, atau anti-cheat.
 - Bingkai yang dihasilkan tidak membuat sampel masukan baru; tidak ada latensi terukur atau peningkatan kinerja yang dijanjikan oleh hub ini.

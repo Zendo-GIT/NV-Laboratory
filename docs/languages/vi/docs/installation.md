@@ -27,8 +27,8 @@ Bắt đầu với [Tải xuống](downloads.md), ghi lại trạng thái xuất
 | --- | --- | --- | --- |
 | NVIDIA Profile Inspector – NV Tools Fork | NVPI-CustomNV-3.0.2.3-Setup-r2.exe | Giải nén hoàn chỉnh NVPI ZIP | Trình điều khiển NVIDIA và .NET Framework 4.8 |
 | NVDriverForge | NVDriverForge-Setup.exe | NVDriverForge.exe, bao gồm thời gian chạy | Gói trình điều khiển NVIDIA gốc tương thích cho các thao tác cài đặt |
-| NVMFG Unlock40 | NVMFGUnlock40-0.1.1-Setup-x64.exe | Trích xuất ZIP NVMFG hoàn chỉnh, giữ lại các thư mục con | RTX 40, DLSS FG hiện có, nhà cung cấp chính xác và người trợ giúp .NET Framework 4.8 |
-| NVRasterPulse | NVRasterPulse-0.1-win-x64-Setup.exe | Giải nén hoàn chỉnh RP ZIP | RTSS và .NET Framework 4.8 |
+| NVMFG Unlock40 | NVMFGUnlock40-0.2.3-Setup-x64.exe | Trích xuất ZIP NVMFG hoàn chỉnh, giữ lại các thư mục con | RTX 40, DLSS FG hiện có, nhà cung cấp chính xác và người trợ giúp .NET Framework 4.8 |
+| NVRasterPulse | NVRasterPulse-0.2-win-x64-Setup.exe | Giải nén hoàn chỉnh RP ZIP | RTSS và .NET Framework 4.8 |
 
 <a id="download-verify-install"></a>
 ## Tải xuống, xác minh, cài đặt

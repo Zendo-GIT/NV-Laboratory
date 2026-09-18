@@ -13,7 +13,7 @@
 
 # Provenance, changes and licensing
 
-This audit describes the candidates prepared on **2026-09-09**. Application
+This audit describes the candidates prepared on **2026-09-18**. Application
 sources remain private; the public inventories contain filenames and hashes,
 not source code. See [full component notices](../THIRD_PARTY_NOTICES.md).
 
@@ -107,7 +107,7 @@ NGX header source: NVIDIA/DLSS commit
 `a291cc7d2cc642a51566f3dfd5376f635cd1b284`.
 
 Candidate engine SHA-256:
-`0E7FC0277C88B22095B622F6A3CB292EC0C14F7A0253D392502257B75E548890`.
+`C793770D329B99CD9C5C640317CE435BFE353CA2868E36CF5DCD4D5295EFAE13`.
 
 Required provider SHA-256 in engine.json:
 `C64928FDB7C48A57722EA8EEF2662171EDC323473ADEA66C29A206A23F1A2BED`.
@@ -121,6 +121,8 @@ MIT engine license, being free of charge, or observing other mods does not resol
 that separate condition. Candidate preparation is not a legal clearance.
 The original short header notice is supplemented with the full license;
 its Windows-1252 text is also provided as readable UTF-8, with original bytes retained.
+
+The native comparison was recalculated for 0.2.3: the same 48 files and classifications. Since the previous audit, `game_selection.cpp`, `game_selection.h` and `patcher.cpp` changed for activity/capability observations. New library, diagnostic, preference, update and selection workflows belong to the maintainer application. Component licenses and the required provider hash are unchanged.
 
 ## NVRasterPulse
 
@@ -178,3 +180,5 @@ by this documentation update or proof of a successful real driver installation.
 This hub update changes no functional application code. Earlier application build/unit/UI
 tests remain dated historical evidence. This is not full reverse engineering of
 every third-party binary or a guarantee against every possible secret pattern.
+
+September 18, 2026 update: NVDriverForge 0.1.4 adds readiness checks, native profile backup, component guidance, preferences and kits, detailed outcomes, local reporting and application updates. NVRasterPulse 0.2 adds configuration diagnostics, FPS guidance, pause/resume, undo, `.nvrp` profiles and favorites/hiding, without a new limiter engine. Individual guides describe usage and limits. Static hub checks are separate from the application tests recorded in the September 18 private reports; no driver installation, real profile import or latency measurement was performed for this hub.

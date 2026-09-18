@@ -27,8 +27,8 @@
 | --- | --- | --- | --- |
 | NVIDIA Profile Inspector – NV Tools Fork | NVPI-CustomNV-3.0.2.3-Setup-r2.exe | 完全な NVPI ZIP を抽出します | NVIDIA ドライバーと .NET Framework 4.8 |
 | NVDriverForge | NVDriverForge-Setup.exe | NVDriverForge.exe、ランタイム付属 | インストール操作用の互換性のあるオリジナルの NVIDIA ドライバー パッケージ |
-| NVMFG Unlock40 | NVMFGUnlock40-0.1.1-Setup-x64.exe | 完全な NVMFG ZIP を抽出し、サブフォルダーを保持します | RTX 40、既存の DLSS FG、正確なプロバイダーおよび .NET Framework 4.8 ヘルパー |
-| NVRasterPulse | NVRasterPulse-0.1-win-x64-Setup.exe | 完全な RP ZIP を抽出します | RTSS および .NET Framework 4.8 |
+| NVMFG Unlock40 | NVMFGUnlock40-0.2.3-Setup-x64.exe | 完全な NVMFG ZIP を抽出し、サブフォルダーを保持します | RTX 40、既存の DLSS FG、正確なプロバイダーおよび .NET Framework 4.8 ヘルパー |
+| NVRasterPulse | NVRasterPulse-0.2-win-x64-Setup.exe | 完全な RP ZIP を抽出します | RTSS および .NET Framework 4.8 |
 
 <a id="download-verify-install"></a>
 ## ダウンロード、確認、インストール

@@ -20,7 +20,7 @@
 
 **Anlaşılır bileşen seçenekleri ve isteğe bağlı ayarlarla bir NVIDIA sürücü kurulumu hazırlayın.**
 
-[0.1.3'i ve durumu indirin](../docs/downloads.md#nvdriverforge) · [Kurulum](#installation) · [Kredi](#credits-and-upstream) · [Lisans](../../../../NVDriverForge/LICENSE)
+[0.1.4'i ve durumu indirin](../docs/downloads.md#nvdriverforge) · [Kurulum](#installation) · [Kredi](#credits-and-upstream) · [Lisans](../../../../NVDriverForge/LICENSE)
 
 <a id="overview-and-purpose"></a>
 ## Genel bakış ve amaç
@@ -35,14 +35,15 @@ Kısmen NVCleanstall'in iş akışından esinlenerek bağımsız olarak gelişti
 - NVIDIA Game Ready / Studio arama ve indirmeler; manuel geri dönüş ile isteğe bağlı düzeltme keşfi.
 - Orijinal paketin, karmaların, NVIDIA imzalarının, bildirimlerin ve uyumlu INF girişlerinin analizi.
 - Bağımlılıklarla bileşen seçimi ve bilinmeyen bileşenlerin korunması.
-- Sürüm 0.1.3, seçilen isteğe bağlı NVIDIA bileşenlerini atlanabilir halde tutar ve yalnızca doğrulanmış denetlenmeyen bileşenleri keşif dışında bırakır. Halihazırda geçerli olan veya uygulanamayan isteğe bağlı çalışma süreleri artık kritik bileşenler olarak zorunlu tutulmuyor.
+- Sürüm 0.1.4, seçilen isteğe bağlı NVIDIA bileşenlerini atlanabilir halde tutar ve yalnızca doğrulanmış denetlenmeyen bileşenleri keşif dışında bırakır. Halihazırda geçerli olan veya uygulanamayan isteğe bağlı çalışma süreleri artık kritik bileşenler olarak zorunlu tutulmuyor.
 - Kurulum hatası özetlerini temizleyin ve 34 dilin tamamında ayrıntılı günlüklere erişin.
-- Açık kurulum onayı, korumalı aşamalandırma ve mevcut sürücü deposu paketlerinin dışa aktarımı.
+- Kurulumdan önce hazırlık kontrolleri, açık onay, sürücü deposunun dışa aktarımı ve yerel NVIDIA profil yedeklemesi.
 - Ön kontrol kontrolleri, günlükler ve çatışmaya duyarlı kurtarma ile isteğe bağlı gelişmiş ayarlar.
 - Ayrı bir SILK güç seçimi ve uyumluluk kontrolleri de dahil olmak üzere, adlandırılmış seçenekler ve açıklamalar içeren isteğe bağlı **Custom NV** ön ayarı.
 - İsteğe bağlı tam sürüm NVENC yama indirmeleri; kaynak taahhüdü ve hedef baytlar kontrol edilir.
 - Profile Inspector fork'in Araçlar ekranından ayrı, isteğe bağlı kurulumu.
-- İsteğe bağlı kurulu kullanıcı güncelleme kontrolleri, 34 arayüz dili ve dört tema.
+- Bileşen kılavuzu, yeniden kullanılabilir tercihler, sürücü kitleri, yerel destek raporları ve isteğe bağlı uygulama güncellemeleri.
+- 34 arayüz dili ve dört tema.
 
 Mevcut gelişmiş seçenekler; MPO, DLSS göstergesi, Ansel, NVIDIA ses uyku, MSI, kesme politikası/önceliği, HDCP, ekran kapsayıcı başlatma ve uygun bir eski telemetri hizmetiyle ilgilidir. Her birinin kendi önkoşulları ve etkileri vardır; bunlar evrensel performans iyileştirmeleri değildir.
 
@@ -87,6 +88,21 @@ Custom NV değişmeden başlar. Tek tek adlandırılmış değerleri seçin veya
 
 Tercihler dili, temayı ve isteğe bağlı yüklü kullanıcı güncelleme kontrollerini kontrol eder. Taşınabilir, yüklü arka plan kontrolü görevini oluşturmaz. Araçlar ve kurtarma, dört kurulum adımından ayrıdır.
 
+<a id="backup-and-diagnostic-tools"></a>
+## Yedekleme ve teşhis araçları
+
+**Kurulumdan önce:** hazırlık kontrolleri paket imzasını, GPU'ları, tahmini çalışma alanını/yedekleme alanını, yeniden başlatmayı bekleyenleri ve rakip yükleyicileri kapsar. Yükseltilmiş işçi bunları tekrarlar. Rekabet eden süreçler hiçbir zaman otomatik olarak durdurulmaz. NVIDIA Kurulumu başlamadan önce yerel NVIDIA profil veritabanı yedeklemesinin başarılı olması gerekir; sürücü deposu dışa aktarımı ayrı bir yedeklemedir.
+
+**Yeniden kullanılabilir seçenekler:** bileşen kılavuzunda oyunlar, ses, NVIDIA App ve kayıt hakkında dört soru sorulur. Önerilerini gözden geçirin; gerekli, bilinmeyen ve bağımlılık bileşenleri korunmaya devam eder. Tercihleri ​​dışa aktarın, ardından içe aktarırken bunları seçilen pakete göre önizleyin ve yeniden doğrulayın. Onaylar, yeniden başlatma işlemleri, program yolları ve yama verileri içe aktarılmaz.
+
+**Sürücü kiti:** Orijinal imzalı NVIDIA yükleyicisini, seçenekleri, karmaları ve talimatları bir arada tutmak için bir `.nvdfkit.zip`'i dışa aktarın. `NVDriverForge.exe`'i ayrı olarak taşıyın. Kiti Araçlar'a aktarın, önizlemeyi inceleyin ve ardından normal yükleme iş akışını kullanın. Bu, ince bir sürücü veya değiştirilmiş bağımsız yükleyici değildir. İsteğe bağlı NVENC'in yine de tam olarak söz konusu sürücü için indirilmesi ve onaylanması gerekiyor. NVIDIA'in yeniden dağıtım koşulları hâlâ geçerlidir.
+
+**Sonuçlar ve destek:** Kısa sonucu okuyun ve aşama/seçenek başına ayrıntıları genişletin. Başarılı geri okuma, ölçülen bir gelişme değil, depolanan bir değer oluşturur. Yerel JSON destek raporu, uygulama yeniden başlatıldıktan sonra kaydedilen son iş de dahil olmak üzere, izin verilenler listesindeki alanları kullanır. Kaydetmeden veya paylaşmadan önce önizleyin. Ham günlükler, profil içerikleri veya donanım tanımlayıcıları içermez ve hiçbir zaman otomatik olarak yüklenmez.
+
+**Kurtarma:** Yedeklenen sürücüyü kurtarmak için korumalı iş kılavuzunu izleyin. Açık profil restorasyonu, orijinal sürücü sürümünü ve aynı GPU'ları gerektirir; tüm veritabanının yerini alır, geçerli bir kopyayı korur ve karmaları ve çakışan durumu kontrol eder. Günlüğünü silmeyin veya uyumsuzluğu zorlamayın. Bu yeni iş akışıyla gerçek sürücü kurulumu, tam kurtarma ve yerel profil içe aktarımı, gerçek bir sistemde doğrulanmamış olarak kalır.
+
+**Uygulama güncellemeleri:** sürüm notlarını okuyun ve ardından SHA-256 onaylı bir indirmeyi açıkça seçin. Denetim varsayılan olarak manuel olarak yapılır ve başlangıçta isteğe bağlı bir denetim yapılır. Hiçbir yükleyici otomatik olarak başlatılmaz. Bu özellik, sürücü güncelleme kontrollerinden ve kurulu sürümün isteğe bağlı sürücü kontrolü görevinden ayrıdır.
+
 <a id="screenshots"></a>
 ## Ekran görüntüleri
 
@@ -101,7 +117,7 @@ NVDriverForge'i kapatın, bir sonraki resmi paketi edinin ve karmasını doğrul
 
 Windows'ten Uninstall **Installed apps**. NVIDIA sürücüsünü değil, uygulamayı ve güncelleme görevini kaldırır. Ayarlar, günlükler ve yedeklemeler kalır. İstenirse, uygulamayı kaldırmadan **önce** belgelenen kurtarma akışı yoluyla gelişmiş/NVENC değişikliklerini geri yükleyin. Geri yükleme, başka bir araçtan yapılan çakışan değişiklikleri reddeder.
 
-Yerel veriler `%LOCALAPPDATA%\NVDriverForge` altındadır; korunan işler ve sürücü aktarımları `%PROGRAMDATA%\NVDriverForge\Jobs` kapsamındadır. Taşınabilir kullanım aynı zamanda yerel veriler de oluşturur. Sürücü deposunun dışa aktarımı bir sistem görüntüsü veya tam profil yedeği değildir.
+Yerel veriler `%LOCALAPPDATA%\NVDriverForge` altındadır; korunan işler ve sürücü aktarımları `%PROGRAMDATA%\NVDriverForge\Jobs` kapsamındadır. Taşınabilir kullanım aynı zamanda yerel veriler de oluşturur. Sürücü deposunun dışa aktarımı ve yerel profil yedeklemesi ayrıdır. İkisi de sistem görüntüsü değil.
 
 <a id="known-limitations"></a>
 ## Bilinen sınırlamalar
@@ -120,7 +136,7 @@ Yerel veriler `%LOCALAPPDATA%\NVDriverForge` altındadır; korunan işler ve sü
 | --- | --- |
 | Çevrimiçi katalog kullanılamıyor | [NVIDIA sürücü indirmeleri](https://www.nvidia.com/en-us/drivers/)'ten orijinal bir paket seçin. Komşu bir GPU modelini değiştirmeyin. |
 | Düzeltme araması kullanılamıyor | [NVIDIA'in Game Ready sürücü forumu](https://www.nvidia.com/en-us/geforce/forums/game-ready-drivers/13/)'i kullanın ve gerçek paketi doğrulayın. |
-| NVIDIA kurulumu başarısız oluyor | Arıza özetini okuyun ve ayrıntılı günlükleri açın. Halihazırda geçerli olan veya uygulanamayan isteğe bağlı bileşenler, 0.1.3'te atlanabilir durumda kalır. Başarısız kurulumlar, isteğe bağlı ayarlamaları veya başarı/yeniden başlatma akışını tetiklemez. |
+| NVIDIA kurulumu başarısız oluyor | Arıza özetini okuyun ve ayrıntılı günlükleri açın. Halihazırda geçerli olan veya uygulanamayan isteğe bağlı bileşenler, 0.1.4'te atlanabilir durumda kalır. Başarısız kurulumlar, isteğe bağlı ayarlamaları veya başarı/yeniden başlatma akışını tetiklemez. |
 | İmza/karma/yedekleme hatası | Bu kurulumu durdurun ve hatayı koruyun; Bozulmuşsa orijinal paketi tekrar edinin. |
 | Seçenek kullanılamıyor | Donanımını, bileşenini veya hedef sürücüsünün nedenini okuyun; değişmeden saklayın. |
 | Yeniden başlat veya iş hâlâ beklemede | İşin kurtarma talimatlarını ve açık özgeçmişini kullanın; günlüğünü silmeyin. |

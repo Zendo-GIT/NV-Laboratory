@@ -18,7 +18,7 @@
 <a id="third-party-notices-and-credits"></a>
 # Notificări și credite ale terților
 
-Audit initial: 09-09-2026; NVDriverForge 0.1.3 și actualizare de proveniență: 2026-09-10. **Licența unei componente acoperă acea componentă, nu întreaga suită.** Sursa aplicației rămâne privată. Notificările privind drepturile de autor și permisiunea sunt păstrate literal; acest tabel este un index, nu un înlocuitor pentru ele. „Extern” înseamnă nedistribuit în activele aplicației.
+Audit initial: 09-09-2026; Pachetul actual și revizuirea provenienței: 2026-09-18. NVDriverForge 0.1.4, NVMFG Unlock40 0.2.3 și NVRasterPulse 0.2 păstrează licențele de componente existente. Profile Inspector 3.0.2.3/setup-r2 este neschimbat. **Licența unei componente acoperă acea componentă, nu întreaga suită.** Sursa aplicației rămâne privată. Notificările privind drepturile de autor și permisiunea sunt păstrate literal; acest tabel este un index, nu un înlocuitor pentru ele. „Extern” înseamnă nedistribuit în activele aplicației.
 
 | Componentă / proiect original | autor | Site oficial, depozit sau descărcare | Licență/aviz | Utilizați în NV Tools | Modificări |
 | --- | --- | --- | --- | --- | --- |

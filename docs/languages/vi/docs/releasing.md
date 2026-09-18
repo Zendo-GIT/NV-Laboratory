@@ -37,9 +37,9 @@ Không bao giờ chọn không gian làm việc phát triển chính, thư mục
 | Công cụ | Gắn thẻ | Chính sách phiên bản |
 | --- | --- | --- |
 | NVIDIA Profile Inspector – NV Tools Fork | nvpi-v3.0.2.3 | Phiên bản ứng dụng gồm bốn phần hiện có; thiết lập phiên bản 2 có tên tệp riêng |
-| NVDriverForge | nvdriverforge-v0.1.3 | Sơ đồ 0.x hiện có; các bản cập nhật được phiên bản duy trì các gói trước đó |
-| NVMFG Unlock40 | nvmfg-unlock40-v0.1.1 | Ứng viên UI2 được xác định bằng hàm băm chính xác mà không cần phát minh ra phiên bản ứng dụng mới |
-| NVRasterPulse | nvrasterpulse-v0.1 | Phiên bản hai phần hiện có |
+| NVDriverForge | nvdriverforge-v0.1.4 | Sơ đồ 0.x hiện có; các bản cập nhật được phiên bản duy trì các gói trước đó |
+| NVMFG Unlock40 | nvmfg-unlock40-v0.2.3 | Phiên bản ứng dụng 0.2.3; những thay đổi tích lũy kể từ 0.1.1 công khai |
+| NVRasterPulse | nvrasterpulse-v0.2 | Phiên bản hai phần hiện có |
 
 Người bảo trì có thể công bố trực tiếp hoặc ủy quyền cho người trợ lý công bố tài sản được kiểm toán. Xuất bản là rõ ràng; không có quy trình công việc nào tạo ra Bản phát hành trên mỗi cam kết.
 
@@ -52,10 +52,13 @@ Người bảo trì có thể công bố trực tiếp hoặc ủy quyền cho n
 
 Các liên kết thẻ cho mỗi dự án tránh đưa người dùng đến một công cụ khác thông qua liên kết `releases/latest` được chia sẻ. Kho lưu trữ **Source code** tự động của GitHub chứa trung tâm tài liệu này. Nguồn ứng dụng được giữ kín. Các thông báo về thành phần gốc vẫn còn nguyên và bản phát hành không giải quyết được khoản dự trữ NVIDIA SDK được ghi lại của NVMFG.
 
+
+Bản cập nhật ngày 18 tháng 9 chuẩn bị ba thẻ mới; Bản phát hành Profile Inspector hiện tại không thay đổi. Tên nội dung, thẻ và `SHA256SUMS.txt` phải chính xác để kiểm tra cập nhật ứng dụng. Xuất bản các Bản phát hành bình thường mà không có cờ phát hành trước để đưa chúng ra kiểm tra bản phát hành ổn định; NVMFG vẫn còn thử nghiệm.
+
 <a id="integrity-and-storage"></a>
 ## Tính toàn vẹn và lưu trữ
 
-Không bao giờ âm thầm thay thế byte nhị phân đã xuất bản. Sử dụng phiên bản rõ ràng mới hoặc bản sửa đổi trình cài đặt với các giá trị băm mới. Sidecars hợp pháp bổ sung các thông báo nhúng. NVDriverForge 0.1.3 di động có dung lượng 141.760.351 byte, cao hơn giới hạn 100 tệp MiB Git thông thường của GitHub. Phát hành tệp đính kèm tránh đặt các tệp nhị phân hoặc Git LFS vào trung tâm này. [Hướng dẫn tệp lớn GitHub](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
+Không bao giờ âm thầm thay thế byte nhị phân đã xuất bản. Sử dụng phiên bản rõ ràng mới hoặc bản sửa đổi trình cài đặt với các giá trị băm mới. Sidecars hợp pháp bổ sung các thông báo nhúng. NVDriverForge 0.1.4 di động có dung lượng 142.017.891 byte, cao hơn giới hạn 100 tệp MiB Git thông thường của GitHub. Phát hành tệp đính kèm tránh đặt các tệp nhị phân hoặc Git LFS vào trung tâm này. [Hướng dẫn tệp lớn GitHub](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
 
 Báo cáo lỗ hổng riêng tư phải được bật trong cài đặt bảo mật kho lưu trữ. Xác minh tính khả dụng của nó trước khi gửi các báo cáo nhạy cảm đến đó; [SECURITY.md](../SECURITY.md) cung cấp một phương án dự phòng không tiết lộ chi tiết về lỗ hổng bảo mật.
 

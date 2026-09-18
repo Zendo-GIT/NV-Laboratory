@@ -23,9 +23,9 @@ Nämä ovat valmisteltuja ehdokkaita, eivät sertifiointimatriisia kaikille Wind
 | Työkalu | Windows / suoritusaika | Laitteisto/ulkoinen riippuvuus | Hoitoa vaativat toimenpiteet |
 | --- | --- | --- | --- |
 | NVPI fork 3.0.2.3 | Windows 10/11 x64, .NET Framework 4.8 | Yhteensopiva NVIDIA-ohjain/näyttö | Profiili kirjoittaa ja näyttää esikatselut |
-| NVDriverForge 0.1.2 | Windows 10 build 19041+ / 11 x 64; Mukana .NET/WPF | Yhteensopiva NVIDIA-ohjainpaketti | Edistynyt asennus, lisäasetukset, valinnainen NVENC |
-| NVMFG Unlock40 0.1.1 | Windows 10/11 x64; Mukana .NET/WPF, Framework 4.8 -apuohjelmat | RTX 40, kelvollinen DLSS FG -peli ja kiinnitetty tarjoaja | Alkuperäinen pelin sisäinen korjaustiedosto, globaali profiilipäiväkirja, SDK-pelipäivitykset |
-| NVRasterPulse 0.1 | Windows 10/11 x64, .NET Framework 4.8 | RTSS asennettu; juoksevat lippikset | RTSS suoritettavan profiilin muutokset |
+| NVDriverForge 0.1.4 | Windows 10 build 19041+ / 11 x 64; Mukana .NET/WPF | Yhteensopiva NVIDIA-ohjainpaketti | Edistynyt asennus, lisäasetukset, valinnainen NVENC |
+| NVMFG Unlock40 0.2.3 | Windows 10/11 x64; Mukana .NET/WPF, Framework 4.8 -apuohjelmat | RTX 40, kelvollinen DLSS FG -peli ja kiinnitetty tarjoaja | Alkuperäinen pelin sisäinen korjaustiedosto, globaali profiilipäiväkirja, SDK-pelipäivitykset |
+| NVRasterPulse 0.2 | Windows 10/11 x64, .NET Framework 4.8 | RTSS asennettu; juoksevat lippikset | RTSS suoritettavan profiilin muutokset |
 
 ARM64-pakettia ei ole valmisteltu. Näytön/sovellusliittymän saatavuus ja vanhat Windows-versiot voivat rajoittaa yksittäisiä ominaisuuksia. Yleistä NVIDIA- tai RTSS-minimiversiota ei ole keksitty. Tarkka NVMFG-palveluntarjoajan hash on [alkuperä](provenance.md):ssä.
 
@@ -47,6 +47,8 @@ Käytä [bugi muoto](https://github.com/Zendo-GIT/NV-Laboratory/issues/new?templ
 | NVMFG odottavat asetukset | Ratkaise palautus sulkemalla pelejä, säilyttäen muiden työkalujen muutokset. |
 | RP-korkilla ei ole vaikutusta | Suorita RTSS, tunnista todellinen pelin EXE, tarkista koukun tila ja kilpailevat rajat. |
 | RP-suojus säilyy poiston jälkeen | Tarkista RTSS Global; poisto muuttaa vain paikallisen rajoittimen ohituksia. |
+
+NVDriverForge tarjoaa esikatseltavissa olevan paikallisen JSON-raportin; NVMFG tarjoaa diagnostiikkaa Tietoja. Suosi nämä suodatetut raportit täydelliseen lokiarkistoon ja tarkista ne ennen jakamista. NVMFG:ssä 0.1.1 raportoidulle palautustukokselle ei vieläkään ole vahvistettua syytä; säilyttää päiväkirjansa ja kirjata kaikki saatavilla olevat virhekoodit. NVRasterPulse 0.2 tarjoaa määritysdiagnostiikkaa toimintovalikossaan ilman FPS:n mittausta.
 
 <a id="logs-and-privacy"></a>
 ## Lokit ja yksityisyys

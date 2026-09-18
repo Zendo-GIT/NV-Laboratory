@@ -24,7 +24,7 @@ Repositori publiknya adalah **Zendo-GIT/NV-Laboratory**. Perubahan dokumentasi d
 ## Pembaruan dokumentasi
 
 1. Buka folder **NV-Laboratorium** di GitHub Desktop.
-2. Tinjau dokumentasi, pemberitahuan, gambar, metadata JSON, dan validator dokumentasi.
+2. Tinjau dokumentasi, pemberitahuan, gambar, metadata JSON dan validator dokumentasi.
 3. Jalankan `python tools/validate_repository.py` dari folder itu.
 4. Terapkan perubahan yang telah ditinjau, lalu gunakan **Push origin**. Periksa hasil Tindakan.
 5. Simpan identitas penulis publik **禅堂 Zendo (RevoluSound Team)** dan alamat GitHub `noreply` akun.
@@ -37,9 +37,9 @@ Jangan pernah memilih ruang kerja pengembangan induk, direktori audit pribadi, a
 | Alat | Menandai | Kebijakan versi |
 | --- | --- | --- |
 | NVIDIA Profile Inspector – NV Tools Fork | nvpi-v3.0.2.3 | Versi aplikasi empat bagian yang ada; setup revisi 2 memiliki nama file sendiri |
-| NVDriverForge | nvdriverforge-v0.1.3 | Skema 0.x yang ada; pembaruan berversi mempertahankan paket sebelumnya |
-| NVMFG Unlock40 | nvmfg-unlock40-v0.1.1 | Kandidat UI2 diidentifikasi dengan hash yang tepat tanpa membuat versi aplikasi baru |
-| NVRasterPulse | nvrasterpulse-v0.1 | Versi dua bagian yang ada |
+| NVDriverForge | nvdriverforge-v0.1.4 | Skema 0.x yang ada; pembaruan berversi mempertahankan paket sebelumnya |
+| NVMFG Unlock40 | nvmfg-unlock40-v0.2.3 | Versi aplikasi 0.2.3; perubahan kumulatif sejak 0.1.1 publik |
+| NVRasterPulse | nvrasterpulse-v0.2 | Versi dua bagian yang ada |
 
 Pengelola dapat mempublikasikan secara langsung atau memberi wewenang kepada asisten untuk mempublikasikan aset yang diaudit. Publikasi bersifat eksplisit; tidak ada alur kerja yang membuat Rilis pada setiap penerapan.
 
@@ -52,10 +52,13 @@ Pengelola dapat mempublikasikan secara langsung atau memberi wewenang kepada asi
 
 Tautan tag per proyek menghindari pengiriman pengguna ke alat lain melalui tautan `releases/latest` bersama. Arsip otomatis **Source code** GitHub berisi hub dokumentasi ini. Sumber aplikasi tetap bersifat pribadi. Pemberitahuan komponen asli tetap utuh, dan rilis tidak menyelesaikan cadangan NVIDIA SDK yang didokumentasikan NVMFG.
 
+
+Update 18 September menyiapkan tiga tag baru; Rilis Profile Inspector yang ada tetap tidak berubah. Nama aset, tag, dan `SHA256SUMS.txt` harus tetap sama untuk pemeriksaan pembaruan aplikasi. Publikasikan Rilis normal tanpa tanda prarilis agar dapat diperiksa rilis stabil; NVMFG masih bersifat eksperimental.
+
 <a id="integrity-and-storage"></a>
 ## Integritas dan penyimpanan
 
-Jangan pernah mengganti byte biner yang dipublikasikan secara diam-diam. Gunakan versi eksplisit baru atau revisi penginstal dengan hash baru. Sidecars hukum melengkapi pemberitahuan yang tertanam. NVDriverForge 0.1.3 portabel berukuran 141.760.351 byte, di atas batas file Git GitHub biasa yaitu 100 MiB. Rilis lampiran menghindari penempatan biner atau Git LFS di hub ini. [Panduan file besar GitHub](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
+Jangan pernah mengganti byte biner yang diterbitkan secara diam-diam. Gunakan versi eksplisit baru atau revisi penginstal dengan hash baru. Sidecars hukum melengkapi pemberitahuan yang tertanam. NVDriverForge 0.1.4 portabel berukuran 142.017.891 byte, di atas batas file Git GitHub biasa yaitu 100 MiB. Rilis lampiran menghindari penempatan biner atau Git LFS di hub ini. [Panduan file besar GitHub](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
 
 Pelaporan kerentanan pribadi harus diaktifkan di pengaturan keamanan repositori. Verifikasi ketersediaannya sebelum mengarahkan laporan sensitif ke sana; [SECURITY.md](../SECURITY.md) menyediakan cadangan yang tidak memaparkan rincian kerentanan.
 

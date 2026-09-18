@@ -18,7 +18,7 @@
 <a id="provenance-changes-and-licensing"></a>
 # Nguồn gốc, thay đổi và cấp phép
 
-Cuộc kiểm tra này mô tả các ứng viên được chuẩn bị vào **2026-09-09**. Nguồn ứng dụng vẫn ở chế độ riêng tư; kho lưu trữ công khai chứa tên tệp và hàm băm, không chứa mã nguồn. Xem [thông báo thành phần đầy đủ](../THIRD_PARTY_NOTICES.md).
+Cuộc kiểm tra này mô tả các ứng viên được chuẩn bị vào **2026-09-18**. Nguồn ứng dụng vẫn ở chế độ riêng tư; kho lưu trữ công khai chứa tên tệp và hàm băm, không chứa mã nguồn. Xem [thông báo thành phần đầy đủ](../THIRD_PARTY_NOTICES.md).
 
 <a id="nvidia-profile-inspector--nv-tools-fork"></a>
 ## NVIDIA Profile Inspector – NV Tools Fork
@@ -68,11 +68,13 @@ Trình trợ giúp điều chỉnh NvapiDrsWrapper và NativeArrayHelper của N
 
 Tham chiếu MinHook: `8fda4f5481fed5797dc2651cd91e238e9b3928c6`; tập hợp con được biên dịch kế thừa không có thay đổi chức năng cục bộ nào trong so sánh. Tiêu đề tích hợp Streamline: 2.12; giấy phép tiêu đề mở đã được xác minh tại v2.12.0. Nguồn tiêu đề NGX: NVIDIA/DLSS cam kết `a291cc7d2cc642a51566f3dfd5376f635cd1b284`.
 
-Động cơ ứng cử viên SHA-256: `0E7FC0277C88B22095B622F6A3CB292EC0C14F7A0253D392502257B75E548890`.
+Động cơ ứng cử viên SHA-256: `C793770D329B99CD9C5C640317CE435BFE353CA2868E36CF5DCD4D5295EFAE13`.
 
 Nhà cung cấp bắt buộc SHA-256 trong engine.json: `C64928FDB7C48A57722EA8EEF2662171EDC323473ADEA66C29A206A23F1A2BED`. Nhóm nhà cung cấp 310.9 được báo cáo không thể thay thế được với hàm băm chính xác này. Không có nhà cung cấp DLL hoặc mô hình nào được bao gồm.
 
 **Điểm cấp phép nổi bật:** giấy phép NVIDIA RTX SDK đầy đủ, phiên bản ngày 14 tháng 3 năm 2024, có hạn chế mục 4(d) liên quan đến việc vượt qua các giới hạn kỹ thuật. Việc kiểm tra không thiết lập sự cho phép cho việc sử dụng này. Giữ lại giấy phép động cơ MIT, miễn phí hoặc tuân theo các mod khác không giải quyết được tình trạng riêng biệt đó. Việc chuẩn bị ứng viên không phải là một thủ tục pháp lý. Thông báo tiêu đề ngắn ban đầu được bổ sung giấy phép đầy đủ; văn bản Windows-1252 của nó cũng được cung cấp dưới dạng UTF-8 có thể đọc được, với các byte gốc được giữ lại.
+
+So sánh gốc đã được tính toán lại cho 0.2.3: 48 tệp và phân loại giống nhau. Kể từ lần kiểm tra trước, `game_selection.cpp`, `game_selection.h` và `patcher.cpp` đã thay đổi đối với các quan sát hoạt động/năng lực. Các quy trình thư viện, chẩn đoán, ưu tiên, cập nhật và lựa chọn mới thuộc về ứng dụng bảo trì. Giấy phép thành phần và hàm băm của nhà cung cấp được yêu cầu không thay đổi.
 
 <a id="nvrasterpulse"></a>
 ## NVRasterPulse
@@ -102,3 +104,5 @@ Bản sửa đổi thiết lập NVPI sau này sửa lỗi lựa chọn ngôn ng
 NVDriverForge 0.1.3 được hoàn thành vào ngày 10-09-2026. Báo cáo xác minh riêng của nó ghi lại 366 bài kiểm tra ứng dụng, 118 bài kiểm tra đồng hành, 32 bài kiểm tra thiết lập, 156 bài so sánh gốc và 34 trường hợp chuyển tiếp ngôn ngữ. Bản sửa lỗi lựa chọn thành phần được bảo vệ đã được phát lại dựa trên gói trình điều khiển gốc mà không thay đổi tải trọng hoặc cài đặt trình điều khiển. Đây là kết quả của nhóm sản phẩm đã ghi ngày tháng, không phải các bài kiểm tra được chạy lại bằng bản cập nhật tài liệu này hoặc bằng chứng về việc cài đặt trình điều khiển thực thành công.
 
 Bản cập nhật trung tâm này không thay đổi mã ứng dụng chức năng. Các thử nghiệm xây dựng/đơn vị/giao diện người dùng ứng dụng trước đó vẫn là bằng chứng lịch sử cũ. Đây không phải là kỹ thuật đảo ngược hoàn toàn mọi mã nhị phân của bên thứ ba hoặc là sự đảm bảo chống lại mọi mẫu bí mật có thể có.
+
+Bản cập nhật ngày 18 tháng 9 năm 2026: NVDriverForge 0.1.4 bổ sung tính năng kiểm tra mức độ sẵn sàng, sao lưu hồ sơ gốc, hướng dẫn thành phần, tùy chọn và bộ công cụ, kết quả chi tiết, báo cáo cục bộ và cập nhật ứng dụng. NVRasterPulse 0.2 bổ sung chẩn đoán cấu hình, hướng dẫn FPS, tạm dừng/tiếp tục, hoàn tác, cấu hình `.nvrp` và mục yêu thích/ẩn mà không có công cụ giới hạn mới. Hướng dẫn cá nhân mô tả cách sử dụng và giới hạn. Kiểm tra trung tâm tĩnh tách biệt với các thử nghiệm ứng dụng được ghi trong báo cáo riêng ngày 18 tháng 9; không có cài đặt trình điều khiển, nhập hồ sơ thực hoặc đo độ trễ nào được thực hiện cho trung tâm này.

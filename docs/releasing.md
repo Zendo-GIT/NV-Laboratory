@@ -34,9 +34,9 @@ attachment directory. [Commit email privacy](https://docs.github.com/en/account-
 | Tool | Tag | Version policy |
 | --- | --- | --- |
 | NVIDIA Profile Inspector – NV Tools Fork | nvpi-v3.0.2.3 | Existing four-part application version; setup revision 2 has its own filename |
-| NVDriverForge | nvdriverforge-v0.1.3 | Existing 0.x scheme; versioned updates preserve earlier packages |
-| NVMFG Unlock40 | nvmfg-unlock40-v0.1.1 | UI2 candidate identified by exact hashes without inventing a new application version |
-| NVRasterPulse | nvrasterpulse-v0.1 | Existing two-part version |
+| NVDriverForge | nvdriverforge-v0.1.4 | Existing 0.x scheme; versioned updates preserve earlier packages |
+| NVMFG Unlock40 | nvmfg-unlock40-v0.2.3 | Application version 0.2.3; cumulative changes since public 0.1.1 |
+| NVRasterPulse | nvrasterpulse-v0.2 | Existing two-part version |
 
 The maintainer can publish directly or authorize an assistant to publish the audited
 assets. Publication is explicit; no workflow creates a Release on each commit.
@@ -53,11 +53,14 @@ The per-project tag links avoid sending users to another tool through a shared
 documentation hub. Application sources stay private. Original component notices
 remain intact, and a release does not resolve NVMFG's documented NVIDIA SDK reserve.
 
+
+The September 18 update prepares three new tags; the existing Profile Inspector Release stays unchanged. Asset names, tags and `SHA256SUMS.txt` must remain exact for the application update checks. Publish normal Releases without the prerelease flag to expose them to stable-release checks; NVMFG remains experimental.
+
 ## Integrity and storage
 
 Never silently replace published binary bytes. Use a new explicit version or
 installer revision with new hashes. Legal sidecars supplement embedded notices.
-NVDriverForge 0.1.3 portable is 141,760,351 bytes, above GitHub's ordinary 100 MiB
+NVDriverForge 0.1.4 portable is 142,017,891 bytes, above GitHub's ordinary 100 MiB
 Git-file limit. Release attachments avoid putting binaries or Git LFS in this hub.
 [GitHub large-file guidance](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
 

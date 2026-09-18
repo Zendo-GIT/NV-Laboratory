@@ -20,7 +20,7 @@
 
 **Připravte si instalaci ovladače NVIDIA s jasným výběrem komponent a volitelným nastavením.**
 
-[Stáhněte si 0.1.3 a stav](../docs/downloads.md#nvdriverforge) · [Instalace](#installation) · [Kredity](#credits-and-upstream) · [Licence](../../../../NVDriverForge/LICENSE)
+[Stáhněte si 0.1.4 a stav](../docs/downloads.md#nvdriverforge) · [Instalace](#installation) · [Kredity](#credits-and-upstream) · [Licence](../../../../NVDriverForge/LICENSE)
 
 <a id="overview-and-purpose"></a>
 ## Přehled a účel
@@ -35,14 +35,15 @@ Je to nezávisle vyvinutá aplikace inspirovaná částečně pracovním postupe
 - NVIDIA Game Ready / Studio vyhledávání a stahování; volitelné zjišťování opravy hotfix s ručním zálohováním.
 - Analýza původního balíčku, hashů, podpisů NVIDIA, manifestů a kompatibilních položek INF.
 - Výběr komponent se závislostmi a zachování neznámých komponent.
-- Verze 0.1.3 ponechává vybrané volitelné komponenty NVIDIA přeskočitelné a ze zjišťování vylučuje pouze ověřené nekontrolované komponenty. Již aktuální nebo neaplikovatelné volitelné runtimes již nejsou nuceny jako kritické komponenty.
+- Verze 0.1.4 ponechává vybrané volitelné komponenty NVIDIA přeskočitelné a ze zjišťování vylučuje pouze ověřené nekontrolované komponenty. Již aktuální nebo neaplikovatelné volitelné runtimes již nejsou nuceny jako kritické komponenty.
 - Jasné shrnutí selhání instalace a přístup k podrobným protokolům ve všech 34 jazycích.
-- Explicitní potvrzení instalace, chráněná příprava a export existujících balíčků úložiště ovladačů.
+- Kontroly připravenosti, explicitní potvrzení, export do úložiště ovladačů a nativní záloha profilu NVIDIA před instalací.
 - Volitelná pokročilá nastavení s kontrolami před výstupem, deníky a obnovou s ohledem na konflikty.
 - Volitelná předvolba **Custom NV** s pojmenovanými volbami a vysvětlením, včetně samostatného výběru síly SILK a kontrol kompatibility.
 - Volitelné stahování oprav přesné verze NVENC; jsou kontrolovány zdrojové potvrzení a cílové bajty.
 - Samostatná volitelná instalace Profile Inspector fork z obrazovky Nástroje.
-- Volitelné instalované uživatelské aktualizace, 34 jazyků rozhraní a čtyři motivy.
+- Průvodce komponentami, předvolby pro opakované použití, sady ovladačů, zprávy místní podpory a volitelné aktualizace aplikací.
+- 34 jazyků rozhraní a čtyři témata.
 
 Dostupné pokročilé možnosti se týkají MPO, indikátoru DLSS, Ansel, NVIDIA zvukového spánku, MSI, zásady/priority přerušení, HDCP, spouštění zobrazovacího kontejneru a způsobilé starší služby telemetrie. Každý má své vlastní předpoklady a účinky; nejedná se o univerzální vylepšení výkonu.
 
@@ -87,6 +88,21 @@ Volitelná práce NVENC stahuje kompatibilní data z připojeného potvrzení ke
 
 Předvolby řídí jazyk, motiv a volitelné kontroly aktualizací nainstalovaných uživatelem. Přenosný počítač nevytváří nainstalovanou úlohu kontroly pozadí. Nástroje a obnova jsou odděleny od čtyř kroků instalace.
 
+<a id="backup-and-diagnostic-tools"></a>
+## Zálohovací a diagnostické nástroje
+
+**Před instalací:** Kontroly připravenosti zahrnují podpis balíčku, GPU, odhadovaný pracovní prostor/zálohovací prostor, čekající restart a konkurenční instalátory. Vyvýšený pracovník je opakuje. Konkurenční procesy nejsou nikdy automaticky zastaveny. Nativní záloha databáze profilu NVIDIA musí být úspěšná před spuštěním instalace NVIDIA; export do úložiště ovladačů je samostatná záloha.
+
+**Volby pro opakované použití:** Průvodce komponentami se ptá na čtyři otázky týkající se her, zvuku, NVIDIA App a nahrávání. Zkontrolujte jeho návrhy; požadované, neznámé a závislé komponenty zůstávají chráněny. Exportujte předvolby a poté je při importu prohlédněte a znovu ověřte oproti vybranému balíčku. Neimportují se souhlasy, operace restartu, cesty programů a užitečné zatížení oprav.
+
+**Sada ovladačů:** exportujte `.nvdfkit.zip`, abyste zachovali původní podepsaný instalační program NVIDIA, volby, hash a pokyny pohromadě. `NVDriverForge.exe` přenášejte samostatně. Importujte sadu do Nástroje, prohlédněte si náhled a poté použijte normální instalační postup. Toto není tenký ovladač ani upravený samostatný instalační program. Volitelný NVENC stále potřebuje stažení a souhlas pro tento přesný ovladač. Stále platí podmínky redistribuce NVIDIA.
+
+**Výsledky a podpora:** přečtěte si krátký výsledek a rozbalte podrobnosti pro jednotlivé fáze/možnosti. Úspěšné zpětné čtení stanoví uloženou hodnotu, nikoli naměřené zlepšení. Místní zpráva podpory JSON používá pole se seznamem povolených, včetně poslední uložené úlohy po restartování aplikace. Před uložením nebo sdílením si jej prohlédněte. Neobsahuje žádné nezpracované protokoly, obsah profilu nebo hardwarové identifikátory a nikdy se nenahrává automaticky.
+
+**Obnova:** podle průvodce chráněnou úlohou obnovte zálohovaný ovladač. Explicitní obnovení profilu vyžaduje původní verzi ovladače a stejné GPU; nahradí celou databázi, zachová aktuální kopii a zkontroluje hash a konfliktní stav. Nemažte jeho deník ani nevynucujte nesoulad. Skutečná instalace ovladače, úplná obnova a import nativního profilu s tímto novým pracovním postupem zůstávají ve skutečném systému neověřené.
+
+**Aktualizace aplikací:** přečtěte si poznámky k verzi a poté explicitně vyberte stažení ověřené SHA-256. Kontrola je ve výchozím nastavení ruční, s volitelnou kontrolou při spuštění. Žádný instalátor se nespustí automaticky. Tato funkce je oddělená od kontroly aktualizací ovladače a volitelné úlohy kontroly ovladače nainstalované edice.
+
 <a id="screenshots"></a>
 ## Snímky obrazovky
 
@@ -101,7 +117,7 @@ Zavřete NVDriverForge, získejte další oficiální balíček a ověřte jeho 
 
 Uninstall od Windows **Installed apps**. Odebere aplikaci a její aktualizační úlohu, nikoli ovladač NVIDIA. Nastavení, protokoly a zálohy zůstávají. V případě potřeby obnovte pokročilé/NVENC pomocí zdokumentovaného postupu obnovy **před** odebráním aplikace. Obnovení odmítne konfliktní změny z jiného nástroje.
 
-Místní data jsou pod `%LOCALAPPDATA%\NVDriverForge`; chráněné úlohy a exporty ovladačů jsou pod `%PROGRAMDATA%\NVDriverForge\Jobs`. Přenosné použití také vytváří místní data. Export z úložiště ovladačů není obraz systému ani záloha úplného profilu.
+Místní data jsou pod `%LOCALAPPDATA%\NVDriverForge`; chráněné úlohy a exporty ovladačů jsou pod `%PROGRAMDATA%\NVDriverForge\Jobs`. Přenosné použití také vytváří místní data. Export do úložiště ovladačů a nativní záloha profilu jsou samostatné. Ani obraz systému.
 
 <a id="known-limitations"></a>
 ## Známá omezení
@@ -120,7 +136,7 @@ Místní data jsou pod `%LOCALAPPDATA%\NVDriverForge`; chráněné úlohy a expo
 | --- | --- |
 | Online katalog není k dispozici | Vyberte originální balíček z [Stažení ovladačů NVIDIA](https://www.nvidia.com/en-us/drivers/). Nenahrazujte sousední model GPU. |
 | Vyhledávání opravy hotfix není k dispozici | Použijte [Fórum ovladačů NVIDIA Game Ready](https://www.nvidia.com/en-us/geforce/forums/game-ready-drivers/13/) a ověřte skutečný balíček. |
-| Instalace NVIDIA se nezdařila | Přečtěte si souhrn poruch a otevřete podrobné protokoly. Volitelné komponenty, které jsou již aktuální nebo nepoužitelné, lze v 0.1.3 přeskočit. Neúspěšné instalace nespustí volitelná vylepšení ani tok úspěchu/restartování. |
+| Instalace NVIDIA se nezdařila | Přečtěte si souhrn poruch a otevřete podrobné protokoly. Volitelné komponenty, které jsou již aktuální nebo nepoužitelné, lze v 0.1.4 přeskočit. Neúspěšné instalace nespustí volitelná vylepšení ani tok úspěchu/restartování. |
 | Selhání podpisu/hash/zálohování | Zastavte tuto instalaci a ponechte chybu; v případě poškození získejte znovu původní balíček. |
 | Možnost nedostupná | Přečtěte si důvod hardwaru, součásti nebo cílového ovladače; ponechat beze změny. |
 | Restart nebo úloha stále čeká | Použijte pokyny k obnově úlohy a explicitní obnovení; nemažte jeho deník. |

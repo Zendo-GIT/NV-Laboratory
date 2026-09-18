@@ -18,7 +18,7 @@
 <a id="provenance-changes-and-licensing"></a>
 # Provenance, pagbabago at paglilisensya
 
-Inilalarawan ng audit na ito ang mga kandidatong inihanda noong **2026-09-09**. Ang mga mapagkukunan ng aplikasyon ay nananatiling pribado; ang mga pampublikong imbentaryo ay naglalaman ng mga filename at hash, hindi source code. Tingnan ang [buong bahagi ng mga abiso](../THIRD_PARTY_NOTICES.md).
+Inilalarawan ng audit na ito ang mga kandidatong inihanda noong **2026-09-18**. Ang mga mapagkukunan ng aplikasyon ay nananatiling pribado; ang mga pampublikong imbentaryo ay naglalaman ng mga filename at hash, hindi source code. Tingnan ang [buong bahagi ng mga abiso](../THIRD_PARTY_NOTICES.md).
 
 <a id="nvidia-profile-inspector--nv-tools-fork"></a>
 ## NVIDIA Profile Inspector – NV Tools Fork
@@ -68,11 +68,13 @@ Ang katulong ay umaangkop NVPI's NvapiDrsWrapper at NativeArrayHelper sa isang h
 
 MinHook sanggunian: `8fda4f5481fed5797dc2651cd91e238e9b3928c6`; ang minanang compiled subset ay walang functional na lokal na pagbabago sa paghahambing. Streamline integration header: 2.12; na-verify na lisensya ng open header sa v2.12.0. Pinagmulan ng header ng NGX: NVIDIA/DLSS gumawa ng `a291cc7d2cc642a51566f3dfd5376f635cd1b284`.
 
-Ang makina ng kandidato SHA-256: `0E7FC0277C88B22095B622F6A3CB292EC0C14F7A0253D392502257B75E548890`.
+Ang makina ng kandidato SHA-256: `C793770D329B99CD9C5C640317CE435BFE353CA2868E36CF5DCD4D5295EFAE13`.
 
 Kinakailangang provider na SHA-256 sa engine.json: `C64928FDB7C48A57722EA8EEF2662171EDC323473ADEA66C29A206A23F1A2BED`. Ang isang naiulat na pamilya ng provider ng 310.9 ay hindi mapapalitan ng eksaktong hash na ito. Walang provider na DLL o modelo ang kasama.
 
 **Natitirang punto ng paglilisensya:** ang buong lisensyang NVIDIA RTX SDK, bersyon Marso 14, 2024, ay naglalaman ng seksyon 4(d) na paghihigpit na nauugnay sa pag-bypass sa mga teknikal na limitasyon. Ang pag-audit ay hindi nagtatag ng pahintulot para sa paggamit na ito. Ang pagpapanatili ng MIT na lisensya ng makina, pagiging walang bayad, o pag-obserba sa iba pang mga mod ay hindi nireresolba ang hiwalay na kundisyon na iyon. Ang paghahanda ng kandidato ay hindi isang legal na clearance. Ang orihinal na maikling paunawa sa header ay dinagdagan ng buong lisensya; ang Windows-1252 na text nito ay ibinibigay din bilang nababasang UTF-8, na may mga orihinal na byte na napanatili.
+
+Ang katutubong paghahambing ay muling kinakalkula para sa 0.2.3: ang parehong 48 mga file at klasipikasyon. Mula noong nakaraang pag-audit, nagbago ang `game_selection.cpp`, `game_selection.h` at `patcher.cpp` para sa mga obserbasyon sa aktibidad/kakayahan. Ang mga bagong library, diagnostic, preference, update at selection workflow ay kabilang sa maintainer application. Ang mga lisensya ng bahagi at ang kinakailangang hash ng provider ay hindi nagbabago.
 
 <a id="nvrasterpulse"></a>
 ## NVRasterPulse
@@ -102,3 +104,5 @@ Ang susunod na NVPI setup revision 2 ay nag-aayos ng standalone na pagpili ng wi
 Nakumpleto ang NVDriverForge 0.1.3 noong 2026-09-10. Ang ulat ng pribadong pag-verify nito ay nagtatala ng 366 na pagsubok sa aplikasyon, 118 kasamang pagsusuri, 32 pagsusuri sa pag-setup, 156 katutubong paghahambing at 34 na kaso sa pagpapasa ng wika. Ang protektadong component-selection fix ay na-replay laban sa isang orihinal na driver package nang hindi binabago ang kargamento nito o ini-install ang driver. Ang mga ito ay may petsang mga resulta ng pangkat ng produkto, hindi mga pagsubok na muling pinalabas ng pag-update ng dokumentasyong ito o patunay ng isang matagumpay na pag-install ng tunay na driver.
 
 Ang pag-update ng hub na ito ay walang pagbabago sa functional na code ng application. Ang mga naunang pagsubok sa build/unit/UI ng application ay nananatiling may petsang makasaysayang ebidensya. Hindi ito ganap na reverse engineering ng bawat third-party na binary o isang garantiya laban sa bawat posibleng lihim na pattern.
+
+Setyembre 18, 2026 update: Ang NVDriverForge 0.1.4 ay nagdaragdag ng mga pagsusuri sa kahandaan, pag-backup ng native na profile, gabay sa bahagi, mga kagustuhan at kit, mga detalyadong resulta, lokal na pag-uulat at mga update sa application. Nagdaragdag ang NVRasterPulse 0.2 ng mga diagnostic ng configuration, patnubay ng FPS, i-pause/ipagpatuloy, i-undo, mga profile at paborito/itinago ang `.nvrp`, nang walang bagong engine ng limiter. Inilalarawan ng mga indibidwal na gabay ang paggamit at mga limitasyon. Ang mga static hub check ay hiwalay sa mga pagsubok sa aplikasyon na naitala sa mga pribadong ulat noong Setyembre 18; walang ginawang pag-install ng driver, totoong pag-import ng profile o pagsukat ng latency para sa hub na ito.

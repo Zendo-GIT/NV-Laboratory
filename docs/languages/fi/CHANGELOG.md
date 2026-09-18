@@ -18,35 +18,52 @@
 <a id="changelog"></a>
 # Muutosloki
 
-Tämä keskitin seuraa [Keep a Changelog](https://keepachangelog.com/en/1.1.0/):ää. Merkinnät kuvaavat tätä arkistoa; sovellusversiot ovat riippumattomia.
+Tämä keskitin seuraa [Keep a Changelog](https://keepachangelog.com/en/1.1.0/):ää. Sovellusversiot ja julkaisupäivät ovat riippumattomia. Alla valmistetut paketit saavat todelliset julkaisupäivänsä vastaavissa GitHub-julkaisuissaan.
 
 <a id="unreleased"></a>
 ## [Julkaisematon]
 
-<a id="added"></a>
-### Lisätty
-
-- Hub, täydelliset projektioppaat ja arkiston dokumentaatio 34 NV-sovelluskielellä.
-- Sivuja säilyttävät kielenvalitsimet, käännöskattavuuden metatiedot ja vakaat sisäiset ankkurit.
-- Alkupään hyvitykset, täydelliset sovellettavat ilmoitukset ja tiedoston alkuperä.
-- RTSS-vaatimus ja virallinen latauslinkki NVRasterPulse:lle.
-- Erilliset RevoluSound Team-linkit.
-- Valmisteltu ensimmäisen julkaisun pakettiluettelo, SHA-256-vahvistus ja manuaalinen julkaisumenettely.
-- Virhe-/ominaisuuslomakkeet, lisäys ja turvallisuusohjeet.
-- Vain luku -dokumentaatio ja julkaisurajojen tarkistukset.
-
 <a id="changed"></a>
 ### Muutettu
 
-- NVMFG-attribuutio erottaa nyt itsenäisesti kehitetyn sovelluksen,
-vertailu-/tarkennusviite ja todelliset jaetut alkuperäiset komponentit.   Nykyiset tekijänoikeudet, lisenssit ja tiedostovertailut säilyvät ennallaan.
-- NVDriverForge ehdokas päivitetty 0.1.3:ksi: korjattu valinnaisten komponenttien käsittely,
-luettavissa olevat lokalisoidut viat ja päivitetty suoritusaika/kumppanipakkaus.
+- Päivitä NVDriverForge 0.1.4:n keskitin ja kaikki 34 dokumentaatiokieltä,
+NVMFG Unlock40 0.2.3 ja NVRasterPulse 0.2, laadittu 18.9.2026.
+- NVDriverForge: valmiustarkistukset, alkuperäisen profiilin varmuuskopiot ja suojattu palautus,
+komponenttien opastus, uudelleen käytettävät asetukset, ohjainsarjat, yksityiskohtaiset tulokset, paikalliset tukiraportit ja erilliset sovelluspäivitykset.
+- NVMFG: monen kansion etsintä, pysyvä kirjaston välimuisti, havaittu MFG-toiminta,
+ajonaikaiset ominaisuudet, seuraavan käynnistyksen poissulkeminen, paikallinen diagnostiikka, asetusten siirto ja valinnaiset sovelluspäivitykset.
+- NVRasterPulse: määritysdiagnostiikka, FPS ehdotukset, tauko/jatka,
+yhden tason kumoaminen, valikoiva profiilin tuonti/vienti, suosikit ja piilotetut merkinnät.
+- Päivitä paketin tiiviste, julkaisutiedot ja alkuperäisen komponentin alkuperäkartta.
+Pidä jo julkaistut Profile Inspector 3.0.2.3/setup-r2 -resurssit ennallaan.
 
 <a id="fixed"></a>
 ### Korjattu
 
-- NVIDIA Profile Inspector – NV Tools Fork-asennusversio 2 näyttää nyt jaetun
-34 kielen valitsin, kun se käynnistetään suoraan. Selkeä kieli ja hiljainen edelleenlähetys säilyvät; editori ja kannettava paketti ovat ennallaan.
+- NVMFG-pelien valinta/laskenta, Ctrl+D käsittely ja valmiit edistymisilmoitukset;
+Wallpaper Engine on suljettu pois pelin havaitsemisesta. Erillinen raportoitu 0.1.1-palautustukos jää toistamatta, eikä sitä vaadita korjatuksi.
 
-Historiallisia julkisia julkaisupäiviä ei rekonstruoida. Ehdokassovellusversiot ovat 3.0.2.3, 0.1.3, 0.1.1 ja 0.1; niiden julkaisutiedot on liitetty heidän omiin tuleviin julkaisuihinsa. Valmistelu 2026-09-09 ei ole GitHub:n julkaisupäivä.
+<a id="initial-public-hub--2026-09-10"></a>
+## [Alkuperäinen julkinen keskus] – 2026-09-10
+
+<a id="added"></a>
+### Lisätty
+
+- Neljä projektiopasta ja arkiston dokumentaatio 34 kielellä, mukana
+sivuja säilyttävät valitsimet, vakaat ankkurit ja käännöskattavuuden metatiedot.
+- Komponenttien hyvitykset, alkuperäiset lisenssit, alkuperä, RTSS-vaatimukset ja
+erilliset RevoluSound Team-linkit.
+- Manuaaliset julkaisupaketit, SHA-256-arvot, myöntämislomakkeet, suojauskäytäntö ja
+vain luku -dokumenttien validointi. Sovelluslähteet pysyvät yksityisinä.
+- Ensimmäiset julkiset tunnisteet: `nvpi-v3.0.2.3`, `nvdriverforge-v0.1.3`,
+`nvmfg-unlock40-v0.1.1` ja `nvrasterpulse-v0.1`.
+
+<a id="included-fixes"></a>
+### Mukana korjaukset
+
+- Profile Inspector asennusohjelman versio 2: erillinen 34-kielen valitsin;
+editori ja kannettava hyötykuorma ennallaan.
+- NVDriverForge 0.1.3: korjattu valinnaisten komponenttien käsittely ja lokalisoitu
+virheyhteenvedot päivitetyllä ajonaikaisella ja kumppanipakkauksella.
+
+Yllä olevat päivämäärät ovat vahvistettua julkista keskushistoriaa, eivät rekonstruoituja kehityspäiviä.

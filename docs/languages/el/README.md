@@ -30,9 +30,9 @@
 | Έργο | Σκοπός | Έκδοση | Τεκμηρίωση | Λήψη |
 | --- | --- | --- | --- | --- |
 | **NVIDIA Profile Inspector – NV Tools Fork** | Επεξεργαστής προφίλ προγράμματος οδήγησης NVIDIA με πρόσθετη οθόνη, χρώμα, στοιχεία ελέγχου HDR και ICC/WCS. Παλαιότερα NVPI Custom. | 3.0.2.3 | [Οδηγός](NVIDIA-Profile-Inspector/README.md) | [Πακέτα](docs/downloads.md#nvidia-profile-inspector) |
-| **NVDriverForge** | Επιλέξτε στοιχεία προγράμματος οδήγησης, ελέγξτε τις προαιρετικές τροποποιήσεις και εγκαταστήστε ένα αρχικό πακέτο προγραμμάτων οδήγησης NVIDIA. | 0.1.3 | [Οδηγός](NVDriverForge/README.md) | [Πακέτα](docs/downloads.md#nvdriverforge) |
-| **NVMFG Unlock40** | Πειραματικό εργαλείο RTX 40 MFG με επιλογές ανά παιχνίδι και συντήρηση Streamline SDK. | 0.1.1 | [Οδηγός](NVMFG-Unlock40/README.md) | [Πακέτα & κατάσταση](docs/downloads.md#nvmfg-unlock40) |
-| **NVRasterPulse** | Διαχειριστείτε τα όρια RTSS FPS ανά εκτελέσιμο αρχείο, με κλασματικές τιμές, αντίγραφα ασφαλείας και πρόσβαση στο δίσκο. | 0.1 | [Οδηγός](NVRasterPulse/README.md) | [Πακέτα](docs/downloads.md#nvrasterpulse) |
+| **NVDriverForge** | Προετοιμάστε και εγκαταστήστε ένα πρωτότυπο πρόγραμμα οδήγησης NVIDIA με καθοδηγούμενες επιλογές, αντίγραφα ασφαλείας και ανάκτηση. | 0.1.4 | [Οδηγός](NVDriverForge/README.md) | [Πακέτα](docs/downloads.md#nvdriverforge) |
+| **NVMFG Unlock40** | Πειραματικό RTX 40 MFG, μόνιμη βιβλιοθήκη παιχνιδιών, διαγνωστικά και Streamline SDK συντήρηση. | 0.2.3 | [Οδηγός](NVMFG-Unlock40/README.md) | [Πακέτα & κατάσταση](docs/downloads.md#nvmfg-unlock40) |
+| **NVRasterPulse** | Διαχειριστείτε τα όρια RTSS FPS ανά πρόγραμμα: διαγνωστικά, προτάσεις, παύση, αναίρεση και κοινή χρήση προφίλ. | 0.2 | [Οδηγός](NVRasterPulse/README.md) | [Πακέτα](docs/downloads.md#nvrasterpulse) |
 
 **Λήψεις:** το [σελίδα λήψης](docs/downloads.md) παραθέτει την κατάσταση, τα αρχεία και τις τιμές SHA-256 κάθε έκδοσης. Τα πειραματικά χαρακτηριστικά και τα όρια συμβατότητας περιγράφονται στους οδηγούς του έργου.
 

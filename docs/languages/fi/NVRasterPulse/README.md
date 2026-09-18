@@ -22,14 +22,14 @@
 
 > **Asenna ensin RTSS.** NVRasterPulse vaatii [RivaTuner Statistics Server (RTSS), ladattu Guru3D:stä](https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/):n. RTSS:n on oltava käynnissä rajoitusten pakottamiseksi. Mukana ei ole RTSS-asennusohjelmaa, koukku-DLL- tai SDK-tiedostoa.
 
-[Lataa 0.1 ja tila](../docs/downloads.md#nvrasterpulse) · [Asennus](#installation) · [Miten rajat toimivat](#usage) · [Lisenssi](../../../../NVRasterPulse/LICENSE)
+[Lataa 0.2 ja tila](../docs/downloads.md#nvrasterpulse) · [Asennus](#installation) · [Miten rajat toimivat](#usage) · [Lisenssi](../../../../NVRasterPulse/LICENSE)
 
 <a id="overview-and-purpose"></a>
 ## Yleiskatsaus ja tarkoitus
 
 NVRasterPulse on kompakti Windows-liitäntä RTSS-kehysrajojen hallintaan suoritettavan nimen perusteella. RTSS suorittaa rajoituksen. NVRasterPulse hallitsee vastaavia profiiliarvoja, varmuuskopioita ja uudelleenlatauspyyntöjä tarjottimen käytön ja pysyvien valintojen avulla.
 
-Se on olemassa, jotta tarkkoja pelikohtaisia rajoja olisi helpompi muokata ilman, että koko RTSS-profiilia vaihdetaan tai sen peittoasetuksia häiritään. Nykyinen **0.1**-ehdokas on 9. syyskuuta 2026 tehty koontiversio, jossa on vaadittu RTSS-asennustarkistus.
+Se on olemassa, jotta tarkkoja pelikohtaisia rajoja olisi helpompi muokata ilman, että koko RTSS-profiilia vaihdetaan tai sen peittoasetuksia häiritään. Versio **0.2** lisää määritysdiagnostiikkaa, FPS-apuohjelman, keskeytyksen, kumoamisen ja profiilin jakamisen.
 
 <a id="features"></a>
 ## Ominaisuudet
@@ -63,7 +63,7 @@ Mitään erityistä RTSS-minimiversiota ei ole sertifioitu jokaiselle toiminnoll
 
 1. **[Lataa ja asenna RTSS Guru3D:stä](https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/).**
 2. Avaa [NVRasterPulse lataukset](../docs/downloads.md#nvrasterpulse) ja tarkista Julkaisun saatavuus.
-3. Lataa `NVRasterPulse-0.1-win-x64-Setup.exe` tai `NVRasterPulse-0.1-win-x64-portable.zip` sekä ilmoitukset/tarkistussummat.
+3. Lataa `NVRasterPulse-0.2-win-x64-Setup.exe` tai `NVRasterPulse-0.2-win-x64-portable.zip` sekä ilmoitukset/tarkistussummat.
 4. Vertaa SHA-256. Suorita asennusohjelma tai pura koko kannettava ZIP-tiedosto kirjoitettavaan paikalliseen kansioon.
 5. Avaa `NVRasterPulse.exe`. Jos RTSS puuttuu, käytä **Lataa RTSS**, asenna se ja sitten **Tarkista uudelleen** tai valitse `RTSS.exe` manuaalisesti.
 6. Käynnistä RTSS käyttämällä sen normaalia pikakuvaketta tai NVRasterPulse:n RTSS-painiketta, jos se on pysäytetty.
@@ -87,6 +87,23 @@ Käytä roskakoritoimintoa poistaaksesi NVRasterPulse:n rajoittimen ohitukset. S
 **Sulkeminen ja lopettaminen:** pääikkuna voi piiloutua lokeroon. Normaali **Lopeta** jättää RTSS:n käynnissä ja tallennetut rajat ennalleen. **Lopeta + RTSS** pyytää normaalia vastaavan RTSS-prosessin sulkemista nykyisessä istunnossa, odottaa enintään kahdeksan sekuntia eikä pakota sitä. Tallennetut rajat säilyvät molemmissa tapauksissa.
 
 Kieli ja teema valitaan sovelluksessa. Käynnistys Windows-kirjautumisen yhteydessä on valinnainen ja tarkoitettu asennetulle kopiolle. Tietopainike selittää yleiset toimet.
+
+<a id="diagnostics-and-profile-tools"></a>
+## Diagnostiikka- ja profiilityökalut
+
+Avaa lisätyökalujen toimintovalikko. Ne säilyttävät RTSS Global, peittoasetukset ja poissulkemiset.
+
+**Diagnostiikka:** tarkasta paikalliset/tehokkaat rajat, pysäytetty RTSS, puuttuva suoritettava tiedosto, ei havaittu ikkunaa, estetty kytkentä, periytyminen, keskeytetyt rajat, kilpailevat asetukset ja päällekkäiset suoritettavat nimet. Tämä vain luku -tarkistus kuvaa kokoonpanon; se ei todista, että peli on koukussa RTSS:ään tai mittaa sen FPS-arvoa.
+
+**FPS-apuohjelma:** valitse näyttö ja ilmoita VRR/G-Sync, V-Sync, Reflex ja Frame Generation itse. Pyöristetty päivitystaajuus tulee Windows:stä. Jos Reflex tai Frame Generation on aktiivinen tai tuntematon, automaattista ylärajaa ei tarjota. VRR:ssä, jossa V-Sync on päällä ja Reflex/FG pois päältä, heuristinen vähennys on vähintään 3 FPS eli noin 2 % virkistystaajuudesta. Tämä ei ole mitattu optimi. Ehdotuksen soveltaminen täyttää luonnoksen; **Tallenna** on erillinen toiminto.
+
+**Keskeytä ja jatka:** keskeytä valitun ohjelman yläraja ja palauta sen aiemmat rajoitinkentät. Ristiriitaiset muutokset toisella työkalulla estävät epäselvän ansioluettelon. Merkinnän piilottaminen ei keskeytä sen korkkia.
+
+**Kumoa:** palauta viimeisin muutos kyseisen ohjelman kuuteen hallinnoituun rajoitinkenttään. On yksi taso; tämä ei palauta kaikkea RTSS:tä. Ristiriitaiset ulkoiset muutokset hylätään. Tiedostojen varmuuskopiot pysyvät erillisinä.
+
+**Jaa profiilit:** Vie valitut profiilit `.nvrp`-tiedostoon. Tuo näyttää esikatselun ja jättää nykyiset ylärajat oletusarvoisesti valitsematta. Tiedosto sisältää vain suoritettavat nimet, rajoitukset ja tilat, ilman absoluuttisia polkuja tai komentosarjoja. Tarkista valintasi ja hae. I/O-virhe voi jättää jotkin profiilit jo käyttöön; tulos tunnistaa ne ja kukin säilyttää kumoamisen. Identtiset suoritettavat nimet osoittavat edelleen samaa RTSS-profiilia.
+
+**Suosikit ja piilotetut merkinnät:** kiinnitä ensin hyödylliset ohjelmat, piilota ei-toivotut merkinnät ja palauta ne omassa valintaikkunassa. Nämä valinnat jatkuvat. Suljettu suosikki ei näy käynnissä olevana sovelluksena.
 
 <a id="screenshots"></a>
 ## Kuvakaappauksia

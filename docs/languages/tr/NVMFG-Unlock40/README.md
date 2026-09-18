@@ -20,7 +20,7 @@
 
 **GeForce RTX 40 için merkezi denetleyici ve oyun başına seçeneklerle deneysel NVIDIA Multi Frame Generation.**
 
-[0.1.1'i ve durumu indirin](../docs/downloads.md#nvmfg-unlock40) · [Kurulum](#installation) · [Yukarı akış](#upstream-and-modifications) · [Lisanslar](LICENSES/README.md)
+[0.2.3'i ve durumu indirin](../docs/downloads.md#nvmfg-unlock40) · [Kurulum](#installation) · [Yukarı akış](#upstream-and-modifications) · [Lisanslar](LICENSES/README.md)
 
 <a id="overview-and-purpose"></a>
 ## Genel bakış ve amaç
@@ -31,7 +31,7 @@ NVMFG Unlock40, 禅堂 Zendo (RevoluSound Team) tarafından bağımsız olarak g
 
 Deneysel MFG davranışını merkezi olarak koordine etmek, oyuna özel seçenekleri hatırlamak ve çalışma zamanı güncellemelerini ve yedeklemelerini görünür tutmak için mevcuttur. DLSS Frame Generation'i her oyuna eklemez veya rastgele bir FSR uygulamasını dönüştürmez.
 
-Hazırlanan aday, dahili olarak UI2 olarak kaydedilen SDK listesi görsel düzeltmesini de içeren **0.1.1**'tir. Genel sürüm 0.1.1 olarak kalır; tam karmaları bu adayı eski yerel yapılardan ayırıyor.
+Mevcut paket **0.2.3**'tir. Kalıcı bir oyun kütüphanesi, etkinlik ve yetenek bilgileri, yerel teşhisler ve düzeltilmiş seçim/ilerleme davranışı ekler. [İndirilenler](../docs/downloads.md#nvmfg-unlock40), dosyaları ve karmaları tam olarak tanımlar.
 
 <a id="features"></a>
 ## Özellikler
@@ -68,7 +68,7 @@ Sürüm etiketi tek başına yeterli değildir: sürücü, sağlayıcı karması
 ## Kurulum
 
 1. [aday durumu ve lisans notu](../docs/downloads.md#nvmfg-unlock40)'i okuyun.
-2. Sürümü mevcut olduğunda `NVMFGUnlock40-0.1.1-Setup-x64.exe` veya `NVMFGUnlock40-0.1.1-Portable-x64.zip`'i indirin.
+2. Sürümü mevcut olduğunda `NVMFGUnlock40-0.2.3-Setup-x64.exe` veya `NVMFGUnlock40-0.2.3-Portable-x64.zip`'i indirin.
 3. SHA-256'i kontrol edin ve beraberindeki bildirimleri saklayın. Windows zaten sağlamıyorsa .NET Framework 4.8'i yükleyin.
 4. Kurulumu çalıştırın veya **tamamen** taşınabilir ZIP'i yazılabilir bir yerel klasöre çıkarın.
 5. `NVMFGUnlock40.exe`'i başlatın; `agent`, `driver`, `engine` ve `Licenses`'i sağlanan düzende tutun.
@@ -90,6 +90,21 @@ Ana pencerenin kapatılması denetleyicinin tepside kalmasına neden olabilir. Z
 
 **Streamline SDKs:** NVIDIA SDK sayfasında resmi sürümü indirin veya uyumlu bir yerel SDK'i içe aktarın. İçe aktarma, doğrulanmış bir kopyayı saklar; **Use this version** bunu seçer ve **Uninstall** önbelleğe alınan kopyayı kaldırır. Eksik Streamline DLL'leri, gösterilen kaynakla birlikte resmi bir NVIDIA SDK'ten tamamlanabilir. Bu, bir NGX modelini indirmez/değiştirmez. Oyunu kapatın, amaçlanan oyun güncellemesini seçin ve orijinal yedeğini koruyun. Oyun dosyalarını geri döndürmek için önbelleğin Uninstall düğmesini değil, yedekleme geri yüklemesini kullanın.
 
+<a id="library-diagnostics-and-updates"></a>
+## Kitaplık, teşhis ve güncellemeler
+
+**Kalıcı kitaplık:** tek bir taramaya başlamadan önce farklı sürücüler de dahil olmak üzere çeşitli oyun klasörleri seçin. İlerleme görülebilir ve iptal edilebilir. İlk taramanın ardından, yerel bir önbellek, başlatıldığında her oyun klasörüne gitmeden kitaplığı geri yükler. Değişiklikleri bulmak veya başka bir klasör eklemek için yenileyin. Bakım işlemleri, etkilenen dosyaları yine de yeniden doğrular; yedekleme izleme etkin kalır. Önbellek `%LOCALAPPDATA%\RtxMfg\library-cache.json`'te depolanır.
+
+**Seçim:** Ctrl+A tümünü seçer ve Ctrl+D etkin Oyunlar veya Yedeklemeler sekmesini temizler. Hiçbir oyun otomatik olarak seçilmez. Etkinlik güncellemeleri ve yenilemeler artık hayalet seçimlere veya tutarsız sayımlara neden olmuyor.
+
+**Etkinlik ve uyumluluk:** Oyun başına MFG bilgileri, yeni bir katman olmadan NGX gözlemlerinden gelir. Görüntülenen karelerin fiziksel sayımı değildir. Dynamic-with-V-Sync desteği çalışma zamanı özelliklerinden gelir; Bilinmeyen yetenek sürüm numarasından çıkarılmaz. Uygulama ne V-Sync'i ne de VRR'i değiştiriyor. V-Sync kapalıyken Dynamic askıda kalır; sabit veya oyun kontrollü seçimler ayrıdır.
+
+**Sonraki başlatma:** Geçici hariç tutma, bir sonraki oyun açılışında yama uygulamasını atlar ve oyundan çıktıktan sonra normal yönetime geri döner. Bir oyunda zaten yüklü olan bir DLL'yi kaldıramaz: oyunu kapatın ve yeniden başlatın. Wallpaper Engine bir masaüstü uygulaması olarak tanınmaktadır; bu düzeltme, göz ardı edilen oyunların korumasını korur.
+
+**Tercihler ve destek:** Tercih içe aktarma/dışa aktarma, oyun klasörlerinin manuel olarak yeniden ilişkilendirilmesini gerektirir. Hakkında bölümündeki yerel tanılama, özel bilgileri ve mevcut NVAPI hata kodlarını veya çakışma kategorilerini raporlar. Paylaşmadan önce inceleyin; hiçbir şey otomatik olarak yüklenmez.
+
+**Uygulama güncellemeleri:** İsteğe bağlı bir kontrol, sürüm notlarını görüntüler ve resmi Kurulumu sunar. Açık indirme, GitHub boyutuna ve SHA-256 meta verilerine göre kontrol edilir; kurulumu kendiniz başlatırsınız. Sürüm 0.2.3 ayrıca anlamlı hataları ve sonuçları korurken tamamlanan ilerleme mesajlarını da temizler. Bu eklemeler, 0.1.1 genel sürümünden bu yana yapılan değişiklikleri içermektedir.
+
 <a id="screenshots"></a>
 ## Ekran görüntüleri
 
@@ -109,6 +124,7 @@ Yerel oyun çalışma zamanı yedeklemeleri `%LOCALAPPDATA%\NvidiaStreamlineMain
 <a id="known-limitations"></a>
 ## Bilinen sınırlamalar
 
+- Bildirilen bir 0.1.1 etkinleştirme/geri yükleme/kaldırma engellemesi yeniden oluşturulmadan kalır ve nedeni bilinmemektedir. Bu sürüm sorunu düzelttiğini iddia etmez. Bir arızanın ardından kurtarma günlüğünü koruyun ve yerel tanılamayı inceleyin; kurtarma verilerinin silinmesini zorlamayın.
 - Deneysel yerel yamalar çökmelere veya görsel bozulmalara neden olabilir; Geliştirme geçmişine çözülmemiş bir Bodycam çökmesi kaydedildi.
 - Kontrollü oluşturucu testleri her oyun, sürücü veya hile karşıtı sertifikasyon değildir.
 - Oluşturulan çerçeveler yeni girdi örnekleri oluşturmaz; Bu merkez tarafından ölçülmüş bir gecikme veya performans artışı vaat edilmemektedir.

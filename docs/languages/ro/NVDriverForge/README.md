@@ -20,7 +20,7 @@
 
 **Pregătiți o instalare a driverului NVIDIA cu opțiuni clare pentru componente și setări opționale.**
 
-[Descărcați 0.1.3 și starea](../docs/downloads.md#nvdriverforge) · [Instalare](#installation) · [Credite](#credits-and-upstream) · [Licență](../../../../NVDriverForge/LICENSE)
+[Descărcați 0.1.4 și starea](../docs/downloads.md#nvdriverforge) · [Instalare](#installation) · [Credite](#credits-and-upstream) · [Licență](../../../../NVDriverForge/LICENSE)
 
 <a id="overview-and-purpose"></a>
 ## Prezentare generală și scop
@@ -35,14 +35,15 @@ Este o aplicație dezvoltată independent, inspirată parțial de fluxul de lucr
 - NVIDIA Game Ready / Studio căutare și descărcări; Descoperire opțională a remedierii rapide cu rezervă manuală.
 - Analiza pachetului original, hashuri, semnături NVIDIA, manifeste și intrări compatibile INF.
 - Selectarea componentelor cu dependențe și păstrarea componentelor necunoscute.
-- Versiunea 0.1.3 păstrează componentele opționale NVIDIA selectate care pot fi ignorate și exclude de la descoperire numai componentele verificate neverificate. Timpurile de rulare opționale deja actuale sau inaplicabile nu mai sunt forțate ca componente critice.
+- Versiunea 0.1.4 păstrează componentele opționale NVIDIA selectate care pot fi ignorate și exclude de la descoperire numai componentele verificate neverificate. Timpurile de rulare opționale deja actuale sau inaplicabile nu mai sunt forțate ca componente critice.
 - Ștergeți rezumatele erorilor de instalare și accesați jurnalele detaliate în toate cele 34 de limbi.
-- Confirmarea explicită a instalării, punerea în scenă protejată și exportul pachetelor existente de magazin de drivere.
+- Verificări de pregătire, confirmare explicită, export din magazinul de drivere și backup nativ al profilului NVIDIA înainte de instalare.
 - Setări avansate opționale, cu verificări preflight, jurnale și recuperare în funcție de conflict.
 - Opțional **Custom NV** presetat cu opțiuni și explicații numite, inclusiv o selecție separată a puterii SILK și verificări de compatibilitate.
 - Descărcări opționale de corecție NVENC pentru versiunea exactă; comiterea sursă și octeții țintă sunt verificați.
 - O instalare separată, opțională, a Profile Inspector fork din ecranul Instrumente.
-- Verificări opționale de actualizare a utilizatorului instalat, 34 de limbi de interfață și patru teme.
+- Ghid de componente, preferințe reutilizabile, kituri de drivere, rapoarte de asistență locală și actualizări opționale ale aplicațiilor.
+- 34 de limbi de interfață și patru teme.
 
 Opțiunile avansate disponibile se referă la MPO, indicatorul DLSS, Ansel, somn audio NVIDIA, MSI, politica/prioritatea de întrerupere, HDCP, pornirea containerului de afișare și un serviciu de telemetrie moștenit eligibil. Fiecare are propriile premise și efecte; acestea nu sunt îmbunătățiri universale de performanță.
 
@@ -87,6 +88,21 @@ Lucrarea opțională NVENC descarcă date compatibile dintr-un comit keylase fix
 
 Preferințele controlează limba, tema și verificările opționale de actualizare a utilizatorului instalat. Portabilul nu creează sarcina de verificare a fundalului instalată. Instrumentele și recuperarea sunt separate de cei patru pași de instalare.
 
+<a id="backup-and-diagnostic-tools"></a>
+## Instrumente de backup și diagnosticare
+
+**Înainte de instalare:** verificările de pregătire acoperă semnătura pachetului, GPU-urile, spațiul de lucru estimat/spațiul de rezervă, repornirea în așteptare și instalatorii concurenți. Muncitorul ridicat le repetă. Procesele concurente nu sunt niciodată oprite automat. Backup-ul nativ al bazei de date de profil NVIDIA trebuie să reușească înainte de a începe configurarea NVIDIA; exportul driver-store este o copie de rezervă separată.
+
+**Opțiuni reutilizabile:** ghidul de componente pune patru întrebări despre jocuri, audio, NVIDIA App și înregistrare. Examinați sugestiile acestuia; componentele necesare, necunoscute și de dependență rămân protejate. Exportați preferințele, apoi previzualizați și revalidați-le în raport cu pachetul selectat la import. Consimțământurile, operațiunile de repornire, căile de program și încărcăturile utile de corecție nu sunt importate.
+
+**Setul de driver:** exportați un `.nvdfkit.zip` pentru a păstra împreună programul de instalare NVIDIA original semnat, opțiunile, hashe-urile și instrucțiunile. Transportați `NVDriverForge.exe` separat. Importați kitul în Instrumente, examinați previzualizarea, apoi utilizați fluxul de lucru normal de instalare. Acesta nu este un driver subțire sau un program de instalare autonom modificat. Opțional NVENC necesită încă o descărcare și consimțământ pentru acel driver exact. Termenii de redistribuire ai NVIDIA încă se aplică.
+
+**Rezultate și asistență:** citiți rezultatul scurt și extindeți detaliile pe etapă/pe opțiune. Citirea cu succes stabilește o valoare stocată, nu o îmbunătățire măsurată. Raportul de asistență local JSON utilizează câmpuri permise, inclusiv ultima lucrare salvată după repornirea aplicației. Previzualizează-l înainte de a salva sau de a partaja. Nu include jurnalele brute, conținutul profilului sau identificatorii hardware și nu este încărcat niciodată automat.
+
+**Recuperare:** urmați ghidul lucrării protejate pentru a recupera driverul pentru care faceți backup. Restaurarea explicită a profilului necesită versiunea originală a driverului și aceleași GPU-uri; înlocuiește întreaga bază de date, păstrează o copie curentă și verifică hashurile și starea conflictuală. Nu ștergeți jurnalul și nu forțați o nepotrivire. Instalarea driverului real, recuperarea completă și importarea profilului nativ cu acest nou flux de lucru rămân nevalidate pe un sistem real.
+
+**Actualizări ale aplicației:** citiți notele de lansare, apoi alegeți în mod explicit o descărcare verificată prin SHA-256. Verificarea este manuală în mod implicit, cu o verificare opțională la pornire. Niciun program de instalare nu este pornit automat. Această caracteristică este separată de verificările actualizării driverului și de sarcina opțională de verificare a driverului a ediției instalate.
+
 <a id="screenshots"></a>
 ## Capturi de ecran
 
@@ -101,7 +117,7 @@ Interfața de utilizare franceză 0.1.2 existentă, cu date de exemplu; păstrat
 
 Uninstall de la Windows **Installed apps**. Îndepărtează aplicația și sarcina de actualizare, nu driverul NVIDIA. Setările, jurnalele și backup-urile rămân. Dacă doriți, restaurați modificările avansate/NVENC prin fluxul de recuperare documentat **înainte** de a elimina aplicația. Restaurare refuză modificările conflictuale de la un alt instrument.
 
-Datele locale sunt sub `%LOCALAPPDATA%\NVDriverForge`; locurile de muncă protejate și exporturile de șoferi sunt sub `%PROGRAMDATA%\NVDriverForge\Jobs`. Utilizarea portabilă creează și date locale. Un export de driver-magazin nu este o imagine de sistem sau o copie de rezervă a profilului complet.
+Datele locale sunt sub `%LOCALAPPDATA%\NVDriverForge`; locurile de muncă protejate și exporturile de șoferi sunt sub `%PROGRAMDATA%\NVDriverForge\Jobs`. Utilizarea portabilă creează și date locale. Exportul din magazinul de drivere și backupul profilului nativ sunt separate. Nici o imagine de sistem.
 
 <a id="known-limitations"></a>
 ## Limitări cunoscute
@@ -120,7 +136,7 @@ Datele locale sunt sub `%LOCALAPPDATA%\NVDriverForge`; locurile de muncă protej
 | --- | --- |
 | Catalog online indisponibil | Selectați un pachet original din [Descărcări de drivere NVIDIA](https://www.nvidia.com/en-us/drivers/). Nu înlocuiți un model GPU vecin. |
 | Căutarea remedierii rapide nu este disponibilă | Utilizați [Forumul de drivere NVIDIA al lui Game Ready](https://www.nvidia.com/en-us/geforce/forums/game-ready-drivers/13/) și verificați pachetul real. |
-| Instalarea NVIDIA eșuează | Citiți rezumatul erorilor și deschideți jurnalele detaliate. Componentele opționale deja actuale sau inaplicabile rămân ignorabile în 0.1.3. Instalările eșuate nu declanșează modificări opționale sau un flux de succes/repornire. |
+| Instalarea NVIDIA eșuează | Citiți rezumatul erorilor și deschideți jurnalele detaliate. Componentele opționale deja actuale sau inaplicabile rămân ignorabile în 0.1.4. Instalările eșuate nu declanșează modificări opționale sau un flux de succes/repornire. |
 | Eșec de semnătură/hash/backup | Opriți instalarea și păstrați eroarea; obțineți din nou pachetul original dacă este corupt. |
 | Opțiune indisponibilă | Citiți motivul hardware-ului, componentei sau driverului țintă; păstrați-l neschimbat. |
 | Reporniți sau lucrare încă în așteptare | Utilizați instrucțiunile de recuperare ale jobului și CV-ul explicit; nu-i șterge jurnalul. |

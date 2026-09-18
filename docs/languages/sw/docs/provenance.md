@@ -18,7 +18,7 @@
 <a id="provenance-changes-and-licensing"></a>
 # Utoaji, mabadiliko na leseni
 
-Ukaguzi huu unaelezea watahiniwa walioandaliwa tarehe **2026-09-09**. Vyanzo vya maombi vinabaki kuwa vya faragha; orodha za umma zina majina ya faili na heshi, sio msimbo wa chanzo. Angalia [arifa za sehemu kamili](../THIRD_PARTY_NOTICES.md).
+Ukaguzi huu unaelezea watahiniwa walioandaliwa tarehe **2026-09-18**. Vyanzo vya maombi vinabaki kuwa vya faragha; orodha za umma zina majina ya faili na heshi, sio msimbo wa chanzo. Angalia [arifa za sehemu kamili](../THIRD_PARTY_NOTICES.md).
 
 <a id="nvidia-profile-inspector--nv-tools-fork"></a>
 ## NVIDIA Profile Inspector – NV Tools Fork
@@ -68,11 +68,13 @@ Msaidizi hurekebisha NVPI ya NvapiDrsWrapper na NativeArrayHelper katika mkusany
 
 MinHook kumbukumbu: `8fda4f5481fed5797dc2651cd91e238e9b3928c6`; kitengo kidogo kilichokusanywa kilichorithiwa hakina mabadiliko tendaji ya ndani katika ulinganisho. Vichwa vya kuunganisha vya Streamline: 2.12; leseni ya kichwa wazi imethibitishwa katika v2.12.0. Chanzo cha kichwa cha NGX: NVIDIA/DLSS fanya `a291cc7d2cc642a51566f3dfd5376f635cd1b284`.
 
-Injini ya mgombea SHA-256: `0E7FC0277C88B22095B622F6A3CB292EC0C14F7A0253D392502257B75E548890`.
+Injini ya mgombea SHA-256: `C793770D329B99CD9C5C640317CE435BFE353CA2868E36CF5DCD4D5295EFAE13`.
 
 Mtoa huduma anayehitajika SHA-256 katika engine.json: `C64928FDB7C48A57722EA8EEF2662171EDC323473ADEA66C29A206A23F1A2BED`. Familia ya mtoaji wa 310.9 iliyoripotiwa haiwezi kubadilishana na heshi hii haswa. Hakuna DLL ya mtoa huduma au modeli iliyojumuishwa.
 
 **Njia ambayo haijasalia ya leseni:** leseni kamili ya NVIDIA RTX SDK, toleo la Machi 14, 2024, ina vizuizi vya sehemu ya 4(d) vinavyohusiana na kukwepa vikwazo vya kiufundi. Ukaguzi hautoi idhini ya matumizi haya. Kuhifadhi leseni ya injini ya MIT, bila malipo, au kutazama mods zingine hakutatui hali hiyo tofauti. Maandalizi ya mgombea sio kibali cha kisheria. Notisi ya awali ya kichwa kifupi inaongezewa leseni kamili; maandishi yake ya Windows-1252 pia yametolewa kama UTF-8 inayoweza kusomeka, na baiti asili zikiwa zimebaki.
+
+Ulinganisho wa asili ulihesabiwa upya kwa 0.2.3: faili 48 sawa na uainishaji. Tangu ukaguzi uliopita, `game_selection.cpp`, `game_selection.h` na `patcher.cpp` zilibadilika kwa uchunguzi wa shughuli/uwezo. Maktaba mpya, uchunguzi, mapendeleo, sasisho na utiririshaji wa kazi ni wa programu ya kidhibiti. Leseni za vipengele na heshi ya mtoa huduma inayohitajika hazijabadilishwa.
 
 <a id="nvrasterpulse"></a>
 ## NVRasterPulse
@@ -102,3 +104,5 @@ Marekebisho ya 2 ya usanidi ya NVPI hurekebisha uteuzi wa lugha moja kwa moja kw
 NVDriverForge 0.1.3 ilikamilishwa mnamo 2026-09-10. Ripoti yake ya uthibitishaji wa kibinafsi inarekodi majaribio 366 ya maombi, ukaguzi wa 118, ukaguzi wa mipangilio 32, ulinganisho wa asili 156 na kesi 34 za kusambaza lugha. Marekebisho ya uteuzi wa sehemu iliyolindwa ilichezwa tena dhidi ya kifurushi asili cha kiendeshi bila kubadilisha upakiaji wake au kusakinisha kiendeshi. Haya ni matokeo ya timu ya bidhaa ya tarehe, si majaribio yanayorudiwa na sasisho hili la hati au uthibitisho wa usakinishaji halisi wa kiendeshi.
 
 Usasishaji huu wa kitovu hubadilisha hakuna msimbo wa utendakazi wa programu. Majaribio ya awali ya uundaji/kitengo/UI yanasalia kuwa ushahidi wa kihistoria. Huu si uhandisi kamili wa kinyume wa kila mfumo wa jozi wa tatu au dhamana dhidi ya kila muundo wa siri unaowezekana.
+
+Sasisho la Septemba 18, 2026: NVDriverForge 0.1.4 huongeza ukaguzi wa utayari, kuhifadhi nakala ya wasifu asili, mwongozo wa vipengele, mapendeleo na vifaa, matokeo ya kina, kuripoti kwa karibu na masasisho ya programu. NVRasterPulse 0.2 huongeza uchunguzi wa usanidi, mwongozo wa FPS, sitisha/rejesha, tengua, wasifu wa `.nvrp` na vipendwa/fichwa, bila injini mpya ya kikomo. Miongozo ya kibinafsi inaelezea matumizi na mipaka. Ukaguzi wa kituo tuli ni tofauti na majaribio ya maombi yaliyorekodiwa katika ripoti za kibinafsi za Septemba 18; hakuna usakinishaji wa kiendeshi, uingizaji halisi wa wasifu au kipimo cha kusubiri kilifanywa kwa kitovu hiki.

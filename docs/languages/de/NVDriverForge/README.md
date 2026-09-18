@@ -20,7 +20,7 @@
 
 **Bereiten Sie eine NVIDIA-Treiberinstallation mit klaren Komponentenauswahlen und optionalen Einstellungen vor.**
 
-[Laden Sie 0.1.3 und Status herunter](../docs/downloads.md#nvdriverforge) · [Installation](#installation) · [Credits](#credits-and-upstream) · [Lizenz](../../../../NVDriverForge/LICENSE)
+[Laden Sie 0.1.4 und Status herunter](../docs/downloads.md#nvdriverforge) · [Installation](#installation) · [Credits](#credits-and-upstream) · [Lizenz](../../../../NVDriverForge/LICENSE)
 
 <a id="overview-and-purpose"></a>
 ## Überblick und Zweck
@@ -35,14 +35,15 @@ Es handelt sich um eine unabhängig entwickelte Anwendung, die teilweise vom Wor
 - NVIDIA Game Ready / Studio Suche und Downloads; optionale Hotfix-Erkennung mit manuellem Fallback.
 - Analyse des Originalpakets, Hashes, NVIDIA-Signaturen, Manifesten und kompatiblen INF-Einträgen.
 - Komponentenauswahl mit Abhängigkeiten und Erhaltung unbekannter Komponenten.
-- Mit der Version 0.1.3 bleiben ausgewählte optionale NVIDIA-Komponenten überspringbar und schließen nur verifizierte, ungeprüfte Komponenten von der Erkennung aus. Bereits aktuelle oder nicht anwendbare optionale Laufzeiten werden nicht mehr als kritische Komponenten erzwungen.
+- Mit der Version 0.1.4 bleiben ausgewählte optionale NVIDIA-Komponenten überspringbar und schließen nur verifizierte, ungeprüfte Komponenten von der Erkennung aus. Bereits aktuelle oder nicht anwendbare optionale Laufzeiten werden nicht mehr als kritische Komponenten erzwungen.
 - Klare Zusammenfassungen von Installationsfehlern und Zugriff auf detaillierte Protokolle in allen 34 Sprachen.
-- Explizite Installationsbestätigung, geschütztes Staging und Export vorhandener Treiberspeicherpakete.
+- Bereitschaftsprüfungen, explizite Bestätigung, Export des Treiberspeichers und native NVIDIA-Profilsicherung vor der Installation.
 - Optionale erweiterte Einstellungen mit Preflight-Prüfungen, Journalen und konfliktbewusster Wiederherstellung.
 - Optionale **Custom NV**-Voreinstellung mit benannten Auswahlmöglichkeiten und Erklärungen, einschließlich einer separaten SILK-Stärkeauswahl und Kompatibilitätsprüfungen.
 - Optionale Downloads des genauen NVENC-Patches; Quell-Commit- und Zielbytes werden überprüft.
 - Eine separate, optionale Installation des Profile Inspector fork über den Tools-Bildschirm.
-- Optionale Aktualisierungsprüfungen für installierte Benutzer, 34 Schnittstellensprachen und vier Themen.
+- Komponentenhandbuch, wiederverwendbare Einstellungen, Treiberkits, lokale Supportberichte und optionale Anwendungsaktualisierungen.
+- 34 Schnittstellensprachen und vier Themen.
 
 Zu den verfügbaren erweiterten Optionen gehören MPO, der DLSS-Indikator, Ansel, NVIDIA Audio Sleep, MSI, Interrupt-Richtlinie/Priorität, HDCP, Display-Container-Start und ein berechtigter Legacy-Telemetriedienst. Jedes hat seine eigenen Voraussetzungen und Auswirkungen; Hierbei handelt es sich nicht um universelle Leistungsverbesserungen.
 
@@ -87,6 +88,21 @@ Die optionale NVENC-Arbeit lädt kompatible Daten von einem angehefteten keylase
 
 Die Einstellungen steuern die Sprache, das Design und optionale Prüfungen für installierte Benutzeraktualisierungen. Das tragbare Gerät erstellt die installierte Hintergrundüberprüfungsaufgabe nicht. Tools und Wiederherstellung sind von den vier Installationsschritten getrennt.
 
+<a id="backup-and-diagnostic-tools"></a>
+## Backup- und Diagnosetools
+
+**Vor der Installation:** Bereitschaftsprüfungen umfassen die Paketsignatur, GPUs, geschätzten Arbeitsbereich/Backup-Speicherplatz, ausstehenden Neustart und konkurrierende Installationsprogramme. Der erhöhte Arbeiter wiederholt sie. Konkurrierende Prozesse werden nie automatisch gestoppt. Die native Sicherung der NVIDIA-Profildatenbank muss erfolgreich sein, bevor das NVIDIA-Setup gestartet wird. Der Export des Treiberspeichers ist ein separates Backup.
+
+**Wiederverwendbare Auswahlmöglichkeiten:** Im Komponentenhandbuch werden vier Fragen zu Spielen, Audio, NVIDIA App und Aufnahme gestellt. Überprüfen Sie die Vorschläge. Erforderliche, unbekannte und Abhängigkeitskomponenten bleiben geschützt. Exportieren Sie die Einstellungen, zeigen Sie sie dann in der Vorschau an und validieren Sie sie beim Import erneut anhand des ausgewählten Pakets. Einwilligungen, Neustartvorgänge, Programmpfade und Patch-Payloads werden nicht importiert.
+
+**Treiberkit:** Exportieren Sie ein `.nvdfkit.zip`, um das ursprünglich signierte NVIDIA-Installationsprogramm, Auswahlmöglichkeiten, Hashes und Anweisungen zusammenzuhalten. Tragen Sie `NVDriverForge.exe` separat. Importieren Sie das Kit in Tools, überprüfen Sie die Vorschau und verwenden Sie dann den normalen Installationsablauf. Dies ist kein schlanker Treiber oder modifiziertes eigenständiges Installationsprogramm. Für den optionalen NVENC ist noch ein Download und die Zustimmung für genau diesen Treiber erforderlich. Die Weiterverbreitungsbedingungen von NVIDIA gelten weiterhin.
+
+**Ergebnisse und Unterstützung:** Lesen Sie das kurze Ergebnis und erweitern Sie die Details pro Stufe/pro Option. Bei einem erfolgreichen Rücklesen wird ein gespeicherter Wert ermittelt, keine gemessene Verbesserung. Der lokale JSON-Supportbericht verwendet Felder auf der Zulassungsliste, einschließlich des zuletzt gespeicherten Jobs nach dem Neustart der App. Sehen Sie sich eine Vorschau an, bevor Sie es speichern oder teilen. Es enthält keine Rohprotokolle, Profilinhalte oder Hardware-IDs und wird niemals automatisch hochgeladen.
+
+**Wiederherstellung:** Befolgen Sie die Anleitung des geschützten Jobs, um den gesicherten Treiber wiederherzustellen. Für die explizite Profilwiederherstellung sind die ursprüngliche Treiberversion und dieselben GPUs erforderlich. Es ersetzt die gesamte Datenbank, behält eine aktuelle Kopie bei und prüft Hashes und Konfliktzustände. Löschen Sie nicht das Tagebuch und erzwingen Sie keine Nichtübereinstimmung. Die echte Treiberinstallation, die vollständige Wiederherstellung und der native Profilimport bleiben mit diesem neuen Workflow auf einem realen System unvalidiert.
+
+**Anwendungsaktualisierungen:** Lesen Sie die Versionshinweise und wählen Sie dann explizit einen SHA-256-verifizierten Download aus. Die Prüfung erfolgt standardmäßig manuell, mit einer optionalen Prüfung beim Start. Es wird kein Installationsprogramm automatisch gestartet. Diese Funktion ist unabhängig von Treiberaktualisierungsprüfungen und der optionalen Treiberprüfungsaufgabe der installierten Edition.
+
 <a id="screenshots"></a>
 ## Screenshots
 
@@ -101,7 +117,7 @@ Schließen Sie NVDriverForge, holen Sie sich das nächste offizielle Paket und �
 
 Uninstall von Windows **Installed apps**. Es entfernt die App und ihre Aktualisierungsaufgabe, nicht den NVIDIA-Treiber. Einstellungen, Protokolle und Backups bleiben erhalten. Stellen Sie bei Bedarf erweiterte/NVENC-Änderungen über den dokumentierten Wiederherstellungsablauf wieder her, **bevor** Sie die App entfernen. Die Wiederherstellung lehnt widersprüchliche Änderungen von einem anderen Tool ab.
 
-Lokale Daten liegen unter `%LOCALAPPDATA%\NVDriverForge`; Geschützte Jobs und Treiberexporte liegen unter `%PROGRAMDATA%\NVDriverForge\Jobs`. Durch den mobilen Einsatz entstehen auch lokale Daten. Bei einem Treiberspeicherexport handelt es sich nicht um ein Systemabbild oder eine vollständige Profilsicherung.
+Lokale Daten liegen unter `%LOCALAPPDATA%\NVDriverForge`; Geschützte Jobs und Treiberexporte liegen unter `%PROGRAMDATA%\NVDriverForge\Jobs`. Durch den mobilen Einsatz entstehen auch lokale Daten. Der Treiberspeicherexport und die native Profilsicherung sind getrennt. Es handelt sich auch nicht um ein Systemabbild.
 
 <a id="known-limitations"></a>
 ## Bekannte Einschränkungen
@@ -120,7 +136,7 @@ Lokale Daten liegen unter `%LOCALAPPDATA%\NVDriverForge`; Geschützte Jobs und T
 | --- | --- |
 | Online-Katalog nicht verfügbar | Wählen Sie ein Originalpaket aus [NVIDIA-Treiber-Downloads](https://www.nvidia.com/en-us/drivers/) aus. Ersetzen Sie es nicht durch ein benachbartes GPU-Modell. |
 | Hotfix-Suche nicht verfügbar | Verwenden Sie [NVIDIAs Game Ready-Treiberforum](https://www.nvidia.com/en-us/geforce/forums/game-ready-drivers/13/) und überprüfen Sie das tatsächliche Paket. |
-| Die Installation von NVIDIA schlägt fehl | Lesen Sie die Fehlerzusammenfassung und öffnen Sie die detaillierten Protokolle. Optionale Komponenten, die bereits aktuell oder nicht anwendbar sind, können in 0.1.3 weiterhin übersprungen werden. Fehlgeschlagene Installationen lösen keine optionalen Optimierungen oder einen Erfolgs-/Neustartablauf aus. |
+| Die Installation von NVIDIA schlägt fehl | Lesen Sie die Fehlerzusammenfassung und öffnen Sie die detaillierten Protokolle. Optionale Komponenten, die bereits aktuell oder nicht anwendbar sind, können in 0.1.4 weiterhin übersprungen werden. Fehlgeschlagene Installationen lösen keine optionalen Optimierungen oder einen Erfolgs-/Neustartablauf aus. |
 | Signatur-/Hash-/Backup-Fehler | Stoppen Sie die Installation und behalten Sie den Fehler bei. Besorgen Sie sich das Originalpaket erneut, wenn es beschädigt ist. |
 | Option nicht verfügbar | Lesen Sie den Grund für die Hardware, Komponente oder den Zieltreiber. Behalten Sie es unverändert bei. |
 | Neustart oder Job steht noch aus | Verwenden Sie die Wiederherstellungsanweisungen und den expliziten Lebenslauf des Jobs. Lösche nicht sein Tagebuch. |

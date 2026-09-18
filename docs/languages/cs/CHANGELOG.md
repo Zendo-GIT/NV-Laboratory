@@ -18,35 +18,52 @@
 <a id="changelog"></a>
 # Seznam změn
 
-Tento rozbočovač následuje [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Záznamy popisují toto úložiště; verze aplikace jsou nezávislé.
+Tento rozbočovač následuje [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Verze aplikací a data vydání jsou nezávislé. Níže připravené balíčky obdrží aktuální data vydání v příslušných vydáních GitHub.
 
 <a id="unreleased"></a>
 ## [Nevydáno]
 
-<a id="added"></a>
-### Přidáno
-
-- Hub, kompletní průvodce projekty a dokumentace úložiště ve 34 aplikačních jazycích NV.
-- Selektor jazyka pro zachování stránky, metadata pokrytí překladu a stabilní interní kotvy.
-- Úvěry proti proudu, úplná příslušná oznámení a původ souboru.
-- Požadavek RTSS a oficiální odkaz ke stažení pro NVRasterPulse.
-- Samostatné odkazy RevoluSound Team.
-- Připravený katalog balíčků prvního vydání, ověření SHA-256 a postup ručního vydání.
-- Formuláře chyb/funkcí, příspěvky a bezpečnostní pokyny.
-- Dokumentace pouze pro čtení a kontroly hranic publikace.
-
 <a id="changed"></a>
 ### Změněno
 
-- Atribuce NVMFG nyní odlišuje nezávisle vyvinutou aplikaci,
-odkaz na porovnání/upřesnění a skutečné sdílené nativní komponenty.   Stávající autorská práva, licence a porovnání souborů zůstávají nedotčeny.
-- Kandidát NVDriverForge aktualizován na 0.1.3: opraveno zpracování volitelných součástí,
-čitelné lokalizované poruchy a aktualizované běhové/doprovodné balení.
+- Obnovte hub a všech 34 jazyků dokumentace pro NVDriverForge 0.1.4,
+NVMFG Unlock40 0.2.3 a NVRasterPulse 0.2, připravené 2026-09-18.
+- NVDriverForge: kontroly připravenosti, nativní zálohy profilů a hlídaná obnova,
+pokyny ke komponentám, opakovaně použitelné preference, sady ovladačů, podrobné výsledky, zprávy místní podpory a samostatné aktualizace aplikací.
+- NVMFG: zjišťování více složek, trvalá mezipaměť knihovny, pozorovaná aktivita MFG,
+informace o schopnosti běhu, vyloučení při příštím spuštění, místní diagnostika, přenos předvoleb a volitelné aktualizace aplikací.
+- NVRasterPulse: diagnostika konfigurace, návrhy FPS, pozastavení/obnovení,
+jednoúrovňové vrácení zpět, selektivní import/export profilu, oblíbené a skryté položky.
+- Aktualizujte hashe balíčků, poznámky k vydání a mapu původu nativních komponent.
+Ponechte již publikovaná aktiva Profile Inspector 3.0.2.3/setup-r2 beze změny.
 
 <a id="fixed"></a>
 ### Opraveno
 
-- NVIDIA Profile Inspector – NV Tools Fork nastavení revize 2 nyní zobrazuje sdílené
-34jazyčný volič při přímém spuštění. Explicitní jazyk a tiché předávání jsou zachovány; editor a přenosný balíček se nezměnily.
+- Výběr/počet her NVMFG, zpracování Ctrl+D a zprávy o dokončeném postupu;
+Wallpaper Engine je vyloučen z detekce hry. Samostatně hlášené zablokování obnovení 0.1.1 zůstává nereprodukováno a není nárokováno jako opravené.
 
-Žádná historická data zveřejnění nebyla rekonstruována. Kandidátské verze aplikace jsou 3.0.2.3, 0.1.3, 0.1.1 a 0.1; jejich poznámky k vydání jsou připojeny k jejich vlastním budoucím vydáním. Příprava 2026-09-09 není datem vydání GitHub.
+<a id="initial-public-hub--2026-09-10"></a>
+## [Počáteční veřejné centrum] – 2026-09-10
+
+<a id="added"></a>
+### Přidáno
+
+- Čtyři průvodci projektem a dokumentace úložiště ve 34 jazycích, s
+selektory pro zachování stránky, stabilní kotvy a metadata pokrytí překladu.
+- Kredity komponent, originální licence, provenience, požadavky RTSS a
+samostatné odkazy RevoluSound Team.
+- Ruční vydání balíčků, hodnoty SHA-256, formuláře pro vydání, bezpečnostní politika a
+validace dokumentace pouze pro čtení. Zdroje aplikací zůstávají soukromé.
+- První veřejné značky: `nvpi-v3.0.2.3`, `nvdriverforge-v0.1.3`,
+`nvmfg-unlock40-v0.1.1` a `nvrasterpulse-v0.1`.
+
+<a id="included-fixes"></a>
+### Zahrnuté opravy
+
+- Profile Inspector instalační revize 2: samostatný 34jazyčný volič;
+editor a přenosné užitečné zatížení beze změny.
+- NVDriverForge 0.1.3: opravená manipulace s volitelnými součástmi a lokalizované
+souhrny selhání s aktualizovaným runtime a doprovodným balením.
+
+Výše uvedená data jsou ověřenou historií veřejného centra, nikoli rekonstruovanými daty vývoje.

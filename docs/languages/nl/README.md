@@ -30,9 +30,9 @@
 | Project | Doel | Versie | Documentatie | Downloaden |
 | --- | --- | --- | --- | --- |
 | **NVIDIA Profile Inspector – NV Tools Fork** | NVIDIA driverprofieleditor met extra display-, kleur-, HDR- en ICC/WCS-bedieningselementen. Voorheen NVPI Custom. | 3.0.2.3 | [Gids](NVIDIA-Profile-Inspector/README.md) | [Pakketten](docs/downloads.md#nvidia-profile-inspector) |
-| **NVDriverForge** | Selecteer drivercomponenten, bekijk optionele aanpassingen en installeer een origineel NVIDIA driverpakket. | 0.1.3 | [Gids](NVDriverForge/README.md) | [Pakketten](docs/downloads.md#nvdriverforge) |
-| **NVMFG Unlock40** | Experimentele RTX 40 MFG-tool met keuzes per game en Streamline SDK-onderhoud. | 0.1.1 | [Gids](NVMFG-Unlock40/README.md) | [Pakketten & status](docs/downloads.md#nvmfg-unlock40) |
-| **NVRasterPulse** | Beheer RTSS FPS-limieten per uitvoerbaar bestand, met fractionele waarden, back-ups en ladetoegang. | 0.1 | [Gids](NVRasterPulse/README.md) | [Pakketten](docs/downloads.md#nvrasterpulse) |
+| **NVDriverForge** | Bereid en installeer een origineel NVIDIA-stuurprogramma met begeleide keuzes, back-ups en herstel. | 0.1.4 | [Gids](NVDriverForge/README.md) | [Pakketten](docs/downloads.md#nvdriverforge) |
+| **NVMFG Unlock40** | Experimentele RTX 40 MFG, persistente gamebibliotheek, diagnostiek en Streamline SDK-onderhoud. | 0.2.3 | [Gids](NVMFG-Unlock40/README.md) | [Pakketten & status](docs/downloads.md#nvmfg-unlock40) |
+| **NVRasterPulse** | Beheer RTSS FPS-limieten per programma: diagnostiek, suggesties, pauzeren, ongedaan maken en profiel delen. | 0.2 | [Gids](NVRasterPulse/README.md) | [Pakketten](docs/downloads.md#nvrasterpulse) |
 
 **Downloads:** de [downloadpagina](docs/downloads.md) vermeldt de status, bestanden en SHA-256-waarden van elke versie. Experimentele functies en compatibiliteitslimieten worden beschreven in de projecthandleidingen.
 

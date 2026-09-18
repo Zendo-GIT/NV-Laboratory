@@ -29,8 +29,8 @@
 | --- | --- | --- | --- |
 | NVIDIA Profile Inspector – NV Tools Fork | NVPI-CustomNV-3.0.2.3-Setup-r2.exe | قم باستخراج NVPI ZIP بالكامل | برنامج تشغيل NVIDIA و.NET Framework 4.8 |
 | NVDriverForge | NVDriverForge-Setup.exe | NVDriverForge.exe، يتضمن وقت التشغيل | حزمة برنامج التشغيل NVIDIA الأصلية المتوافقة لعمليات التثبيت |
-| NVMFG Unlock40 | NVMFGUnlock40-0.1.1-Setup-x64.exe | قم باستخراج NVMFG ZIP بالكامل، واحتفظ بالمجلدات الفرعية | RTX 40، DLSS FG الحالي، الموفر الدقيق ومساعدي .NET Framework 4.8 |
-| NVRasterPulse | NVRasterPulse-0.1-win-x64-Setup.exe | قم باستخراج RP ZIP بالكامل | RTSS و.NET Framework 4.8 |
+| NVMFG Unlock40 | NVMFGUnlock40-0.2.3-Setup-x64.exe | قم باستخراج NVMFG ZIP بالكامل، واحتفظ بالمجلدات الفرعية | RTX 40، DLSS FG الحالي، الموفر الدقيق ومساعدي .NET Framework 4.8 |
+| NVRasterPulse | NVRasterPulse-0.2-win-x64-Setup.exe | قم باستخراج RP ZIP بالكامل | RTSS و.NET Framework 4.8 |
 
 <a id="download-verify-install"></a>
 ## التنزيل والتحقق والتثبيت

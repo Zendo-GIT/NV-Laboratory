@@ -18,7 +18,7 @@
 <a id="provenance-changes-and-licensing"></a>
 # Provenienz, Änderungen und Lizenzierung
 
-Dieses Audit beschreibt die am **2026-09-09** vorbereiteten Kandidaten. Anwendungsquellen bleiben privat; Die öffentlichen Inventare enthalten Dateinamen und Hashes, keinen Quellcode. Siehe [Vollständige Komponentenhinweise](../THIRD_PARTY_NOTICES.md).
+Dieses Audit beschreibt die am **18.09.2026** vorbereiteten Kandidaten. Anwendungsquellen bleiben privat; Die öffentlichen Inventare enthalten Dateinamen und Hashes, keinen Quellcode. Siehe [Vollständige Komponentenhinweise](../THIRD_PARTY_NOTICES.md).
 
 <a id="nvidia-profile-inspector--nv-tools-fork"></a>
 ## NVIDIA Profile Inspector – NV Tools Fork
@@ -68,11 +68,13 @@ Der Helfer passt NvapiDrsWrapper und NativeArrayHelper von NVPI in eine separate
 
 MinHook-Referenz: `8fda4f5481fed5797dc2651cd91e238e9b3928c6`; Die geerbte kompilierte Teilmenge weist im Vergleich keine funktionalen lokalen Änderungen auf. Streamline-Integrationsheader: 2.12; Open-Header-Lizenz verifiziert bei v2.12.0. NGX-Header-Quelle: NVIDIA/DLSS `a291cc7d2cc642a51566f3dfd5376f635cd1b284` festschreiben.
 
-Kandidaten-Engine SHA-256: `0E7FC0277C88B22095B622F6A3CB292EC0C14F7A0253D392502257B75E548890`.
+Kandidaten-Engine SHA-256: `C793770D329B99CD9C5C640317CE435BFE353CA2868E36CF5DCD4D5295EFAE13`.
 
 Erforderlicher Anbieter SHA-256 in engine.json: `C64928FDB7C48A57722EA8EEF2662171EDC323473ADEA66C29A206A23F1A2BED`. Eine gemeldete 310.9-Anbieterfamilie ist nicht mit genau diesem Hash austauschbar. Es ist keine Anbieter-DLL oder kein Modell enthalten.
 
 **Herausragender Lizenzierungspunkt:** Die vollständige NVIDIA RTX SDK-Lizenz, Version 14. März 2024, enthält eine Einschränkung in Abschnitt 4(d), die für die Umgehung technischer Einschränkungen relevant ist. Die Prüfung stellt keine Genehmigung für diese Verwendung dar. Die Beibehaltung der MIT-Engine-Lizenz, die kostenlose Nutzung oder die Beachtung anderer Mods lösen diesen separaten Zustand nicht. Die Kandidatenvorbereitung ist keine rechtliche Freigabe. Die ursprüngliche Kurzmitteilung wird durch die vollständige Lizenz ergänzt; Sein Windows-1252-Text wird auch als lesbares UTF-8 bereitgestellt, wobei die Originalbytes beibehalten werden.
+
+Der native Vergleich wurde für 0.2.3 neu berechnet: dieselben 48 Dateien und Klassifizierungen. Seit der letzten Prüfung haben sich `game_selection.cpp`, `game_selection.h` und `patcher.cpp` für Aktivitäts-/Fähigkeitsbeobachtungen geändert. Zur Betreueranwendung gehören neue Bibliotheks-, Diagnose-, Präferenz-, Aktualisierungs- und Auswahl-Workflows. Komponentenlizenzen und der erforderliche Provider-Hash bleiben unverändert.
 
 <a id="nvrasterpulse"></a>
 ## NVRasterPulse
@@ -102,3 +104,5 @@ Die spätere NVPI-Setup-Revision 2 behebt die eigenständige Sprachauswahl mithi
 NVDriverForge 0.1.3 wurde am 10.09.2026 fertiggestellt. Im privaten Verifizierungsbericht werden 366 Anwendungstests, 118 Companion-Checks, 32 Setup-Checks, 156 native Vergleiche und 34 Sprachweiterleitungsfälle erfasst. Der Fix für die geschützte Komponentenauswahl wurde mit einem ursprünglichen Treiberpaket wiederholt, ohne dessen Nutzlast zu ändern oder den Treiber zu installieren. Hierbei handelt es sich um datierte Ergebnisse des Produktteams, nicht um Tests, die durch dieses Dokumentationsupdate wiederholt werden, oder um den Nachweis einer erfolgreichen echten Treiberinstallation.
 
 Dieses Hub-Update ändert keinen funktionalen Anwendungscode. Frühere Anwendungs-Build-/Unit-/UI-Tests bleiben veraltete historische Beweise. Dabei handelt es sich nicht um ein vollständiges Reverse Engineering aller Drittanbieter-Binärdateien oder um eine Garantie gegen jedes mögliche geheime Muster.
+
+Aktualisierung vom 18. September 2026: NVDriverForge 0.1.4 fügt Bereitschaftsprüfungen, native Profilsicherung, Komponentenanleitung, Einstellungen und Kits, detaillierte Ergebnisse, lokale Berichterstattung und Anwendungsaktualisierungen hinzu. NVRasterPulse 0.2 fügt Konfigurationsdiagnose, FPS-Anleitung, Pause/Fortsetzung, Rückgängigmachen, `.nvrp`-Profile und Favoriten/Ausblenden hinzu, ohne eine neue Limiter-Engine. Einzelne Anleitungen beschreiben die Nutzung und Grenzen. Statische Hub-Prüfungen sind getrennt von den Anwendungstests, die in den privaten Berichten vom 18. September aufgezeichnet wurden; Für diesen Hub wurde keine Treiberinstallation, kein echter Profilimport oder keine Latenzmessung durchgeführt.

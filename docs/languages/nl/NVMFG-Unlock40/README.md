@@ -20,7 +20,7 @@
 
 **Experimentele NVIDIA Multi Frame Generation voor GeForce RTX 40, met een centrale controller en keuzes per game.**
 
-[Download 0.1.1 en status](../docs/downloads.md#nvmfg-unlock40) · [Installatie](#installation) · [Stroomopwaarts](#upstream-and-modifications) · [Licenties](LICENSES/README.md)
+[Download 0.2.3 en status](../docs/downloads.md#nvmfg-unlock40) · [Installatie](#installation) · [Stroomopwaarts](#upstream-and-modifications) · [Licenties](LICENSES/README.md)
 
 <a id="overview-and-purpose"></a>
 ## Overzicht en doel
@@ -31,7 +31,7 @@ NVMFG Unlock40 is een onafhankelijk ontwikkelde applicatie door 禅堂 Zendo (Re
 
 Het is bedoeld om experimenteel MFG-gedrag centraal te coördineren, gamespecifieke keuzes te onthouden en runtime-updates en back-ups zichtbaar te houden. Het voegt DLSS Frame Generation niet toe aan elk spel en converteert geen willekeurige FSR-implementatie.
 
-De voorbereide kandidaat is **0.1.1**, inclusief de visuele correctie uit de SDK-lijst die intern is vastgelegd als UI2. De openbare versie blijft 0.1.1; de exacte hashes onderscheiden deze kandidaat van oudere lokale builds.
+Het huidige pakket is **0.2.3**. Het voegt een persistente gamebibliotheek, informatie over activiteiten en mogelijkheden, lokale diagnostiek en gecorrigeerd selectie-/voortgangsgedrag toe. [Downloads](../docs/downloads.md#nvmfg-unlock40) identificeert de exacte bestanden en hashes.
 
 <a id="features"></a>
 ## Kenmerken
@@ -68,7 +68,7 @@ Een versielabel alleen is onvoldoende: driver, provider-hash, game-integratie en
 ## Installatie
 
 1. Lees de [kandidaatstatus en licentienota](../docs/downloads.md#nvmfg-unlock40).
-2. Download `NVMFGUnlock40-0.1.1-Setup-x64.exe` of `NVMFGUnlock40-0.1.1-Portable-x64.zip` zodra de release beschikbaar is.
+2. Download `NVMFGUnlock40-0.2.3-Setup-x64.exe` of `NVMFGUnlock40-0.2.3-Portable-x64.zip` zodra de release beschikbaar is.
 3. Controleer SHA-256 en bewaar de bijbehorende mededelingen. Installeer .NET Framework 4.8 als Windows dit nog niet biedt.
 4. Voer Setup uit of pak de **volledige** draagbare ZIP uit naar een beschrijfbare lokale map.
 5. Start `NVMFGUnlock40.exe`; houd `agent`, `driver`, `engine` en `Licenses` in de meegeleverde lay-out.
@@ -90,6 +90,21 @@ Als u het hoofdvenster sluit, kan de controller in de lade blijven staan. Een DL
 
 **Streamline SDKs:** download op de NVIDIA SDK-pagina een officiële versie of importeer een compatibele lokale SDK. Import slaat een geverifieerde kopie op; **Use this version** selecteert het en **Uninstall** verwijdert de in de cache opgeslagen kopie. Ontbrekende Streamline DLL's kunnen worden aangevuld met een officiële NVIDIA SDK, met de weergegeven bron. Hiermee wordt geen NGX-model gedownload/vervangen. Sluit het spel, selecteer de beoogde game-update en bewaar de originele back-up. Om gamebestanden terug te zetten, gebruik je de back-upherstelfunctie, niet de Uninstall-knop in de cache.
 
+<a id="library-diagnostics-and-updates"></a>
+## Bibliotheek, diagnostiek en updates
+
+**Persistente bibliotheek:** selecteer verschillende gamemappen, inclusief verschillende schijven, voordat u één scan start. De voortgang is zichtbaar en annulering is mogelijk. Na de eerste scan herstelt een lokale cache de bibliotheek bij het opstarten zonder door elke gamemap te lopen. Vernieuw om wijzigingen te vinden of een andere map toe te voegen. Onderhoudswerkzaamheden valideren nog steeds de getroffen bestanden; back-upbewaking blijft actief. De cache wordt opgeslagen op `%LOCALAPPDATA%\RtxMfg\library-cache.json`.
+
+**Selectie:** Ctrl+A selecteert alles en Ctrl+D wist het actieve tabblad Games of Back-ups. Er wordt niet automatisch een spel geselecteerd. Updates en vernieuwingen van activiteiten zorgen niet langer voor spookselecties of inconsistente tellingen.
+
+**Activiteit en compatibiliteit:** MFG-informatie per game is afkomstig van NGX-observaties zonder een nieuwe overlay. Het is geen fysieke telling van weergegeven frames. Dynamic-met-V-Sync-ondersteuning komt van runtime-mogelijkheden; onbekende mogelijkheden worden niet afgeleid uit een versienummer. De applicatie verandert noch V-Sync, noch VRR. Als V-Sync is uitgeschakeld, blijft Dynamic opgeschort; vaste of spelgestuurde keuzes zijn gescheiden.
+
+**Volgende lancering:** de tijdelijke uitsluiting slaat patching over bij de volgende lancering van de game en herstelt het normale beheer nadat deze is afgesloten. Het kan een DLL die al in een spel is geladen niet verwijderen: sluit het spel en start het opnieuw. Wallpaper Engine wordt herkend als een desktopapplicatie; deze correctie behoudt de bescherming voor feitelijk genegeerde spellen.
+
+**Voorkeuren en ondersteuning:** Voor het importeren/exporteren van voorkeuren is het handmatig opnieuw koppelen van gamemappen vereist. De lokale diagnose in Info filtert privé-informatie en rapporteert beschikbare NVAPI-foutcodes of conflictcategorieën. Beoordeel het voordat u het deelt; niets wordt automatisch geüpload.
+
+**Applicatie-updates:** een optioneel vinkje geeft release-opmerkingen weer en biedt de officiële installatie. De expliciete download wordt gecontroleerd aan de hand van de GitHub-grootte en SHA-256-metagegevens; u start zelf de installatie. Versie 0.2.3 wist ook voltooide voortgangsberichten, terwijl betekenisvolle fouten en resultaten behouden blijven. Deze toevoegingen omvatten de wijzigingen sinds de openbare versie 0.1.1.
+
 <a id="screenshots"></a>
 ## Schermafbeeldingen
 
@@ -109,6 +124,7 @@ Lokale game-runtime-back-ups gebruiken `%LOCALAPPDATA%\NvidiaStreamlineMaintenan
 <a id="known-limitations"></a>
 ## Bekende beperkingen
 
+- Een gemelde 0.1.1-blokkering voor activering/herstel/verwijdering wordt niet gereproduceerd en de oorzaak ervan is onbekend. Deze release beweert niet dat dit probleem wordt opgelost. Bewaar na een storing het hersteljournaal en inspecteer de lokale diagnose; Forceer het verwijderen van herstelgegevens niet.
 - Experimentele native patches kunnen crashes of visuele artefacten veroorzaken; een onopgeloste Bodycam-crash is vastgelegd in de ontwikkelingsgeschiedenis.
 - Gecontroleerde renderertests vormen geen certificering voor elke game, driver of anti-cheat.
 - Gegenereerde frames creëren geen nieuwe invoermonsters; deze hub belooft geen gemeten latentie of prestatiewinst.

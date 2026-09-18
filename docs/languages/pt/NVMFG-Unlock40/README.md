@@ -20,7 +20,7 @@
 
 **NVIDIA Multi Frame Generation experimental para GeForce RTX 40, com um controlador central e opções por jogo.**
 
-[Baixe 0.1.1 e status](../docs/downloads.md#nvmfg-unlock40) · [Instalação](#installation) · [A montante](#upstream-and-modifications) · [Licenças](LICENSES/README.md)
+[Baixe 0.2.3 e status](../docs/downloads.md#nvmfg-unlock40) · [Instalação](#installation) · [A montante](#upstream-and-modifications) · [Licenças](LICENSES/README.md)
 
 <a id="overview-and-purpose"></a>
 ## Visão geral e propósito
@@ -31,7 +31,7 @@ NVMFG Unlock40 é um aplicativo desenvolvido de forma independente pela 禅堂 Z
 
 Ele existe para coordenar centralmente o comportamento experimental do MFG, lembrar escolhas específicas do jogo e manter visíveis as atualizações e backups do tempo de execução. Ele não adiciona DLSS Frame Generation a todos os jogos nem converte uma implementação arbitrária de FSR.
 
-O candidato preparado é **0.1.1**, incluindo a correção visual da lista SDK registrada internamente como UI2. A versão pública permanece 0.1.1; seus hashes exatos distinguem esse candidato de compilações locais mais antigas.
+O pacote atual é **0.2.3**. Ele adiciona uma biblioteca de jogos persistente, informações de atividade e capacidade, diagnóstico local e comportamento de seleção/progresso corrigido. [Transferências](../docs/downloads.md#nvmfg-unlock40) identifica os arquivos e hashes exatos.
 
 <a id="features"></a>
 ## Recursos
@@ -68,7 +68,7 @@ Um rótulo de versão por si só é insuficiente: driver, hash do provedor, inte
 ## Instalação
 
 1. Leia o [status de candidato e nota de licenciamento](../docs/downloads.md#nvmfg-unlock40).
-2. Baixe `NVMFGUnlock40-0.1.1-Setup-x64.exe` ou `NVMFGUnlock40-0.1.1-Portable-x64.zip` quando seu lançamento estiver disponível.
+2. Baixe `NVMFGUnlock40-0.2.3-Setup-x64.exe` ou `NVMFGUnlock40-0.2.3-Portable-x64.zip` quando seu lançamento estiver disponível.
 3. Verifique SHA-256 e guarde os avisos que o acompanham. Instale o .NET Framework 4.8 se o Windows ainda não o fornecer.
 4. Execute a Instalação ou extraia o ZIP portátil **inteiro** para uma pasta local gravável.
 5. Inicie o `NVMFGUnlock40.exe`; mantenha `agent`, `driver`, `engine` e `Licenses` no layout fornecido.
@@ -90,6 +90,21 @@ Fechar a janela principal pode deixar o controlador na bandeja. Uma DLL já carr
 
 **Streamline SDKs:** na página NVIDIA SDK, baixe uma versão oficial ou importe um SDK local compatível. A importação armazena uma cópia verificada; **Use this version** seleciona-o e **Uninstall** remove essa cópia em cache. DLLs Streamline ausentes podem ser complementadas a partir de um NVIDIA SDK oficial, com a fonte mostrada. Isso não baixa/substitui um modelo NGX. Feche o jogo, selecione a atualização pretendida e mantenha o backup original. Para reverter os arquivos do jogo, use a restauração do backup, não o botão Uninstall do cache.
 
+<a id="library-diagnostics-and-updates"></a>
+## Biblioteca, diagnósticos e atualizações
+
+**Biblioteca persistente:** selecione várias pastas do jogo, incluindo unidades diferentes, antes de iniciar uma verificação. O progresso é visível e o cancelamento está disponível. Após a primeira verificação, um cache local restaura a biblioteca na inicialização sem percorrer todas as pastas do jogo. Atualize para encontrar alterações ou adicione outra pasta. As operações de manutenção ainda revalidam os arquivos afetados; o monitoramento de backup permanece ativo. O cache é armazenado em `%LOCALAPPDATA%\RtxMfg\library-cache.json`.
+
+**Seleção:** Ctrl+A seleciona todos e Ctrl+D limpa a guia Jogos ou Backups ativos. Nenhum jogo é selecionado automaticamente. Atualizações e atualizações de atividades não criam mais seleções fantasmas ou contagens inconsistentes.
+
+**Atividade e compatibilidade:** as informações do MFG por jogo vêm de observações do NGX sem uma nova sobreposição. Não é uma contagem física dos quadros exibidos. O suporte Dynamic com V-Sync vem de recursos de tempo de execução; capacidade desconhecida não é inferida de um número de versão. O aplicativo não altera V-Sync nem VRR. Com o V-Sync desligado, o Dynamic permanece suspenso; as escolhas fixas ou controladas pelo jogo são separadas.
+
+**Próximo lançamento:** a exclusão temporária ignora a correção no próximo lançamento do jogo e restaura o gerenciamento normal após sua saída. Não é possível remover uma DLL já carregada em um jogo: feche e reinicie o jogo. Wallpaper Engine é reconhecido como um aplicativo de desktop; esta correção preserva a proteção para jogos realmente ignorados.
+
+**Preferências e suporte:** a importação/exportação de preferências requer a reassociação manual das pastas do jogo. O diagnóstico local em Sobre filtra informações privadas e relata códigos de erro NVAPI ou categorias de conflito disponíveis. Revise-o antes de compartilhar; nada é carregado automaticamente.
+
+**Atualizações de aplicativos:** uma verificação opcional exibe notas de versão e oferece a configuração oficial. O download explícito é verificado em relação ao tamanho GitHub e aos metadados SHA-256; você mesmo inicia a instalação. A versão 0.2.3 também limpa mensagens de progresso concluídas, preservando erros e resultados significativos. Essas adições incluem as alterações desde a versão pública 0.1.1.
+
 <a id="screenshots"></a>
 ## Capturas de tela
 
@@ -109,6 +124,7 @@ Os backups locais de tempo de execução do jogo usam `%LOCALAPPDATA%\NvidiaStre
 <a id="known-limitations"></a>
 ## Limitações conhecidas
 
+- Um bloqueio de ativação/restauração/desinstalação 0.1.1 relatado permanece não reproduzido e sua causa é desconhecida. Esta versão não pretende corrigi-lo. Após uma falha, preserve o diário de recuperação e inspecione o diagnóstico local; não force a exclusão dos dados de recuperação.
 - Patches nativos experimentais podem causar travamentos ou artefatos visuais; uma falha não resolvida do Bodycam é registrada no histórico de desenvolvimento.
 - Os testes de renderização controlada não são certificação para todos os jogos, drivers ou anti-cheat.
 - Os quadros gerados não criam novas amostras de entrada; nenhuma latência medida ou ganho de desempenho é prometido por este hub.

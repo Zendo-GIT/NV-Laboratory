@@ -22,14 +22,14 @@
 
 > **首先安装 RTSS。** NVRasterPulse 需要 [RivaTuner Statistics Server (RTSS)，从 Guru3D 下载](https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/)。 RTSS 必须运行才能实施限制。未捆绑 RTSS 安装程序、挂钩 DLL 或 SDK。
 
-[下载 0.1 和状态](../docs/downloads.md#nvrasterpulse) · [安装](#installation) · [限制如何运作](#usage) · [许可证](../../../../NVRasterPulse/LICENSE)
+[下载 0.2 和状态](../docs/downloads.md#nvrasterpulse) · [安装](#installation) · [限制如何运作](#usage) · [许可证](../../../../NVRasterPulse/LICENSE)
 
 <a id="overview-and-purpose"></a>
 ## 概述和目的
 
 NVRasterPulse 是一个紧凑的 Windows 接口，用于按可执行文件名称管理 RTSS 帧限制。 RTSS 执行限制。 NVRasterPulse 通过托盘访问和持久选择来管理相应的配置文件值、备份和重新加载请求。
 
-它的存在是为了使每个游戏的精确限制更容易编辑，而无需替换整个 RTSS 配置文件或干扰其覆盖设置。当前 **0.1** 候选版本是 2026 年 9 月 9 日版本，需要进行 RTSS 安装检查。
+它的存在是为了使每个游戏的精确限制更容易编辑，而无需替换整个 RTSS 配置文件或干扰其覆盖设置。版本 **0.2** 添加了配置诊断、FPS 帮助程序、暂停、撤消和配置文件共享。
 
 <a id="features"></a>
 ## 特点
@@ -63,7 +63,7 @@ NVRasterPulse 是一个紧凑的 Windows 接口，用于按可执行文件名称
 
 1. **[从 Guru3D 下载并安装 RTSS](https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/).**
 2. 打开 [NVRasterPulse 下载](../docs/downloads.md#nvrasterpulse) 并检查版本可用性。
-3. 下载 `NVRasterPulse-0.1-win-x64-Setup.exe` 或 `NVRasterPulse-0.1-win-x64-portable.zip`，以及通知/校验和。
+3. 下载 `NVRasterPulse-0.2-win-x64-Setup.exe` 或 `NVRasterPulse-0.2-win-x64-portable.zip`，以及通知/校验和。
 4. 比较 SHA-256。运行安装程序或将整个便携式 ZIP 解压缩到可写的本地文件夹。
 5. 打开`NVRasterPulse.exe`。如果缺少 RTSS，请使用 **下载 RTSS**，安装它，然后 **再次检查**，或手动选择 `RTSS.exe`。
 6. 使用其正常快捷方式启动 RTSS，如果停止，则使用 NVRasterPulse 的 RTSS 按钮启动它。
@@ -87,6 +87,23 @@ NVRasterPulse 是一个紧凑的 Windows 接口，用于按可执行文件名称
 **关闭和退出：**主窗口可以隐藏到托盘中。正常 **退出** 使 RTSS 保持运行并保存完好的限制。 **退出 + RTSS** 请求正常关闭当前会话中匹配的 RTSS 进程，最多等待八秒，并且不会强制终止它。两种情况下都保留存储的限制。
 
 语言和主题在应用程序中选择。 Windows 登录时启动是可选的，适用于已安装的副本。信息按钮解释了常见操作。
+
+<a id="diagnostics-and-profile-tools"></a>
+## 诊断和分析工具
+
+打开附加工具的操作菜单。它们保留 RTSS 全局、覆盖设置和排除。
+
+**诊断：**检查本地/有效限制、停止 RTSS、丢失可执行文件、未检测到窗口、禁用挂钩、继承、暂停限制、竞争设置和重复的可执行文件名称。该只读检查描述了配置；它不能证明游戏被 RTSS 所吸引或测量其 FPS。
+
+**FPS helper：**选择显示器并自行声明VRR/G-Sync、V-Sync、Reflex和Frame Generation。舍入刷新频率来自 Windows。如果 Reflex 或 Frame Generation 处于活动状态或未知，则不提供自动上限。对于 V-Sync 打开且 Reflex/FG 关闭的 VRR，启发式方法会减去至少 3 个 FPS 或约 2% 的刷新率。这不是测量的最佳值。应用建议填写草稿； **保存**仍然是一个单独的操作。
+
+**暂停和恢复：**暂停所选节目的上限，然后恢复其先前的限制器字段。另一个工具进行的冲突性更改可以防止简历不明确。隐藏条目不会暂停其上限。
+
+**撤消：**恢复对该程序的六个托管限制器字段的最后更改。有一个级别；这不会恢复所有 RTSS。拒绝冲突的外部更改。文件备份保持独立。
+
+**共享配置文件：** 将选定的配置文件导出到 `.nvrp` 文件。默认情况下，导入会显示预览并保留现有上限未选中。该文件仅包含可执行文件名称、限制和状态，没有绝对路径或脚本。检查您的选择并申请。 I/O 错误可能会导致某些配置文件已应用；结果识别出它们并且每个都保留其撤消。相同的可执行文件名称仍然指向相同的 RTSS 配置文件。
+
+**收藏夹和隐藏条目：** 首先固定有用的程序，隐藏不需要的条目并在专用对话框中恢复它们。这些选择仍然存在。关闭的收藏夹不会显示为正在运行的应用程序。
 
 <a id="screenshots"></a>
 ## 截图

@@ -18,7 +18,7 @@
 <a id="provenance-changes-and-licensing"></a>
 # Lähde, muutokset ja lisenssit
 
-Tämä tarkastus kuvaa **2026-09-09** valmisteltuja ehdokkaita. Sovelluslähteet pysyvät yksityisinä; julkiset luettelot sisältävät tiedostonimiä ja tiivisteitä, eivät lähdekoodia. Katso [täydelliset komponenttiilmoitukset](../THIRD_PARTY_NOTICES.md).
+Tämä tarkastus kuvaa **2026-09-18** valmisteltuja ehdokkaita. Sovelluslähteet pysyvät yksityisinä; julkiset luettelot sisältävät tiedostonimiä ja tiivisteitä, eivät lähdekoodia. Katso [täydelliset komponenttiilmoitukset](../THIRD_PARTY_NOTICES.md).
 
 <a id="nvidia-profile-inspector--nv-tools-fork"></a>
 ## NVIDIA Profile Inspector – NV Tools Fork
@@ -68,11 +68,13 @@ Apulainen sovittaa NVPI:n NvapiDrsWrapper:n ja NativeArrayHelper:n erilliseksi k
 
 MinHook viite: `8fda4f5481fed5797dc2651cd91e238e9b3928c6`; perityllä käännetyllä osajoukolla ei ole toiminnallisia paikallisia muutoksia vertailussa. Streamline-integrointiotsikot: 2.12; avoimen otsikon lisenssi vahvistettu osoitteessa v2.12.0. NGX-otsikon lähde: NVIDIA/DLSS sitoa `a291cc7d2cc642a51566f3dfd5376f635cd1b284`.
 
-Ehdokasmoottori SHA-256: `0E7FC0277C88B22095B622F6A3CB292EC0C14F7A0253D392502257B75E548890`.
+Ehdokasmoottori SHA-256: `C793770D329B99CD9C5C640317CE435BFE353CA2868E36CF5DCD4D5295EFAE13`.
 
 Vaadittu palveluntarjoaja SHA-256 kohteessa engine.json: `C64928FDB7C48A57722EA8EEF2662171EDC323473ADEA66C29A206A23F1A2BED`. Ilmoitettu 310.9-palveluntarjoajaperhe ei ole vaihdettavissa tällä täsmälleen tällä hashilla. Mukana ei ole tarjoajan DLL-tiedostoa tai mallia.
 
 **Erinomainen lisenssikohta:** täydellinen NVIDIA RTX SDK -lisenssi, versio 14. maaliskuuta 2024, sisältää kohdan 4(d) rajoituksen, joka koskee teknisten rajoitusten ohittamista. Tarkastus ei anna lupaa tälle käytölle. MIT-moottorilisenssin säilyttäminen, maksuton oleminen tai muiden modifikaatioiden tarkkaileminen ei ratkaise tätä erillistä ehtoa. Ehdokkaan valmistelu ei ole oikeudellinen hyväksyntä. Alkuperäinen lyhyt otsikkoilmoitus on täydennetty täydellä lisenssillä; sen Windows-1252-teksti on myös luettavissa UTF-8-muodossa, ja alkuperäiset tavut säilyvät.
+
+Alkuperäinen vertailu laskettiin uudelleen 0.2.3:lle: samat 48 tiedostoa ja luokittelua. Edellisen tarkastuksen jälkeen `game_selection.cpp`, `game_selection.h` ja `patcher.cpp` muuttuivat toiminto-/kykyhavaintojen osalta. Uudet kirjasto-, diagnostiikka-, asetus-, päivitys- ja valintatyönkulut kuuluvat ylläpitosovellukseen. Komponenttilisenssit ja vaadittu toimittajan tiiviste säilyvät ennallaan.
 
 <a id="nvrasterpulse"></a>
 ## NVRasterPulse
@@ -102,3 +104,5 @@ Myöhempi NVPI-asennusversio 2 korjaa erillisen kielen valinnan jaettujen Inno-s
 NVDriverForge 0.1.3 valmistui 2026-09-10. Sen yksityinen vahvistusraportti tallentaa 366 sovellustestiä, 118 kumppanin tarkistusta, 32 määritystarkistusta, 156 alkuperäistä vertailua ja 34 kielen edelleenlähetystapausta. Suojattu komponenttivalinnan korjaus toistettiin alkuperäistä ohjainpakettia vastaan ​​muuttamatta sen hyötykuormaa tai asentamatta ohjainta. Nämä ovat vanhentuneita tuotetiimien tuloksia, eivät tämän dokumentaatiopäivityksen suorittamia testejä tai todisteita onnistuneesta todellisen ohjaimen asennuksesta.
 
 Tämä keskitinpäivitys ei muuta toimivaa sovelluskoodia. Aiemmat sovelluskoonti-/yksikkö-/käyttöliittymätestit ovat vanhentuneita historiallisia todisteita. Tämä ei ole kaikkien kolmannen osapuolen binaarien täydellistä käänteistä suunnittelua tai takuuta kaikilta mahdollisilta salaisuuksilta.
+
+18. syyskuuta 2026 päivitys: NVDriverForge 0.1.4 lisää valmiustarkistuksia, alkuperäisen profiilin varmuuskopion, komponenttien opastuksen, asetukset ja sarjat, yksityiskohtaiset tulokset, paikallisen raportoinnin ja sovelluspäivitykset. NVRasterPulse 0.2 lisää konfigurointidiagnostiikkaa, FPS-opastusta, tauko/jatka, kumoa, `.nvrp`-profiileja ja suosikkeja/piilotuksia ilman uutta rajoitinmoottoria. Yksittäiset oppaat kuvaavat käyttöä ja rajoituksia. Staattiset keskustarkistukset ovat erillisiä 18. syyskuuta yksityisiin raportteihin kirjatuista sovellustesteistä; tälle keskittimelle ei suoritettu ajurin asennusta, todellisen profiilin tuontia tai latenssimittausta.

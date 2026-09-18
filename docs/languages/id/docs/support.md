@@ -23,9 +23,9 @@ Ini adalah kandidat yang telah disiapkan, bukan matriks sertifikasi untuk semua 
 | Alat | Windows/waktu proses | Ketergantungan perangkat keras / eksternal | Operasi memerlukan perawatan |
 | --- | --- | --- | --- |
 | NVPI fork 3.0.2.3 | Windows 10/11 x64, .NET Framework 4.8 | Driver/layar NVIDIA yang kompatibel | Penulisan profil dan pratinjau tampilan |
-| NVDriverForge 0.1.2 | Windows 10 membangun 19041+ / 11x64; .NET/WPF disertakan | Paket driver NVIDIA yang kompatibel | Instalasi yang ditingkatkan, pengaturan lanjutan, NVENC opsional |
-| NVMFG Unlock40 0.1.1 | Windows 10/11x64; Termasuk .NET/WPF, pembantu Framework 4.8 | RTX 40, game FG DLSS yang memenuhi syarat dan penyedia yang disematkan | Patching asli dalam game, jurnal profil global, pembaruan game SDK |
-| NVRasterPulse 0.1 | Windows 10/11 x64, .NET Framework 4.8 | RTSS diinstal; berlari untuk topi | RTSS perubahan profil per-eksekusi |
+| NVDriverForge 0.1.4 | Windows 10 membangun 19041+ / 11x64; .NET/WPF disertakan | Paket driver NVIDIA yang kompatibel | Instalasi yang ditingkatkan, pengaturan lanjutan, NVENC opsional |
+| NVMFG Unlock40 0.2.3 | Windows 10/11x64; Termasuk .NET/WPF, pembantu Framework 4.8 | RTX 40, game FG DLSS yang memenuhi syarat dan penyedia yang disematkan | Patching asli dalam game, jurnal profil global, pembaruan game SDK |
+| NVRasterPulse 0.2 | Windows 10/11 x64, .NET Framework 4.8 | RTSS diinstal; berlari untuk topi | RTSS perubahan profil per-eksekusi |
 
 Tidak ada paket ARM64 yang disiapkan. Ketersediaan tampilan/API dan versi Windows yang lama dapat membatasi fitur individual. Tidak ada versi NVIDIA atau RTSS minimum universal yang ditemukan. Hash penyedia NVMFG yang tepat ada di [asal](provenance.md).
 
@@ -47,6 +47,8 @@ Gunakan [bentuk bug](https://github.com/Zendo-GIT/NV-Laboratory/issues/new?templ
 | Pengaturan NVMFG tertunda | Selesaikan pemulihan dengan game ditutup, pertahankan perubahan dari alat lain. |
 | Batas RP tidak berpengaruh | Jalankan RTSS, identifikasi EXE game sebenarnya, periksa status hook dan batas persaingan. |
 | Tutup RP tetap ada setelah dilepas | Periksa RTSS Global; penghapusan hanya mengubah pengesampingan pembatas lokal saja. |
+
+NVDriverForge menawarkan laporan JSON lokal yang dapat dipratinjau; NVMFG menawarkan diagnostik di Tentang. Pilih laporan yang difilter ini daripada arsip log lengkap dan periksa sebelum dibagikan. Penyumbatan restorasi yang dilaporkan pada NVMFG 0.1.1 masih belum diketahui penyebabnya; simpan jurnalnya dan catat kode kesalahan yang ada. NVRasterPulse 0.2 menawarkan diagnostik konfigurasi dalam menu tindakannya, tanpa mengukur FPS.
 
 <a id="logs-and-privacy"></a>
 ## Log dan privasi

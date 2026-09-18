@@ -20,7 +20,7 @@
 
 **Kokeellinen NVIDIA Multi Frame Generation GeForce RTX 40:lle, keskusohjaimella ja pelikohtaisilla valinnoilla.**
 
-[Lataa 0.1.1 ja tila](../docs/downloads.md#nvmfg-unlock40) · [Asennus](#installation) · [Vastavirtaan](#upstream-and-modifications) · [Lisenssit](LICENSES/README.md)
+[Lataa 0.2.3 ja tila](../docs/downloads.md#nvmfg-unlock40) · [Asennus](#installation) · [Vastavirtaan](#upstream-and-modifications) · [Lisenssit](LICENSES/README.md)
 
 <a id="overview-and-purpose"></a>
 ## Yleiskatsaus ja tarkoitus
@@ -31,7 +31,7 @@ NVMFG Unlock40 on 禅堂 Zendo (RevoluSound Team):n itsenäisesti kehittämä so
 
 Se on olemassa kokeellisen MFG-käyttäytymisen koordinoimiseksi keskitetysti, pelikohtaisten valintojen muistamiseksi ja ajonaikaisten päivitysten ja varmuuskopioiden pitämiseksi näkyvissä. Se ei lisää DLSS Frame Generation:ää jokaiseen peliin tai muunna mielivaltaista FSR-toteutusta.
 
-Valmisteltu ehdokas on **0.1.1**, mukaan lukien SDK-luettelon visuaalinen korjaus, joka on tallennettu sisäisesti nimellä UI2. Julkinen versio pysyy 0.1.1; sen tarkat tiivisteet erottavat tämän ehdokkaan vanhemmista paikallisista versioista.
+Nykyinen paketti on **0.2.3**. Se lisää jatkuvan pelikirjaston, tiedot aktiviteeteista ja ominaisuuksista, paikallisen diagnoosin ja korjatun valinta-/edistymiskäyttäytymisen. [Lataukset](../docs/downloads.md#nvmfg-unlock40) tunnistaa tarkat tiedostot ja tiivisteet.
 
 <a id="features"></a>
 ## Ominaisuudet
@@ -68,7 +68,7 @@ Pelkkä versiomerkintä ei riitä: ajuri, palveluntarjoajan hash, peliintegraati
 ## Asennus
 
 1. Lue [ehdokkaan asema ja lisenssihuomautus](../docs/downloads.md#nvmfg-unlock40).
-2. Lataa `NVMFGUnlock40-0.1.1-Setup-x64.exe` tai `NVMFGUnlock40-0.1.1-Portable-x64.zip`, kun sen julkaisu on saatavilla.
+2. Lataa `NVMFGUnlock40-0.2.3-Setup-x64.exe` tai `NVMFGUnlock40-0.2.3-Portable-x64.zip`, kun sen julkaisu on saatavilla.
 3. Tarkista SHA-256 ja säilytä mukana tulevat ilmoitukset. Asenna .NET Framework 4.8, jos Windows ei vielä tarjoa sitä.
 4. Suorita asennusohjelma tai pura **koko** kannettava ZIP-tiedosto kirjoitettavaan paikalliseen kansioon.
 5. Käynnistä `NVMFGUnlock40.exe`; Säilytä `agent`, `driver`, `engine` ja `Licenses` toimitetussa asettelussa.
@@ -90,6 +90,21 @@ Pääikkunan sulkeminen voi jättää ohjaimen lokeroon. Peliin jo ladattu DLL p
 
 **Streamline SDKs:** NVIDIA SDK -sivulla lataa virallinen versio tai tuo yhteensopiva paikallinen SDK. Tuo tallentaa vahvistetun kopion; **Use this version** valitsee sen ja **Uninstall** poistaa välimuistissa olevan kopion. Puuttuvat Streamline DLL -tiedostot voidaan täydentää virallisesta NVIDIA SDK -tiedostosta, jossa lähde näkyy. Tämä ei lataa/korvaa NGX-mallia. Sulje peli, valitse suunniteltu pelipäivitys ja säilytä sen alkuperäinen varmuuskopio. Palauttaaksesi pelitiedostot, käytä sen varmuuskopion palautusta, älä välimuistin Uninstall-painiketta.
 
+<a id="library-diagnostics-and-updates"></a>
+## Kirjasto, diagnostiikka ja päivitykset
+
+**Pysyvä kirjasto:** Valitse useita pelikansioita, mukaan lukien eri asemat, ennen kuin aloitat yhden tarkistuksen. Edistyminen näkyy ja peruutus on mahdollista. Ensimmäisen tarkistuksen jälkeen paikallinen välimuisti palauttaa kirjaston käynnistettäessä kävelemättä jokaista pelikansiota. Päivitä löytääksesi muutokset tai lisätäksesi uuden kansion. Ylläpitotoimenpiteet vahvistavat edelleen vahingoittuneet tiedostot; varmuuskopion valvonta pysyy aktiivisena. Välimuisti on tallennettu osoitteeseen `%LOCALAPPDATA%\RtxMfg\library-cache.json`.
+
+**Valinta:** Ctrl+A valitsee kaikki ja Ctrl+D tyhjentää aktiivisen Pelit- tai Varmuuskopiot-välilehden. Mitään peliä ei valita automaattisesti. Toimintojen päivitykset ja päivitykset eivät enää luo haamuvalintoja tai epäjohdonmukaisia ​​laskelmia.
+
+**Toiminta ja yhteensopivuus:** Pelikohtaiset MFG-tiedot tulevat NGX-havainnoista ilman uutta peittoa. Se ei ole näytettyjen kehysten fyysinen määrä. Dynamic-with-V-Sync tuki tulee ajonaikaisista ominaisuuksista; Tuntematonta ominaisuutta ei päätetä versionumerosta. Sovellus ei muuta arvoja V-Sync tai VRR. Kun V-Sync on pois päältä, Dynamic pysyy keskeytettynä; kiinteät tai peliohjatut valinnat ovat erillisiä.
+
+**Seuraava julkaisu:** väliaikainen poissulkeminen ohittaa paikannuksen seuraavan pelin käynnistyksen yhteydessä ja palauttaa normaalin hallinnan lopettamisen jälkeen. Se ei voi poistaa peliin jo ladattua DLL:ää: sulje peli ja käynnistä se uudelleen. Wallpaper Engine tunnistetaan työpöytäsovellukseksi; Tämä korjaus säilyttää suojan todellisille huomiotta jätetyille peleille.
+
+**Asetukset ja tuki:** asetusten tuonti/vienti edellyttää pelikansioiden manuaalista yhdistämistä. Tietoja-kohdan paikallinen diagnostiikka suodattaa yksityiset tiedot ja raportoi saatavilla olevat NVAPI-virhekoodit tai ristiriitaluokat. Tarkista se ennen jakamista; mitään ei ladata automaattisesti.
+
+**Sovelluspäivitykset:** valinnainen tarkistus näyttää julkaisutiedot ja tarjoaa virallisen asennuksen. Eksplisiittinen lataus tarkistetaan GitHub-koon ja SHA-256-metatietojen perusteella. aloitat asennuksen itse. Versio 0.2.3 poistaa myös valmiit edistymisilmoitukset säilyttäen samalla merkitykselliset virheet ja tulokset. Nämä lisäykset sisältävät julkisen version 0.1.1 jälkeen tehdyt muutokset.
+
 <a id="screenshots"></a>
 ## Kuvakaappauksia
 
@@ -109,6 +124,7 @@ Paikalliset pelin ajonaikaiset varmuuskopiot käyttävät `%LOCALAPPDATA%\Nvidia
 <a id="known-limitations"></a>
 ## Tunnetut rajoitukset
 
+- Raportoitu 0.1.1:n aktivointi-/palautus-/asennuksenpoistotukos ei toistu eikä sen syytä tunneta. Tämä julkaisu ei väitä korjaavansa sitä. Vian jälkeen säilytä palautuspäiväkirja ja tarkasta paikallinen diagnoosi; älä pakota poistamaan palautustietoja.
 - Kokeelliset alkuperäiset korjaustiedostot voivat aiheuttaa kaatumisia tai visuaalisia artefakteja; ratkaisematon Bodycam kaatuminen on kirjattu kehityshistoriaan.
 - Hallitut renderöintitestit eivät ole sertifiointi jokaiselle pelille, ajurille tai huijauksen estolle.
 - Luodut kehykset eivät luo uusia tulonäytteitä; tämä keskitin ei lupaa mitattua latenssia tai suorituskyvyn lisäystä.

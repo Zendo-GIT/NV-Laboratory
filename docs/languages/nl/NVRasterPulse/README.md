@@ -22,14 +22,14 @@
 
 > **Installeer eerst RTSS.** NVRasterPulse vereist [RivaTuner Statistics Server (RTSS), gedownload van Guru3D](https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/). RTSS moet actief zijn om limieten af ​​te dwingen. Er is geen RTSS-installatieprogramma, hook-DLL of SDK gebundeld.
 
-[Download 0.1 en status](../docs/downloads.md#nvrasterpulse) · [Installatie](#installation) · [Hoe grenzen werken](#usage) · [Licentie](../../../../NVRasterPulse/LICENSE)
+[Download 0.2 en status](../docs/downloads.md#nvrasterpulse) · [Installatie](#installation) · [Hoe grenzen werken](#usage) · [Licentie](../../../../NVRasterPulse/LICENSE)
 
 <a id="overview-and-purpose"></a>
 ## Overzicht en doel
 
 NVRasterPulse is een compacte Windows-interface voor het beheren van RTSS-framelimieten op uitvoerbare naam. RTSS voert de beperking uit. NVRasterPulse beheert de bijbehorende profielwaarden, back-ups en herlaadverzoeken, met ladetoegang en permanente keuzes.
 
-Het is bedoeld om de exacte limieten per spel gemakkelijker te kunnen bewerken zonder een heel RTSS-profiel te vervangen of de overlay-instellingen te verstoren. De huidige **0.1**-kandidaat is de build van 9 september 2026 met een vereiste RTSS-installatiecontrole.
+Het is bedoeld om de exacte limieten per spel gemakkelijker te kunnen bewerken zonder een heel RTSS-profiel te vervangen of de overlay-instellingen te verstoren. Versie **0.2** voegt configuratiediagnostiek, een FPS-helper, pauzeren, ongedaan maken en profiel delen toe.
 
 <a id="features"></a>
 ## Kenmerken
@@ -63,7 +63,7 @@ Er is geen specifieke RTSS-minimumversie gecertificeerd voor elke functie door d
 
 1. **[Download en installeer RTSS van Guru3D](https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/).**
 2. Open [NVRasterPulse-downloads](../docs/downloads.md#nvrasterpulse) en controleer de beschikbaarheid van de release.
-3. Download `NVRasterPulse-0.1-win-x64-Setup.exe` of `NVRasterPulse-0.1-win-x64-portable.zip`, plus de mededelingen/controlesommen.
+3. Download `NVRasterPulse-0.2-win-x64-Setup.exe` of `NVRasterPulse-0.2-win-x64-portable.zip`, plus de mededelingen/controlesommen.
 4. Vergelijk SHA-256. Voer Setup uit of pak de volledige draagbare ZIP uit naar een beschrijfbare lokale map.
 5. Open `NVRasterPulse.exe`. Als RTSS ontbreekt, gebruik dan **Download RTSS**, installeer het en vervolgens **Controleer nogmaals**, of selecteer `RTSS.exe` handmatig.
 6. Start RTSS met de normale snelkoppeling of met de RTSS-knop van NVRasterPulse als deze gestopt is.
@@ -87,6 +87,23 @@ Gebruik de prullenbakactie om de limiteroverschrijvingen van NVRasterPulse te ve
 **Sluiten en afsluiten:** het hoofdvenster kan zich in de lade verbergen. Normaal **Afsluiten** zorgt ervoor dat RTSS actief blijft en de opgeslagen limieten intact blijven. **Quit + RTSS** vraagt ​​om een ​​normale afsluiting van het overeenkomende RTSS-proces in de huidige sessie, wacht maximaal acht seconden en forceert het niet. In beide gevallen blijven de opgeslagen limieten behouden.
 
 Taal en thema worden geselecteerd in de app. Opstarten bij Windows aanmelden is optioneel en bedoeld voor een geïnstalleerd exemplaar. De informatieknop legt veelvoorkomende handelingen uit.
+
+<a id="diagnostics-and-profile-tools"></a>
+## Diagnostische en profieltools
+
+Open het actiemenu voor de extra tools. Ze behouden RTSS Global, overlay-instellingen en uitsluitingen.
+
+**Diagnostiek:** inspecteer lokale/effectieve limieten, gestopt RTSS, een ontbrekend uitvoerbaar bestand, geen gedetecteerd venster, uitgeschakelde hooking, overerving, gepauzeerde limieten, concurrerende instellingen en dubbele namen van uitvoerbare bestanden. Deze alleen-lezen-controle beschrijft de configuratie; het bewijst niet dat een game verslaafd is aan RTSS of de FPS meet.
+
+**FPS helper:** selecteer het display en declareer zelf VRR/G-Sync, V-Sync, Reflex en Frame Generation. De afgeronde vernieuwingsfrequentie is afkomstig van Windows. Als Reflex of Frame Generation actief of onbekend is, wordt er geen automatische limiet aangeboden. Voor VRR met V-Sync aan en Reflex/FG uit trekt de heuristiek ten minste 3 FPS af, oftewel ongeveer 2% van de vernieuwingsfrequentie. Dit is geen gemeten optimaal. Door de suggestie toe te passen wordt het concept ingevuld; **Opslaan** blijft een aparte actie.
+
+**Pauzeer en hervat:** schort de limiet van het geselecteerde programma op en herstelt vervolgens de vorige limitervelden. Tegenstrijdige wijzigingen door een ander hulpmiddel voorkomen een dubbelzinnig cv. Als u een item verbergt, wordt de limiet ervan niet gepauzeerd.
+
+**Ongedaan maken:** herstelt de laatste wijziging in de zes beheerde limitervelden voor dat programma. Er is één niveau; hierdoor wordt RTSS niet volledig hersteld. Tegenstrijdige externe wijzigingen worden geweigerd. Bestandsback-ups blijven gescheiden.
+
+**Profielen delen:** geselecteerde profielen exporteren naar een `.nvrp`-bestand. Importeren toont een voorbeeld en laat bestaande limieten standaard uitgeschakeld. Het bestand bevat alleen uitvoerbare namen, limieten en statussen, zonder absolute paden of scripts. Controleer uw selectie en solliciteer. Door een I/O-fout kunnen sommige profielen al zijn toegepast; het resultaat identificeert ze en elk behoudt zijn ongedaan maken. Identieke uitvoerbare namen adresseren nog steeds hetzelfde RTSS-profiel.
+
+**Favorieten en verborgen items:** nuttige programma's eerst vastzetten, ongewenste items verbergen en ze herstellen in het speciale dialoogvenster. Deze keuzes blijven bestaan. Een gesloten favoriet verschijnt niet als actieve applicatie.
 
 <a id="screenshots"></a>
 ## Schermafbeeldingen

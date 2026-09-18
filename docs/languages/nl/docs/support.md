@@ -23,9 +23,9 @@ Dit zijn de voorbereide kandidaten, geen certificeringsmatrix voor alle Windows-
 | Gereedschap | Windows / runtime | Hardware / externe afhankelijkheid | Operaties die zorg nodig hebben |
 | --- | --- | --- | --- |
 | NVPI fork 3.0.2.3 | Windows 10/11 x64, .NET Framework 4.8 | Compatibel NVIDIA-stuurprogramma/display | Profiel schrijft en geeft voorbeelden weer |
-| NVDriverForge 0.1.2 | Windows 10 gebouwd 19041+ / 11 x64; .NET/WPF inbegrepen | Compatibel NVIDIA driverpakket | Verhoogde installatie, geavanceerde instellingen, optionele NVENC |
-| NVMFG Unlock40 0.1.1 | Windows 10/11x64; .NET/WPF inbegrepen, Framework 4.8-helpers | RTX 40, in aanmerking komende DLSS FG-game en vastgezette provider | Native in-game patching, wereldwijd profiellogboek, SDK-game-updates |
-| NVRasterPulse 0.1 | Windows 10/11 x64, .NET Framework 4.8 | RTSS geïnstalleerd; rennen voor petten | RTSS per uitvoerbare profielwijzigingen |
+| NVDriverForge 0.1.4 | Windows 10 gebouwd 19041+ / 11 x64; .NET/WPF inbegrepen | Compatibel NVIDIA driverpakket | Verhoogde installatie, geavanceerde instellingen, optionele NVENC |
+| NVMFG Unlock40 0.2.3 | Windows 10/11x64; .NET/WPF inbegrepen, Framework 4.8-helpers | RTX 40, in aanmerking komende DLSS FG-game en vastgezette provider | Native in-game patching, wereldwijd profiellogboek, SDK-game-updates |
+| NVRasterPulse 0.2 | Windows 10/11 x64, .NET Framework 4.8 | RTSS geïnstalleerd; rennen voor petten | RTSS per uitvoerbare profielwijzigingen |
 
 Er is geen ARM64-pakket voorbereid. Beschikbaarheid van display/API en oude Windows-versies kunnen individuele functies beperken. Er is geen universele minimumversie van NVIDIA of RTSS uitgevonden. De exacte hash van de NVMFG-provider bevindt zich in [herkomst](provenance.md).
 
@@ -47,6 +47,8 @@ Gebruik de [bug-formulier](https://github.com/Zendo-GIT/NV-Laboratory/issues/new
 | NVMFG-instellingen in behandeling | Los het herstel op terwijl games gesloten zijn, waarbij de wijzigingen van andere tools behouden blijven. |
 | RP-dop heeft geen effect | Voer RTSS uit, identificeer de echte game-EXE, inspecteer de hook-status en concurrerende limieten. |
 | RP-dop blijft zitten na verwijdering | Inspecteer RTSS Wereldwijd; Door het verwijderen worden alleen lokale limiteroverschrijvingen gewijzigd. |
+
+NVDriverForge biedt een voorbeeld van een lokaal JSON-rapport; NVMFG biedt een diagnose aan in Over. Geef de voorkeur aan deze gefilterde rapporten boven een compleet logarchief en bekijk ze voordat u ze deelt. Een herstelblokkering gerapporteerd op NVMFG 0.1.1 heeft nog steeds geen vastgestelde oorzaak; het dagboek bijhoudt en eventuele beschikbare foutcodes registreert. NVRasterPulse 0.2 biedt configuratiediagnostiek in het actiemenu, zonder FPS te meten.
 
 <a id="logs-and-privacy"></a>
 ## Logboeken en privacy

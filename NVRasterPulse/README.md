@@ -17,7 +17,7 @@
 
 > **Install RTSS first.** NVRasterPulse requires [RivaTuner Statistics Server (RTSS), downloaded from Guru3D](https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/). RTSS must be running to enforce limits. No RTSS installer, hook DLL or SDK is bundled.
 
-[Download 0.1 & status](../docs/downloads.md#nvrasterpulse) · [Installation](#installation) · [How limits work](#usage) · [License](LICENSE)
+[Download 0.2 & status](../docs/downloads.md#nvrasterpulse) · [Installation](#installation) · [How limits work](#usage) · [License](LICENSE)
 
 ## Overview and purpose
 
@@ -26,8 +26,7 @@ executable name. RTSS performs the limiting. NVRasterPulse manages the correspon
 profile values, backups and reload requests, with tray access and persistent choices.
 
 It exists to make exact per-game limits easier to edit without replacing a whole
-RTSS profile or disturbing its overlay settings. The current **0.1** candidate is
-the September 9, 2026 build with a required RTSS installation check.
+RTSS profile or disturbing its overlay settings. Version **0.2** adds configuration diagnostics, an FPS helper, pause, undo and profile sharing.
 
 ## Features
 
@@ -61,7 +60,7 @@ installation check; it must then be started for actual limiting.
 
 1. **[Download and install RTSS from Guru3D](https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/).**
 2. Open [NVRasterPulse downloads](../docs/downloads.md#nvrasterpulse) and check Release availability.
-3. Download `NVRasterPulse-0.1-win-x64-Setup.exe` or `NVRasterPulse-0.1-win-x64-portable.zip`, plus the notices/checksums.
+3. Download `NVRasterPulse-0.2-win-x64-Setup.exe` or `NVRasterPulse-0.2-win-x64-portable.zip`, plus the notices/checksums.
 4. Compare SHA-256. Run Setup or extract the entire portable ZIP to a writable local folder.
 5. Open `NVRasterPulse.exe`. If RTSS is missing, use **Download RTSS**, install it, then **Check again**, or select `RTSS.exe` manually.
 6. Start RTSS using its normal shortcut or NVRasterPulse's RTSS button if it is stopped.
@@ -96,6 +95,22 @@ seconds and does not force-kill it. Stored limits remain in both cases.
 
 Language and theme are selected in the app. Startup at Windows sign-in is optional
 and intended for an installed copy. The information button explains common actions.
+
+## Diagnostics and profile tools
+
+Open the actions menu for the additional tools. They preserve RTSS Global, overlay settings and exclusions.
+
+**Diagnostics:** inspect local/effective limits, stopped RTSS, a missing executable, no detected window, disabled hooking, inheritance, paused limits, competing settings and duplicate executable names. This read-only check describes configuration; it does not prove a game is hooked by RTSS or measure its FPS.
+
+**FPS helper:** select the display and declare VRR/G-Sync, V-Sync, Reflex and Frame Generation yourself. Rounded refresh frequency comes from Windows. If Reflex or Frame Generation is active or unknown, no automatic cap is offered. For VRR with V-Sync on and Reflex/FG off, the heuristic subtracts at least 3 FPS or approximately 2% of the refresh rate. This is not a measured optimum. Applying the suggestion fills the draft; **Save** remains a separate action.
+
+**Pause and resume:** suspend the selected program's cap, then restore its previous limiter fields. Conflicting changes by another tool prevent an ambiguous resume. Hiding an entry does not pause its cap.
+
+**Undo:** restore the last change to the six managed limiter fields for that program. There is one level; this does not restore all of RTSS. Conflicting external changes are refused. File backups remain separate.
+
+**Share profiles:** export selected profiles to a `.nvrp` file. Import shows a preview and leaves existing caps unchecked by default. The file contains only executable names, limits and states, without absolute paths or scripts. Review your selection and apply. An I/O error can leave some profiles already applied; the result identifies them and each keeps its undo. Identical executable names still address the same RTSS profile.
+
+**Favorites and hidden entries:** pin useful programs first, hide unwanted entries and restore them in the dedicated dialog. These choices persist. A closed favorite does not appear as a running application.
 
 ## Screenshots
 

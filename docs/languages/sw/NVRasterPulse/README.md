@@ -22,14 +22,14 @@
 
 > **Sakinisha RTSS kwanza.** NVRasterPulse inahitaji [RivaTuner Statistics Server (RTSS), iliyopakuliwa kutoka Guru3D](https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/). RTSS lazima iwe inaendesha ili kutekeleza vikomo. Hakuna kisakinishi cha RTSS, ndoano ya DLL au SDK imeunganishwa.
 
-[Pakua 0.1 & hali](../docs/downloads.md#nvrasterpulse) · [Ufungaji](#installation) · [Jinsi mipaka inavyofanya kazi](#usage) · [Leseni](../../../../NVRasterPulse/LICENSE)
+[Pakua 0.2 & hali](../docs/downloads.md#nvrasterpulse) · [Ufungaji](#installation) · [Jinsi mipaka inavyofanya kazi](#usage) · [Leseni](../../../../NVRasterPulse/LICENSE)
 
 <a id="overview-and-purpose"></a>
 ## Muhtasari na madhumuni
 
 NVRasterPulse ni kiolesura cha Windows cha kudhibiti vikomo vya fremu vya RTSS kwa jina linaloweza kutekelezeka. RTSS hufanya kizuizi. NVRasterPulse hudhibiti thamani zinazolingana za wasifu, hifadhi rudufu na maombi ya kupakia upya, kwa ufikiaji wa trei na chaguo zinazoendelea.
 
-Inapatikana ili kurahisisha kuhariri vikomo kamili vya kila mchezo bila kubadilisha wasifu mzima wa RTSS au kutatiza mipangilio yake ya kuwekelea. Mgombea wa sasa wa **0.1** ni muundo wa Septemba 9, 2026 na hundi inayohitajika ya usakinishaji ya RTSS.
+Inapatikana ili kurahisisha kuhariri vikomo kamili vya kila mchezo bila kubadilisha wasifu mzima wa RTSS au kutatiza mipangilio yake ya kuwekelea. Toleo **0.2** linaongeza uchunguzi wa usanidi, msaidizi wa FPS, kusitisha, kutendua na kushiriki wasifu.
 
 <a id="features"></a>
 ## Vipengele
@@ -63,7 +63,7 @@ Hakuna toleo mahususi la RTSS ambalo limeidhinishwa kwa kila utendakazi na ukagu
 
 1. **[Pakua na usakinishe RTSS kutoka Guru3D](https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/).**
 2. Fungua [Vipakuliwa vya NVRasterPulse](../docs/downloads.md#nvrasterpulse) na uangalie upatikanaji wa Toleo.
-3. Pakua `NVRasterPulse-0.1-win-x64-Setup.exe` au `NVRasterPulse-0.1-win-x64-portable.zip`, pamoja na arifa/hesabu za hundi.
+3. Pakua `NVRasterPulse-0.2-win-x64-Setup.exe` au `NVRasterPulse-0.2-win-x64-portable.zip`, pamoja na arifa/hesabu za hundi.
 4. Linganisha SHA-256. Tekeleza Mipangilio au toa ZIP nzima inayoweza kusongeshwa kwenye folda ya ndani inayoweza kuandikwa.
 5. Fungua `NVRasterPulse.exe`. Ikiwa RTSS haipo, tumia **Pakua RTSS**, isakinishe, kisha **Angalia tena**, au uchague `RTSS.exe` wewe mwenyewe.
 6. Anzisha RTSS ukitumia njia yake ya mkato ya kawaida au kitufe cha NVRasterPulse's RTSS ikiwa imesimamishwa.
@@ -87,6 +87,23 @@ Tumia kitendo cha tupio kuondoa vikomo vya NVRasterPulse. Haifuti wasifu wote wa
 **Kufunga na kuacha:** dirisha kuu linaweza kujificha kwenye trei. **Ondoka** ya Kawaida huacha RTSS ikiendelea na vikomo vilivyohifadhiwa vikiwa sawa. **Ondoka + RTSS** inaomba kufungwa kwa kawaida kwa mchakato wa RTSS unaolingana katika kipindi cha sasa, inasubiri hadi sekunde nane na hailazimishi kuua. Mipaka iliyohifadhiwa inabaki katika hali zote mbili.
 
 Lugha na mandhari huchaguliwa katika programu. Kuanzisha katika Windows kuingia ni hiari na kunalenga nakala iliyosakinishwa. Kitufe cha habari kinaelezea vitendo vya kawaida.
+
+<a id="diagnostics-and-profile-tools"></a>
+## Vyombo vya utambuzi na wasifu
+
+Fungua menyu ya vitendo kwa zana za ziada. Zinahifadhi RTSS Global, mipangilio ya kuwekelea na vizuizi.
+
+**Uchunguzi:** kagua vikomo vya ndani/ufaavyo, imekoma RTSS, inayoweza kutekelezeka inakosekana, hakuna dirisha lililogunduliwa, uvutano uliozimwa, urithi, vikomo vilivyositishwa, mipangilio pinzani na nakala ya majina yanayoweza kutekelezwa. Ukaguzi huu wa kusoma pekee unaeleza usanidi; haithibitishi kuwa mchezo umenaswa na RTSS au kupima FPS yake.
+
+**Msaidizi wa FPS:** chagua onyesho na utangaze VRR/G-Sync, V-Sync, Reflex na Frame Generation mwenyewe. Masafa ya kuonyesha upya mduara hutoka kwa Windows. Ikiwa Reflex au Frame Generation inatumika au haijulikani, hakuna kofia ya kiotomatiki inayotolewa. Kwa VRR ikiwa V-Sync imewashwa na Reflex/FG ikiwa imezimwa, njia ya utatuzi huondoa angalau 3 FPS au takriban 2% ya kiwango cha kuonyesha upya. Hii sio kipimo bora zaidi. Utekelezaji wa pendekezo hujaza rasimu; **Hifadhi** inasalia kuwa kitendo tofauti.
+
+**Sitisha na uendelee:** sitisha kikomo cha programu iliyochaguliwa, kisha urejeshe sehemu zake za awali za kikomo. Mabadiliko yanayokinzana na zana nyingine huzuia wasifu usioeleweka. Kuficha ingizo hakusitishi kifuniko chake.
+
+**Tendua:** rejesha badiliko la mwisho kwa sehemu sita za kikomo zinazodhibitiwa za programu hiyo. Kuna ngazi moja; hii hairejeshi RTSS yote. Mabadiliko ya nje yanayokinzana yamekataliwa. Hifadhi rudufu za faili hubaki tofauti.
+
+**Shiriki wasifu:** hamisha wasifu uliochaguliwa kwa faili ya `.nvrp`. Uingizaji huonyesha onyesho la kukagua na huacha kofia zilizopo bila kuchaguliwa kwa chaguomsingi. Faili ina majina, vikomo na hali zinazoweza kutekelezeka pekee, bila njia kamili au hati. Kagua chaguo lako na utume maombi. Hitilafu ya I/O inaweza kuacha baadhi ya wasifu tayari kutumika; matokeo yanawatambulisha na kila mmoja anaendelea kutengua. Majina sawa yanayoweza kutekelezwa bado yanashughulikia wasifu sawa wa RTSS.
+
+**Vipendwa na maingizo yaliyofichwa:** bandika programu muhimu kwanza, ficha maingizo yasiyotakikana na uyarejeshe kwenye kidirisha mahususi. Chaguzi hizi zinaendelea. Kipendwa kilichofungwa hakionekani kama programu inayoendeshwa.
 
 <a id="screenshots"></a>
 ## Picha za skrini

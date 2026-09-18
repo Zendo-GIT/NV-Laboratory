@@ -13,7 +13,9 @@
 
 # Third-party notices and credits
 
-Initial audit: 2026-09-09; NVDriverForge 0.1.3 and provenance update: 2026-09-10. **A component's license covers that
+Initial audit: 2026-09-09; current package and provenance review: 2026-09-18.
+NVDriverForge 0.1.4, NVMFG Unlock40 0.2.3 and NVRasterPulse 0.2 retain the
+existing component licenses. Profile Inspector 3.0.2.3/setup-r2 is unchanged. **A component's license covers that
 component, not the entire suite.** Application source remains private. Copyright
 and permission notices are retained verbatim; this table is an index, not a
 replacement for them. “External” means not distributed in the application assets.

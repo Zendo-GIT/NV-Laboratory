@@ -22,14 +22,14 @@
 
 > **Najpierw zainstaluj RTSS.** NVRasterPulse wymaga [RivaTuner Statistics Server (RTSS), pobrany z Guru3D](https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/). Aby wymusić ograniczenia, musi być uruchomiony RTSS. W zestawie nie ma instalatora RTSS, biblioteki hook DLL ani SDK.
 
-[Pobierz 0.1 i status](../docs/downloads.md#nvrasterpulse) · [Instalacja](#installation) · [Jak działają limity](#usage) · [Licencja](../../../../NVRasterPulse/LICENSE)
+[Pobierz 0.2 i status](../docs/downloads.md#nvrasterpulse) · [Instalacja](#installation) · [Jak działają limity](#usage) · [Licencja](../../../../NVRasterPulse/LICENSE)
 
 <a id="overview-and-purpose"></a>
 ## Przegląd i cel
 
 NVRasterPulse to kompaktowy interfejs Windows do zarządzania limitami ramek RTSS według nazw plików wykonywalnych. RTSS wykonuje ograniczenie. NVRasterPulse zarządza odpowiednimi wartościami profili, kopiami zapasowymi i żądaniami przeładowania, z dostępem do zasobnika i stałymi wyborami.
 
-Istnieje po to, aby ułatwić edycję dokładnych limitów dla poszczególnych gier bez konieczności wymiany całego profilu RTSS lub zakłócania ustawień jego nakładki. Obecny kandydat **0.1** to kompilacja z 9 września 2026 r. z wymaganą kontrolą instalacji RTSS.
+Istnieje po to, aby ułatwić edycję dokładnych limitów dla poszczególnych gier bez konieczności wymiany całego profilu RTSS lub zakłócania ustawień jego nakładki. Wersja **0.2** dodaje diagnostykę konfiguracji, pomocnika FPS, wstrzymywanie, cofanie i udostępnianie profilu.
 
 <a id="features"></a>
 ## Funkcje
@@ -63,7 +63,7 @@ W ramach audytu centrum nie certyfikowano żadnej konkretnej minimalnej wersji R
 
 1. **[Pobierz i zainstaluj RTSS z Guru3D](https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/).**
 2. Otwórz [Pobieranie NVRasterPulse](../docs/downloads.md#nvrasterpulse) i sprawdź dostępność wersji.
-3. Pobierz `NVRasterPulse-0.1-win-x64-Setup.exe` lub `NVRasterPulse-0.1-win-x64-portable.zip` oraz uwagi/sumy kontrolne.
+3. Pobierz `NVRasterPulse-0.2-win-x64-Setup.exe` lub `NVRasterPulse-0.2-win-x64-portable.zip` oraz uwagi/sumy kontrolne.
 4. Porównaj SHA-256. Uruchom Instalatora lub wyodrębnij cały przenośny plik ZIP do lokalnego folderu z możliwością zapisu.
 5. Otwórz `NVRasterPulse.exe`. Jeśli brakuje RTSS, użyj **Pobierz RTSS**, zainstaluj go, a następnie **Sprawdź ponownie** lub wybierz `RTSS.exe` ręcznie.
 6. Uruchom RTSS za pomocą normalnego skrótu lub przycisku RTSS NVRasterPulse, jeśli jest zatrzymany.
@@ -87,6 +87,23 @@ Użyj akcji kosza, aby usunąć przesłonięcia limitera NVRasterPulse. Nie usuw
 **Zamykanie i wychodzenie:** główne okno można ukryć w zasobniku. Normalny **Zakończ** pozostawia uruchomiony RTSS i zapisane limity nienaruszone. **Zakończ + RTSS** żąda normalnego zamknięcia pasującego procesu RTSS w bieżącej sesji, czeka do ośmiu sekund i nie powoduje jego zakończenia na siłę. Zapisane limity pozostają w obu przypadkach.
 
 Język i motyw wybiera się w aplikacji. Uruchomienie przy logowaniu Windows jest opcjonalne i przeznaczone dla zainstalowanej kopii. Przycisk informacyjny wyjaśnia typowe działania.
+
+<a id="diagnostics-and-profile-tools"></a>
+## Narzędzia diagnostyczne i profilowe
+
+Otwórz menu akcji dla dodatkowych narzędzi. Zachowują ustawienia RTSS Global, nakładki i wyjątki.
+
+**Diagnostyka:** sprawdź limity lokalne/efektywne, zatrzymaj RTSS, brak pliku wykonywalnego, nie wykryto okna, wyłączone przechwytywanie, dziedziczenie, wstrzymane limity, konkurencyjne ustawienia i zduplikowane nazwy plików wykonywalnych. Ta kontrola tylko do odczytu opisuje konfigurację; nie dowodzi, że gra jest uzależniona od RTSS ani nie mierzy jej FPS.
+
+**Pomoc FPS:** wybierz wyświetlacz i samodzielnie zadeklaruj VRR/G-Sync, V-Sync, Reflex i Frame Generation. Zaokrąglona częstotliwość odświeżania pochodzi z Windows. Jeśli Reflex lub Frame Generation jest aktywny lub nieznany, nie jest oferowany żaden automatyczny limit. W przypadku VRR z włączonym V-Sync i wyłączonym Reflex/FG, heurystyka odejmuje co najmniej 3 FPS lub około 2% częstotliwości odświeżania. To nie jest mierzone maksimum. Zastosowanie sugestii wypełnia wersję roboczą; **Zapisz** pozostaje osobną akcją.
+
+**Wstrzymaj i wznów:** zawieszenie limitu wybranego programu, a następnie przywrócenie jego poprzednich pól limitera. Sprzeczne zmiany wprowadzone przez inne narzędzie zapobiegają niejednoznacznemu CV. Ukrycie wpisu nie wstrzymuje jego ograniczenia.
+
+**Cofnij:** przywróć ostatnią zmianę w sześciu zarządzanych polach ograniczników dla tego programu. Jest jeden poziom; nie przywraca to całego RTSS. Sprzeczne zmiany zewnętrzne są odrzucane. Kopie zapasowe plików pozostają oddzielne.
+
+**Udostępnij profile:** eksportuj wybrane profile do pliku `.nvrp`. Import wyświetla podgląd i domyślnie pozostawia istniejące ograniczenia niezaznaczone. Plik zawiera wyłącznie nazwy wykonywalne, limity i stany, bez ścieżek bezwzględnych i skryptów. Przejrzyj swój wybór i aplikuj. Błąd we/wy może spowodować, że niektóre profile zostaną już zastosowane; wynik je identyfikuje i każdy zachowuje swoje cofnięcie. Identyczne nazwy plików wykonywalnych nadal odnoszą się do tego samego profilu RTSS.
+
+**Ulubione i ukryte wpisy:** najpierw przypnij przydatne programy, ukryj niechciane wpisy i przywróć je w dedykowanym oknie dialogowym. Te wybory pozostają. Zamknięty ulubiony nie jest wyświetlany jako działająca aplikacja.
 
 <a id="screenshots"></a>
 ## Zrzuty ekranu

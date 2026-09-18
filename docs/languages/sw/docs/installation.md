@@ -27,8 +27,8 @@ Anza na [Vipakuliwa](downloads.md), ambayo hurekodi hali ya uchapishaji na majin
 | --- | --- | --- | --- |
 | NVIDIA Profile Inspector – NV Tools Fork | NVPI-CustomNV-3.0.2.3-Setup-r2.exe | Dondoo kamili ya NVPI ZIP | Viendeshaji vya NVIDIA na .NET Framework 4.8 |
 | NVDriverForge | NVDriverForge-Setup.exe | NVDriverForge.exe, wakati wa kukimbia umejumuishwa | Kifurushi cha asili kinacholingana cha NVIDIA kwa shughuli za usakinishaji |
-| NVMFG Unlock40 | NVMFGUnlock40-0.1.1-Setup-x64.exe | Toa ZIP kamili ya NVMFG, uhifadhi folda ndogo | RTX 40, DLSS FG iliyopo, mtoa huduma kamili na wasaidizi wa NET Framework 4.8 |
-| NVRasterPulse | NVRasterPulse-0.1-win-x64-Setup.exe | Dondoo kamili ya RP ZIP | RTSS na .NET Framework 4.8 |
+| NVMFG Unlock40 | NVMFGUnlock40-0.2.3-Setup-x64.exe | Toa ZIP kamili ya NVMFG, uhifadhi folda ndogo | RTX 40, DLSS FG iliyopo, mtoa huduma kamili na wasaidizi wa NET Framework 4.8 |
+| NVRasterPulse | NVRasterPulse-0.2-win-x64-Setup.exe | Dondoo kamili ya RP ZIP | RTSS na .NET Framework 4.8 |
 
 <a id="download-verify-install"></a>
 ## Pakua, thibitisha, sakinisha

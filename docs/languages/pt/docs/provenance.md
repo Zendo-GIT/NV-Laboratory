@@ -18,7 +18,7 @@
 <a id="provenance-changes-and-licensing"></a>
 # Proveniência, alterações e licenciamento
 
-Esta auditoria descreve os candidatos preparados em **2026-09-09**. As fontes de aplicativos permanecem privadas; os inventários públicos contêm nomes de arquivos e hashes, não código-fonte. Consulte [avisos completos de componentes](../THIRD_PARTY_NOTICES.md).
+Esta auditoria descreve os candidatos preparados em **2026-09-18**. As fontes de aplicativos permanecem privadas; os inventários públicos contêm nomes de arquivos e hashes, não código-fonte. Consulte [avisos completos de componentes](../THIRD_PARTY_NOTICES.md).
 
 <a id="nvidia-profile-inspector--nv-tools-fork"></a>
 ## NVIDIA Profile Inspector – NV Tools Fork
@@ -68,11 +68,13 @@ O auxiliar adapta NvapiDrsWrapper e NativeArrayHelper do NVPI em um conjunto sep
 
 Referência MinHook: `8fda4f5481fed5797dc2651cd91e238e9b3928c6`; o subconjunto compilado herdado não possui alterações locais funcionais na comparação. Cabeçalhos de integração Streamline: 2.12; licença de cabeçalho aberto verificada em v2.12.0. Origem do cabeçalho NGX: NVIDIA/DLSS commit `a291cc7d2cc642a51566f3dfd5376f635cd1b284`.
 
-Motor candidato SHA-256: `0E7FC0277C88B22095B622F6A3CB292EC0C14F7A0253D392502257B75E548890`.
+Motor candidato SHA-256: `C793770D329B99CD9C5C640317CE435BFE353CA2868E36CF5DCD4D5295EFAE13`.
 
 Provedor necessário SHA-256 em engine.json: `C64928FDB7C48A57722EA8EEF2662171EDC323473ADEA66C29A206A23F1A2BED`. Uma família de provedores 310.9 relatada não é intercambiável com esse hash exato. Nenhuma DLL ou modelo de provedor está incluído.
 
 **Ponto de licenciamento excelente:** a licença completa NVIDIA RTX SDK, versão 14 de março de 2024, contém uma restrição da seção 4(d) relevante para contornar limitações técnicas. A auditoria não estabelece permissão para esse uso. Manter a licença do motor MIT, ser gratuito ou observar outros mods não resolve essa condição separada. A preparação do candidato não é uma autorização legal. O aviso original de cabeçalho curto é complementado com a licença completa; seu texto Windows-1252 também é fornecido como UTF-8 legível, com os bytes originais retidos.
+
+A comparação nativa foi recalculada para 0.2.3: os mesmos 48 arquivos e classificações. Desde a auditoria anterior, `game_selection.cpp`, `game_selection.h` e `patcher.cpp` foram alterados para observações de atividade/capacidade. Os novos fluxos de trabalho de biblioteca, diagnóstico, preferência, atualização e seleção pertencem ao aplicativo mantenedor. As licenças de componentes e o hash do provedor necessário permanecem inalterados.
 
 <a id="nvrasterpulse"></a>
 ## NVRasterPulse
@@ -102,3 +104,5 @@ A revisão 2 da configuração NVPI posterior corrige a seleção de idioma inde
 NVDriverForge 0.1.3 foi concluído em 10/09/2026. Seu relatório de verificação privado registra 366 testes de aplicativos, 118 verificações complementares, 32 verificações de configuração, 156 comparações nativas e 34 casos de encaminhamento de idioma. A correção de seleção de componente protegido foi reproduzida em um pacote de driver original sem alterar sua carga ou instalar o driver. Estes são resultados desatualizados da equipe de produto, não testes executados novamente por esta atualização de documentação ou prova de uma instalação real de driver bem-sucedida.
 
 Esta atualização do hub não altera nenhum código funcional do aplicativo. Os testes anteriores de construção/unidade/UI de aplicativos permanecem como evidências históricas desatualizadas. Isto não é engenharia reversa completa de todos os binários de terceiros ou uma garantia contra todos os padrões secretos possíveis.
+
+Atualização de 18 de setembro de 2026: NVDriverForge 0.1.4 adiciona verificações de prontidão, backup de perfil nativo, orientação de componentes, preferências e kits, resultados detalhados, relatórios locais e atualizações de aplicativos. NVRasterPulse 0.2 adiciona diagnóstico de configuração, orientação FPS, pausar/retomar, desfazer, perfis `.nvrp` e favoritos/ocultar, sem um novo mecanismo limitador. Guias individuais descrevem o uso e os limites. As verificações estáticas do hub são separadas dos testes de aplicação registrados nos relatórios privados de 18 de setembro; nenhuma instalação de driver, importação de perfil real ou medição de latência foi realizada para este hub.

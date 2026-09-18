@@ -23,9 +23,9 @@
 | 工具 | Windows / 运行时 | 硬件/外部依赖 | 需要护理的操作 |
 | --- | --- | --- | --- |
 | NVPI fork 3.0.2.3 | Windows 10/11 x64，.NET Framework 4.8 | 兼容的 NVIDIA 驱动程序/显示器 | 配置文件写入并显示预览 |
-| NVDriverForge 0.1.2 | Windows 10 版本 19041+ / 11 x64；包含.NET/WPF | 兼容的NVIDIA驱动包 | 高架安装，高级设置，可选NVENC |
-| NVMFG Unlock40 0.1.1 | Windows 10/11 x64；包含 .NET/WPF，框架 4.8 帮助程序 | RTX 40，合格的 DLSS FG 游戏和固定提供商 | 本机游戏内补丁、全局档案日志、SDK 游戏更新 |
-| NVRasterPulse 0.1 | Windows 10/11 x64，.NET Framework 4.8 | RTSS已安装；争夺帽子 | RTSS 每个可执行配置文件更改 |
+| NVDriverForge 0.1.4 | Windows 10 版本 19041+ / 11 x64；包含.NET/WPF | 兼容的NVIDIA驱动包 | 高架安装，高级设置，可选NVENC |
+| NVMFG Unlock40 0.2.3 | Windows 10/11 x64；包含 .NET/WPF，框架 4.8 帮助程序 | RTX 40，合格的 DLSS FG 游戏和固定提供商 | 本机游戏内补丁、全局档案日志、SDK 游戏更新 |
+| NVRasterPulse 0.2 | Windows 10/11 x64，.NET Framework 4.8 | RTSS已安装；争夺帽子 | RTSS 每个可执行配置文件更改 |
 
 没有准备ARM64包。显示/API 可用性和旧的 Windows 版本可能会限制个别功能。没有发明通用的最低 NVIDIA 或 RTSS 版本。确切的 NVMFG 提供程序哈希位于 [出处](provenance.md) 中。
 
@@ -47,6 +47,8 @@
 | NVMFG 待定设置 | 解决游戏关闭时的恢复问题，保留其他工具的更改。 |
 | RP 上限无效 | 运行RTSS，识别真实游戏EXE，检查钩子状态和竞争限制。 |
 | RP 盖子在移除后仍然存在 | 检查RTSS全局；删除仅更改本地限制器覆盖。 |
+
+NVDriverForge 提供可预览的本地 JSON 报告； NVMFG 在“关于”中提供诊断。与完整的日志存档相比，更喜欢这些经过过滤的报告，并在共享之前检查它们。 NVMFG 0.1.1 上报告的恢复阻塞仍然没有确定的原因；保留其日志并记录任何可用的错误代码。 NVRasterPulse 0.2 在其操作菜单中提供配置诊断，无需测量 FPS。
 
 <a id="logs-and-privacy"></a>
 ## 日志和隐私

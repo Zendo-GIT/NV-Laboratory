@@ -20,7 +20,7 @@
 
 **Eksperimentel NVIDIA Multi Frame Generation til GeForce RTX 40, med en central controller og valgmuligheder pr. spil.**
 
-[Download 0.1.1 & status](../docs/downloads.md#nvmfg-unlock40) · [Installation](#installation) · [Opstrøms](#upstream-and-modifications) · [Licenser](LICENSES/README.md)
+[Download 0.2.3 & status](../docs/downloads.md#nvmfg-unlock40) · [Installation](#installation) · [Opstrøms](#upstream-and-modifications) · [Licenser](LICENSES/README.md)
 
 <a id="overview-and-purpose"></a>
 ## Overblik og formål
@@ -31,7 +31,7 @@ NVMFG Unlock40 er en uafhængigt udviklet applikation af 禅堂 Zendo (RevoluSou
 
 Den eksisterer for at koordinere eksperimentel MFG-adfærd centralt, huske spilspecifikke valg og holde runtime-opdateringer og sikkerhedskopier synlige. Det tilføjer ikke DLSS Frame Generation til hvert spil eller konverterer en vilkårlig FSR-implementering.
 
-Den forberedte kandidat er **0.1.1**, inklusive den visuelle korrektion på SDK-listen internt registreret som UI2. Den offentlige version forbliver 0.1.1; dens nøjagtige hashes adskiller denne kandidat fra ældre lokale builds.
+Den nuværende pakke er **0.2.3**. Det tilføjer et vedvarende spilbibliotek, aktivitets- og kapacitetsoplysninger, lokal diagnostik og korrigeret valg/fremskridtsadfærd. [Downloads](../docs/downloads.md#nvmfg-unlock40) identificerer de nøjagtige filer og hashes.
 
 <a id="features"></a>
 ## Funktioner
@@ -68,7 +68,7 @@ En versionsetiket alene er utilstrækkelig: driver, udbyder-hash, spilintegratio
 ## Installation
 
 1. Læs [kandidatstatus og licensnotat](../docs/downloads.md#nvmfg-unlock40).
-2. Download `NVMFGUnlock40-0.1.1-Setup-x64.exe` eller `NVMFGUnlock40-0.1.1-Portable-x64.zip`, når dens udgivelse er tilgængelig.
+2. Download `NVMFGUnlock40-0.2.3-Setup-x64.exe` eller `NVMFGUnlock40-0.2.3-Portable-x64.zip`, når dens udgivelse er tilgængelig.
 3. Tjek SHA-256 og gem de medfølgende meddelelser. Installer .NET Framework 4.8, hvis Windows ikke allerede leverer det.
 4. Kør installationsprogrammet, eller udtræk **hele** bærbare ZIP til en skrivbar lokal mappe.
 5. Start `NVMFGUnlock40.exe`; behold `agent`, `driver`, `engine` og `Licenses` i det medfølgende layout.
@@ -90,6 +90,21 @@ Lukning af hovedvinduet kan efterlade controlleren i bakken. En DLL, der allered
 
 **Streamline SDKs:** på siden NVIDIA SDK skal du downloade en officiel version eller importere en kompatibel lokal SDK. Import gemmer en bekræftet kopi; **Use this version** vælger det, og **Uninstall** fjerner den cachelagrede kopi. Manglende Streamline DLL'er kan suppleres fra en officiel NVIDIA SDK, med kilden vist. Dette downloader/erstatter ikke en NGX-model. Luk spillet, vælg den tilsigtede spilopdatering, og behold dens originale backup. For at gendanne spilfiler skal du bruge dens backupgendannelse, ikke cachens Uninstall-knap.
 
+<a id="library-diagnostics-and-updates"></a>
+## Bibliotek, diagnostik og opdateringer
+
+**Persistent bibliotek:** vælg flere spilmapper, inklusive forskellige drev, før du starter én scanning. Fremskridt er synligt, og annullering er tilgængelig. Efter den første scanning gendanner en lokal cache biblioteket ved lancering uden at gå i hver spilmappe. Opdater for at finde ændringer eller tilføje en anden mappe. Vedligeholdelsesoperationer genvaliderer stadig de berørte filer; backup-overvågning forbliver aktiv. Cachen er gemt på `%LOCALAPPDATA%\RtxMfg\library-cache.json`.
+
+**Udvalg:** Ctrl+A vælger alle, og Ctrl+D rydder den aktive fane Spil eller Sikkerhedskopier. Intet spil vælges automatisk. Aktivitetsopdateringer og -opdateringer skaber ikke længere spøgelsesvalg eller inkonsekvente optællinger.
+
+**Aktivitet og kompatibilitet:** MFG-oplysninger pr. spil kommer fra NGX-observationer uden en ny overlejring. Det er ikke en fysisk optælling af viste rammer. Dynamic-med-V-Sync-understøttelse kommer fra runtime-funktioner; ukendt kapacitet er ikke udledt af et versionsnummer. Applikationen ændrer hverken V-Sync eller VRR. Når V-Sync er slået fra, forbliver Dynamic suspenderet; faste eller spilkontrollerede valg er separate.
+
+**Næste lancering:** den midlertidige udelukkelse springer patching over ved næste spillancering og gendanner normal administration, efter at den afsluttes. Det kan ikke fjerne en DLL, der allerede er indlæst i et spil: luk og genstart spillet. Wallpaper Engine er anerkendt som en desktop-applikation; denne rettelse bevarer beskyttelsen for faktiske ignorerede spil.
+
+**Præferencer og support:** præferenceimport/eksport kræver manuel gentilknytning af spilmapper. Den lokale diagnostik i Om filtrerer private oplysninger og rapporterer tilgængelige NVAPI fejlkoder eller konfliktkategorier. Gennemgå det før deling; intet uploades automatisk.
+
+**Applikationsopdateringer:** et valgfrit tjek viser udgivelsesbemærkninger og tilbyder den officielle opsætning. Den eksplicitte download kontrolleres mod GitHub størrelse og SHA-256 metadata; du påbegynder installationen selv. Version 0.2.3 rydder også afsluttede fremskridtsmeddelelser, mens meningsfulde fejl og resultater bevares. Disse tilføjelser inkluderer ændringerne siden den offentlige version 0.1.1.
+
 <a id="screenshots"></a>
 ## Skærmbilleder
 
@@ -109,6 +124,7 @@ Lokale spil-runtime-sikkerhedskopier bruger `%LOCALAPPDATA%\NvidiaStreamlineMain
 <a id="known-limitations"></a>
 ## Kendte begrænsninger
 
+- En rapporteret 0.1.1 aktiverings-/gendannelses-/afinstallationsblokering forbliver ikke-reproduceret, og dens årsag er ukendt. Denne udgivelse hævder ikke at rette det. Efter en fejl, gem genoprettelsesjournalen og inspicér den lokale diagnostik; fremtving ikke sletning af gendannelsesdata.
 - Eksperimentelle native patches kan forårsage nedbrud eller visuelle artefakter; et uløst Bodycam-nedbrud er registreret i udviklingshistorien.
 - Kontrollerede gengivelsestest er ikke certificering for hvert spil, driver eller anti-cheat.
 - Genererede rammer opretter ikke nye input-eksempler; ingen målt latenstid eller ydelsesforøgelse loves af denne hub.

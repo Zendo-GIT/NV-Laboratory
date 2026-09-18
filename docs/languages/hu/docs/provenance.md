@@ -18,7 +18,7 @@
 <a id="provenance-changes-and-licensing"></a>
 # Származási hely, változások és engedélyezés
 
-Ez az ellenőrzés a **2026-09-09** napon elkészített jelölteket ismerteti. Az alkalmazásforrások privátak maradnak; a nyilvános leltárak fájlneveket és kivonatokat tartalmaznak, nem forráskódot. Lásd: [a teljes összetevőre vonatkozó megjegyzések](../THIRD_PARTY_NOTICES.md).
+Ez az ellenőrzés a **2026-09-18** napon elkészített jelölteket ismerteti. Az alkalmazásforrások privátak maradnak; a nyilvános leltárak fájlneveket és kivonatokat tartalmaznak, nem forráskódot. Lásd: [a teljes összetevőre vonatkozó megjegyzések](../THIRD_PARTY_NOTICES.md).
 
 <a id="nvidia-profile-inspector--nv-tools-fork"></a>
 ## NVIDIA Profile Inspector – NV Tools Fork
@@ -68,11 +68,13 @@ A segítő az NVPI NvapiDrsWrapper és NativeArrayHelper moduljait egy külön �
 
 MinHook hivatkozás: `8fda4f5481fed5797dc2651cd91e238e9b3928c6`; az örökölt lefordított részhalmaznak nincs funkcionális lokális változása az összehasonlításban. Streamline integrációs fejlécek: 2.12; nyitott fejléc licence ellenőrizve a v2.12.0 címen. NGX fejléc forrása: NVIDIA/DLSS véglegesítés `a291cc7d2cc642a51566f3dfd5376f635cd1b284`.
 
-SHA-256 jelölt motor: `0E7FC0277C88B22095B622F6A3CB292EC0C14F7A0253D392502257B75E548890`.
+SHA-256 jelölt motor: `C793770D329B99CD9C5C640317CE435BFE353CA2868E36CF5DCD4D5295EFAE13`.
 
 Szükséges szolgáltató SHA-256 az engine.json-ben: `C64928FDB7C48A57722EA8EEF2662171EDC323473ADEA66C29A206A23F1A2BED`. A bejelentett 310.9 szolgáltatócsalád nem cserélhető fel ezzel a pontos hash-sel. Nem tartalmaz szolgáltatói DLL-t vagy modellt.
 
 **Kiemelkedő engedélyezési pont:** a teljes NVIDIA RTX SDK licenc, 2024. március 14-i verzió, a műszaki korlátozások megkerülésére vonatkozó 4(d) szakasz korlátozást tartalmaz. Az audit nem ad engedélyt erre a felhasználásra. Az MIT motorlicenc megőrzése, az ingyenesség vagy más módosítások megfigyelése nem oldja meg ezt a külön feltételt. A jelöltek felkészítése nem jogorvoslat. Az eredeti rövid fejléc közlemény kiegészül a teljes licenccel; Windows-1252 szövege is olvasható UTF-8 formátumban van megadva, az eredeti bájtokkal.
+
+A natív összehasonlítást újraszámították az 0.2.3 esetében: ugyanaz a 48 fájl és besorolás. Az előző audit óta az `game_selection.cpp`, `game_selection.h` és `patcher.cpp` módosult a tevékenység/képesség megfigyelésekhez. Az új könyvtári, diagnosztikai, preferenciális, frissítési és kiválasztási munkafolyamatok a karbantartó alkalmazáshoz tartoznak. A komponenslicencek és a szükséges szolgáltatói hash változatlanok.
 
 <a id="nvrasterpulse"></a>
 ## NVRasterPulse
@@ -102,3 +104,5 @@ A későbbi NVPI telepítési verzió 2 javítja az önálló nyelvválasztást 
 NVDriverForge Az 0.1.3 2026-09-10-én készült el. A privát hitelesítési jelentés 366 alkalmazástesztet, 118 kísérőellenőrzést, 32 beállítási ellenőrzést, 156 natív összehasonlítást és 34 nyelvi továbbítási esetet rögzít. A védett komponens-kiválasztási javítást egy eredeti illesztőprogram-csomaggal újra lejátszották anélkül, hogy megváltoztatták volna a hasznos terhelést vagy telepítették volna az illesztőprogramot. Ezek a termékcsapat által keltezett eredmények, nem a jelen dokumentációfrissítés által újrafutott tesztek vagy a sikeres, valódi illesztőprogram-telepítés bizonyítéka.
 
 Ez a hub-frissítés semmilyen funkcionális alkalmazáskódot nem módosít. A korábbi alkalmazások build/unit/UI tesztjei elavult történelmi bizonyítékok maradnak. Ez nem minden harmadik féltől származó bináris program teljes visszafejtése vagy garancia minden lehetséges titkos mintára.
+
+2026. szeptember 18-i frissítés: NVDriverForge Az 0.1.4 kiegészíti a készenléti ellenőrzéseket, a natív profil biztonsági mentését, az összetevők útmutatásait, a beállításokat és a készleteket, a részletes eredményeket, a helyi jelentéseket és az alkalmazásfrissítéseket. NVRasterPulse Az 0.2 konfigurációs diagnosztikát, FPS útmutatást, szüneteltetést/folytatást, visszavonást, `.nvrp` profilokat és kedvenceket/elrejtést ad hozzá, új korlátozó motor nélkül. Az egyéni útmutatók leírják a felhasználást és a korlátokat. A statikus hub-ellenőrzések elkülönülnek a szeptember 18-i magánjelentésekben rögzített alkalmazástesztektől; ehhez a hubhoz nem történt illesztőprogram telepítése, valós profilimportálás vagy várakozási idő mérése.

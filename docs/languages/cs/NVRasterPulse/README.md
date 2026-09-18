@@ -22,14 +22,14 @@
 
 > **Nejprve nainstalujte RTSS.** NVRasterPulse vyžaduje [RivaTuner Statistics Server (RTSS), staženo z Guru3D](https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/). Aby bylo možné vynutit omezení, musí být spuštěn RTSS. Není přibalen žádný instalační program RTSS, hook DLL nebo SDK.
 
-[Stáhněte si 0.1 a stav](../docs/downloads.md#nvrasterpulse) · [Instalace](#installation) · [Jak fungují limity](#usage) · [Licence](../../../../NVRasterPulse/LICENSE)
+[Stáhněte si 0.2 a stav](../docs/downloads.md#nvrasterpulse) · [Instalace](#installation) · [Jak fungují limity](#usage) · [Licence](../../../../NVRasterPulse/LICENSE)
 
 <a id="overview-and-purpose"></a>
 ## Přehled a účel
 
 NVRasterPulse je kompaktní rozhraní Windows pro správu limitů rámců RTSS podle názvu spustitelného souboru. RTSS provádí omezení. NVRasterPulse spravuje odpovídající hodnoty profilu, zálohování a požadavky na opětovné načtení, s přístupem do zásobníku a trvalými volbami.
 
-Existuje proto, aby bylo snazší upravovat přesné limity pro jednotlivé hry, aniž by bylo nutné nahrazovat celý profil RTSS nebo narušovat jeho nastavení překrytí. Aktuálním kandidátem na **0.1** je sestavení z 9. září 2026 s požadovanou kontrolou instalace RTSS.
+Existuje proto, aby bylo snazší upravovat přesné limity pro jednotlivé hry, aniž by bylo nutné nahrazovat celý profil RTSS nebo narušovat jeho nastavení překrytí. Verze **0.2** přidává diagnostiku konfigurace, pomocníka FPS, pozastavení, vrácení zpět a sdílení profilu.
 
 <a id="features"></a>
 ## Vlastnosti
@@ -63,7 +63,7 @@ Pro každou funkci nebyla tímto auditem hubu certifikována žádná konkrétn�
 
 1. **[Stáhněte a nainstalujte RTSS z Guru3D](https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/).**
 2. Otevřete [NVRasterPulse ke stažení](../docs/downloads.md#nvrasterpulse) a zkontrolujte dostupnost vydání.
-3. Stáhněte si `NVRasterPulse-0.1-win-x64-Setup.exe` nebo `NVRasterPulse-0.1-win-x64-portable.zip` plus upozornění/kontrolní součty.
+3. Stáhněte si `NVRasterPulse-0.2-win-x64-Setup.exe` nebo `NVRasterPulse-0.2-win-x64-portable.zip` plus upozornění/kontrolní součty.
 4. Porovnejte SHA-256. Spusťte instalaci nebo extrahujte celý přenosný ZIP do zapisovatelné místní složky.
 5. Otevřete `NVRasterPulse.exe`. Pokud RTSS chybí, použijte **Stáhnout RTSS**, nainstalujte jej a poté **Zkontrolujte znovu** nebo vyberte `RTSS.exe` ručně.
 6. Spusťte RTSS pomocí jeho normální zkratky nebo pomocí tlačítka RTSS NVRasterPulse, pokud je zastaven.
@@ -87,6 +87,23 @@ Použijte akci koše k odstranění přepisů omezovače NVRasterPulse. Neodstra
 **Zavření a ukončení:** hlavní okno se může skrýt do zásobníku. Normální **Ukončit** ponechá RTSS spuštěný a uložené limity nedotčené. **Quit + RTSS** požaduje normální uzavření odpovídajícího procesu RTSS v aktuální relaci, počká až osm sekund a nevynucuje ho. Uložené limity zůstávají v obou případech zachovány.
 
 Jazyk a motiv se volí v aplikaci. Spuštění při přihlášení Windows je volitelné a je určeno pro nainstalovanou kopii. Informační tlačítko vysvětluje běžné akce.
+
+<a id="diagnostics-and-profile-tools"></a>
+## Diagnostické a profilové nástroje
+
+Otevřete nabídku akcí pro další nástroje. Zachovávají RTSS Global, nastavení překrytí a výjimky.
+
+**Diagnostika:** kontrola místních/efektivních limitů, zastavený RTSS, chybějící spustitelný soubor, žádné zjištěné okno, zakázáno hákování, dědičnost, pozastavené limity, konkurenční nastavení a duplicitní názvy spustitelných souborů. Tato kontrola pouze pro čtení popisuje konfiguraci; nedokazuje to, že je hra napojena na RTSS nebo neměří její FPS.
+
+**Pomocník FPS:** vyberte zobrazení a sami deklarujte VRR/G-Sync, V-Sync, Reflex a Frame Generation. Zaoblená obnovovací frekvence pochází z Windows. Pokud je Reflex nebo Frame Generation aktivní nebo neznámý, nenabízí se žádné automatické omezení. Pro VRR se zapnutým V-Sync a vypnutým Reflex/FG heuristika odečte alespoň 3 FPS nebo přibližně 2 % obnovovací frekvence. To není měřené optimum. Použitím návrhu se návrh vyplní; **Uložit** zůstává samostatnou akcí.
+
+**Pozastavit a obnovit:** pozastavit omezení vybraného programu a poté obnovit jeho předchozí pole omezovače. Konfliktní změny jiným nástrojem zabraňují nejednoznačnému životopisu. Skrytím záznamu se nepozastaví jeho horní hranice.
+
+**Undo:** obnoví poslední změnu v šesti polích spravovaného omezovače pro daný program. Existuje jedna úroveň; toto neobnoví celý RTSS. Konfliktní vnější změny jsou odmítnuty. Zálohy souborů zůstávají oddělené.
+
+**Sdílet profily:** exportovat vybrané profily do souboru `.nvrp`. Import zobrazí náhled a ve výchozím nastavení ponechá existující velká písmena nezaškrtnutá. Soubor obsahuje pouze názvy spustitelných souborů, limity a stavy, bez absolutních cest nebo skriptů. Zkontrolujte svůj výběr a přihlaste se. Chyba I/O může zanechat některé profily již aplikované; výsledek je identifikuje a každý si ponechá svůj zpět. Identické názvy spustitelných souborů stále adresují stejný profil RTSS.
+
+**Oblíbené a skryté položky:** nejprve připněte užitečné programy, skryjte nechtěné položky a obnovte je ve vyhrazeném dialogu. Tyto volby přetrvávají. Uzavřená oblíbená položka se nezobrazí jako spuštěná aplikace.
 
 <a id="screenshots"></a>
 ## Snímky obrazovky

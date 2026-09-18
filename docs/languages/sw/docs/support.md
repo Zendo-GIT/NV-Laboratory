@@ -23,9 +23,9 @@ Hawa ndio watahiniwa waliotayarishwa, si matrix ya uidhinishaji kwa michanganyik
 | Zana | Windows / wakati wa kukimbia | Vifaa / utegemezi wa nje | Operesheni zinazohitaji utunzaji |
 | --- | --- | --- | --- |
 | NVPI fork 3.0.2.3 | Windows 10/11 x64, .NET Framework 4.8 | Dereva/onyesho linalolingana la NVIDIA | Wasifu huandika na kuonyesha muhtasari |
-| NVDriverForge 0.1.2 | Windows 10 kujenga 19041+ / 11 x64; .NET/WPF pamoja | Kifurushi cha viendeshaji kinacholingana cha NVIDIA | Usakinishaji ulioinuliwa, mipangilio ya hali ya juu, NVENC ya hiari |
-| NVMFG Unlock40 0.1.1 | Windows 10/11 x64; .NET/WPF imejumuishwa, wasaidizi wa Mfumo 4.8 | RTX 40, mchezo unaostahiki wa DLSS FG na mtoaji aliyebandikwa | Uwekaji viraka wa ndani ya mchezo, jarida la wasifu wa kimataifa, masasisho ya mchezo wa SDK |
-| NVRasterPulse 0.1 | Windows 10/11 x64, .NET Framework 4.8 | RTSS imewekwa; kukimbia kwa kofia | RTSS mabadiliko ya wasifu yanayoweza kutekelezwa |
+| NVDriverForge 0.1.4 | Windows 10 kujenga 19041+ / 11 x64; .NET/WPF pamoja | Kifurushi cha viendeshaji kinacholingana cha NVIDIA | Usakinishaji ulioinuliwa, mipangilio ya hali ya juu, NVENC ya hiari |
+| NVMFG Unlock40 0.2.3 | Windows 10/11 x64; .NET/WPF imejumuishwa, wasaidizi wa Mfumo 4.8 | RTX 40, mchezo unaostahiki wa DLSS FG na mtoaji aliyebandikwa | Uwekaji viraka wa ndani ya mchezo, jarida la wasifu wa kimataifa, masasisho ya mchezo wa SDK |
+| NVRasterPulse 0.2 | Windows 10/11 x64, .NET Framework 4.8 | RTSS imewekwa; kukimbia kwa kofia | RTSS mabadiliko ya wasifu yanayoweza kutekelezwa |
 
 Hakuna kifurushi cha ARM64 kilichotayarishwa. Upatikanaji wa Display/API na matoleo ya zamani ya Windows yanaweza kupunguza vipengele vya mtu binafsi. Hakuna toleo la chini kabisa la NVIDIA au RTSS lililovumbuliwa. Heshi halisi ya mtoa huduma wa NVMFG iko katika [asili](provenance.md).
 
@@ -47,6 +47,8 @@ Tumia [fomu ya mdudu](https://github.com/Zendo-GIT/NV-Laboratory/issues/new?temp
 | NVMFG inasubiri mipangilio | Tatua urejeshaji michezo ikiwa imefungwa, kuhifadhi mabadiliko kutoka kwa zana zingine. |
 | Kofia ya RP haina athari | Endesha RTSS, tambua EXE ya mchezo halisi, kagua hali ya ndoano na mipaka inayoshindana. |
 | Kofia ya RP inaendelea baada ya kuondolewa | Kagua RTSS Global; uondoaji mabadiliko ya kikomo cha ndani hubatilisha pekee. |
+
+NVDriverForge inatoa ripoti ya ndani ya JSON inayoweza kutazamwa; NVMFG inatoa uchunguzi katika About. Pendelea ripoti hizi zilizochujwa kwenye kumbukumbu kamili ya kumbukumbu na uikague kabla ya kushiriki. Kizuizi cha urejeshaji kilichoripotiwa kwenye NVMFG 0.1.1 bado hakina sababu iliyothibitishwa; kuhifadhi jarida lake na kurekodi msimbo wowote wa makosa unaopatikana. NVRasterPulse 0.2 inatoa uchunguzi wa usanidi katika menyu ya vitendo vyake, bila kupima FPS.
 
 <a id="logs-and-privacy"></a>
 ## Kumbukumbu na faragha

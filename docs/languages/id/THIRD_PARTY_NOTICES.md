@@ -18,7 +18,7 @@
 <a id="third-party-notices-and-credits"></a>
 # Pemberitahuan dan kredit pihak ketiga
 
-Audit awal: 09-09-2026; NVDriverForge 0.1.3 dan pembaruan asal: 10-09-2026. **Lisensi komponen mencakup komponen tersebut, bukan keseluruhan rangkaian.** Sumber aplikasi tetap bersifat pribadi. Pemberitahuan hak cipta dan izin dipertahankan kata demi kata; tabel ini adalah indeks, bukan penggantinya. “Eksternal” berarti tidak didistribusikan dalam aset aplikasi.
+Audit awal: 09-09-2026; ulasan paket dan asal saat ini: 18-09-2026. NVDriverForge 0.1.4, NVMFG Unlock40 0.2.3 dan NVRasterPulse 0.2 mempertahankan lisensi komponen yang ada. Profile Inspector 3.0.2.3/setup-r2 tidak berubah. **Lisensi komponen mencakup komponen tersebut, bukan keseluruhan rangkaian.** Sumber aplikasi tetap bersifat pribadi. Pemberitahuan hak cipta dan izin dipertahankan kata demi kata; tabel ini adalah indeks, bukan penggantinya. “Eksternal” berarti tidak didistribusikan dalam aset aplikasi.
 
 | Komponen/proyek asli | Penulis | Situs resmi, repositori, atau unduh | Lisensi / pemberitahuan | Gunakan di NV Tools | Modifikasi |
 | --- | --- | --- | --- | --- | --- |

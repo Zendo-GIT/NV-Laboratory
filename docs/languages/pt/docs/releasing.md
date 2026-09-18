@@ -37,9 +37,9 @@ Nunca selecione o espaço de trabalho de desenvolvimento pai, o diretório de au
 | Ferramenta | Etiqueta | Política de versão |
 | --- | --- | --- |
 | NVIDIA Profile Inspector – NV Tools Fork | nvpi-v3.0.2.3 | Versão existente do aplicativo em quatro partes; a revisão de configuração 2 tem seu próprio nome de arquivo |
-| NVDriverForge | nvdriverforge-v0.1.3 | Esquema 0.x existente; atualizações versionadas preservam pacotes anteriores |
-| NVMFG Unlock40 | nvmfg-unlock40-v0.1.1 | Candidato UI2 identificado por hashes exatos sem inventar uma nova versão do aplicativo |
-| NVRasterPulse | nvrasterpulse-v0.1 | Versão existente em duas partes |
+| NVDriverForge | nvdriverforge-v0.1.4 | Esquema 0.x existente; atualizações versionadas preservam pacotes anteriores |
+| NVMFG Unlock40 | nvmfg-unlock40-v0.2.3 | Versão do aplicativo 0.2.3; alterações cumulativas desde o público 0.1.1 |
+| NVRasterPulse | nvrasterpulse-v0.2 | Versão existente em duas partes |
 
 O mantenedor pode publicar diretamente ou autorizar um assistente a publicar os ativos auditados. A publicação é explícita; nenhum fluxo de trabalho cria um Release em cada commit.
 
@@ -52,10 +52,13 @@ O mantenedor pode publicar diretamente ou autorizar um assistente a publicar os 
 
 Os links de tags por projeto evitam enviar usuários para outra ferramenta por meio de um link `releases/latest` compartilhado. Os arquivos automáticos **Source code** do GitHub contêm este hub de documentação. As fontes de aplicativos permanecem privadas. Os avisos de componentes originais permanecem intactos e uma versão não resolve a reserva NVIDIA SDK documentada do NVMFG.
 
+
+A atualização de 18 de setembro prepara três novas tags; a versão Profile Inspector existente permanece inalterada. Os nomes dos ativos, tags e `SHA256SUMS.txt` devem permanecer exatos para as verificações de atualização do aplicativo. Publique lançamentos normais sem o sinalizador de pré-lançamento para expô-los a verificações de lançamento estável; NVMFG permanece experimental.
+
 <a id="integrity-and-storage"></a>
 ## Integridade e armazenamento
 
-Nunca substitua silenciosamente os bytes binários publicados. Use uma nova versão explícita ou revisão do instalador com novos hashes. Os sidecars legais complementam os avisos incorporados. NVDriverForge 0.1.3 portátil tem 141.760.351 bytes, acima do limite comum de arquivo Git de 100 MiB do GitHub. Liberar anexos evita colocar binários ou Git LFS neste hub. [Orientação para arquivos grandes GitHub](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
+Nunca substitua silenciosamente os bytes binários publicados. Use uma nova versão explícita ou revisão do instalador com novos hashes. Os sidecars legais complementam os avisos incorporados. NVDriverForge 0.1.4 portátil tem 142.017.891 bytes, acima do limite comum de arquivo Git de 100 MiB do GitHub. Liberar anexos evita colocar binários ou Git LFS neste hub. [Orientação para arquivos grandes GitHub](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
 
 O relatório de vulnerabilidade privada deve ser habilitado nas configurações de segurança do repositório. Verifique sua disponibilidade antes de direcionar relatórios sensíveis para lá; [SECURITY.md](../SECURITY.md) fornece um substituto que não expõe detalhes da vulnerabilidade.
 

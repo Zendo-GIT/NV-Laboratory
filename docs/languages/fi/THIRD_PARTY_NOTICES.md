@@ -18,7 +18,7 @@
 <a id="third-party-notices-and-credits"></a>
 # Kolmannen osapuolen ilmoitukset ja hyvitykset
 
-Ensimmäinen tarkastus: 2026-09-09; NVDriverForge 0.1.3 ja alkuperäpäivitys: 2026-09-10. **Osan lisenssi kattaa kyseisen osan, ei koko pakettia.** Sovelluslähde pysyy yksityisenä. Tekijänoikeus- ja lupailmoitukset säilytetään sanatarkasti; tämä taulukko on indeksi, ei korvaa niitä. "Ulkoinen" tarkoittaa, että sitä ei ole jaettu sovelluksen resursseihin.
+Ensimmäinen tarkastus: 2026-09-09; nykyinen paketti ja alkuperäkatsaus: 2026-09-18. NVDriverForge 0.1.4, NVMFG Unlock40 0.2.3 ja NVRasterPulse 0.2 säilyttävät nykyiset komponentilisenssit. Profile Inspector 3.0.2.3/setup-r2 ei muutu. **Osan lisenssi kattaa kyseisen osan, ei koko pakettia.** Sovelluslähde pysyy yksityisenä. Tekijänoikeus- ja lupailmoitukset säilytetään sanatarkasti; tämä taulukko on indeksi, ei korvaa niitä. "Ulkoinen" tarkoittaa, että sitä ei ole jaettu sovelluksen resursseihin.
 
 | Komponentti / alkuperäinen projekti | Tekijä | Virallinen sivusto, arkisto tai lataus | Lisenssi/ilmoitus | Käytä NV Tools:ssä | Muutokset |
 | --- | --- | --- | --- | --- | --- |

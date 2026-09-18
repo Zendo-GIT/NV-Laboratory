@@ -18,7 +18,7 @@
 <a id="third-party-notices-and-credits"></a>
 # Harmadik felek értesítései és jóváírásai
 
-Kezdeti ellenőrzés: 2026-09-09; NVDriverForge 0.1.3 és származási frissítés: 2026-09-10. **Az összetevő licence az adott összetevőre vonatkozik, nem a teljes csomagra.** Az alkalmazás forrása privát marad. A szerzői jogi és engedélyezési megjegyzések szó szerint megmaradnak; ez a táblázat egy index, nem helyettesíti őket. A „külső” azt jelenti, hogy nincs elosztva az alkalmazás eszközeiben.
+Kezdeti ellenőrzés: 2026-09-09; aktuális csomag és származási áttekintés: 2026-09-18. Az NVDriverForge 0.1.4, NVMFG Unlock40 0.2.3 és NVRasterPulse 0.2 megtartja a meglévő összetevőlicenceket. Profile Inspector Az 3.0.2.3/setup-r2 változatlan. **Az összetevő licence az adott összetevőre vonatkozik, nem a teljes csomagra.** Az alkalmazás forrása privát marad. A szerzői jogi és engedélyezési megjegyzések szó szerint megmaradnak; ez a táblázat egy index, nem helyettesíti őket. A „külső” azt jelenti, hogy nincs elosztva az alkalmazás eszközeiben.
 
 | Alkatrész / eredeti projekt | Szerző | Hivatalos oldal, adattár vagy letöltés | Engedély / közlemény | Használja az NV Tools-ben | Módosítások |
 | --- | --- | --- | --- | --- | --- |

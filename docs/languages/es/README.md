@@ -30,9 +30,9 @@
 | Proyecto | Propósito | Versión | Documentación | Descargar |
 | --- | --- | --- | --- | --- |
 | **NVIDIA Profile Inspector – NV Tools Fork** | Editor de perfiles de controlador NVIDIA con pantalla, color y controles HDR y ICC/WCS agregados. Anteriormente NVPI Custom. | 3.0.2.3 | [Guía](NVIDIA-Profile-Inspector/README.md) | [Paquetes](docs/downloads.md#nvidia-profile-inspector) |
-| **NVDriverForge** | Seleccione los componentes del controlador, revise los ajustes opcionales e instale un paquete de controlador NVIDIA original. | 0.1.3 | [Guía](NVDriverForge/README.md) | [Paquetes](docs/downloads.md#nvdriverforge) |
-| **NVMFG Unlock40** | Herramienta experimental RTX 40 MFG con opciones por juego y mantenimiento Streamline SDK. | 0.1.1 | [Guía](NVMFG-Unlock40/README.md) | [Paquetes y estado](docs/downloads.md#nvmfg-unlock40) |
-| **NVRasterPulse** | Administre los límites RTSS FPS por ejecutable, con valores fraccionarios, copias de seguridad y acceso a bandejas. | 0.1 | [Guía](NVRasterPulse/README.md) | [Paquetes](docs/downloads.md#nvrasterpulse) |
+| **NVDriverForge** | Prepare e instale un controlador NVIDIA original con opciones guiadas, copias de seguridad y recuperación. | 0.1.4 | [Guía](NVDriverForge/README.md) | [Paquetes](docs/downloads.md#nvdriverforge) |
+| **NVMFG Unlock40** | Experimental RTX 40 MFG, biblioteca de juegos persistente, diagnóstico y mantenimiento Streamline SDK. | 0.2.3 | [Guía](NVMFG-Unlock40/README.md) | [Paquetes y estado](docs/downloads.md#nvmfg-unlock40) |
+| **NVRasterPulse** | Administre los límites RTSS FPS por programa: diagnóstico, sugerencias, pausa, deshacer y compartir perfil. | 0.2 | [Guía](NVRasterPulse/README.md) | [Paquetes](docs/downloads.md#nvrasterpulse) |
 
 **Descargas:** [pagina de descarga](docs/downloads.md) enumera el estado, los archivos y los valores de SHA-256 de cada versión. Las características experimentales y los límites de compatibilidad se describen en las guías del proyecto.
 

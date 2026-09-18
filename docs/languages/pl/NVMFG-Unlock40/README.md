@@ -20,7 +20,7 @@
 
 **Eksperymentalny NVIDIA Multi Frame Generation dla GeForce RTX 40, z centralnym kontrolerem i możliwością wyboru dla poszczególnych gier.**
 
-[Pobierz 0.1.1 i status](../docs/downloads.md#nvmfg-unlock40) · [Instalacja](#installation) · [Pod prąd](#upstream-and-modifications) · [Licencje](LICENSES/README.md)
+[Pobierz 0.2.3 i status](../docs/downloads.md#nvmfg-unlock40) · [Instalacja](#installation) · [Pod prąd](#upstream-and-modifications) · [Licencje](LICENSES/README.md)
 
 <a id="overview-and-purpose"></a>
 ## Przegląd i cel
@@ -31,7 +31,7 @@ W celu porównania i udoskonalenia pracy skonsultowano się z [RTX40MFG-Unlock](
 
 Istnieje, aby centralnie koordynować eksperymentalne zachowanie MFG, zapamiętywać wybory specyficzne dla gry i zapewniać widoczność aktualizacji i kopii zapasowych w czasie wykonywania. Nie dodaje DLSS Frame Generation do każdej gry ani nie konwertuje dowolnej implementacji FSR.
 
-Przygotowany kandydat to **0.1.1**, w tym korekta wizualna z listy SDK zarejestrowana wewnętrznie jako UI2. Wersja publiczna pozostaje 0.1.1; jego dokładne skróty odróżniają tego kandydata od starszych kompilacji lokalnych.
+Bieżący pakiet to **0.2.3**. Dodaje trwałą bibliotekę gier, informacje o aktywności i możliwościach, lokalną diagnostykę oraz poprawione zachowanie wyboru/postępu. [Pliki do pobrania](../docs/downloads.md#nvmfg-unlock40) identyfikuje dokładne pliki i skróty.
 
 <a id="features"></a>
 ## Funkcje
@@ -68,7 +68,7 @@ Sama etykieta wersji nie wystarczy: liczy się sterownik, skrót dostawcy, integ
 ## Instalacja
 
 1. Przeczytaj [status kandydata i notatka licencyjna](../docs/downloads.md#nvmfg-unlock40).
-2. Pobierz `NVMFGUnlock40-0.1.1-Setup-x64.exe` lub `NVMFGUnlock40-0.1.1-Portable-x64.zip`, gdy będzie dostępna jego wersja.
+2. Pobierz `NVMFGUnlock40-0.2.3-Setup-x64.exe` lub `NVMFGUnlock40-0.2.3-Portable-x64.zip`, gdy będzie dostępna jego wersja.
 3. Sprawdź SHA-256 i zachowaj dołączone uwagi. Zainstaluj .NET Framework 4.8, jeśli Windows jeszcze go nie udostępnia.
 4. Uruchom Instalatora lub wyodrębnij **cały** przenośny plik ZIP do zapisywalnego folderu lokalnego.
 5. Uruchom `NVMFGUnlock40.exe`; zachowaj `agent`, `driver`, `engine` i `Licenses` w dostarczonym układzie.
@@ -90,6 +90,21 @@ Zamknięcie głównego okna może spowodować pozostawienie kontrolera w zasobni
 
 **Streamline SDKs:** na stronie NVIDIA SDK pobierz oficjalną wersję lub zaimportuj kompatybilny lokalny SDK. Import przechowuje zweryfikowaną kopię; **Use this version** wybiera go, a **Uninstall** usuwa tę kopię z pamięci podręcznej. Brakujące biblioteki DLL Streamline można uzupełnić za pomocą oficjalnego pliku NVIDIA SDK, podając wskazane źródło. Nie powoduje to pobrania/zastąpienia modelu NGX. Zamknij grę, wybierz zamierzoną aktualizację gry i zachowaj jej oryginalną kopię zapasową. Aby przywrócić pliki gry, użyj przywracania kopii zapasowej, a nie przycisku Uninstall pamięci podręcznej.
 
+<a id="library-diagnostics-and-updates"></a>
+## Biblioteka, diagnostyka i aktualizacje
+
+**Stała biblioteka:** wybierz kilka folderów z grami, w tym różne dyski, przed rozpoczęciem jednego skanowania. Postęp jest widoczny i istnieje możliwość anulowania. Po pierwszym skanowaniu lokalna pamięć podręczna przywraca bibliotekę po uruchomieniu, bez konieczności przeglądania każdego folderu gry. Odśwież, aby znaleźć zmiany lub dodaj kolejny folder. Operacje konserwacyjne nadal powodują ponowną weryfikację plików, których dotyczy problem; monitorowanie kopii zapasowych pozostaje aktywne. Pamięć podręczna jest przechowywana pod adresem `%LOCALAPPDATA%\RtxMfg\library-cache.json`.
+
+**Wybór:** Ctrl+A zaznacza wszystko, a Ctrl+D czyści aktywną kartę Gry lub Kopie zapasowe. Żadna gra nie jest wybierana automatycznie. Aktualizacje i odświeżenia aktywności nie powodują już selekcji duchów ani niespójnych zliczeń.
+
+**Aktywność i kompatybilność:** Informacje MFG dotyczące poszczególnych gier pochodzą z obserwacji NGX bez nowej nakładki. Nie jest to fizyczna liczba wyświetlonych klatek. Obsługa Dynamic-with-V-Sync wynika z możliwości środowiska wykonawczego; nieznane możliwości nie są określane na podstawie numeru wersji. Aplikacja nie zmienia ani V-Sync, ani VRR. Gdy V-Sync jest wyłączony, Dynamic pozostaje zawieszony; wybory stałe lub kontrolowane przez grę są oddzielne.
+
+**Następne uruchomienie:** tymczasowe wykluczenie pomija aktualizację przy następnym uruchomieniu gry i przywraca normalne zarządzanie po jej zamknięciu. Nie może usunąć biblioteki DLL już załadowanej do gry: zamknij i uruchom ponownie tę grę. Wallpaper Engine jest rozpoznawany jako aplikacja komputerowa; ta poprawka zachowuje ochronę faktycznie ignorowanych gier.
+
+**Preferencje i obsługa:** Import/eksport preferencji wymaga ręcznego ponownego powiązania folderów z grami. Lokalna diagnostyka w sekcji Informacje filtruje prywatne informacje i raportuje dostępne kody błędów NVAPI lub kategorie konfliktów. Przejrzyj go przed udostępnieniem; nic nie jest przesyłane automatycznie.
+
+**Aktualizacje aplikacji:** opcjonalna kontrola wyświetla informacje o wersji i oferuje oficjalną konfigurację. Jawne pobieranie jest sprawdzane pod kątem rozmiaru GitHub i metadanych SHA-256; sam inicjujesz instalację. Wersja 0.2.3 czyści także komunikaty o zakończonym postępie, zachowując jednocześnie znaczące błędy i wyniki. Dodatki te obejmują zmiany wprowadzone od wersji publicznej 0.1.1.
+
 <a id="screenshots"></a>
 ## Zrzuty ekranu
 
@@ -109,6 +124,7 @@ Lokalne kopie zapasowe w czasie wykonywania gier korzystają z `%LOCALAPPDATA%\N
 <a id="known-limitations"></a>
 ## Znane ograniczenia
 
+- Zgłoszona blokada aktywacji/przywrócenia/dezinstalacji 0.1.1 pozostaje nieodtworzona, a jej przyczyna jest nieznana. To wydanie nie ma na celu naprawienia tego problemu. W przypadku awarii zachowaj dziennik odzyskiwania i sprawdź lokalną diagnostykę; nie wymuszaj usunięcia danych odzyskiwania.
 - Eksperymentalne łatki natywne mogą powodować awarie lub artefakty wizualne; nierozwiązana awaria Bodycam jest rejestrowana w historii rozwoju.
 - Kontrolowane testy renderera nie stanowią certyfikacji dla każdej gry, sterownika lub zabezpieczenia przed oszustwami.
 - Wygenerowane ramki nie tworzą nowych próbek wejściowych; ten koncentrator nie gwarantuje żadnych zmierzonych opóźnień ani wzrostu wydajności.

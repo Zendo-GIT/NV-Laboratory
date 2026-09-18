@@ -18,7 +18,7 @@
 <a id="provenance-changes-and-licensing"></a>
 # Provenience, změny a licence
 
-Tento audit popisuje kandidáty připravené dne **2026-09-09**. Zdroje aplikací zůstávají soukromé; veřejné inventáře obsahují názvy souborů a hash, nikoli zdrojový kód. Viz [oznámení o úplných součástech](../THIRD_PARTY_NOTICES.md).
+Tento audit popisuje kandidáty připravené dne **2026-09-18**. Zdroje aplikací zůstávají soukromé; veřejné inventáře obsahují názvy souborů a hash, nikoli zdrojový kód. Viz [oznámení o úplných součástech](../THIRD_PARTY_NOTICES.md).
 
 <a id="nvidia-profile-inspector--nv-tools-fork"></a>
 ## NVIDIA Profile Inspector – NV Tools Fork
@@ -68,11 +68,13 @@ Pomocník přizpůsobí NvapiDrsWrapper a NativeArrayHelper NVPI do samostatné 
 
 MinHook reference: `8fda4f5481fed5797dc2651cd91e238e9b3928c6`; zděděná kompilovaná podmnožina nemá ve srovnání žádné funkční lokální změny. Streamline integrační hlavičky: 2.12; licence otevřené hlavičky ověřená na v2.12.0. Zdroj hlavičky NGX: NVIDIA/DLSS potvrdit `a291cc7d2cc642a51566f3dfd5376f635cd1b284`.
 
-Kandidátský motor SHA-256: `0E7FC0277C88B22095B622F6A3CB292EC0C14F7A0253D392502257B75E548890`.
+Kandidátský motor SHA-256: `C793770D329B99CD9C5C640317CE435BFE353CA2868E36CF5DCD4D5295EFAE13`.
 
 Požadovaný poskytovatel SHA-256 v engine.json: `C64928FDB7C48A57722EA8EEF2662171EDC323473ADEA66C29A206A23F1A2BED`. Hlášená rodina poskytovatelů 310.9 není zaměnitelná s tímto přesným hashem. Není zahrnuta žádná knihovna DLL ani model poskytovatele.
 
 **Nevyřízený bod licencování:** plná licence NVIDIA RTX SDK, verze 14. března 2024, obsahuje část 4(d) omezení týkající se obcházení technických omezení. Audit nezakládá oprávnění pro toto použití. Ponechání licence motoru MIT, bezplatné používání nebo sledování jiných modů tuto samostatnou podmínku nevyřeší. Příprava kandidáta není právní povolení. Původní krátké záhlaví je doplněno plnou licencí; jeho text Windows-1252 je také poskytován jako čitelný UTF-8 se zachováním původních bajtů.
+
+Nativní srovnání bylo přepočítáno pro 0.2.3: stejných 48 souborů a klasifikací. Od předchozího auditu se `game_selection.cpp`, `game_selection.h` a `patcher.cpp` změnily pro pozorování aktivity/schopnosti. Nová knihovna, diagnostika, preference, aktualizace a pracovní postupy výběru patří do aplikace správce. Licence komponent a požadovaný hash poskytovatele se nemění.
 
 <a id="nvrasterpulse"></a>
 ## NVRasterPulse
@@ -102,3 +104,5 @@ Pozdější revize 2 nastavení NVPI opravuje výběr samostatného jazyka pomoc
 NVDriverForge 0.1.3 byl dokončen dne 2026-09-10. Jeho soukromá ověřovací zpráva zaznamenává 366 testů aplikací, 118 doprovodných kontrol, 32 kontrol nastavení, 156 nativních srovnání a 34 případů přeposílání jazyků. Oprava výběru chráněné komponenty byla přehrána s původním balíčkem ovladače, aniž by se změnila jeho užitečná zátěž nebo instaloval ovladač. Jedná se o datované výsledky produktového týmu, nikoli o testy znovu provedené touto aktualizací dokumentace nebo důkaz o úspěšné skutečné instalaci ovladače.
 
 Tato aktualizace centra nemění žádný funkční kód aplikace. Dřívější testy sestavení/jednotky/UI aplikací zůstávají zastaralými historickými důkazy. Nejedná se o úplné zpětné inženýrství všech binárních souborů třetích stran ani o záruku proti všem možným tajným vzorům.
+
+Aktualizace z 18. září 2026: NVDriverForge 0.1.4 přidává kontroly připravenosti, nativní zálohování profilu, pokyny ke komponentám, předvolby a sady, podrobné výsledky, místní hlášení a aktualizace aplikací. NVRasterPulse 0.2 přidává diagnostiku konfigurace, navádění FPS, pozastavení/obnovení, vrácení zpět, profily `.nvrp` a oblíbené/skrytí bez nového omezovače. Jednotlivé návody popisují použití a limity. Statické kontroly centra jsou oddělené od testů aplikací zaznamenaných v soukromých zprávách z 18. září; pro tento hub nebyla provedena žádná instalace ovladače, import skutečného profilu ani měření latence.

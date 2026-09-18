@@ -16,7 +16,7 @@
 
 **Multi Frame Generation NVIDIA expérimentale pour GeForce RTX 40, avec contrôleur central et choix par jeu.**
 
-[Télécharger 0.1.1 et consulter le statut](../docs/downloads.fr.md#nvmfg-unlock40) · [Installation](#installation) · [Origine](#origine-et-modifications) · [Licences](LICENSES/README.md)
+[Télécharger 0.2.3 et consulter le statut](../docs/downloads.fr.md#nvmfg-unlock40) · [Installation](#installation) · [Origine](#origine-et-modifications) · [Licences](LICENSES/README.md)
 
 <a id="overview-and-purpose"></a>
 ## Présentation et raison d'être
@@ -35,9 +35,9 @@ Il coordonne le MFG expérimental, mémorise les choix propres aux jeux et rend
 visibles les mises à jour de runtimes et leurs sauvegardes. Il n'ajoute pas DLSS FG
 à tous les jeux et ne convertit pas une implémentation FSR quelconque.
 
-La candidate **0.1.1** inclut la correction visuelle de la liste SDK appelée
-UI2 dans l'historique interne. Sa version publique reste 0.1.1 ; ses empreintes
-exactes la distinguent des anciens builds locaux.
+Le paquet actuel est **0.2.3** : bibliothèque persistante, informations d'activité
+et de capacité, diagnostic local, sélection et progression corrigées. Les
+[téléchargements](../docs/downloads.fr.md#nvmfg-unlock40) précisent fichiers et empreintes.
 
 <a id="features"></a>
 ## Fonctionnalités
@@ -78,7 +78,7 @@ peuvent refuser l'attachement. Le programme ne vise pas à contourner les anti-c
 ## Installation
 
 1. Consultez le [statut de la candidate et la note de licence](../docs/downloads.fr.md#nvmfg-unlock40).
-2. Une fois publié, téléchargez `NVMFGUnlock40-0.1.1-Setup-x64.exe` ou `NVMFGUnlock40-0.1.1-Portable-x64.zip`.
+2. Une fois publié, téléchargez `NVMFGUnlock40-0.2.3-Setup-x64.exe` ou `NVMFGUnlock40-0.2.3-Portable-x64.zip`.
 3. Vérifiez le SHA-256 et gardez les notices. Installez .NET Framework 4.8 s'il n'est pas déjà fourni par Windows.
 4. Lancez le Setup ou extrayez **tout** le ZIP dans un dossier local accessible en écriture.
 5. Ouvrez `NVMFGUnlock40.exe`, en conservant `agent`, `driver`, `engine` et `Licenses`.
@@ -110,6 +110,21 @@ pas un modèle NGX. Fermez le jeu, choisissez sa mise à jour et gardez sa sauve
 Pour restaurer ses fichiers, utilisez la restauration du jeu, pas le bouton de
 désinstallation du cache SDK.
 
+<a id="library-diagnostics-and-updates"></a>
+## Bibliothèque, diagnostic et mises à jour
+
+**Bibliothèque persistante :** sélectionnez plusieurs dossiers de jeux, éventuellement sur plusieurs disques, avant de lancer une analyse. Sa progression est visible et elle peut être annulée. Après une première analyse, le cache local rétablit la bibliothèque au lancement sans parcourir tous les dossiers. Utilisez l'actualisation pour chercher des changements, ou ajoutez un dossier. Les opérations de maintenance vérifient toujours les fichiers concernés ; le suivi des sauvegardes reste actif. Le cache est stocké dans `%LOCALAPPDATA%\RtxMfg\library-cache.json`.
+
+**Sélection :** Ctrl+A sélectionne tout et Ctrl+D désélectionne tout dans l'onglet Jeux ou Sauvegardes actif. Aucun jeu n'est sélectionné automatiquement. Les changements d'activité et les rafraîchissements ne doivent plus créer de sélections fantômes ou de compteur incohérent.
+
+**Activité et compatibilité :** les informations MFG par jeu reposent sur des observations NGX, sans nouvel overlay. Elles ne mesurent pas physiquement les images affichées. Le support Dynamic avec V-Sync est lu dans les capacités du runtime ; une capacité inconnue n'est pas déduite du numéro de version. Le programme ne change ni V-Sync ni VRR. Avec V-Sync désactivé, Dynamic reste suspendu ; le choix fixe ou géré par le jeu reste distinct.
+
+**Prochain lancement :** l'action d'exclusion temporaire évite le patch au prochain lancement du jeu, puis rétablit le comportement normal après sa fermeture. Elle ne retire pas une DLL déjà chargée : fermez et relancez le jeu. Wallpaper Engine est reconnu comme application de bureau ; cette correction ne supprime pas les protections des vrais jeux ignorés.
+
+**Préférences et support :** l'import/export de préférences demande de réassocier manuellement les dossiers de jeux. Dans À propos, le diagnostic local filtre les informations privées et indique les codes d'erreur NVAPI ou les catégories de conflit disponibles. Examinez-le avant de le partager ; aucun envoi automatique n'a lieu.
+
+**Mise à jour applicative :** une vérification facultative présente les notes et propose le Setup officiel. Son téléchargement explicite est vérifié par taille et SHA-256 GitHub ; l'installation reste à votre initiative. La version 0.2.3 corrige aussi les messages de progression restant affichés après une opération terminée, tout en conservant les erreurs et résultats utiles. Ces ajouts cumulent les changements depuis la version publique 0.1.1.
+
 <a id="screenshots"></a>
 ## Captures
 
@@ -139,6 +154,7 @@ Ces fichiers peuvent contenir des chemins de jeux : masquez-les avant partage.
 <a id="known-limitations"></a>
 ## Limitations connues
 
+- Un blocage d'activation/restauration/désinstallation signalé sur la version 0.1.1 reste non reproduit et sa cause n'est pas connue. Cette version ne revendique pas sa correction. Après un échec, conservez le journal et examinez le diagnostic local ; ne forcez pas l'effacement des données de récupération.
 - Des patchs natifs expérimentaux peuvent provoquer plantages ou artefacts ; un plantage Bodycam non résolu est consigné dans l'historique.
 - Les essais d'un renderer contrôlé ne certifient pas tous les jeux, pilotes ou anti-cheats.
 - Les images générées ne sont pas de nouveaux échantillons d'entrée ; le hub ne promet aucun gain mesuré de latence ou de performances.

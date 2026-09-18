@@ -20,7 +20,7 @@
 
 **NVIDIA Multi Frame Generation ya majaribio ya GeForce RTX 40, yenye kidhibiti kikuu na chaguo za kila mchezo.**
 
-[Pakua 0.1.1 & hali](../docs/downloads.md#nvmfg-unlock40) · [Ufungaji](#installation) · [Mto wa juu](#upstream-and-modifications) · [Leseni](LICENSES/README.md)
+[Pakua 0.2.3 & hali](../docs/downloads.md#nvmfg-unlock40) · [Ufungaji](#installation) · [Mto wa juu](#upstream-and-modifications) · [Leseni](LICENSES/README.md)
 
 <a id="overview-and-purpose"></a>
 ## Muhtasari na madhumuni
@@ -31,7 +31,7 @@ NVMFG Unlock40 ni programu iliyotengenezwa kwa kujitegemea na 禅堂 Zendo (Revo
 
 Inapatikana ili kuratibu tabia ya majaribio ya MFG kuu, kukumbuka chaguo mahususi za mchezo, na kuweka masasisho na hifadhi rudufu za wakati wa utekelezaji. Haiongezi DLSS Frame Generation kwa kila mchezo au kubadilisha utekelezaji wa FSR kiholela.
 
-Mtahiniwa aliyetayarishwa ni **0.1.1**, ikijumuisha masahihisho ya kuona ya SDK yaliyorekodiwa ndani kama UI2. Toleo la umma linakaa 0.1.1; heshi zake haswa humtofautisha mgombea huyu kutoka kwa miundo ya zamani ya ndani.
+Kifurushi cha sasa ni **0.2.3**. Huongeza maktaba ya mchezo endelevu, maelezo ya shughuli na uwezo, uchunguzi wa ndani na tabia iliyorekebishwa ya uteuzi/maendeleo. [Vipakuliwa](../docs/downloads.md#nvmfg-unlock40) hutambua faili na heshi halisi.
 
 <a id="features"></a>
 ## Vipengele
@@ -68,7 +68,7 @@ Lebo ya toleo pekee haitoshi: kiendeshi, heshi ya mtoa huduma, ujumuishaji wa mc
 ## Ufungaji
 
 1. Soma toleo la [hali ya mgombea na noti ya leseni](../docs/downloads.md#nvmfg-unlock40).
-2. Pakua `NVMFGUnlock40-0.1.1-Setup-x64.exe` au `NVMFGUnlock40-0.1.1-Portable-x64.zip` Toleo lake linapatikana.
+2. Pakua `NVMFGUnlock40-0.2.3-Setup-x64.exe` au `NVMFGUnlock40-0.2.3-Portable-x64.zip` Toleo lake linapatikana.
 3. Angalia SHA-256 na uhifadhi arifa zinazoambatana. Sakinisha .NET Framework 4.8 ikiwa Windows haitoi tayari.
 4. Endesha Mipangilio, au toa ZIP nzima inayoweza kubebeka kwenye folda ya ndani inayoweza kuandikwa.
 5. Zindua `NVMFGUnlock40.exe`; weka `agent`, `driver`, `engine` na `Licenses` katika mpangilio uliotolewa.
@@ -90,6 +90,21 @@ Kufunga dirisha kuu kunaweza kuacha mtawala kwenye tray. DLL ambayo tayari imepa
 
 **Streamline SDKs:** kwenye ukurasa wa NVIDIA SDK, pakua toleo rasmi au leta SDK inayooana ya ndani. Ingiza huhifadhi nakala iliyothibitishwa; **Use this version** huichagua, na **Uninstall** huondoa nakala hiyo iliyoakibishwa. Streamline DLL zinazokosekana zinaweza kuongezwa kutoka kwa NVIDIA SDK rasmi, na chanzo kimeonyeshwa. Hii haipakui/kubadilisha muundo wa NGX. Funga mchezo, chagua sasisho la mchezo unaokusudiwa, na uhifadhi nakala yake asilia. Ili kurejesha faili za mchezo, tumia urejeshaji wake mbadala, si kitufe cha Uninstall cha kache.
 
+<a id="library-diagnostics-and-updates"></a>
+## Maktaba, uchunguzi na masasisho
+
+**Maktaba endelevu:** chagua folda kadhaa za mchezo, ikijumuisha hifadhi tofauti, kabla ya kuanza kuchanganua mara moja. Maendeleo yanaonekana na kughairi kunapatikana. Baada ya uchanganuzi wa kwanza, akiba ya ndani hurejesha maktaba inapozinduliwa bila kutembea kwenye kila folda ya mchezo. Onyesha upya ili kupata mabadiliko au kuongeza folda nyingine. Shughuli za urekebishaji bado zinasahihisha faili zilizoathiriwa; ufuatiliaji wa chelezo unabaki kuwa amilifu. Cache imehifadhiwa kwenye `%LOCALAPPDATA%\RtxMfg\library-cache.json`.
+
+**Uteuzi:** Ctrl+A huchagua zote na Ctrl+D hufuta kichupo cha Michezo au Hifadhi Nakala kinachotumika. Hakuna mchezo unaochaguliwa kiotomatiki. Masasisho ya shughuli na uonyeshaji upya haileti uteuzi wa vizushi au hesabu zisizolingana.
+
+**Shughuli na uoanifu:** Maelezo ya MFG kwa kila mchezo hutoka kwa uchunguzi wa NGX bila uwekeleaji mpya. Sio hesabu halisi ya fremu zilizoonyeshwa. Usaidizi wa Dynamic-with-V-Sync unatoka kwa uwezo wa kukimbia; uwezo usiojulikana haujabainishwa kutoka kwa nambari ya toleo. Programu haibadilishi V-Sync wala VRR. Na V-Sync imezimwa, Dynamic inasalia kusimamishwa; chaguzi zisizohamishika au zinazodhibitiwa na mchezo ni tofauti.
+
+**Uzinduzi unaofuata:** kutengwa kwa muda kunaruka viraka kwenye uzinduzi wa mchezo unaofuata na kurejesha usimamizi wa kawaida baada ya kuondoka. Haiwezi kuondoa DLL ambayo tayari imepakiwa kwenye mchezo: funga na uanze upya mchezo huo. Wallpaper Engine inatambuliwa kama programu ya eneo-kazi; marekebisho haya huhifadhi ulinzi kwa michezo halisi iliyopuuzwa.
+
+**Mapendeleo na usaidizi:** uagizaji/uhamishaji wa mapendeleo unahitaji uunganishaji upya wa folda za mchezo. Uchunguzi wa ndani katika About huchuja maelezo ya faragha na ripoti zinazopatikana NVAPI misimbo ya hitilafu au kategoria za migogoro. Ihakiki kabla ya kushiriki; hakuna kitu kinachopakiwa kiotomatiki.
+
+**Sasisho za programu:** hundi ya hiari huonyesha madokezo ya toleo na hutoa Mipangilio rasmi. Upakuaji dhahiri umeangaliwa dhidi ya saizi ya GitHub na metadata ya SHA-256; unaanzisha ufungaji mwenyewe. Toleo la 0.2.3 pia hufuta ujumbe wa maendeleo uliokamilika huku likihifadhi hitilafu na matokeo muhimu. Nyongeza hizi ni pamoja na mabadiliko tangu toleo la umma 0.1.1.
+
 <a id="screenshots"></a>
 ## Picha za skrini
 
@@ -109,6 +124,7 @@ Hifadhi rudufu za wakati wa kucheza mchezo wa ndani hutumia `%LOCALAPPDATA%\Nvid
 <a id="known-limitations"></a>
 ## Vikwazo vinavyojulikana
 
+- Kizuizi cha 0.1.1 kilichoripotiwa cha kuwezesha/kurejesha/kuondoa bado hakijatolewa na sababu yake haijulikani. Toleo hili halidai kulirekebisha. Baada ya kushindwa, kuhifadhi jarida la kurejesha na kukagua uchunguzi wa ndani; usilazimishe kufuta data ya uokoaji.
 - Vipande vya asili vya majaribio vinaweza kusababisha ajali au vizalia vya kuona; ajali ya Bodycam ambayo haijasuluhishwa imerekodiwa katika historia ya maendeleo.
 - Majaribio ya kionyeshi yanayodhibitiwa si uidhinishaji wa kila mchezo, dereva au wa kupinga udanganyifu.
 - Fremu zinazozalishwa hazitengenezi sampuli mpya za ingizo; hakuna muda uliopimwa au faida ya utendakazi inayoahidiwa na kitovu hiki.

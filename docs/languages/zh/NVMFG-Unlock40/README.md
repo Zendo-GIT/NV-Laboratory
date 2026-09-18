@@ -20,7 +20,7 @@
 
 **用于 GeForce RTX 40 的实验性 NVIDIA Multi Frame Generation，带有中央控制器和每个游戏的选择。**
 
-[下载 0.1.1 和状态](../docs/downloads.md#nvmfg-unlock40) · [安装](#installation) · [上游](#upstream-and-modifications) · [许可证](LICENSES/README.md)
+[下载 0.2.3 和状态](../docs/downloads.md#nvmfg-unlock40) · [安装](#installation) · [上游](#upstream-and-modifications) · [许可证](LICENSES/README.md)
 
 <a id="overview-and-purpose"></a>
 ## 概述和目的
@@ -31,7 +31,7 @@ NVMFG Unlock40是禅堂 Zendo (RevoluSound Team)独立开发的应用程序。�
 
 它的存在是为了集中协调实验性 MFG 行为，记住特定于游戏的选择，并保持运行时更新和备份可见。它不会将 DLSS Frame Generation 添加到每个游戏中或转换任意 FSR 实现。
 
-准备好的候选是**0.1.1**，包括内部记录为UI2的SDK-列表视觉校正。公共版本仍为0.1.1；其确切的哈希值将该候选者与旧的本地构建区分开来。
+当前软件包是**0.2.3**。它添加了持久的游戏库、活动和功能信息、本地诊断和更正的选择/进度行为。 [下载](../docs/downloads.md#nvmfg-unlock40) 识别确切的文件和哈希值。
 
 <a id="features"></a>
 ## 特点
@@ -68,7 +68,7 @@ NVMFG Unlock40是禅堂 Zendo (RevoluSound Team)独立开发的应用程序。�
 ## 安装
 
 1. 阅读 [候选人状态和许可说明](../docs/downloads.md#nvmfg-unlock40)。
-2. 当 `NVMFGUnlock40-0.1.1-Setup-x64.exe` 或 `NVMFGUnlock40-0.1.1-Portable-x64.zip` 版本可用时，下载该版本。
+2. 当 `NVMFGUnlock40-0.2.3-Setup-x64.exe` 或 `NVMFGUnlock40-0.2.3-Portable-x64.zip` 版本可用时，下载该版本。
 3. 检查 SHA-256 并保留随附的通知。如果 Windows 尚未提供，请安装 .NET Framework 4.8。
 4. 运行安装程序，或将**整个**可移植 ZIP 解压缩到可写的本地文件夹。
 5. 推出`NVMFGUnlock40.exe`；将 `agent`、`driver`、`engine` 和 `Licenses` 保留在提供的布局中。
@@ -90,6 +90,21 @@ NVMFG Unlock40是禅堂 Zendo (RevoluSound Team)独立开发的应用程序。�
 
 **Streamline SDKs：**在NVIDIA SDK页面，下载官方版本或导入兼容的本地SDK。导入存储经过验证的副本； **Use this version** 选择它，**Uninstall** 删除该缓存副本。缺少的 Streamline DLL 可以通过官方 NVIDIA SDK 进行补充，并显示源代码。这不会下载/替换 NGX 模型。关闭游戏，选择想要的游戏更新，并保留其原始备份。要恢复游戏文件，请使用其备份恢复，而不是缓存的 Uninstall 按钮。
 
+<a id="library-diagnostics-and-updates"></a>
+## 库、诊断和更新
+
+**永久库：**在开始一次扫描之前选择多个游戏文件夹，包括不同的驱动器。进度是可见的并且可以取消。第一次扫描后，本地缓存会在启动时恢复库，而无需遍历每个游戏文件夹。刷新以查找更改或添加另一个文件夹。维护操作仍会重新验证受影响的文件；备份监控保持活动状态。缓存存储在 `%LOCALAPPDATA%\RtxMfg\library-cache.json`。
+
+**选择：** Ctrl+A 选择全部，Ctrl+D 清除活动的游戏或备份选项卡。不会自动选择任何游戏。活动更新和刷新不再创建幽灵选择或不一致的计数。
+
+**活动和兼容性：** 每场比赛的 MFG 信息来自 NGX 观察结果，没有新的覆盖。它不是显示帧的物理计数。 Dynamic-with-V-Sync 支持来自运行时功能；未知功能不是从版本号推断出来的。应用程序既不更改 V-Sync 也不更改 VRR。当 V-Sync 关闭时，Dynamic 保持暂停状态；固定或游戏控制的选择是分开的。
+
+**下次启动：**临时排除在下次游戏启动时跳过修补，并在退出后恢复正常管理。它无法删除游戏中已加载的 DLL：关闭并重新启动该游戏。 Wallpaper Engine被识别为桌面应用程序；此修正保留了对实际被忽略的游戏的保护。
+
+**首选项和支持：**首选项导入/导出需要手动重新关联游戏文件夹。关于中的本地诊断会过滤私人信息并报告可用的 NVAPI 错误代码或冲突类别。分享前先回顾一下；没有任何内容会自动上传。
+
+**应用程序更新：** 可选检查显示发行说明并提供官方安装程序。根据 GitHub 大小和 SHA-256 元数据检查显式下载；您自己启动安装。版本 0.2.3 还清除已完成的进度消息，同时保留有意义的错误和结果。这些新增内容包括自公共版本 0.1.1 以来的更改。
+
 <a id="screenshots"></a>
 ## 截图
 
@@ -109,6 +124,7 @@ NVMFG Unlock40是禅堂 Zendo (RevoluSound Team)独立开发的应用程序。�
 <a id="known-limitations"></a>
 ## 已知的限制
 
+- 报告的 0.1.1 激活/恢复/卸载阻塞仍未重现，其原因未知。此版本并未声称修复该问题。发生故障后，保留恢复日志并检查本地诊断；不要强制删除恢复数据。
 - 实验性本机补丁可能会导致崩溃或视觉伪影；开发历史记录中记录了未解决的 Bodycam 崩溃。
 - 受控渲染器测试并不是针对每个游戏、驱动程序或反作弊的认证。
 - 生成的帧不会创建新的输入样本；该集线器不承诺测量延迟或性能增益。

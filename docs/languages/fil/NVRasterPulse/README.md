@@ -22,14 +22,14 @@
 
 > **I-install muna ang RTSS.** Ang NVRasterPulse ay nangangailangan ng [RivaTuner Statistics Server (RTSS), na-download mula sa Guru3D](https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/). Dapat na tumatakbo ang RTSS upang ipatupad ang mga limitasyon. Walang RTSS installer, hook DLL o SDK na naka-bundle.
 
-[I-download ang 0.1 at katayuan](../docs/downloads.md#nvrasterpulse) · [Pag-install](#installation) · [Paano gumagana ang mga limitasyon](#usage) · [Lisensya](../../../../NVRasterPulse/LICENSE)
+[I-download ang 0.2 at katayuan](../docs/downloads.md#nvrasterpulse) · [Pag-install](#installation) · [Paano gumagana ang mga limitasyon](#usage) · [Lisensya](../../../../NVRasterPulse/LICENSE)
 
 <a id="overview-and-purpose"></a>
 ## Pangkalahatang-ideya at layunin
 
 Ang NVRasterPulse ay isang compact na interface ng Windows para sa pamamahala ng mga limitasyon ng frame ng RTSS ayon sa executable na pangalan. Ginagawa ng RTSS ang paglilimita. Pinamamahalaan ng NVRasterPulse ang mga kaukulang value ng profile, pag-backup at mga kahilingan sa pag-reload, na may access sa tray at patuloy na mga pagpipilian.
 
-Umiiral ito upang gawing mas madaling i-edit ang mga eksaktong limitasyon sa bawat laro nang hindi pinapalitan ang isang buong profile ng RTSS o nakakagambala sa mga setting ng overlay nito. Ang kasalukuyang kandidato na **0.1** ay ang September 9, 2026 build na may kinakailangang RTSS installation check.
+Umiiral ito upang gawing mas madaling i-edit ang mga eksaktong limitasyon sa bawat laro nang hindi pinapalitan ang isang buong profile ng RTSS o nakakagambala sa mga setting ng overlay nito. Ang Bersyon **0.2** ay nagdaragdag ng mga diagnostic ng configuration, isang FPS na katulong, i-pause, i-undo at pagbabahagi ng profile.
 
 <a id="features"></a>
 ## Mga tampok
@@ -63,7 +63,7 @@ Walang partikular na RTSS na minimum na bersyon ang na-certify para sa bawat fun
 
 1. **[I-download at i-install ang RTSS mula sa Guru3D](https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/).**
 2. Buksan ang [Mga pag-download ng NVRasterPulse](../docs/downloads.md#nvrasterpulse) at tingnan ang availability ng Paglabas.
-3. I-download ang `NVRasterPulse-0.1-win-x64-Setup.exe` o `NVRasterPulse-0.1-win-x64-portable.zip`, kasama ang mga notice/checksum.
+3. I-download ang `NVRasterPulse-0.2-win-x64-Setup.exe` o `NVRasterPulse-0.2-win-x64-portable.zip`, kasama ang mga notice/checksum.
 4. Ihambing ang SHA-256. Patakbuhin ang Setup o i-extract ang buong portable ZIP sa isang nasusulat na lokal na folder.
 5. Buksan ang `NVRasterPulse.exe`. Kung nawawala ang RTSS, gamitin ang **Download RTSS**, i-install ito, pagkatapos ay **Suriin muli**, o manu-manong piliin ang `RTSS.exe`.
 6. Simulan ang RTSS gamit ang normal na shortcut nito o ang NVRasterPulse na button ng RTSS kung ito ay itinigil.
@@ -87,6 +87,23 @@ Gamitin ang trash action para alisin ang mga override ng limiter ng NVRasterPuls
 **Pagsasara at pagtigil:** ang pangunahing window ay maaaring magtago sa tray. Ang normal na **Quit** ay iniiwan ang RTSS na tumatakbo at ang mga naka-save na limitasyon ay buo. **Quit + RTSS** humihiling ng normal na pagsasara ng tumutugmang proseso ng RTSS sa kasalukuyang session, naghihintay ng hanggang walong segundo at hindi ito pinipilit na patayin. Nananatili ang mga nakaimbak na limitasyon sa parehong mga kaso.
 
 Pinipili ang wika at tema sa app. Ang pagsisimula sa Windows sign-in ay opsyonal at nilayon para sa isang naka-install na kopya. Ipinapaliwanag ng button ng impormasyon ang mga karaniwang pagkilos.
+
+<a id="diagnostics-and-profile-tools"></a>
+## Mga tool sa diagnostic at profile
+
+Buksan ang menu ng mga pagkilos para sa mga karagdagang tool. Pinapanatili nila ang RTSS Global, mga setting ng overlay at mga pagbubukod.
+
+**Diagnostics:** siyasatin ang mga lokal/epektibong limitasyon, huminto sa RTSS, isang nawawalang executable, walang nakitang window, hindi pinagana ang hooking, inheritance, naka-pause na mga limitasyon, nakikipagkumpitensya na mga setting at mga duplicate na executable na pangalan. Inilalarawan ng read-only na check na ito ang configuration; hindi nito pinatutunayan na ang isang laro ay nakakabit ng RTSS o sinusukat ang FPS nito.
+
+**FPS helper:** piliin ang display at ideklara ang VRR/G-Sync, V-Sync, Reflex at Frame Generation sa iyong sarili. Ang rounded refresh frequency ay nagmumula sa Windows. Kung ang Reflex o Frame Generation ay aktibo o hindi kilala, walang awtomatikong cap ang inaalok. Para sa VRR na naka-on ang V-Sync at naka-off ang Reflex/FG, binabawasan ng heuristic ang hindi bababa sa 3 FPS o humigit-kumulang 2% ng rate ng pag-refresh. Hindi ito sinusukat na pinakamabuting kalagayan. Ang paglalapat ng mungkahi ay pumupuno sa draft; Nananatiling hiwalay na pagkilos ang **I-save**.
+
+**I-pause at ipagpatuloy:** suspindihin ang cap ng napiling programa, pagkatapos ay i-restore ang mga nakaraang field ng limiter nito. Ang mga salungat na pagbabago ng isa pang tool ay pumipigil sa isang hindi maliwanag na resume. Ang pagtatago ng isang entry ay hindi naka-pause sa cap nito.
+
+**I-undo:** i-restore ang huling pagbabago sa anim na pinamamahalaang limiter field para sa program na iyon. May isang antas; hindi nito nire-restore ang lahat ng RTSS. Ang mga salungat na panlabas na pagbabago ay tinatanggihan. Nananatiling hiwalay ang mga backup ng file.
+
+**Ibahagi ang mga profile:** i-export ang mga napiling profile sa isang `.nvrp` file. Ang pag-import ay nagpapakita ng preview at nag-iiwan ng mga kasalukuyang cap na hindi naka-check bilang default. Ang file ay naglalaman lamang ng mga executable na pangalan, limitasyon at estado, nang walang ganap na landas o script. Suriin ang iyong pinili at ilapat. Ang isang I/O error ay maaaring mag-iwan ng ilang profile na nailapat na; ang resulta ay kinikilala ang mga ito at ang bawat isa ay nagpapanatili ng pag-undo nito. Ang mga magkaparehong executable na pangalan ay tumutugon pa rin sa parehong RTSS na profile.
+
+**Mga paborito at nakatagong entry:** i-pin muna ang mga kapaki-pakinabang na programa, itago ang mga hindi gustong entry at ibalik ang mga ito sa nakalaang dialog. Ang mga pagpipiliang ito ay nagpapatuloy. Ang isang saradong paborito ay hindi lilitaw bilang isang tumatakbong application.
 
 <a id="screenshots"></a>
 ## Mga screenshot

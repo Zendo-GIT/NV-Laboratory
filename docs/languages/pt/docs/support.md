@@ -23,9 +23,9 @@ Estes são os candidatos preparados, não uma matriz de certificação para toda
 | Ferramenta | Windows/tempo de execução | Dependência de hardware/externa | Operações que necessitam de cuidados |
 | --- | --- | --- | --- |
 | NVPI fork 3.0.2.3 | Windows 10/11 x64, .NET Framework 4.8 | Driver/tela NVIDIA compatível | Gravações de perfil e visualizações de exibição |
-| NVDriverForge 0.1.2 | Windows 10 compilação 19041+/11 x64; .NET/WPF incluído | Pacote de driver NVIDIA compatível | Instalação elevada, configurações avançadas, NVENC opcional |
-| NVMFG Unlock40 0.1.1 | Windows 10/11x64; .NET/WPF incluído, auxiliares Framework 4.8 | RTX 40, jogo DLSS FG qualificado e provedor fixado | Patches nativos no jogo, diário de perfil global, atualizações de jogos SDK |
-| NVRasterPulse 0.1 | Windows 10/11 x64, .NET Framework 4.8 | RTSS instalado; concorrendo aos bonés | Alterações de perfil por executável RTSS |
+| NVDriverForge 0.1.4 | Windows 10 compilação 19041+/11 x64; .NET/WPF incluído | Pacote de driver NVIDIA compatível | Instalação elevada, configurações avançadas, NVENC opcional |
+| NVMFG Unlock40 0.2.3 | Windows 10/11x64; .NET/WPF incluído, auxiliares Framework 4.8 | RTX 40, jogo DLSS FG qualificado e provedor fixado | Patches nativos no jogo, diário de perfil global, atualizações de jogos SDK |
+| NVRasterPulse 0.2 | Windows 10/11 x64, .NET Framework 4.8 | RTSS instalado; concorrendo aos bonés | Alterações de perfil por executável RTSS |
 
 Nenhum pacote ARM64 está preparado. A disponibilidade de exibição/API e versões antigas do Windows podem limitar recursos individuais. Nenhuma versão mínima universal NVIDIA ou RTSS foi inventada. O hash exato do provedor NVMFG está em [proveniência](provenance.md).
 
@@ -47,6 +47,8 @@ Utilize o [formulário de bug](https://github.com/Zendo-GIT/NV-Laboratory/issues
 | Configurações pendentes do NVMFG | Resolva a recuperação com jogos fechados, preservando alterações de outras ferramentas. |
 | O limite RP não tem efeito | Execute RTSS, identifique o EXE do jogo real, inspecione o estado do gancho e os limites concorrentes. |
 | A tampa RP persiste após a remoção | Inspecione RTSS Global; a remoção altera apenas as substituições do limitador local. |
+
+NVDriverForge oferece um relatório JSON local previsível; NVMFG oferece um diagnóstico em Sobre. Prefira esses relatórios filtrados a um arquivo de log completo e inspecione-os antes de compartilhar. Um bloqueio de restauração relatado no NVMFG 0.1.1 ainda não tem causa estabelecida; preserve seu diário e registre qualquer código de erro disponível. NVRasterPulse O 0.2 oferece diagnóstico de configuração em seu menu de ações, sem medir o FPS.
 
 <a id="logs-and-privacy"></a>
 ## Registros e privacidade

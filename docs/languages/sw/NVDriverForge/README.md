@@ -20,7 +20,7 @@
 
 **Andaa usakinishaji wa kiendeshaji wa NVIDIA na chaguo wazi za sehemu na mipangilio ya hiari.**
 
-[Pakua 0.1.3 & hali](../docs/downloads.md#nvdriverforge) · [Ufungaji](#installation) · [Mikopo](#credits-and-upstream) · [Leseni](../../../../NVDriverForge/LICENSE)
+[Pakua 0.1.4 & hali](../docs/downloads.md#nvdriverforge) · [Ufungaji](#installation) · [Mikopo](#credits-and-upstream) · [Leseni](../../../../NVDriverForge/LICENSE)
 
 <a id="overview-and-purpose"></a>
 ## Muhtasari na madhumuni
@@ -35,14 +35,15 @@ Ni programu iliyotengenezwa kwa kujitegemea iliyochochewa kwa sehemu na mtiririk
 - NVIDIA Game Ready / Studio utafutaji na upakuaji; ugunduzi wa hiari wa hotfix kwa njia mbadala.
 - Uchambuzi wa kifurushi asili, heshi, saini za NVIDIA, maonyesho na maingizo yanayolingana ya INF.
 - Uchaguzi wa vipengele na utegemezi na uhifadhi wa vipengele visivyojulikana.
-- Toleo la 0.1.3 huweka vipengele vilivyochaguliwa vya NVIDIA kurukwa na haijumuishi vipengee vilivyothibitishwa ambavyo havijachaguliwa kutoka kwa ugunduzi. Saa za hiari za sasa au zisizotumika hazilazimishwi tena kama vipengee muhimu.
+- Toleo la 0.1.4 huweka vipengele vilivyochaguliwa vya NVIDIA kurukwa na haijumuishi vipengee vilivyothibitishwa ambavyo havijachaguliwa kutoka kwa ugunduzi. Saa za hiari za sasa au zisizotumika hazilazimishwi tena kama vipengee muhimu.
 - Futa muhtasari wa kushindwa kwa usakinishaji na ufikiaji wa kumbukumbu za kina katika lugha zote 34.
-- Uthibitishaji wa usakinishaji wazi, uwekaji uliolindwa na usafirishaji wa vifurushi vilivyopo vya duka la viendeshi.
+- Huangalia utayari, uthibitisho wazi, usafirishaji wa duka la kiendeshi na nakala asili ya wasifu wa NVIDIA kabla ya kusakinisha.
 - Mipangilio ya kina ya hiari, iliyo na ukaguzi wa kabla ya safari ya ndege, majarida na urejeshaji unaotambua migogoro.
 - Hiari **Custom NV** iliyowekwa awali ikiwa na chaguo na maelezo yaliyotajwa, ikijumuisha uteuzi tofauti wa nguvu wa SILK na ukaguzi wa uoanifu.
 - Vipakuliwa vya kiraka vya NVENC vya toleo halisi la hiari; ahadi ya chanzo na baiti lengwa huangaliwa.
 - Usakinishaji tofauti, wa hiari wa Profile Inspector fork kutoka kwa skrini ya Zana.
-- Ukaguzi wa hiari wa sasisho za mtumiaji aliyesakinishwa, lugha 34 za kiolesura na mada nne.
+- Mwongozo wa vipengele, mapendeleo yanayoweza kutumika tena, vifaa vya kiendeshi, ripoti za usaidizi wa ndani na masasisho ya hiari ya programu.
+- Lugha 34 za kiolesura na mada nne.
 
 Chaguzi za kina zinazopatikana zinahusu MPO, kiashirio cha DLSS, Ansel, usingizi wa sauti wa NVIDIA, MSI, sera ya kukatiza/kipaumbele, HDCP, uanzishaji wa kontena na huduma ya urithi inayostahiki. Kila moja ina sharti na athari zake; haya si maboresho ya utendaji kwa wote.
 
@@ -87,6 +88,21 @@ Hiari ya NVENC hupakua data inayooana kutoka kwa ahadi iliyobandikwa ya keylase.
 
 Lugha ya udhibiti wa mapendeleo, mandhari na ukaguzi wa hiari wa masasisho ya mtumiaji aliyesakinishwa. Kibebeka hakiundi kazi iliyosakinishwa ya kuangalia usuli. Zana na urejeshaji ni tofauti na hatua nne za ufungaji.
 
+<a id="backup-and-diagnostic-tools"></a>
+## Vifaa vya chelezo na uchunguzi
+
+**Kabla ya usakinishaji:** ukaguzi wa utayari hufunika saini ya kifurushi, GPU, makadirio ya nafasi ya kazi/nafasi ya kuhifadhi nakala, inayosubiri kuanzishwa upya na visakinishaji shindani. Mfanyakazi aliyeinuliwa huwarudia. Michakato ya ushindani haizuiliwi kiotomatiki. Nakala asilia ya hifadhidata ya wasifu wa NVIDIA lazima ifaulu kabla ya Usanidi wa NVIDIA kuanza; uhamishaji wa duka la dereva ni chelezo tofauti.
+
+**Chaguo zinazoweza kutumika tena:** mwongozo wa sehemu unauliza maswali manne kuhusu michezo, sauti, NVIDIA App na kurekodi. Pitia mapendekezo yake; zinazohitajika, zisizojulikana na vipengele tegemezi vinasalia kulindwa. Hamisha mapendeleo, kisha uhakiki na uyahakikishe upya dhidi ya kifurushi kilichochaguliwa wakati wa kuleta. Idhini, kuanzisha upya shughuli, njia za programu na upakiaji wa viraka haziagizwi.
+
+**Kifaa cha udereva:** hamisha `.nvdfkit.zip` ili kuweka kisakinishi cha awali cha NVIDIA kilichotiwa saini, chaguo, heshi na maagizo pamoja. Beba `NVDriverForge.exe` kando. Ingiza kit katika Zana, kagua onyesho la kukagua, kisha utumie mtiririko wa kawaida wa usakinishaji. Hiki si kiendeshi chembamba au kisakinishi cha pekee kilichorekebishwa. NVENC ya hiari bado inahitaji upakuaji na idhini kwa kiendeshaji hicho. Masharti ya ugawaji upya ya NVIDIA bado yanatumika.
+
+**Matokeo na usaidizi:** soma tokeo fupi na upanue maelezo ya kila hatua/kila chaguo. Usomaji uliofanikiwa huthibitisha thamani iliyohifadhiwa, sio uboreshaji uliopimwa. Ripoti ya usaidizi ya JSON ya ndani hutumia sehemu zilizoorodheshwa, ikijumuisha kazi ya mwisho iliyohifadhiwa baada ya kuanzisha upya programu. Ichunguze kabla ya kuhifadhi au kushiriki. Haijumuishi kumbukumbu mbichi, yaliyomo kwenye wasifu au vitambulishi vya maunzi na haipakii kiotomatiki.
+
+**Urejeshaji:** fuata mwongozo wa kazi iliyolindwa ili kurejesha kiendeshi kilichochelezwa. Urejeshaji wa wasifu ulio wazi unahitaji toleo asili la kiendeshi na GPU sawa; inachukua nafasi ya hifadhidata nzima, huhifadhi nakala ya sasa, na hukagua heshi na hali inayokinzana. Usifute jarida lake au kulazimisha kutolingana. Usakinishaji halisi wa kiendeshi, urejeshaji kamili na uletaji wa wasifu asilia na mtiririko huu mpya wa kazi unasalia kuwa bila kuthibitishwa kwenye mfumo halisi.
+
+**Sasisho za programu:** soma madokezo ya toleo, kisha uchague kwa uwazi kipakuliwa kilichothibitishwa na SHA-256. Kuangalia ni kwa chaguo-msingi, na hundi ya hiari wakati wa kuanza. Hakuna kisakinishi kinachoanzishwa kiotomatiki. Kipengele hiki ni tofauti na ukaguzi wa sasisho za viendeshaji na kazi ya hiari ya kuangalia kiendeshi cha toleo lililosakinishwa.
+
 <a id="screenshots"></a>
 ## Picha za skrini
 
@@ -101,7 +117,7 @@ Funga NVDriverForge, pata kifurushi rasmi kinachofuata na uthibitishe heshi yake
 
 Uninstall kutoka Windows **Installed apps**. Inaondoa programu na kazi yake ya kusasisha, sio kiendeshi cha NVIDIA. Mipangilio, kumbukumbu na nakala zimesalia. Ukipenda, rejesha mabadiliko ya hali ya juu/NVENC kupitia mtiririko wa urejeshaji uliorekodiwa **kabla** kuondoa programu. Rejesha inakataa mabadiliko yanayokinzana kutoka kwa zana nyingine.
 
-Data ya ndani iko chini ya `%LOCALAPPDATA%\NVDriverForge`; kazi zinazolindwa na usafirishaji wa madereva ziko chini ya `%PROGRAMDATA%\NVDriverForge\Jobs`. Matumizi ya kubebeka pia huunda data ya ndani. Uhamishaji wa duka la kiendeshi sio picha ya mfumo au nakala kamili ya wasifu.
+Data ya ndani iko chini ya `%LOCALAPPDATA%\NVDriverForge`; kazi zinazolindwa na usafirishaji wa madereva ziko chini ya `%PROGRAMDATA%\NVDriverForge\Jobs`. Matumizi ya kubebeka pia huunda data ya ndani. Uhamishaji wa duka la kiendeshi na nakala asili ya wasifu ni tofauti. Wala si picha ya mfumo.
 
 <a id="known-limitations"></a>
 ## Vikwazo vinavyojulikana
@@ -120,7 +136,7 @@ Data ya ndani iko chini ya `%LOCALAPPDATA%\NVDriverForge`; kazi zinazolindwa na 
 | --- | --- |
 | Katalogi ya mtandaoni haipatikani | Chagua kifurushi asili kutoka kwa [Pakua driver za kifaa NVIDIA](https://www.nvidia.com/en-us/drivers/). Usibadilishe mfano wa GPU wa jirani. |
 | Utafutaji wa Hotfix haupatikani | Tumia [jukwaa la viendeshaji la NVIDIA's Game Ready](https://www.nvidia.com/en-us/geforce/forums/game-ready-drivers/13/) na uthibitishe kifurushi halisi. |
-| Usakinishaji wa NVIDIA haukufaulu | Soma muhtasari wa kushindwa na ufungue kumbukumbu za kina. Vipengee vya hiari ambavyo tayari ni vya sasa au visivyotumika vinasalia kurukwa katika 0.1.3. Usakinishaji ambao haujafaulu hausababishi mabadiliko ya hiari au mtiririko wa mafanikio/kuzima upya. |
+| Usakinishaji wa NVIDIA haukufaulu | Soma muhtasari wa kushindwa na ufungue kumbukumbu za kina. Vipengee vya hiari ambavyo tayari ni vya sasa au visivyotumika vinasalia kurukwa katika 0.1.4. Usakinishaji ambao haujafaulu hausababishi mabadiliko ya hiari au mtiririko wa mafanikio/kuzima upya. |
 | Kushindwa kwa sahihi/heshi/chelezo | Acha usakinishaji huo na uhifadhi kosa; pata kifurushi asili tena ikiwa kimeharibika. |
 | Chaguo halipatikani | Soma maunzi yake, sehemu au sababu ya kiendeshi-lengwa; weka bila kubadilika. |
 | Anzisha tena au kazi bado inasubiri | Tumia maagizo ya kurejesha kazi na uendelee wazi; usifute jarida lake. |

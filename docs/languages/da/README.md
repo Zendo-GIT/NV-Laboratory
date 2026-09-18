@@ -30,9 +30,9 @@
 | Projekt | Formål | version | Dokumentation | Download |
 | --- | --- | --- | --- | --- |
 | **NVIDIA Profile Inspector – NV Tools Fork** | NVIDIA driverprofileditor med tilføjet display, farve, HDR og ICC/WCS kontroller. Tidligere NVPI Custom. | 3.0.2.3 | [Vejledning](NVIDIA-Profile-Inspector/README.md) | [Pakker](docs/downloads.md#nvidia-profile-inspector) |
-| **NVDriverForge** | Vælg driverkomponenter, gennemgå valgfri tweaks og installer en original NVIDIA driverpakke. | 0.1.3 | [Vejledning](NVDriverForge/README.md) | [Pakker](docs/downloads.md#nvdriverforge) |
-| **NVMFG Unlock40** | Eksperimentelt RTX 40 MFG værktøj med valg pr. spil og Streamline SDK vedligeholdelse. | 0.1.1 | [Vejledning](NVMFG-Unlock40/README.md) | [Pakker og status](docs/downloads.md#nvmfg-unlock40) |
-| **NVRasterPulse** | Administrer RTSS FPS-grænser pr. eksekverbar fil med brøkværdier, sikkerhedskopier og bakkeadgang. | 0.1 | [Vejledning](NVRasterPulse/README.md) | [Pakker](docs/downloads.md#nvrasterpulse) |
+| **NVDriverForge** | Forbered og installer en original NVIDIA-driver med guidede valg, sikkerhedskopier og gendannelse. | 0.1.4 | [Vejledning](NVDriverForge/README.md) | [Pakker](docs/downloads.md#nvdriverforge) |
+| **NVMFG Unlock40** | Eksperimentel RTX 40 MFG, vedvarende spilbibliotek, diagnostik og Streamline SDK vedligeholdelse. | 0.2.3 | [Vejledning](NVMFG-Unlock40/README.md) | [Pakker og status](docs/downloads.md#nvmfg-unlock40) |
+| **NVRasterPulse** | Administrer RTSS FPS grænser pr. program: diagnostik, forslag, pause, fortryd og profildeling. | 0.2 | [Vejledning](NVRasterPulse/README.md) | [Pakker](docs/downloads.md#nvrasterpulse) |
 
 **Downloads:** [download side](docs/downloads.md) viser hver versions status, filer og SHA-256-værdier. Eksperimentelle funktioner og kompatibilitetsgrænser er beskrevet i projektvejledningerne.
 

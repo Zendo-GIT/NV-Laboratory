@@ -30,9 +30,9 @@
 | 项目 | 目的 | 版本 | 文档 | 下载 |
 | --- | --- | --- | --- | --- |
 | **NVIDIA Profile Inspector – NV Tools Fork** | NVIDIA 驱动程序配置文件编辑器添加了显示、颜色、HDR 和 ICC/WCS 控件。以前是 NVPI Custom。 | 3.0.2.3 | [指南](NVIDIA-Profile-Inspector/README.md) | [套餐](docs/downloads.md#nvidia-profile-inspector) |
-| **NVDriverForge** | 选择驱动程序组件，查看可选调整并安装原始 NVIDIA 驱动程序包。 | 0.1.3 | [指南](NVDriverForge/README.md) | [套餐](docs/downloads.md#nvdriverforge) |
-| **NVMFG Unlock40** | 实验性 RTX 40 MFG 工具，具有每个游戏的选择和 Streamline SDK 维护。 | 0.1.1 | [指南](NVMFG-Unlock40/README.md) | [包裹和状态](docs/downloads.md#nvmfg-unlock40) |
-| **NVRasterPulse** | 管理每个可执行文件的 RTSS FPS 限制，包括小数值、备份和托盘访问。 | 0.1 | [指南](NVRasterPulse/README.md) | [套餐](docs/downloads.md#nvrasterpulse) |
+| **NVDriverForge** | 准备并安装原始 NVIDIA 驱动程序，并提供指导选择、备份和恢复。 | 0.1.4 | [指南](NVDriverForge/README.md) | [套餐](docs/downloads.md#nvdriverforge) |
+| **NVMFG Unlock40** | 实验性 RTX 40 MFG、持久游戏库、诊断和 Streamline SDK 维护。 | 0.2.3 | [指南](NVMFG-Unlock40/README.md) | [包裹和状态](docs/downloads.md#nvmfg-unlock40) |
+| **NVRasterPulse** | 管理每个程序的 RTSS FPS 限制：诊断、建议、暂停、撤消和配置文件共享。 | 0.2 | [指南](NVRasterPulse/README.md) | [套餐](docs/downloads.md#nvrasterpulse) |
 
 **下载：** [下载页面](docs/downloads.md) 列出了每个版本的状态、文件和 SHA-256 值。项目指南中描述了实验功能和兼容性限制。
 

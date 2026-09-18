@@ -27,8 +27,8 @@ Začněte s [Stahování](downloads.md), který zaznamenává stav publikace a p
 | --- | --- | --- | --- |
 | NVIDIA Profile Inspector – NV Tools Fork | NVPI-CustomNV-3.0.2.3-Setup-r2.exe | Extrahujte kompletní NVPI ZIP | Ovladač NVIDIA a rozhraní .NET Framework 4.8 |
 | NVDriverForge | NVDriverForge-Setup.exe | NVDriverForge.exe, včetně runtime | Kompatibilní originální balíček ovladače NVIDIA pro instalační operace |
-| NVMFG Unlock40 | NVMFGUnlock40-0.1.1-Setup-x64.exe | Rozbalte kompletní NVMFG ZIP, ponechte podsložky | RTX 40, stávající DLSS FG, přesný poskytovatel a pomocníci .NET Framework 4.8 |
-| NVRasterPulse | NVRasterPulse-0.1-win-x64-Setup.exe | Extrahujte kompletní RP ZIP | RTSS a .NET Framework 4.8 |
+| NVMFG Unlock40 | NVMFGUnlock40-0.2.3-Setup-x64.exe | Rozbalte kompletní NVMFG ZIP, ponechte podsložky | RTX 40, stávající DLSS FG, přesný poskytovatel a pomocníci .NET Framework 4.8 |
+| NVRasterPulse | NVRasterPulse-0.2-win-x64-Setup.exe | Extrahujte kompletní RP ZIP | RTSS a .NET Framework 4.8 |
 
 <a id="download-verify-install"></a>
 ## Stáhnout, ověřit, nainstalovat

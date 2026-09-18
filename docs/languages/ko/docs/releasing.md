@@ -24,7 +24,7 @@
 ## 문서 업데이트
 
 1. GitHub Desktop에서 **NV-Laboratory** 폴더를 엽니다.
-2. 문서, 공지, 이미지, JSON 메타데이터 및 문서 유효성 검사기를 검토하세요.
+2. 문서, 알림, 이미지, JSON 메타데이터 및 문서 유효성 검사기를 검토하세요.
 3. 해당 폴더에서 `python tools/validate_repository.py`를 실행합니다.
 4. 검토된 변경 사항을 커밋한 다음 **Push origin**를 사용합니다. 작업 결과를 확인하세요.
 5. 공개 작성자 ID **禅堂 Zendo (RevoluSound Team)**와 계정의 GitHub `noreply` 주소를 유지합니다.
@@ -37,9 +37,9 @@
 | 도구 | 태그 | 버전 정책 |
 | --- | --- | --- |
 | NVIDIA Profile Inspector – NV Tools Fork | nvpi-v3.0.2.3 | 기존 4부분으로 구성된 애플리케이션 버전 설정 개정 2에는 자체 파일 이름이 있습니다. |
-| NVDriverForge | nvdriverforge-v0.1.3 | 기존 0.x 방식; 버전이 지정된 업데이트는 이전 패키지를 보존합니다. |
-| NVMFG Unlock40 | nvmfg-unlock40-v0.1.1 | 새로운 애플리케이션 버전을 개발하지 않고도 정확한 해시로 식별된 UI2 후보 |
-| NVRasterPulse | nvrasterpulse-v0.1 | 기존의 두 부분으로 구성된 버전 |
+| NVDriverForge | nvdriverforge-v0.1.4 | 기존 0.x 방식; 버전이 지정된 업데이트는 이전 패키지를 보존합니다. |
+| NVMFG Unlock40 | nvmfg-unlock40-v0.2.3 | 애플리케이션 버전 0.2.3; 공개 0.1.1 이후 누적 변경 사항 |
+| NVRasterPulse | nvrasterpulse-v0.2 | 기존의 두 부분으로 구성된 버전 |
 
 관리자는 직접 게시하거나 보조자에게 감사된 자산을 게시하도록 권한을 부여할 수 있습니다. 출판은 명시적입니다. 어떤 워크플로도 각 커밋에 대해 릴리스를 생성하지 않습니다.
 
@@ -52,10 +52,13 @@
 
 프로젝트별 태그 링크는 공유 `releases/latest` 링크를 통해 사용자를 다른 도구로 보내는 것을 방지합니다. GitHub의 자동 **Source code** 아카이브에는 이 문서 허브가 포함되어 있습니다. 애플리케이션 소스는 비공개로 유지됩니다. 원래 구성 요소 공지는 그대로 유지되며 릴리스에서는 NVMFG의 문서화된 NVIDIA SDK 예약을 해결하지 않습니다.
 
+
+9월 18일 업데이트에서는 세 가지 새로운 태그를 준비합니다. 기존 Profile Inspector 릴리스는 변경되지 않습니다. 애플리케이션 업데이트 확인을 위해 자산 이름, 태그 및 `SHA256SUMS.txt`가 정확하게 유지되어야 합니다. 안정 릴리스 검사에 노출되도록 사전 릴리스 플래그 없이 일반 릴리스를 게시합니다. NVMFG는 아직 실험적입니다.
+
 <a id="integrity-and-storage"></a>
 ## 무결성 및 저장
 
-게시된 바이너리 바이트를 자동으로 교체하지 마세요. 새 해시가 포함된 새로운 명시적 버전이나 설치 프로그램 개정판을 사용하세요. 법적 사이드카는 포함된 알림을 보완합니다. NVDriverForge 0.1.3 휴대용은 GitHub의 일반 100MiB Git 파일 제한보다 높은 141,760,351바이트입니다. 릴리스 첨부 파일은 이 허브에 바이너리나 Git LFS를 넣지 않도록 합니다. [GitHub 대용량 파일 지침](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
+게시된 바이너리 바이트를 자동으로 교체하지 마세요. 새 해시가 포함된 새로운 명시적 버전이나 설치 프로그램 개정판을 사용하세요. 법적 사이드카는 포함된 알림을 보완합니다. NVDriverForge 0.1.4 휴대용은 GitHub의 일반 100MiB Git 파일 제한보다 높은 142,017,891바이트입니다. 릴리스 첨부 파일은 이 허브에 바이너리나 Git LFS를 넣지 않도록 합니다. [GitHub 대용량 파일 지침](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
 
 비공개 취약점 보고는 저장소 보안 설정에서 활성화되어야 합니다. 민감한 보고를 그곳으로 보내기 전에 가용성을 확인하십시오. [SECURITY.md](../SECURITY.md)는 취약점 세부정보를 노출하지 않는 대체 기능을 제공합니다.
 

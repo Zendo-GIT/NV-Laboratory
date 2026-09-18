@@ -20,7 +20,7 @@
 
 **Chuẩn bị cài đặt trình điều khiển NVIDIA với các lựa chọn thành phần rõ ràng và cài đặt tùy chọn.**
 
-[Tải xuống 0.1.3 & trạng thái](../docs/downloads.md#nvdriverforge) · [Cài đặt](#installation) · [Tín dụng](#credits-and-upstream) · [Giấy phép](../../../../NVDriverForge/LICENSE)
+[Tải xuống 0.1.4 & trạng thái](../docs/downloads.md#nvdriverforge) · [Cài đặt](#installation) · [Tín dụng](#credits-and-upstream) · [Giấy phép](../../../../NVDriverForge/LICENSE)
 
 <a id="overview-and-purpose"></a>
 ## Tổng quan và mục đích
@@ -35,14 +35,15 @@ Nó là một ứng dụng được phát triển độc lập lấy cảm hứn
 - Tra cứu và tải xuống NVIDIA Game Ready / Studio; khám phá hotfix tùy chọn với dự phòng thủ công.
 - Phân tích gói gốc, hàm băm, chữ ký NVIDIA, bảng kê khai và các mục nhập INF tương thích.
 - Lựa chọn thành phần với sự phụ thuộc và bảo tồn các thành phần chưa biết.
-- Phiên bản 0.1.3 giữ cho các thành phần NVIDIA tùy chọn đã chọn có thể bỏ qua và chỉ loại trừ các thành phần chưa được kiểm tra đã được xác minh khỏi quá trình khám phá. Thời gian chạy tùy chọn hiện tại hoặc không thể áp dụng không còn bị coi là thành phần quan trọng nữa.
+- Phiên bản 0.1.4 giữ cho các thành phần NVIDIA tùy chọn đã chọn có thể bỏ qua và chỉ loại trừ các thành phần chưa được kiểm tra đã được xác minh khỏi quá trình khám phá. Thời gian chạy tùy chọn hiện tại hoặc không thể áp dụng không còn bị coi là thành phần quan trọng nữa.
 - Xóa các bản tóm tắt lỗi cài đặt và truy cập vào nhật ký chi tiết bằng tất cả 34 ngôn ngữ.
-- Xác nhận cài đặt rõ ràng, dàn dựng được bảo vệ và xuất các gói lưu trữ trình điều khiển hiện có.
+- Kiểm tra mức độ sẵn sàng, xác nhận rõ ràng, xuất kho trình điều khiển và sao lưu hồ sơ NVIDIA gốc trước khi cài đặt.
 - Cài đặt nâng cao tùy chọn, với kiểm tra trước chuyến bay, nhật ký và khôi phục nhận biết xung đột.
 - Tùy chọn cài sẵn **Custom NV** với các lựa chọn và giải thích được đặt tên, bao gồm lựa chọn cường độ SILK riêng biệt và kiểm tra khả năng tương thích.
 - Tùy chọn tải xuống bản vá NVENC phiên bản chính xác; cam kết nguồn và byte đích được kiểm tra.
 - Cài đặt tùy chọn, riêng biệt của Profile Inspector fork từ màn hình Công cụ.
-- Kiểm tra cập nhật người dùng đã cài đặt tùy chọn, 34 ngôn ngữ giao diện và bốn chủ đề.
+- Hướng dẫn thành phần, tùy chọn có thể sử dụng lại, bộ trình điều khiển, báo cáo hỗ trợ cục bộ và các bản cập nhật ứng dụng tùy chọn.
+- 34 ngôn ngữ giao diện và bốn chủ đề.
 
 Các tùy chọn nâng cao có sẵn liên quan đến MPO, chỉ báo DLSS, Ansel, chế độ ngủ âm thanh NVIDIA, MSI, chính sách/ưu tiên ngắt, HDCP, khởi động vùng chứa màn hình và dịch vụ đo từ xa kế thừa đủ điều kiện. Mỗi cái đều có những điều kiện tiên quyết và tác dụng riêng; đây không phải là những cải tiến hiệu suất phổ quát.
 
@@ -87,6 +88,21 @@ Công việc NVENC tùy chọn tải xuống dữ liệu tương thích từ cam
 
 Tùy chọn kiểm soát ngôn ngữ, chủ đề và kiểm tra cập nhật người dùng đã cài đặt tùy chọn. Thiết bị di động không tạo tác vụ kiểm tra lý lịch đã cài đặt. Công cụ và quá trình khôi phục tách biệt với bốn bước cài đặt.
 
+<a id="backup-and-diagnostic-tools"></a>
+## Công cụ sao lưu và chẩn đoán
+
+**Trước khi cài đặt:** kiểm tra mức độ sẵn sàng bao gồm chữ ký gói, GPU, không gian làm việc/dung lượng dự phòng ước tính, các trình cài đặt đang chờ khởi động lại và cạnh tranh. Người công nhân được nâng cao lặp lại chúng. Quá trình cạnh tranh không bao giờ được dừng lại một cách tự động. Bản sao lưu cơ sở dữ liệu hồ sơ NVIDIA gốc phải thành công trước khi bắt đầu Thiết lập NVIDIA; xuất cửa hàng trình điều khiển là một bản sao lưu riêng biệt.
+
+**Các lựa chọn có thể tái sử dụng:** hướng dẫn thành phần đặt ra bốn câu hỏi về trò chơi, âm thanh, NVIDIA App và ghi âm. Xem xét các đề xuất của nó; các thành phần bắt buộc, chưa biết và phụ thuộc vẫn được bảo vệ. Xuất tùy chọn, sau đó xem trước và xác thực lại chúng theo gói đã chọn khi nhập. Sự đồng ý, hoạt động khởi động lại, đường dẫn chương trình và tải trọng bản vá không được nhập.
+
+**Bộ trình điều khiển:** xuất `.nvdfkit.zip` để giữ nguyên trình cài đặt NVIDIA đã ký ban đầu, các lựa chọn, hàm băm và hướng dẫn cùng nhau. Mang theo `NVDriverForge.exe` riêng. Nhập bộ công cụ vào Công cụ, xem lại bản xem trước, sau đó sử dụng quy trình cài đặt thông thường. Đây không phải là trình điều khiển mỏng hoặc trình cài đặt độc lập đã được sửa đổi. NVENC tùy chọn vẫn cần tải xuống và đồng ý cho trình điều khiển chính xác đó. Các điều khoản phân phối lại của NVIDIA vẫn được áp dụng.
+
+**Kết quả và hỗ trợ:** đọc kết quả ngắn và mở rộng chi tiết theo từng giai đoạn/mỗi tùy chọn. Việc đọc lại thành công sẽ thiết lập một giá trị được lưu trữ chứ không phải một sự cải thiện được đo lường. Báo cáo hỗ trợ JSON cục bộ sử dụng các trường trong danh sách cho phép, bao gồm cả công việc đã lưu gần đây nhất sau khi khởi động lại ứng dụng. Xem trước nó trước khi lưu hoặc chia sẻ. Nó không bao gồm nhật ký thô, nội dung hồ sơ hoặc số nhận dạng phần cứng và không bao giờ được tải lên tự động.
+
+**Khôi phục:** làm theo hướng dẫn của công việc được bảo vệ để khôi phục trình điều khiển đã sao lưu. Việc khôi phục cấu hình rõ ràng yêu cầu phiên bản trình điều khiển gốc và cùng GPU; nó thay thế toàn bộ cơ sở dữ liệu, bảo toàn bản sao hiện tại và kiểm tra các giá trị băm cũng như trạng thái xung đột. Đừng xóa nhật ký của nó hoặc buộc nó không khớp. Cài đặt trình điều khiển thực, khôi phục hoàn toàn và nhập hồ sơ gốc với quy trình làm việc mới này vẫn chưa được xác thực trên hệ thống thực.
+
+**Cập nhật ứng dụng:** đọc ghi chú phát hành, sau đó chọn rõ ràng bản tải xuống đã được xác minh SHA-256. Việc kiểm tra được thực hiện thủ công theo mặc định, với tùy chọn kiểm tra khi khởi động. Không có trình cài đặt nào được khởi động tự động. Tính năng này tách biệt với kiểm tra cập nhật trình điều khiển và tác vụ kiểm tra trình điều khiển tùy chọn của phiên bản đã cài đặt.
+
 <a id="screenshots"></a>
 ## Ảnh chụp màn hình
 
@@ -101,7 +117,7 @@ Kết xuất giao diện người dùng tiếng Pháp 0.1.2 hiện có với d�
 
 Uninstall từ Windows **Installed apps**. Nó xóa ứng dụng và tác vụ cập nhật của nó, không phải trình điều khiển NVIDIA. Cài đặt, nhật ký và bản sao lưu vẫn còn. Nếu muốn, hãy khôi phục các thay đổi nâng cao/NVENC thông qua quy trình khôi phục được ghi lại **trước khi** xóa ứng dụng. Khôi phục từ chối các thay đổi xung đột từ một công cụ khác.
 
-Dữ liệu cục bộ dưới `%LOCALAPPDATA%\NVDriverForge`; việc làm được bảo vệ và xuất khẩu tài xế thuộc `%PROGRAMDATA%\NVDriverForge\Jobs`. Việc sử dụng di động cũng tạo ra dữ liệu cục bộ. Xuất kho trình điều khiển không phải là hình ảnh hệ thống hoặc bản sao lưu hồ sơ đầy đủ.
+Dữ liệu cục bộ dưới `%LOCALAPPDATA%\NVDriverForge`; việc làm được bảo vệ và xuất khẩu tài xế thuộc `%PROGRAMDATA%\NVDriverForge\Jobs`. Việc sử dụng di động cũng tạo ra dữ liệu cục bộ. Xuất kho trình điều khiển và sao lưu hồ sơ gốc là riêng biệt. Không phải là một hình ảnh hệ thống.
 
 <a id="known-limitations"></a>
 ## Những hạn chế đã biết
@@ -120,7 +136,7 @@ Dữ liệu cục bộ dưới `%LOCALAPPDATA%\NVDriverForge`; việc làm đư�
 | --- | --- |
 | Danh mục trực tuyến không có sẵn | Chọn gói gốc từ [Tải xuống trình điều khiển NVIDIA](https://www.nvidia.com/en-us/drivers/). Không thay thế mẫu GPU lân cận. |
 | Tra cứu hotfix không có sẵn | Sử dụng [Diễn đàn trình điều khiển Game Ready của NVIDIA](https://www.nvidia.com/en-us/geforce/forums/game-ready-drivers/13/) và xác minh gói thực tế. |
-| Cài đặt NVIDIA không thành công | Đọc bản tóm tắt lỗi và mở nhật ký chi tiết. Các thành phần tùy chọn đã có sẵn hoặc không thể áp dụng vẫn có thể bỏ qua trong 0.1.3. Các lượt cài đặt không thành công sẽ không kích hoạt các chỉnh sửa tùy chọn hoặc quy trình thành công/khởi động lại. |
+| Cài đặt NVIDIA không thành công | Đọc bản tóm tắt lỗi và mở nhật ký chi tiết. Các thành phần tùy chọn đã có sẵn hoặc không thể áp dụng vẫn có thể bỏ qua trong 0.1.4. Các lượt cài đặt không thành công sẽ không kích hoạt các chỉnh sửa tùy chọn hoặc quy trình thành công/khởi động lại. |
 | Lỗi chữ ký/băm/sao lưu | Dừng cài đặt đó và giữ lại lỗi; lấy lại gói gốc nếu bị hỏng. |
 | Tùy chọn không có sẵn | Đọc lý do phần cứng, thành phần hoặc trình điều khiển đích của nó; giữ nó không thay đổi. |
 | Khởi động lại hoặc công việc vẫn đang chờ xử lý | Sử dụng hướng dẫn khôi phục công việc và sơ yếu lý lịch rõ ràng; không xóa tạp chí của nó. |

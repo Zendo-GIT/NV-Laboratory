@@ -23,9 +23,9 @@ Ezek az előkészített jelöltek, nem pedig egy minősítési mátrix minden Wi
 | Eszköz | Windows / futásidejű | Hardver/külső függőség | Gondozást igénylő műveletek |
 | --- | --- | --- | --- |
 | NVPI fork 3.0.2.3 | Windows 10/11 x64, .NET-keretrendszer 4.8 | Kompatibilis NVIDIA illesztőprogram/kijelző | Profil ír és megjeleníti az előnézeteket |
-| NVDriverForge 0.1.2 | Windows 10 build 19041+ / 11 x64; .NET/WPF tartalmazza | Kompatibilis NVIDIA illesztőprogram-csomag | Magasabb szintű telepítés, speciális beállítások, opcionális NVENC |
-| NVMFG Unlock40 0.1.1 | Windows 10/11 x64; .NET/WPF tartalmazza, Framework 4.8 segítők | RTX 40, jogosult DLSS FG játék és rögzített szolgáltató | Natív játékon belüli javítás, globális profilnapló, SDK játékfrissítések |
-| NVRasterPulse 0.1 | Windows 10/11 x64, .NET-keretrendszer 4.8 | RTSS telepítve; fut a sapkákért | RTSS végrehajtható profilonkénti változások |
+| NVDriverForge 0.1.4 | Windows 10 build 19041+ / 11 x64; .NET/WPF tartalmazza | Kompatibilis NVIDIA illesztőprogram-csomag | Magasabb szintű telepítés, speciális beállítások, opcionális NVENC |
+| NVMFG Unlock40 0.2.3 | Windows 10/11 x64; .NET/WPF tartalmazza, Framework 4.8 segítők | RTX 40, jogosult DLSS FG játék és rögzített szolgáltató | Natív játékon belüli javítás, globális profilnapló, SDK játékfrissítések |
+| NVRasterPulse 0.2 | Windows 10/11 x64, .NET-keretrendszer 4.8 | RTSS telepítve; fut a sapkákért | RTSS végrehajtható profilonkénti változások |
 
 Nincs ARM64 csomag. A kijelző/API elérhetősége és a régi Windows verziók korlátozhatják az egyes funkciókat. Nincs univerzális minimum NVIDIA vagy RTSS verzió. A pontos NVMFG szolgáltató hash az [eredetét](provenance.md) fájlban található.
 
@@ -47,6 +47,8 @@ Használja az [bug forma](https://github.com/Zendo-GIT/NV-Laboratory/issues/new?
 | NVMFG pending settings | Oldja meg a helyreállítást a játékok lezárásával, megőrizve a többi eszköz változásait. |
 | Az RP sapkának nincs hatása | Futtassa az RTSS programot, azonosítsa az igazi játék EXE-t, ellenőrizze a horog állapotát és a versengő limiteket. |
 | Az RP kupak az eltávolítás után is megmarad | Vizsgálja meg az RTSS Global; eltávolítási változások csak helyi korlátozó felülbírálja. |
+
+Az NVDriverForge egy megtekinthető helyi JSON jelentést kínál; Az NVMFG diagnosztikát kínál az About. Előnyben részesítse ezeket a szűrt jelentéseket a teljes naplóarchívum helyett, és megosztás előtt ellenőrizze őket. Az NVMFG 0.1.1 jelzett helyreállítási elakadásának még mindig nincs megállapított oka; őrizze meg a naplóját, és rögzítse a rendelkezésre álló hibakódokat. NVRasterPulse Az 0.2 konfigurációs diagnosztikát kínál a műveletek menüjében, az FPS mérése nélkül.
 
 <a id="logs-and-privacy"></a>
 ## Naplók és adatvédelem

@@ -20,7 +20,7 @@
 
 **Kísérleti NVIDIA Multi Frame Generation GeForce RTX 40-hez, központi vezérlővel és játékonkénti választási lehetőséggel.**
 
-[Az 0.1.1 letöltése és állapota](../docs/downloads.md#nvmfg-unlock40) · [Telepítés](#installation) · [Upstream](#upstream-and-modifications) · [Licencek](LICENSES/README.md)
+[Az 0.2.3 letöltése és állapota](../docs/downloads.md#nvmfg-unlock40) · [Telepítés](#installation) · [Upstream](#upstream-and-modifications) · [Licencek](LICENSES/README.md)
 
 <a id="overview-and-purpose"></a>
 ## Áttekintés és cél
@@ -31,7 +31,7 @@ Az [RTX40MFG-Unlock](https://github.com/dashdogy/RTX40MFG-Unlock) konzultált a 
 
 Létezik a kísérleti MFG viselkedésének központi koordinálására, a játékspecifikus választások emlékezésére, valamint a futásidejű frissítések és biztonsági másolatok láthatóságának megőrzésére. Nem ad hozzá minden játékhoz az DLSS Frame Generation kódot, és nem alakít át tetszőleges FSR implementációt.
 
-Az előkészített jelölt **0.1.1**, beleértve az SDK-listás vizuális korrekciót, amely belsőleg UI2 néven van rögzítve. A nyilvános verzió 0.1.1 marad; pontos kivonatai megkülönböztetik ezt a jelöltet a régebbi helyi buildektől.
+A jelenlegi csomag **0.2.3**. Állandó játékkönyvtárat, tevékenység- és képességinformációkat, helyi diagnosztikát és korrigált kiválasztási/haladási viselkedést ad hozzá. Az [Letöltések](../docs/downloads.md#nvmfg-unlock40) pontosan azonosítja a fájlokat és kivonatokat.
 
 <a id="features"></a>
 ## Jellemzők
@@ -68,7 +68,7 @@ A verziócímke önmagában nem elegendő: az illesztőprogram, a szolgáltató 
 ## Telepítés
 
 1. Olvassa el az [jelölt státusz és engedélyezési megjegyzés](../docs/downloads.md#nvmfg-unlock40) dokumentumot.
-2. Töltse le az `NVMFGUnlock40-0.1.1-Setup-x64.exe` vagy `NVMFGUnlock40-0.1.1-Portable-x64.zip` fájlt, ha kiadása elérhető.
+2. Töltse le az `NVMFGUnlock40-0.2.3-Setup-x64.exe` vagy `NVMFGUnlock40-0.2.3-Portable-x64.zip` fájlt, ha kiadása elérhető.
 3. Ellenőrizze az SHA-256-et, és őrizze meg a kísérő megjegyzéseket. Telepítse a .NET Framework 4.8 fájlt, ha az Windows még nem biztosítja.
 4. Futtassa a telepítőt, vagy bontsa ki a **teljes** hordozható ZIP-fájlt egy írható helyi mappába.
 5. Indítsa el az `NVMFGUnlock40.exe`; tartsa meg az `agent`, `driver`, `engine` és `Licenses` fájlokat a mellékelt elrendezésben.
@@ -90,6 +90,21 @@ A főablak bezárásával a vezérlő a tálcán maradhat. A játékba már bet�
 
 **Streamline SDKs:** az NVIDIA SDK oldalon töltsön le egy hivatalos verziót, vagy importáljon egy kompatibilis helyi SDK-et. Az import egy ellenőrzött másolatot tárol; **Use this version** kiválasztja, az **Uninstall** pedig eltávolítja a gyorsítótárazott másolatot. A hiányzó Streamline DLL-ek kiegészíthetők egy hivatalos NVIDIA SDK-ből, a forrás feltüntetésével. Ez nem tölti le/cseréli az NGX modellt. Zárja be a játékot, válassza ki a kívánt játékfrissítést, és őrizze meg az eredeti biztonsági másolatot. A játékfájlok visszaállításához használja a biztonsági mentés visszaállítását, ne a gyorsítótár Uninstall gombját.
 
+<a id="library-diagnostics-and-updates"></a>
+## Könyvtár, diagnosztika és frissítések
+
+**Állandó könyvtár:** válasszon ki több játékmappát, beleértve a különböző meghajtókat is, mielőtt elindít egy vizsgálatot. Az előrehaladás látható, és a lemondás is lehetséges. Az első vizsgálat után a helyi gyorsítótár indításkor visszaállítja a könyvtárat anélkül, hogy minden játékmappát végigjárna. Frissítsen a módosítások kereséséhez vagy egy másik mappa hozzáadásához. A karbantartási műveletek továbbra is újraérvényesítik az érintett fájlokat; a biztonsági mentés figyelése aktív marad. A gyorsítótár az `%LOCALAPPDATA%\RtxMfg\library-cache.json` címen található.
+
+**Kiválasztás:** Az Ctrl+A az összeset kiválasztja, az Ctrl+D pedig törli az aktív Játékok vagy Biztonsági mentések lapot. Nincs játék automatikusan kiválasztva. A tevékenységfrissítések és -frissítések többé nem hoznak létre szellemkijelöléseket vagy inkonzisztens számlálásokat.
+
+**Tevékenység és kompatibilitás:** A játékonkénti MFG információk az NGX megfigyelésekből származnak, új fedvény nélkül. Ez nem a megjelenített képkockák fizikai száma. Az Dynamic-with-V-Sync támogatás a futásidejű képességekből származik; Az ismeretlen képességre nem a verziószámból lehet következtetni. Az alkalmazás nem módosítja sem az V-Sync, sem az VRR értéket. Kikapcsolt V-Sync esetén az Dynamic felfüggesztve marad; a rögzített vagy a játék által vezérelt választási lehetőségek különállóak.
+
+**Következő indítás:** Az ideiglenes kizárás a következő játékindításkor kihagyja a javítást, és a kilépés után visszaállítja a normál kezelést. Nem tud eltávolítani egy játékban már betöltött DLL-t: zárja be és indítsa újra a játékot. Az Wallpaper Engine asztali alkalmazásként ismerhető fel; ez a korrekció megőrzi a tényleges figyelmen kívül hagyott játékok védelmét.
+
+**Preferenciák és támogatás:** A preferenciák importálásához/exportálásához a játékmappák manuális újratársítása szükséges. A Névjegy részben található helyi diagnosztika kiszűri a személyes információkat, és jelenti az elérhető NVAPI hibakódokat vagy ütközési kategóriákat. Tekintse át a megosztás előtt; semmi sem töltődik fel automatikusan.
+
+**Alkalmazásfrissítések:** egy opcionális ellenőrzés megjeleníti a kiadási megjegyzéseket, és felkínálja a hivatalos beállítást. Az explicit letöltést az GitHub méret és az SHA-256 metaadatok alapján ellenőrzik; maga kezdeményezi a telepítést. Az 0.2.3 verzió törli a befejezett folyamatüzeneteket is, miközben megőrzi a jelentős hibákat és eredményeket. Ezek a kiegészítések magukban foglalják az 0.1.1 nyilvános verzió óta történt változásokat.
+
 <a id="screenshots"></a>
 ## Képernyőképek
 
@@ -109,6 +124,7 @@ A helyi játék futásidejű biztonsági mentései az `%LOCALAPPDATA%\NvidiaStre
 <a id="known-limitations"></a>
 ## Ismert korlátozások
 
+- Az 0.1.1 aktiválási/helyreállítási/eltávolítási blokkolása nem reprodukálódik, és oka ismeretlen. Ez a kiadás nem állítja a javítást. Hiba után őrizze meg a helyreállítási naplót, és ellenőrizze a helyi diagnosztikát; ne kényszerítse a helyreállítási adatok törlését.
 - A kísérleti natív javítások összeomlásokat vagy vizuális műtermékeket okozhatnak; egy megoldatlan Bodycam összeomlás szerepel a fejlesztési előzményekben.
 - Az ellenőrzött renderelő tesztek nem minden játék, illesztőprogram vagy csalás elleni tanúsítvány.
 - A generált keretek nem hoznak létre új bemeneti mintákat; ez a hub nem ígér mért késleltetést vagy teljesítménynövekedést.

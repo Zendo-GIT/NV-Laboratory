@@ -24,7 +24,7 @@ A nyilvános adattár a **Zendo-GIT/NV-Laboratory**. A dokumentációs változta
 ## Dokumentációs frissítések
 
 1. Nyissa meg az **NV-Laboratory** mappát az GitHub Desktop-ben.
-2. Tekintse át a dokumentációt, az értesítéseket, a képeket, a JSON-metaadatokat és a dokumentáció érvényesítőjét.
+2. Tekintse át a dokumentációt, értesítéseket, képeket, JSON metaadatokat és a dokumentáció érvényesítőjét.
 3. Futtassa az `python tools/validate_repository.py` fájlt ebből a mappából.
 4. Végezze el a felülvizsgált módosításokat, majd használja az **Push origin** kódot. Ellenőrizze a Műveletek eredményét.
 5. Tartsa meg a nyilvános szerzői azonosítót (**禅堂 Zendo (RevoluSound Team)**) és a fiók GitHub `noreply` címét.
@@ -37,9 +37,9 @@ Soha ne válassza ki a szülő fejlesztői munkaterületet, a privát ellenőrz�
 | Eszköz | Címke | Verziószabályzat |
 | --- | --- | --- |
 | NVIDIA Profile Inspector – NV Tools Fork | nvpi-v3.0.2.3 | Meglévő négyrészes alkalmazásverzió; A 2. beállítási változatnak saját fájlneve van |
-| NVDriverForge | nvdriverforge-v0.1.3 | Meglévő 0.x séma; A verziójú frissítések megőrzik a korábbi csomagokat |
-| NVMFG Unlock40 | nvmfg-unlock40-v0.1.1 | Az UI2 jelölt pontos kivonatokkal azonosítható anélkül, hogy új alkalmazásverziót találtak volna ki |
-| NVRasterPulse | nvrasterpulse-v0.1 | Meglévő kétrészes változat |
+| NVDriverForge | nvdriverforge-v0.1.4 | Meglévő 0.x séma; A verziójú frissítések megőrzik a korábbi csomagokat |
+| NVMFG Unlock40 | nvmfg-unlock40-v0.2.3 | Alkalmazásverzió 0.2.3; kumulatív változások a nyilvános 0.1.1 óta |
+| NVRasterPulse | nvrasterpulse-v0.2 | Meglévő kétrészes változat |
 
 A fenntartó közvetlenül közzéteheti, vagy asszisztenst hatalmazhat fel az ellenőrzött vagyon közzétételére. A közzététel explicit; egyetlen munkafolyamat sem hoz létre kiadást minden véglegesítéskor.
 
@@ -52,10 +52,13 @@ A fenntartó közvetlenül közzéteheti, vagy asszisztenst hatalmazhat fel az e
 
 A projektenkénti címkehivatkozások elkerülik, hogy a felhasználókat egy megosztott `releases/latest` hivatkozáson keresztül másik eszközbe küldjék. Az GitHub automatikus **Source code** archívuma tartalmazza ezt a dokumentációs központot. Az alkalmazásforrások privátak maradnak. Az eredeti összetevőkre vonatkozó megjegyzések érintetlenek maradnak, és a kiadás nem oldja meg az NVMFG dokumentált NVIDIA SDK tartalékát.
 
+
+A szeptember 18-i frissítés három új címkét készít; a meglévő Profile Inspector kiadás változatlan marad. Az eszközneveknek, címkéknek és `SHA256SUMS.txt`-nek pontosnak kell maradnia az alkalmazásfrissítési ellenőrzések során. Tegye közzé a normál kiadásokat a kiadás előtti jelző nélkül, hogy stabil kiadási ellenőrzésnek tegye ki őket; Az NVMFG kísérleti jellegű marad.
+
 <a id="integrity-and-storage"></a>
 ## Integritás és tárolás
 
-Soha ne cserélje le csendben a közzétett bináris bájtokat. Használjon új explicit verziót vagy telepítői változatot új hashekkel. A legális oldalkocsik kiegészítik a beágyazott figyelmeztetéseket. NVDriverForge Az 0.1.3 hordozható mérete 141 760 351 bájt, ami meghaladja az GitHub szokásos 100 MiB Git-fájl korlátját. A mellékletek kiadásakor ne helyezzen bináris fájlokat vagy Git LFS-t ebbe a hubba. [GitHub nagy fájlú útmutatás](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
+Soha ne cserélje le csendben a közzétett bináris bájtokat. Használjon új explicit verziót vagy telepítői változatot új hashekkel. A legális oldalkocsik kiegészítik a beágyazott figyelmeztetéseket. NVDriverForge Az 0.1.4 hordozható mérete 142 017 891 bájt, ami meghaladja az GitHub szokásos 100 MiB Git-fájl korlátját. A mellékletek kiadásakor ne helyezzen bináris fájlokat vagy Git LFS-t ebbe a hubba. [GitHub nagy fájlú útmutatás](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
 
 A lerakat biztonsági beállításainál engedélyezni kell a privát sebezhetőség jelentését. Ellenőrizze az elérhetőségét, mielőtt a bizalmas jelentéseket oda irányítaná; Az [SECURITY.md](../SECURITY.md) olyan tartalékot biztosít, amely nem fedi fel a sebezhetőség részleteit.
 

@@ -18,35 +18,52 @@
 <a id="changelog"></a>
 # Ændringslog
 
-Denne hub følger [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Indgange beskriver dette lager; applikationsversioner er uafhængige.
+Denne hub følger [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Applikationsversioner og udgivelsesdatoer er uafhængige. Forberedte pakker nedenfor modtager deres faktiske udgivelsesdatoer på deres respektive GitHub-udgivelser.
 
 <a id="unreleased"></a>
 ## [Ikke udgivet]
 
-<a id="added"></a>
-### Tilføjet
-
-- Hub, komplette projektvejledninger og arkivdokumentation på de 34 NV-applikationssprog.
-- Sidebevarende sprogvælgere, metadata for oversættelsesdækning og stabile interne ankre.
-- Upstream-kreditter, fuldstændige relevante meddelelser og filoprindelse.
-- RTSS-krav og officielt downloadlink til NVRasterPulse.
-- Separate RevoluSound Team-links.
-- Forberedt pakkekatalog for første udgivelse, SHA-256-verifikation og manuel frigivelsesprocedure.
-- Fejl-/funktionsformularer, bidrag og sikkerhedsinstruktioner.
-- Skrivebeskyttet dokumentation og kontrol af udgivelsesgrænser.
-
 <a id="changed"></a>
 ### Ændret
 
-- NVMFG-tilskrivning adskiller nu den uafhængigt udviklede applikation,
-sammenlignings-/forfiningsreferencen og de faktiske delte native komponenter.   Eksisterende ophavsrettigheder, licenser og filsammenligninger forbliver intakte.
-- NVDriverForge-kandidat opdateret til 0.1.3: korrigeret valgfri komponenthåndtering,
-læsbare lokaliserede fejl og opdateret runtime/ledsagende pakke.
+- Opdater hub'en og alle 34 dokumentationssprog til NVDriverForge 0.1.4,
+NVMFG Unlock40 0.2.3 og NVRasterPulse 0.2, udarbejdet 2026-09-18.
+- NVDriverForge: beredskabskontrol, native profil backups og bevogtet gendannelse,
+komponentvejledning, genbrugelige præferencer, driversæt, detaljerede resultater, lokale supportrapporter og separate applikationsopdateringer.
+- NVMFG: opdagelse af flere mapper, vedvarende bibliotekscache, observeret MFG-aktivitet,
+oplysninger om runtime-kapacitet, ekskludering ved næste lancering, lokal diagnostik, præferenceoverførsel og valgfri applikationsopdateringer.
+- NVRasterPulse: konfigurationsdiagnostik, FPS-forslag, pause/genoptag,
+fortryd et niveau, selektiv profilimport/eksport, favoritter og skjulte poster.
+- Opdater pakke-hash, udgivelsesbemærkninger og det oprindelige komponent herkomstkort.
+Hold de allerede offentliggjorte Profile Inspector 3.0.2.3/setup-r2-aktiver uændrede.
 
 <a id="fixed"></a>
 ### Fast
 
-- NVIDIA Profile Inspector – NV Tools Fork opsætning revision 2 viser nu den delte
-34-sprogsvælger, når den startes direkte. Eksplicit sprog og tavs videresendelse er bevaret; editoren og den bærbare pakke er uændrede.
+- NVMFG-spilvalg/-tællinger, Ctrl+D-håndtering og afsluttede statusmeddelelser;
+Wallpaper Engine er udelukket fra spildetektion. Den separate rapporterede 0.1.1-gendannelsesblokering forbliver ikke-reproduceret og hævdes ikke at være rettet.
 
-Ingen historiske offentlige udgivelsesdatoer er rekonstrueret. Kandidatapplikationsversioner er 3.0.2.3, 0.1.3, 0.1.1 og 0.1; deres udgivelsesbemærkninger er knyttet til deres egne fremtidige udgivelser. Forberedelse den 2026-09-09 er ikke en GitHub udgivelsesdato.
+<a id="initial-public-hub--2026-09-10"></a>
+## [Initial public hub] – 2026-09-10
+
+<a id="added"></a>
+### Tilføjet
+
+- Fire projektvejledninger og arkivdokumentation på 34 sprog, med
+sidebevarende vælgere, stabile ankre og metadata for oversættelsesdækning.
+- Komponentkreditter, originale licenser, herkomst, RTSS-krav og
+separate RevoluSound Team links.
+- Manuelle udgivelsespakker, SHA-256-værdier, udstedelsesformularer, sikkerhedspolitik og
+validering af skrivebeskyttet dokumentation. Applikationskilder forbliver private.
+- Første offentlige tags: `nvpi-v3.0.2.3`, `nvdriverforge-v0.1.3`,
+`nvmfg-unlock40-v0.1.1` og `nvrasterpulse-v0.1`.
+
+<a id="included-fixes"></a>
+### Inkluderede rettelser
+
+- Profile Inspector installationsprogram revision 2: den selvstændige 34-sprogsvælger;
+editor og bærbar nyttelast uændret.
+- NVDriverForge 0.1.3: korrigeret valgfri komponenthåndtering og lokaliseret
+fejloversigter med opdateret runtime og ledsagende pakke.
+
+Ovenstående datoer er verificeret offentlig hub-historie, ikke rekonstruerede udviklingsdatoer.

@@ -18,35 +18,52 @@
 <a id="changelog"></a>
 # Değişiklik günlüğü
 
-Bu hub [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)'i takip eder. Girişler bu depoyu tanımlar; uygulama sürümleri bağımsızdır.
+Bu hub [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)'i takip eder. Uygulama sürümleri ve yayın tarihleri ​​bağımsızdır. Aşağıda hazırlanan paketler, gerçek yayın tarihlerini ilgili GitHub Sürümlerinde alır.
 
 <a id="unreleased"></a>
 ## [Yayınlanmadı]
 
-<a id="added"></a>
-### Eklendi
-
-- 34 NV uygulama dilinde merkez, eksiksiz proje kılavuzları ve depo belgeleri.
-- Sayfayı koruyan dil seçiciler, çeviri kapsamı meta verileri ve kararlı dahili bağlantılar.
-- Yukarı yönlü krediler, geçerli tüm bildirimler ve dosya menşei.
-- RTSS gereksinimi ve NVRasterPulse için resmi indirme bağlantısı.
-- RevoluSound Team bağlantılarını ayırın.
-- İlk sürüm paket kataloğu, SHA-256 doğrulaması ve manuel sürüm prosedürü hazırlandı.
-- Hata/özellik formları, katkı ve güvenlik talimatları.
-- Salt okunur belgeler ve yayın sınırı kontrolleri.
-
 <a id="changed"></a>
 ### Değiştirildi
 
-- NVMFG özelliği artık bağımsız olarak geliştirilen uygulamayı ayırt ediyor,
-karşılaştırma/iyileştirme referansı ve gerçek paylaşılan yerel bileşenler.   Mevcut telif hakları, lisanslar ve dosya karşılaştırmaları bozulmadan kalır.
-- NVDriverForge adayı 0.1.3 olarak güncellendi: isteğe bağlı bileşen işleme düzeltildi,
-okunabilir yerelleştirilmiş hatalar ve güncellenmiş çalışma zamanı/yardımcı paket.
+- NVDriverForge 0.1.4 için hub'ı ve 34 belge dilinin tamamını yenileyin,
+NVMFG Unlock40 0.2.3 ve NVRasterPulse 0.2, 2026-09-18 tarihinde hazırlanmıştır.
+- NVDriverForge: hazırlık kontrolleri, yerel profil yedeklemeleri ve korumalı kurtarma,
+bileşen kılavuzu, yeniden kullanılabilir tercihler, sürücü kitleri, ayrıntılı sonuçlar, yerel destek raporları ve ayrı uygulama güncellemeleri.
+- NVMFG: çoklu klasör keşfi, kalıcı kitaplık önbelleği, gözlemlenen MFG etkinliği,
+çalışma zamanı yetenek bilgileri, sonraki başlatmada hariç tutma, yerel tanılama, tercih aktarımı ve isteğe bağlı uygulama güncellemeleri.
+- NVRasterPulse: yapılandırma tanılamaları, FPS önerileri, duraklatma/devam ettirme,
+tek düzeyli geri alma, seçici profil içe/dışa aktarma, favoriler ve gizli girişler.
+- Paket karmalarını, sürüm notlarını ve yerel bileşen kaynak haritasını yenileyin.
+Halihazırda yayınlanmış olan Profile Inspector 3.0.2.3/setup-r2 varlıklarını değiştirmeden koruyun.
 
 <a id="fixed"></a>
 ### Sabit
 
-- NVIDIA Profile Inspector – NV Tools Fork kurulum revizyonu 2 artık paylaşılanları gösteriyor
-Doğrudan başlatıldığında 34 dil seçici. Açık dil ve sessiz iletme korunur; editör ve taşınabilir paket değişmedi.
+- NVMFG oyun seçimi/sayımı, Ctrl+D yönetimi ve tamamlanan ilerleme mesajları;
+Wallpaper Engine oyun algılamanın dışında bırakıldı. Ayrı olarak bildirilen 0.1.1 restorasyon tıkanıklığı yeniden oluşturulmadan kalır ve düzeltildiği iddia edilmez.
 
-Hiçbir tarihi kamuya açık çıkış tarihi yeniden oluşturulmamıştır. Aday uygulama sürümleri 3.0.2.3, 0.1.3, 0.1.1 ve 0.1'tir; sürüm notları gelecekteki sürümlerine eklenmiştir. 2026-09-09'daki hazırlık, GitHub'in yayın tarihi değil.
+<a id="initial-public-hub--2026-09-10"></a>
+## [İlk genel merkez] – 2026-09-10
+
+<a id="added"></a>
+### Eklendi
+
+- 34 dilde dört proje kılavuzu ve veri havuzu belgeleri;
+sayfayı koruyan seçiciler, kararlı bağlantılar ve çeviri kapsamı meta verileri.
+- Bileşen kredileri, orijinal lisanslar, kaynak, RTSS gereksinimleri ve
+ayrı RevoluSound Team bağlantıları.
+- Manuel sürüm paketleri, SHA-256 değerleri, sorun formları, güvenlik politikası ve
+salt okunur belge doğrulama. Uygulama kaynakları gizli kalır.
+- İlk genel etiketler: `nvpi-v3.0.2.3`, `nvdriverforge-v0.1.3`,
+`nvmfg-unlock40-v0.1.1` ve `nvrasterpulse-v0.1`.
+
+<a id="included-fixes"></a>
+### Dahil edilen düzeltmeler
+
+- Profile Inspector yükleyici revizyonu 2: bağımsız 34 dil seçici;
+düzenleyici ve taşınabilir yük değişmedi.
+- NVDriverForge 0.1.3: isteğe bağlı bileşen işleme düzeltildi ve yerelleştirildi
+güncellenmiş çalışma zamanı ve tamamlayıcı paketlerle birlikte arıza özetleri.
+
+Yukarıdaki tarihler, yeniden oluşturulmuş geliştirme tarihleri değil, doğrulanmış genel merkez geçmişidir.

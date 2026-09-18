@@ -18,7 +18,7 @@
 <a id="provenance-changes-and-licensing"></a>
 # Kaynak, değişiklikler ve lisanslama
 
-Bu denetim **2026-09-09** tarihinde hazırlanan adayları açıklamaktadır. Uygulama kaynakları gizli kalır; halka açık envanterler kaynak kodunu değil dosya adlarını ve karmaları içerir. Bkz. [tam bileşen bildirimleri](../THIRD_PARTY_NOTICES.md).
+Bu denetim **2026-09-18** tarihinde hazırlanan adayları açıklamaktadır. Uygulama kaynakları gizli kalır; halka açık envanterler kaynak kodunu değil dosya adlarını ve karmaları içerir. Bkz. [tam bileşen bildirimleri](../THIRD_PARTY_NOTICES.md).
 
 <a id="nvidia-profile-inspector--nv-tools-fork"></a>
 ## NVIDIA Profile Inspector – NV Tools Fork
@@ -68,11 +68,13 @@ Yardımcı, NVPI'in NvapiDrsWrapper ve NativeArrayHelper'lerini proje tarafında
 
 MinHook referansı: `8fda4f5481fed5797dc2651cd91e238e9b3928c6`; devralınan derlenmiş alt kümenin karşılaştırmada hiçbir işlevsel yerel değişikliği yoktur. Streamline entegrasyon başlıkları: 2.12; açık başlık lisansı v2.12.0'te doğrulandı. NGX başlık kaynağı: NVIDIA/DLSS, `a291cc7d2cc642a51566f3dfd5376f635cd1b284`'i taahhüt eder.
 
-Aday motor SHA-256: `0E7FC0277C88B22095B622F6A3CB292EC0C14F7A0253D392502257B75E548890`.
+Aday motor SHA-256: `C793770D329B99CD9C5C640317CE435BFE353CA2868E36CF5DCD4D5295EFAE13`.
 
 engine.json'te gerekli sağlayıcı SHA-256: `C64928FDB7C48A57722EA8EEF2662171EDC323473ADEA66C29A206A23F1A2BED`. Bildirilen bir 310.9 sağlayıcı ailesi, tam olarak bu karma değeriyle değiştirilemez. Hiçbir sağlayıcı DLL'si veya modeli dahil değildir.
 
 **Olağanüstü lisanslama noktası:** NVIDIA RTX SDK lisansının tamamı, 14 Mart 2024 sürümü, teknik sınırlamaların atlanmasına ilişkin bir bölüm 4(d) kısıtlaması içerir. Denetim bu kullanıma izin vermez. MIT motor lisansını muhafaza etmek, ücretsiz olmak veya diğer modları gözlemlemek bu ayrı durumu çözmez. Aday hazırlığı yasal bir izin değildir. Orijinal kısa başlık bildirimi tam lisansla desteklenmiştir; Windows-1252 metni de orijinal baytlar korunarak okunabilir UTF-8 olarak sağlanır.
+
+Yerel karşılaştırma 0.2.3 için yeniden hesaplandı: aynı 48 dosya ve sınıflandırma. Önceki denetimden bu yana, etkinlik/yetenek gözlemleri için `game_selection.cpp`, `game_selection.h` ve `patcher.cpp` değişti. Yeni kitaplık, teşhis, tercih, güncelleme ve seçim iş akışları bakımcı uygulamasına aittir. Bileşen lisansları ve gerekli sağlayıcı karması değişmedi.
 
 <a id="nvrasterpulse"></a>
 ## NVRasterPulse
@@ -102,3 +104,5 @@ Daha sonraki NVPI kurulum revizyonu 2, paylaşılan Inno kontrollerini ve önyü
 NVDriverForge 0.1.3, 2026-09-10'da tamamlandı. Özel doğrulama raporu, 366 uygulama testini, 118 tamamlayıcı kontrolü, 32 kurulum kontrolünü, 156 yerel karşılaştırmayı ve 34 dil iletme durumunu kaydeder. Korumalı bileşen seçimi düzeltmesi, yükü değiştirilmeden veya sürücü yüklenmeden orijinal sürücü paketinde yeniden oynatıldı. Bunlar tarihli ürün ekibi sonuçlarıdır; bu belge güncellemesiyle yeniden yürütülen testler veya başarılı bir gerçek sürücü kurulumunun kanıtı değildir.
 
 Bu hub güncellemesi hiçbir işlevsel uygulama kodunu değiştirmez. Daha önceki uygulama derlemesi/birim/UI testleri, eski tarihsel kanıtlar olmaya devam ediyor. Bu, her üçüncü taraf ikili dosyanın tam tersine mühendisliği veya olası her gizli kalıba karşı bir garanti değildir.
+
+18 Eylül 2026 güncellemesi: NVDriverForge 0.1.4, hazırlık kontrolleri, yerel profil yedekleme, bileşen kılavuzu, tercihler ve kitler, ayrıntılı sonuçlar, yerel raporlama ve uygulama güncellemeleri ekler. NVRasterPulse 0.2, yeni bir sınırlayıcı motor olmadan yapılandırma tanılama, FPS rehberliği, duraklatma/devam ettirme, geri alma, `.nvrp` profilleri ve sık kullanılanlar/gizleme özelliklerini ekler. Bireysel kılavuzlar kullanımı ve sınırları açıklar. Statik hub kontrolleri, 18 Eylül özel raporlarında kaydedilen uygulama testlerinden ayrıdır; bu hub için herhangi bir sürücü kurulumu, gerçek profil içe aktarımı veya gecikme ölçümü gerçekleştirilmedi.

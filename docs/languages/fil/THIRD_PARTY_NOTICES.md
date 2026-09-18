@@ -18,7 +18,7 @@
 <a id="third-party-notices-and-credits"></a>
 # Mga abiso at kredito ng third-party
 
-Paunang pag-audit: 2026-09-09; NVDriverForge 0.1.3 at pag-update ng pinagmulan: 2026-09-10. **Sakop ng lisensya ng isang bahagi ang bahaging iyon, hindi ang buong suite.** Nananatiling pribado ang pinagmulan ng application. Ang mga abiso sa copyright at pahintulot ay pinananatili sa salita; ang talahanayang ito ay isang index, hindi isang kapalit para sa kanila. Ang ibig sabihin ng "Panlabas" ay hindi ibinahagi sa mga asset ng aplikasyon.
+Paunang pag-audit: 2026-09-09; kasalukuyang pakete at pagsusuri ng pinagmulan: 2026-09-18. Pinapanatili ng NVDriverForge 0.1.4, NVMFG Unlock40 0.2.3 at NVRasterPulse 0.2 ang mga kasalukuyang bahagi ng lisensya. Ang Profile Inspector 3.0.2.3/setup-r2 ay hindi nagbabago. **Sakop ng lisensya ng isang bahagi ang bahaging iyon, hindi ang buong suite.** Nananatiling pribado ang pinagmulan ng application. Ang mga abiso sa copyright at pahintulot ay pinananatili sa salita; ang talahanayan na ito ay isang index, hindi isang kapalit para sa kanila. Ang ibig sabihin ng "Panlabas" ay hindi ibinahagi sa mga asset ng aplikasyon.
 
 | Bahagi / orihinal na proyekto | May-akda | Opisyal na site, repositoryo o pag-download | Lisensya / paunawa | Gamitin sa NV Tools | Mga pagbabago |
 | --- | --- | --- | --- | --- | --- |

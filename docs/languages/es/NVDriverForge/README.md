@@ -20,7 +20,7 @@
 
 **Prepare una instalación del controlador NVIDIA con opciones claras de componentes y configuraciones opcionales.**
 
-[Descargar 0.1.3 y estado](../docs/downloads.md#nvdriverforge) · [Instalación](#installation) · [Créditos](#credits-and-upstream) · [Licencia](../../../../NVDriverForge/LICENSE)
+[Descargar 0.1.4 y estado](../docs/downloads.md#nvdriverforge) · [Instalación](#installation) · [Créditos](#credits-and-upstream) · [Licencia](../../../../NVDriverForge/LICENSE)
 
 <a id="overview-and-purpose"></a>
 ## Descripción general y propósito
@@ -35,14 +35,15 @@ Es una aplicación desarrollada de forma independiente inspirada en parte en el 
 - NVIDIA Game Ready / Studio búsquedas y descargas; descubrimiento de revisiones opcional con respaldo manual.
 - Análisis del paquete original, hashes, firmas NVIDIA, manifiestos y entradas INF compatibles.
 - Selección de componentes con dependencias y preservación de componentes desconocidos.
-- La versión 0.1.3 mantiene los componentes NVIDIA opcionales seleccionados que se pueden omitir y excluye del descubrimiento solo los componentes verificados y no verificados. Los tiempos de ejecución opcionales ya actuales o inaplicables ya no se fuerzan como componentes críticos.
+- La versión 0.1.4 mantiene los componentes NVIDIA opcionales seleccionados que se pueden omitir y excluye del descubrimiento solo los componentes verificados y no verificados. Los tiempos de ejecución opcionales ya actuales o inaplicables ya no se fuerzan como componentes críticos.
 - Borre resúmenes de errores de instalación y acceda a registros detallados en los 34 idiomas.
-- Confirmación de instalación explícita, puesta en escena protegida y exportación de paquetes de almacenamiento de controladores existentes.
+- Comprobaciones de preparación, confirmación explícita, exportación del almacén de controladores y copia de seguridad del perfil nativo NVIDIA antes de la instalación.
 - Configuraciones avanzadas opcionales, con comprobaciones previas, diarios y recuperación consciente de conflictos.
 - Preajuste opcional **Custom NV** con opciones nombradas y explicaciones, incluida una selección de intensidad SILK independiente y comprobaciones de compatibilidad.
 - Descargas opcionales del parche NVENC de la versión exacta; Se verifican los bytes de confirmación de origen y de destino.
 - Una instalación opcional separada de Profile Inspector fork desde la pantalla Herramientas.
-- Comprobaciones opcionales de actualización del usuario instalado, 34 idiomas de interfaz y cuatro temas.
+- Guía de componentes, preferencias reutilizables, kits de controladores, informes de soporte local y actualizaciones de aplicaciones opcionales.
+- 34 idiomas de interfaz y cuatro temas.
 
 Las opciones avanzadas disponibles incluyen MPO, el indicador DLSS, Ansel, suspensión de audio NVIDIA, MSI, política/prioridad de interrupción, HDCP, inicio del contenedor de pantalla y un servicio de telemetría heredado elegible. Cada uno tiene sus propios requisitos previos y efectos; Estas no son mejoras de rendimiento universales.
 
@@ -87,6 +88,21 @@ El trabajo opcional NVENC descarga datos compatibles desde una confirmación key
 
 Las preferencias controlan el idioma, el tema y las comprobaciones opcionales de actualización del usuario instalado. El dispositivo portátil no crea la tarea de verificación de antecedentes instalada. Las herramientas y la recuperación están separadas de los cuatro pasos de instalación.
 
+<a id="backup-and-diagnostic-tools"></a>
+## Herramientas de respaldo y diagnóstico
+
+**Antes de la instalación:** las comprobaciones de preparación cubren la firma del paquete, las GPU, el espacio de trabajo/espacio de respaldo estimado, el reinicio pendiente y los instaladores de la competencia. El trabajador elevado los repite. Los procesos en competencia nunca se detienen automáticamente. La copia de seguridad nativa de la base de datos del perfil NVIDIA debe realizarse correctamente antes de que se inicie la instalación de NVIDIA; La exportación de la tienda de controladores es una copia de seguridad independiente.
+
+**Opciones reutilizables:** la guía de componentes plantea cuatro preguntas sobre juegos, audio, NVIDIA App y grabación. Revisar sus sugerencias; Los componentes requeridos, desconocidos y de dependencia permanecen protegidos. Exporte las preferencias, luego obtenga una vista previa y vuelva a validarlas con el paquete seleccionado al importar. Los consentimientos, las operaciones de reinicio, las rutas de los programas y las cargas útiles de los parches no se importan.
+
+**Kit de controlador:** exporte un `.nvdfkit.zip` para mantener juntos el instalador NVIDIA original firmado, las opciones, los hashes y las instrucciones. Lleve `NVDriverForge.exe` por separado. Importe el kit en Herramientas, revise la vista previa y luego use el flujo de trabajo de instalación normal. Este no es un controlador delgado ni un instalador independiente modificado. El NVENC opcional aún necesita una descarga y consentimiento para ese controlador exacto. Los términos de redistribución de NVIDIA aún se aplican.
+
+**Resultados y soporte:** lea el resultado breve y amplíe los detalles por etapa/por opción. Una relectura exitosa establece un valor almacenado, no una mejora medida. El informe de soporte local JSON utiliza campos incluidos en la lista permitida, incluido el último trabajo guardado después de reiniciar la aplicación. Previsualízalo antes de guardarlo o compartirlo. No incluye registros sin procesar, contenidos de perfiles ni identificadores de hardware y nunca se carga automáticamente.
+
+**Recuperación:** siga la guía del trabajo protegido para recuperar el controlador respaldado. La restauración explícita del perfil requiere la versión original del controlador y las mismas GPU; reemplaza toda la base de datos, conserva una copia actual y verifica los hashes y los estados conflictivos. No borre su diario ni fuerce una discrepancia. La instalación de controladores reales, la recuperación completa y la importación de perfiles nativos con este nuevo flujo de trabajo no están validados en un sistema real.
+
+**Actualizaciones de aplicaciones:** lea las notas de la versión y luego elija explícitamente una descarga verificada por SHA-256. La verificación es manual de forma predeterminada, con una verificación opcional al inicio. Ningún instalador se inicia automáticamente. Esta característica es independiente de las comprobaciones de actualización de controladores y de la tarea opcional de verificación de controladores de la edición instalada.
+
 <a id="screenshots"></a>
 ## Capturas de pantalla
 
@@ -101,7 +117,7 @@ Cierre NVDriverForge, obtenga el siguiente paquete oficial y verifique su hash. 
 
 Uninstall de Windows **Installed apps**. Elimina la aplicación y su tarea de actualización, no el controlador NVIDIA. La configuración, los registros y las copias de seguridad permanecen. Si lo desea, restaure los cambios avanzados/NVENC a través del flujo de recuperación documentado **antes** de eliminar la aplicación. Restaurar rechaza cambios conflictivos de otra herramienta.
 
-Los datos locales están bajo `%LOCALAPPDATA%\NVDriverForge`; Los empleos protegidos y las exportaciones de conductores están bajo `%PROGRAMDATA%\NVDriverForge\Jobs`. El uso portátil también crea datos locales. Una exportación del almacén de controladores no es una imagen del sistema ni una copia de seguridad del perfil completo.
+Los datos locales están bajo `%LOCALAPPDATA%\NVDriverForge`; Los empleos protegidos y las exportaciones de conductores están bajo `%PROGRAMDATA%\NVDriverForge\Jobs`. El uso portátil también crea datos locales. La exportación del almacén de controladores y la copia de seguridad del perfil nativo están separadas. Tampoco lo es una imagen del sistema.
 
 <a id="known-limitations"></a>
 ## Limitaciones conocidas
@@ -120,7 +136,7 @@ Los datos locales están bajo `%LOCALAPPDATA%\NVDriverForge`; Los empleos proteg
 | --- | --- |
 | Catálogo en línea no disponible | Seleccione un paquete original de [Descargas del controlador NVIDIA](https://www.nvidia.com/en-us/drivers/). No sustituya un modelo GPU vecino. |
 | Búsqueda de revisiones no disponible | Utilice [Foro del controlador Game Ready de NVIDIA](https://www.nvidia.com/en-us/geforce/forums/game-ready-drivers/13/) y verifique el paquete real. |
-| La instalación de NVIDIA falla | Lea el resumen de fallas y abra los registros detallados. Los componentes opcionales ya actuales o no aplicables se pueden omitir en 0.1.3. Las instalaciones fallidas no activan ajustes opcionales ni un flujo de éxito/reinicio. |
+| La instalación de NVIDIA falla | Lea el resumen de fallas y abra los registros detallados. Los componentes opcionales ya actuales o no aplicables se pueden omitir en 0.1.4. Las instalaciones fallidas no activan ajustes opcionales ni un flujo de éxito/reinicio. |
 | Fallo de firma/hash/copia de seguridad | Detenga esa instalación y conserve el error; Obtenga el paquete original nuevamente si está dañado. |
 | Opción no disponible | Leer su motivo de hardware, componente o controlador de destino; manténgalo sin cambios. |
 | Reinicio o trabajo aún pendiente | Utilice las instrucciones de recuperación del trabajo y el currículum vitae explícito; no borre su diario. |

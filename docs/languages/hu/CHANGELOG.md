@@ -18,35 +18,52 @@
 <a id="changelog"></a>
 # Változásnapló
 
-Ez a hub az [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) kódot követi. A bejegyzések leírják ezt a tárolót; az alkalmazásverziók függetlenek.
+Ez a hub az [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) kódot követi. Az alkalmazásverziók és a megjelenési dátumok függetlenek. Az alább elkészített csomagok tényleges megjelenési dátumukat a megfelelő GitHub kiadásukon kapják meg.
 
 <a id="unreleased"></a>
 ## [Kiadatlan]
 
-<a id="added"></a>
-### Hozzáadva
-
-- Hub, teljes projektútmutatók és tárdokumentáció a 34 NV alkalmazásnyelven.
-- Oldalmegőrző nyelvválasztók, fordítási lefedettség metaadatok és stabil belső horgonyok.
-- Upstream hitelek, teljes körű vonatkozó értesítések és a fájl származása.
-- Az RTSS követelmény és az NVRasterPulse hivatalos letöltési linkje.
-- Külön RevoluSound Team hivatkozások.
-- Elkészült első kiadású csomagkatalógus, SHA-256 ellenőrzés és kézi kiadási eljárás.
-- Hiba/funkció űrlapok, hozzájárulás és biztonsági utasítások.
-- Csak olvasható dokumentáció és publikációs határellenőrzés.
-
 <a id="changed"></a>
 ### Megváltozott
 
-- Az NVMFG hozzárendelés megkülönbözteti a független fejlesztésű alkalmazást,
-az összehasonlítási/finomítási hivatkozást és a tényleges megosztott natív összetevőket.   A meglévő szerzői jogok, licencek és fájl-összehasonlítások érintetlenek maradnak.
-- Az NVDriverForge jelölt frissítve a következőre: 0.1.3: javított opcionális komponensek kezelése,
-olvasható lokalizált hibák és frissített futásidejű/társcsomagolás.
+- Frissítse a hubot és az NVDriverForge 0.1.4 mind a 34 dokumentációs nyelvét,
+NVMFG Unlock40 0.2.3 és NVRasterPulse 0.2, készült: 2026-09-18.
+- NVDriverForge: készenléti ellenőrzések, natív profil biztonsági mentések és védett helyreállítás,
+komponensek útmutatója, újrafelhasználható beállítások, illesztőprogram-készletek, részletes eredmények, helyi támogatási jelentések és külön alkalmazásfrissítések.
+- NVMFG: több mappa felfedezése, állandó könyvtár gyorsítótár, megfigyelt MFG tevékenység,
+futásidejű képességekkel kapcsolatos információk, következő indítás kizárása, helyi diagnosztika, preferenciák átvitele és opcionális alkalmazásfrissítések.
+- NVRasterPulse: konfigurációs diagnosztika, FPS javaslatok, szünet/folytatás,
+egyszintű visszavonás, szelektív profil importálás/exportálás, kedvencek és rejtett bejegyzések.
+- Frissítse a csomagkivonatokat, a kiadási megjegyzéseket és a natív komponens származási térképét.
+Tartsa változatlanul a már közzétett Profile Inspector 3.0.2.3/setup-r2 eszközöket.
 
 <a id="fixed"></a>
 ### Javítva
 
-- Az NVIDIA Profile Inspector – NV Tools Fork telepítési 2. verziója most a megosztott
-34 nyelvű választó közvetlenül indítva. Az explicit nyelvezet és a csendes továbbítás megmarad; a szerkesztő és a hordozható csomag változatlan.
+- NVMFG játék kiválasztása/számlálás, Ctrl+D kezelés és befejezett folyamatüzenetek;
+Az Wallpaper Engine ki van zárva a játék észleléséből. A külön jelentett 0.1.1 helyreállítási blokkolás reprodukálatlan marad, és nem igényelt javítást.
 
-A történelmi nyilvános megjelenési dátumok nincsenek rekonstruálva. A jelölt alkalmazásverziók: 3.0.2.3, 0.1.3, 0.1.1 és 0.1; kiadási megjegyzéseiket saját jövőbeli kiadásukhoz csatolják. A 2026-09-09-i előkészítés nem az GitHub megjelenési dátuma.
+<a id="initial-public-hub--2026-09-10"></a>
+## [Initial public hub] – 2026-09-10
+
+<a id="added"></a>
+### Hozzáadva
+
+- Négy projekt útmutató és tárdokumentáció 34 nyelven
+oldalmegőrző szelektorok, stabil horgonyok és fordítási lefedettség metaadatok.
+- Alkatrész kreditek, eredeti licencek, származás, RTSS követelmények és
+külön RevoluSound Team hivatkozásokat.
+- Kézi kiadású csomagok, SHA-256 értékek, kiadási űrlapok, biztonsági szabályzat és
+csak olvasható dokumentáció érvényesítése. Az alkalmazásforrások privátak maradnak.
+- Első nyilvános címkék: `nvpi-v3.0.2.3`, `nvdriverforge-v0.1.3`,
+`nvmfg-unlock40-v0.1.1` és `nvrasterpulse-v0.1`.
+
+<a id="included-fixes"></a>
+### Tartalmazott javítások
+
+- Profile Inspector telepítő, 2. változat: az önálló 34 nyelv választó;
+szerkesztő és hordozható rakomány változatlan.
+- NVDriverForge 0.1.3: javított opcionális összetevők kezelése és lokalizált
+hibaösszefoglalók frissített futásidejű és kísérőcsomaggal.
+
+A fenti dátumok ellenőrzött nyilvános hub-előzmények, nem rekonstruált fejlesztési dátumok.

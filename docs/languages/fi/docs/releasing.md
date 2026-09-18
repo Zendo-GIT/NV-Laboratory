@@ -24,7 +24,7 @@ Julkinen arkisto on **Zendo-GIT/NV-Laboratory**. Ylläpitäjä tarkistaa, sitoo 
 ## Dokumentaatiopäivitykset
 
 1. Avaa **NV-Laboratory**-kansio GitHub Desktop:ssä.
-2. Tarkista dokumentaatio, ilmoitukset, kuvat, JSON-metatiedot ja dokumentaation tarkistaja.
+2. Tarkista dokumentaatio, ilmoitukset, kuvat, JSON-metatiedot ja dokumentaation validointiohjelma.
 3. Suorita `python tools/validate_repository.py` kyseisestä kansiosta.
 4. Vahvista tarkistetut muutokset ja käytä sitten **Push origin**. Tarkista toimintojen tulos.
 5. Säilytä julkinen tekijän tunnistus **禅堂 Zendo (RevoluSound Team)** ja tilin GitHub `noreply` osoite.
@@ -37,9 +37,9 @@ Julkinen arkisto on **Zendo-GIT/NV-Laboratory**. Ylläpitäjä tarkistaa, sitoo 
 | Työkalu | Tag | Versiopolitiikka |
 | --- | --- | --- |
 | NVIDIA Profile Inspector – NV Tools Fork | nvpi-v3.0.2.3 | Nykyinen neliosainen sovellusversio; asennusversiolla 2 on oma tiedostonimi |
-| NVDriverForge | nvdriverforge-v0.1.3 | Olemassa oleva 0.x-järjestelmä; versioidut päivitykset säilyttävät aiemmat paketit |
-| NVMFG Unlock40 | nvmfg-unlock40-v0.1.1 | UI2-ehdokas tunnistetaan tarkkojen hajautusarvojen perusteella keksimättä uutta sovellusversiota |
-| NVRasterPulse | nvrasterpulse-v0.1 | Nykyinen kaksiosainen versio |
+| NVDriverForge | nvdriverforge-v0.1.4 | Olemassa oleva 0.x-järjestelmä; versioidut päivitykset säilyttävät aiemmat paketit |
+| NVMFG Unlock40 | nvmfg-unlock40-v0.2.3 | Sovellusversio 0.2.3; kumulatiiviset muutokset julkisen 0.1.1 jälkeen |
+| NVRasterPulse | nvrasterpulse-v0.2 | Nykyinen kaksiosainen versio |
 
 Ylläpitäjä voi julkaista tarkastetun omaisuuden suoraan tai valtuuttaa avustajan julkaisemaan tarkastetut varat. Julkaisu on selkeä; mikään työnkulku ei luo julkaisua jokaiselle toimitukselle.
 
@@ -52,10 +52,13 @@ Ylläpitäjä voi julkaista tarkastetun omaisuuden suoraan tai valtuuttaa avusta
 
 Projektikohtaiset tunnistelinkit estävät käyttäjien lähettämisen toiseen työkaluun jaetun `releases/latest`-linkin kautta. GitHub:n automaattiset **Source code**-arkistot sisältävät tämän dokumentaatiokeskuksen. Sovelluslähteet pysyvät yksityisinä. Alkuperäisten komponenttien ilmoitukset pysyvät ennallaan, eikä julkaisu ratkaise NVMFG:n dokumentoitua NVIDIA SDK -varausta.
 
+
+Syyskuun 18. päivän päivitys valmistelee kolme uutta tunnistetta; nykyinen Profile Inspector-julkaisu pysyy ennallaan. Omaisuuden nimien, tunnisteiden ja `SHA256SUMS.txt`:n on pysyttävä täsmällisinä sovellusten päivitystarkistuksia varten. Julkaise normaalit julkaisut ilman esijulkaisua, jotta ne altistuvat vakaan julkaisun tarkistuksille. NVMFG on edelleen kokeellinen.
+
 <a id="integrity-and-storage"></a>
 ## Eheys ja säilytys
 
-Älä koskaan vaihda julkaistuja binääritavuja hiljaa. Käytä uutta eksplisiittistä versiota tai asennusohjelman versiota uusilla tiivisteillä. Lailliset sivuvaunut täydentävät upotettuja ilmoituksia. NVDriverForge Kannettava 0.1.3 on 141 760 351 tavua, mikä ylittää GitHub:n tavallisen 100 MiB Git-tiedoston rajan. Vapauta liitteet välttämään binäärien tai Git LFS:n sijoittamista tähän keskittimeen. [GitHub suurten tiedostojen opastus](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
+Älä koskaan vaihda julkaistuja binääritavuja hiljaa. Käytä uutta eksplisiittistä versiota tai asennusohjelman versiota uusilla tiivisteillä. Lailliset sivuvaunut täydentävät upotettuja ilmoituksia. NVDriverForge Kannettava 0.1.4 on 142 017 891 tavua, mikä ylittää GitHub:n tavallisen 100 MiB Git-tiedoston rajan. Vapauta liitteet välttämään binäärien tai Git LFS:n sijoittamista tähän keskittimeen. [GitHub suurten tiedostojen opastus](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
 
 Yksityinen haavoittuvuusraportointi tulee ottaa käyttöön tietovaraston suojausasetuksissa. Varmista sen saatavuus ennen kuin ohjaat arkaluonteisia raportteja sinne. [SECURITY.md](../SECURITY.md) tarjoaa varavaihtoehdon, joka ei paljasta haavoittuvuuden tietoja.
 

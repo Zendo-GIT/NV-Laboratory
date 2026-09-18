@@ -30,9 +30,9 @@
 | Projekt | Cél | Verzió | Dokumentáció | Letöltés |
 | --- | --- | --- | --- | --- |
 | **NVIDIA Profile Inspector – NV Tools Fork** | NVIDIA illesztőprogram-profil szerkesztő hozzáadott kijelzővel, színnel, HDR és ICC/WCS vezérlőkkel. Korábban NVPI Custom. | 3.0.2.3 | [Útmutató](NVIDIA-Profile-Inspector/README.md) | [Csomagok](docs/downloads.md#nvidia-profile-inspector) |
-| **NVDriverForge** | Válassza ki az illesztőprogram-összetevőket, tekintse át az opcionális módosításokat, és telepítsen egy eredeti NVIDIA illesztőprogram-csomagot. | 0.1.3 | [Útmutató](NVDriverForge/README.md) | [Csomagok](docs/downloads.md#nvdriverforge) |
-| **NVMFG Unlock40** | Kísérleti RTX 40 MFG eszköz játékonkénti választási lehetőséggel és Streamline SDK karbantartással. | 0.1.1 | [Útmutató](NVMFG-Unlock40/README.md) | [Csomagok és állapot](docs/downloads.md#nvmfg-unlock40) |
-| **NVRasterPulse** | Kezelje az RTSS FPS futtatható fájlonkénti korlátait, törtértékekkel, biztonsági mentésekkel és tálca-hozzáféréssel. | 0.1 | [Útmutató](NVRasterPulse/README.md) | [Csomagok](docs/downloads.md#nvrasterpulse) |
+| **NVDriverForge** | Készítsen elő és telepítsen egy eredeti NVIDIA illesztőprogramot irányított választásokkal, biztonsági mentésekkel és helyreállítással. | 0.1.4 | [Útmutató](NVDriverForge/README.md) | [Csomagok](docs/downloads.md#nvdriverforge) |
+| **NVMFG Unlock40** | Kísérleti RTX 40 MFG, állandó játékkönyvtár, diagnosztika és Streamline SDK karbantartás. | 0.2.3 | [Útmutató](NVMFG-Unlock40/README.md) | [Csomagok és állapot](docs/downloads.md#nvmfg-unlock40) |
+| **NVRasterPulse** | RTSS FPS programonkénti korlátok kezelése: diagnosztika, javaslatok, szüneteltetés, visszavonás és profilmegosztás. | 0.2 | [Útmutató](NVRasterPulse/README.md) | [Csomagok](docs/downloads.md#nvrasterpulse) |
 
 **Letöltések:** az [letöltési oldal](docs/downloads.md) felsorolja az egyes verziók állapotát, fájljait és SHA-256 értékeit. A kísérleti funkciók és a kompatibilitási korlátok leírása a projekt útmutatókban található.
 

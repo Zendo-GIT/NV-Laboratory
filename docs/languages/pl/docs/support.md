@@ -23,9 +23,9 @@ To są przygotowani kandydaci, a nie matryca certyfikacji dla wszystkich kombina
 | Narzędzie | Windows / czas wykonania | Zależność sprzętowa/zewnętrzna | Operacje wymagające opieki |
 | --- | --- | --- | --- |
 | NVPI fork 3.0.2.3 | Windows 10/11 x64, .NET Framework 4.8 | Zgodny sterownik/wyświetlacz NVIDIA | Profil zapisuje i wyświetla podglądy |
-| NVDriverForge 0.1.2 | Windows 10 kompilacja 19041+ / 11 x64; .NET/WPF w zestawie | Zgodny pakiet sterowników NVIDIA | Podwyższona instalacja, zaawansowane ustawienia, opcjonalny NVENC |
-| NVMFG Unlock40 0.1.1 | Windows 10/11x64; .NET/WPF w zestawie, pomocnicy Framework 4.8 | RTX 40, kwalifikująca się gra DLSS FG i przypięty dostawca | Natywne łatanie w grze, globalny dziennik profili, aktualizacje gier SDK |
-| NVRasterPulse 0.1 | Windows 10/11 x64, .NET Framework 4.8 | Zainstalowano RTSS; bieganie po czapki | Zmiany profilu RTSS dla poszczególnych plików wykonywalnych |
+| NVDriverForge 0.1.4 | Windows 10 kompilacja 19041+ / 11 x64; .NET/WPF w zestawie | Zgodny pakiet sterowników NVIDIA | Podwyższona instalacja, zaawansowane ustawienia, opcjonalny NVENC |
+| NVMFG Unlock40 0.2.3 | Windows 10/11x64; .NET/WPF w zestawie, pomocnicy Framework 4.8 | RTX 40, kwalifikująca się gra DLSS FG i przypięty dostawca | Natywne łatanie w grze, globalny dziennik profili, aktualizacje gier SDK |
+| NVRasterPulse 0.2 | Windows 10/11 x64, .NET Framework 4.8 | Zainstalowano RTSS; bieganie po czapki | Zmiany profilu RTSS dla poszczególnych plików wykonywalnych |
 
 Żaden pakiet ARM64 nie jest przygotowany. Dostępność wyświetlacza/interfejsu API i starsze wersje Windows mogą ograniczać poszczególne funkcje. Nie wynaleziono uniwersalnej minimalnej wersji NVIDIA ani RTSS. Dokładny skrót dostawcy NVMFG znajduje się w [pochodzenie](provenance.md).
 
@@ -47,6 +47,8 @@ Użyj [formularz błędu](https://github.com/Zendo-GIT/NV-Laboratory/issues/new?
 | Oczekujące ustawienia NVMFG | Rozwiąż odzyskiwanie przy zamkniętych grach, zachowując zmiany z innych narzędzi. |
 | Czapka RP nie ma żadnego efektu | Uruchom RTSS, zidentyfikuj prawdziwy plik EXE gry, sprawdź stan haka i konkurencyjne limity. |
 | Nasadka RP nie znika po usunięciu | Sprawdź RTSS Global; usunięcie powoduje jedynie zastąpienie lokalnego limitera. |
+
+NVDriverForge oferuje podgląd lokalnego raportu JSON; NVMFG oferuje diagnostykę w sekcji Informacje. Wolisz te filtrowane raporty od pełnego archiwum dzienników i sprawdzasz je przed udostępnieniem. Blokada przywracania zgłoszona w NVMFG 0.1.1 nadal nie ma ustalonej przyczyny; zachowaj swój dziennik i zapisz wszelkie dostępne kody błędów. NVRasterPulse 0.2 oferuje diagnostykę konfiguracji w swoim menu akcji, bez pomiaru FPS.
 
 <a id="logs-and-privacy"></a>
 ## Logi i prywatność

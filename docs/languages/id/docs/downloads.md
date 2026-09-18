@@ -25,7 +25,7 @@ Pilih program dan **Setup** atau **portable**. Halaman Rilis setiap alat menunju
 <a id="nvidia-profile-inspector"></a>
 ## NVIDIA Profile Inspector
 
-**3.0.2.3** · Ketersediaan di GitHub · [Lepaskan](https://github.com/Zendo-GIT/NV-Laboratory/releases/tag/nvpi-v3.0.2.3) · [Panduan](../NVIDIA-Profile-Inspector/README.md)
+**3.0.2.3** · Tersedia · 10-09-2026 · [Lepaskan](https://github.com/Zendo-GIT/NV-Laboratory/releases/tag/nvpi-v3.0.2.3) · [Panduan](../NVIDIA-Profile-Inspector/README.md)
 
 | Mengajukan | MiB |
 | --- | ---: |
@@ -49,23 +49,23 @@ ef629a9304e09e8375af37b80dd2a25ffb989d1f3eedf6dff84a20f7e64df0ef  NVPI-NV-Tools-
 <a id="nvdriverforge"></a>
 ## NVDriverForge
 
-**0.1.3** · Ketersediaan di GitHub · [Lepaskan](https://github.com/Zendo-GIT/NV-Laboratory/releases/tag/nvdriverforge-v0.1.3) · [Panduan](../NVDriverForge/README.md)
+**0.1.4** · Ketersediaan di GitHub · [Lepaskan](https://github.com/Zendo-GIT/NV-Laboratory/releases/tag/nvdriverforge-v0.1.4) · [Panduan](../NVDriverForge/README.md)
 
 | Mengajukan | MiB |
 | --- | ---: |
-| [`Licenses-and-Credits.zip`](https://github.com/Zendo-GIT/NV-Laboratory/releases/download/nvdriverforge-v0.1.3/Licenses-and-Credits.zip) | 0.08 |
-| [`NVDriverForge-Setup.exe`](https://github.com/Zendo-GIT/NV-Laboratory/releases/download/nvdriverforge-v0.1.3/NVDriverForge-Setup.exe) | 56.16 |
-| [`NVDriverForge.exe`](https://github.com/Zendo-GIT/NV-Laboratory/releases/download/nvdriverforge-v0.1.3/NVDriverForge.exe) | 135.19 |
+| [`Licenses-and-Credits.zip`](https://github.com/Zendo-GIT/NV-Laboratory/releases/download/nvdriverforge-v0.1.4/Licenses-and-Credits.zip) | 0.08 |
+| [`NVDriverForge-Setup.exe`](https://github.com/Zendo-GIT/NV-Laboratory/releases/download/nvdriverforge-v0.1.4/NVDriverForge-Setup.exe) | 56.27 |
+| [`NVDriverForge.exe`](https://github.com/Zendo-GIT/NV-Laboratory/releases/download/nvdriverforge-v0.1.4/NVDriverForge.exe) | 135.44 |
 
-[SHA256SUMS.txt](https://github.com/Zendo-GIT/NV-Laboratory/releases/download/nvdriverforge-v0.1.3/SHA256SUMS.txt)
+[SHA256SUMS.txt](https://github.com/Zendo-GIT/NV-Laboratory/releases/download/nvdriverforge-v0.1.4/SHA256SUMS.txt)
 
 <details>
 <summary>SHA-256</summary>
 
 ```text
-3743347f65f517de9e3e165629cecd65c91168078f717fd59e8727d20760ae82  Licenses-and-Credits.zip
-a40e91fcde52a0ab9138cb28af58e09dbeaf0fb276a03b85f5acae506993e7f2  NVDriverForge-Setup.exe
-55a02ca43f83bfd011f64885cb6fab414d3628008a2d3086d1f49e1a417a8340  NVDriverForge.exe
+571850ee5bfc26bd54e09326bb11c43a30445e6a702d49b3735c6b852ff978ca  Licenses-and-Credits.zip
+e4d23597d589bc304d2983ccf3ae6dec9e312049fcecdb13fd3e0f46c10c76e6  NVDriverForge-Setup.exe
+4a51d5d41dfed8b7a2d7ee5e33d07e7a96cdb7f06f3774703512acfc6d62ad52  NVDriverForge.exe
 ```
 
 </details>
@@ -73,23 +73,23 @@ a40e91fcde52a0ab9138cb28af58e09dbeaf0fb276a03b85f5acae506993e7f2  NVDriverForge-
 <a id="nvmfg-unlock40"></a>
 ## NVMFG Unlock40
 
-**0.1.1** · Ketersediaan di GitHub · [Lepaskan](https://github.com/Zendo-GIT/NV-Laboratory/releases/tag/nvmfg-unlock40-v0.1.1) · [Panduan](../NVMFG-Unlock40/README.md)
+**0.2.3** · Ketersediaan di GitHub · [Lepaskan](https://github.com/Zendo-GIT/NV-Laboratory/releases/tag/nvmfg-unlock40-v0.2.3) · [Panduan](../NVMFG-Unlock40/README.md)
 
 | Mengajukan | MiB |
 | --- | ---: |
-| [`Licenses-and-Credits.zip`](https://github.com/Zendo-GIT/NV-Laboratory/releases/download/nvmfg-unlock40-v0.1.1/Licenses-and-Credits.zip) | 0.08 |
-| [`NVMFGUnlock40-0.1.1-Portable-x64.zip`](https://github.com/Zendo-GIT/NV-Laboratory/releases/download/nvmfg-unlock40-v0.1.1/NVMFGUnlock40-0.1.1-Portable-x64.zip) | 92.43 |
-| [`NVMFGUnlock40-0.1.1-Setup-x64.exe`](https://github.com/Zendo-GIT/NV-Laboratory/releases/download/nvmfg-unlock40-v0.1.1/NVMFGUnlock40-0.1.1-Setup-x64.exe) | 91.74 |
+| [`Licenses-and-Credits.zip`](https://github.com/Zendo-GIT/NV-Laboratory/releases/download/nvmfg-unlock40-v0.2.3/Licenses-and-Credits.zip) | 0.08 |
+| [`NVMFGUnlock40-0.2.3-Portable-x64.zip`](https://github.com/Zendo-GIT/NV-Laboratory/releases/download/nvmfg-unlock40-v0.2.3/NVMFGUnlock40-0.2.3-Portable-x64.zip) | 92.51 |
+| [`NVMFGUnlock40-0.2.3-Setup-x64.exe`](https://github.com/Zendo-GIT/NV-Laboratory/releases/download/nvmfg-unlock40-v0.2.3/NVMFGUnlock40-0.2.3-Setup-x64.exe) | 91.81 |
 
-[SHA256SUMS.txt](https://github.com/Zendo-GIT/NV-Laboratory/releases/download/nvmfg-unlock40-v0.1.1/SHA256SUMS.txt)
+[SHA256SUMS.txt](https://github.com/Zendo-GIT/NV-Laboratory/releases/download/nvmfg-unlock40-v0.2.3/SHA256SUMS.txt)
 
 <details>
 <summary>SHA-256</summary>
 
 ```text
-49286ef36560e3812f6aa908058ca814442e93b70244eb110787801556f7649e  Licenses-and-Credits.zip
-3f38239262f1837e4fbe926c2c7a3e2b42fede1598dd4d2f9645edca095969a6  NVMFGUnlock40-0.1.1-Portable-x64.zip
-ec464ed84a5e4d7dd2315c82fb674f9c4d103ae8db52dbf6d218732de404b20c  NVMFGUnlock40-0.1.1-Setup-x64.exe
+b18adce7a946cb23502f2ae4afe1674a77a39656b24fbc2273ce013a9b9dd1db  Licenses-and-Credits.zip
+3f4a1a7392c17c70e5c30aff04329937bc01863703db10685a123ee6d260d5d0  NVMFGUnlock40-0.2.3-Portable-x64.zip
+7192e3beefc4ef8212100990b752f961616a17cd2de39908c791f5c97ff6b924  NVMFGUnlock40-0.2.3-Setup-x64.exe
 ```
 
 </details>
@@ -99,23 +99,23 @@ NVIDIA RTX SDK bagian 4(d) cadangan: [asal](provenance.md).
 <a id="nvrasterpulse"></a>
 ## NVRasterPulse
 
-**0.1** · Ketersediaan di GitHub · [Lepaskan](https://github.com/Zendo-GIT/NV-Laboratory/releases/tag/nvrasterpulse-v0.1) · [Panduan](../NVRasterPulse/README.md)
+**0.2** · Ketersediaan di GitHub · [Lepaskan](https://github.com/Zendo-GIT/NV-Laboratory/releases/tag/nvrasterpulse-v0.2) · [Panduan](../NVRasterPulse/README.md)
 
 | Mengajukan | MiB |
 | --- | ---: |
-| [`Licenses-and-Credits.zip`](https://github.com/Zendo-GIT/NV-Laboratory/releases/download/nvrasterpulse-v0.1/Licenses-and-Credits.zip) | 0.08 |
-| [`NVRasterPulse-0.1-win-x64-portable.zip`](https://github.com/Zendo-GIT/NV-Laboratory/releases/download/nvrasterpulse-v0.1/NVRasterPulse-0.1-win-x64-portable.zip) | 0.27 |
-| [`NVRasterPulse-0.1-win-x64-Setup.exe`](https://github.com/Zendo-GIT/NV-Laboratory/releases/download/nvrasterpulse-v0.1/NVRasterPulse-0.1-win-x64-Setup.exe) | 2.71 |
+| [`Licenses-and-Credits.zip`](https://github.com/Zendo-GIT/NV-Laboratory/releases/download/nvrasterpulse-v0.2/Licenses-and-Credits.zip) | 0.08 |
+| [`NVRasterPulse-0.2-win-x64-portable.zip`](https://github.com/Zendo-GIT/NV-Laboratory/releases/download/nvrasterpulse-v0.2/NVRasterPulse-0.2-win-x64-portable.zip) | 0.37 |
+| [`NVRasterPulse-0.2-win-x64-Setup.exe`](https://github.com/Zendo-GIT/NV-Laboratory/releases/download/nvrasterpulse-v0.2/NVRasterPulse-0.2-win-x64-Setup.exe) | 2.75 |
 
-[SHA256SUMS.txt](https://github.com/Zendo-GIT/NV-Laboratory/releases/download/nvrasterpulse-v0.1/SHA256SUMS.txt)
+[SHA256SUMS.txt](https://github.com/Zendo-GIT/NV-Laboratory/releases/download/nvrasterpulse-v0.2/SHA256SUMS.txt)
 
 <details>
 <summary>SHA-256</summary>
 
 ```text
-36a806e96f672a4939515ea1b32072bd5669199a885a37bb6aa2b8da6a3866b1  Licenses-and-Credits.zip
-551163ac9c2842a299fdee7aa12025c5c3141457fc7b4ceab843a6a96d893358  NVRasterPulse-0.1-win-x64-portable.zip
-a9471060c485306d44060a4d4f021086a3db14180fe0d9241323dbd1f305628b  NVRasterPulse-0.1-win-x64-Setup.exe
+53358d59b69de3bac58d0e37055162f4e9df0204878e8e666de2c02d74bd326e  Licenses-and-Credits.zip
+04158c95b8526fc125b12ed76ed6533f35a3f94eb54de39806da6c8b03c93a22  NVRasterPulse-0.2-win-x64-portable.zip
+5430d71bf9d1d4c7d09c5bd8c477f24623ccd5069d65a8b7e76de0ecaaae4518  NVRasterPulse-0.2-win-x64-Setup.exe
 ```
 
 </details>

@@ -22,14 +22,14 @@
 
 > **Installer RTSS først.** NVRasterPulse kræver [RivaTuner Statistics Server (RTSS), downloadet fra Guru3D](https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/). RTSS skal køre for at håndhæve grænser. Ingen RTSS-installationsprogram, hook-DLL eller SDK er bundtet.
 
-[Download 0.1 & status](../docs/downloads.md#nvrasterpulse) · [Installation](#installation) · [Hvordan grænser fungerer](#usage) · [Licens](../../../../NVRasterPulse/LICENSE)
+[Download 0.2 & status](../docs/downloads.md#nvrasterpulse) · [Installation](#installation) · [Hvordan grænser fungerer](#usage) · [Licens](../../../../NVRasterPulse/LICENSE)
 
 <a id="overview-and-purpose"></a>
 ## Overblik og formål
 
 NVRasterPulse er en kompakt Windows-grænseflade til styring af RTSS-rammegrænser efter eksekverbart navn. RTSS udfører begrænsningen. NVRasterPulse administrerer de tilsvarende profilværdier, sikkerhedskopier og genindlæsningsanmodninger med bakkeadgang og vedvarende valg.
 
-Det eksisterer for at gøre det nemmere at redigere nøjagtige grænser pr. spil uden at erstatte en hel RTSS-profil eller forstyrre dens overlejringsindstillinger. Den nuværende **0.1**-kandidat er buildet den 9. september 2026 med et påkrævet RTSS-installationstjek.
+Den eksisterer for at gøre det nemmere at redigere nøjagtige grænser pr. spil uden at erstatte en hel RTSS-profil eller forstyrre dens overlejringsindstillinger. Version **0.2** tilføjer konfigurationsdiagnostik, en FPS-hjælper, pause, fortryd og profildeling.
 
 <a id="features"></a>
 ## Funktioner
@@ -63,7 +63,7 @@ Ingen specifik RTSS minimumsversion er blevet certificeret for hver funktion af 
 
 1. **[Download og installer RTSS fra Guru3D](https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/).**
 2. Åbn [NVRasterPulse downloads](../docs/downloads.md#nvrasterpulse) og tjek frigivelsestilgængelighed.
-3. Download `NVRasterPulse-0.1-win-x64-Setup.exe` eller `NVRasterPulse-0.1-win-x64-portable.zip` plus meddelelserne/kontrolsummerne.
+3. Download `NVRasterPulse-0.2-win-x64-Setup.exe` eller `NVRasterPulse-0.2-win-x64-portable.zip` plus meddelelserne/kontrolsummerne.
 4. Sammenlign SHA-256. Kør Setup eller udpak hele den bærbare ZIP til en skrivbar lokal mappe.
 5. Åbn `NVRasterPulse.exe`. Hvis RTSS mangler, skal du bruge **Download RTSS**, installere det og derefter **Tjek igen** eller vælge `RTSS.exe` manuelt.
 6. Start RTSS med dens normale genvej eller NVRasterPulse's RTSS-knap, hvis den er stoppet.
@@ -87,6 +87,23 @@ Brug papirkurven til at fjerne NVRasterPulse's limiter-tilsidesættelser. Det sl
 **Lukning og afslutning:** Hovedvinduet kan skjule sig til bakken. Normal **Afslut** efterlader RTSS kørende og gemte grænser intakte. **Afslut + RTSS** anmoder om en normal lukning af den matchende RTSS-proces i den aktuelle session, venter op til otte sekunder og tvinger den ikke ihjel. Gemte grænser forbliver i begge tilfælde.
 
 Sprog og tema vælges i appen. Opstart ved Windows-logon er valgfri og beregnet til en installeret kopi. Informationsknappen forklarer almindelige handlinger.
+
+<a id="diagnostics-and-profile-tools"></a>
+## Diagnostik og profilværktøjer
+
+Åbn handlingsmenuen for de ekstra værktøjer. De bevarer RTSS Global, overlejringsindstillinger og ekskluderinger.
+
+**Diagnostik:** inspicer lokale/effektive grænser, stoppet RTSS, en manglende eksekverbar fil, intet fundet vindue, deaktiveret hooking, nedarvning, pauserede grænser, konkurrerende indstillinger og dublerede eksekverbare navne. Denne skrivebeskyttede kontrol beskriver konfigurationen; det beviser ikke, at et spil er tilsluttet af RTSS eller måler dets FPS.
+
+**FPS-hjælper:** vælg displayet og erklær VRR/G-Sync, V-Sync, Reflex og Frame Generation selv. Afrundet opdateringsfrekvens kommer fra Windows. Hvis Reflex eller Frame Generation er aktiv eller ukendt, tilbydes der ingen automatisk cap. For VRR med V-Sync tændt og Reflex/FG fra trækker heuristikken mindst 3 FPS eller ca. 2 % af opdateringshastigheden. Dette er ikke et målt optimum. Anvendelse af forslaget fylder udkastet; **Gem** forbliver en separat handling.
+
+**Pause og genoptag:** suspender det valgte programs grænse, og gendan derefter dets tidligere begrænserfelter. Modstridende ændringer af et andet værktøj forhindrer et tvetydigt CV. Hvis du skjuler en post, sættes den ikke på pause.
+
+**Fortryd:** gendan den sidste ændring af de seks administrerede begrænserfelter for det pågældende program. Der er ét niveau; dette gendanner ikke hele RTSS. Modstridende eksterne ændringer afvises. Sikkerhedskopier af filer forbliver adskilt.
+
+**Del profiler:** eksporter valgte profiler til en `.nvrp`-fil. Import viser en forhåndsvisning og lader eksisterende grænser være umarkerede som standard. Filen indeholder kun eksekverbare navne, begrænsninger og tilstande uden absolutte stier eller scripts. Gennemgå dit valg og ansøg. En I/O-fejl kan efterlade nogle profiler allerede anvendt; resultatet identificerer dem, og hver beholder sin fortrydelse. Identiske eksekverbare navne adresserer stadig den samme RTSS-profil.
+
+**Favoritter og skjulte poster:** Fastgør nyttige programmer først, skjul uønskede poster og gendan dem i den dedikerede dialog. Disse valg består. En lukket favorit vises ikke som en kørende applikation.
 
 <a id="screenshots"></a>
 ## Skærmbilleder

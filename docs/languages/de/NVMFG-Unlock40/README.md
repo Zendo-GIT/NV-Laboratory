@@ -20,7 +20,7 @@
 
 **Experimentelles NVIDIA Multi Frame Generation für GeForce RTX 40, mit zentralem Controller und Auswahlmöglichkeiten pro Spiel.**
 
-[Laden Sie 0.1.1 und Status herunter](../docs/downloads.md#nvmfg-unlock40) · [Installation](#installation) · [Stromaufwärts](#upstream-and-modifications) · [Lizenzen](LICENSES/README.md)
+[Laden Sie 0.2.3 und Status herunter](../docs/downloads.md#nvmfg-unlock40) · [Installation](#installation) · [Stromaufwärts](#upstream-and-modifications) · [Lizenzen](LICENSES/README.md)
 
 <a id="overview-and-purpose"></a>
 ## Überblick und Zweck
@@ -31,7 +31,7 @@ NVMFG Unlock40 ist eine unabhängig entwickelte Anwendung von 禅堂 Zendo (Revo
 
 Es dient dazu, das experimentelle MFG-Verhalten zentral zu koordinieren, spielspezifische Entscheidungen zu speichern und Laufzeitaktualisierungen und Backups sichtbar zu halten. Es fügt nicht jedem Spiel DLSS Frame Generation hinzu und konvertiert auch keine beliebige FSR-Implementierung.
 
-Der vorbereitete Kandidat ist **0.1.1**, einschließlich der visuellen Korrektur der SDK-Liste, die intern als UI2 aufgezeichnet wird. Die öffentliche Version bleibt 0.1.1; seine genauen Hashes unterscheiden diesen Kandidaten von älteren lokalen Builds.
+Das aktuelle Paket ist **0.2.3**. Es fügt eine dauerhafte Spielbibliothek, Aktivitäts- und Fähigkeitsinformationen, lokale Diagnose und korrigiertes Auswahl-/Fortschrittsverhalten hinzu. [Downloads](../docs/downloads.md#nvmfg-unlock40) identifiziert die genauen Dateien und Hashes.
 
 <a id="features"></a>
 ## Funktionen
@@ -68,7 +68,7 @@ Eine Versionsbezeichnung allein reicht nicht aus: Treiber, Anbieter-Hash, Spieli
 ## Installation
 
 1. Lesen Sie den [Kandidatenstatus und Lizenzhinweis](../docs/downloads.md#nvmfg-unlock40).
-2. Laden Sie `NVMFGUnlock40-0.1.1-Setup-x64.exe` oder `NVMFGUnlock40-0.1.1-Portable-x64.zip` herunter, sobald die Version verfügbar ist.
+2. Laden Sie `NVMFGUnlock40-0.2.3-Setup-x64.exe` oder `NVMFGUnlock40-0.2.3-Portable-x64.zip` herunter, sobald die Version verfügbar ist.
 3. Überprüfen Sie SHA-256 und bewahren Sie die begleitenden Hinweise auf. Installieren Sie .NET Framework 4.8, falls Windows es nicht bereits bereitstellt.
 4. Führen Sie Setup aus oder extrahieren Sie die **gesamte** portable ZIP-Datei in einen beschreibbaren lokalen Ordner.
 5. Starten Sie `NVMFGUnlock40.exe`; Behalten Sie `agent`, `driver`, `engine` und `Licenses` im mitgelieferten Layout bei.
@@ -90,6 +90,21 @@ Das Schließen des Hauptfensters kann dazu führen, dass der Controller in der T
 
 **Streamline SDKs:** Laden Sie auf der Seite NVIDIA SDK eine offizielle Version herunter oder importieren Sie eine kompatible lokale Version von SDK. Beim Import wird eine verifizierte Kopie gespeichert. **Use this version** wählt es aus und **Uninstall** entfernt diese zwischengespeicherte Kopie. Fehlende Streamline-DLLs können durch eine offizielle NVIDIA SDK ergänzt werden, wobei die Quelle angezeigt wird. Dadurch wird kein NGX-Modell heruntergeladen/ersetzt. Schließen Sie das Spiel, wählen Sie das gewünschte Spielupdate aus und behalten Sie die ursprüngliche Sicherung bei. Um Spieldateien wiederherzustellen, verwenden Sie die Backup-Wiederherstellung und nicht die Schaltfläche Uninstall des Caches.
 
+<a id="library-diagnostics-and-updates"></a>
+## Bibliothek, Diagnose und Updates
+
+**Persistente Bibliothek:** Wählen Sie mehrere Spielordner, einschließlich verschiedener Laufwerke, aus, bevor Sie einen Scan starten. Der Fortschritt ist sichtbar und eine Stornierung ist möglich. Nach dem ersten Scan stellt ein lokaler Cache die Bibliothek beim Start wieder her, ohne jeden Spielordner zu durchsuchen. Aktualisieren Sie, um Änderungen zu finden oder einen weiteren Ordner hinzuzufügen. Durch Wartungsarbeiten werden die betroffenen Dateien immer noch erneut validiert. Die Backup-Überwachung bleibt aktiv. Der Cache wird unter `%LOCALAPPDATA%\RtxMfg\library-cache.json` gespeichert.
+
+**Auswahl:** Ctrl+A wählt alle aus und Ctrl+D löscht die aktive Registerkarte „Spiele“ oder „Backups“. Es wird kein Spiel automatisch ausgewählt. Aktivitätsaktualisierungen und -aktualisierungen führen nicht mehr zu Geisterauswahlen oder inkonsistenten Zählungen.
+
+**Aktivität und Kompatibilität:** Die MFG-Informationen pro Spiel stammen aus NGX-Beobachtungen ohne neues Overlay. Es handelt sich nicht um eine physische Zählung der angezeigten Frames. Die Unterstützung von Dynamic mit V-Sync erfolgt über Laufzeitfunktionen. Eine unbekannte Funktion wird nicht aus einer Versionsnummer abgeleitet. Die Anwendung ändert weder V-Sync noch VRR. Wenn V-Sync ausgeschaltet ist, bleibt Dynamic angehalten; Feste oder spielgesteuerte Auswahlmöglichkeiten sind unterschiedlich.
+
+**Nächster Start:** Der vorübergehende Ausschluss überspringt das Patchen beim nächsten Spielstart und stellt nach dem Beenden die normale Verwaltung wieder her. Eine bereits in einem Spiel geladene DLL kann nicht entfernt werden: Schließen Sie das Spiel und starten Sie es neu. Wallpaper Engine wird als Desktop-Anwendung erkannt; Durch diese Korrektur bleibt der Schutz für tatsächlich ignorierte Spiele erhalten.
+
+**Einstellungen und Unterstützung:** Der Import/Export von Einstellungen erfordert eine manuelle Neuzuordnung der Spielordner. Die lokale Diagnose in „Info“ filtert private Informationen und meldet verfügbare NVAPI-Fehlercodes oder Konfliktkategorien. Überprüfen Sie es, bevor Sie es teilen. Es wird nichts automatisch hochgeladen.
+
+**Anwendungsaktualisierungen:** Eine optionale Prüfung zeigt Versionshinweise an und bietet das offizielle Setup. Der explizite Download wird anhand der GitHub-Größe und der SHA-256-Metadaten überprüft. Sie leiten die Installation selbst ein. Version 0.2.3 löscht auch abgeschlossene Fortschrittsmeldungen und behält gleichzeitig aussagekräftige Fehler und Ergebnisse bei. Diese Ergänzungen umfassen die Änderungen seit der öffentlichen Version 0.1.1.
+
 <a id="screenshots"></a>
 ## Screenshots
 
@@ -109,6 +124,7 @@ Lokale Spiellaufzeitsicherungen verwenden `%LOCALAPPDATA%\NvidiaStreamlineMainte
 <a id="known-limitations"></a>
 ## Bekannte Einschränkungen
 
+- Eine gemeldete 0.1.1-Aktivierungs-/Wiederherstellungs-/Deinstallationsblockade bleibt unreproduziert und ihre Ursache ist unbekannt. Diese Version erhebt nicht den Anspruch, das Problem zu beheben. Bewahren Sie nach einem Fehler das Wiederherstellungsjournal auf und überprüfen Sie die lokale Diagnose. Erzwingen Sie nicht das Löschen von Wiederherstellungsdaten.
 - Experimentelle native Patches können zu Abstürzen oder visuellen Artefakten führen; Im Entwicklungsverlauf wird ein ungelöster Bodycam-Absturz aufgezeichnet.
 - Kontrollierte Renderer-Tests sind keine Zertifizierung für jedes Spiel, jeden Treiber oder Anti-Cheat.
 - Generierte Frames erstellen keine neuen Eingabebeispiele. Dieser Hub verspricht keine gemessene Latenz oder Leistungssteigerung.

@@ -29,8 +29,8 @@
 | --- | --- | --- | --- |
 | NVIDIA Profile Inspector – NV Tools Fork | NVPI-CustomNV-3.0.2.3-Setup-r2.exe | مکمل NVPI ZIP نکالیں۔ | NVIDIA ڈرائیور اور .NET فریم ورک 4.8 |
 | NVDriverForge | NVDriverForge-Setup.exe | NVDriverForge.exe، رن ٹائم شامل ہے۔ | تنصیب کی کارروائیوں کے لیے ہم آہنگ اصل NVIDIA ڈرائیور پیکیج |
-| NVMFG Unlock40 | NVMFGUnlock40-0.1.1-Setup-x64.exe | مکمل NVMFG زپ نکالیں، ذیلی فولڈرز کو برقرار رکھیں | RTX 40، موجودہ DLSS FG، عین مطابق فراہم کنندہ اور .NET فریم ورک 4.8 مددگار |
-| NVRasterPulse | NVRasterPulse-0.1-win-x64-Setup.exe | مکمل RP ZIP نکالیں۔ | RTSS اور .NET فریم ورک 4.8 |
+| NVMFG Unlock40 | NVMFGUnlock40-0.2.3-Setup-x64.exe | مکمل NVMFG زپ نکالیں، ذیلی فولڈرز کو برقرار رکھیں | RTX 40، موجودہ DLSS FG، عین مطابق فراہم کنندہ اور .NET فریم ورک 4.8 مددگار |
+| NVRasterPulse | NVRasterPulse-0.2-win-x64-Setup.exe | مکمل RP ZIP نکالیں۔ | RTSS اور .NET فریم ورک 4.8 |
 
 <a id="download-verify-install"></a>
 ## ڈاؤن لوڈ کریں، تصدیق کریں، انسٹال کریں۔

@@ -18,7 +18,7 @@
 <a id="third-party-notices-and-credits"></a>
 # Oznámení a kredity třetích stran
 
-Prvotní audit: 2026-09-09; NVDriverForge 0.1.3 a aktualizace provenience: 2026-09-10. **Licence komponenty se vztahuje na tuto komponentu, nikoli na celou sadu.** Zdroj aplikace zůstává soukromý. Upozornění na autorská práva a povolení jsou uchovávána doslovně; tato tabulka je index, nikoli jejich náhrada. „Externí“ znamená, že není distribuován v aktivech aplikace.
+Prvotní audit: 2026-09-09; aktuální balíček a recenze původu: 2026-09-18. NVDriverForge 0.1.4, NVMFG Unlock40 0.2.3 a NVRasterPulse 0.2 si ponechávají stávající licence komponent. Profile Inspector 3.0.2.3/setup-r2 se nezměnil. **Licence komponenty se vztahuje na tuto komponentu, nikoli na celou sadu.** Zdroj aplikace zůstává soukromý. Upozornění na autorská práva a povolení jsou uchovávána doslovně; tato tabulka je index, nikoli jejich náhrada. „Externí“ znamená, že není distribuován v aktivech aplikace.
 
 | Součást / původní projekt | Autor | Oficiální stránky, úložiště nebo stahování | Licence / upozornění | Použijte v NV Tools | Úpravy |
 | --- | --- | --- | --- | --- | --- |

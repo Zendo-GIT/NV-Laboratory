@@ -30,9 +30,9 @@
 | प्रकल्प | उद्देश | आवृत्ती | दस्तऐवजीकरण | डाउनलोड करा |
 | --- | --- | --- | --- | --- |
 | **NVIDIA Profile Inspector – NV Tools Fork** | NVIDIA ड्राइव्हर प्रोफाइल संपादक जोडलेले डिस्प्ले, रंग, HDR आणि ICC/WCS नियंत्रणे. पूर्वी NVPI Custom. | 3.0.2.3 | [मार्गदर्शक](NVIDIA-Profile-Inspector/README.md) | [पॅकेजेस](docs/downloads.md#nvidia-profile-inspector) |
-| **NVDriverForge** | ड्राइव्हर घटक निवडा, पर्यायी बदलांचे पुनरावलोकन करा आणि मूळ NVIDIA ड्राइव्हर पॅकेज स्थापित करा. | 0.1.3 | [मार्गदर्शक](NVDriverForge/README.md) | [पॅकेजेस](docs/downloads.md#nvdriverforge) |
-| **NVMFG Unlock40** | प्रायोगिक RTX 40 MFG साधन प्रति-गेम निवडी आणि Streamline SDK देखभाल. | 0.1.1 | [मार्गदर्शक](NVMFG-Unlock40/README.md) | [पॅकेजेस आणि स्थिती](docs/downloads.md#nvmfg-unlock40) |
-| **NVRasterPulse** | RTSS FPS मर्यादा प्रति एक्झिक्युटेबल, फ्रॅक्शनल व्हॅल्यू, बॅकअप आणि ट्रे ऍक्सेससह व्यवस्थापित करा. | 0.1 | [मार्गदर्शक](NVRasterPulse/README.md) | [पॅकेजेस](docs/downloads.md#nvrasterpulse) |
+| **NVDriverForge** | मार्गदर्शित पर्याय, बॅकअप आणि पुनर्प्राप्तीसह मूळ NVIDIA ड्राइव्हर तयार करा आणि स्थापित करा. | 0.1.4 | [मार्गदर्शक](NVDriverForge/README.md) | [पॅकेजेस](docs/downloads.md#nvdriverforge) |
+| **NVMFG Unlock40** | प्रायोगिक RTX 40 MFG, पर्सिस्टंट गेम लायब्ररी, डायग्नोस्टिक्स आणि Streamline SDK देखभाल. | 0.2.3 | [मार्गदर्शक](NVMFG-Unlock40/README.md) | [पॅकेजेस आणि स्थिती](docs/downloads.md#nvmfg-unlock40) |
+| **NVRasterPulse** | प्रति प्रोग्राम RTSS FPS मर्यादा व्यवस्थापित करा: निदान, सूचना, विराम द्या, पूर्ववत करा आणि प्रोफाइल शेअरिंग. | 0.2 | [मार्गदर्शक](NVRasterPulse/README.md) | [पॅकेजेस](docs/downloads.md#nvrasterpulse) |
 
 **डाउनलोड:** [डाउनलोड पृष्ठ](docs/downloads.md) प्रत्येक आवृत्तीची स्थिती, फाइल्स आणि SHA-256 मूल्यांची सूची देते. प्रायोगिक वैशिष्ट्ये आणि सुसंगतता मर्यादा प्रकल्प मार्गदर्शकांमध्ये वर्णन केल्या आहेत.
 

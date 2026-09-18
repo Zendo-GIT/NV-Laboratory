@@ -18,7 +18,7 @@
 <a id="provenance-changes-and-licensing"></a>
 # Pochodzenie, zmiany i licencjonowanie
 
-Audyt ten opisuje kandydatów przygotowanych dnia **2026-09-09**. Źródła aplikacji pozostają prywatne; publiczne wykazy zawierają nazwy plików i skróty, a nie kod źródłowy. Zobacz [pełne uwagi dotyczące komponentów](../THIRD_PARTY_NOTICES.md).
+Audyt ten opisuje kandydatów przygotowanych w dniu **2026-09-18**. Źródła aplikacji pozostają prywatne; publiczne wykazy zawierają nazwy plików i skróty, a nie kod źródłowy. Zobacz [pełne uwagi dotyczące komponentów](../THIRD_PARTY_NOTICES.md).
 
 <a id="nvidia-profile-inspector--nv-tools-fork"></a>
 ## NVIDIA Profile Inspector – NV Tools Fork
@@ -68,11 +68,13 @@ Pomocnik dostosowuje NvapiDrsWrapper i NativeArrayHelper NVPI do osobnego zestaw
 
 Numer referencyjny MinHook: `8fda4f5481fed5797dc2651cd91e238e9b3928c6`; w odziedziczonym skompilowanym podzbiorze nie ma funkcjonalnych zmian lokalnych w porównaniu. Nagłówki integracji Streamline: 2.12; licencja na otwarty nagłówek zweryfikowana pod adresem v2.12.0. Źródło nagłówka NGX: NVIDIA/DLSS zatwierdzenie `a291cc7d2cc642a51566f3dfd5376f635cd1b284`.
 
-Silnik kandydata SHA-256: `0E7FC0277C88B22095B622F6A3CB292EC0C14F7A0253D392502257B75E548890`.
+Silnik kandydata SHA-256: `C793770D329B99CD9C5C640317CE435BFE353CA2868E36CF5DCD4D5295EFAE13`.
 
 Wymagany dostawca SHA-256 w engine.json: `C64928FDB7C48A57722EA8EEF2662171EDC323473ADEA66C29A206A23F1A2BED`. Zgłoszona rodzina dostawców 310.9 nie jest wymienna z tym dokładnym skrótem. Nie uwzględniono żadnej biblioteki DLL ani modelu dostawcy.
 
 **Wyjątkowy punkt licencjonowania:** pełna licencja NVIDIA RTX SDK, wersja z 14 marca 2024 r., zawiera ograniczenie w sekcji 4(d) dotyczące omijania ograniczeń technicznych. Audyt nie stwierdza pozwolenia na takie wykorzystanie. Zachowanie licencji na silnik MIT, bycie darmowym lub obserwowanie innych modów nie rozwiązuje tego odrębnego warunku. Przygotowanie kandydata nie jest zaświadczeniem prawnym. Oryginalna, krótka informacja nagłówkowa jest uzupełniona pełną licencją; jego tekst Windows-1252 jest również dostarczany w czytelnym formacie UTF-8, z zachowaniem oryginalnych bajtów.
+
+Porównanie natywne zostało przeliczone dla 0.2.3: te same 48 plików i klasyfikacji. Od czasu poprzedniego audytu `game_selection.cpp`, `game_selection.h` i `patcher.cpp` uległy zmianie w zakresie obserwacji aktywności/możliwości. Nowe przepływy pracy związane z biblioteką, diagnostyką, preferencjami, aktualizacją i selekcją należą do aplikacji opiekuna. Licencje na komponenty i wymagany skrót dostawcy pozostają niezmienione.
 
 <a id="nvrasterpulse"></a>
 ## NVRasterPulse
@@ -102,3 +104,5 @@ Późniejsza wersja 2 konfiguracji NVPI naprawia samodzielny wybór języka za p
 NVDriverForge 0.1.3 został ukończony 10.09.2026. Jego prywatny raport z weryfikacji rejestruje 366 testów aplikacji, 118 kontroli towarzyszących, 32 kontrole konfiguracji, 156 porównań natywnych i 34 przypadki przekierowań językowych. Poprawka dotycząca chronionego wyboru komponentów została odtworzona w oparciu o oryginalny pakiet sterowników bez zmiany jego ładunku ani instalowania sterownika. Są to przestarzałe wyniki pracy zespołu ds. produktu, a nie testy powtórzone w ramach tej aktualizacji dokumentacji lub dowód udanej rzeczywistej instalacji sterownika.
 
 Ta aktualizacja centrum nie zmienia żadnego funkcjonalnego kodu aplikacji. Wcześniejsze testy kompilacji aplikacji/jednostek/UI pozostają przestarzałymi dowodami historycznymi. Nie jest to pełna inżynieria wsteczna każdego pliku binarnego strony trzeciej ani gwarancja na każdy możliwy tajny wzór.
+
+Aktualizacja z 18 września 2026 r.: NVDriverForge 0.1.4 dodaje kontrole gotowości, kopię zapasową profilu natywnego, wskazówki dotyczące komponentów, preferencje i zestawy, szczegółowe wyniki, lokalne raporty i aktualizacje aplikacji. NVRasterPulse 0.2 dodaje diagnostykę konfiguracji, wskazówki FPS, pauzę/wznawianie, cofanie, profile `.nvrp` oraz ulubione/ukrywanie, bez nowego silnika limitera. Poszczególne przewodniki opisują użycie i ograniczenia. Statyczne kontrole w centrum są niezależne od testów aplikacji zarejestrowanych w prywatnych raportach z 18 września; dla tego koncentratora nie przeprowadzono instalacji sterownika, importowano rzeczywisty profil ani pomiar opóźnienia.

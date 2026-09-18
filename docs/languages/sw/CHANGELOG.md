@@ -18,35 +18,52 @@
 <a id="changelog"></a>
 # Changelog
 
-Kitovu hiki kinafuata [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Maingizo yanaelezea hazina hii; matoleo ya programu ni huru.
+Kitovu hiki kinafuata [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Matoleo ya programu na tarehe za kutolewa ni huru. Vifurushi vilivyotayarishwa hapa chini hupokea tarehe zao halisi za uchapishaji kwenye Matoleo ya GitHub husika.
 
 <a id="unreleased"></a>
 ## [Haijatolewa]
 
-<a id="added"></a>
-### Imeongezwa
-
-- Hub, miongozo kamili ya mradi na hati za hazina katika lugha 34 za matumizi ya NV.
-- Viteuzi vya lugha vinavyohifadhi ukurasa, metadata ya chanjo ya tafsiri na nanga thabiti za ndani.
-- Salio la juu, arifa kamili zinazotumika na asili ya faili.
-- Mahitaji ya RTSS na kiunga rasmi cha upakuaji cha NVRasterPulse.
-- Tenganisha viungo vya RevoluSound Team.
-- Katalogi ya kifurushi cha toleo la kwanza, uthibitishaji wa SHA-256 na utaratibu wa kutolewa mwenyewe.
-- Fomu za hitilafu/vipengele, michango na maagizo ya usalama.
-- Nyaraka za kusoma pekee na ukaguzi wa mipaka ya uchapishaji.
-
 <a id="changed"></a>
 ### Imebadilishwa
 
-- Sifa ya NVMFG sasa inatofautisha programu iliyotengenezwa kwa kujitegemea,
-rejeleo la kulinganisha/uboreshaji, na vijenzi asili vilivyoshirikiwa.   Hakimiliki zilizopo, leseni na ulinganishaji wa faili hubakia sawa.
-- Mtahiniwa wa NVDriverForge amesasishwa hadi 0.1.3: ushughulikiaji wa kipengele wa hiari uliorekebishwa,
-hitilafu zinazoweza kusomeka zilizojanibishwa na kusasishwa kwa wakati wa kukimbia/kifungashio kiandamani.
+- Onyesha upya kitovu na lugha zote 34 za hati za NVDriverForge 0.1.4,
+NVMFG Unlock40 0.2.3 na NVRasterPulse 0.2, iliyoandaliwa mnamo 2026-09-18.
+- NVDriverForge: ukaguzi wa utayari, chelezo za wasifu asilia na uokoaji uliolindwa,
+mwongozo wa vipengele, mapendeleo yanayoweza kutumika tena, vifaa vya kiendeshi, matokeo ya kina, ripoti za usaidizi wa ndani na masasisho tofauti ya programu.
+- NVMFG: ugunduzi wa folda nyingi, kashe ya maktaba inayoendelea, iliona shughuli za MFG,
+maelezo ya uwezo wa wakati wa kukimbia, kutengwa kwa uzinduzi unaofuata, uchunguzi wa ndani, uhamishaji wa mapendeleo na masasisho ya hiari ya programu.
+- NVRasterPulse: uchunguzi wa usanidi, mapendekezo ya FPS, sitisha/anza tena,
+Tendua kwa kiwango kimoja, uagizaji/uhamishaji wa wasifu uliochaguliwa, vipendwa na maingizo yaliyofichwa.
+- Onyesha upya heshi za kifurushi, vidokezo vya kutolewa na ramani ya asili ya asili.
+Hifadhi vipengee vya Profile Inspector 3.0.2.3/setup-r2 vilivyochapishwa tayari bila kubadilishwa.
 
 <a id="fixed"></a>
 ### Imerekebishwa
 
-- Marekebisho ya 2 ya usanidi ya NVIDIA Profile Inspector – NV Tools Fork sasa yanaonyesha iliyoshirikiwa
-Kiteuzi cha lugha 34 kinapozinduliwa moja kwa moja. Lugha chafu na usambazaji wa kimya kimya huhifadhiwa; kihariri na kifurushi kinachobebeka hazijabadilishwa.
+- Uchaguzi/hesabu za mchezo wa NVMFG, utunzaji wa Ctrl+D na ujumbe wa maendeleo uliokamilika;
+Wallpaper Engine haijajumuishwa kwenye utambuzi wa mchezo. Kizuizi tofauti cha urejeshaji cha 0.1.1 kilichoripotiwa bado hakijatolewa tena na hakidaiwi kuwa sawa.
 
-Hakuna tarehe za kihistoria za kutolewa kwa umma ambazo zimeundwa upya. Matoleo ya maombi ya mgombea ni 3.0.2.3, 0.1.3, 0.1.1 na 0.1; maelezo yao ya kutolewa yameambatanishwa na matoleo yao ya baadaye. Maandalizi ya 2026-09-09 sio tarehe ya kutolewa ya GitHub.
+<a id="initial-public-hub--2026-09-10"></a>
+## [Kitovu cha kwanza cha umma] - 2026-09-10
+
+<a id="added"></a>
+### Imeongezwa
+
+- Miongozo minne ya mradi na nyaraka za hazina katika lugha 34, pamoja na
+viteuzi vya kuhifadhi ukurasa, nanga thabiti na metadata ya chanjo ya tafsiri.
+- Mikopo ya sehemu, leseni asili, asili, mahitaji ya RTSS na
+tenga viungo vya RevoluSound Team.
+- Vifurushi vya kutolewa kwa mwongozo, maadili ya SHA-256, fomu za toleo, sera ya usalama na
+uthibitishaji wa nyaraka za kusoma pekee. Vyanzo vya maombi vinasalia kuwa vya faragha.
+- Lebo za kwanza za umma: `nvpi-v3.0.2.3`, `nvdriverforge-v0.1.3`,
+`nvmfg-unlock40-v0.1.1` na `nvrasterpulse-v0.1`.
+
+<a id="included-fixes"></a>
+### Marekebisho yamejumuishwa
+
+- Marekebisho ya 2 ya kisakinishi cha Profile Inspector: kiteuzi kinachojitegemea cha lugha 34;
+kihariri na mzigo wa malipo unaobebeka haujabadilika.
+- NVDriverForge 0.1.3: ushughulikiaji wa sehemu ya hiari na ujanibishaji.
+muhtasari wa kutofaulu, na wakati wa utekelezaji uliosasishwa na ufungaji shirikishi.
+
+Tarehe zilizo hapo juu ni historia ya kituo cha umma iliyothibitishwa, sio tarehe za maendeleo zilizoundwa upya.

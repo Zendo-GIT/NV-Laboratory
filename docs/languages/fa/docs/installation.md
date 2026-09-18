@@ -29,8 +29,8 @@
 | --- | --- | --- | --- |
 | NVIDIA Profile Inspector – NV Tools Fork | NVPI-CustomNV-3.0.2.3-Setup-r2.exe | NVPI ZIP کامل را استخراج کنید | درایور NVIDIA و NET Framework 4.8 |
 | NVDriverForge | NVDriverForge-Setup.exe | NVDriverForge.exe، زمان اجرا گنجانده شده است | بسته درایور اصلی NVIDIA برای عملیات نصب سازگار است |
-| NVMFG Unlock40 | NVMFGUnlock40-0.1.1-Setup-x64.exe | NVMFG ZIP کامل را استخراج کنید، زیرپوشه ها را حفظ کنید | RTX 40، DLSS FG موجود، ارائه‌دهنده دقیق و NET Framework 4.8 |
-| NVRasterPulse | NVRasterPulse-0.1-win-x64-Setup.exe | RP ZIP کامل را استخراج کنید | RTSS و NET Framework 4.8 |
+| NVMFG Unlock40 | NVMFGUnlock40-0.2.3-Setup-x64.exe | NVMFG ZIP کامل را استخراج کنید، زیرپوشه ها را حفظ کنید | RTX 40، DLSS FG موجود، ارائه‌دهنده دقیق و NET Framework 4.8 |
+| NVRasterPulse | NVRasterPulse-0.2-win-x64-Setup.exe | RP ZIP کامل را استخراج کنید | RTSS و NET Framework 4.8 |
 
 <a id="download-verify-install"></a>
 ## دانلود، تایید، نصب کنید

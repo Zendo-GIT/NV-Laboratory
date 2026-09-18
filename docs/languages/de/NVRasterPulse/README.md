@@ -22,14 +22,14 @@
 
 > **Installieren Sie zuerst RTSS.** NVRasterPulse erfordert [RivaTuner Statistics Server (RTSS), heruntergeladen von Guru3D](https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/). RTSS muss ausgeführt werden, um Grenzwerte durchzusetzen. Es ist kein RTSS-Installationsprogramm, keine Hook-DLL oder SDK im Lieferumfang enthalten.
 
-[Laden Sie 0.1 und Status herunter](../docs/downloads.md#nvrasterpulse) · [Installation](#installation) · [Wie Grenzen funktionieren](#usage) · [Lizenz](../../../../NVRasterPulse/LICENSE)
+[Laden Sie 0.2 und Status herunter](../docs/downloads.md#nvrasterpulse) · [Installation](#installation) · [Wie Grenzen funktionieren](#usage) · [Lizenz](../../../../NVRasterPulse/LICENSE)
 
 <a id="overview-and-purpose"></a>
 ## Überblick und Zweck
 
 NVRasterPulse ist eine kompakte Windows-Schnittstelle zum Verwalten von RTSS-Frame-Limits nach ausführbarem Namen. RTSS führt die Begrenzung durch. NVRasterPulse verwaltet die entsprechenden Profilwerte, Backups und Neuladeanforderungen mit Tray-Zugriff und dauerhaften Auswahlmöglichkeiten.
 
-Es dient dazu, die Bearbeitung genauer Limits pro Spiel zu erleichtern, ohne ein ganzes RTSS-Profil zu ersetzen oder seine Overlay-Einstellungen zu ändern. Der aktuelle **0.1**-Kandidat ist der Build vom 9. September 2026 mit einer erforderlichen RTSS-Installationsprüfung.
+Es dient dazu, die Bearbeitung genauer Limits pro Spiel zu erleichtern, ohne ein ganzes RTSS-Profil zu ersetzen oder seine Overlay-Einstellungen zu ändern. Version **0.2** fügt Konfigurationsdiagnose, einen FPS-Helfer, Pause, Rückgängigmachen und Profilfreigabe hinzu.
 
 <a id="features"></a>
 ## Funktionen
@@ -63,7 +63,7 @@ Bei diesem Hub-Audit wurde für jede Funktion keine bestimmte RTSS-Mindestversio
 
 1. **[Laden Sie RTSS von Guru3D herunter und installieren Sie es](https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/).**
 2. Öffnen Sie [NVRasterPulse-Downloads](../docs/downloads.md#nvrasterpulse) und prüfen Sie die Release-Verfügbarkeit.
-3. Laden Sie `NVRasterPulse-0.1-win-x64-Setup.exe` oder `NVRasterPulse-0.1-win-x64-portable.zip` sowie die Hinweise/Prüfsummen herunter.
+3. Laden Sie `NVRasterPulse-0.2-win-x64-Setup.exe` oder `NVRasterPulse-0.2-win-x64-portable.zip` sowie die Hinweise/Prüfsummen herunter.
 4. Vergleiche SHA-256. Führen Sie Setup aus oder extrahieren Sie die gesamte portable ZIP-Datei in einen beschreibbaren lokalen Ordner.
 5. Öffnen Sie `NVRasterPulse.exe`. Wenn RTSS fehlt, verwenden Sie **RTSS herunterladen**, installieren Sie es und **erneut prüfen** oder wählen Sie `RTSS.exe` manuell aus.
 6. Starten Sie RTSS über die normale Verknüpfung oder über die Schaltfläche RTSS von NVRasterPulse, wenn es gestoppt ist.
@@ -87,6 +87,23 @@ Verwenden Sie die Papierkorbaktion, um die Limiter-Überschreibungen von NVRaste
 **Schließen und Beenden:** Das Hauptfenster kann in der Taskleiste ausgeblendet werden. Beim normalen **Beenden** bleibt RTSS aktiv und die gespeicherten Grenzwerte bleiben erhalten. **Beenden + RTSS** fordert ein normales Schließen des entsprechenden RTSS-Prozesses in der aktuellen Sitzung an, wartet bis zu acht Sekunden und beendet ihn nicht zwangsweise. Gespeicherte Limits bleiben in beiden Fällen bestehen.
 
 Sprache und Thema werden in der App ausgewählt. Der Start bei der Windows-Anmeldung ist optional und für eine installierte Kopie vorgesehen. Die Informationsschaltfläche erläutert häufige Aktionen.
+
+<a id="diagnostics-and-profile-tools"></a>
+## Diagnose- und Profiltools
+
+Öffnen Sie das Aktionsmenü für die zusätzlichen Tools. Sie behalten RTSS Global, Overlay-Einstellungen und Ausschlüsse bei.
+
+**Diagnose:** Überprüfen Sie lokale/effektive Grenzwerte, gestopptes RTSS, eine fehlende ausführbare Datei, kein erkanntes Fenster, deaktiviertes Hooking, Vererbung, angehaltene Grenzwerte, konkurrierende Einstellungen und doppelte ausführbare Namen. Diese schreibgeschützte Prüfung beschreibt die Konfiguration; Es beweist nicht, dass ein Spiel an RTSS gebunden ist, und misst auch nicht dessen FPS.
+
+**FPS-Helfer:** Wählen Sie die Anzeige aus und deklarieren Sie selbst VRR/G-Sync, V-Sync, Reflex und Frame Generation. Die gerundete Aktualisierungsfrequenz stammt von Windows. Wenn Reflex oder Frame Generation aktiv oder unbekannt ist, wird keine automatische Obergrenze angeboten. Für VRR mit aktiviertem V-Sync und deaktiviertem Reflex/FG subtrahiert die Heuristik mindestens 3 FPS oder etwa 2 % der Bildwiederholfrequenz. Dies ist kein gemessenes Optimum. Durch die Anwendung des Vorschlags wird der Entwurf ausgefüllt; **Speichern** bleibt eine separate Aktion.
+
+**Pause und Fortsetzen:** setzt die Obergrenze des ausgewählten Programms außer Kraft und stellt dann die vorherigen Begrenzerfelder wieder her. Widersprüchliche Änderungen durch ein anderes Tool verhindern eine Wiederaufnahme bei unklarem Zustand. Durch das Ausblenden eines Eintrags wird dessen Obergrenze nicht angehalten.
+
+**Rückgängig machen:** stellt die letzte Änderung an den sechs verwalteten Limiterfeldern für dieses Programm wieder her. Es gibt eine Ebene; Dadurch wird nicht das gesamte RTSS wiederhergestellt. Widersprüchliche externe Änderungen werden abgelehnt. Dateisicherungen bleiben getrennt.
+
+**Profile teilen:** Ausgewählte Profile in eine `.nvrp`-Datei exportieren. Der Import zeigt eine Vorschau an und lässt vorhandene Obergrenzen standardmäßig deaktiviert. Die Datei enthält nur ausführbare Namen, Limits und Zustände, ohne absolute Pfade oder Skripte. Prüfen Sie Ihre Auswahl und übernehmen Sie die ausgewählten Profile. Ein E/A-Fehler kann dazu führen, dass einige Profile bereits angewendet werden; Das Ergebnis identifiziert sie und jeder behält seine Rückgängigmachung. Identische ausführbare Namen adressieren immer noch dasselbe RTSS-Profil.
+
+**Favoriten und ausgeblendete Einträge:** Nützliche Programme zuerst anheften, unerwünschte Einträge ausblenden und im entsprechenden Dialog wiederherstellen. Diese Entscheidungen bleiben bestehen. Ein geschlossener Favorit wird nicht als laufende Anwendung angezeigt.
 
 <a id="screenshots"></a>
 ## Screenshots

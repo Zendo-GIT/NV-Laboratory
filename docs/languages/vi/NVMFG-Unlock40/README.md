@@ -20,7 +20,7 @@
 
 **NVIDIA Multi Frame Generation thử nghiệm dành cho GeForce RTX 40, với bộ điều khiển trung tâm và các lựa chọn cho mỗi trò chơi.**
 
-[Tải xuống 0.1.1 & trạng thái](../docs/downloads.md#nvmfg-unlock40) · [Cài đặt](#installation) · [Thượng nguồn](#upstream-and-modifications) · [Giấy phép](LICENSES/README.md)
+[Tải xuống 0.2.3 & trạng thái](../docs/downloads.md#nvmfg-unlock40) · [Cài đặt](#installation) · [Thượng nguồn](#upstream-and-modifications) · [Giấy phép](LICENSES/README.md)
 
 <a id="overview-and-purpose"></a>
 ## Tổng quan và mục đích
@@ -31,7 +31,7 @@ NVMFG Unlock40 là một ứng dụng được phát triển độc lập bởi 
 
 Nó tồn tại để điều phối tập trung hành vi MFG thử nghiệm, ghi nhớ các lựa chọn dành riêng cho trò chơi và luôn hiển thị các bản cập nhật thời gian chạy và bản sao lưu. Nó không thêm DLSS Frame Generation vào mọi trò chơi hoặc chuyển đổi cách triển khai FSR tùy ý.
 
-Ứng viên đã chuẩn bị là **0.1.1**, bao gồm cả tính năng chỉnh sửa trực quan trong danh sách SDK được ghi nội bộ dưới dạng UI2. Phiên bản công khai vẫn là 0.1.1; giá trị băm chính xác của nó giúp phân biệt ứng cử viên này với các bản dựng cục bộ cũ hơn.
+Gói hiện tại là **0.2.3**. Nó bổ sung thêm một thư viện trò chơi liên tục, thông tin về hoạt động và khả năng, chẩn đoán cục bộ và hành vi lựa chọn/tiến trình đã được sửa chữa. [Tải xuống](../docs/downloads.md#nvmfg-unlock40) xác định các tệp và hàm băm chính xác.
 
 <a id="features"></a>
 ## Tính năng
@@ -68,7 +68,7 @@ Chỉ nhãn phiên bản là không đủ: trình điều khiển, hàm băm c�
 ## Cài đặt
 
 1. Đọc [tình trạng ứng cử viên và lưu ý cấp phép](../docs/downloads.md#nvmfg-unlock40).
-2. Tải xuống `NVMFGUnlock40-0.1.1-Setup-x64.exe` hoặc `NVMFGUnlock40-0.1.1-Portable-x64.zip` khi có Bản phát hành.
+2. Tải xuống `NVMFGUnlock40-0.2.3-Setup-x64.exe` hoặc `NVMFGUnlock40-0.2.3-Portable-x64.zip` khi có Bản phát hành.
 3. Kiểm tra SHA-256 và lưu giữ các thông báo kèm theo. Cài đặt .NET Framework 4.8 nếu Windows chưa cung cấp.
 4. Chạy Thiết lập hoặc trích xuất **toàn bộ** ZIP di động vào một thư mục cục bộ có thể ghi.
 5. Khởi chạy `NVMFGUnlock40.exe`; giữ `agent`, `driver`, `engine` và `Licenses` trong bố cục được cung cấp.
@@ -90,6 +90,21 @@ Thư mục có tên `driver` chứa trình trợ giúp không gian người dùn
 
 **Streamline SDKs:** trên trang NVIDIA SDK, tải xuống phiên bản chính thức hoặc nhập SDK cục bộ tương thích. Nhập lưu trữ một bản sao đã được xác minh; **Use this version** chọn nó và **Uninstall** xóa bản sao đã lưu trong bộ nhớ đệm đó. Các DLL Streamline bị thiếu có thể được bổ sung từ NVIDIA SDK chính thức, với nguồn được hiển thị. Điều này không tải xuống/thay thế mẫu NGX. Đóng trò chơi, chọn bản cập nhật trò chơi dự định và giữ lại bản sao lưu ban đầu. Để hoàn nguyên các tệp trò chơi, hãy sử dụng khôi phục bản sao lưu của nó chứ không phải nút Uninstall của bộ đệm.
 
+<a id="library-diagnostics-and-updates"></a>
+## Thư viện, chẩn đoán và cập nhật
+
+**Thư viện liên tục:** chọn một số thư mục trò chơi, bao gồm các ổ đĩa khác nhau, trước khi bắt đầu một lần quét. Tiến trình có thể nhìn thấy và hủy bỏ có sẵn. Sau lần quét đầu tiên, bộ đệm cục bộ sẽ khôi phục thư viện khi khởi chạy mà không cần duyệt từng thư mục trò chơi. Làm mới để tìm các thay đổi hoặc thêm thư mục khác. Hoạt động bảo trì vẫn xác nhận lại các tệp bị ảnh hưởng; giám sát sao lưu vẫn hoạt động. Bộ đệm được lưu trữ tại `%LOCALAPPDATA%\RtxMfg\library-cache.json`.
+
+**Lựa chọn:** Ctrl+A chọn tất cả và Ctrl+D xóa tab Trò chơi hoặc Sao lưu đang hoạt động. Không có trò chơi nào được chọn tự động. Cập nhật và làm mới hoạt động không còn tạo ra các lựa chọn ma quái hoặc số lượng không nhất quán.
+
+**Hoạt động và khả năng tương thích:** Thông tin MFG trong mỗi trò chơi đến từ các quan sát NGX mà không có lớp phủ mới. Nó không phải là số lượng khung hình được hiển thị. Hỗ trợ Dynamic-với-V-Sync đến từ khả năng thời gian chạy; khả năng chưa biết không được suy ra từ số phiên bản. Ứng dụng không thay đổi V-Sync hay VRR. Khi tắt V-Sync, Dynamic vẫn bị treo; các lựa chọn cố định hoặc do trò chơi kiểm soát là riêng biệt.
+
+**Lần khởi chạy tiếp theo:** loại trừ tạm thời sẽ bỏ qua việc vá lỗi ở lần khởi chạy trò chơi tiếp theo và khôi phục quyền quản lý thông thường sau khi thoát. Nó không thể xóa DLL đã được tải trong trò chơi: đóng và khởi động lại trò chơi đó. Wallpaper Engine được công nhận là ứng dụng dành cho máy tính để bàn; sự điều chỉnh này duy trì khả năng bảo vệ cho các trò chơi thực tế bị bỏ qua.
+
+**Tùy chọn và hỗ trợ:** nhập/xuất tùy chọn yêu cầu liên kết lại các thư mục trò chơi theo cách thủ công. Chẩn đoán cục bộ trong Giới thiệu sẽ lọc thông tin cá nhân và báo cáo các mã lỗi hoặc danh mục xung đột NVAPI có sẵn. Xem lại nó trước khi chia sẻ; không có gì được tải lên tự động.
+
+**Cập nhật ứng dụng:** kiểm tra tùy chọn hiển thị ghi chú phát hành và cung cấp Cài đặt chính thức. Quá trình tải xuống rõ ràng được kiểm tra theo kích thước GitHub và siêu dữ liệu SHA-256; bạn tự mình bắt đầu cài đặt. Phiên bản 0.2.3 cũng xóa các thông báo tiến độ đã hoàn thành trong khi vẫn giữ được các lỗi và kết quả có ý nghĩa. Những bổ sung này bao gồm những thay đổi kể từ phiên bản công khai 0.1.1.
+
 <a id="screenshots"></a>
 ## Ảnh chụp màn hình
 
@@ -109,6 +124,7 @@ Bản sao lưu thời gian chạy trò chơi cục bộ sử dụng `%LOCALAPPDA
 <a id="known-limitations"></a>
 ## Những hạn chế đã biết
 
+- Sự tắc nghẽn kích hoạt/khôi phục/gỡ cài đặt 0.1.1 được báo cáo vẫn chưa được sao chép và chưa rõ nguyên nhân. Bản phát hành này không yêu cầu sửa nó. Sau khi thất bại, hãy lưu giữ nhật ký khôi phục và kiểm tra chẩn đoán cục bộ; không buộc xóa dữ liệu khôi phục.
 - Các bản vá gốc thử nghiệm có thể gây ra sự cố hoặc tạo tác hình ảnh; một sự cố Bodycam chưa được giải quyết đã được ghi lại trong lịch sử phát triển.
 - Các thử nghiệm kết xuất có kiểm soát không phải là chứng nhận cho mọi trò chơi, trình điều khiển hoặc tính năng chống gian lận.
 - Các khung được tạo không tạo các mẫu đầu vào mới; trung tâm này không hứa hẹn độ trễ hoặc mức tăng hiệu suất đo được.

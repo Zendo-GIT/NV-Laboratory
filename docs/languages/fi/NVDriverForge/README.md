@@ -20,7 +20,7 @@
 
 **Valmista NVIDIA-ajurin asennus selkeällä komponenttivalinnalla ja valinnaisilla asetuksilla.**
 
-[Lataa 0.1.3 ja tila](../docs/downloads.md#nvdriverforge) · [Asennus](#installation) · [Krediitit](#credits-and-upstream) · [Lisenssi](../../../../NVDriverForge/LICENSE)
+[Lataa 0.1.4 ja tila](../docs/downloads.md#nvdriverforge) · [Asennus](#installation) · [Krediitit](#credits-and-upstream) · [Lisenssi](../../../../NVDriverForge/LICENSE)
 
 <a id="overview-and-purpose"></a>
 ## Yleiskatsaus ja tarkoitus
@@ -35,14 +35,15 @@ Se on itsenäisesti kehitetty sovellus, joka on osittain inspiroitunut NVCleanst
 - NVIDIA Game Ready / Studio haku ja lataukset; valinnainen hotfix-korjauksen etsintä manuaalisella varatoiminnolla.
 - Alkuperäisen paketin, tiivisteiden, NVIDIA-allekirjoitusten, luetteloiden ja yhteensopivien INF-merkintöjen analyysi.
 - Komponenttien valinta riippuvuuksilla ja tuntemattomien komponenttien säilyttäminen.
-- Versio 0.1.3 pitää valitut valinnaiset NVIDIA-komponentit ohitettavina ja sulkee pois vain vahvistetut tarkistamattomat komponentit. Jo olemassa olevia tai käyttämättömiä valinnaisia ​​ajonaikoja ei enää pakoteta kriittisiksi komponenteiksi.
+- Versio 0.1.4 pitää valitut valinnaiset NVIDIA-komponentit ohitettavina ja sulkee pois vain vahvistetut tarkistamattomat komponentit. Jo olemassa olevia tai käyttämättömiä valinnaisia ​​ajonaikoja ei enää pakoteta kriittisiksi komponenteiksi.
 - Selkeät asennusvirheiden yhteenvedot ja pääsy yksityiskohtaisiin lokeihin kaikilla 34 kielellä.
-- Selkeä asennuksen vahvistus, suojattu vaiheistus ja olemassa olevien ajurikauppapakettien vienti.
+- Valmiustarkistukset, selkeä vahvistus, vienti ajurivarastoon ja alkuperäisen NVIDIA-profiilin varmuuskopiointi ennen asennusta.
 - Valinnaiset lisäasetukset, joissa on lentoa edeltävät tarkistukset, päiväkirjat ja konfliktitietoinen palautus.
 - Valinnainen **Custom NV** esiasetus nimetyillä valinnoilla ja selityksillä, mukaan lukien erillinen SILK vahvuuden valinta ja yhteensopivuustarkistukset.
 - Valinnainen tarkan version NVENC korjaustiedoston lataukset; lähde- ja kohdetavut tarkistetaan.
 - Profile Inspector fork:n erillinen valinnainen asennus Työkalut-näytöstä.
-- Valinnaiset asennettujen käyttäjien päivitystarkistukset, 34 käyttöliittymäkieltä ja neljä teemaa.
+- Komponenttiopas, uudelleen käytettävät asetukset, ohjainsarjat, paikalliset tukiraportit ja valinnaiset sovelluspäivitykset.
+- 34 käyttöliittymäkieltä ja neljä teemaa.
 
 Käytettävissä olevat lisäasetukset koskevat MPO:tä, DLSS-ilmaisinta, Ansel-, NVIDIA-äänen lepotilaa, MSI, keskeytyskäytäntö/prioriteetti, HDCP, näyttösäilön käynnistys ja kelvollinen vanha telemetriapalvelu. Jokaisella on omat edellytyksensä ja vaikutuksensa; nämä eivät ole yleisiä suorituskyvyn parannuksia.
 
@@ -87,6 +88,21 @@ Valinnainen NVENC-työ lataa yhteensopivat tiedot kiinnitetystä keylase-toteutu
 
 Asetukset hallitsevat kielen, teeman ja valinnaisten asennettujen käyttäjien päivitystarkistuksia. Kannettava ei luo asennettua taustatarkistustehtävää. Työkalut ja palautus ovat erillisiä neljästä asennusvaiheesta.
 
+<a id="backup-and-diagnostic-tools"></a>
+## Varmuuskopiointi- ja diagnostiikkatyökalut
+
+**Ennen asennusta:** Valmiustarkistukset kattavat paketin allekirjoituksen, GPU:t, arvioidun työtilan/varmuuskopiotilan, odottavan uudelleenkäynnistyksen ja kilpailevat asentajat. Korotettu työntekijä toistaa ne. Kilpailevia prosesseja ei koskaan pysäytetä automaattisesti. Alkuperäisen NVIDIA-profiilitietokannan varmuuskopioinnin on onnistuttava ennen NVIDIA-asennuksen alkamista. driver-store -vienti on erillinen varmuuskopio.
+
+**Uudelleen käytettävät vaihtoehdot:** komponenttiopas kysyy neljä kysymystä peleistä, äänestä, NVIDIA App:stä ja tallentamisesta. Tarkista sen ehdotukset; vaaditut, tuntemattomat ja riippuvuuskomponentit pysyvät suojattuina. Vie asetukset, esikatsele ja tarkista ne valitussa paketissa tuonnin yhteydessä. Suostumuksia, uudelleenkäynnistystoimintoja, ohjelmapolkuja ja korjaustiedostoja ei tuoda.
+
+**Ohjainsarja:** vie `.nvdfkit.zip` säilyttääksesi alkuperäisen allekirjoitetun NVIDIA-asennusohjelman, valinnat, tiivisteet ja ohjeet yhdessä. Kuljeta `NVDriverForge.exe` erikseen. Tuo sarja Toolsissa, tarkista esikatselu ja käytä sitten normaalia asennustyönkulkua. Tämä ei ole ohut ohjain tai muokattu erillinen asennusohjelma. Valinnainen NVENC tarvitsee edelleen latauksen ja suostumuksen juuri kyseiselle ohjaimelle. NVIDIA:n uudelleenjakoehdot ovat edelleen voimassa.
+
+**Tulokset ja tuki:** lue lyhyt tulos ja laajenna vaihe-/vaihtoehtokohtaisia tietoja. Onnistunut takaisinluku määrittää tallennetun arvon, ei mitattua parannusta. Paikallinen JSON-tukiraportti käyttää sallittujen luettelon kenttiä, mukaan lukien viimeinen tallennettu työ sovelluksen uudelleenkäynnistyksen jälkeen. Esikatsele sitä ennen tallentamista tai jakamista. Se ei sisällä raakalokeja, profiilin sisältöä tai laitteistotunnisteita, eikä sitä koskaan ladata automaattisesti.
+
+**Palautus:** noudata suojatun työn opasta palauttaaksesi varmuuskopioitu ohjain. Selkeä profiilin palauttaminen vaatii alkuperäisen ohjainversion ja samat GPU:t; se korvaa koko tietokannan, säilyttää nykyisen kopion ja tarkistaa tiivisteet ja ristiriitaiset tilat. Älä pyyhi sen päiväkirjaa tai pakota yhteensopimattomuutta. Aidon ohjaimen asennus, täydellinen palautus ja alkuperäisen profiilin tuonti tämän uuden työnkulun avulla jäävät vahvistamatta todellisessa järjestelmässä.
+
+**Sovelluspäivitykset:** lue julkaisutiedot ja valitse sitten erikseen SHA-256-vahvistettu lataus. Tarkastus on oletuksena manuaalinen, ja valinnainen tarkistus käynnistyksen yhteydessä. Mikään asennusohjelma ei käynnisty automaattisesti. Tämä ominaisuus on erillinen ohjainpäivitystarkistuksista ja asennetun version valinnaisesta ohjaimen tarkistustehtävästä.
+
 <a id="screenshots"></a>
 ## Kuvakaappauksia
 
@@ -101,7 +117,7 @@ Sulje NVDriverForge, hanki seuraava virallinen paketti ja tarkista sen hash. Kä
 
 Uninstall kohteesta Windows **Installed apps**. Se poistaa sovelluksen ja sen päivitystehtävän, ei NVIDIA-ohjainta. Asetukset, lokit ja varmuuskopiot säilyvät. Halutessasi palauta edistyneet/NVENC-muutokset dokumentoidun palautusvirran avulla **ennen** sovelluksen poistamista. Palauta kieltää ristiriitaiset muutokset toisesta työkalusta.
 
-Paikalliset tiedot ovat alla `%LOCALAPPDATA%\NVDriverForge`; suojatut työpaikat ja kuljettajien vienti ovat `%PROGRAMDATA%\NVDriverForge\Jobs`:n alaisia. Kannettava käyttö luo myös paikallista dataa. Ajurikaupan vienti ei ole järjestelmäkuva tai koko profiilin varmuuskopio.
+Paikalliset tiedot ovat alla `%LOCALAPPDATA%\NVDriverForge`; suojatut työpaikat ja kuljettajien vienti ovat `%PROGRAMDATA%\NVDriverForge\Jobs`:n alaisia. Kannettava käyttö luo myös paikallista dataa. Ohjainmyymälän vienti ja alkuperäisen profiilin varmuuskopiointi ovat erillisiä. Sekään ei ole järjestelmäkuva.
 
 <a id="known-limitations"></a>
 ## Tunnetut rajoitukset
@@ -120,7 +136,7 @@ Paikalliset tiedot ovat alla `%LOCALAPPDATA%\NVDriverForge`; suojatut työpaikat
 | --- | --- |
 | Verkkoluettelo ei ole saatavilla | Valitse alkuperäinen paketti [NVIDIA ohjainlataukset](https://www.nvidia.com/en-us/drivers/):stä. Älä korvaa viereistä GPU-mallia. |
 | Hotfix-haku ei ole käytettävissä | Käytä [NVIDIA:n Game Ready-ohjainfoorumi](https://www.nvidia.com/en-us/geforce/forums/game-ready-drivers/13/) ja tarkista todellinen paketti. |
-| NVIDIA:n asennus epäonnistuu | Lue virheyhteenveto ja avaa yksityiskohtaiset lokit. Valinnaiset komponentit, jotka ovat jo voimassa tai eivät ole käytettävissä, jäävät ohitettaviksi 0.1.3:ssä. Epäonnistuneet asennukset eivät käynnistä valinnaisia ​​säätöjä tai onnistumista/uudelleenkäynnistystä. |
+| NVIDIA:n asennus epäonnistuu | Lue virheyhteenveto ja avaa yksityiskohtaiset lokit. Valinnaiset komponentit, jotka ovat jo voimassa tai eivät ole käytettävissä, jäävät ohitettaviksi 0.1.4:ssä. Epäonnistuneet asennukset eivät käynnistä valinnaisia ​​säätöjä tai onnistumista/uudelleenkäynnistystä. |
 | Allekirjoitus/tiiviste/varmuuskopiointivirhe | Lopeta asennus ja säilytä virhe; hanki alkuperäinen paketti uudelleen, jos se on vioittunut. |
 | Vaihtoehto ei ole käytettävissä | Lue sen laitteiston, osan tai kohdeohjaimen syy; pidä se muuttumattomana. |
 | Uudelleenkäynnistys tai työ kesken | Käytä työn palautusohjeita ja nimenomaista ansioluetteloa; älä pyyhi sen päiväkirjaa. |

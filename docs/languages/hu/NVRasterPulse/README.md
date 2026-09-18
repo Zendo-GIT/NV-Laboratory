@@ -22,14 +22,14 @@
 
 > **Először telepítse az RTSS fájlt.** Az NVRasterPulse használatához [RivaTuner Statistics Server (RTSS), letöltve a Guru3D-ről](https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/) szükséges. Az RTSS-nek futnia kell a korlátok érvényesítéséhez. Nincs csomagban RTSS telepítő, hook DLL vagy SDK.
 
-[Az 0.1 letöltése és állapota](../docs/downloads.md#nvrasterpulse) · [Telepítés](#installation) · [Hogyan működnek a korlátok](#usage) · [Licenc](../../../../NVRasterPulse/LICENSE)
+[Az 0.2 letöltése és állapota](../docs/downloads.md#nvrasterpulse) · [Telepítés](#installation) · [Hogyan működnek a korlátok](#usage) · [Licenc](../../../../NVRasterPulse/LICENSE)
 
 <a id="overview-and-purpose"></a>
 ## Áttekintés és cél
 
 Az NVRasterPulse egy kompakt Windows interfész az RTSS keretkorlátok futtatható név alapján történő kezelésére. Az RTSS végrehajtja a korlátozást. Az NVRasterPulse kezeli a megfelelő profilértékeket, biztonsági mentéseket és újratöltési kéréseket, tálca-hozzáféréssel és állandó választási lehetőségekkel.
 
-Létezik, hogy megkönnyítse a játékonkénti korlátok pontos szerkesztését anélkül, hogy egy teljes RTSS profilt le kellene cserélni, vagy megzavarná a fedvénybeállításait. A jelenlegi **0.1** jelölt a 2026. szeptember 9-i build, amelyhez szükséges az RTSS telepítési ellenőrzés.
+Létezik, hogy megkönnyítse a játékonkénti korlátok pontos szerkesztését anélkül, hogy egy teljes RTSS profilt le kellene cserélni, vagy megzavarná a fedvénybeállításait. Az **0.2** verzió konfigurációs diagnosztikát, FPS segédet, szüneteltetést, visszavonást és profilmegosztást tartalmaz.
 
 <a id="features"></a>
 ## Jellemzők
@@ -63,7 +63,7 @@ Ez a hub-audit egyetlen RTSS minimális verziót sem tanúsított minden funkci�
 
 1. **[Töltse le és telepítse az RTSS-et a Guru3D-ről](https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/).**
 2. Nyissa meg az [NVRasterPulse letöltések](../docs/downloads.md#nvrasterpulse) fájlt, és ellenőrizze a kiadás elérhetőségét.
-3. Töltse le az `NVRasterPulse-0.1-win-x64-Setup.exe` vagy `NVRasterPulse-0.1-win-x64-portable.zip` fájlt, valamint a figyelmeztetéseket/ellenőrző összegeket.
+3. Töltse le az `NVRasterPulse-0.2-win-x64-Setup.exe` vagy `NVRasterPulse-0.2-win-x64-portable.zip` fájlt, valamint a figyelmeztetéseket/ellenőrző összegeket.
 4. Hasonlítsa össze: SHA-256. Futtassa a telepítőt, vagy bontsa ki a teljes hordozható ZIP-fájlt egy írható helyi mappába.
 5. Nyissa meg az `NVRasterPulse.exe` fájlt. Ha az RTSS hiányzik, használja a **Töltse le az RTSS** fájlt, telepítse, majd **Ellenőrizze újra**, vagy válassza ki manuálisan az `RTSS.exe` lehetőséget.
 6. Indítsa el az RTSS programot a normál parancsikonjával vagy az NVRasterPulse RTSS gombjával, ha le van állítva.
@@ -87,6 +87,23 @@ A kuka művelettel távolítsa el az NVRasterPulse korlátozó-felülírásait. 
 **Bezárás és kilépés:** a főablak elrejthető a tálcán. Normál **Kilépés** esetén az RTSS fut, és a mentett korlátok érintetlenül maradnak. A **Kilépés + RTSS** a megfelelő RTSS folyamat normál bezárását kéri az aktuális munkamenetben, legfeljebb nyolc másodpercig vár, és nem kényszeríti ki. A tárolt határértékek mindkét esetben megmaradnak.
 
 A nyelv és a téma az alkalmazásban van kiválasztva. Az Windows bejelentkezéskor történő indítás nem kötelező, és telepített példányhoz készült. Az információs gomb a gyakori műveleteket ismerteti.
+
+<a id="diagnostics-and-profile-tools"></a>
+## Diagnosztikai és profileszközök
+
+Nyissa meg a műveletek menüt a további eszközökhöz. Megőrzik az RTSS Global, overlay beállításokat és kizárásokat.
+
+**Diagnosztika:** megvizsgálja a helyi/hatékony korlátokat, leállított RTSS fájlt, hiányzó végrehajtható fájlt, nem észlelt ablakot, letiltott akasztást, öröklődést, szüneteltetett korlátokat, versengő beállításokat és duplikált végrehajtható fájlneveket. Ez a csak olvasható ellenőrzés a konfigurációt írja le; ez nem bizonyítja, hogy a játékot az RTSS akasztotta volna meg, és nem méri az FPS értékét.
+
+**FPS segéd:** válassza ki a kijelzőt, és deklarálja az VRR/G-Sync, V-Sync, Reflex és Frame Generation saját maga. A lekerekített frissítési gyakoriság az Windows-től származik. Ha az Reflex vagy Frame Generation aktív vagy ismeretlen, a rendszer nem kínál automatikus korlátot. Az VRR esetén, ha az V-Sync be van kapcsolva és az Reflex/FG ki van kapcsolva, a heurisztika legalább 3 FPS-et vagy a frissítési gyakoriság körülbelül 2%-át levonja. Ez nem mért optimum. A javaslat alkalmazása kitölti a tervezetet; A **Mentés** külön művelet marad.
+
+**Szünet és folytatás:** felfüggeszti a kiválasztott program felső határát, majd visszaállítja a korábbi korlátozó mezőket. Egy másik eszköz által ellentétes változtatások megakadályozzák a félreérthető önéletrajzot. Egy bejegyzés elrejtése nem szünetelteti a sapkáját.
+
+**Visszavonás:** a program hat kezelt korlátozó mezőjének utolsó módosításának visszaállítása. Egy szint van; ez nem állítja vissza az összes RTSS fájlt. Az egymásnak ellentmondó külső változtatásokat elutasítják. A fájlok biztonsági másolatai külön maradnak.
+
+**Profilok megosztása:** A kiválasztott profilok exportálása `.nvrp` fájlba. Az importálás előnézetet jelenít meg, és alapértelmezés szerint nem jelöli be a meglévő felsőket. A fájl csak végrehajtható neveket, korlátokat és állapotokat tartalmaz, abszolút elérési utak és parancsfájlok nélkül. Tekintse át a választást, és jelentkezzen. Egy I/O hiba miatt néhány profil már alkalmazva maradhat; az eredmény azonosítja őket, és mindegyik megtartja a visszavonását. Az azonos végrehajtható nevek továbbra is ugyanazt az RTSS profilt címezik.
+
+**Kedvencek és rejtett bejegyzések:** Először rögzítse a hasznos programokat, rejtse el a nem kívánt bejegyzéseket, és állítsa vissza őket a dedikált párbeszédpanelen. Ezek a választások továbbra is fennállnak. A bezárt kedvencek nem jelennek meg futó alkalmazásként.
 
 <a id="screenshots"></a>
 ## Képernyőképek

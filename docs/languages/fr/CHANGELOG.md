@@ -18,35 +18,52 @@
 <a id="changelog"></a>
 # Journal des modifications
 
-Ce hub suit [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Les entrées décrivent ce référentiel ; les versions des applications sont indépendantes.
+Ce hub suit [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Les versions des applications et les dates de sortie sont indépendantes. Les packages préparés ci-dessous reçoivent leurs dates de publication réelles dans leurs versions GitHub respectives.
 
 <a id="unreleased"></a>
-## [Inédit]
-
-<a id="added"></a>
-### Ajouté
-
-- Hub, guides de projet complets et documentation du référentiel dans les 34 langages d'application NV.
-- Sélecteurs de langue préservant les pages, métadonnées de couverture de traduction et ancres internes stables.
-- Crédits en amont, avis complets applicables et provenance du fichier.
-- Exigence RTSS et lien de téléchargement officiel pour NVRasterPulse.
-- Liens RevoluSound Team séparés.
-- Catalogue de packages de première version préparé, vérification SHA-256 et procédure de publication manuelle.
-- Formulaires de bogues/fonctionnalités, contributions et instructions de sécurité.
-- Documentation en lecture seule et vérification des limites de publication.
+## [Non publié]
 
 <a id="changed"></a>
-### Changé
+### Modifié
 
-- L'attribution NVMFG distingue désormais l'application développée indépendamment,
-la référence de comparaison/raffinement et les composants natifs partagés réels.   Les droits d'auteur, licences et comparaisons de fichiers existants restent intacts.
-- Candidat NVDriverForge mis à jour vers 0.1.3 : correction de la gestion des composants optionnels,
-échecs localisés lisibles et emballage d’exécution/compagnon mis à jour.
+- Mise à jour du hub et les 34 langues de documentation pour NVDriverForge 0.1.4,
+NVMFG Unlock40 0.2.3 et NVRasterPulse 0.2, préparés le 2026-09-18.
+- NVDriverForge : contrôles de préparation, sauvegardes de profils natifs et récupération protégée,
+conseils sur les composants, préférences réutilisables, kits de pilotes, résultats détaillés, rapports d'assistance locale et mises à jour d'application distinctes.
+- NVMFG : découverte multidossier, cache de bibliothèque persistant, activité MFG observée,
+informations sur les capacités d'exécution, exclusion au prochain lancement, diagnostics locaux, transfert de préférences et mises à jour d'application facultatives.
+- NVRasterPulse : diagnostics de configuration, suggestions FPS, pause/reprise,
+annulation à un niveau, importation/exportation de profil sélectif, favoris et entrées masquées.
+- Actualisation des empreintes des paquets, les notes de version et la carte de provenance des composants natifs.
+Conservation des fichiers Profile Inspector 3.0.2.3/setup-r2 déjà publiés inchangés.
 
 <a id="fixed"></a>
 ### Corrigé
 
-- La révision 2 de la configuration NVIDIA Profile Inspector – NV Tools Fork affiche désormais le partage
-Sélecteur de 34 langues au lancement direct. Le langage explicite et le transfert silencieux sont préservés ; l'éditeur et le package portable sont inchangés.
+- Sélection/compte de jeux NVMFG, gestion de Ctrl+D et messages de progression terminés ;
+Wallpaper Engine est exclu de la détection de jeu. Le blocage de restauration 0.1.1 signalé séparément n’est toujours pas reproduit et n’est pas revendiqué comme étant résolu.
 
-Aucune date de sortie publique historique n'est reconstituée. Les versions d'application candidates sont 3.0.2.3, 0.1.3, 0.1.1 et 0.1 ; leurs notes de version sont jointes à leurs propres versions futures. La préparation du 09/09/2026 n'est pas une date de sortie de GitHub.
+<a id="initial-public-hub--2026-09-10"></a>
+## [Première publication du hub] – 2026-09-10
+
+<a id="added"></a>
+### Ajouté
+
+- Quatre guides de projet et documentation du référentiel en 34 langues, avec
+sélecteurs préservant les pages, ancres stables et métadonnées de couverture de traduction.
+- Crédits des composants, licences originales, provenance, exigences RTSS et
+liens RevoluSound Team séparés.
+- Packages de version manuelle, valeurs SHA-256, formulaires de problème, politique de sécurité et
+validation de la documentation en lecture seule. Les sources applicatives restent privées.
+- Premiers tags publics : `nvpi-v3.0.2.3`, `nvdriverforge-v0.1.3`,
+`nvmfg-unlock40-v0.1.1` et `nvrasterpulse-v0.1`.
+
+<a id="included-fixes"></a>
+### Correctifs inclus
+
+- Révision 2 du programme d'installation Profile Inspector : le sélecteur autonome de 34 langues ;
+éditeur et charge utile portable inchangés.
+- NVDriverForge 0.1.3 : gestion corrigée des composants optionnels et localisée
+résumés d'échec, avec un runtime mis à jour et un packaging compagnon.
+
+Les dates ci-dessus sont l’historique vérifié du hub public, et non les dates de développement reconstruites.

@@ -32,9 +32,9 @@
 | پروژه | هدف | نسخه | مستندات | دانلود کنید |
 | --- | --- | --- | --- | --- |
 | **NVIDIA Profile Inspector – NV Tools Fork** | ویرایشگر نمایه راننده NVIDIA با صفحه نمایش، رنگ، کنترل های HDR و ICC/WCS اضافه شده است. قبلاً NVPI Custom بود. | 3.0.2.3 | [راهنما](NVIDIA-Profile-Inspector/README.md) | [بسته ها](docs/downloads.md#nvidia-profile-inspector) |
-| **NVDriverForge** | اجزای درایور را انتخاب کنید، ترفندهای اختیاری را بررسی کنید و یک بسته درایور اصلی NVIDIA را نصب کنید. | 0.1.3 | [راهنما](NVDriverForge/README.md) | [بسته ها](docs/downloads.md#nvdriverforge) |
-| **NVMFG Unlock40** | ابزار آزمایشی RTX 40 MFG با انتخاب هر بازی و نگهداری Streamline SDK. | 0.1.1 | [راهنما](NVMFG-Unlock40/README.md) | [بسته ها و وضعیت](docs/downloads.md#nvmfg-unlock40) |
-| **NVRasterPulse** | محدودیت های RTSS FPS را در هر فایل اجرایی، با مقادیر کسری، پشتیبان گیری و دسترسی به سینی مدیریت کنید. | 0.1 | [راهنما](NVRasterPulse/README.md) | [بسته ها](docs/downloads.md#nvrasterpulse) |
+| **NVDriverForge** | یک درایور اصلی NVIDIA با انتخاب های هدایت شده، پشتیبان گیری و بازیابی تهیه و نصب کنید. | 0.1.4 | [راهنما](NVDriverForge/README.md) | [بسته ها](docs/downloads.md#nvdriverforge) |
+| **NVMFG Unlock40** | آزمایشی RTX 40 MFG، کتابخانه بازی مداوم، تشخیص و نگهداری Streamline SDK. | 0.2.3 | [راهنما](NVMFG-Unlock40/README.md) | [بسته ها و وضعیت](docs/downloads.md#nvmfg-unlock40) |
+| **NVRasterPulse** | محدودیت‌های RTSS FPS را در هر برنامه مدیریت کنید: تشخیص، پیشنهادات، مکث، لغو و اشتراک‌گذاری نمایه. | 0.2 | [راهنما](NVRasterPulse/README.md) | [بسته ها](docs/downloads.md#nvrasterpulse) |
 
 **دانلودها:** [صفحه دانلود](docs/downloads.md) وضعیت، فایل‌ها و مقادیر SHA-256 هر نسخه را فهرست می‌کند. ویژگی های آزمایشی و محدودیت های سازگاری در راهنماهای پروژه توضیح داده شده است.
 

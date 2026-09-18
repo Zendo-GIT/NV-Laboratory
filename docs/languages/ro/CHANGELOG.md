@@ -18,35 +18,52 @@
 <a id="changelog"></a>
 # Jurnalul modificărilor
 
-Acest hub urmează [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Intrările descriu acest depozit; versiunile aplicației sunt independente.
+Acest hub urmează [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versiunile aplicației și datele de lansare sunt independente. Pachetele pregătite de mai jos primesc datele reale de publicare în versiunile GitHub respective.
 
 <a id="unreleased"></a>
 ## [Nelansat]
 
-<a id="added"></a>
-### Adăugat
-
-- Hub, ghiduri complete de proiect și documentație de depozit în cele 34 de limbi ale aplicației NV.
-- Selectoare de limbă pentru păstrarea paginii, metadate de acoperire a traducerii și ancore interne stabile.
-- Credite în amonte, notificări aplicabile complete și proveniența fișierului.
-- Cerința RTSS și linkul de descărcare oficial pentru NVRasterPulse.
-- Legături RevoluSound Team separate.
-- Catalogul de pachete pentru prima lansare pregătit, verificarea SHA-256 și procedura de eliberare manuală.
-- Formulare de erori/funcție, instrucțiuni de contribuție și securitate.
-- Documentație doar în citire și verificări ale limitelor publicării.
-
 <a id="changed"></a>
 ### Schimbat
 
-- Atribuirea NVMFG distinge acum aplicația dezvoltată independent,
-referința de comparație/rafinare și componentele native partajate.   Drepturile de autor, licențele și comparațiile de fișiere existente rămân intacte.
-- Candidatul NVDriverForge actualizat la 0.1.3: manipularea componentelor opționale corectate,
-erori localizate lizibile și pachet actualizat de rulare/însoțitor.
+- Actualizează hub-ul și toate cele 34 de limbi de documentație pentru NVDriverForge 0.1.4,
+NVMFG Unlock40 0.2.3 și NVRasterPulse 0.2, întocmit în 2026-09-18.
+- NVDriverForge: verificări de pregătire, copii de siguranță ale profilului nativ și recuperare protejată,
+ghidare componente, preferințe reutilizabile, kituri de drivere, rezultate detaliate, rapoarte de asistență locală și actualizări separate ale aplicațiilor.
+- NVMFG: descoperire de mai multe foldere, cache persistentă a bibliotecii, activitate observată MFG,
+informații despre capacitatea de rulare, excluderea la următoarea lansare, diagnosticare locală, transfer de preferințe și actualizări opționale ale aplicațiilor.
+- NVRasterPulse: diagnosticare de configurare, sugestii FPS, pauză/reluare,
+anulare un singur nivel, import/export selectiv de profil, favorite și intrări ascunse.
+- Reîmprospătați hashurile pachetului, notele de lansare și harta de proveniență a componentelor native.
+Păstrați activele Profile Inspector 3.0.2.3/setup-r2 deja publicate neschimbate.
 
 <a id="fixed"></a>
 ### Fix
 
-- NVIDIA Profile Inspector – NV Tools Fork, versiunea 2 de configurare arată acum partajarea
-Selector în 34 de limbi atunci când este lansat direct. Limbajul explicit și redirecționarea silențioasă sunt păstrate; editorul și pachetul portabil sunt neschimbate.
+- Selecția/numărările jocului NVMFG, manipularea Ctrl+D și mesajele de progres finalizate;
+Wallpaper Engine este exclus de la detectarea jocului. Blocajul de restaurare raportat separat 0.1.1 rămâne nereprodus și nu este revendicat reparat.
 
-Nu sunt reconstituite date istorice de lansare publică. Versiunile aplicației candidate sunt 3.0.2.3, 0.1.3, 0.1.1 și 0.1; notele lor de lansare sunt atașate propriilor versiuni viitoare. Pregătirea din 2026-09-09 nu este o dată de lansare a GitHub.
+<a id="initial-public-hub--2026-09-10"></a>
+## [Nod public inițial] – 2026-09-10
+
+<a id="added"></a>
+### Adăugat
+
+- Patru ghiduri de proiect și documentație de depozit în 34 de limbi, cu
+selectoare de păstrare a paginii, ancore stabile și metadate de acoperire a traducerii.
+- Credite componente, licențe originale, proveniență, cerințe RTSS și
+legături separate RevoluSound Team.
+- Pachete de lansare manuală, valori SHA-256, formulare de emisiune, politică de securitate și
+validarea documentației doar în citire. Sursele aplicației rămân private.
+- Primele etichete publice: `nvpi-v3.0.2.3`, `nvdriverforge-v0.1.3`,
+`nvmfg-unlock40-v0.1.1` și `nvrasterpulse-v0.1`.
+
+<a id="included-fixes"></a>
+### Remedieri incluse
+
+- Profile Inspector versiunea 2 a programului de instalare: selectorul autonom în 34 de limbi;
+editor și încărcătură utilă portabilă neschimbate.
+- NVDriverForge 0.1.3: manipularea componentelor opționale corectate și localizate
+rezumate ale erorilor, cu runtime actualizate și ambalaj însoțitor.
+
+Datele de mai sus sunt istoricul centrului public verificat, nu date de dezvoltare reconstruite.

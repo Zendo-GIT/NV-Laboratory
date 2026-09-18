@@ -30,9 +30,9 @@
 | Proiect | Scop | Versiune | Documentare | Descărcați |
 | --- | --- | --- | --- | --- |
 | **NVIDIA Profile Inspector – NV Tools Fork** | Editor de profil de șofer NVIDIA cu afișaj adăugat, controale color, HDR și ICC/WCS. Anterior NVPI Custom. | 3.0.2.3 | [Ghid](NVIDIA-Profile-Inspector/README.md) | [Pachete](docs/downloads.md#nvidia-profile-inspector) |
-| **NVDriverForge** | Selectați componentele driverului, revizuiți modificările opționale și instalați un pachet original de driver NVIDIA. | 0.1.3 | [Ghid](NVDriverForge/README.md) | [Pachete](docs/downloads.md#nvdriverforge) |
-| **NVMFG Unlock40** | Instrument experimental RTX 40 MFG cu opțiuni per joc și întreținere Streamline SDK. | 0.1.1 | [Ghid](NVMFG-Unlock40/README.md) | [Pachete și stare](docs/downloads.md#nvmfg-unlock40) |
-| **NVRasterPulse** | Gestionați limitele RTSS FPS per executabil, cu valori fracționale, copii de rezervă și acces la tavă. | 0.1 | [Ghid](NVRasterPulse/README.md) | [Pachete](docs/downloads.md#nvrasterpulse) |
+| **NVDriverForge** | Pregătiți și instalați un driver original NVIDIA cu alegeri ghidate, copii de siguranță și recuperare. | 0.1.4 | [Ghid](NVDriverForge/README.md) | [Pachete](docs/downloads.md#nvdriverforge) |
+| **NVMFG Unlock40** | RTX experimental 40 MFG, bibliotecă de jocuri persistentă, diagnosticare și întreținere Streamline SDK. | 0.2.3 | [Ghid](NVMFG-Unlock40/README.md) | [Pachete și stare](docs/downloads.md#nvmfg-unlock40) |
+| **NVRasterPulse** | Gestionați limitele RTSS FPS per program: diagnostice, sugestii, pauză, anulare și partajare a profilului. | 0.2 | [Ghid](NVRasterPulse/README.md) | [Pachete](docs/downloads.md#nvrasterpulse) |
 
 **Descărcări:** [pagina de descărcare](docs/downloads.md) listează starea fiecărei versiuni, fișierele și valorile SHA-256. Caracteristicile experimentale și limitele de compatibilitate sunt descrise în ghidurile de proiect.
 

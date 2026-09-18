@@ -20,7 +20,7 @@
 
 **Förbered en NVIDIA-drivrutinsinstallation med tydliga komponentval och valfria inställningar.**
 
-[Ladda ner 0.1.3 & status](../docs/downloads.md#nvdriverforge) · [Installation](#installation) · [Krediter](#credits-and-upstream) · [Licens](../../../../NVDriverForge/LICENSE)
+[Ladda ner 0.1.4 & status](../docs/downloads.md#nvdriverforge) · [Installation](#installation) · [Krediter](#credits-and-upstream) · [Licens](../../../../NVDriverForge/LICENSE)
 
 <a id="overview-and-purpose"></a>
 ## Överblick och syfte
@@ -35,14 +35,15 @@ Det är en oberoende utvecklad applikation som delvis är inspirerad av NVCleans
 - NVIDIA Game Ready / Studio uppslag och nedladdningar; valfri snabbkorrigeringsupptäckt med manuell reserv.
 - Analys av originalpaketet, hash, NVIDIA-signaturer, manifest och kompatibla INF-poster.
 - Komponentval med beroenden och bevarande av okända komponenter.
-- Version 0.1.3 håller utvalda valfria NVIDIA-komponenter överhoppningsbara och utesluter endast verifierade omarkerade komponenter från upptäckt. Redan aktuella eller otillämpliga valfria körtider tvingas inte längre fram som kritiska komponenter.
+- Version 0.1.4 håller utvalda valfria NVIDIA-komponenter överhoppningsbara och utesluter endast verifierade omarkerade komponenter från upptäckt. Redan aktuella eller otillämpliga valfria körtider tvingas inte längre fram som kritiska komponenter.
 - Rensa sammanfattningar av installationsfel och tillgång till detaljerade loggar på alla 34 språk.
-- Explicit installationsbekräftelse, skyddad iscensättning och export av befintliga drivrutinsbutikspaket.
+- Beredskapskontroller, explicit bekräftelse, export av drivrutiner från butik och inbyggd NVIDIA-profilsäkerhetskopiering före installation.
 - Valfria avancerade inställningar, med preflight-kontroller, journaler och konfliktmedveten återställning.
 - Valfri **Custom NV** förinställning med namngivna val och förklaringar, inklusive ett separat SILK-styrkeval och kompatibilitetskontroller.
 - Valfri exakt-version NVENC patch-nedladdningar; source commit och målbyte kontrolleras.
 - En separat, valfri installation av Profile Inspector fork från verktygsskärmen.
-- Valfria uppdateringskontroller för installerade användare, 34 gränssnittsspråk och fyra teman.
+- Komponentguide, återanvändbara inställningar, drivrutinssatser, lokala supportrapporter och valfria programuppdateringar.
+- 34 gränssnittsspråk och fyra teman.
 
 Tillgängliga avancerade alternativ gäller MPO, DLSS-indikatorn, Ansel, NVIDIA ljudsömn, MSI, avbrottspolicy/prioritet, HDCP, start av bildskärmsbehållare och en kvalificerad äldre telemetritjänst. Var och en har sina egna förutsättningar och effekter; dessa är inte universella prestandaförbättringar.
 
@@ -87,6 +88,21 @@ Valfritt NVENC-arbete laddar ner kompatibla data från en fästad keylase-commit
 
 Inställningar styr språk, tema och valfria uppdateringskontroller för installerade användare. Den bärbara enheten skapar inte den installerade bakgrundskontrolluppgiften. Verktyg och återställning är separata från de fyra installationsstegen.
 
+<a id="backup-and-diagnostic-tools"></a>
+## Verktyg för säkerhetskopiering och diagnostik
+
+**Före installation:** beredskapskontroller täcker paketsignaturen, GPU:er, beräknad arbetsyta/backuputrymme, väntande omstart och konkurrerande installatörer. Den upphöjda arbetaren upprepar dem. Konkurrerande processer stoppas aldrig automatiskt. Säkerhetskopieringen av den inbyggda NVIDIA-profildatabasen måste lyckas innan installationen av NVIDIA startar; driver-store export är en separat säkerhetskopia.
+
+**Återanvändbara val:** komponentguiden ställer fyra frågor om spel, ljud, NVIDIA App och inspelning. Granska dess förslag; obligatoriska, okända och beroendekomponenter förblir skyddade. Exportera inställningar, förhandsgranska och validera dem sedan mot det valda paketet vid import. Samtycken, omstartsoperationer, programsökvägar och patchnyttolaster importeras inte.
+
+**Drivrutinskit:** exportera en `.nvdfkit.zip` för att hålla det originalsignerade NVIDIA-installationsprogrammet, val, hash och instruktioner tillsammans. Bär `NVDriverForge.exe` separat. Importera satsen i Verktyg, granska förhandsgranskningen och använd sedan det normala installationsarbetsflödet. Detta är inte en slimmad drivrutin eller modifierad fristående installationsprogram. Valfri NVENC behöver fortfarande en nedladdning och samtycke för just den drivrutinen. NVIDIA:s omdistributionsvillkor gäller fortfarande.
+
+**Resultat och support:** läs det korta resultatet och utöka detaljerna per steg/per alternativ. Lyckad återläsning etablerar ett lagrat värde, inte en uppmätt förbättring. Den lokala JSON-supportrapporten använder tillåtna fält, inklusive det senast sparade jobbet efter omstart av appen. Förhandsgranska det innan du sparar eller delar. Den innehåller inga råloggar, profilinnehåll eller maskinvaruidentifierare och laddas aldrig upp automatiskt.
+
+**Återställning:** följ det skyddade jobbets guide för att återställa den säkerhetskopierade drivrutinen. Explicit profilåterställning kräver den ursprungliga drivrutinsversionen och samma GPU:er; den ersätter hela databasen, bevarar en aktuell kopia och kontrollerar hash och konflikttillstånd. Radera inte dess journal eller framtvinga en oöverensstämmelse. Verklig drivrutinsinstallation, fullständig återställning och inbyggd profilimport med detta nya arbetsflöde förblir ovaliderade på ett riktigt system.
+
+**Appuppdateringar:** läs versionskommentarerna och välj sedan uttryckligen en SHA-256-verifierad nedladdning. Kontrollen är manuell som standard, med en valfri kontroll vid start. Inget installationsprogram startas automatiskt. Den här funktionen är separat från kontroller av drivrutinsuppdateringar och den installerade utgåvans valfria drivrutinskontrolluppgift.
+
 <a id="screenshots"></a>
 ## Skärmdumpar
 
@@ -101,7 +117,7 @@ Stäng NVDriverForge, skaffa nästa officiella paket och verifiera dess hash. An
 
 Uninstall från Windows **Installed apps**. Den tar bort appen och dess uppdateringsuppgift, inte NVIDIA-drivrutinen. Inställningar, loggar och säkerhetskopior finns kvar. Om så önskas kan du återställa avancerade/NVENC-ändringar genom det dokumenterade återställningsflödet **innan** du tar bort appen. Återställ nekar motstridiga ändringar från ett annat verktyg.
 
-Lokal data är under `%LOCALAPPDATA%\NVDriverForge`; skyddade jobb och förareexport är under `%PROGRAMDATA%\NVDriverForge\Jobs`. Bärbar användning skapar också lokal data. En drivrutinsbutiksexport är inte en systemavbildning eller en fullständig säkerhetskopia av profilen.
+Lokal data är under `%LOCALAPPDATA%\NVDriverForge`; skyddade jobb och förareexport är under `%PROGRAMDATA%\NVDriverForge\Jobs`. Bärbar användning skapar också lokal data. Export från drivrutinsbutik och den inbyggda profilbackupen är separata. Inte heller en systembild.
 
 <a id="known-limitations"></a>
 ## Kända begränsningar
@@ -120,7 +136,7 @@ Lokal data är under `%LOCALAPPDATA%\NVDriverForge`; skyddade jobb och förareex
 | --- | --- |
 | Onlinekatalog ej tillgänglig | Välj ett originalpaket från [NVIDIA drivrutinsnedladdningar](https://www.nvidia.com/en-us/drivers/). Byt inte ut en intilliggande GPU-modell. |
 | Snabbkorrigeringssökning är inte tillgänglig | Använd [NVIDIA:s Game Ready drivrutinsforum](https://www.nvidia.com/en-us/geforce/forums/game-ready-drivers/13/) och verifiera det faktiska paketet. |
-| Installationen av NVIDIA misslyckas | Läs felsammanfattningen och öppna de detaljerade loggarna. Tillvalskomponenter som redan är aktuella eller otillämpliga förblir överhoppningsbara i 0.1.3. Misslyckade installationer utlöser inte valfria justeringar eller ett framgångsrikt/omstartsflöde. |
+| Installationen av NVIDIA misslyckas | Läs felsammanfattningen och öppna de detaljerade loggarna. Tillvalskomponenter som redan är aktuella eller otillämpliga förblir överhoppningsbara i 0.1.4. Misslyckade installationer utlöser inte valfria justeringar eller ett framgångsrikt/omstartsflöde. |
 | Signatur/hash/säkerhetskopieringsfel | Stoppa den installationen och behåll felet; skaffa originalförpackningen igen om den är skadad. |
 | Alternativet är inte tillgängligt | Läs orsaken till dess hårdvara, komponent eller måldrivrutin; hålla det oförändrat. |
 | Omstart eller jobb väntar fortfarande | Använd jobbets återställningsinstruktioner och uttryckliga CV; radera inte dess journal. |

@@ -20,7 +20,7 @@
 
 **Experimentální NVIDIA Multi Frame Generation pro GeForce RTX 40, s centrálním ovladačem a možnostmi pro jednotlivé hry.**
 
-[Stáhněte si 0.1.1 a stav](../docs/downloads.md#nvmfg-unlock40) · [Instalace](#installation) · [Proti proudu](#upstream-and-modifications) · [licence](LICENSES/README.md)
+[Stáhněte si 0.2.3 a stav](../docs/downloads.md#nvmfg-unlock40) · [Instalace](#installation) · [Proti proudu](#upstream-and-modifications) · [licence](LICENSES/README.md)
 
 <a id="overview-and-purpose"></a>
 ## Přehled a účel
@@ -31,7 +31,7 @@ NVMFG Unlock40 je nezávisle vyvinutá aplikace od 禅堂 Zendo (RevoluSound Tea
 
 Existuje proto, aby centrálně koordinoval experimentální chování MFG, pamatoval si volby specifické pro hru a udržoval aktualizace a zálohy za běhu viditelné. Nepřidává DLSS Frame Generation do každé hry ani nepřevádí libovolnou implementaci FSR.
 
-Připraveným kandidátem je **0.1.1**, včetně vizuální korekce seznamu SDK interně zaznamenané jako UI2. Veřejná verze zůstává 0.1.1; jeho přesné hash odlišuje tohoto kandidáta od starších místních sestavení.
+Aktuální balíček je **0.2.3**. Přidává trvalou herní knihovnu, informace o aktivitě a schopnostech, místní diagnostiku a opravené chování při výběru/postupu. [Stahování](../docs/downloads.md#nvmfg-unlock40) identifikuje přesné soubory a hash.
 
 <a id="features"></a>
 ## Vlastnosti
@@ -68,7 +68,7 @@ Samotný štítek verze nestačí: záleží na ovladači, hash poskytovatele, i
 ## Instalace
 
 1. Přečtěte si [status kandidáta a licenční poznámka](../docs/downloads.md#nvmfg-unlock40).
-2. Stáhněte si `NVMFGUnlock40-0.1.1-Setup-x64.exe` nebo `NVMFGUnlock40-0.1.1-Portable-x64.zip`, jakmile bude k dispozici jeho vydání.
+2. Stáhněte si `NVMFGUnlock40-0.2.3-Setup-x64.exe` nebo `NVMFGUnlock40-0.2.3-Portable-x64.zip`, jakmile bude k dispozici jeho vydání.
 3. Zkontrolujte SHA-256 a uschovejte si doprovodná upozornění. Nainstalujte rozhraní .NET Framework 4.8, pokud jej Windows již neposkytuje.
 4. Spusťte instalaci nebo extrahujte **celý** přenosný ZIP do zapisovatelné místní složky.
 5. Spusťte `NVMFGUnlock40.exe`; ponechte `agent`, `driver`, `engine` a `Licenses` v dodaném rozložení.
@@ -90,6 +90,21 @@ Zavřením hlavního okna může ovladač zůstat v zásobníku. DLL již načte
 
 **Streamline SDKs:** Na stránce NVIDIA SDK si stáhněte oficiální verzi nebo importujte kompatibilní místní SDK. Import ukládá ověřenou kopii; **Use this version** jej vybere a **Uninstall** odstraní kopii uloženou v mezipaměti. Chybějící Streamline DLL lze doplnit z oficiálního NVIDIA SDK s uvedeným zdrojem. Toto nestahuje/nenahrazuje model NGX. Zavřete hru, vyberte zamýšlenou aktualizaci hry a ponechte si její původní zálohu. Chcete-li vrátit soubory hry, použijte obnovení zálohy, nikoli tlačítko Uninstall mezipaměti.
 
+<a id="library-diagnostics-and-updates"></a>
+## Knihovna, diagnostika a aktualizace
+
+**Trvalá knihovna:** před zahájením jednoho skenování vyberte několik herních složek, včetně různých jednotek. Je vidět pokrok a je možné zrušení. Po prvním skenování obnoví místní mezipaměť knihovnu při spuštění bez procházení každé složky hry. Obnovte pro nalezení změn nebo přidejte další složku. Operace údržby stále obnovují platnost dotčených souborů; monitorování zálohování zůstává aktivní. Mezipaměť je uložena na adrese `%LOCALAPPDATA%\RtxMfg\library-cache.json`.
+
+**Výběr:** Ctrl+A vybere vše a Ctrl+D vymaže aktivní kartu Hry nebo Zálohy. Automaticky není vybrána žádná hra. Aktualizace a aktualizace aktivit již nevytvářejí výběry duchů nebo nekonzistentní počty.
+
+**Aktivita a kompatibilita:** Informace MFG pro jednotlivé hry pocházejí z pozorování NGX bez nového překrytí. Nejedná se o fyzický počet zobrazených snímků. Podpora Dynamic-s-V-Sync pochází z možností běhu; neznámá schopnost není odvozena z čísla verze. Aplikace nemění ani V-Sync ani VRR. Při vypnutém V-Sync zůstane Dynamic pozastavený; pevné nebo herně řízené volby jsou samostatné.
+
+**Příští spuštění:** dočasné vyloučení přeskočí opravy při příštím spuštění hry a po jejím ukončení obnoví normální správu. Nemůže odstranit DLL již načtenou ve hře: zavřete a restartujte tuto hru. Wallpaper Engine je rozpoznán jako desktopová aplikace; tato oprava zachovává ochranu pro skutečné ignorované hry.
+
+**Předvolby a podpora:** import/export předvoleb vyžaduje ruční opětovné přiřazení herních složek. Místní diagnostika v části O aplikaci filtruje soukromé informace a hlásí dostupné chybové kódy NVAPI nebo kategorie konfliktů. Před sdílením jej zkontrolujte; nic se nenahrává automaticky.
+
+**Aktualizace aplikací:** volitelná kontrola zobrazuje poznámky k vydání a nabízí oficiální nastavení. Explicitní stahování se kontroluje podle velikosti GitHub a metadat SHA-256; instalaci spustíte sami. Verze 0.2.3 také vymaže dokončené zprávy o průběhu a zachová smysluplné chyby a výsledky. Tyto doplňky zahrnují změny od veřejné verze 0.1.1.
+
 <a id="screenshots"></a>
 ## Snímky obrazovky
 
@@ -109,6 +124,7 @@ Místní zálohy za běhu hry používají `%LOCALAPPDATA%\NvidiaStreamlineMaint
 <a id="known-limitations"></a>
 ## Známá omezení
 
+- Hlášená blokace aktivace/obnovy/odinstalace 0.1.1 zůstává nereprodukována a její příčina není známa. Toto vydání si nečiní nárok na opravu. Po selhání uchovejte žurnál obnovy a zkontrolujte místní diagnostiku; nevynucujte smazání dat pro obnovu.
 - Experimentální nativní záplaty mohou způsobit pády nebo vizuální artefakty; v historii vývoje je zaznamenán nevyřešený pád Bodycam.
 - Kontrolované testy rendereru nejsou certifikací pro každou hru, ovladač nebo anti-cheat.
 - Generované snímky nevytvářejí nové vstupní vzorky; tento hub neslibuje žádnou měřenou latenci ani zvýšení výkonu.

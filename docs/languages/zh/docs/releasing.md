@@ -37,9 +37,9 @@
 | 工具 | 标签 | 版本政策 |
 | --- | --- | --- |
 | NVIDIA Profile Inspector – NV Tools Fork | nvpi-v3.0.2.3 | 现有的四部分应用程序版本；安装程序修订版 2 有自己的文件名 |
-| NVDriverForge | nvdriverforge-v0.1.3 | 现有0.x方案；版本化更新保留早期的包 |
-| NVMFG Unlock40 | nvmfg-unlock40-v0.1.1 | UI2 通过精确哈希值识别候选者，无需发明新的应用程序版本 |
-| NVRasterPulse | nvrasterpulse-v0.1 | 现有的两部分版本 |
+| NVDriverForge | nvdriverforge-v0.1.4 | 现有0.x方案；版本化更新保留早期的包 |
+| NVMFG Unlock40 | nvmfg-unlock40-v0.2.3 | 应用程序版本0.2.3；自公开 0.1.1 以来的累积变化 |
+| NVRasterPulse | nvrasterpulse-v0.2 | 现有的两部分版本 |
 
 维护者可以直接发布或授权助手发布审计后的资产。公开内容明确；没有工作流程会在每次提交时创建一个发布。
 
@@ -52,10 +52,13 @@
 
 每个项目标签链接避免通过共享 `releases/latest` 链接将用户发送到另一个工具。 GitHub 的自动 **Source code** 存档包含此文档中心。应用程序源保持私密。原始组件通知保持不变，并且版本不会解决 NVMFG 记录的 NVIDIA SDK 保留。
 
+
+9月18日更新准备了三个新标签；现有 Profile Inspector 版本保持不变。资产名称、标签和 `SHA256SUMS.txt` 必须保持准确，以便进行应用程序更新检查。发布不带预发布标志的正常版本，以将其暴露给稳定版本检查； NVMFG 仍处于实验阶段。
+
 <a id="integrity-and-storage"></a>
 ## 完整性和存储
 
-切勿默默地替换已发布的二进制字节。使用具有新哈希值的新显式版本或安装程序修订版。法律边车补充了嵌入式通知。 NVDriverForge 0.1.3 可移植为 141,760,351 字节，高于 GitHub 的普通 100 MiB Git 文件限制。发布附件避免将二进制文件或 Git LFS 放入此中心。 [GitHub大文件指导](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github)。
+切勿默默地替换已发布的二进制字节。使用具有新哈希值的新显式版本或安装程序修订版。法律边车补充了嵌入式通知。 NVDriverForge 0.1.4 可移植为 142,017,891 字节，高于 GitHub 的普通 100 MiB Git 文件限制。发布附件避免将二进制文件或 Git LFS 放入此中心。 [GitHub大文件指导](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github)。
 
 应在存储库安全设置中启用私有漏洞报告。在将敏感报告发送到那里之前验证其可用性； [SECURITY.md](../SECURITY.md) 提供了一个不会暴露漏洞详细信息的后备方案。
 

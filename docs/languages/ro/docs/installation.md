@@ -27,8 +27,8 @@
 | --- | --- | --- | --- |
 | NVIDIA Profile Inspector – NV Tools Fork | NVPI-CustomNV-3.0.2.3-Setup-r2.exe | Extrageți complet NVPI ZIP | Driver NVIDIA și .NET Framework 4.8 |
 | NVDriverForge | NVDriverForge-Setup.exe | NVDriverForge.exe, timp de rulare inclus | Pachetul de driver original compatibil NVIDIA pentru operațiunile de instalare |
-| NVMFG Unlock40 | NVMFGUnlock40-0.1.1-Setup-x64.exe | Extrageți complet NVMFG ZIP, păstrați subfolderele | RTX 40, DLSS FG existent, furnizor exact și ajutoare .NET Framework 4.8 |
-| NVRasterPulse | NVRasterPulse-0.1-win-x64-Setup.exe | Extrageți complet RP ZIP | RTSS și .NET Framework 4.8 |
+| NVMFG Unlock40 | NVMFGUnlock40-0.2.3-Setup-x64.exe | Extrageți complet NVMFG ZIP, păstrați subfolderele | RTX 40, DLSS FG existent, furnizor exact și ajutoare .NET Framework 4.8 |
+| NVRasterPulse | NVRasterPulse-0.2-win-x64-Setup.exe | Extrageți complet RP ZIP | RTSS și .NET Framework 4.8 |
 
 <a id="download-verify-install"></a>
 ## Descărcați, verificați, instalați

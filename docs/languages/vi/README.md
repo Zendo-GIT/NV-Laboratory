@@ -30,9 +30,9 @@
 | dự án | Mục đích | Phiên bản | Tài liệu | Tải xuống |
 | --- | --- | --- | --- | --- |
 | **NVIDIA Profile Inspector – NV Tools Fork** | Trình chỉnh sửa hồ sơ trình điều khiển NVIDIA có thêm màn hình, màu sắc, điều khiển HDR và ICC/WCS. Trước đây là NVPI Custom. | 3.0.2.3 | [hướng dẫn](NVIDIA-Profile-Inspector/README.md) | [Gói](docs/downloads.md#nvidia-profile-inspector) |
-| **NVDriverForge** | Chọn các thành phần trình điều khiển, xem lại các chỉnh sửa tùy chọn và cài đặt gói trình điều khiển NVIDIA gốc. | 0.1.3 | [hướng dẫn](NVDriverForge/README.md) | [Gói](docs/downloads.md#nvdriverforge) |
-| **NVMFG Unlock40** | Công cụ RTX 40 MFG thử nghiệm với các lựa chọn cho mỗi trò chơi và bảo trì Streamline SDK. | 0.1.1 | [hướng dẫn](NVMFG-Unlock40/README.md) | [Gói & trạng thái](docs/downloads.md#nvmfg-unlock40) |
-| **NVRasterPulse** | Quản lý giới hạn RTSS FPS trên mỗi tệp thực thi, với các giá trị phân số, bản sao lưu và quyền truy cập vào khay. | 0.1 | [hướng dẫn](NVRasterPulse/README.md) | [Gói](docs/downloads.md#nvrasterpulse) |
+| **NVDriverForge** | Chuẩn bị và cài đặt trình điều khiển NVIDIA gốc với các lựa chọn, sao lưu và phục hồi được hướng dẫn. | 0.1.4 | [hướng dẫn](NVDriverForge/README.md) | [Gói](docs/downloads.md#nvdriverforge) |
+| **NVMFG Unlock40** | RTX 40 MFG thử nghiệm, thư viện trò chơi ổn định, chẩn đoán và bảo trì Streamline SDK. | 0.2.3 | [hướng dẫn](NVMFG-Unlock40/README.md) | [Gói & trạng thái](docs/downloads.md#nvmfg-unlock40) |
+| **NVRasterPulse** | Quản lý giới hạn RTSS FPS cho mỗi chương trình: chẩn đoán, đề xuất, tạm dừng, hoàn tác và chia sẻ hồ sơ. | 0.2 | [hướng dẫn](NVRasterPulse/README.md) | [Gói](docs/downloads.md#nvrasterpulse) |
 
 **Tải xuống:** [trang tải xuống](docs/downloads.md) liệt kê trạng thái, tệp và giá trị SHA-256 của từng phiên bản. Các tính năng thử nghiệm và giới hạn tương thích được mô tả trong hướng dẫn dự án.
 
